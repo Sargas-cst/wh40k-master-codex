@@ -109,10 +109,16 @@ No web fonts are loaded — a curated system serif stack costs no third-party re
 raises no privacy or licensing question. Body text sits at roughly 68 characters a line.
 Both colour schemes clear WCAG AA (light mode measures 16.8:1 body, 9.0:1 links).
 
-CI runs validate → prepare → build on every push. **Deployment is off by default**: the
-site is published only by running the *Build codex* workflow manually with
-`publish = true`. GitHub Pages must also be enabled once under Settings → Pages with
-Source set to *GitHub Actions*.
+## Deployment
+
+CI runs validate → prepare → build → deploy on every push to `main`, publishing to
+[GitHub Pages](https://sargas-cst.github.io/wh40k-master-codex/). Pull requests build but
+never deploy.
+
+The ordering is the safeguard: `deploy` runs only after `build`, and `build` runs the
+structural validator first. So a dangling cross-reference, a citation to an unrecorded
+source, or a subject claimed by two canonical homes fails the pipeline — and the live site
+keeps serving the last good version instead of publishing a broken one.
 
 ## Researching
 
