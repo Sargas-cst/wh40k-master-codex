@@ -35,10 +35,17 @@ theme:
     - navigation.instant     # SPA-style routing; matters on a ~500-section site
     - navigation.tracking
     - navigation.top
-    # NOT navigation.sections: it renders top-level groups as flat, permanently
-    # open headings. With 10 Volumes -> 49 Titles -> 171 Chapters the tree has to
-    # collapse, and Material's default nested nav is collapsible only without it.
-    - navigation.prune       # render the current subtree, not all 171 entries per page
+    # Two features are deliberately ABSENT, both of which break the contents tree:
+    #
+    # navigation.sections — renders top-level groups as flat, permanently open
+    #   headings. Material's nested nav is collapsible only without it.
+    # navigation.prune — renders only the CURRENT Volume's subtree. Every other
+    #   Volume becomes a dead label with no toggle and no children, so nine of ten
+    #   Volumes cannot be opened at all. It saves page weight and costs the whole
+    #   point of a contents tree.
+    #
+    # The consequence of omitting prune is that every page embeds all 171 entries.
+    # That is the correct trade for a reference work whose sidebar IS the map.
     - navigation.footer      # prev/next — this book is meant to be readable front to back
     - toc.follow
     - search.highlight
