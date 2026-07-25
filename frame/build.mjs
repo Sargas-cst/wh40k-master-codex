@@ -314,6 +314,12 @@ if (process.argv.includes('--specimen')) {
       front + resolved + footnotesFor(resolved), 'utf8');
     console.log('  + design-specimen.md (local preview only — excluded from CI builds)');
   }
+
+  const lab = join(ROOT, 'frame', 'font-lab.html');
+  if (existsSync(lab)) {
+    cpSync(lab, join(OUT, 'font-lab.html'));
+    console.log('  + font-lab.html (local preview only — excluded from CI builds)');
+  }
 }
 
 console.log(`  build/docs ready — ${pages} chapter page(s) + 4 compiled appendix pages`);

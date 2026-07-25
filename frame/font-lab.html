@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Font lab — Warhammer 40,000 Master Codex</title>
+
+<!--
+  LOCAL PREVIEW ONLY. This file is served by `mkdocs serve` after
+  `node frame/build.mjs --specimen`, and is never deployed — CI builds without
+  the flag. It loads faces from the Google Fonts CDN purely so options can be
+  compared quickly. Whichever option is chosen gets SELF-HOSTED as woff2 in
+  theme/overrides/assets/fonts/, so the live site makes no third-party request.
+
+  Every face here is openly licensed (OFL/Apache). None is an imitation of
+  Games Workshop's own brand typography — these are genre-appropriate
+  independent faces, which is a different thing from copying trade dress.
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Grenze+Gotisch:wght@300..900&family=Big+Shoulders+Stencil+Display:wght@400..900&family=Alfa+Slab+One&family=Chakra+Petch:wght@400;600;700&family=Vollkorn:ital,wght@0,400..900;1,400..900&family=Bitter:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,400;0,600;1,400&family=Literata:ital,wght@0,200..900;1,200..900&family=Zilla+Slab:wght@400;600;700&family=Share+Tech+Mono&family=JetBrains+Mono:wght@400;700&family=Space+Mono:wght@400;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --paper:  #08172e;   /* Ultramarines livery, for consistency with the site */
+    --raised: #0f2748;
+    --ink:    #e6ecf7;
+    --soft:   #b8c4da;
+    --muted:  #8b9ab5;
+    --accent: #e8bf4a;
+    --metal:  #c9a227;
+    --rule:   #3a4a66;
+    --hard:   5px;
+  }
+  * { box-sizing: border-box; }
+  html { font-size: 20px; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::after {
+    content: ""; position: fixed; inset: 0; z-index: 99; pointer-events: none; opacity: .055;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .wrap { max-width: 62rem; margin: 0 auto; padding: 2rem 1.25rem 6rem; }
+
+  .lab-head {
+    border-top: 6px solid var(--accent);
+    border-bottom: 2px solid var(--rule);
+    padding: 1rem 0 1.2rem;
+    margin-bottom: 2.5rem;
+  }
+  .lab-head h1 {
+    font-family: "Arial Black", sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem; line-height: 1; margin: .2em 0 .3em;
+    text-shadow: 3px 3px 0 var(--accent);
+  }
+  .lab-head p { color: var(--soft); font-size: .8rem; max-width: 34rem; line-height: 1.6; }
+  .lab-head code { font-family: "Share Tech Mono", monospace; color: var(--accent); }
+
+  .opt {
+    border: 2px solid var(--rule);
+    box-shadow: var(--hard) var(--hard) 0 #000;
+    background: var(--raised);
+    margin-bottom: 3rem;
+    clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px));
+  }
+  .opt__bar {
+    display: flex; align-items: baseline; gap: .8rem; flex-wrap: wrap;
+    padding: .7rem 1.2rem;
+    border-bottom: 2px solid var(--rule);
+    background: rgba(0,0,0,.25);
+  }
+  .opt__num {
+    font-family: "Share Tech Mono", monospace;
+    font-size: 1.1rem; color: var(--accent); font-weight: 700;
+  }
+  .opt__name {
+    font-family: "Arial Black", sans-serif;
+    text-transform: uppercase; letter-spacing: .06em; font-size: .82rem;
+  }
+  .opt__stack {
+    font-family: "Share Tech Mono", monospace;
+    font-size: .62rem; color: var(--muted); margin-left: auto;
+  }
+  .opt__mood {
+    padding: .5rem 1.2rem .1rem;
+    font-family: system-ui, sans-serif; font-size: .68rem; color: var(--soft);
+    font-style: italic;
+  }
+  .opt__body { padding: .8rem 1.2rem 1.6rem; }
+
+  /* --- the specimen itself, restyled per option ------------------------- */
+  .eyebrow {
+    text-transform: uppercase; letter-spacing: .07em;
+    font-size: .68rem; color: var(--muted);
+    display: flex; gap: .45em; align-items: center; margin-bottom: .5rem;
+  }
+  .eyebrow .sep { color: var(--accent); }
+  .badge {
+    border: 2px solid var(--metal); color: var(--metal);
+    font-size: .55rem; padding: .15em .5em; letter-spacing: .08em;
+    transform: rotate(-1.4deg); display: inline-block;
+  }
+  .title {
+    text-transform: uppercase; font-size: 2.3rem; line-height: .98;
+    margin: .1em 0 .7em; letter-spacing: -.01em;
+    text-shadow: 3px 3px 0 var(--accent);
+  }
+  .section {
+    text-transform: uppercase; font-size: 1.2rem; line-height: 1.1;
+    margin: 1.4em 0 .6em; padding: .3em 0 .3em .6em;
+    border-left: 8px solid var(--accent);
+    background: linear-gradient(90deg, rgba(232,191,74,.12), transparent 70%);
+  }
+  .prose { font-size: .95rem; line-height: 1.68; color: var(--ink); max-width: 34rem; }
+  .prose + .prose { text-indent: 1.3em; margin-top: -.2em; }
+  .cite { font-size: .6em; color: var(--accent); vertical-align: super; }
+  .apparatus {
+    margin-top: 1.2rem; padding-top: .7rem; border-top: 3px solid var(--rule);
+    font-size: .72rem; color: var(--soft);
+  }
+  .apparatus b { color: var(--accent); letter-spacing: .08em; text-transform: uppercase; font-size: .8rem; }
+  .hearsay {
+    display: block; margin-top: .35em; padding-left: .7em;
+    border-left: 4px solid var(--metal); color: var(--muted);
+  }
+  .flag {
+    border: 1px solid var(--metal); color: var(--metal);
+    text-transform: uppercase; font-size: .82em; padding: 0 .3em; margin-left: .3em;
+  }
+
+  /* ============ OPTION FONT ASSIGNMENTS ============ */
+
+  /* 0 — current: system faces */
+  .o0 .title, .o0 .section, .o0 .eyebrow, .o0 .badge { font-family: "Arial Black","Archivo Black",Impact,sans-serif; }
+  .o0 .prose { font-family: "Iowan Old Style","Palatino Linotype",Georgia,serif; }
+  .o0 .apparatus { font-family: Consolas, monospace; }
+
+  /* 1 — Inscriptional Imperial */
+  .o1 .title, .o1 .section, .o1 .eyebrow, .o1 .badge { font-family: "Cinzel", serif; font-weight: 900; }
+  .o1 .prose { font-family: "Spectral", Georgia, serif; }
+  .o1 .apparatus { font-family: "Share Tech Mono", monospace; }
+
+  /* 2 — Forge Stencil */
+  .o2 .title, .o2 .section, .o2 .eyebrow, .o2 .badge { font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 800; }
+  .o2 .title { letter-spacing: .01em; }
+  .o2 .prose { font-family: "Bitter", Georgia, serif; }
+  .o2 .apparatus { font-family: "JetBrains Mono", monospace; }
+
+  /* 3 — Grimdark Gothic */
+  .o3 .title, .o3 .section, .o3 .eyebrow, .o3 .badge { font-family: "Grenze Gotisch", serif; font-weight: 700; }
+  .o3 .title { text-transform: none; font-size: 2.6rem; }
+  .o3 .prose { font-family: "Vollkorn", Georgia, serif; }
+  .o3 .apparatus { font-family: "Space Mono", monospace; }
+
+  /* 4 — Brutalist Slab */
+  .o4 .title, .o4 .section, .o4 .eyebrow, .o4 .badge { font-family: "Alfa Slab One", serif; }
+  .o4 .title { letter-spacing: -.02em; }
+  .o4 .prose { font-family: "Literata", Georgia, serif; }
+  .o4 .apparatus { font-family: "IBM Plex Mono", monospace; }
+
+  /* 5 — Techno-Military */
+  .o5 .title, .o5 .section, .o5 .eyebrow, .o5 .badge { font-family: "Chakra Petch", sans-serif; font-weight: 700; }
+  .o5 .prose { font-family: "Zilla Slab", Georgia, serif; }
+  .o5 .apparatus { font-family: "Share Tech Mono", monospace; }
+
+  /* 6 — Ecclesiarchy & Forge (two display registers) */
+  .o6 .title { font-family: "Grenze Gotisch", serif; font-weight: 700; text-transform: none; font-size: 2.6rem; }
+  .o6 .section, .o6 .eyebrow, .o6 .badge { font-family: "Big Shoulders Stencil Display", sans-serif; font-weight: 800; }
+  .o6 .prose { font-family: "Vollkorn", Georgia, serif; }
+  .o6 .apparatus { font-family: "Share Tech Mono", monospace; }
+
+  .rec {
+    display: inline-block; margin-left: .4rem;
+    font-family: "Share Tech Mono", monospace; font-size: .58rem;
+    text-transform: uppercase; letter-spacing: .1em;
+    color: #08172e; background: var(--accent); padding: .18em .5em;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="lab-head">
+    <h1>Font Lab</h1>
+    <p>Seven options for the codex's typography, each shown as a real chapter opening:
+    eyebrow, chapter title, section heading, body prose, and the citation apparatus.
+    Option&nbsp;0 is what the site uses today. Judge the <em>body</em> text as hard as the
+    headings — there are roughly 250,000 words of it coming.</p>
+    <p><code>local preview only — never deployed</code></p>
+  </div>
+
+  <!-- template repeated per option -->
+  <div class="opt o0">
+    <div class="opt__bar"><span class="opt__num">00</span><span class="opt__name">Current — System Faces</span>
+      <span class="opt__stack">Arial Black · Iowan Old Style · Consolas</span></div>
+    <div class="opt__mood">What is live now. Solid, but generic — nothing here says 40K.</div>
+    <div class="opt__body">
+      <div class="eyebrow">Volume IV <span class="sep">&#9670;</span> Title 9 <span class="sep">&#9670;</span> Chapter 31 <span class="badge">Drafted</span></div>
+      <div class="title">The Astronomican</div>
+      <div class="section">The Emperor's Beacon</div>
+      <p class="prose">The Astronomican is a psychic beacon on Terra whose light allows Navigators to steer Imperial vessels through the warp.<span class="cite">1</span> Its practical reach is about fifty thousand light years across a galaxy roughly eighty-five thousand light years wide.<span class="cite">1</span></p>
+      <p class="prose">He does not supply the beacon's energy. That comes from a standing choir of ten thousand psykers, of whom up to one hundred die each day. The beacon is not a miracle sustained by a god. It is an industrial process with a body count.</p>
+      <div class="apparatus"><b>// Sources</b><br>Lexicanum, &ldquo;Astronomican&rdquo; — retrieved 2026-07-25
+        <span class="hearsay">Cited there to Rogue Trader, pg. 140 <span class="flag">unverified by us</span></span></div>
+    </div>
+  </div>
+
+  <div class="opt o1">
+    <div class="opt__bar"><span class="opt__num">01</span><span class="opt__name">Inscriptional Imperial</span>
+      <span class="opt__stack">Cinzel · Spectral · Share Tech Mono</span></div>
+    <div class="opt__mood">Roman capitals carved in stone. The Imperium as a decayed empire that still cuts its titles into rock. Monumental rather than chaotic.</div>
+    <div class="opt__body">
+      <div class="eyebrow">Volume IV <span class="sep">&#9670;</span> Title 9 <span class="sep">&#9670;</span> Chapter 31 <span class="badge">Drafted</span></div>
+      <div class="title">The Astronomican</div>
+      <div class="section">The Emperor's Beacon</div>
+      <p class="prose">The Astronomican is a psychic beacon on Terra whose light allows Navigators to steer Imperial vessels through the warp.<span class="cite">1</span> Its practical reach is about fifty thousand light years across a galaxy roughly eighty-five thousand light years wide.<span class="cite">1</span></p>
+      <p class="prose">He does not supply the beacon's energy. That comes from a standing choir of ten thousand psykers, of whom up to one hundred die each day. The beacon is not a miracle sustained by a god. It is an industrial process with a body count.</p>
+      <div class="apparatus"><b>// Sources</b><br>Lexicanum, &ldquo;Astronomican&rdquo; — retrieved 2026-07-25
+        <span class="hearsay">Cited there to Rogue Trader, pg. 140 <span class="flag">unverified by us</span></span></div>
+    </div>
+  </div>
+
+  <div class="opt o2">
+    <div class="opt__bar"><span class="opt__num">02</span><span class="opt__name">Forge Stencil</span>
+      <span class="opt__stack">Big Shoulders Stencil · Bitter · JetBrains Mono</span></div>
+    <div class="opt__mood">Munitions crates and forge-world signage. The most brutal and industrial of the set; reads as materiel, not scripture.</div>
+    <div class="opt__body">
+      <div class="eyebrow">Volume IV <span class="sep">&#9670;</span> Title 9 <span class="sep">&#9670;</span> Chapter 31 <span class="badge">Drafted</span></div>
+      <div class="title">The Astronomican</div>
+      <div class="section">The Emperor's Beacon</div>
+      <p class="prose">The Astronomican is a psychic beacon on Terra whose light allows Navigators to steer Imperial vessels through the warp.<span class="cite">1</span> Its practical reach is about fifty thousand light years across a galaxy roughly eighty-five thousand light years wide.<span class="cite">1</span></p>
+      <p class="prose">He does not supply the beacon's energy. That comes from a standing choir of ten thousand psykers, of whom up to one hundred die each day. The beacon is not a miracle sustained by a god. It is an industrial process with a body count.</p>
+      <div class="apparatus"><b>// Sources</b><br>Lexicanum, &ldquo;Astronomican&rdquo; — retrieved 2026-07-25
+        <span class="hearsay">Cited there to Rogue Trader, pg. 140 <span class="flag">unverified by us</span></span></div>
+    </div>
+  </div>
+
+  <div class="opt o3">
+    <div class="opt__bar"><span class="opt__num">03</span><span class="opt__name">Grimdark Gothic</span>
+      <span class="opt__stack">Grenze Gotisch · Vollkorn · Space Mono</span></div>
+    <div class="opt__mood">Blackletter, but a modern legible one. Ecclesiarchy, illuminated manuscript, religious dread. The most chaotic option — and the one to check hardest for legibility.</div>
+    <div class="opt__body">
+      <div class="eyebrow">Volume IV <span class="sep">&#9670;</span> Title 9 <span class="sep">&#9670;</span> Chapter 31 <span class="badge">Drafted</span></div>
+      <div class="title">The Astronomican</div>
+      <div class="section">The Emperor's Beacon</div>
+      <p class="prose">The Astronomican is a psychic beacon on Terra whose light allows Navigators to steer Imperial vessels through the warp.<span class="cite">1</span> Its practical reach is about fifty thousand light years across a galaxy roughly eighty-five thousand light years wide.<span class="cite">1</span></p>
+      <p class="prose">He does not supply the beacon's energy. That comes from a standing choir of ten thousand psykers, of whom up to one hundred die each day. The beacon is not a miracle sustained by a god. It is an industrial process with a body count.</p>
+      <div class="apparatus"><b>// Sources</b><br>Lexicanum, &ldquo;Astronomican&rdquo; — retrieved 2026-07-25
+        <span class="hearsay">Cited there to Rogue Trader, pg. 140 <span class="flag">unverified by us</span></span></div>
+    </div>
+  </div>
+
+  <div class="opt o4">
+    <div class="opt__bar"><span class="opt__num">04</span><span class="opt__name">Brutalist Slab</span>
+      <span class="opt__stack">Alfa Slab One · Literata · IBM Plex Mono</span></div>
+    <div class="opt__mood">Heavy concrete slab. Poster brutalism — enormous weight, blunt serifs, no elegance whatsoever. Loudest headings of the set.</div>
+    <div class="opt__body">
+      <div class="eyebrow">Volume IV <span class="sep">&#9670;</span> Title 9 <span class="sep">&#9670;</span> Chapter 31 <span class="badge">Drafted</span></div>
+      <div class="title">The Astronomican</div>
+      <div class="section">The Emperor's Beacon</div>
+      <p class="prose">The Astronomican is a psychic beacon on Terra whose light allows Navigators to steer Imperial vessels through the warp.<span class="cite">1</span> Its practical reach is about fifty thousand light years across a galaxy roughly eighty-five thousand light years wide.<span class="cite">1</span></p>
+      <p class="prose">He does not supply the beacon's energy. That comes from a standing choir of ten thousand psykers, of whom up to one hundred die each day. The beacon is not a miracle sustained by a god. It is an industrial process with a body count.</p>
+      <div class="apparatus"><b>// Sources</b><br>Lexicanum, &ldquo;Astronomican&rdquo; — retrieved 2026-07-25
+        <span class="hearsay">Cited there to Rogue Trader, pg. 140 <span class="flag">unverified by us</span></span></div>
+    </div>
+  </div>
+
+  <div class="opt o5">
+    <div class="opt__bar"><span class="opt__num">05</span><span class="opt__name">Techno-Military</span>
+      <span class="opt__stack">Chakra Petch · Zilla Slab · Share Tech Mono</span></div>
+    <div class="opt__mood">Angular, clipped, machine-cut. Reads Adeptus Mechanicus and T'au rather than Ecclesiarchy — cogitator output more than cathedral.</div>
+    <div class="opt__body">
+      <div class="eyebrow">Volume IV <span class="sep">&#9670;</span> Title 9 <span class="sep">&#9670;</span> Chapter 31 <span class="badge">Drafted</span></div>
+      <div class="title">The Astronomican</div>
+      <div class="section">The Emperor's Beacon</div>
+      <p class="prose">The Astronomican is a psychic beacon on Terra whose light allows Navigators to steer Imperial vessels through the warp.<span class="cite">1</span> Its practical reach is about fifty thousand light years across a galaxy roughly eighty-five thousand light years wide.<span class="cite">1</span></p>
+      <p class="prose">He does not supply the beacon's energy. That comes from a standing choir of ten thousand psykers, of whom up to one hundred die each day. The beacon is not a miracle sustained by a god. It is an industrial process with a body count.</p>
+      <div class="apparatus"><b>// Sources</b><br>Lexicanum, &ldquo;Astronomican&rdquo; — retrieved 2026-07-25
+        <span class="hearsay">Cited there to Rogue Trader, pg. 140 <span class="flag">unverified by us</span></span></div>
+    </div>
+  </div>
+
+  <div class="opt o6">
+    <div class="opt__bar"><span class="opt__num">06</span><span class="opt__name">Ecclesiarchy &amp; Forge<span class="rec">recommended</span></span>
+      <span class="opt__stack">Grenze Gotisch + Big Shoulders Stencil · Vollkorn · Share Tech Mono</span></div>
+    <div class="opt__mood">Two display registers on purpose: blackletter for chapter titles, industrial stencil for section headings and every label. The Imperium runs on cathedrals and factory floors at once — this is the only option that says both, and it keeps blackletter to the few words where legibility costs nothing.</div>
+    <div class="opt__body">
+      <div class="eyebrow">Volume IV <span class="sep">&#9670;</span> Title 9 <span class="sep">&#9670;</span> Chapter 31 <span class="badge">Drafted</span></div>
+      <div class="title">The Astronomican</div>
+      <div class="section">The Emperor's Beacon</div>
+      <p class="prose">The Astronomican is a psychic beacon on Terra whose light allows Navigators to steer Imperial vessels through the warp.<span class="cite">1</span> Its practical reach is about fifty thousand light years across a galaxy roughly eighty-five thousand light years wide.<span class="cite">1</span></p>
+      <p class="prose">He does not supply the beacon's energy. That comes from a standing choir of ten thousand psykers, of whom up to one hundred die each day. The beacon is not a miracle sustained by a god. It is an industrial process with a body count.</p>
+      <div class="apparatus"><b>// Sources</b><br>Lexicanum, &ldquo;Astronomican&rdquo; — retrieved 2026-07-25
+        <span class="hearsay">Cited there to Rogue Trader, pg. 140 <span class="flag">unverified by us</span></span></div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
