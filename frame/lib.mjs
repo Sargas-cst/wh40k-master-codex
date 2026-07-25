@@ -217,8 +217,10 @@ export function glossaryForms(glossary, { variants = false } = {}) {
     const forms = new Set();
     for (const b of base) {
       const declared = b.trim();
-      declaredVerbatim.add(declared.toLowerCase());
       const stripped = declared.replace(LEADING_ARTICLE, '');
+      // Only a form the author actually wrote in lower case earns the lower-case
+      // exemption below. Declaring "the Warp" must not license "the warp".
+      if (/^[a-z]/.test(stripped)) declaredVerbatim.add(declared.toLowerCase());
 
       for (const variant of new Set([declared, stripped])) {
         if (variant.length < 3) continue;
@@ -226,21 +228,22 @@ export function glossaryForms(glossary, { variants = false } = {}) {
         for (const p of pluralise(variant)) forms.add(p);
       }
 
-      // "the Conduit" and "the Purging" are proper nouns whose article-stripped
-      // forms — conduit, purging — are ordinary English words. Matching those
-      // case-insensitively put a tooltip for the Astropathic Conduit on "bundles
-      // of cables, wires and conduits", and one for the atomic bombardment of
-      // Krieg on "he was purging their souls". So a form that only exists because
-      // an article was stripped off a capitalised name may match only where the
-      // prose capitalises it too.
+      // A proper noun may match only where the prose capitalises it. Matched
+      // case-insensitively, "the Conduit" put the Astropathic Conduit's definition
+      // on "bundles of cables, wires and conduits"; "the Purging" put the atomic
+      // bombardment of Krieg on "he was purging their souls"; and once this covered
+      // the subject registry too, "the Old Ones" put the galaxy's first sentient
+      // species on "new islands rising and old ones being subsumed".
       //
-      // Restricted to SINGLE words: "the Great Crusade" -> "Great Crusade"
-      // cannot collide with a common noun, and demanding capitals there would
-      // lose nothing but could cost a legitimate mark.
-      if (stripped !== declared && /^[A-Z]\S*$/.test(stripped)) {
-        for (const variant of [stripped, ...pluralise(stripped)]) {
-          if (variant.length < 3) continue;
-          capitalOnly.add(variant.toLowerCase());
+      // That last one refuted an earlier version of this rule, which applied only to
+      // SINGLE-word forms on the reasoning that a multi-word name could not collide
+      // with ordinary English. "old ones" collides. The test is therefore what the
+      // name IS rather than how many words it has: if it reads as a proper noun,
+      // every form derived from it requires capitals.
+      if (/^[A-Z]/.test(stripped)) {
+        for (const v of [declared, stripped, ...pluralise(declared), ...pluralise(stripped)]) {
+          if (v.length < 3) continue;
+          capitalOnly.add(v.toLowerCase());
         }
       }
     }
@@ -268,7 +271,10 @@ export function glossaryForms(glossary, { variants = false } = {}) {
 export function matchCaseOk(byForm, matched) {
   const norm = matched.toLowerCase();
   if (!byForm.capitalOnly?.has(norm)) return true;
-  return /^[A-Z]/.test(matched);
+  // Look past a leading article, so "the Awakening" passes and "the awakening of
+  // Ynnead" does not. Judging the raw first character would accept both, because
+  // a sentence-initial "The" is capitalised whatever follows it.
+  return /^[A-Z]/.test(matched.replace(LEADING_ARTICLE, ''));
 }
 
 /** One alternation over every surface form, longest first so "C'tan Shard" beats "C'tan". */

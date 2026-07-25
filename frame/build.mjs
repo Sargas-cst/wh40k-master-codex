@@ -79,11 +79,15 @@ function resolveLinks(text, fromDocPath) {
     // tooltips show it on hover. The reader gets the definition without being
     // thrown to the appendix mid-sentence, and it is still the single definition
     // from data/glossary.yaml rather than a copy.
+    // `g:` covers both registries — a plain key is a glossary term, an `s:`-prefixed
+    // one a subject. Both land on the compiled Glossary page, which carries an entry
+    // for each, so a tooltip always has somewhere to click through to.
     if (target.startsWith('g:')) {
       const key = target.slice(2);
-      const entry = glossary[key];
+      const entry = tooltipVocab[key];
       if (!entry) return label ?? key;
-      const href = `${linkFrom(fromDocPath, APPENDIX.glossary)}#${key}`;
+      const anchor = key.startsWith(SUBJECT_PREFIX) ? `subject-${key.slice(2)}` : key;
+      const href = `${linkFrom(fromDocPath, APPENDIX.glossary)}#${anchor}`;
       return `[${label ?? entry.term}](${href}){ .cx-term title="${tooltipFor(entry)}" }`;
     }
 
@@ -219,29 +223,54 @@ function tooltipFor(entry) {
 // [[g:...]] written by hand still wins. It is how an author marks a LATER mention
 // deliberately, and this pass leaves any term already marked in a Chapter alone.
 
-const glossaryByForm = glossaryForms(glossary);
-const glossaryPattern = glossaryRegex(glossaryByForm);
+// The hover vocabulary is BOTH registries. The glossary holds the vocabulary a reader
+// needs — psyker, Gellar field, noctilith — and the subject registry holds the proper
+// nouns — the Schola Progenium, corpse-starch, bastion worlds. A reader arriving from
+// a search engine trips over the second kind at least as often as the first, and for
+// 83 subjects a one-line gloss was already written and reaching nobody.
+//
+// Subject keys are namespaced `s:` because two of them (ultramar, age-of-strife) collide
+// with glossary keys, and an anchor collision on the compiled Glossary page would send
+// one of the pair to the wrong definition.
+const SUBJECT_PREFIX = 's:';
+const tooltipVocab = { ...glossary };
 
-// Terms whose first-use window is the Chapter rather than the Section — set on the
-// registry entry, because how often a term wants marking is a judgement about the term.
-const chapterScoped = new Set(
-  Object.entries(glossary)
-    .filter(([, e]) => e?.mark_scope === 'chapter')
-    .map(([key]) => key),
+// Seven subjects name the same thing as a glossary term — the Warp, the soul, the
+// Webway, the C'tan, Ultramar, the Age of Strife, the Webway Project. Registering both
+// for hover put two dotted underlines on one idea in a single paragraph: "his soul
+// restored to his body… The soul was restored by Ynnead". The glossary entry carries
+// the real definition, so it wins and the subject is left out of the hover vocabulary.
+// It still appears on the Glossary page, where its canonical home is what it adds.
+const glossaryForm = new Set(
+  Object.values(glossary).flatMap((e) => [e?.term, ...(e?.mark ?? [])])
+    .filter(Boolean)
+    .map((s) => String(s).toLowerCase().replace(/^(the|a|an)\s+/, '')),
 );
+
+for (const [key, entry] of Object.entries(subjects)) {
+  const name = String(entry?.name ?? key).toLowerCase().replace(/^(the|a|an)\s+/, '');
+  if (glossaryForm.has(name)) continue;
+  tooltipVocab[SUBJECT_PREFIX + key] = {
+    term: entry?.name ?? key,
+    definition: entry?.gloss,
+    short: entry?.short,
+    // `mark:` is the same opt-in the glossary uses: extra surface forms an author
+    // has judged safe. `aliases:` is NOT used — it is a much looser field, 507
+    // forms including "vellum", "Adept" and "sector", and auto-marking off it would
+    // repeat the variants accident that once produced 36 wrong links.
+    mark: entry?.mark,
+  };
+}
+
+const glossaryByForm = glossaryForms(tooltipVocab);
+const glossaryPattern = glossaryRegex(glossaryByForm);
 
 /** Terms this Chapter must not auto-mark. */
 function skipKeysFor(ch) {
   const skip = new Set();
-
-  // Already marked by hand somewhere in this Chapter.
+  // Already marked by hand somewhere in this Chapter. A hand-placed [[g:...]] is a
+  // deliberate choice about WHICH mention to mark, and the marker defers to it.
   for (const m of ch.body.matchAll(/\[\[g:([^\]|]+)/g)) skip.add(m[1].trim());
-
-  // The Chapter that treats a term in full does not need a tooltip for it: the
-  // surrounding prose IS the definition, and a hover box repeating it is noise.
-  for (const [key, entry] of Object.entries(glossary)) {
-    if (entry?.full_treatment === ch.front.id) skip.add(key);
-  }
   return skip;
 }
 
@@ -293,7 +322,6 @@ for (const ch of parsed) {
         byForm: glossaryByForm,
         regex: glossaryPattern,
         skipKeys: skipKeysFor(ch),
-        chapterScoped,
       });
   tooltipsAdded += marks;
 
@@ -338,6 +366,24 @@ const NOTE = (what) =>
       md += `*Discussed in full:* [${byId.get(e.full_treatment).name}](${linkFrom(APPENDIX.glossary, byId.get(e.full_treatment).docPath)})\n\n`;
     }
     if (e.sources?.length) md += `*Sources:* ${e.sources.map(s => `\`${s}\``).join(', ')}\n\n`;
+  }
+
+  // Subjects share the page, because they share the hover vocabulary. A reader who
+  // hovers "bastion worlds" and wants more must be able to click through to
+  // something, and the honest destination is the Chapter that owns the subject.
+  const subjectKeys = Object.keys(subjects).sort((a, b) =>
+    (subjects[a].name ?? a).localeCompare(subjects[b].name ?? b));
+  if (subjectKeys.length) {
+    md += `## Subjects\n\nNamed things the codex treats in full somewhere. Each entry says where.\n\n`;
+    for (const key of subjectKeys) {
+      const e = subjects[key];
+      md += `### ${e.name ?? key} {#subject-${key}}\n\n${String(e.gloss ?? '').trim()}\n\n`;
+      const owner = ownerOf.get(key);
+      if (owner && byId.has(owner)) {
+        md += `*Treated in full:* [${byId.get(owner).name}](${linkFrom(APPENDIX.glossary, byId.get(owner).docPath)})\n\n`;
+      }
+      if (e.aliases?.length) md += `*Also written:* ${e.aliases.join(', ')}\n\n`;
+    }
   }
   writeFileSync(join(OUT, APPENDIX.glossary), md, 'utf8');
 }

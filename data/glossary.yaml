@@ -16,11 +16,10 @@ warp:
     A psychic dimension parallel to real space, formed and fuelled by the emotions
     and souls of sentient beings, in which the laws of time and space do not hold.
   variants: [Warpspace, Immaterium, Empyrean, the Ether, the Aether, Sea of Souls, Realm of Chaos]
-  mark: [warp]          # lowercase attributive use — "warp routes", "warp storms" —
+  mark: [warp, the warp]  # lowercase use — "warp routes", "perils of the warp", and
+                        # several passages quoted from sources that write it that way —
                         # is the same referent, so it is worth marking. Declared
-                        # explicitly because stripped forms of capitalised names
-                        # otherwise require capitals.
-  mark_scope: chapter   # ubiquitous: once per Chapter, not per Section
+                        # explicitly because proper nouns otherwise require capitals.
   category: cosmology
   sources: [lex-warp]
   full_treatment: I.T1.Ch3
@@ -31,7 +30,6 @@ real-space:
     The material universe, as opposed to the parallel dimension of the Warp. Also
     rendered Materium.
   variants: [Materium, Real Space, Warp Space]
-  mark_scope: chapter   # ubiquitous: once per Chapter, not per Section
   category: cosmology
   sources: [lex-real-space]
   full_treatment: I.T1.Ch3
@@ -41,7 +39,6 @@ soul:
   definition: >
     The existence a living creature of flesh and blood has within the Warp — a
     shadow-self of pure energy, parted from the body at death.
-  mark_scope: chapter   # ubiquitous: once per Chapter, not per Section
   category: cosmology
   sources: [lex-soul]
   full_treatment: I.T2.Ch5
@@ -148,7 +145,6 @@ xenos:
   definition: >
     Imperial term for all non-human sentient species, synonymous with "alien" from
     the human perspective.
-  mark_scope: chapter   # ubiquitous: once per Chapter, not per Section
   category: institutions
   sources: [lex-xenos]
 
@@ -187,7 +183,6 @@ psyker:
     An individual able to draw energy from the Warp through their own soul and
     manifest it as psychic power.
   variants: [psychic, witch]
-  mark_scope: chapter   # ubiquitous: once per Chapter, not per Section
   category: cosmology
   sources: [lex-psyker, lex-psionics]
   full_treatment: I.T2.Ch5
@@ -359,7 +354,6 @@ webway:
     A labyrinth of tunnels built by the Old Ones that lies between the Materium and the
     Warp, part of both and in neither, allowing transit without entering the Warp itself.
   variants: [the Labyrinth Dimension, webway]
-  mark_scope: chapter   # ubiquitous: once per Chapter, not per Section
   category: cosmology
   sources: [lex-webway]
   full_treatment: I.T3.Ch10
@@ -537,7 +531,6 @@ segmentum:
     One of the five great fleet zones into which the Imperium divides its space, each with
     its own navy and a Segmentum Fortress as its base of operations.
   variants: [Segmentae Majoris, segmenta]
-  mark_scope: chapter   # ubiquitous: once per Chapter, not per Section
   category: institutions
   sources: [lex-segmentum]
   full_treatment: II.T1.Ch1
@@ -1142,6 +1135,8 @@ hive:
     A huge urban accretion built up over thousands of years, its peaks called spires and
     its lowest layers the underhive. Over 85% of Imperial planets carry at least one
     hive city cluster.
+  mark: [hive, hives]   # lowercase "hive" is ordinary usage in the prose and in the
+                        # sources, and means exactly the same thing.
   variants: [hive city, hive cluster, city hive]
   category: institutions
   sources: [lex-hive]

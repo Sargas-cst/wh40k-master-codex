@@ -129,9 +129,11 @@ Rules the marker follows:
   anchor, it is what the contents tree links to, and it is where a reader arriving from
   search lands. Resetting per *Chapter* left anyone deep-linked into a later Section with
   no tooltip, the term having been marked screens above in a Section they never saw.
-- **Except for terms marked `mark_scope: chapter`.** A handful are too common for
-  per-Section marking: "the Warp" alone produced forty dotted underlines that way. Those
-  reset once per Chapter. It is a judgement about the term, so it lives on the term.
+- **No exceptions.** `mark_scope: chapter` used to exempt a handful of ubiquitous terms
+  because per-Section marking gave "the Warp" forty dotted underlines. That was the wrong
+  fix: forty underlines is a question about how the mark LOOKS, and it was answered by
+  making the word harder to find. The exemption is gone — every term follows the Section
+  rule, and 28 Sections that carried no tooltip at all now carry one.
 - **`term` and `mark:`, never `variants`.** `variants` are aliases for the glossary page
   and for search. As auto-link triggers they are dangerous — the first run used them and
   produced 36 wrong links, pointing every adjectival "psychic" at *psyker*, every
@@ -139,19 +141,36 @@ Rules the marker follows:
   An entry with a second spelling genuinely worth marking lists it under `mark:`.
 - **Inflections are matched.** The registry holds "Tomb World" while the prose only ever
   writes "Tomb Worlds"; plurals and a leading article are handled.
-- **A form that exists only because an article was stripped off a single capitalised
-  word must be capitalised in the prose too.** "the Conduit" yields the form *conduit*
-  and "the Purging" yields *purging*, both ordinary English words. Matched case-insensitively
-  they put the Astropathic Conduit's definition on "bundles of cables, wires and conduits",
-  and the atomic bombardment of Krieg on "he was purging their souls" — 5 wrong marks.
-  Multi-word forms are exempt: "the Great Crusade" → "Great Crusade" cannot collide with
-  a common noun. An entry that genuinely wants the lowercase form declares it under
-  `mark:`, which always outranks this inference — `warp:` does exactly that, because
-  lowercase "warp routes" is the same referent.
+- **A proper noun matches only where the prose capitalises it.** Matched
+  case-insensitively, "the Conduit" put the Astropathic Conduit's definition on "bundles
+  of cables, wires and conduits"; "the Purging" put the atomic bombardment of Krieg on
+  "he was purging their souls"; and "the Old Ones" put the galaxy's first sentient species
+  on "new islands rising and old ones being subsumed". An earlier version of this rule
+  applied only to SINGLE-word forms, on the reasoning that a multi-word name could not
+  collide with ordinary English. "old ones" collides. The test is what the name IS, not
+  how many words it has. The check looks past a leading article, so "the Awakening" passes
+  and "the awakening of Ynnead" does not.
+- **A lowercase form must be declared to be matched.** `mark:` outranks the rule above,
+  and only a form written in lower case earns the exemption — declaring "the Warp" must
+  not license "the warp". `warp:` and `hive:` both declare theirs, because "warp routes"
+  and "a hive" are the same referent and several quoted source passages write them that
+  way. Changing the quotations instead would misquote.
+- **Subjects are hover vocabulary too.** The glossary holds the words a reader needs;
+  the subject registry holds the proper nouns — the Schola Progenium, corpse-starch,
+  bastion worlds — and someone arriving from a search engine trips over the second kind at
+  least as often as the first. 83 subject glosses were written and reaching nobody. Marked
+  from `name` and `mark:` ONLY: `aliases:` is 507 forms including "vellum", "Adept" and
+  "sector", and marking off it would repeat the variants accident.
+- **A subject that duplicates a glossary term is not marked.** Seven do. Registering both
+  put two underlines on one idea in a single paragraph — "his soul restored to his body…
+  The soul was restored by Ynnead". The glossary entry carries the real definition and
+  wins; the subject keeps its Glossary-page entry, where the canonical home is what it adds.
 - **A hand-written `[[g:]]` wins.** If a Chapter marks a term itself, the marker leaves
   that term alone in that Chapter — which is how you mark a *later* mention on purpose.
-- **The owning Chapter is skipped.** Where `full_treatment` names this Chapter, the
-  surrounding prose *is* the definition and a tooltip repeating it is noise.
+- **The owning Chapter is no longer skipped.** The old rule assumed the reader started
+  at the top of the Chapter that defines a term. Someone arriving from a search lands in
+  the middle, and the rule blanked whole Sections: the Hive Worlds Chapter, 1,033 words on
+  spires and heat sinks, offered no definitions at all because it was the hive Chapter.
 - **Protected regions are never touched:** code, headings, admonition title lines,
   footnote definitions, existing links and attribute blocks, and raw HTML. Admonition
   *bodies* are fair game — they are prose the reader reads.
