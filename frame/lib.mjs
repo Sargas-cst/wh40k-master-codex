@@ -61,7 +61,24 @@ export const CITE_RE = /\[\^([A-Za-z0-9][A-Za-z0-9._-]*)\](?!:)/g;
 
 export function loadYaml(path) {
   const raw = readFileSync(path, 'utf8');
-  return YAML.parse(raw) ?? {};
+  try {
+    return YAML.parse(raw) ?? {};
+  } catch (e) {
+    // A duplicate top-level key is the failure mode of appending an entry to a registry
+    // without checking whether it is already there — which has happened three times while
+    // writing Volume IV. The library's own error is a stack trace with a byte offset;
+    // this says which key, on which line, in which file.
+    if (e?.code === 'DUPLICATE_KEY') {
+      const line = e.linePos?.[0]?.line;
+      const name = line ? (raw.split(/\r?\n/)[line - 1] ?? '').replace(/:\s*$/, '') : '?';
+      throw new Error(
+        `${relative(ROOT, path).split(sep).join('/')}:${line ?? '?'} — "${name}" is defined `
+        + 'twice. An entry was appended that already existed; delete the new block rather '
+        + 'than the original, which other entries may reference.',
+      );
+    }
+    throw e;
+  }
 }
 
 export function loadRegistries() {

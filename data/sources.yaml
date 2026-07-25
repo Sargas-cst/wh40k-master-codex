@@ -2632,3 +2632,199 @@ lex-canoness:
   cites:
     - "Codex: Witch Hunters (3rd Edition)"                        # {{Fn|1a}}{{Fn|1b}}
     - "White Dwarf 379 (US)"                                      # {{Fn|2a}}
+
+lex-space-marines:
+  tier: 2
+  what: Lexicanum article "Space Marines"
+  url: https://wh40k.lexicanum.com/wiki/Space_Marines
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-space-marines.wikitext
+  cites:
+    - "Codex: Space Marines (3rd Edition)"                        # {{Fn|1a}}{{Fn|1b}}
+    - "White Dwarf 98 (UK) - The Origins of the Legiones Astartes" # {{Fn|2}}
+  notes: >
+    "Space Marine" redirects here. Carries an uncited-sources block at the foot.
+
+lex-creation-of-a-space-marine:
+  tier: 2
+  what: Lexicanum article "Creation of a Space Marine"
+  url: https://wh40k.lexicanum.com/wiki/Creation_of_a_Space_Marine
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-creation-of-a-space-marine.wikitext
+  cites:
+    - "White Dwarf 98 (UK)"                                       # {{Fn|1}}
+    - "Warhammer 40,000: Rogue Trader"                            # {{Fn|2}}
+    - "Codex: Space Marines (3rd Edition)"                        # {{Fn|4}}
+  notes: >
+    The phase-by-phase implant list. The article is explicit that the count is uncertain —
+    19 to 22 organs, plus rarely one more.
+
+lex-gene-seed:
+  tier: 2
+  what: Lexicanum article "Gene-seed"
+  url: https://wh40k.lexicanum.com/wiki/Gene-seed
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-gene-seed.wikitext
+  cites:
+    - "Codex: Ultramarines (2nd Edition)"                         # {{Fn|1a}}-{{Fn|1c}}
+  notes: >
+    "Zygote" redirects here.
+lex-space-marine-legion:
+  tier: 2
+  what: Lexicanum article "Space Marine Legion"
+  url: https://wh40k.lexicanum.com/wiki/Space_Marine_Legion
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-space-marine-legion.wikitext
+  cites:
+    - "Codex: Black Templars (4th Edition)"
+
+lex-ultramarines:
+  tier: 2
+  what: Lexicanum article "Ultramarines"
+  url: https://wh40k.lexicanum.com/wiki/Ultramarines
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-ultramarines.wikitext
+  cites:
+    - "Codex: Space Marines (5th Edition)"
+
+lex-imperial-fists:
+  tier: 2
+  what: Lexicanum article "Imperial Fists"
+  url: https://wh40k.lexicanum.com/wiki/Imperial_Fists
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-imperial-fists.wikitext
+  cites:
+    - "Index Astartes II: Imperial Fists"
+
+lex-blood-angels:
+  tier: 2
+  what: Lexicanum article "Blood Angels"
+  url: https://wh40k.lexicanum.com/wiki/Blood_Angels
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-blood-angels.wikitext
+  cites:
+    - "Index Astartes II: Blood Angels"
+    - "Codex: Blood Angels (3rd Edition)"
+
+lex-dark-angels:
+  tier: 2
+  what: Lexicanum article "Dark Angels"
+  url: https://wh40k.lexicanum.com/wiki/Dark_Angels
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-dark-angels.wikitext
+  cites:
+    - "Index Astartes I"
+    - "Codex: Dark Angels (4th Edition)"
+
+lex-space-wolves:
+  tier: 2
+  what: Lexicanum article "Space Wolves"
+  url: https://wh40k.lexicanum.com/wiki/Space_Wolves
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-space-wolves.wikitext
+  cites:
+    - "Codex: Armageddon (3rd Edition)"
+
+lex-white-scars:
+  tier: 2
+  what: Lexicanum article "White Scars"
+  url: https://wh40k.lexicanum.com/wiki/White_Scars
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-white-scars.wikitext
+  cites:
+    - "Warhammer 40,000 Chapter Approved - The Book of the Astronomican"
+
+lex-raven-guard:
+  tier: 2
+  what: Lexicanum article "Raven Guard"
+  url: https://wh40k.lexicanum.com/wiki/Raven_Guard
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-raven-guard.wikitext
+  cites:
+    - "Index Astartes IV - Raven Guard"
+    - "Raven's Flight (Audio Book)"
+
+lex-salamanders:
+  tier: 2
+  what: Lexicanum article "Salamanders"
+  url: https://wh40k.lexicanum.com/wiki/Salamanders
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-salamanders.wikitext
+  cites:
+    - "Index Astartes IV"
+    - "Promethean Warriors"
+
+lex-iron-hands:
+  tier: 2
+  what: Lexicanum article "Iron Hands"
+  url: https://wh40k.lexicanum.com/wiki/Iron_Hands
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-iron-hands.wikitext
+  cites:
+    - "Iron Hands (Novel)"
+
+lex-founding:
+  tier: 2
+  what: Lexicanum article "Founding"
+  url: https://wh40k.lexicanum.com/wiki/Founding
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-founding.wikitext
+  cites:
+    - "White Dwarf 98 (UK), pgs. 12-17"
+    - "White Dwarf 98 (UK), pgs. 12-17"
+    - "Imperial Armour Volume Nine - The Badab War - Part One"
+
+lex-black-templars:
+  tier: 2
+  what: Lexicanum article "Black Templars"
+  url: https://wh40k.lexicanum.com/wiki/Black_Templars
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-black-templars.wikitext
+  cites:
+    - "Codex: Black Templars (4th Edition)"
+    - "Codex: Black Templars (4th Edition)"
+    - "Codex: Black Templars (4th Edition)"
+
+lex-crimson-fists:
+  tier: 2
+  what: Lexicanum article "Crimson Fists"
+  url: https://wh40k.lexicanum.com/wiki/Crimson_Fists
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-crimson-fists.wikitext
+  cites:
+    - "Warhammer 40,000 4th Edition Rulebook"
+    - "Codex: Dark Angels (4th Edition)"
+    - "Codex: Assassins (3rd Edition)"
+
+lex-flesh-tearers:
+  tier: 2
+  what: Lexicanum article "Flesh Tearers"
+  url: https://wh40k.lexicanum.com/wiki/Flesh_Tearers
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-flesh-tearers.wikitext
+  cites:
+    - "Codex: Armageddon (3rd Edition)"
+    - "White Dwarf 251 (UK)"
+    - "Codex: Blood Angels (5th Edition)"
+
+lex-carcharodons:
+  tier: 2
+  what: Lexicanum article "Carcharodons"
+  url: https://wh40k.lexicanum.com/wiki/Carcharodons
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-carcharodons.wikitext
+  cites:
+    - "White Dwarf 101 (UK)"
+    - "Warhammer 40,000: Compendium"
+    - "Imperial Armour Volume Ten - The Badab War - Part Two"
+
+lex-blood-ravens:
+  tier: 2
+  what: Lexicanum article "Blood Ravens"
+  url: https://wh40k.lexicanum.com/wiki/Blood_Ravens
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-blood-ravens.wikitext
+  cites:
+    - "Dawn of War II: Retribution"
+    - "Dawn of War"
+    - "Dawn of War: Dark Crusade"

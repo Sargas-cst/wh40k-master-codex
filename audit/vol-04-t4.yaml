@@ -1,0 +1,93 @@
+title: "Volume IV, Title 4 — Adeptus Astartes (Space Marines)"
+chapters: [IV.T4.Ch12, IV.T4.Ch13, IV.T4.Ch14, IV.T4.Ch15]
+retrieved_this_title:
+  - lex-space-marines
+  - lex-creation-of-a-space-marine
+  - lex-gene-seed
+  - lex-space-marine-legion
+  - lex-ultramarines
+  - lex-imperial-fists
+  - lex-blood-angels
+  - lex-dark-angels
+  - lex-space-wolves
+  - lex-white-scars
+  - lex-raven-guard
+  - lex-salamanders
+  - lex-iron-hands
+already_cached_and_now_cited:
+  - lex-codex-astartes
+  - lex-founding
+  - lex-black-templars
+  - lex-crimson-fists
+  - lex-flesh-tearers
+  - lex-carcharodons
+  - lex-blood-ravens
+redirects_found:
+  - "Space Marine -> Space Marines"
+  - "Zygote -> Gene-seed"
+
+section_counts: { IV.T4.Ch12: 4, IV.T4.Ch13: 4, IV.T4.Ch14: 4, IV.T4.Ch15: 4 }
+
+source_uncertainty_preserved:
+  - >
+    The implant count is not fixed. The article says "19-22 (plus, rarely, 1)", and that
+    each Chapter uses different sets and methods. Ch12 reports the range rather than
+    picking a number, and its Section is titled accordingly.
+  - >
+    Whether a Space Marine can die of old age is unresolved: the sources offer three cases
+    (Dante at 1,100 years, Ludoldus past 2,000, Gravius alive after 10,000 adrift) and then
+    state plainly that there is "not enough sufficient data". Ch12 keeps that.
+  - >
+    Two Foundings are marked "unconfirmed" in the source table — the Imperium is unsure
+    whether it created the Mantis Warriors and the Astral Claws. Reported as such.
+
+contradictions:
+  registered: []
+  note: >
+    None registered. The nine Legion articles are internally consistent and the divergences
+    between Chapters are presented as facts about the Chapters rather than as disputes
+    between sources.
+
+subjects_registered:
+  - space-marine-implants
+  - gene-seed
+  - the-codex-astartes-doctrine
+  - the-loyalist-legions
+  - the-foundings
+
+threads_closed:
+  - >
+    Ch12 establishes that gene-seed is produced only inside living Marines, which explains
+    why Chapters retrieve their dead — and retrospectively explains III.T4.Ch20, where
+    Abaddon's seventh Black Crusade took Blood Angels gene-seed. He was not stealing a
+    sample; he was stealing a Chapter's capacity to replace itself.
+  - >
+    The thousand-Marine cap in Ch13 and the Astartes exclusion from the Senatorum in
+    IV.T1.Ch1 are the same measure by the same man in the same period. Ch13 also records
+    that Guilliman's own M42 reforms loosened much of the Codex and left that number alone.
+  - >
+    Ch14's Blood Angels and Ch15's Flesh Tearers are the same wound at two scales: an
+    inherited flaw that Ch12 says is degrading, concentrated in an isolated successor line.
+  - >
+    Ch15's account of records destroyed during the Reign of Blood explains why Chapters do
+    not know their own Foundings — and connects to IV.T1.Ch2's Administratum, which keeps
+    its records on vellum in departments it has sometimes forgotten it has.
+
+process_errors:
+  - >
+    Appended lex-codex-astartes to data/sources.yaml without checking; it was already
+    registered, and the duplicate key crashed the YAML parser with a stack trace. This was
+    the third such incident in Volume IV, so loadYaml now catches DUPLICATE_KEY and reports
+    the file, line and key name instead. Proved it by reintroducing a duplicate and reading
+    the message, then removing it. Subsequent source registration in this Title checks for
+    an existing entry before appending.
+  - >
+    The possessive check fired twice on Ch14. Both rewritten.
+
+verification:
+  validator: OK
+  warnings: 9
+  strict_build: clean
+  rendered_check: >
+    All four pages read from build/site. 8,005 words, 64 cross-references, 59 tooltips and
+    111 footnote references. No leaked markup, and no Section without a definition.

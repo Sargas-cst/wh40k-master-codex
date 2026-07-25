@@ -293,7 +293,7 @@ death-worlds:
   gloss: >
     The δτ classification, and the worlds the Imperium keeps on its books because their
     survivors make good soldiers — Catachan and Krieg.
-  aliases: [Catachan, Krieg, Death Korps, Deathworld Veterans, Jungle Fighters]
+  aliases: [Catachan, Krieg, Death Korps, Deathworld Veterans, Jungle Fighters, Feral World, Feral Worlds, Civilised World]
   see_also: [bastion-worlds, astartes-homeworlds]
 
 xenos-domains:
@@ -439,7 +439,7 @@ the-primarchs:
     The Emperor's twenty gene-wrought sons, engineered from his own DNA for strength and
     charisma to command the Legions — described by their maker as tools and weapons, scattered
     before maturity, and two of them erased from the record.
-  aliases: [Primarch, Primarchs, Primarch II, Primarch XI, the two lost Legions, Erda, Lorgar, Perturabo, Konrad Curze, Angron, Alpharius, Fulgrim, Mortarion, Sanguinius, Rogal Dorn, Leman Russ]
+  aliases: [Primarch, Primarchs, Primarch II, Primarch XI, the two lost Legions, Erda, Lorgar, Perturabo, Konrad Curze, Angron, Alpharius, Fulgrim, Mortarion, Sanguinius, Rogal Dorn, Leman Russ, Vulkan, Ferrus Manus, Jaghatai Khan, Corvus Corax, Lion El'Jonson]
   see_also: [the-thunder-warriors, the-unification-wars]
 
 the-great-crusade:
@@ -827,3 +827,47 @@ adepta-sororitas:
     place — a loophole the sources call blatantly disregarding the decree's spirit.
   aliases: [Sisters of Battle, the Sisterhood, Daughters of the Emperor, Brides of the Emperor, Orders Militant, Orders Hospitaller, Orders Dialogus, Orders Famulous, Canoness, Alicia Dominica, San Leor, Ophelia VII, Convent Prioris, Convent Sanctorum, Rosarius]
   see_also: [the-ecclesiarchy, wars-of-faith, frateris-militia]
+
+space-marine-implants:
+  name: the Space Marine implants
+  gloss: >
+    Nineteen to twenty-two organs, implanted from about age ten, that convert a hive-gang
+    recruit into an Astartes — including one that lets him learn by eating and one that
+    can hold him in suspended animation for millennia.
+  aliases: [Secondary Heart, Black Carapace, Omophagea, Sus-an Membrane, Catalepsean Node, Preomnor, Multi-lung, Oolitic Kidney, Occulobe, Neuroglottis, Melanchromic Organ, Ossmodula, Biscopea, Larraman's Organ, Betcher's Gland, Sinew Coils, Magnificat, Belisarian Furnace, neophyte]
+  see_also: [gene-seed]
+
+gene-seed:
+  name: gene-seed
+  gloss: >
+    The genetic material from which a Chapter grows its implants, produced only inside the
+    progenoid glands of living Marines — which is why the Astartes retrieve their dead.
+  aliases: [progenoid, progenoid gland, zygote, Firstborn]
+  see_also: [space-marine-implants]
+
+the-codex-astartes-doctrine:
+  name: the Codex Astartes
+  gloss: >
+    Guilliman's post-Heresy treatise, written to ensure no Astartes force could threaten
+    the Imperium again: ten companies of a hundred, a Chapter Master, and a ceiling of one
+    thousand that his own reforms in M42 left untouched.
+  aliases: [Codex Chapters, Apocrypha of Skaros, Chapter Master, Battle Company, Veteran Company, Terminator Armour, Apothecarion, Reclusiam, Librarius, Armoury, Chapter Fleet, Master of the Watch, Master of the Fleet, Master of the Marches, Intercessor, Battleline Squad]
+  see_also: [space-marine-implants, the-codex-astartes]
+
+the-loyalist-legions:
+  name: the nine loyalist Legions
+  gloss: >
+    The First Founding Legions still loyal when the Heresy ended — Dark Angels, White
+    Scars, Space Wolves, Imperial Fists, Blood Angels, Iron Hands, Ultramarines,
+    Salamanders and Raven Guard — broken into thousand-Marine Chapters by the Codex.
+  aliases: [Legiones Astartes, Space Marine Legion, First Founding, Ultramarines, Imperial Fists, Blood Angels, Dark Angels, Space Wolves, White Scars, Raven Guard, Salamanders, Iron Hands, Deathwing, Unforgiven, the Fallen, Vlka Fenryka, Wulfenkind, Black Rage, Marneus Calgar, Logan Grimnar, Azrael, Dante, Tu'Shan, Kardan Stronos, Jubal Khan, Allfather]
+  see_also: [the-codex-astartes-doctrine, gene-seed, the-primarchs]
+
+the-foundings:
+  name: the Foundings
+  gloss: >
+    The occasions on which new Chapters are created, aiming at a thousand at a time —
+    including the Dark Founding, whose gene-seed Terra does not hold, and the Cursed 21st,
+    whose Chapters fell to mutation, heresy and rebellion.
+  aliases: [Founding, Second Founding, Dark Founding, Cursed Founding, Sentinel Founding, Progenitor, Black Templars, Crimson Fists, Flesh Tearers, Carcharodons, Space Sharks, Blood Ravens, Sigismund, Pedro Kantor, Rynn's World, Arx Tyrannus, Sons of Medusa, Founding Chapter, Grey Knights]
+  see_also: [the-loyalist-legions, gene-seed, the-codex-astartes-doctrine]

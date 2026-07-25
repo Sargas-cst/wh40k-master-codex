@@ -473,6 +473,15 @@
       "sha256": "8809a051cdb8fed30ce384ba4db9816748e4664ca2970f6925178ad976af09dd",
       "file": "sources/raw/lex-chaos.wikitext"
     },
+    "lex-chapter": {
+      "title": "Chapter",
+      "url": "https://wh40k.lexicanum.com/wiki/Chapter",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 26563,
+      "sha256": "71e1570d10ee344ea8a650cf0186d99e451e2ec54c392c622342ec49fb260ec7",
+      "file": "sources/raw/lex-chapter.wikitext"
+    },
     "lex-charadon": {
       "title": "Charadon",
       "url": "https://wh40k.lexicanum.com/wiki/Charadon",
@@ -554,6 +563,15 @@
       "bytes": 13274,
       "sha256": "4b5b41d27679095586a27ecf1c26fcea1abe34451dd85b008bd7da6aaf21f4f4",
       "file": "sources/raw/lex-craftworld.wikitext"
+    },
+    "lex-creation-of-a-space-marine": {
+      "title": "Creation of a Space Marine",
+      "url": "https://wh40k.lexicanum.com/wiki/Creation_of_a_Space_Marine",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 33391,
+      "sha256": "20df76bf897ecc5cae8a5fbeb07413c426efea355138c02efb46e1b91685503c",
+      "file": "sources/raw/lex-creation-of-a-space-marine.wikitext"
     },
     "lex-crimson-fists": {
       "title": "Crimson Fists",
@@ -865,6 +883,15 @@
       "bytes": 3141,
       "sha256": "3ffb44f9070b31dce3840a1884832ee9bf7dcf533973560ff20885cebad9e38a",
       "file": "sources/raw/lex-gellar-field.wikitext"
+    },
+    "lex-gene-seed": {
+      "title": "Gene-seed",
+      "url": "https://wh40k.lexicanum.com/wiki/Gene-seed",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 16474,
+      "sha256": "0beb964168c82b3441589ef8656b37bc7fc4526e659dc3e66c5e6a89a87d26c4",
+      "file": "sources/raw/lex-gene-seed.wikitext"
     },
     "lex-ghoul-stars": {
       "title": "Ghoul Stars",
@@ -1790,6 +1817,16 @@
       "file": "sources/raw/lex-progena.wikitext",
       "redirect_to": "Schola Progenium#Progena"
     },
+    "lex-progenoid-gland": {
+      "title": "Progenoid gland",
+      "url": "https://wh40k.lexicanum.com/wiki/Progenoid_gland",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 50,
+      "sha256": "d432fe833e17edd627eded5694c35fc10af488f308cf0e77fd550de7cee655e7",
+      "file": "sources/raw/lex-progenoid-gland.wikitext",
+      "redirect_to": "Creation of a Space Marine#Progenoids"
+    },
     "lex-psionics": {
       "title": "Psionics",
       "url": "https://wh40k.lexicanum.com/wiki/Psionics",
@@ -2187,6 +2224,34 @@
       "bytes": 3115,
       "sha256": "5b5e3f9bdc6dbab197ae42f6cd4a837afcbfb3529196e5ce12e0d7969d4257b6",
       "file": "sources/raw/lex-soul-binding.wikitext"
+    },
+    "lex-space-marine": {
+      "title": "Space Marine",
+      "url": "https://wh40k.lexicanum.com/wiki/Space_Marine",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 27,
+      "sha256": "d52f2092d19b50ae19b2941065e88f14d33cdd1c972967a31e77f64a54129f6b",
+      "file": "sources/raw/lex-space-marine.wikitext",
+      "redirect_to": "Space Marines"
+    },
+    "lex-space-marine-legion": {
+      "title": "Space Marine Legion",
+      "url": "https://wh40k.lexicanum.com/wiki/Space_Marine_Legion",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 29349,
+      "sha256": "73ffed8c21a4186a93b3bd3381b21cab6597fac3666b434339b7ea3857763c08",
+      "file": "sources/raw/lex-space-marine-legion.wikitext"
+    },
+    "lex-space-marines": {
+      "title": "Space Marines",
+      "url": "https://wh40k.lexicanum.com/wiki/Space_Marines",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 47243,
+      "sha256": "a5d41582fd2888cc1d703d5bfce8212a1c0ffee173ae22a1bb098754b038c398",
+      "file": "sources/raw/lex-space-marines.wikitext"
     },
     "lex-space-wolves": {
       "title": "Space Wolves",
@@ -2700,6 +2765,16 @@
       "bytes": 10180,
       "sha256": "d9fef8a79cc9fec0e17c78b677c4ad6174a2492dcaa51b71eab29948c3d11a53",
       "file": "sources/raw/lex-ynnead.wikitext"
+    },
+    "lex-zygote": {
+      "title": "Zygote",
+      "url": "https://wh40k.lexicanum.com/wiki/Zygote",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 23,
+      "sha256": "eaa5e41009017838bfa732f2698859eb304ea4f74e385a37a0033b0804d7c1fe",
+      "file": "sources/raw/lex-zygote.wikitext",
+      "redirect_to": "Gene-seed"
     }
   }
 }
