@@ -1,0 +1,107 @@
+# Audit trail — Volume III, Title 5
+title: "Volume III Title 5 — Era Indomitus & Modern Timeline"
+covers: Chapters 22-26
+depth_band: full
+completed_on: 2026-07-25
+
+retrieval:
+  pages_added_this_pass:
+    - 13th_Black_Crusade
+    - Indomitus_Crusade
+    - Primaris_Space_Marines
+    - Pariah_Nexus
+    - Leviathan
+    - Ynnead
+    - Roboute_Guilliman
+  already_cached_and_reused: [Great_Rift, Noctis_Aeterna, Commorragh, Necron]
+  corrections_during_retrieval:
+    - '"Fall of Cadia" and "Fourth Tyrannic War" both resolved to section anchors, not articles.'
+    - '"Primaris Space Marine" resolved to a redirect (plural).'
+    - >
+      "Leviathan_" with the trailing underscore the wiki uses in its own links was NOT FOUND, and
+      neither was "Leviathan_(Hive_Fleet)". The plain title works. Two failed guesses are recorded
+      here rather than hidden — guessing parenthesised titles is a bad habit the retriever exposes.
+
+chapters:
+  - id: III.T5.Ch22
+    owns: [thirteenth-black-crusade]
+    sections: 5
+  - id: III.T5.Ch23
+    owns: [opening-of-the-great-rift]
+    sections: 3
+  - id: III.T5.Ch24
+    owns: [guillimans-return, the-primaris]
+    sections: 4
+  - id: III.T5.Ch25
+    owns: [indomitus-crusade]
+    sections: 5
+  - id: III.T5.Ch26
+    owns: [pariah-nexus, fourth-tyrannic-war]
+    sections: 4
+
+section_count_note:
+  id: III.T5.Ch23
+  sections: 3
+  why: >
+    Deliberately short. The Rift's competing origin theories are I.T1.Ch4's and its geography is
+    II.T1.Ch2's; both were written before this Chapter and own that material under the
+    canonical-home rule. What is left is the event itself, and padding it to five Sections would
+    mean restating two other Chapters.
+
+findings:
+  - >
+    Cadia's shield was held, at the decisive moment, by a Necron. The article's own verdict is
+    that Cadia was saved "not through the bravery of the Space Wolves nor through the labours of
+    the Adeptus Mechanicus, but through the intercession of one curious Necron" — and the
+    Tech-Priest who noticed the xenos-tech in the null-array chose not to report it.
+  - >
+    Cadia's evacuation plan dated from the 2nd Black Crusade, 597.M32 — over eight thousand years
+    old, and "often completely outdated, confused, and just not feasible". The Inquisition had also
+    secretly drafted Extremis Protocols forbidding evacuation because the defenders were too
+    Chaos-exposed. Creed disobeyed; an Inquisitor obstructing the evacuation was shot by Cadians.
+  - >
+    Guilliman's resurrection was performed with Mechanicum engineering, a route provided by
+    Harlequins, and his soul restored by the Aeldari god Ynnead. Not one element is lawful under
+    the doctrine the Imperium was founded on.
+  - >
+    The Primaris were built from STC technologies — which the Mechanicus's own prohibition
+    forbids — and genetic data on all twenty Primarchs, two of whom the Emperor ordered erased.
+  - >
+    The Indomitus Crusade was manned by stripping garrisons from Imperium Sanctus systems already
+    judged untenable. Soldiers mutinied rather than abandon their posts and were overruled. The
+    Fourth Tyrannic War then entered a Segmentum whose defenders had been withdrawn.
+  - >
+    Abaddon spent ten thousand years destroying pylons to thin the barrier; the Necrons are now
+    manufacturing and seeding them at industrial scale to thicken it, under Szeras — the same
+    Cryptek who ran the biotransference furnaces in III.T1.Ch2.
+
+judgement_calls:
+  - what: Whether the Indomitus Crusade was Guilliman's decision
+    decision: recorded as unresolved
+    why: >
+      He declared it immediately on leaving the Emperor's Throneroom, "leaving some to speculate it
+      was the Emperor's will as opposed to his own". Given that III.T3.Ch16 cannot establish whether
+      the Emperor spoke even at the Siege, the codex states the doubt and does not settle it.
+  - what: Mathieu's claim that the Rift is empowering the Emperor
+    decision: attributed, weighed, not answered
+    why: >
+      It is one named figure's belief, set against the documented fact that the Throne runs at 20%
+      with a few centuries left. The codex presents it as the open question the setting rests on.
+
+tooling_defects_found_this_pass:
+  - >
+    The coverage check did not fold plurals when comparing against the registries, so the
+    registered alias "Void Harbour" failed to match the candidate "Void Harbours". Fixed by
+    comparing singular forms on both sides.
+  - >
+    Two adjacent bold spans on one line ("…wounded.** Fulgrim **had been…") caused the candidate
+    extractor to capture the text BETWEEN them, producing phantom terms like "At the". Candidates
+    ending in a connective are now rejected. The prose itself renders correctly — verified in the
+    built HTML.
+
+left_out:
+  - The Ynnead article, retrieved but belonging to VI.T2.Ch9.
+  - The 13th Black Crusade's secondary invasions and full order of battle.
+  - The Indomitus Crusade's fleet rosters and notable-battle list, which are Volume VII's.
+  - Leviathan's first three Tyrannic Wars, which are VI.T4.Ch14's.
+  - The Arks of Omen Campaign and Vashtorr, which are VII.T4.Ch15's.

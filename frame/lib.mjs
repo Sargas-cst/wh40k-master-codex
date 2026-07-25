@@ -364,6 +364,9 @@ export function namedTermCandidates(body) {
     if (words.length === 1 && /ly$/i.test(term)) continue;
     if (words.length > 4) continue;              // a clause, not a term
     if (!words.every((w, i) => /^[A-Z]/.test(w) || (i > 0 && CONNECTIVE.has(w.toLowerCase())))) continue;
+    // A name never ends in a connective. "At the" is not a term — it is the text BETWEEN two
+    // adjacent bold spans on one line, which the capture above cannot distinguish from a phrase.
+    if (CONNECTIVE.has(words[words.length - 1].toLowerCase())) continue;
     out.add(term);
   }
   return out;

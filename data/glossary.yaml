@@ -1071,3 +1071,30 @@ nurgle:
   variants: [Nurg-leth]
   category: cosmology
   sources: [lex-davin]
+
+# --- Volume III Titles 4-5 -------------------------------------------------
+
+legio-cybernetica:
+  term: Legio Cybernetica
+  definition: >
+    A Mechanicum formation of battle-automata that fought throughout the Great Crusade and the
+    Indomitus Crusade alike — an institution whose name announces exactly what the Imperium's ban
+    on artificial intelligence was supposed to forbid.
+  category: institutions
+  sources: [lex-great-crusade, lex-indomitus-crusade]
+
+skitarii:
+  term: Skitarii
+  definition: >
+    The Adeptus Mechanicus's soldiery, ranking above the unaugmented menials and below the
+    Tech-Priests. Joining them is how a Martian citizen receives their first bionics.
+  category: institutions
+  sources: [lex-mars]
+
+officio-assassinorum:
+  term: the Officio Assassinorum
+  definition: >
+    The Imperium's institution of sanctioned murder, based on Terra with its temples' locations
+    kept secret. It failed to kill the Voice of the Emperor during the Age of Apostasy.
+  category: institutions
+  sources: [lex-terra, lex-age-of-apostasy]

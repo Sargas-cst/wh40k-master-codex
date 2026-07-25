@@ -267,9 +267,13 @@ lex-great-rift:
   retrieved: 2026-07-25
   raw: sources/raw/lex-great-rift.wikitext
   cites:
-    - "Warhammer Community: 'New Warhammer 40,000: The Great Rift' (2017-05-04, archived)"  # {{Fn|1}} TIER 1
-    - "Warhammer 40,000 8th Edition Rulebook, pg. 50"           # {{Fn|4a}}
-    - "Avenging Son (Novel), Chapter 26"                        # {{Fn|7}}
+    - "Warhammer Community: 'New Warhammer 40,000: The Great Rift' (2017-05-04, archived)"  # {{Fn|1}} TIER 1 — the five competing theories
+    - "Warhammer 40,000 8th Edition Rulebook, pg. 50"           # {{Fn|4a}} — the division of the Imperium
+    - "Avenging Son (Novel), Chapter 26"                        # {{Fn|7}} — Guilliman's blackstone explanation
+    - "Warhammer 40,000: New Heroes for a Dark Imperium (video)" # {{Fn|2}} — the Indomitus Crusade launched in response
+    - "Codex: Tau Empire (8th Edition), pg. 22"                 # {{Fn|5}} — Mont'yhe'va, the Devourer of Hope
+    - "The Ashes of Prospero (Novel), Chapter 2"                # {{Fn|6}} — Everdusk
+    - "Dark Imperium: Godblight (Novel)"                        # {{Fn|8}} — Mathieu on the Rift empowering the Emperor
   notes: >
     "Cicatrix Maledictum" redirects here. Citation 1 is an official GW web article, so the
     core description rests on tier 1 rather than tier 2 — unusually well founded for
@@ -2013,3 +2017,112 @@ lex-behemoth:
   notes: >
     Reached after "Hive Fleet Behemoth" resolved to a redirect. The article flags its own date
     discrepancy for the Battle for Macragge; recorded as macragge-battle-date.
+
+lex-13th-black-crusade:
+  tier: 2
+  what: Lexicanum article "13th Black Crusade"
+  url: https://wh40k.lexicanum.com/wiki/13th_Black_Crusade
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-13th-black-crusade.wikitext
+  cites:
+    - "Codex: Eye of Terror (3rd Edition), pg. 9"        # {{Fn|1a}} — the space hulks, the Plague Fleet, the Plague of Unbelief
+    - "Codex: Eye of Terror (3rd Edition), pgs. 11-12"   # {{Fn|1b}} — the pylons erupting; Tyrok Fields; Creed taking command
+    - "Codex: Eye of Terror (3rd Edition), pg. 13"       # {{Fn|1c}} — the Agripinaa interventions
+    - "White Dwarf 286 (UK), pgs. 69-70"                 # {{Fn|2a}} — Lucius, the Night Lords, the Alpha Legion delaying reinforcements
+    - "Fall of Cadia (Novel), Phase 1, Chapters 1-3"     # {{Fn|27a}} — the false lull; Quarren annihilated in 77 minutes
+    - "Fall of Cadia (Novel), Phase 2, Chapters 6-8"     # {{Fn|27b}} — Creed's fractured council; the boarding action; Urkrathos's objective
+    - "Fall of Cadia (Novel), Phase 5, Chapters 3-5"     # {{Fn|27e}} — Celestine and Urkrathos; Jarran Kell
+    - "Fall of Cadia (Novel), Phase 6, Chapters 1-2"     # {{Fn|27f}} — the Extremis Protocols; Cawl's plan; the virus-bomb recommendation
+    - "Fall of Cadia (Novel), Phase 7, Chapter 1"        # {{Fn|27i}} — Creed defying the Protocols; Daverna shot
+    - "Gathering Storm: Fall of Cadia"                   # {{Fn|16a}}, {{Fn|16c}} — Trazyn and Cawl converging; the withdrawal as Cadia is dragged into the Warp
+    - "Battlefleet Gothic: Armada II"                    # {{Fn|31}} — Trazyn powering the null-array; Klarn's silence
+  notes: >
+    50 KB. Its most quotable line is its own verdict rather than a source's: that Cadia was saved
+    "not through the bravery of the Space Wolves nor through the labours of the Adeptus Mechanicus,
+    but through the intercession of one curious Necron". The eight-thousand-year-old evacuation
+    plan and the Inquisition's Extremis Protocols are both the article's, not this codex's
+    inference.
+
+lex-roboute-guilliman:
+  tier: 2
+  what: Lexicanum article "Roboute Guilliman"
+  url: https://wh40k.lexicanum.com/wiki/Roboute_Guilliman
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-roboute-guilliman.wikitext
+  cites:
+    - "Gathering Storm: Rise of the Primarch, Part 1"    # {{Fn|17}} — the two instructions to Cawl; the resurrection at Macragge
+    - "Nightbringer (Novel), Chapter Two, pg. 49"        # {{Fn|6}} — ten thousand years in stasis; the pilgrims' dispute
+  notes: >
+    54.7 KB; used here only for the resurrection. Guilliman as a figure is Volume VIII Title 2's
+    subject and Ultramar is II.T2.Ch6's. The pilgrims' dispute is worth noting for its shape: the
+    sceptics' objection is technical — nothing can change inside a stasis field — and they were
+    right about the mechanism while being wrong about the outcome.
+
+lex-primaris-space-marines:
+  tier: 2
+  what: Lexicanum article "Primaris Space Marines"
+  url: https://wh40k.lexicanum.com/wiki/Primaris_Space_Marines
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-primaris-space-marines.wikitext
+  cites:
+    - "Warhammer 40,000 8th Edition Rulebook, pg. 59"    # {{Fn|5}} — the Sangprimus Portum; data on all twenty Primarchs
+    - "Dark Imperium (Novel), Chapter Six"               # {{Fn|3a}} — ten thousand years; tens of thousands held in stasis
+    - "Dark Imperium (Novel), Chapter Twelve"            # {{Fn|3c}} — larger, stronger, more stable gene-seed
+    - "Codex: Space Marines (8th Edition, 2nd Codex), pg. 81"  # {{Fn|8c}} — unique STC technologies used
+    - "Spear of the Emperor (Novel), Chapter 5"          # {{Fn|9}} — "Firstborn"
+    - "Warhammer Community: A New Breed of Hero"         # {{Fn|1}} — Guilliman's quotation
+  notes: >
+    Reached after "Primaris Space Marine" resolved to a redirect. The programme's inputs are the
+    striking part: STC technologies, which the Mechanicus's own prohibition forbids, and genetic
+    data on all twenty Primarchs, two of whom the Emperor ordered erased.
+
+lex-indomitus-crusade:
+  tier: 2
+  what: Lexicanum article "Indomitus Crusade"
+  url: https://wh40k.lexicanum.com/wiki/Indomitus_Crusade
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-indomitus-crusade.wikitext
+  cites:
+    - "White Dwarf July 2019 - Indomitus Crusade Fleets"   # {{Fn|7}} — the Throneroom meeting; the muster worlds; the mutinies
+    - "Codex: Space Marines (8th Edition), pgs. 20-21"      # {{Fn|5}} — short warp jumps; new Chapters founding new homeworlds
+    - "Codex Supplement: Ultramarines (8th Edition), pg. 34"  # {{Fn|6}} — echoing the Great Crusade
+    - "Warhammer Community: New Heroes for a Dark Imperium" # {{Fn|1}} — Guilliman declaring himself Lord Commander
+    - "Warhammer Community: The Great Rift (2017)"          # {{Fn|2}} — the aim of reconquest
+    - "Warhammer 40,000 8th Edition Rulebook, pgs. 52-53"   # {{Fn|29}} — Baal; Dante appointed Regent
+    - "Warhammer Preview interview with Guy Haley (2020)"   # {{Fn|18}} — roughly twelve years
+    - "Arks of Omen: Angron, pgs. 44-47"                    # {{Fn|24}} — Fleet Quartus corrupted or destroyed
+    - "White Dwarf November 2019, pg. 47"                   # {{Fn|9}} — Ganymede cleansed into a Hub-Fortress
+  notes: >
+    25.5 KB. Two details carry the Chapter: that the Crusade was declared immediately after
+    Guilliman left the Emperor's Throneroom, leaving open whether it was his own decision; and that
+    it was manned by stripping garrisons from Sanctus systems already written off, which caused
+    mutinies the article records without condemning.
+
+lex-pariah-nexus:
+  tier: 2
+  what: Lexicanum article "Pariah Nexus"
+  url: https://wh40k.lexicanum.com/wiki/Pariah_Nexus
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-pariah-nexus.wikitext
+  cites:
+    - "Psychic Awakening: Pariah, pgs. 5-6"      # {{Fn|1}} — the array, Szeras, the Xendu cage, the pylons' purpose
+    - "Crusade: Beyond the Veil, pgs. 5-7"       # {{Fn|2}} — the Stilling
+    - "Crusade: Pariah Nexus, pgs. 40-43"        # {{Fn|3}} — the three-way war; the Necron civil war; Vashtorr's arrival
+  notes: >
+    3.3 KB for what the article calls the pinnacle of Necron cosmic engineering. The Necrons' own
+    name for it, Contra-Empyric Nexus, is more informative than any Imperial one: the Imperium named
+    it after the Pariah Gene by analogy, having no other frame for a region the Warp cannot reach.
+
+lex-leviathan:
+  tier: 2
+  what: Lexicanum article "Leviathan"
+  url: https://wh40k.lexicanum.com/wiki/Leviathan
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-leviathan.wikitext
+  cites:
+    - "Leviathan (Box) Rulebook, pgs. 222-230"   # {{Fn|24a}} — Nautilon and Promethor; the discovery; the inconsistent response
+    - "Warhammer Community: A Brief and Bloody History of the Tyrannic Wars (2023)"  # {{Fn|21}} — the Fourth War's opening
+  notes: >
+    36 KB. Reached only after "Fourth Tyrannic War" resolved to a section anchor and two guessed
+    titles failed; the plain title works. Used here for the Fourth Tyrannic War only — Leviathan's
+    earlier campaigns are Volume VI Title 4's.

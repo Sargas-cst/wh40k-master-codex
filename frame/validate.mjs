@@ -490,22 +490,30 @@ let undefinedTerms = [];
   // candidates are. Without that, the subject "the Silent King" failed to match the
   // candidate "Silent King" and the check reported two of its own registered subjects
   // as undefined.
+  // Compare on the article-stripped form AND on the singular, because the candidates are
+  // article-stripped and the prose pluralises freely. Without the singular fold, the
+  // registered alias "Void Harbour" failed to match the candidate "Void Harbours".
   const bare = (s) => String(s).toLowerCase().replace(/^(?:the|a|an)\s+/, '').trim();
-  const byForm = glossaryForms(glossary, { variants: true });
+  const singular = (s) => s.replace(/(?:ies)$/, 'y').replace(/(?:es|s)$/, '');
   const known = new Set();
-  for (const form of byForm.keys()) { known.add(form); known.add(bare(form)); }
-  for (const entry of Object.values(subjects))
-    for (const n of [entry?.name, ...(entry?.aliases ?? [])].filter(Boolean)) {
-      known.add(String(n).toLowerCase());
-      known.add(bare(n));
+  const remember = (s) => {
+    for (const form of [String(s).toLowerCase(), bare(s)]) {
+      known.add(form);
+      known.add(singular(form));
     }
+  };
+  const byForm = glossaryForms(glossary, { variants: true });
+  for (const form of byForm.keys()) remember(form);
+  for (const entry of Object.values(subjects))
+    for (const n of [entry?.name, ...(entry?.aliases ?? [])].filter(Boolean)) remember(n);
 
   const drafted = [...chapters.values()].filter((c) => c.front.status !== 'stub');
   const candidates = new Map(); // normalised -> display
   for (const ch of drafted) {
     for (const term of namedTermCandidates(ch.body)) {
       const norm = term.toLowerCase();
-      if (known.has(norm) || waived.has(norm) || candidates.has(norm)) continue;
+      if (known.has(norm) || known.has(singular(norm))) continue;
+      if (waived.has(norm) || candidates.has(norm)) continue;
       candidates.set(norm, term);
     }
   }

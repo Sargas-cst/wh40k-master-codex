@@ -1,5 +1,14 @@
 {
   "retrievals": {
+    "lex-13th-black-crusade": {
+      "title": "13th Black Crusade",
+      "url": "https://wh40k.lexicanum.com/wiki/13th_Black_Crusade",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 49942,
+      "sha256": "9fe928167001a44df443053fdd1d9f0b66f8430dccb5ae8ae96b733d306d95b9",
+      "file": "sources/raw/lex-13th-black-crusade.wikitext"
+    },
     "lex-abaddon-the-despoiler": {
       "title": "Abaddon the Despoiler",
       "url": "https://wh40k.lexicanum.com/wiki/Abaddon_the_Despoiler",
@@ -611,6 +620,16 @@
       "sha256": "89b3814ad0827a3379d8e2191699569a811164b3878c097e0c258b50d3e1bfa3",
       "file": "sources/raw/lex-ezekyle-abaddon.wikitext"
     },
+    "lex-fall-of-cadia": {
+      "title": "Fall of Cadia",
+      "url": "https://wh40k.lexicanum.com/wiki/Fall_of_Cadia",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 45,
+      "sha256": "9fedb295783b1cbd57babc937ed6aea467c0da169e04745951d3aa8804885ce6",
+      "file": "sources/raw/lex-fall-of-cadia.wikitext",
+      "redirect_to": "13th Black Crusade#Fall of Cadia"
+    },
     "lex-fenris": {
       "title": "Fenris",
       "url": "https://wh40k.lexicanum.com/wiki/Fenris",
@@ -655,6 +674,16 @@
       "bytes": 45149,
       "sha256": "83b2c49f9961c053322ae212f0bf60df6caa1d47531060eb6bbd4d60b87cc1a2",
       "file": "sources/raw/lex-founding.wikitext"
+    },
+    "lex-fourth-tyrannic-war": {
+      "title": "Fourth Tyrannic War",
+      "url": "https://wh40k.lexicanum.com/wiki/Fourth_Tyrannic_War",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 44,
+      "sha256": "c29a851782a919c249b250e006b66a84b2e0c364d482cfe1fc2f2936ff79bbf0",
+      "file": "sources/raw/lex-fourth-tyrannic-war.wikitext",
+      "redirect_to": "Leviathan_#Fourth Tyrannic War"
     },
     "lex-gellar-field": {
       "title": "Gellar field",
@@ -922,6 +951,15 @@
       "sha256": "cecdd2a736962d76983e7eb322bfa44e673da4ef4868b29fa59df0d00dfb8595",
       "file": "sources/raw/lex-imperium-sanctus.wikitext"
     },
+    "lex-indomitus-crusade": {
+      "title": "Indomitus Crusade",
+      "url": "https://wh40k.lexicanum.com/wiki/Indomitus_Crusade",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 25547,
+      "sha256": "52eb1dbb0fa6bfd03b78aedd7961070f4e86aa6d5af66bf80039d19797f91f05",
+      "file": "sources/raw/lex-indomitus-crusade.wikitext"
+    },
     "lex-inertialess-drive": {
       "title": "Inertialess Drive",
       "url": "https://wh40k.lexicanum.com/wiki/Inertialess_Drive",
@@ -1039,6 +1077,15 @@
       "bytes": 11503,
       "sha256": "e539cd3c60bd5819850b978fd77ccd7dc5c4cce95b4b8f507985dab66a026eab",
       "file": "sources/raw/lex-league-of-black-ships.wikitext"
+    },
+    "lex-leviathan": {
+      "title": "Leviathan",
+      "url": "https://wh40k.lexicanum.com/wiki/Leviathan",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 35950,
+      "sha256": "9df59899485a32de280dd821ddcb09615384c53950c99e0ec9358d94a28aa901",
+      "file": "sources/raw/lex-leviathan.wikitext"
     },
     "lex-low-gothic": {
       "title": "Low Gothic",
@@ -1309,6 +1356,15 @@
       "sha256": "0f4c32760845f5b9e33009cc19c90b9ba09a01eaf6f6e98d3e88ca2f6aa7f50f",
       "file": "sources/raw/lex-pariah-disambiguation.wikitext"
     },
+    "lex-pariah-nexus": {
+      "title": "Pariah Nexus",
+      "url": "https://wh40k.lexicanum.com/wiki/Pariah_Nexus",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 3276,
+      "sha256": "bdbb9180c126fbc5b060e9c81af7ba396ed8443297d778518d7daf1e6eb14824",
+      "file": "sources/raw/lex-pariah-nexus.wikitext"
+    },
     "lex-perils-of-the-warp": {
       "title": "Perils of the Warp",
       "url": "https://wh40k.lexicanum.com/wiki/Perils_of_the_Warp",
@@ -1327,6 +1383,25 @@
       "bytes": 24650,
       "sha256": "a99257d3cbb900146bf3a866cbf72e75f75522f35025f4342bdb2c1f4b5e3008",
       "file": "sources/raw/lex-primarch.wikitext"
+    },
+    "lex-primaris-space-marine": {
+      "title": "Primaris Space Marine",
+      "url": "https://wh40k.lexicanum.com/wiki/Primaris_Space_Marine",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 36,
+      "sha256": "cabb320a3c28c9d194e892b0940208008355ec0801508dc6d00e70b235ec0056",
+      "file": "sources/raw/lex-primaris-space-marine.wikitext",
+      "redirect_to": "Primaris Space Marines"
+    },
+    "lex-primaris-space-marines": {
+      "title": "Primaris Space Marines",
+      "url": "https://wh40k.lexicanum.com/wiki/Primaris_Space_Marines",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 15287,
+      "sha256": "38a822bb7d37490a7ee1989c9452c95971d0d90175f0876323660773acde4f9c",
+      "file": "sources/raw/lex-primaris-space-marines.wikitext"
     },
     "lex-psionics": {
       "title": "Psionics",
@@ -1420,6 +1495,15 @@
       "bytes": 512,
       "sha256": "d3c5d792f9d56ddf4e3c5e14445e3df91d5aa9158e4d1467f2e9609dafe73e2b",
       "file": "sources/raw/lex-real-space.wikitext"
+    },
+    "lex-roboute-guilliman": {
+      "title": "Roboute Guilliman",
+      "url": "https://wh40k.lexicanum.com/wiki/Roboute_Guilliman",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 54738,
+      "sha256": "5018bc0e483aceac58d0451b6760168dd12a0b288f71870b6cfb7a990fb84c53",
+      "file": "sources/raw/lex-roboute-guilliman.wikitext"
     },
     "lex-salamanders": {
       "title": "Salamanders",
@@ -2025,6 +2109,15 @@
       "sha256": "45d894bb08cec33cc49a4070c273124f6a483b41973a7682bda3e057c6c39fc0",
       "file": "sources/raw/lex-yngir.wikitext",
       "redirect_to": "C'tan"
+    },
+    "lex-ynnead": {
+      "title": "Ynnead",
+      "url": "https://wh40k.lexicanum.com/wiki/Ynnead",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 10180,
+      "sha256": "d9fef8a79cc9fec0e17c78b677c4ad6174a2492dcaa51b71eab29948c3d11a53",
+      "file": "sources/raw/lex-ynnead.wikitext"
     }
   }
 }

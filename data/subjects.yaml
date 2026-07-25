@@ -237,7 +237,7 @@ the-sundered-imperium:
   gloss: >
     The Great Rift as a feature of the map: the two halves it created, and what being on the
     dark side of it means.
-  aliases: [Imperium Sanctus, Imperium Nihilus, the Dark Imperium, Noctis Aeterna, Cicatrix Maledictum]
+  aliases: [Imperium Sanctus, Imperium Nihilus, the Dark Imperium, Noctis Aeterna, Cicatrix Maledictum, Nachmund Gauntlet, Sanctus Wall]
   see_also: [imperial-astrography, regions-of-ruin]
 
 regions-of-ruin:
@@ -269,7 +269,7 @@ ultramar:
   gloss: >
     The Five Hundred Worlds — the Ultramarines' quasi-autonomous realm on the Eastern Fringe,
     its capital Macragge, and the Tetrarchy that governs it.
-  aliases: [the Five Hundred Worlds, Macragge, Fortress of Hera, Tetrarchy, Imperium Secundus]
+  aliases: [the Five Hundred Worlds, Macragge, Fortress of Hera, Tetrarchy, Imperium Secundus, Plague Wars, Prandium, Calth]
   see_also: [terra, imperial-astrography]
 
 astartes-homeworlds:
@@ -277,7 +277,7 @@ astartes-homeworlds:
   gloss: >
     What a fortress-monastery is and how a Chapter holds its planet — with Fenris, Baal and
     Nocturne as the worked cases.
-  aliases: [fortress-monastery, the Fang, Fenris, Baal, Nocturne, Arx Angelicum, Mount Deathfire, Time of Trial, Sanctuary Cities]
+  aliases: [fortress-monastery, the Fang, Fenris, Baal, Nocturne, Arx Angelicum, Mount Deathfire, Time of Trial, Sanctuary Cities, Baal Primus, Baal Secundus]
   see_also: [bastion-worlds, death-worlds]
 
 bastion-worlds:
@@ -285,7 +285,7 @@ bastion-worlds:
   gloss: >
     The worlds the Imperium fortifies because it cannot afford to lose them: Cadia and its
     pylons, Armageddon's four wars, and Vigilus at the mouth of the Nachmund Gauntlet.
-  aliases: [Cadia, Kasr, Armageddon, Vigilus, the Cadian pylons, Ullanor]
+  aliases: [Cadia, Kasr, Armageddon, Vigilus, the Cadian pylons, Ullanor, Governor Primus, Fourth War, Interior Guard, Whiteshields]
   see_also: [the-sundered-imperium, regions-of-ruin, death-worlds]
 
 death-worlds:
@@ -439,7 +439,7 @@ the-primarchs:
     The Emperor's twenty gene-wrought sons, engineered from his own DNA for strength and
     charisma to command the Legions — described by their maker as tools and weapons, scattered
     before maturity, and two of them erased from the record.
-  aliases: [Primarch, Primarchs, Primarch II, Primarch XI, the two lost Legions, Erda, Lorgar, Perturabo, Konrad Curze, Angron, Alpharius]
+  aliases: [Primarch, Primarchs, Primarch II, Primarch XI, the two lost Legions, Erda, Lorgar, Perturabo, Konrad Curze, Angron, Alpharius, Fulgrim, Mortarion, Sanguinius, Rogal Dorn, Leman Russ]
   see_also: [the-thunder-warriors, the-unification-wars]
 
 the-great-crusade:
@@ -558,3 +558,66 @@ first-tyrannic-war:
     raise the alarm.
   aliases: [First Tyrannic War, Behemoth, Hive Fleet Behemoth, Tyran, Kryptman, Battle for Macragge]
   see_also: [ultramar, the-awakening]
+
+thirteenth-black-crusade:
+  name: the Thirteenth Black Crusade
+  gloss: >
+    The Crusade that reached the objective. Opened with a plague that turned Imperial theology into
+    a weapon, decapitated Cadia's command at a welcome parade, and ended with the planet dragged
+    into the Warp — its shield having been held, at the crucial moment, by a Necron.
+  aliases: [13th Black Crusade, Fall of Cadia, Plague of Unbelief, Tyrok Fields, Volscani Cataphracts, Extremis Protocols, Will of Eternity, Ursarkar E. Creed, Null-array, Trazyn the Infinite]
+  see_also: [black-crusades, bastion-worlds]
+
+opening-of-the-great-rift:
+  name: the opening of the Great Rift
+  gloss: >
+    The event, as distinct from the map it produced. Guilliman's own reconstruction is that Abaddon
+    destroyed blackstone worlds for ten thousand years and Cadia was the trigger — the only theory
+    that explains why the Black Crusades were fought as they were.
+  aliases: [Great Rift opening, Warpscar, Everdusk, Mont'yhe'va, Dathedian, War in the Rift]
+  see_also: [the-sundered-imperium, black-crusades, thirteenth-black-crusade]
+
+guillimans-return:
+  name: the resurrection of Guilliman
+  gloss: >
+    Body mended by Mechanicum engineering, soul restored by the Aeldari god Ynnead, route provided by
+    Harlequins, arranged by a Tech-Priest concealing a ten-thousand-year lifespan. Not one element
+    of it is lawful under Imperial doctrine.
+  aliases: [Rise of the Primarch, Armour of Fate, Temple of Correction, Shrine of Guilliman, Belisarius Cawl]
+  see_also: [ultramar, the-primaris, thirteenth-black-crusade]
+
+the-primaris:
+  name: the Primaris Space Marines
+  gloss: >
+    Guilliman's ten-thousand-year contingency, built by Cawl from STC technologies and genetic data
+    on all twenty Primarchs, and held in stasis aboard the Zar-Quaesitor being taught in their
+    sleep. Pre-Primaris Astartes are now "Firstborn".
+  aliases: [Primaris, Primaris Space Marine, Firstborn, Sangprimus Portum, Zar-Quaesitor]
+  see_also: [guillimans-return, the-codex-astartes]
+
+indomitus-crusade:
+  name: the Indomitus Crusade
+  gloss: >
+    Guilliman's reconquest, declared on leaving the Emperor's Throneroom and manned by stripping the
+    garrisons off worlds already judged lost. It founded new Chapters on new homeworlds, stabilised a
+    warp passage with Necron pylon technology, and has already lost an entire fleet to Angron.
+  aliases: [Indomitus Crusade, Unnumbered Sons, Ultima Founding, Attilan Gate, Torchbearer, Fleet Quartus]
+  see_also: [guillimans-return, the-primaris, opening-of-the-great-rift]
+
+pariah-nexus:
+  name: the Pariah Nexus
+  gloss: >
+    The Necrons' Contra-Empyric Nexus: a Blackstone array built by Szeras, the Cryptek who ran the
+    biotransference furnaces, to exclude the Warp from a whole sector. Three wars are being fought
+    inside it at once, one of them between Necrons.
+  aliases: [Pariah Nexus, Contra-Empyric Nexus, Zone of Silence, Nephilim Anomaly, the Stilling, Szeras, Xendu System]
+  see_also: [the-awakening, black-crusades, biotransference]
+
+fourth-tyrannic-war:
+  name: the Fourth Tyrannic War
+  gloss: >
+    Leviathan's largest invasion: two coordinated tendrils, Nautilon and Promethor, entering from
+    above and below the galactic plane and advancing in parallel towards Terra — into a Segmentum whose
+    garrisons the Indomitus Crusade had withdrawn.
+  aliases: [Fourth Tyrannic War, Nautilon, Promethor, Shadow in the Warp, Guideoth]
+  see_also: [first-tyrannic-war, indomitus-crusade]
