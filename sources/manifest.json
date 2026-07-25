@@ -1,5 +1,15 @@
 {
   "retrievals": {
+    "lex-abaddon-the-despoiler": {
+      "title": "Abaddon the Despoiler",
+      "url": "https://wh40k.lexicanum.com/wiki/Abaddon_the_Despoiler",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 29,
+      "sha256": "ff4a032402edaaee70e79ac035a68c3859715b5bc7bc53e78f91c7491b0b7f0d",
+      "file": "sources/raw/lex-abaddon-the-despoiler.wikitext",
+      "redirect_to": "Ezekyle Abaddon"
+    },
     "lex-adeptus-astra-telepathica": {
       "title": "Adeptus Astra Telepathica",
       "url": "https://wh40k.lexicanum.com/wiki/Adeptus_Astra_Telepathica",
@@ -26,6 +36,15 @@
       "bytes": 48290,
       "sha256": "1069867459758876000e0a10747141c187cbbc8fc51dad93b945986179f238f9",
       "file": "sources/raw/lex-aeldari-mythology.wikitext"
+    },
+    "lex-age-of-apostasy": {
+      "title": "Age of Apostasy",
+      "url": "https://wh40k.lexicanum.com/wiki/Age_of_Apostasy",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 24255,
+      "sha256": "b426a23d675240359e074e253c26186316a9012c409bf4ef41dba15196d67856",
+      "file": "sources/raw/lex-age-of-apostasy.wikitext"
     },
     "lex-age-of-strife": {
       "title": "Age of Strife",
@@ -118,6 +137,15 @@
       "sha256": "f532491d0a05fbad87d768e559a8ff4eea44c3d59cc9d2b0ae9360bf386f6d40",
       "file": "sources/raw/lex-baal.wikitext"
     },
+    "lex-behemoth": {
+      "title": "Behemoth",
+      "url": "https://wh40k.lexicanum.com/wiki/Behemoth",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 13906,
+      "sha256": "960ed16a950dbc81c242022d584e41ca40c4c6a473a84c5cef57dc8ec917975a",
+      "file": "sources/raw/lex-behemoth.wikitext"
+    },
     "lex-biomancy": {
       "title": "Biomancy",
       "url": "https://wh40k.lexicanum.com/wiki/Biomancy",
@@ -135,6 +163,15 @@
       "bytes": 4154,
       "sha256": "f18085e961abbc651207816e6e212d898c0969f24ed6946d95c7eff202dd8686",
       "file": "sources/raw/lex-biotransference.wikitext"
+    },
+    "lex-black-crusade": {
+      "title": "Black Crusade",
+      "url": "https://wh40k.lexicanum.com/wiki/Black_Crusade",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 8070,
+      "sha256": "69aadf343cb23ce04552267177a779272987de944b95d1744829b18b149c2c17",
+      "file": "sources/raw/lex-black-crusade.wikitext"
     },
     "lex-black-legion": {
       "title": "Black Legion",
@@ -346,6 +383,15 @@
       "file": "sources/raw/lex-cicatrix-maledictum.wikitext",
       "redirect_to": "Great Rift"
     },
+    "lex-codex-astartes": {
+      "title": "Codex Astartes",
+      "url": "https://wh40k.lexicanum.com/wiki/Codex_Astartes",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 51791,
+      "sha256": "6ab53229dbfd360db053b2d5510ffdb453d9c6494e6e10eaef3cb42960900453",
+      "file": "sources/raw/lex-codex-astartes.wikitext"
+    },
     "lex-commorragh": {
       "title": "Commorragh",
       "url": "https://wh40k.lexicanum.com/wiki/Commorragh",
@@ -556,6 +602,15 @@
       "sha256": "4e5626c14ceebaf41aad6466b1016ca164a3ffbb29b2df766ac7425ade4da50f",
       "file": "sources/raw/lex-eye-of-terror.wikitext"
     },
+    "lex-ezekyle-abaddon": {
+      "title": "Ezekyle Abaddon",
+      "url": "https://wh40k.lexicanum.com/wiki/Ezekyle_Abaddon",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 37032,
+      "sha256": "89b3814ad0827a3379d8e2191699569a811164b3878c097e0c258b50d3e1bfa3",
+      "file": "sources/raw/lex-ezekyle-abaddon.wikitext"
+    },
     "lex-fenris": {
       "title": "Fenris",
       "url": "https://wh40k.lexicanum.com/wiki/Fenris",
@@ -592,6 +647,15 @@
       "sha256": "0957674573b0336601f6e2cacb0e5cb2ebe6cee3fea5ab36bcb3a419eac1203e",
       "file": "sources/raw/lex-fortress-monastery.wikitext"
     },
+    "lex-founding": {
+      "title": "Founding",
+      "url": "https://wh40k.lexicanum.com/wiki/Founding",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 45149,
+      "sha256": "83b2c49f9961c053322ae212f0bf60df6caa1d47531060eb6bbd4d60b87cc1a2",
+      "file": "sources/raw/lex-founding.wikitext"
+    },
     "lex-gellar-field": {
       "title": "Gellar field",
       "url": "https://wh40k.lexicanum.com/wiki/Gellar_field",
@@ -609,6 +673,15 @@
       "bytes": 7392,
       "sha256": "a9cac3fb6484a50ef1deecdbb7f241b4cddc673d1bc174d31ed0880a964a586e",
       "file": "sources/raw/lex-ghoul-stars.wikitext"
+    },
+    "lex-goge-vandire": {
+      "title": "Goge Vandire",
+      "url": "https://wh40k.lexicanum.com/wiki/Goge_Vandire",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 18130,
+      "sha256": "83119f55eaa60a149ba8b7d48abe47b1e9109e7fdc81de110bb3ed464a10a50f",
+      "file": "sources/raw/lex-goge-vandire.wikitext"
     },
     "lex-golden-throne": {
       "title": "Golden Throne",
@@ -645,6 +718,15 @@
       "bytes": 7475,
       "sha256": "ee183d36fdc6969351b81cef1f265d24eac1cf4c27f8af61f3b55294616513e3",
       "file": "sources/raw/lex-great-rift.wikitext"
+    },
+    "lex-great-scouring": {
+      "title": "Great Scouring",
+      "url": "https://wh40k.lexicanum.com/wiki/Great_Scouring",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 15626,
+      "sha256": "f048bf933810916ff27cc7c9021c6b2fc55000f2069a6737bacb92752b77295e",
+      "file": "sources/raw/lex-great-scouring.wikitext"
     },
     "lex-grey-knights": {
       "title": "Grey Knights",
@@ -691,6 +773,16 @@
       "bytes": 4652,
       "sha256": "c3e42935bc74bcb09429c2582697ee2979f22284513f814c88a3a9124593ffab",
       "file": "sources/raw/lex-high-gothic.wikitext"
+    },
+    "lex-hive-fleet-behemoth": {
+      "title": "Hive Fleet Behemoth",
+      "url": "https://wh40k.lexicanum.com/wiki/Hive_Fleet_Behemoth",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 22,
+      "sha256": "2d8b8ef2ff288ca9bdcf3dc466ce20549db2f8a500971d113a6fcd0ab803478a",
+      "file": "sources/raw/lex-hive-fleet-behemoth.wikitext",
+      "redirect_to": "Behemoth"
     },
     "lex-hive-ship": {
       "title": "Hive Ship",
@@ -1152,6 +1244,15 @@
       "sha256": "0f51c7b4fc0ab8c93f23cf37a8bb36f3993d1b4341fb338a3f9f81d8d491e471",
       "file": "sources/raw/lex-nocturne.wikitext"
     },
+    "lex-nova-terra-interregnum": {
+      "title": "Nova Terra Interregnum",
+      "url": "https://wh40k.lexicanum.com/wiki/Nova_Terra_Interregnum",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 2000,
+      "sha256": "366baa438e0b6cbde36603f878994659016dc7a6405dac44af47aea9e247ac59",
+      "file": "sources/raw/lex-nova-terra-interregnum.wikitext"
+    },
     "lex-old-ones": {
       "title": "Old Ones",
       "url": "https://wh40k.lexicanum.com/wiki/Old_Ones",
@@ -1356,6 +1457,16 @@
       "sha256": "dc32428d237a0825cae6243e24c773437f3a82282f3ed8b95439ae02ccaadefc",
       "file": "sources/raw/lex-sea-of-souls.wikitext",
       "redirect_to": "Warp"
+    },
+    "lex-second-founding": {
+      "title": "Second Founding",
+      "url": "https://wh40k.lexicanum.com/wiki/Second_Founding",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 38,
+      "sha256": "0906168e588dfc5006d784dc9da31a3b273498b1b3cde953749f2cf5ef4e4e0d",
+      "file": "sources/raw/lex-second-founding.wikitext",
+      "redirect_to": "Founding#Second Founding"
     },
     "lex-sector": {
       "title": "Sector",
@@ -1621,6 +1732,16 @@
       "bytes": 6493,
       "sha256": "252c6b230fa15f74e4c284ca450d1151fa112b602372ab4872fb271f5ecf7685",
       "file": "sources/raw/lex-the-maelstrom.wikitext"
+    },
+    "lex-the-scouring": {
+      "title": "The Scouring",
+      "url": "https://wh40k.lexicanum.com/wiki/The_Scouring",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 28,
+      "sha256": "9b25421b9dc9d3b39e083251686e26c2eb972400e7911f82fd989feb6ad564db",
+      "file": "sources/raw/lex-the-scouring.wikitext",
+      "redirect_to": "Great Scouring"
     },
     "lex-thousand-sons": {
       "title": "Thousand Sons",

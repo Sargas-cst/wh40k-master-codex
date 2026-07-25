@@ -1907,3 +1907,109 @@ lex-golden-throne:
     Carries its own Conflicting Sources note on whether the Throne predates the Heresy; recorded
     as golden-throne-construction-date. This codex follows the later account, because the Webway
     Project and the War Within the Webway both require the Throne to exist already.
+
+lex-great-scouring:
+  tier: 2
+  what: Lexicanum article "Great Scouring"
+  url: https://wh40k.lexicanum.com/wiki/Great_Scouring
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-great-scouring.wikitext
+  cites:
+    - "Warhammer 40,000 5th Edition Rulebook, pg. 124"   # {{Fn|1}} — the counter-offensive; the first galaxy-wide purge
+    - "Warhammer Community: The Scouring timeline"        # {{Fn|17}} — 015.M31 to 021.M31, seven years
+    - "Nightbringer (Novel), Chapter Two, pg. 49"        # {{Fn|5}} — holdouts fought for over a century
+  notes: >
+    Reached after "The Scouring" resolved to a redirect. Used for the purge and its incompleteness;
+    the individual battles listed belong to Volume VII.
+
+lex-codex-astartes:
+  tier: 2
+  what: Lexicanum article "Codex Astartes"
+  url: https://wh40k.lexicanum.com/wiki/Codex_Astartes
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-codex-astartes.wikitext
+  cites:
+    - "Codex: Ultramarines (2nd Edition)"                # {{Fn|25}} — the High Lords inheriting power; Guilliman as Lord Commander
+    - "Codex: Ultramarines (2nd Edition), pgs. 6-9"      # {{Fn|25a}} — the thousand-Marine limit; the Second Founding; the gene-seed decree
+    - "First Founding (Background Book), pg. 15"         # {{Fn|32a}} — the two-part structure; no original text survives
+    - "White Dwarf 253 (AU), pgs. 21-27"                 # {{Fn|33}} — the Apocrypha of Skaros
+    - "Codex: Space Wolves (5th Edition), pgs. 8-9"      # {{Fn|9}} — dividing the Legions to prevent recurrence
+    - "Codex: Black Templars (4th Edition), pg. 6"       # {{Fn|7}} — Dorn's rejection; the Terrible Angel incident
+    - "Index Astartes II: Imperial Fists, pgs. 14-15"    # {{Fn|8}} — the pain glove; the Emperor who was
+    - "Grey Hunter (Novel)"                              # {{Fn|10}} — the Codex as sacred text
+    - "Deathwatch: Rites of Battle, pg. 53"              # {{Fn|11b}} — 021.M31
+  notes: >
+    51.8 KB, carries an uncited-works block and a trivia block. Its most striking admission is
+    that no original text survives, competing versions have diverged enough for Chapters to go to
+    war over them, and attribution is impossible "even with the help of its putative author" —
+    which is now literally testable, since Guilliman has returned.
+
+lex-nova-terra-interregnum:
+  tier: 2
+  what: Lexicanum article "Nova Terra Interregnum"
+  url: https://wh40k.lexicanum.com/wiki/Nova_Terra_Interregnum
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-nova-terra-interregnum.wikitext
+  cites:
+    - "Warhammer 40,000 5th Edition Rulebook, pgs. 124-125"   # {{Fn|1}} — the Ur-Council, Segmentum Pacificus, the Cataclysm of Souls
+    - "Warhammer 40,000 6th Edition Rulebook, pg. 170"        # {{Fn|2}} — the Moirae Schism
+    - "Codex: Dark Angels (6th Edition), pgs. 36-37"          # {{Fn|3}} — the attack on Nova Terra; the Cypher suspicion
+    - "Codex Supplement: Ultramarines (8th Edition), pg. 36"  # {{Fn|5}} — Ultramar strengthened by the Interregnum
+  notes: >
+    Only 2 KB for a nine-century split of the Imperium into two states — a civil war the article
+    itself compares to the Horus Heresy. The disproportion is worth noting: the Imperium
+    remembers in detail only the wars the Emperor was present for.
+
+lex-age-of-apostasy:
+  tier: 2
+  what: Lexicanum article "Age of Apostasy"
+  url: https://wh40k.lexicanum.com/wiki/Age_of_Apostasy
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-age-of-apostasy.wikitext
+  cites:
+    - "Codex: Sisters of Battle (2nd Edition), pgs. 8-14"   # {{Fn|1}} — almost the entire account: Vandire, San Leor, Thor, the settlement
+    - "Our Martyred Lady (Audio Drama)"                     # {{Fn|2}} — Longinus
+    - "Execution Hour, Part One"                            # {{Fn|3}} — Navy officers murdering superiors for promotion
+    - "Codex: Assassins (3rd Edition), pg. 10"              # {{Fn|4}} — the Wars of Vindication
+    - "Codex: Astra Militarum (9th Edition), pg. 9"         # {{Fn|5}} — Militarum regiments enforcing the tyranny
+  notes: >
+    24 KB, and almost every claim in it rests on a single source: pages 8-14 of Codex: Sisters of
+    Battle (2nd Edition). That is worth flagging — the Imperium's second-greatest internal
+    catastrophe reaches this codex through one fourteen-page account, written from the
+    Sororitas's point of view, which is also the founding story of the Sororitas themselves.
+
+lex-black-crusade:
+  tier: 2
+  what: Lexicanum article "Black Crusade"
+  url: https://wh40k.lexicanum.com/wiki/Black_Crusade
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-black-crusade.wikitext
+  cites:
+    - "Warhammer 40,000 4th Edition Rulebook, pg. 136"       # {{Fn|4}} — the definition; the fracturing in the Eye
+    - "Codex: Chaos Space Marines (4th Edition), pgs. 24, 46" # {{Fn|5}} — a crusade splinters unless it is resisted
+    - "Codex: Eye of Terror (3rd Edition), pg. 9"            # {{Fn|2}} — once or twice a millennium; Abaddon's thirteen
+    - "Black Legion - A Codex: Chaos Space Marines Supplement, pgs. 14-19"  # {{Fn|8a}} — the dated list of Crusades 1-11
+    - "Black Legion - A Codex: Chaos Space Marines Supplement, pgs. 22-23"  # {{Fn|8c}} — the Gothic War
+    - "Codex: Chaos Space Marines (8th Edition), pg. 16"     # {{Fn|13}} — the Crimson Path; destroying the pylons
+    - "Warhammer 40,000 8th Edition Rulebook, pg. 50"        # {{Fn|14}} — the Thirteenth destroying Cadia
+    - "Liber Chaotica: Khorne, pgs. 74-79"                   # {{Fn|1}} — alternative names for several Crusades
+  notes: >
+    8 KB, carries an uncited-works block. The list of thirteen Crusades and the Crimson Path
+    passage are the load-bearing material: read together they show that what the Imperium recorded
+    as twelve repelled raids was a single demolition programme against the pylons, conducted in
+    front of it for nine thousand years.
+
+lex-behemoth:
+  tier: 2
+  what: Lexicanum article "Behemoth"
+  url: https://wh40k.lexicanum.com/wiki/Behemoth
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-behemoth.wikitext
+  cites:
+    - "Codex: Tyranids (5th Edition), pgs. 10-11"    # {{Fn|1a}} — the juggernaut advance, Prandium, consuming itself at Macragge
+    - "Codex: Tyranids (5th Edition), pgs. 8-9"      # {{Fn|1b}} — the ignored Explorator census; Kryptman and the data-codex
+    - "Codex: Tyranids (4th Edition), pgs. 6-9"      # {{Fn|2a}} — the naming after Tyran; the Telepathica Matrix
+    - "Planetstrike, pg. 54"                         # {{Fn|4}} — the 746.M41 date for Macragge
+  notes: >
+    Reached after "Hive Fleet Behemoth" resolved to a redirect. The article flags its own date
+    discrepancy for the Battle for Macragge; recorded as macragge-battle-date.

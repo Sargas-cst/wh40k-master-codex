@@ -253,7 +253,7 @@ terra:
   gloss: >
     Humanity's homeworld and the Imperium's capital: a hive world stripped to bedrock, the
     Imperial Palace, the Astronomican's chamber, and the institutions of the Throneworld.
-  aliases: [Holy Terra, Earth, the Throneworld, Imperial Palace, Sanctum Imperialis, Eternity Gate]
+  aliases: [Holy Terra, Earth, the Throneworld, Imperial Palace, Sanctum Imperialis, Eternity Gate, Primarch's Scourge, Arx Doctrine, Battle of Lion's Gate]
   see_also: [mars, imperial-astrography, the-sundered-imperium]
 
 mars:
@@ -495,3 +495,66 @@ the-golden-throne:
     and the Mechanicum bought it a few more centuries by selling billions of humans to Commorragh.
   aliases: [Golden Throne, Dark Glass, Imperial Dungeon, Talisman of Seven Hammers, Adnector Concillium, Black Throne]
   see_also: [siege-of-terra, magnus-folly, terra]
+
+the-great-scouring:
+  name: the Great Scouring
+  gloss: >
+    The seven-year counter-offensive after the Heresy, 015-021.M31, and the Imperium's first
+    galaxy-wide purge. Most traitors were driven into the Eye of Terror; three Legions' worth
+    stayed and fought on for over a century.
+  aliases: [Great Scouring, the Scouring, Age of Rebirth]
+  see_also: [siege-of-terra, the-codex-astartes]
+
+the-codex-astartes:
+  name: the Codex Astartes
+  gloss: >
+    Guilliman's treatise that broke the Legions into thousand-strong Chapters so no commander
+    could threaten Terra again. Nearly caused a second civil war, and its original text no longer
+    exists in any form.
+  aliases: [Codex Astartes, Second Founding, Apocrypha of Skaros, pain glove]
+  see_also: [the-great-scouring, the-primarchs]
+
+nova-terra-interregnum:
+  name: the Nova Terra Interregnum
+  gloss: >
+    Nine centuries in which the Ur-Council of Nova Terra ruled Segmentum Pacificus and dismissed
+    the High Lords — the time of twin Empires, whose religious wars the sources compare to the
+    Horus Heresy and record in a paragraph.
+  aliases: [Nova Terra Interregnum, Ur-Council, Nova Terra, Moirae Schism, Cataclysm of Souls]
+  see_also: [age-of-apostasy, the-codex-astartes]
+
+age-of-apostasy:
+  name: the Age of Apostasy
+  gloss: >
+    M36. Goge Vandire held the Administratum and the Ecclesiarchy at once for seventy years, and
+    recruited the Daughters of the Emperor with a force-field trinket he later boasted about. It
+    ended when a Custodian showed one of them the Golden Throne.
+  aliases: [Age of Apostasy, Reign of Blood, Goge Vandire, Daughters of the Emperor, Brides of the Emperor, Sebastian Thor, Confederation of Light, San Leor]
+  see_also: [nova-terra-interregnum, the-golden-throne]
+
+black-crusades:
+  name: the Black Crusades
+  gloss: >
+    Abaddon's thirteen assaults on the Imperium, 781.M31 onward. None took territory: each took an
+    object, a relic or a capability — and many were cover for the Crimson Path, the systematic
+    destruction of the Necron pylons holding the Warp back.
+  aliases: [Black Crusade, Crimson Path, Gothic War, Drach'nyen, Skullgather, Abaddon the Despoiler]
+  see_also: [bastion-worlds, the-great-scouring]
+
+the-awakening:
+  name: the Awakening
+  gloss: >
+    The Necrons' return from the Great Sleep — not simultaneous, some rising as early as the Great
+    Crusade, most in late M41, with billions still dormant. Were they ever to wake and unite they
+    would match humanity in numbers.
+  aliases: [the Awakening, Awakened Council, Anrakyr the Traveller, Imotekh the Stormlord, Infinite Empire]
+  see_also: [the-great-sleep, the-silent-king]
+
+first-tyrannic-war:
+  name: the First Tyrannic War
+  gloss: >
+    Hive Fleet Behemoth's berserker advance into Ultramar, M41. The Imperium had a decade of
+    warnings and filed them; one Inquisitor salvaged a broken transmitter from a devoured system to
+    raise the alarm.
+  aliases: [First Tyrannic War, Behemoth, Hive Fleet Behemoth, Tyran, Kryptman, Battle for Macragge]
+  see_also: [ultramar, the-awakening]

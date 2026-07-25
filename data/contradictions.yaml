@@ -908,3 +908,29 @@ golden-throne-construction-date:
     - claim: Complete and in use well before the Horus Heresy.
       source: lex-golden-throne
       marker: "citation 7 — Master of Mankind (Novel), Epilogue"
+
+macragge-battle-date:
+  kind: numerical
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume III Title 4 research
+  summary: >
+    Hive Fleet Behemoth was destroyed at the Battle for Macragge in 745.M41, or in 746.M41.
+  reverification_note: >
+    The article flags the discrepancy itself — "depending on the source". A single year would
+    normally be trivial, but the same article dates the first attack on Tyran to 745.M41 and has
+    Kryptman recovering the buried data-codex "almost a year later". On the earlier date the whole
+    war — first contact, the investigation, the failed astropathic relay, the salvage at Thandros,
+    the voyage to Macragge and the battle itself — must fit inside one year, which the narrative
+    cannot accommodate.
+  handling: >
+    Give both dates and note that the internal chronology of the article favours the later one.
+    Do not silently pick either.
+  positions:
+    - claim: 745.M41.
+      source: lex-behemoth
+      marker: "citation 1a — Codex: Tyranids (5th Edition), pgs. 10-11"
+    - claim: 746.M41.
+      source: lex-behemoth
+      marker: "citation 4 — Planetstrike, pg. 54"

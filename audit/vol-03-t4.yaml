@@ -1,0 +1,101 @@
+# Audit trail — Volume III, Title 4
+title: "Volume III Title 4 — Age of the Imperium (M31-M41)"
+covers: Chapters 18-21
+depth_band: full
+completed_on: 2026-07-25
+
+retrieval:
+  pages_added_this_pass:
+    - Codex_Astartes
+    - Founding
+    - Great_Scouring
+    - Nova_Terra_Interregnum
+    - Age_of_Apostasy
+    - Goge_Vandire
+    - Black_Crusade
+    - Behemoth
+    - Ezekyle_Abaddon
+  already_cached_and_reused: [Necron]
+  corrections_during_retrieval:
+    - '"Second Founding" resolved to a section anchor; the Founding article was fetched instead.'
+    - '"The Scouring" resolved to a redirect to Great Scouring.'
+    - '"Hive Fleet Behemoth" resolved to a redirect to Behemoth.'
+    - '"Abaddon the Despoiler" resolved to a redirect to Ezekyle Abaddon.'
+
+chapters:
+  - id: III.T4.Ch18
+    owns: [the-great-scouring, the-codex-astartes]
+    sections: 5
+    note: >
+      The Scouring was the Imperium's FIRST galaxy-wide purge — the method every later one repeats.
+      The Codex broke the Legions so no commander could threaten Terra again, nearly caused a second
+      civil war, and its original text no longer exists in any form.
+  - id: III.T4.Ch19
+    owns: [nova-terra-interregnum, age-of-apostasy]
+    sections: 5
+    note: >
+      Nine centuries of twin Empires, then Vandire holding both the Administratum and the
+      Ecclesiarchy for seventy years. The Sororitas were recruited by a force-field trinket Vandire
+      later boasted to his scribes about.
+  - id: III.T4.Ch20
+    owns: [black-crusades]
+    sections: 3
+    note: >
+      Three Sections only, because the Chapter's argument is single: none of the twelve Crusades took
+      territory, and read against the Crimson Path they were one demolition programme against the
+      pylons conducted in front of the Imperium for nine thousand years. The twelve are given as a
+      table rather than twelve paragraphs, since the pattern is the point.
+  - id: III.T4.Ch21
+    owns: [the-awakening, first-tyrannic-war]
+    sections: 4
+    note: >
+      The Silent King ended a sixty-million-year exile in 744.M41 because he met the Tyranids in the
+      intergalactic void — one year before the Imperium's first contact. Two powers older than
+      humanity reassessed their plans over this threat; the Imperium filed the reports.
+
+contradictions_opened:
+  - id: macragge-battle-date
+    kind: numerical
+    note: >
+      745 or 746.M41, flagged by the article. Not trivial: the earlier date forces the entire
+      war — including Kryptman recovering a codex "almost a year later" — into a single year.
+
+source_quality_notes:
+  - what: lex-age-of-apostasy
+    note: >
+      24 KB in which almost every claim rests on one source: pages 8-14 of Codex: Sisters of Battle
+      (2nd Edition). The Imperium's second-greatest internal catastrophe reaches this codex through
+      a single fourteen-page account written from the Sororitas's point of view — which is also the
+      founding story of the Sororitas. Flagged in sources.yaml rather than left implicit.
+  - what: lex-nova-terra-interregnum
+    note: >
+      2 KB for a nine-century split of the Imperium into two states, which the article itself
+      compares to the Horus Heresy. The disproportion is itself a finding: the Imperium remembers in
+      detail only the wars the Emperor was present for.
+
+judgement_calls:
+  - what: The Longinus episode ending the Reign of Blood
+    decision: reported with the sources' hedges intact
+    why: >
+      The sources say "no record exists of what happened there" and "it is commonly believed" he led
+      the Brides' leader to the Golden Throne. Only the killing is matter of record. Presenting the
+      Throne revelation as fact would invent the most important scene in the episode.
+  - what: The two warp storms of the Age of Apostasy
+    decision: symmetry noted, no causal claim
+    why: >
+      Vandire justified his rule by a storm that killed his enemies and was destroyed by a storm
+      that killed his fleet. Both sides read the Immaterium as verdict. The codex notes that both
+      used the same epistemology and does not adjudicate.
+  - what: The Black Crusades as a list
+    decision: rendered as a table
+    why: >
+      Twelve campaigns whose individual details matter less than the pattern they form. A table lets
+      a reader see at once that not one of them took territory.
+
+left_out:
+  - The Founding article (45 KB) and the full roster of Chapter Foundings, which are IV.T4.Ch15.
+  - The Goge Vandire article, retrieved but redundant against the Age of Apostasy account.
+  - The Ezekyle Abaddon article; Abaddon as a figure is Volume VIII Title 3.
+  - The Codex Astartes's organisational doctrine and tactics sections, which are IV.T4.Ch13.
+  - The Battle for Macragge in detail, which is VII.T2.Ch6.
+  - The Thirteenth Black Crusade, which is III.T5.Ch22.
