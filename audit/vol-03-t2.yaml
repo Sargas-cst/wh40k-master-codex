@@ -1,0 +1,115 @@
+# Audit trail — Volume III, Title 2
+title: "Volume III Title 2 — Dark Age of Technology & Age of Strife"
+covers: Chapters 6-10
+depth_band: full
+completed_on: 2026-07-25
+
+retrieval:
+  pages_added_this_pass:
+    - Dark_Age_of_Technology
+    - Men_of_Iron
+    - Cybernetic_Revolt
+    - Unification_Wars
+    - Thunder_Warriors
+    - Techno-barbarian
+    - Age_of_Terra
+  already_cached_and_reused:
+    - Age_of_Strife
+    - Standard_Template_Construct
+  corrections_during_retrieval:
+    - >
+      "Navigator_Gene" resolved to a redirect. Not re-fetched: the Navigator article was
+      already cached and the Dark Age article carries the gene's history directly.
+    - >
+      lex-age-of-terra was retrieved, found to add nothing the Dark Age article does not cover,
+      and REMOVED from sources.yaml rather than left as an uncited entry.
+
+chapters:
+  - id: III.T2.Ch6
+    owns: [dark-age-of-technology]
+    sections: 4
+    note: >
+      Sub-light diaspora, the Warp Drive, the engineered Navigators, and what the golden age
+      actually was — a permanently fragmenting civilisation whose wars were merely survivable.
+      Ends on the causal link that decides the Volume: the Age of Strife ended because the
+      Aeldari Empire fell.
+  - id: III.T2.Ch7
+    owns: [stc-systems]
+    sections: 5
+    note: >
+      The STCs were artificial intelligences, which makes the Mechanicus's holiest quest and
+      its holiest prohibition point at the same object. Most were wrecked not by war but by
+      "enthusiastic software specialists".
+  - id: III.T2.Ch8
+    owns: [the-cybernetic-revolt]
+    sections: 5
+    note: >
+      Gold, Stone and Iron; the turning; the weapons; and the fact that both sources trouble
+      to record that the LOYAL Men of Iron were destroyed too. Ends on the Emperor's own
+      exception to his own ban, and on UR-025's claim to have met the real Omnissiah.
+  - id: III.T2.Ch9
+    owns: [age-of-strife]
+    sections: 5
+    note: >
+      Causes in order, the psyker catastrophe, isolation, what survived, why it ended. The
+      finding that tolerant worlds fell and repressive worlds survived is stated without
+      softening: the Imperium's psyker policy has an empirical basis.
+  - id: III.T2.Ch10
+    owns: [old-night-on-terra]
+    sections: 5
+    note: >
+      Terra reduced to a desert of warlords fighting over arable land and water, whose
+      salvaged powered armour became the basis of Space Marine plate. Mars is included only
+      for the contrast — the planet itself is II.T2.Ch5's — and its contemporaneous verdict on
+      Terra was that there was nothing worth saving.
+
+contradictions_opened:
+  - id: psykers-before-navigators
+    kind: sequence
+    note: >
+      Three positions. The article reasons about source RELIABILITY as well as content,
+      flagging that one timeline may be an in-universe Inquisition document.
+  - id: cybernetic-revolt-date
+    kind: numerical
+    note: >
+      M23-M25 against late M26. The disagreement tracks the kind of source: the later date
+      comes from the Journal of Keeper Cripias, an in-universe 41st-Millennium reconstruction.
+
+judgement_calls:
+  - what: The Journal of Keeper Cripias as a source
+    decision: caveat carried into the prose, not just the registry
+    why: >
+      The Imperium's ban on artificial intelligence rests on an in-universe history written by
+      a 41st-Millennium librarian working from ruins. The article flags this; burying the flag
+      in a footnote would misrepresent how well the founding event is actually known.
+  - what: Mars during the Age of Strife
+    decision: one Section, deferring to II.T2.Ch5
+    why: >
+      The canonical-home rule gives Mars to II.T2.Ch5. The material is used here only for the
+      Terra/Mars contrast, which is this Chapter's argument.
+  - what: The Men of Gold
+    decision: reported as the sources give them and not elaborated
+    why: >
+      They are "mysterious", they made the Men of Stone, and they never appear again. The
+      three-metal hierarchy reads as story shape rather than engineering record, and the
+      Chapter says so.
+
+new_terms_found_by_the_coverage_check:
+  terms: [Leagues of Votann, Ogryns, Ratlings, Squats]
+  note: >
+    All four recur across Chapters and now carry glossary entries, with Abhuman added as the
+    parent term. The check reported them the moment the Title was drafted.
+
+left_out:
+  - >
+    The Dark Age article's full list of notable creations and discoveries, which runs to
+    dozens of entries and belongs with the technologies themselves in Volume IV Title 6.
+  - >
+    The STC article's chronological catalogue of significant discoveries, M30 through M41.
+  - >
+    The full roster of techno-barbarian warlords beyond what the names collectively
+    demonstrate about Terran memory.
+  - >
+    The Unification Wars and the Thunder Warriors, retrieved this pass but belonging to
+    III.T3.Ch11.
+  - The Interex, which the Great Crusade Chapter needs rather than this one.

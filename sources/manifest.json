@@ -36,6 +36,15 @@
       "sha256": "e9de710aa6746e352872c1c7d09f4ca48765a70cac08a5b3fdc0bfb8db7f7389",
       "file": "sources/raw/lex-age-of-strife.wikitext"
     },
+    "lex-age-of-terra": {
+      "title": "Age of Terra",
+      "url": "https://wh40k.lexicanum.com/wiki/Age_of_Terra",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 4313,
+      "sha256": "cef4d4cbc5a3151997a1126efb2060110712dfe292998eb877ee3a0d68fd952c",
+      "file": "sources/raw/lex-age-of-terra.wikitext"
+    },
     "lex-al-38-slipstream-module": {
       "title": "AL-38 Slipstream Module",
       "url": "https://wh40k.lexicanum.com/wiki/AL-38_Slipstream_Module",
@@ -355,6 +364,15 @@
       "sha256": "39e3a20bac21cbbc753cfa88c74ca62aa69f800c4ace2d5c5b902d1c6000c8b6",
       "file": "sources/raw/lex-crimson-fists.wikitext"
     },
+    "lex-cybernetic-revolt": {
+      "title": "Cybernetic Revolt",
+      "url": "https://wh40k.lexicanum.com/wiki/Cybernetic_Revolt",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 2107,
+      "sha256": "265fff6c48cd88ac259c9c437f99a3ba614c7b770545ac03d40fbb34dc3481dd",
+      "file": "sources/raw/lex-cybernetic-revolt.wikitext"
+    },
     "lex-daemonic-possession": {
       "title": "Daemonic Possession",
       "url": "https://wh40k.lexicanum.com/wiki/Daemonic_Possession",
@@ -363,6 +381,15 @@
       "bytes": 2801,
       "sha256": "fb68fcdc09aa7b82cd6cb7f7bd2bfe73d3cb1b975d00d220f303bfd1a560616a",
       "file": "sources/raw/lex-daemonic-possession.wikitext"
+    },
+    "lex-dark-age-of-technology": {
+      "title": "Dark Age of Technology",
+      "url": "https://wh40k.lexicanum.com/wiki/Dark_Age_of_Technology",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 22266,
+      "sha256": "241f1bab981ecc81d5177d1fb621619aac15ffd6d09773548f8c2bf4d5390456",
+      "file": "sources/raw/lex-dark-age-of-technology.wikitext"
     },
     "lex-dark-angels": {
       "title": "Dark Angels",
@@ -859,6 +886,15 @@
       "file": "sources/raw/lex-materium.wikitext",
       "redirect_to": "Real Space"
     },
+    "lex-men-of-iron": {
+      "title": "Men of Iron",
+      "url": "https://wh40k.lexicanum.com/wiki/Men_of_Iron",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 4680,
+      "sha256": "233e5d0af7b94356a390cd556fe31d4e35a9ac4f25ee11604fe932fe85a7af57",
+      "file": "sources/raw/lex-men-of-iron.wikitext"
+    },
     "lex-minotaurs": {
       "title": "Minotaurs",
       "url": "https://wh40k.lexicanum.com/wiki/Minotaurs",
@@ -894,6 +930,16 @@
       "bytes": 59032,
       "sha256": "29641c82832941c3b1897648245279afe7ff0e473447a0cbc8c4a2f93da26b1c",
       "file": "sources/raw/lex-navigator.wikitext"
+    },
+    "lex-navigator-gene": {
+      "title": "Navigator Gene",
+      "url": "https://wh40k.lexicanum.com/wiki/Navigator_Gene",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 23,
+      "sha256": "3a3f8c6d531fc6238e69e8e81337c2b64053c12ceec6eac86c695966830c808a",
+      "file": "sources/raw/lex-navigator-gene.wikitext",
+      "redirect_to": "Navigator"
     },
     "lex-necrodermis": {
       "title": "Necrodermis",
@@ -1349,6 +1395,15 @@
       "file": "sources/raw/lex-tau-empire.wikitext",
       "redirect_to": "T'au Empire"
     },
+    "lex-techno-barbarian": {
+      "title": "Techno-barbarian",
+      "url": "https://wh40k.lexicanum.com/wiki/Techno-barbarian",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 1978,
+      "sha256": "dba670002913424ae8fb4868c6d6110817639abaf7c98d8ea76ec8c26fc0d74b",
+      "file": "sources/raw/lex-techno-barbarian.wikitext"
+    },
     "lex-telekinesis": {
       "title": "Telekinesis",
       "url": "https://wh40k.lexicanum.com/wiki/Telekinesis",
@@ -1430,6 +1485,15 @@
       "sha256": "00a829b3b1471fa4b8717c4d7a1578de7ecd9ca6280d1e697fc72368c19c7842",
       "file": "sources/raw/lex-thousand-sons.wikitext"
     },
+    "lex-thunder-warriors": {
+      "title": "Thunder Warriors",
+      "url": "https://wh40k.lexicanum.com/wiki/Thunder_Warriors",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 10572,
+      "sha256": "ee214d40d6d2d4e95e2982391b97637e0dd742171d4b00809b9b072b2ee3ee3f",
+      "file": "sources/raw/lex-thunder-warriors.wikitext"
+    },
     "lex-tomb-world": {
       "title": "Tomb World",
       "url": "https://wh40k.lexicanum.com/wiki/Tomb_World",
@@ -1474,6 +1538,15 @@
       "bytes": 73363,
       "sha256": "caba2e83c9f43b1fa9c1ee88d3d59677cd95407464a931faea3218bda6af2ba3",
       "file": "sources/raw/lex-ultramarines.wikitext"
+    },
+    "lex-unification-wars": {
+      "title": "Unification Wars",
+      "url": "https://wh40k.lexicanum.com/wiki/Unification_Wars",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 16224,
+      "sha256": "202b5e798f4d065e0cc211ca6659639334de3fced5133cc96faaa163e4530630",
+      "file": "sources/raw/lex-unification-wars.wikitext"
     },
     "lex-untouchable": {
       "title": "Untouchable",

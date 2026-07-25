@@ -987,3 +987,50 @@ solar-gods:
     half-forgotten forms the first Necrontyr to find the star gods gave them.
   category: cosmology
   sources: [lex-necrontyr, lex-war-in-heaven-necron]
+
+# --- Volume III Title 2 ----------------------------------------------------
+
+abhuman:
+  term: Abhuman
+  definition: >
+    A human strain that diverged during the Age of Strife, adapting over millennia of
+    isolation to its world's conditions — the Ratlings, Ogryns and Squats among them.
+  variants: [abhuman, Abhumans]
+  category: institutions
+  sources: [lex-age-of-strife]
+
+ratling:
+  term: Ratlings
+  definition: >
+    An abhuman strain stunted by thousands of years of inbreeding on worlds whose climates
+    were even more conducive to human life than ancient Terra's.
+  variants: [Ratling]
+  category: institutions
+  sources: [lex-age-of-strife]
+
+ogryn:
+  term: Ogryns
+  definition: >
+    An abhuman strain evolved on harsh, cold and barren worlds, and correspondingly large
+    and strong.
+  variants: [Ogryn]
+  category: institutions
+  sources: [lex-age-of-strife]
+
+squat:
+  term: Squats
+  definition: >
+    An abhuman strain from the barren high-gravity worlds towards the galactic core, whose
+    homeworlds formed one of the pocket empires that survived Old Night.
+  variants: [Squat]
+  category: institutions
+  sources: [lex-age-of-strife]
+
+leagues-of-votann:
+  term: the Leagues of Votann
+  definition: >
+    A civilisation descended from Dark Age mining fleets sent to the Galactic Core, which
+    kept a large number of STCs — and, unlike the Imperium, improves on their designs.
+  variants: [Kin, Votann]
+  category: institutions
+  sources: [lex-dark-age-of-technology, lex-standard-template-construct]

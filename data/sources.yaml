@@ -109,7 +109,14 @@ lex-standard-template-construct:
   retrieved: 2026-07-25
   raw: sources/raw/lex-standard-template-construct.wikitext
   cites:
-    - "Warhammer 40,000: Rogue Trader, pg. 271"                 # {{Fn|9}}
+    - "Warhammer 40,000: Rogue Trader, pg. 271"                 # {{Fn|9}} — what an STC was for; the decay in the Age of Strife
+    - "First And Only (Novel), Chapter 23"                      # {{Fn|1c}} — the Mechanicus quest, printouts as sacred texts
+    - "First And Only (Novel), Chapter 25"                      # {{Fn|1a}} — the physical description
+    - "Dark Adeptus (Novel), Chapter 15"                        # {{Fn|3}} — the theory that the STCs were a deliberate bequest
+    - "Necromunda: House of Artifice, pgs. 12-13"               # {{Fn|28a}} — the Necromunda construct's sabotage campaign
+    - "Necromunda: House of Artifice, pg. 25"                   # {{Fn|28b}} — the core in House Van Saar's stronghold
+    - "Journal Tactica: Mailed Fist, pgs. 4-5"                  # {{Fn|36}} — Treaty of Olympus; the first intact STCs
+    - "Codex: Leagues of Votann (9th Edition)"                  # {{Fn|32a}}, {{Fn|32b}} — the Kin's fleets; improving on designs
 
 lex-age-of-strife:
   tier: 2
@@ -121,7 +128,10 @@ lex-age-of-strife:
     - "Warhammer 40,000 5th Edition Rulebook, pg. 122"                          # {{Fn|2}}
     - "Warhammer 40,000 6th Edition Rulebook, pg. 167"                          # {{Fn|5}}
     - "Warhammer 40,000 3rd Edition Rulebook, 'The Journal of Keeper Cripias'"  # {{Fn|7}}
-    - "Space Hulk (1989), Missions and Background book, pg. 24"                 # {{Fn|1}}
+    - "Space Hulk (1989), Missions and Background book, pg. 24"                 # {{Fn|1}} — the psyker policy finding, the composite collapse
+    - "White Dwarf 129 (UK), pgs. 13-14"                                        # {{Fn|14}} — Terra/Mars contest, Slaanesh ending the storms, when the age began
+    - "White Dwarf 178 (UK), pgs. 43-44"                                        # {{Fn|18}} — untold billions dead on Terra
+    - "Codex Imperialis (Background Book), pg. 71"                              # {{Fn|11}} — the Squat pocket empire
   notes: >
     The start date carries two different citations for two different millennia — M23
     per citation 2 and M25 per citation 5. Recorded as contradiction age-of-strife-start-date.
@@ -1575,3 +1585,77 @@ lex-necron:
   notes: >
     44 KB, carries a trivia block. Reached after "Necrons" resolved to a redirect. Used here
     only for the revolt and the Great Sleep; the Necrons as a faction are Volume VI Title 1.
+
+lex-dark-age-of-technology:
+  tier: 2
+  what: Lexicanum article "Dark Age of Technology"
+  url: https://wh40k.lexicanum.com/wiki/Dark_Age_of_Technology
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-dark-age-of-technology.wikitext
+  cites:
+    - "Warhammer 40,000 9th Edition Rulebook, pgs. 42-43"     # {{Fn|2b}} — the timeline, gene-troopers, rising and falling empires
+    - "Warhammer 40,000 10th Edition Rulebook, pgs. 46-47"    # {{Fn|15}} — the Navigator gene, psyker ubiquity, the collapse
+    - "Warhammer 40,000 6th Edition Rulebook, pg. 167"        # {{Fn|7}} — psykers in M22, the Revolt at M23-M25
+    - "Warhammer 40,000 3rd Edition Rulebook, pg. 278"        # {{Fn|8}} — the Journal of Keeper Cripias, an IN-UNIVERSE history
+    - "Deathwatch Core Rulebook, pg. 290"                     # {{Fn|24a}} — Navigators after psykers; Old Night falling
+    - "Horus Heresy: Collected Visions, pg. 7"                # {{Fn|42}} — the same claim, identical text
+    - "Wrath & Glory: Church of Steel, pg. 6"                 # {{Fn|49}} — psykers in M25, after Navigators
+    - "Codex: Craftworlds (8th Edition), pg. 26"              # {{Fn|40}} — Aeldari supremacy; the Fall ending the Age of Strife
+    - "Codex: Eldar (6th Edition), pg. 20"                    # {{Fn|41}} — the Aeldari descent beginning in M18
+    - "Assassinorum: Kingmaker (Novel), Chapter 19"           # {{Fn|20}} — Long March ships, Knight Houses
+    - "Codex: Leagues of Votann (9th Edition), pg. 12"        # {{Fn|17}} — the core-bound mining fleets and the Kin
+    - "Hive: Part II (Novel), Chapter 8"                      # {{Fn|48}} — the First Expansion
+    - "Space Hulk (Board Game, 1989), pg. 24"                 # {{Fn|44}} — collapse of trade, famine on Terra
+  notes: >
+    22 KB, carries an incomplete-citation marker and a trivia block, and an explicit
+    Conflicting Sources section of its own covering the Cybernetic Revolt's date and the
+    psyker/Navigator order. Notably, it reasons about source RELIABILITY as well as content:
+    it flags that the Journal of Keeper Cripias is an in-universe 41st-Millennium historian's
+    reconstruction, and that one timeline may be an in-universe Inquisition document. Both
+    cautions are carried into this codex.
+
+
+lex-cybernetic-revolt:
+  tier: 2
+  what: Lexicanum article "Cybernetic Revolt"
+  url: https://wh40k.lexicanum.com/wiki/Cybernetic_Revolt
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-cybernetic-revolt.wikitext
+  cites:
+    - "Perpetual (Audio Drama)"                                 # {{Fn|4}} — the weapons, the loss of unity, the Malthusian catastrophe
+    - "Warhammer 40,000 3rd Edition Rulebook, pg. 278"          # {{Fn|1}} — the Journal of Keeper Cripias: late M26, the loyal dying too
+    - "First And Only (Novel), Chapter Twenty-Three"            # {{Fn|2}}
+    - "Dark Imperium (Anthology) - Ancient History (Short Story)"  # {{Fn|3}}
+  notes: >
+    2.1 KB. Its date for the Revolt rests on the Journal of Keeper Cripias, an in-universe
+    41st-Millennium reconstruction, and disagrees with the out-of-universe rulebooks; see
+    contradiction cybernetic-revolt-date.
+
+lex-men-of-iron:
+  tier: 2
+  what: Lexicanum article "Men of Iron"
+  url: https://wh40k.lexicanum.com/wiki/Men_of_Iron
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-men-of-iron.wikitext
+  cites:
+    - "Warhammer 40,000 3rd Edition Rulebook, pg. 278"          # {{Fn|1}} — Cripias's account; the loyal did not survive
+    - "First And Only (Novel)"                                  # {{Fn|2}} — the turning in M23, the weapons, the alliance
+    - "Ancient History (Short Story)"                           # {{Fn|5}} — created by the Men of Stone
+    - "Man of Iron (Short Story)"                               # {{Fn|4}} — UR-025 and the real Omnissiah
+    - "The Horus Heresy Book Nine - Crusade, pgs. 168-169"      # {{Fn|6}} — the Excindio Battle-Automata and the Ironwing
+  notes: >
+    Carries an incomplete-citation marker and a trivia block. Its framing is explicit that the
+    Men of Iron reach the reader through Cripias's "cryptic account", and this codex keeps that
+    caveat attached rather than presenting the chain of Gold, Stone and Iron as settled record.
+
+lex-techno-barbarian:
+  tier: 2
+  what: Lexicanum article "Techno-barbarian"
+  url: https://wh40k.lexicanum.com/wiki/Techno-barbarian
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-techno-barbarian.wikitext
+  cites:
+    - "Warhammer 40,000: Rogue Trader"    # {{Fn|1}} — the warlords' hordes, primitive power armour, the Emperor conquering "the other" factions
+  notes: >
+    2 KB, largely a list of named warlords. The claim used here — that techno-barbarian
+    powered armour became the basis for Space Marine armour — rests on citation 1.

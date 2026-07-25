@@ -361,3 +361,47 @@ the-great-sleep:
     Worlds, waiting out the age of flesh on a set term that has now expired.
   aliases: [Great Sleep, stasis-crypt, the slumber]
   see_also: [the-silent-king, xenos-domains]
+
+dark-age-of-technology:
+  name: the Dark Age of Technology
+  gloss: >
+    Humanity's technological high point, M15-M25: sub-light diaspora, the Warp Drive, the
+    engineered Navigators, gene-troopers, and the STCs every Imperial machine still copies.
+  aliases: [Dark Age of Technology, Golden Age of Expansion, Golden Age of Exploration, Age of Exploration, First Expansion, Long March]
+  see_also: [the-young-races]
+
+stc-systems:
+  name: Standard Template Constructs
+  gloss: >
+    The Dark Age artificial intelligences that held all human technical knowledge and could
+    build from local materials on request. Broken mostly by well-meaning maintenance; the
+    Imperium inherited their printouts and calls them scripture.
+  aliases: [STC, STC systems, Standard Template Construct, Ork Standard Construction Templates]
+  see_also: [dark-age-of-technology]
+
+the-cybernetic-revolt:
+  name: the Cybernetic Revolt
+  gloss: >
+    The war in which the Men of Iron turned on a humanity that had delegated everything to
+    them. Larger than the Horus Heresy, fought with star-killing machines, and the origin of
+    the Imperium's ban on artificial intelligence.
+  aliases: [Cybernetic Revolt, Men of Iron, Men of Stone, Men of Gold, Abominable Intelligence, mechanivore, sun-snuffer, omniphage swarm]
+  see_also: [dark-age-of-technology, stc-systems]
+
+age-of-strife:
+  name: the Age of Strife
+  gloss: >
+    Old Night: five millennia of isolation, famine and regression between the Dark Age of
+    Technology and the Imperium. Ended not by human effort but by the Fall of the Eldar
+    calming the Warp.
+  aliases: [Age of Strife, Old Night, pocket empires, Interex]
+  see_also: [dark-age-of-technology, the-cybernetic-revolt]
+
+old-night-on-terra:
+  name: Old Night on Terra
+  gloss: >
+    Terra during the Age of Strife: a desert of warring techno-barbarian warlords fighting
+    over arable land and water, whose salvaged powered armour became the basis of Space
+    Marine plate. Mars, meanwhile, rebuilt itself and judged Terra beyond saving.
+  aliases: [techno-barbarian, Techno-barbarians, Narthan Dume, Terrawatt Clan, Saturnine Fleet, Ringers]
+  see_also: [age-of-strife, terra, mars]

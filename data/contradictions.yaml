@@ -633,3 +633,64 @@ empyrean-before-the-young-races:
     - claim: The Powers of Chaos were already there, and the Old Ones taught resistance to them.
       source: lex-slanni
       marker: "citation 3a — Codex Titanicus (1st Edition), pg. 52"
+
+psykers-before-navigators:
+  kind: sequence
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume III Title 2 research
+  summary: >
+    Widespread human psykers appeared before the Navigators were created, or after warp
+    travel and Navigators were already established.
+  reverification_note: >
+    The article carries a dedicated Conflicting Sources section on this and, unusually,
+    reasons about the reliability of its own sources rather than merely listing them. The
+    Deathwatch Core Rulebook and Horus Heresy: Collected Visions share identical text placing
+    Navigators after psykers — but the article notes one may be an IN-UNIVERSE Inquisition
+    document, judging by the artistic style of the page, and therefore fallible. Rulebooks
+    written as out-of-universe resources put widespread psykers in M22, after Navigators, and
+    a further source puts the psyker emergence in M25, after warp drives and Gellar fields
+    both.
+  handling: >
+    Do not order the two. State that both existed before the collapse and that the psychic
+    emergence was the more dangerous development, which every account supports.
+  positions:
+    - claim: Navigators appeared after psykers and widespread warp travel.
+      source: lex-dark-age-of-technology
+      marker: "citations 24a and 42 — Deathwatch Core Rulebook pg. 290; Collected Visions pg. 7"
+    - claim: Psykers became widespread in M22, after Navigators.
+      source: lex-dark-age-of-technology
+      marker: "citation 7 — Warhammer 40,000 6th Edition Rulebook, pg. 167"
+    - claim: The psyker emergence came in M25, after Navigators, warp drives and Gellar fields.
+      source: lex-dark-age-of-technology
+      marker: "citation 49 — Wrath & Glory: Church of Steel, pg. 6"
+
+cybernetic-revolt-date:
+  kind: numerical
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume III Title 2 research
+  summary: >
+    The Cybernetic Revolt began between M23 and M25, or ravaged the cosmos in late M26.
+  reverification_note: >
+    The Dark Age of Technology article carries its own note on this, and the interesting part
+    is that the disagreement tracks the KIND of source. The later placement comes from the
+    Journal of Keeper Cripias — an in-universe reconstruction by a 41st-Millennium Keeper of
+    the Library Sanctus, whose wording the article describes as unclear as between M25 and
+    M26. The earlier range comes from a rulebook written as an out-of-universe resource. The
+    Men of Iron article separately dates the turning to M23.
+
+    A three-thousand-year discrepancy is exactly what one would expect if the in-universe
+    account is what it presents itself as: a scholar working from ruins, forty millennia later.
+  handling: >
+    Do not assign the Revolt a millennium. Where the date matters, say that the in-universe
+    and out-of-universe accounts differ and why — the unreliability is itself the point.
+  positions:
+    - claim: Between M23 and M25.
+      source: lex-dark-age-of-technology
+      marker: "citation 7 — Warhammer 40,000 6th Edition Rulebook, pg. 167"
+    - claim: Late M26, per an in-universe 41st-Millennium history.
+      source: lex-cybernetic-revolt
+      marker: "citation 1 — Warhammer 40,000 3rd Edition Rulebook, pg. 278"
