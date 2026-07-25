@@ -143,6 +143,14 @@ if (/\{\{Uncited/i.test(text)) flags.push('{{Uncited}} — the article lists sou
 if (/\{\{Cite Marker End\}\}/i.test(text)) flags.push('{{Cite Marker End}} — at least one citation is incomplete');
 if (/\{\{Conflicting/i.test(text)) flags.push('{{Conflicting Sources}} — the wiki records a conflict here');
 if (/\{\{Trivia/i.test(text)) flags.push('{{Trivia}}');
+// Quarantine means passages were REMOVED from this article for insufficient
+// citation and parked on its discussion page. So what remains is what survived
+// review — but the article is known-incomplete, and absence of a claim here is
+// not evidence the claim is unsupported elsewhere.
+if (/\{\{Quarantine/i.test(text)) flags.push('{{Quarantine}} — passages were removed from this article for insufficient citation; it is known-incomplete');
+if (/\{\{WIP/i.test(text)) flags.push('{{WIP}} — the wiki marks this article as unfinished');
+if (/\{\{Fanon/i.test(text)) flags.push('{{Fanon}} — flagged as non-canon fan material. DO NOT USE.');
+if (/\{\{Unofficial/i.test(text)) flags.push('{{Unofficial}} — flagged as not from an official source');
 if (/^#REDIRECT/i.test(text.trim())) flags.push('THIS PAGE IS A REDIRECT — it contains no article text');
 
 // ---------------------------------------------------------------------------

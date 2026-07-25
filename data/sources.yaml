@@ -301,3 +301,206 @@ lex-veil:
     a Navis Nobilite magister of the Great Crusade sworn to House Achelieux. There is
     no Lexicanum article treating "the Veil" as a boundary between the Materium and
     the Immaterium. This is the evidence for contradiction the-veil-as-structure.
+
+# ===========================================================================
+# VOLUME I · TITLE 2 — retrieved 2026-07-25
+# ===========================================================================
+
+lex-psyker:
+  tier: 2
+  what: Lexicanum article "Psyker"
+  url: https://wh40k.lexicanum.com/wiki/Psyker
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-psyker.wikitext
+  cites:
+    - "Warhammer 40,000 6th Edition Rulebook, pgs. 413-423"                 # {{Fn|4c}}
+    - "Witchbringer (Novel), Chapter Five"                                  # {{Fn|78b}}
+    - "Inquisitor: Conspiracies - The Cirian Legacy, pg. 53 'Pyromancy'"    # {{Fn|79}}
+    - "Realm of Chaos: Slaves to Darkness, pgs. 213-215"                    # {{Fn|83c}}
+  notes: >
+    99 KB, no reliability template. "Witch" redirects here, and the canonical list of
+    psychic disciplines lives in this article rather than at Psychic Disciplines,
+    which is only a redirect into a section of it.
+
+lex-the-assignment:
+  tier: 2
+  what: Lexicanum article "The Assignment"
+  url: https://wh40k.lexicanum.com/wiki/The_Assignment
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-the-assignment.wikitext
+  cites:
+    - "The Inquisition (Background Book), pg. 67"           # {{Fn|1}} — the scale itself
+    - "Warhammer 40,000 4th Edition Rulebook, pg. 125"      # {{Fn|6b}}
+    - "Atlas Infernal (Novel), Act III, Canto II"           # {{Fn|7}}
+    - "Codex: Assassins (3rd Edition), pg. 5"               # {{Fn|8}}
+    - "Malleus (Novel), Chapter Seven"                      # {{Fn|9}}
+    - "Dark Heresy: Ascension, pg. 197"                     # {{Fn|12b}}
+    - "Throne of Light (Novel), Chapter 7"                  # {{Fn|20}}
+  notes: >
+    CARRIES {{Quarantine}} — passages were removed from this article for insufficient
+    citation and parked on its discussion page. What remains is what survived review,
+    and the surviving scale table is cited throughout to Fn|1, but the article is
+    known-incomplete and must not be treated as exhaustive.
+    Separately, the bracket numbers in the scale table are explicitly labelled by the
+    article as NOT approved terminology — a wiki device to show cardinal order. They
+    are not Imperial notation and are not presented as such.
+    "Alpha Plus" redirects into this article.
+
+lex-blank:
+  tier: 2
+  what: Lexicanum article "Blank"
+  url: https://wh40k.lexicanum.com/wiki/Blank
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-blank.wikitext
+  cites:
+    - "Codex: Assassins (2nd Edition)"                  # {{Fn|1}}
+    - "The Inquisition (Background Book), pg. 67"       # {{Fn|2}}
+    - "Codex: Sisters of Silence (7th Edition)"         # {{Fn|3}}
+  notes: >
+    Carries BOTH {{Trivia}} and {{Quarantine}}. "Untouchable" and "Pariah" both route
+    here — Pariah via a disambiguation page that also lists Necron Pariahs, noctilith
+    ("Pariah stone") and the Pariah Nexus, none of which are this subject.
+
+lex-psionics:
+  tier: 2
+  what: Lexicanum article "Psionics"
+  url: https://wh40k.lexicanum.com/wiki/Psionics
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-psionics.wikitext
+  cites:
+    - "Warhammer 40,000: Rogue Trader, pgs. 48-49"      # {{Fn|1a}}
+    - "Realm of Chaos: The Lost and the Damned, pg. 6"  # {{Fn|3}}
+    - "The Inquisition (Background Book), pg. 67"       # {{Fn|4}}
+  notes: '"Psychic Powers" redirects here.'
+
+lex-pyromancy:
+  tier: 2
+  what: Lexicanum article "Pyromancy"
+  url: https://wh40k.lexicanum.com/wiki/Pyromancy
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-pyromancy.wikitext
+  cites: []
+  notes: >
+    Carries {{Cite Marker End}} and {{Trivia}}. Used only for the discipline's
+    definition and practitioner names; the ability lists are drawn from game rules
+    across several editions and are not summarised here.
+
+lex-telekinesis:
+  tier: 2
+  what: Lexicanum article "Telekinesis"
+  url: https://wh40k.lexicanum.com/wiki/Telekinesis
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-telekinesis.wikitext
+  cites: []
+
+lex-telepathy:
+  tier: 2
+  what: Lexicanum article "Telepathy"
+  url: https://wh40k.lexicanum.com/wiki/Telepathy
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-telepathy.wikitext
+  cites: []
+
+lex-biomancy:
+  tier: 2
+  what: Lexicanum article "Biomancy"
+  url: https://wh40k.lexicanum.com/wiki/Biomancy
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-biomancy.wikitext
+  cites: []
+
+lex-divination:
+  tier: 2
+  what: Lexicanum article "Divination"
+  url: https://wh40k.lexicanum.com/wiki/Divination
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-divination.wikitext
+  cites: []
+
+lex-psychic-phenomena:
+  tier: 2
+  what: Lexicanum article "Psychic Phenomena"
+  url: https://wh40k.lexicanum.com/wiki/Psychic_Phenomena
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-psychic-phenomena.wikitext
+  cites:
+    - "Dark Heresy Rulebook, pgs. 161-163"                          # {{Fn|1}}
+    - "Black Crusade Core Rulebook, pgs. 210-211"                   # {{Fn|4}}
+    - "Wrath & Glory Core Rulebook (2nd Edition), pgs. 263-264"     # {{Fn|6}}
+  notes: >
+    Carries {{Cite Marker End}} and {{Trivia}}. "Perils of the Warp" redirects here.
+    Fn|6 records that some material makes no distinction between phenomena and
+    perils — see contradiction phenomena-versus-perils.
+
+lex-daemonic-possession:
+  tier: 2
+  what: Lexicanum article "Daemonic Possession"
+  url: https://wh40k.lexicanum.com/wiki/Daemonic_Possession
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-daemonic-possession.wikitext
+  cites:
+    - "Codex: Chaos Daemons (6th Edition), pgs. 18-19 & 49-50"      # {{Fn|1}}
+    - "Harrowmaster (Novel), 'Combat Drop' and 'Legacy'"            # {{Fn|4}}
+  notes: >
+    Also cites a Warhammer Community PDF (The Battle of Calth: Underworld War) for
+    Corporeal Hosts — tier 1. No exorcism article exists on Lexicanum.
+
+lex-league-of-black-ships:
+  tier: 2
+  what: Lexicanum article "League of Black Ships"
+  url: https://wh40k.lexicanum.com/wiki/League_of_Black_Ships
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-league-of-black-ships.wikitext
+  cites:
+    - "Codex Imperialis (Background Book), pgs. 36-37"                          # {{Fn|1}}
+    - "Warhammer 40,000 6th Edition Rulebook, pg. 279 'Appendix: Black Ships'"  # {{Fn|3b}}
+    - "Watchers of the Throne: The Emperor's Legion, Chapter 15"                # {{Fn|4}}
+    - "Master of Mankind (Novel), Chapter 10"                                   # {{Fn|5}}
+    - "Codex: Genestealer Cults (9th Edition), pg. 9"                           # {{Fn|18}}
+    - "Deathwatch Core Rulebook, pg. 285"                                       # {{Fn|19}}
+    - "Imperium Maledictum: Inquisition Player's Guide, pg. 7"                  # {{Fn|22}}
+    - "White Dwarf 140 (UK), pg. 54"                                            # {{Fn|23}}
+  notes: >
+    Carries {{Trivia}}. "Black Ships" is a disambiguation page; this fleet must not be
+    confused with the Inquisition's own Black Ships, which the article states
+    explicitly. Also spelled "Blackship".
+
+lex-sanctioned-psyker:
+  tier: 2
+  what: Lexicanum article "Sanctioned Psyker"
+  url: https://wh40k.lexicanum.com/wiki/Sanctioned_Psyker
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-sanctioned-psyker.wikitext
+  cites:
+    - "Dark Heresy Second Edition Core Rulebook, pg. 138"           # {{Fn|11b}}
+    - "Dark Heresy: Ascension, pg. 48 'The Mind's Eye Opens'"       # {{Fn|15a}}
+    - "Warhammer 40,000: Rogue Trader, pg. 146"                     # {{Fn|16}}
+    - "Wrath & Glory Core Rulebook (2nd Edition), pg. 100"          # {{Fn|21}}
+  notes: Carries {{Uncited}} — works listed that support no specific claim.
+
+lex-scholastia-psykana:
+  tier: 2
+  what: Lexicanum article "Scholastia Psykana"
+  url: https://wh40k.lexicanum.com/wiki/Scholastia_Psykana
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-scholastia-psykana.wikitext
+  cites:
+    - "Codex Imperialis (Background Book), pgs. 36-37"      # {{Fn|1}}
+    - "Witchbringer (Novel), Chapter 1"                     # {{Fn|7a}}
+    - "Witchbringer (Novel), Chapter 2"                     # {{Fn|7b}}
+  notes: >
+    The article gives two spellings of its own subject in its first sentence:
+    "Scholastia Psykana", also known as "Scholastica Psykana". Both are recorded in the
+    glossary rather than one being chosen silently.
+
+lex-soul-binding:
+  tier: 2
+  what: Lexicanum article "Soul Binding"
+  url: https://wh40k.lexicanum.com/wiki/Soul_Binding
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-soul-binding.wikitext
+  cites:
+    - "Codex Imperialis (Background Book), pg. 37"      # {{Fn|1}}
+    - "Faith and Fire (Novel), Chapter Seventeen"       # {{Fn|4}}
+    - "Deathwatch Core Rulebook, pg. 285"               # {{Fn|7}}
+  notes: Carries {{Uncited}} and {{Cite Marker End}}.

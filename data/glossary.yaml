@@ -170,3 +170,174 @@ age-of-strife:
   variants: [Old Night]
   category: chronology
   sources: [lex-age-of-strife]
+
+# --- Volume I Title 2 ------------------------------------------------------
+
+psyker:
+  term: psyker
+  definition: >
+    An individual able to draw energy from the Warp through their own soul and
+    manifest it as psychic power.
+  variants: [psychic, witch]
+  category: cosmology
+  sources: [lex-psyker, lex-psionics]
+  full_treatment: I.T2.Ch5
+
+psionics:
+  term: psionics
+  definition: The use of psychic powers, whatever the species employing them.
+  variants: [the Force]
+  category: cosmology
+  sources: [lex-psionics]
+
+the-assignment:
+  term: the Assignment
+  definition: >
+    The Imperium's twenty-four point rating scale for psychic power, named in Greek
+    letters and applied by the Scholastica Psykana.
+  variants: [Imperial assignment, the assignment scale]
+  category: institutions
+  sources: [lex-the-assignment]
+  full_treatment: I.T2.Ch6
+
+plus-scale:
+  term: the plus scale
+  definition: >
+    Grades beyond the twenty-four point Assignment, for psykers the scale cannot
+    characterise. The naming convention reverses, so Alpha Plus is the lowest of them.
+  variants: [reversed scale, plus psyker, Alpha Plus]
+  category: institutions
+  sources: [lex-the-assignment]
+
+blank:
+  term: blank
+  definition: >
+    A human so inert in the Warp as to exert negative psychic influence, carrying a
+    region of blankness that psychic power cannot penetrate. Graded Omega.
+  variants: [Untouchable, pariah, Omega-Minus]
+  category: cosmology
+  sources: [lex-blank, lex-the-assignment]
+  full_treatment: I.T2.Ch6
+
+psychic-discipline:
+  term: psychic discipline
+  definition: >
+    A branch of psychic talent. The five most common across all species are biomancy,
+    divination, pyromancy, telekinesis and telepathy.
+  variants: [discipline]
+  category: cosmology
+  sources: [lex-psyker, lex-psionics]
+  full_treatment: I.T2.Ch7
+
+biomancy:
+  term: biomancy
+  definition: The manipulation of biological energy and processes.
+  variants: [biomancer]
+  category: cosmology
+  sources: [lex-biomancy, lex-psyker]
+
+divination:
+  term: divination
+  definition: >
+    The reading of possible futures and hidden pasts from the Warp. The least common of
+    the five principal disciplines in the Imperium.
+  variants: [diviner]
+  category: cosmology
+  sources: [lex-divination, lex-psyker]
+
+pyromancy:
+  term: pyromancy
+  definition: The creation and manipulation of fire by psychic means.
+  variants: [pyromancer, pyrokine]
+  category: cosmology
+  sources: [lex-pyromancy, lex-psyker]
+
+telekinesis:
+  term: telekinesis
+  definition: The conversion of psychic energy into physical force.
+  variants: [telekine, psykinetic, kinetic]
+  category: cosmology
+  sources: [lex-telekinesis, lex-psyker]
+
+telepathy:
+  term: telepathy
+  definition: The contacting and controlling of other minds by psychic means.
+  variants: [telepath]
+  category: cosmology
+  sources: [lex-telepathy, lex-psyker]
+
+psychic-phenomena:
+  term: psychic phenomena
+  definition: >
+    Unintended effects that may occur whenever a psyker draws on the Warp, with risk
+    rising in proportion to the power drawn.
+  variants: [perils of the warp]
+  category: cosmology
+  sources: [lex-psychic-phenomena]
+  full_treatment: I.T2.Ch8
+
+daemonic-possession:
+  term: daemonic possession
+  definition: >
+    A daemon taking and controlling a host body, often using it as an opening through
+    which further entities may enter realspace.
+  variants: [possession, Corporeal Host]
+  category: cosmology
+  sources: [lex-daemonic-possession]
+  full_treatment: I.T2.Ch8
+
+adeptus-astra-telepathica:
+  term: Adeptus Astra Telepathica
+  definition: >
+    The Imperial body responsible for collecting, training and sanctioning psykers,
+    divided into the League of Black Ships and the Scholastica Psykana.
+  category: institutions
+  sources: [lex-league-of-black-ships, lex-scholastia-psykana]
+
+league-of-black-ships:
+  term: the League of Black Ships
+  definition: >
+    The recruiting division of the Adeptus Astra Telepathica: a fleet that gathers
+    psykers from across the galaxy and carries them to Terra.
+  variants: [Black Ships, Blackship, the Black Fleet]
+  category: institutions
+  sources: [lex-league-of-black-ships]
+  full_treatment: I.T2.Ch9
+
+scholastica-psykana:
+  term: the Scholastia Psykana
+  definition: >
+    The training and sanctioning division of the Adeptus Astra Telepathica, which
+    classifies psykers and decides which of them will serve and which will be expended.
+  variants: [Scholastica Psykana]
+  category: institutions
+  sources: [lex-scholastia-psykana]
+  full_treatment: I.T2.Ch9
+
+soul-binding:
+  term: the Soul Binding
+  definition: >
+    The rite in which a psyker's mind is brought before the Emperor and a portion of
+    his essence transferred into it, creating an Astropath. Usually costs the subject
+    their sight.
+  category: institutions
+  sources: [lex-soul-binding]
+
+sanctioned-psyker:
+  term: sanctioned psyker
+  definition: >
+    A psyker tested and trained by the Adeptus Astra Telepathica and permitted to serve
+    the Imperium. Those who are not sanctioned are hunted.
+  variants: [unsanctioned psyker, rogue psyker]
+  category: institutions
+  sources: [lex-sanctioned-psyker]
+  full_treatment: I.T2.Ch9
+
+psyker-tithe:
+  term: the psyker tithe
+  definition: >
+    The levy of psykers each Imperial world is required to surrender when a Black Ship
+    calls, roughly once a century.
+  variants: [the Tithe, customary levy]
+  category: institutions
+  sources: [lex-league-of-black-ships]

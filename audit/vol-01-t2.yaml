@@ -1,0 +1,236 @@
+title: I.T2
+name: Psyche, Soul Anatomy & Warp Resonance
+depth_band: full
+researched: 2026-07-25
+
+# ---------------------------------------------------------------------------
+# QUERIES / RETRIEVALS
+# ---------------------------------------------------------------------------
+# 6 Special:Export requests for 32 page titles, at the Crawl-delay: 5 that
+# robots.txt asks for. api.php untouched. Psyker and Soul were already cached
+# from Title 1, so this Title cost less than it otherwise would have.
+
+queries:
+  - route: Special:Export (24 titles, 3 requests)
+    outcome: >
+      20 articles, 7 redirects, 4 not found. The redirects again carried the
+      information: Alpha Plus routes into an article called "The Assignment",
+      Perils of the Warp into Psychic Phenomena, Psychic Powers into Psionics,
+      Untouchable into Blank, Witch into Psyker. Not found: Psychic Assignment
+      Scale, Exorcism, Nulls, Sanctioning.
+  - route: Special:Export (The Assignment, Psionics, two disambiguation pages)
+    outcome: >
+      Black Ships turned out to be a disambiguation page distinguishing the Adeptus
+      Astra Telepathica's League of Black Ships from the Inquisition's own vessels of
+      the same name. Retrieved the former.
+  - route: Special:Export (Template:Quarantine)
+    outcome: >
+      Retrieved to establish what the tag on The Assignment actually means, rather
+      than guess. See reliability_flags.
+  - route: Special:Export (Psychic Disciplines, Spatial Magic)
+    outcome: >
+      Psychic Disciplines is a redirect into a section of the Psyker article, which
+      holds the canonical list. Spatial Magic does not exist — see departures.
+  - route: Special:Export (Warp Anchor, Soul Luminosity)
+    outcome: Neither exists. See departures.
+
+# ---------------------------------------------------------------------------
+# RELIABILITY FLAGS — swept mechanically before writing
+# ---------------------------------------------------------------------------
+# frame/cite-map.mjs was extended during this Title to detect {{Quarantine}},
+# {{WIP}}, {{Fanon}} and {{Unofficial}}, then run across all 18 sources. Ten
+# carry at least one flag. Knowing this before drafting changed how three
+# Chapters are written.
+reliability_flags:
+  - source: lex-the-assignment
+    flags: ["{{Quarantine}}"]
+    meaning: >
+      Confirmed by retrieving Template:Quarantine: passages were REMOVED from the
+      article for insufficient citation and parked on its discussion page. So the
+      surviving text is what passed review — but the article is known-incomplete.
+      This is Chapter 6's core source, and the Chapter says so in its own prose.
+  - source: lex-blank
+    flags: ["{{Trivia}}", "{{Quarantine}}"]
+  - source: lex-soul
+    flags: ["{{Trivia}}", "{{WIP}}"]
+    meaning: Chapter 5's core source is marked unfinished by the wiki itself.
+  - source: lex-astropath
+    flags: ["{{Uncited}}", "{{Cite Marker End}}", "{{Trivia}}"]
+  - source: lex-soul-binding
+    flags: ["{{Uncited}}", "{{Cite Marker End}}"]
+  - source: lex-sanctioned-psyker
+    flags: ["{{Uncited}}"]
+  - source: lex-psychic-phenomena
+    flags: ["{{Cite Marker End}}", "{{Trivia}}"]
+  - source: lex-pyromancy
+    flags: ["{{Cite Marker End}}", "{{Trivia}}"]
+  - source: lex-league-of-black-ships
+    flags: ["{{Trivia}}"]
+  - source: lex-adeptus-astra-telepathica
+    flags: ["{{Cite Marker End}}"]
+  - source: lex-psyker
+    flags: []
+    meaning: 99 KB and unflagged — the most solid ground in this Title.
+
+retrieved_and_cited:
+  [lex-psyker, lex-soul, lex-the-assignment, lex-blank, lex-psionics,
+   lex-pyromancy, lex-telekinesis, lex-telepathy, lex-biomancy, lex-divination,
+   lex-psychic-phenomena, lex-daemonic-possession, lex-league-of-black-ships,
+   lex-sanctioned-psyker, lex-scholastia-psykana, lex-soul-binding]
+
+retrieved_not_cited:
+  - id: lex-astropath
+    reason: >
+      Astropaths are the canonical subject of IV.T9.Ch29. Nothing is taken from this
+      article beyond what the Soul Binding article already supports.
+  - id: lex-adeptus-astra-telepathica
+    reason: >
+      The organisation is IV.T9.Ch29's subject. Title 2 cites its two divisions
+      directly instead.
+  - id: lex-pariah-disambiguation
+    reason: Navigational page. Recorded in the Blank source note, not cited.
+  - id: lex-black-ship-disambiguation
+    reason: Navigational page; used to find the right article.
+  - id: lex-template-quarantine
+    reason: >
+      Retrieved to establish the meaning of a reliability tag. It is documentation
+      about the wiki, not about the setting, so it supports method rather than content.
+
+# ---------------------------------------------------------------------------
+# CONTRADICTIONS
+# ---------------------------------------------------------------------------
+contradictions_found:
+  - id: phenomena-versus-perils
+    note: >
+      Whether "psychic phenomena" and "perils of the warp" are two categories or one.
+      The article gives both positions in consecutive sentences with separate
+      citations and does not choose.
+
+contradictions_reverified: []
+# Neither of the two §11 items still outstanding (cadian-pylon-dimensions,
+# imperial-forms-of-address) belongs to this Title. Both remain reverified: false,
+# and the validator still blocks prose from citing them.
+
+# ---------------------------------------------------------------------------
+# UNVERIFIED — omitted or explicitly marked
+# ---------------------------------------------------------------------------
+unverified:
+  - subject: '"Soul luminosity" as a property or measure'
+    reason: >
+      No article, and no such term in any retrieved source. The nearest thing is the
+      Assignment article saying plus-scale souls are "poetically said" to burn like
+      supernovae — the source marks its own figure of speech as figurative.
+    disposition: >
+      Omitted. Chapter 5's first Section describes what a soul is held to be instead,
+      and quotes the supernova line only as the metaphor the source labels it.
+
+  - subject: '"The Warp Anchor"'
+    reason: Not found on Lexicanum. Not a sourceable term.
+    disposition: >
+      Section reframed. What IS attested is the soul as the interface between the two
+      realities, which is the substance the proposed title was reaching for.
+
+  - subject: '"Spatial Magic" as a psychic discipline'
+    reason: >
+      Not found. The Psyker article states the five most common disciplines are
+      biomancy, divination, pyromancy, telekinesis and telepathy. Spatial magic is
+      not among them, nor among the culture-specific disciplines listed.
+    disposition: Dropped from Chapter 7. See departures.
+
+  - subject: Stages of daemonic possession, and Inquisitorial exorcism
+    reason: >
+      No exorcism article exists on Lexicanum, and the possession article describes
+      mechanisms and host types rather than a staged progression.
+    disposition: >
+      Chapter 8 reduced to two Sections. It describes what possession is and how it
+      is invoked; it does not invent a sequence of stages or a rite of exorcism.
+
+  - subject: The true size of the Black Ship fleet
+    reason: >
+      The article states that many thousands exist but that only the highest-ranking
+      adepts know the true scale — an in-universe secret, not a gap in the sources.
+    disposition: Reported as the source reports it, including that it is withheld.
+
+# ---------------------------------------------------------------------------
+# DEPARTURES FROM THE PROPOSED SECTION BREAKDOWN
+# ---------------------------------------------------------------------------
+# 14 Sections written against 15 proposed.
+departures_from_plan:
+  - chapter: I.T2.Ch5
+    change: >
+      "Soul Luminosity & Species Profiles" -> "What a Soul Is";
+      "Post-Mortem Soul Resonances" -> "The Soul at Death";
+      "The Warp Anchor & Life" -> "Species and Their Warp Presence"
+    reason: >
+      Two of the three proposed titles use terms that do not exist in any retrieved
+      source — "soul luminosity" and "warp anchor". "Post-mortem soul resonance" is
+      likewise not attested as a term, though the subject beneath it is. The Sections
+      cover the sourceable material under names the sources support.
+
+  - chapter: I.T2.Ch7
+    change: '"Divination & Spatial Magic" -> "Flesh and Foresight" (biomancy and divination)'
+    reason: >
+      Spatial magic does not exist. Biomancy needed a home, and pairing it with
+      divination keeps the Chapter at three Sections covering all five disciplines.
+
+  - chapter: I.T2.Ch7
+    change: Chapter framing qualified rather than accepted.
+    reason: >
+      The Chapter is titled "Five Imperial Psychic Disciplines". The source says these
+      are the five MOST COMMON, not the only five, and explicitly not Imperium-specific
+      — both humans and Aeldari practise telepathy, and the article lists a dozen
+      further culture-specific disciplines. The Chapter states this rather than
+      repeating a framing its own source contradicts.
+
+  - chapter: I.T2.Ch8
+    change: 3 Sections -> 2. Dropped "Inquisitorial Exorcism"; merged "Spikes" into the first.
+    reason: >
+      No exorcism article exists, and no retrieved source describes a staged
+      progression of possession. Writing either would have meant inventing structure.
+
+notes: >
+  Title 2 is much better sourced than Title 1 in one respect and worse in another. The
+  Assignment gives a fully enumerable twenty-four point scale — the kind of concrete
+  material §7 predicts will exceed the word band, and it does. But that scale sits on a
+  {{Quarantine}}ed article, and Chapter 5's core source is marked {{WIP}}, so two of
+  five Chapters rest on pages the wiki itself flags as incomplete.
+
+  Extending cite-map.mjs to detect those tags and sweeping all 18 sources BEFORE
+  drafting was the single most useful thing done in this Title. It changed how Chapters
+  5, 6 and 8 are written, and it is now automatic for every Title that follows.
+
+  One arithmetic check worth recording: the article calls the Assignment a twenty-four
+  point scale, and the named grades run Omega through Alpha. Counting them gives
+  exactly 24 — seven negative, two inert, fifteen positive — so the description and the
+  table agree. The plus scale lies outside the twenty-four by definition.
+
+# ---------------------------------------------------------------------------
+# WORD COUNTS AGAINST BAND — reported, not corrected
+# ---------------------------------------------------------------------------
+word_counts:
+  band: full (400-500 per Section)
+  sections: 14
+  below_band: 10
+  range: 312-460
+  assessment: >
+    This is a pattern rather than an accident, and it is reported instead of fixed.
+    Ten of fourteen Sections land between 312 and 397 words against a 400 floor.
+
+    PROMPT.md section 7 is explicit that a short Section is a signal to check whether
+    the sources support more, and that a thin one must never be inflated. They were
+    checked. For most of these the honest answer is that the material is not there:
+    Chapter 5 rests on an article the wiki marks {{WIP}}, Chapter 6 on one marked
+    {{Quarantine}}, and the five discipline articles are two to six kilobytes each and
+    consist largely of game-rules ability lists this codex deliberately does not
+    summarise.
+
+    Where unused sourced material did exist it was added during drafting - the
+    Assignment table, the plus-grade ceilings, and the tithe-laundering detail in
+    Chapter 9 all came from second passes over the sources. What remains short is short
+    because the tier 2 ceiling is genuinely low on these subjects.
+
+    Worth flagging for the user rather than burying: across two Titles the running
+    average is now roughly 380 words per Section against a 400-500 band. If that gap
+    matters, the fix is not more words per Section - it is either a lower band for
+    conceptual material or more Sections per Chapter, and that is a decision about the
+    plan rather than about the writing.

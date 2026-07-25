@@ -93,3 +93,52 @@ warp-rifts:
     their forms, and what is claimed to suppress them.
   aliases: [Warp Rift, Warp Storm, Warp Portal, rifts]
   see_also: [the-veil, the-warp]
+
+# --- Volume I Title 2 ------------------------------------------------------
+# Again, only subjects whose owning Chapter exists and treats them in full.
+# Deliberately absent, because they belong elsewhere:
+#   Astropaths and the astropathic relay  -> IV.T9.Ch29
+#   The Sisters of Silence                -> IV.T8.Ch28
+#   The Culexus Clade                     -> IV.T1.Ch3
+#   Daemons as entities                   -> V.T2.Ch8
+#   The Astronomican                      -> IV.T9.Ch31
+
+the-soul-anatomy:
+  name: The soul
+  gloss: >
+    What a soul is held to be, which beings have one, and what becomes of it at death —
+    the mechanism every psychic phenomenon in the setting depends on.
+  aliases: [soul, spirit-self, anima]
+  see_also: [the-assignment-scale, psychic-disciplines]
+
+the-assignment-scale:
+  name: The Imperial Assignment
+  gloss: >
+    The twenty-four point scale by which the Imperium rates psychic power, the grades
+    beyond it, and the negative grades occupied by blanks.
+  aliases: [the Assignment, assignment rating, Alpha Plus, blanks, Untouchables, pariahs]
+  see_also: [the-soul-anatomy, psyker-sanctioning]
+
+psychic-disciplines:
+  name: The psychic disciplines
+  gloss: >
+    The five most common branches of psychic talent — biomancy, divination, pyromancy,
+    telekinesis, telepathy — and what the framing leaves out.
+  aliases: [disciplines, biomancy, divination, pyromancy, telekinesis, telepathy]
+  see_also: [the-soul-anatomy]
+
+perils-of-the-warp:
+  name: Psychic phenomena and possession
+  gloss: >
+    What goes wrong when a psyker draws on the Warp, and how daemons use a mortal mind
+    as a door into realspace.
+  aliases: [perils of the warp, psychic phenomena, daemonic possession, possession]
+  see_also: [psychic-disciplines, the-soul-anatomy]
+
+psyker-sanctioning:
+  name: The Black Ships and sanctioning
+  gloss: >
+    How the Imperium collects its psykers, what it does with them, and the industrial
+    scale on which most of them are expended.
+  aliases: [Black Ships, the Tithe, sanctioning, Scholastica Psykana, Soul Binding]
+  see_also: [the-assignment-scale]

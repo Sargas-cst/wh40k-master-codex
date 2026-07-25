@@ -252,3 +252,29 @@ imperial-forms-of-address:
     see the Title report. Verifying an absence properly requires searching the
     institutional articles in Volume IV, not the language articles in Volume I, so it
     is deferred rather than asserted.
+
+phenomena-versus-perils:
+  kind: terminology
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume I Title 2 research
+  summary: >
+    Whether "psychic phenomena" and "perils of the warp" name two categories or one.
+    Most retrieved material treats perils as a rare and far more harmful subset of
+    phenomena; other material makes no distinction and calls all of it perils.
+  reverification_note: >
+    The article states both positions in consecutive sentences, each with its own
+    citation, and does not choose. This is a taxonomy disagreement between game lines
+    rather than a factual conflict about events — but it changes what the phrase
+    "perils of the warp" denotes, which matters for any Chapter that uses it.
+  handling: >
+    Use "phenomena" for the general class and "perils" for the harmful subset, state
+    once that the distinction is not universal, and do not silently normalise either way.
+  positions:
+    - claim: Perils of the warp are a rare, severe subset of psychic phenomena.
+      source: lex-psychic-phenomena
+      marker: "{{Fn|1}}{{Fn|4}}"
+    - claim: Some material makes no distinction, classing all phenomena as perils.
+      source: lex-psychic-phenomena
+      marker: "{{Fn|6}}"

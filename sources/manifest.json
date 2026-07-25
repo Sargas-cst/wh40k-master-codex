@@ -1,5 +1,14 @@
 {
   "retrievals": {
+    "lex-adeptus-astra-telepathica": {
+      "title": "Adeptus Astra Telepathica",
+      "url": "https://wh40k.lexicanum.com/wiki/Adeptus_Astra_Telepathica",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 9959,
+      "sha256": "d7db64ce1d75879c2b80a7662c8f4d3e36536b5a2839be456fb57eb4a3cf7063",
+      "file": "sources/raw/lex-adeptus-astra-telepathica.wikitext"
+    },
     "lex-adeptus-mechanicus": {
       "title": "Adeptus Mechanicus",
       "url": "https://wh40k.lexicanum.com/wiki/Adeptus_Mechanicus",
@@ -18,6 +27,16 @@
       "sha256": "e9de710aa6746e352872c1c7d09f4ca48765a70cac08a5b3fdc0bfb8db7f7389",
       "file": "sources/raw/lex-age-of-strife.wikitext"
     },
+    "lex-alpha-plus": {
+      "title": "Alpha Plus",
+      "url": "https://wh40k.lexicanum.com/wiki/Alpha_Plus",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 78,
+      "sha256": "98c46ef4003633fcb1c80de253e1c0eb8eea640c82399ab405a5f39b43c35dad",
+      "file": "sources/raw/lex-alpha-plus.wikitext",
+      "redirect_to": "The Assignment_#The Imperial Assignment: Positive Psionic Levels"
+    },
     "lex-astronomican": {
       "title": "Astronomican",
       "url": "https://wh40k.lexicanum.com/wiki/Astronomican",
@@ -27,6 +46,24 @@
       "sha256": "a67e3301e1f15ab066aab541b634846043add10f3f320918590152948201ac73",
       "file": "sources/raw/lex-astronomican.wikitext"
     },
+    "lex-astropath": {
+      "title": "Astropath",
+      "url": "https://wh40k.lexicanum.com/wiki/Astropath",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 21228,
+      "sha256": "f76e1682ce26396c799040ec4dea7b69bb99597b0fbf1fe1177c11bc4587944c",
+      "file": "sources/raw/lex-astropath.wikitext"
+    },
+    "lex-biomancy": {
+      "title": "Biomancy",
+      "url": "https://wh40k.lexicanum.com/wiki/Biomancy",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 4376,
+      "sha256": "133a9dabeb4cda5af10fdabe6112d52d4fcef159fddb50206fe1f413ba354e2e",
+      "file": "sources/raw/lex-biomancy.wikitext"
+    },
     "lex-black-legion": {
       "title": "Black Legion",
       "url": "https://wh40k.lexicanum.com/wiki/Black_Legion",
@@ -35,6 +72,25 @@
       "bytes": 38146,
       "sha256": "4f0e8cb508c0646080d73fb46e728d5526f8b7ff0a3ce6c599a451b83af1334c",
       "file": "sources/raw/lex-black-legion.wikitext"
+    },
+    "lex-black-ship-disambiguation": {
+      "title": "Black Ship (disambiguation)",
+      "url": "https://wh40k.lexicanum.com/wiki/Black_Ship_(disambiguation)",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 233,
+      "sha256": "8b771e5ae1a85dc168cc5f94b8a8f70aa625ed826494a77dd3eb04cc014061dd",
+      "file": "sources/raw/lex-black-ship-disambiguation.wikitext"
+    },
+    "lex-black-ships": {
+      "title": "Black Ships",
+      "url": "https://wh40k.lexicanum.com/wiki/Black_Ships",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 41,
+      "sha256": "9bd348feaa65f5fe1fa1fe216dea0cba8d914dad8e53937dfd8744d2f036317a",
+      "file": "sources/raw/lex-black-ships.wikitext",
+      "redirect_to": "Black Ship (disambiguation)"
     },
     "lex-black-templars": {
       "title": "Black Templars",
@@ -53,6 +109,15 @@
       "bytes": 19502,
       "sha256": "f41938034a0f679e3daf3427c91e3cd41e6875cb63a566dd7025fc990552a315",
       "file": "sources/raw/lex-blackstone-fortress.wikitext"
+    },
+    "lex-blank": {
+      "title": "Blank",
+      "url": "https://wh40k.lexicanum.com/wiki/Blank",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 29845,
+      "sha256": "b20a10e763a8a55d70b1512589baa0cd3b249d6ba0a5fff11270c0f58470fc16",
+      "file": "sources/raw/lex-blank.wikitext"
     },
     "lex-blood-angels": {
       "title": "Blood Angels",
@@ -118,6 +183,15 @@
       "sha256": "39e3a20bac21cbbc753cfa88c74ca62aa69f800c4ace2d5c5b902d1c6000c8b6",
       "file": "sources/raw/lex-crimson-fists.wikitext"
     },
+    "lex-daemonic-possession": {
+      "title": "Daemonic Possession",
+      "url": "https://wh40k.lexicanum.com/wiki/Daemonic_Possession",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 2801,
+      "sha256": "fb68fcdc09aa7b82cd6cb7f7bd2bfe73d3cb1b975d00d220f303bfd1a560616a",
+      "file": "sources/raw/lex-daemonic-possession.wikitext"
+    },
     "lex-dark-angels": {
       "title": "Dark Angels",
       "url": "https://wh40k.lexicanum.com/wiki/Dark_Angels",
@@ -144,6 +218,15 @@
       "bytes": 36266,
       "sha256": "c6bbca0dad2908a0b03539bce91a417b209236c4123805c7f2b3a7b7adc4e400",
       "file": "sources/raw/lex-deathwatch.wikitext"
+    },
+    "lex-divination": {
+      "title": "Divination",
+      "url": "https://wh40k.lexicanum.com/wiki/Divination",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 2930,
+      "sha256": "a0bfb6776575c1f327ef6e36c9d4f82769e4c48bb5020217c1056be6b021c98e",
+      "file": "sources/raw/lex-divination.wikitext"
     },
     "lex-emperor-s-children": {
       "title": "Emperor's Children",
@@ -310,6 +393,15 @@
       "sha256": "1ac63ee1982237123d01c2886e42cbe795b2bcac160e916123d52f5d49855da1",
       "file": "sources/raw/lex-lamenters.wikitext"
     },
+    "lex-league-of-black-ships": {
+      "title": "League of Black Ships",
+      "url": "https://wh40k.lexicanum.com/wiki/League_of_Black_Ships",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 11503,
+      "sha256": "e539cd3c60bd5819850b978fd77ccd7dc5c4cce95b4b8f507985dab66a026eab",
+      "file": "sources/raw/lex-league-of-black-ships.wikitext"
+    },
     "lex-low-gothic": {
       "title": "Low Gothic",
       "url": "https://wh40k.lexicanum.com/wiki/Low_Gothic",
@@ -365,6 +457,73 @@
       "sha256": "35f604c00925f60470430be2cf5defa15855c82d05beaf56c7bf5a9d22be440c",
       "file": "sources/raw/lex-noctilith.wikitext"
     },
+    "lex-pariah": {
+      "title": "Pariah",
+      "url": "https://wh40k.lexicanum.com/wiki/Pariah",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 37,
+      "sha256": "492b5448b5377cc13b7298739c807990a752ff660e808c51cf336a639d55a49a",
+      "file": "sources/raw/lex-pariah.wikitext",
+      "redirect_to": "Pariah (disambiguation)"
+    },
+    "lex-pariah-disambiguation": {
+      "title": "Pariah (disambiguation)",
+      "url": "https://wh40k.lexicanum.com/wiki/Pariah_(disambiguation)",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 883,
+      "sha256": "0f4c32760845f5b9e33009cc19c90b9ba09a01eaf6f6e98d3e88ca2f6aa7f50f",
+      "file": "sources/raw/lex-pariah-disambiguation.wikitext"
+    },
+    "lex-perils-of-the-warp": {
+      "title": "Perils of the Warp",
+      "url": "https://wh40k.lexicanum.com/wiki/Perils_of_the_Warp",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 31,
+      "sha256": "0137e4b2952c7d46ab60d3aa0f5331d70ced7b141497f29440781b8b45acfa89",
+      "file": "sources/raw/lex-perils-of-the-warp.wikitext",
+      "redirect_to": "Psychic Phenomena"
+    },
+    "lex-psionics": {
+      "title": "Psionics",
+      "url": "https://wh40k.lexicanum.com/wiki/Psionics",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 2035,
+      "sha256": "8529ba51d4f6eaf25cc738a84cf2755a636e6a10481d9f973ff25788a1763aa8",
+      "file": "sources/raw/lex-psionics.wikitext"
+    },
+    "lex-psychic-disciplines": {
+      "title": "Psychic Disciplines",
+      "url": "https://wh40k.lexicanum.com/wiki/Psychic_Disciplines",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 54,
+      "sha256": "f6fa68dbf9e5f77073f7b6775dcac5d43ed8f84a70b0df7c8a2e8d84045f44da",
+      "file": "sources/raw/lex-psychic-disciplines.wikitext",
+      "redirect_to": "Psyker#Psychic_Disciplines_and_Techniques"
+    },
+    "lex-psychic-phenomena": {
+      "title": "Psychic Phenomena",
+      "url": "https://wh40k.lexicanum.com/wiki/Psychic_Phenomena",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 13438,
+      "sha256": "2a19ef2de3bd6eadf72ad84502556e7e1bc5113848d63f985ee59e5adb58fd37",
+      "file": "sources/raw/lex-psychic-phenomena.wikitext"
+    },
+    "lex-psychic-powers": {
+      "title": "Psychic Powers",
+      "url": "https://wh40k.lexicanum.com/wiki/Psychic_Powers",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 22,
+      "sha256": "decd5f555db5d7ca8ffe3f7f5a576899244d1ac5ab2409121e277b14ac5f16e5",
+      "file": "sources/raw/lex-psychic-powers.wikitext",
+      "redirect_to": "Psionics"
+    },
     "lex-psyker": {
       "title": "Psyker",
       "url": "https://wh40k.lexicanum.com/wiki/Psyker",
@@ -393,6 +552,15 @@
       "file": "sources/raw/lex-pylons.wikitext",
       "redirect_to": "Pylon"
     },
+    "lex-pyromancy": {
+      "title": "Pyromancy",
+      "url": "https://wh40k.lexicanum.com/wiki/Pyromancy",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 3790,
+      "sha256": "d90a85584232600975a2c3a68a4a3d2aae560732c26b550c8eadb42c0f1a9a36",
+      "file": "sources/raw/lex-pyromancy.wikitext"
+    },
     "lex-raven-guard": {
       "title": "Raven Guard",
       "url": "https://wh40k.lexicanum.com/wiki/Raven_Guard",
@@ -419,6 +587,24 @@
       "bytes": 74869,
       "sha256": "9f96455c4f2d301742145a222357be6b571f78d82a59e26b3fe4af769fde7b30",
       "file": "sources/raw/lex-salamanders.wikitext"
+    },
+    "lex-sanctioned-psyker": {
+      "title": "Sanctioned Psyker",
+      "url": "https://wh40k.lexicanum.com/wiki/Sanctioned_Psyker",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 18656,
+      "sha256": "4a02a62e100c2f9414ec5a7a0862111796575d0efa5d6b850ff5f111528a6dba",
+      "file": "sources/raw/lex-sanctioned-psyker.wikitext"
+    },
+    "lex-scholastia-psykana": {
+      "title": "Scholastia Psykana",
+      "url": "https://wh40k.lexicanum.com/wiki/Scholastia_Psykana",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 10826,
+      "sha256": "ffa24a462181cdf88ab2c9d6724a5cd7ffe6e3a0f4dc46c4a4bd629d329b8b08",
+      "file": "sources/raw/lex-scholastia-psykana.wikitext"
     },
     "lex-sea-of-souls": {
       "title": "Sea of Souls",
@@ -448,6 +634,15 @@
       "sha256": "a333b944f3ebde40752ce6ad06e80a2f63d59c15abe546c4f6fe001a47ea0591",
       "file": "sources/raw/lex-soul.wikitext"
     },
+    "lex-soul-binding": {
+      "title": "Soul Binding",
+      "url": "https://wh40k.lexicanum.com/wiki/Soul_Binding",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 3115,
+      "sha256": "5b5e3f9bdc6dbab197ae42f6cd4a837afcbfb3529196e5ce12e0d7969d4257b6",
+      "file": "sources/raw/lex-soul-binding.wikitext"
+    },
     "lex-space-wolves": {
       "title": "Space Wolves",
       "url": "https://wh40k.lexicanum.com/wiki/Space_Wolves",
@@ -466,6 +661,33 @@
       "sha256": "7a0c64d2f4ebe630db79f444e32591d60f2560747ed03bbbc41c4863d8b37e57",
       "file": "sources/raw/lex-standard-template-construct.wikitext"
     },
+    "lex-telekinesis": {
+      "title": "Telekinesis",
+      "url": "https://wh40k.lexicanum.com/wiki/Telekinesis",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 6134,
+      "sha256": "3b71347a155d6414e5db3b0c414df4636cab715c7a6d0fc414e981d894a335cb",
+      "file": "sources/raw/lex-telekinesis.wikitext"
+    },
+    "lex-telepathy": {
+      "title": "Telepathy",
+      "url": "https://wh40k.lexicanum.com/wiki/Telepathy",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 2548,
+      "sha256": "d383b46da7105ac45996e727fed9014cad7817525e33601210cc2d8623969a1a",
+      "file": "sources/raw/lex-telepathy.wikitext"
+    },
+    "lex-template-quarantine": {
+      "title": "Template:Quarantine",
+      "url": "https://wh40k.lexicanum.com/wiki/Template%3AQuarantine",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 1119,
+      "sha256": "773f315f856c5d84c6f7b6afc8209ba8f0f7bfe4ae5592540b3d970037f315cb",
+      "file": "sources/raw/lex-template-quarantine.wikitext"
+    },
     "lex-terra": {
       "title": "Terra",
       "url": "https://wh40k.lexicanum.com/wiki/Terra",
@@ -474,6 +696,15 @@
       "bytes": 33735,
       "sha256": "8206b8984c88d114157d6f00e83a91b9c9aad801e5131b7074408014a9e755f9",
       "file": "sources/raw/lex-terra.wikitext"
+    },
+    "lex-the-assignment": {
+      "title": "The Assignment",
+      "url": "https://wh40k.lexicanum.com/wiki/The_Assignment",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 14695,
+      "sha256": "e754dc836da40d8f6a853a0cfb841430b35bd415c40296ff3723f4a759c7fd08",
+      "file": "sources/raw/lex-the-assignment.wikitext"
     },
     "lex-thousand-sons": {
       "title": "Thousand Sons",
@@ -492,6 +723,16 @@
       "bytes": 73363,
       "sha256": "caba2e83c9f43b1fa9c1ee88d3d59677cd95407464a931faea3218bda6af2ba3",
       "file": "sources/raw/lex-ultramarines.wikitext"
+    },
+    "lex-untouchable": {
+      "title": "Untouchable",
+      "url": "https://wh40k.lexicanum.com/wiki/Untouchable",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 19,
+      "sha256": "fe3e9ca38439572ba54244673f258fe8db172efb7747a08430c81a463c726c52",
+      "file": "sources/raw/lex-untouchable.wikitext",
+      "redirect_to": "Blank"
     },
     "lex-veil": {
       "title": "Veil",
@@ -565,6 +806,16 @@
       "bytes": 66226,
       "sha256": "4425425b865d0b1b89ff1657e9ca1ac6f10137e74609d4fb4f45763ca3df5541",
       "file": "sources/raw/lex-white-scars.wikitext"
+    },
+    "lex-witch": {
+      "title": "Witch",
+      "url": "https://wh40k.lexicanum.com/wiki/Witch",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 20,
+      "sha256": "07f12f715a1fde7c96b8b5aa958a19495d9f0e3ea1daa7be3c64e99868e743f7",
+      "file": "sources/raw/lex-witch.wikitext",
+      "redirect_to": "Psyker"
     },
     "lex-word-bearers": {
       "title": "Word Bearers",
