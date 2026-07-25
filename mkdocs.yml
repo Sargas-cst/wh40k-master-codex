@@ -58,6 +58,9 @@ theme:
         name: Light mode
 
 extra_css:
+  # liveries first: it declares the --cx-t-* palette tokens that codex.css maps
+  # into the actual theme variables.
+  - assets/stylesheets/liveries.css
   - assets/stylesheets/codex.css
 
 markdown_extensions:

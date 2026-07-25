@@ -1,0 +1,394 @@
+/* ==========================================================================
+   LIVERIES — selectable colour schemes named for Space Marine Legions
+   and Chapters
+   ==========================================================================
+
+   Every palette below is derived from what the Lexicanum article for that
+   Chapter actually states in its `Colours=` infobox field, retrieved
+   2026-07-25 and cached under sources/raw/. Where the article gives an
+   explicit hex value it is used verbatim and marked SOURCED in the comment.
+   Where it names a colour ("Brass", "Putrid Green"), the CSS colour keyword
+   or the named tone is the anchor and the exact shade is a design choice —
+   marked NAMED.
+
+   This matters because a Chapter's livery is a fact about the setting, and
+   PROMPT.md rule 3.1 forbids writing facts from memory. The exact hex of a
+   background tint is design; "the Salamanders are green, black and gold" is
+   lore, and it is cited.
+
+   No Chapter insignia, iconography or artwork is reproduced anywhere in this
+   project — these are colour palettes and nothing more.
+
+   Token contract, consumed by codex.css:
+
+     --cx-t-shade     darkest background (dark scheme)
+     --cx-t-shade-2   raised surface (dark scheme)
+     --cx-t-ink       body text (dark scheme)
+     --cx-t-acc-d     accent for the dark scheme  — must clear 4.5:1 on shade
+     --cx-t-paper     background (light scheme)
+     --cx-t-ink-l     body text (light scheme)
+     --cx-t-acc-l     accent for the light scheme — must clear 4.5:1 on paper
+     --cx-t-metal     trim: rules, rivets, ornament. Decorative only, so it is
+                      not held to a text contrast ratio.
+
+   Two accents per livery rather than one, because gold reads beautifully on
+   near-black and fails completely on parchment. One accent cannot serve both
+   schemes and stay accessible.
+   ========================================================================== */
+
+/* --- Neutral default: no Chapter ---------------------------------------- */
+:root,
+[data-cx-theme="codex"] {
+  --cx-t-shade:   #101010;
+  --cx-t-shade-2: #1b1b1b;
+  --cx-t-ink:     #e8e4da;
+  --cx-t-acc-d:   #d98b6a;
+  --cx-t-paper:   #f2efe8;
+  --cx-t-ink-l:   #15130f;
+  --cx-t-acc-l:   #8a3324;
+  --cx-t-metal:   #9a9384;
+}
+
+/* ======================= LOYALIST — FIRST FOUNDING ====================== */
+
+/* Blue, White & Gold — NAMED */
+[data-cx-theme="ultramarines"] {
+  --cx-t-shade:   #08172e;
+  --cx-t-shade-2: #0f2748;
+  --cx-t-ink:     #e6ecf7;
+  --cx-t-acc-d:   #e8bf4a;
+  --cx-t-paper:   #eef1f7;
+  --cx-t-ink-l:   #0a1730;
+  --cx-t-acc-l:   #143d80;
+  --cx-t-metal:   #c9a227;
+}
+
+/* Red & Black — NAMED */
+[data-cx-theme="blood-angels"] {
+  --cx-t-shade:   #170709;
+  --cx-t-shade-2: #260d11;
+  --cx-t-ink:     #f4e4e2;
+  --cx-t-acc-d:   #ef5a4a;
+  --cx-t-paper:   #f7efed;
+  --cx-t-ink-l:   #1c0a0c;
+  --cx-t-acc-l:   #9c1c1c;
+  --cx-t-metal:   #c08a2e;
+}
+
+/* Post-Heresy Dark Green, with bone (NavajoWhite) — NAMED */
+[data-cx-theme="dark-angels"] {
+  --cx-t-shade:   #08130d;
+  --cx-t-shade-2: #10241a;
+  --cx-t-ink:     #e5ece5;
+  --cx-t-acc-d:   #6fbc82;
+  --cx-t-paper:   #eff2eb;
+  --cx-t-ink-l:   #0c1a12;
+  --cx-t-acc-l:   #1c5c33;
+  --cx-t-metal:   #cbbb92;
+}
+
+/* Blue-Grey #4E5067 & Yellow #FFCE00 — SOURCED, both hexes verbatim */
+[data-cx-theme="space-wolves"] {
+  --cx-t-shade:   #14161e;
+  --cx-t-shade-2: #23262f;
+  --cx-t-ink:     #e9eaf0;
+  --cx-t-acc-d:   #ffce00;
+  --cx-t-paper:   #eeeff3;
+  --cx-t-ink-l:   #15171f;
+  --cx-t-acc-l:   #4e5067;
+  --cx-t-metal:   #8d90a6;
+}
+
+/* Yellow #FFCE00 & Black — SOURCED (yellow hex verbatim) */
+[data-cx-theme="imperial-fists"] {
+  --cx-t-shade:   #16140b;
+  --cx-t-shade-2: #24200f;
+  --cx-t-ink:     #f5f1e3;
+  --cx-t-acc-d:   #ffce00;
+  --cx-t-paper:   #f8f3e2;
+  --cx-t-ink-l:   #1a1710;
+  --cx-t-acc-l:   #7d6000;
+  --cx-t-metal:   #ffce00;
+}
+
+/* Green #1E7331, Black #231F20 & Gold #D3B587 — SOURCED, all three verbatim */
+[data-cx-theme="salamanders"] {
+  --cx-t-shade:   #0b1a10;
+  --cx-t-shade-2: #132a19;
+  --cx-t-ink:     #e6efe6;
+  --cx-t-acc-d:   #3cba5d;
+  --cx-t-paper:   #edf2eb;
+  --cx-t-ink-l:   #231f20;
+  --cx-t-acc-l:   #1e7331;
+  --cx-t-metal:   #d3b587;
+}
+
+/* Black & White — NAMED */
+[data-cx-theme="raven-guard"] {
+  --cx-t-shade:   #0a0a0c;
+  --cx-t-shade-2: #171819;
+  --cx-t-ink:     #ecedf0;
+  --cx-t-acc-d:   #d7dae0;
+  --cx-t-paper:   #f1f2f4;
+  --cx-t-ink-l:   #0f1012;
+  --cx-t-acc-l:   #3a3f48;
+  --cx-t-metal:   #9aa0ab;
+}
+
+/* Black & Silver — NAMED */
+[data-cx-theme="iron-hands"] {
+  --cx-t-shade:   #0b0c0e;
+  --cx-t-shade-2: #181a1e;
+  --cx-t-ink:     #e8eaef;
+  --cx-t-acc-d:   #bcc3cf;
+  --cx-t-paper:   #eeeff1;
+  --cx-t-ink-l:   #101215;
+  --cx-t-acc-l:   #434a55;
+  --cx-t-metal:   #c0c0c0;
+}
+
+/* White & Red — NAMED */
+[data-cx-theme="white-scars"] {
+  --cx-t-shade:   #14100f;
+  --cx-t-shade-2: #221b19;
+  --cx-t-ink:     #f3ede9;
+  --cx-t-acc-d:   #ee6353;
+  --cx-t-paper:   #f8f5f2;
+  --cx-t-ink-l:   #16110f;
+  --cx-t-acc-l:   #a52019;
+  --cx-t-metal:   #d9cfc6;
+}
+
+/* ===================== LOYALIST — SUCCESSORS & ORDERS =================== */
+
+/* "Black with white shoulder pads" — SOURCED (described, not hexed) */
+[data-cx-theme="black-templars"] {
+  --cx-t-shade:   #07070a;
+  --cx-t-shade-2: #141419;
+  --cx-t-ink:     #eef0f4;
+  --cx-t-acc-d:   #e8eaf0;
+  --cx-t-paper:   #f3f3f6;
+  --cx-t-ink-l:   #0b0b0f;
+  --cx-t-acc-l:   #2b2b33;
+  --cx-t-metal:   #b9bcc4;
+}
+
+/* Dark Blue #002151 & Crimson Red #6A0001 — SOURCED, both hexes verbatim */
+[data-cx-theme="crimson-fists"] {
+  --cx-t-shade:   #03112b;
+  --cx-t-shade-2: #071e44;
+  --cx-t-ink:     #e3e9f4;
+  --cx-t-acc-d:   #ef6a58;
+  --cx-t-paper:   #ecf0f6;
+  --cx-t-ink-l:   #002151;
+  --cx-t-acc-l:   #6a0001;
+  --cx-t-metal:   #8aa0c4;
+}
+
+/* Steel-grey — SOURCED (described) */
+[data-cx-theme="grey-knights"] {
+  --cx-t-shade:   #0f1114;
+  --cx-t-shade-2: #1c1f25;
+  --cx-t-ink:     #e9ecf1;
+  --cx-t-acc-d:   #a9c6e0;
+  --cx-t-paper:   #eef0f4;
+  --cx-t-ink-l:   #121519;
+  --cx-t-acc-l:   #3d5366;
+  --cx-t-metal:   #ccd4de;
+}
+
+/* Blacked-out armour with a silver left arm — SOURCED (described) */
+[data-cx-theme="deathwatch"] {
+  --cx-t-shade:   #090909;
+  --cx-t-shade-2: #161719;
+  --cx-t-ink:     #eaecef;
+  --cx-t-acc-d:   #c6cbd3;
+  --cx-t-paper:   #f0f1f3;
+  --cx-t-ink-l:   #0d0e10;
+  --cx-t-acc-l:   #353a42;
+  --cx-t-metal:   #b0b6be;
+}
+
+/* Dark red / black / parchment white — SOURCED (described) */
+[data-cx-theme="blood-ravens"] {
+  --cx-t-shade:   #130a09;
+  --cx-t-shade-2: #22110e;
+  --cx-t-ink:     #f0e7dd;
+  --cx-t-acc-d:   #dd7a63;
+  --cx-t-paper:   #f4eee4;
+  --cx-t-ink-l:   #170b09;
+  --cx-t-acc-l:   #8a2418;
+  --cx-t-metal:   #d8c9a8;
+}
+
+/* Red, with black helmet, backpack and pauldrons — SOURCED (described) */
+[data-cx-theme="flesh-tearers"] {
+  --cx-t-shade:   #150506;
+  --cx-t-shade-2: #260a0a;
+  --cx-t-ink:     #f4e3e0;
+  --cx-t-acc-d:   #f4604a;
+  --cx-t-paper:   #f7eae7;
+  --cx-t-ink-l:   #190606;
+  --cx-t-acc-l:   #9c1a10;
+  --cx-t-metal:   #6e6e70;
+}
+
+/* Yellow #FFF56B with black and white checks — SOURCED, hex verbatim */
+[data-cx-theme="lamenters"] {
+  --cx-t-shade:   #17160b;
+  --cx-t-shade-2: #26230f;
+  --cx-t-ink:     #f7f5e1;
+  --cx-t-acc-d:   #fff56b;
+  --cx-t-paper:   #faf8e1;
+  --cx-t-ink-l:   #1a1810;
+  --cx-t-acc-l:   #6b6300;
+  --cx-t-metal:   #fff56b;
+}
+
+/* Dark Grey with black shoulder inset — SOURCED (described) */
+[data-cx-theme="carcharodons"] {
+  --cx-t-shade:   #0d0e0f;
+  --cx-t-shade-2: #1b1d1f;
+  --cx-t-ink:     #e7e9eb;
+  --cx-t-acc-d:   #aeb6bc;
+  --cx-t-paper:   #edeeef;
+  --cx-t-ink-l:   #101113;
+  --cx-t-acc-l:   #3e454a;
+  --cx-t-metal:   #8b9298;
+}
+
+/* Quartered yellow and red — SOURCED (described) */
+[data-cx-theme="howling-griffons"] {
+  --cx-t-shade:   #160f07;
+  --cx-t-shade-2: #251b0c;
+  --cx-t-ink:     #f5efe0;
+  --cx-t-acc-d:   #ffd23f;
+  --cx-t-paper:   #f9f2e1;
+  --cx-t-ink-l:   #1a1408;
+  --cx-t-acc-l:   #a8331a;
+  --cx-t-metal:   #c8a02a;
+}
+
+/* Bronze with red right pauldron — SOURCED (described) */
+[data-cx-theme="minotaurs"] {
+  --cx-t-shade:   #130f09;
+  --cx-t-shade-2: #231d11;
+  --cx-t-ink:     #f0e8da;
+  --cx-t-acc-d:   #d3a355;
+  --cx-t-paper:   #f4eee1;
+  --cx-t-ink-l:   #16110a;
+  --cx-t-acc-l:   #7a4a12;
+  --cx-t-metal:   #cd7f32;
+}
+
+/* Deep Red with bone — SOURCED (described). Note: this article's Colours field
+   carries {{Fn|Conflicting sources}} — Lexicanum flagging its own dispute. */
+[data-cx-theme="exorcists"] {
+  --cx-t-shade:   #140607;
+  --cx-t-shade-2: #240c0d;
+  --cx-t-ink:     #f1e5e3;
+  --cx-t-acc-d:   #e4655a;
+  --cx-t-paper:   #f5edeb;
+  --cx-t-ink-l:   #180808;
+  --cx-t-acc-l:   #8e1c18;
+  --cx-t-metal:   #d8cbb0;
+}
+
+/* ==================== TRAITOR — THE NINE LEGIONS ======================= */
+
+/* Black, Gold & Silver — SOURCED */
+[data-cx-theme="black-legion"] {
+  --cx-t-shade:   #07070a;
+  --cx-t-shade-2: #151519;
+  --cx-t-ink:     #ecedf2;
+  --cx-t-acc-d:   #dcb43c;
+  --cx-t-paper:   #eff0f2;
+  --cx-t-ink-l:   #0a0a0d;
+  --cx-t-acc-l:   #665012;
+  --cx-t-metal:   #c0c0c0;
+}
+
+/* Post-Heresy Putrid Green #849B63 & Rusty Iron (SaddleBrown) — SOURCED */
+[data-cx-theme="death-guard"] {
+  --cx-t-shade:   #121508;
+  --cx-t-shade-2: #1f2410;
+  --cx-t-ink:     #ecefdf;
+  --cx-t-acc-d:   #a9c47b;
+  --cx-t-paper:   #eff1e3;
+  --cx-t-ink-l:   #22300b;
+  --cx-t-acc-l:   #4a5c26;
+  --cx-t-metal:   #8b4513;
+}
+
+/* Post-Heresy Red (DarkRed) & Brass (DarkGoldenRod) — SOURCED */
+[data-cx-theme="world-eaters"] {
+  --cx-t-shade:   #150607;
+  --cx-t-shade-2: #240b0a;
+  --cx-t-ink:     #f3e5e2;
+  --cx-t-acc-d:   #f05a40;
+  --cx-t-paper:   #f7edea;
+  --cx-t-ink-l:   #1a0808;
+  --cx-t-acc-l:   #8b0000;
+  --cx-t-metal:   #b8860b;
+}
+
+/* Post-Heresy Blue & Gold — SOURCED */
+[data-cx-theme="thousand-sons"] {
+  --cx-t-shade:   #090f22;
+  --cx-t-shade-2: #121b3a;
+  --cx-t-ink:     #e7eaf6;
+  --cx-t-acc-d:   #eec957;
+  --cx-t-paper:   #edf0f8;
+  --cx-t-ink-l:   #0b1124;
+  --cx-t-acc-l:   #1a3a8f;
+  --cx-t-metal:   #ffd700;
+}
+
+/* Post-Heresy Dark Blue, Brass & Dark Red — SOURCED */
+[data-cx-theme="night-lords"] {
+  --cx-t-shade:   #060915;
+  --cx-t-shade-2: #101628;
+  --cx-t-ink:     #e5e9f2;
+  --cx-t-acc-d:   #a7bce8;
+  --cx-t-paper:   #ecEEF5;
+  --cx-t-ink-l:   #080b16;
+  --cx-t-acc-l:   #22305e;
+  --cx-t-metal:   #b8860b;
+}
+
+/* Post-Heresy Crimson (DarkRed) & Gunmetal (DimGray) — SOURCED */
+[data-cx-theme="word-bearers"] {
+  --cx-t-shade:   #130607;
+  --cx-t-shade-2: #210c0d;
+  --cx-t-ink:     #f1e4e4;
+  --cx-t-acc-d:   #e26055;
+  --cx-t-paper:   #f5eded;
+  --cx-t-ink-l:   #170909;
+  --cx-t-acc-l:   #8b0000;
+  --cx-t-metal:   #696969;
+}
+
+/* Pre-Heresy Purple & Gold — SOURCED */
+[data-cx-theme="emperors-children"] {
+  --cx-t-shade:   #14091d;
+  --cx-t-shade-2: #241131;
+  --cx-t-ink:     #efe6f4;
+  --cx-t-acc-d:   #dda7e6;
+  --cx-t-paper:   #f2edf6;
+  --cx-t-ink-l:   #170b1f;
+  --cx-t-acc-l:   #6b1f80;
+  --cx-t-metal:   #ffd700;
+}
+
+/* Post-Heresy Silver, Gold & Black — SOURCED. Hazard stripes are this
+   Legion's signature and codex.css keys them off this livery. */
+[data-cx-theme="iron-warriors"] {
+  --cx-t-shade:   #0f0f11;
+  --cx-t-shade-2: #1d1d21;
+  --cx-t-ink:     #eaeaee;
+  --cx-t-acc-d:   #d4a92c;
+  --cx-t-paper:   #efeff1;
+  --cx-t-ink-l:   #121214;
+  --cx-t-acc-l:   #494950;
+  --cx-t-metal:   #c0c0c0;
+}

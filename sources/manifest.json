@@ -9,6 +9,42 @@
       "sha256": "a67e3301e1f15ab066aab541b634846043add10f3f320918590152948201ac73",
       "file": "sources/raw/lex-astronomican.wikitext"
     },
+    "lex-black-legion": {
+      "title": "Black Legion",
+      "url": "https://wh40k.lexicanum.com/wiki/Black_Legion",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 38146,
+      "sha256": "4f0e8cb508c0646080d73fb46e728d5526f8b7ff0a3ce6c599a451b83af1334c",
+      "file": "sources/raw/lex-black-legion.wikitext"
+    },
+    "lex-black-templars": {
+      "title": "Black Templars",
+      "url": "https://wh40k.lexicanum.com/wiki/Black_Templars",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 33755,
+      "sha256": "bf08688826d95137a8cfa9be18e46ffd60109b7884beae823a9d1ed6613460d6",
+      "file": "sources/raw/lex-black-templars.wikitext"
+    },
+    "lex-blood-angels": {
+      "title": "Blood Angels",
+      "url": "https://wh40k.lexicanum.com/wiki/Blood_Angels",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 90355,
+      "sha256": "a7e26a073b207b378ffa00336412098f62f5c08fb47e075d27427127462b68c5",
+      "file": "sources/raw/lex-blood-angels.wikitext"
+    },
+    "lex-blood-ravens": {
+      "title": "Blood Ravens",
+      "url": "https://wh40k.lexicanum.com/wiki/Blood_Ravens",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 36508,
+      "sha256": "98ea46ebc82ca61446cc431f35f576a952086629f62cede02f41dae5fab9f24c",
+      "file": "sources/raw/lex-blood-ravens.wikitext"
+    },
     "lex-cadia": {
       "title": "Cadia",
       "url": "https://wh40k.lexicanum.com/wiki/Cadia",
@@ -17,6 +53,96 @@
       "bytes": 18981,
       "sha256": "480d5e19f77f58c08752ad0f0348eda0366014f4ae4343e1778fb88e396d3fba",
       "file": "sources/raw/lex-cadia.wikitext"
+    },
+    "lex-carcharodons": {
+      "title": "Carcharodons",
+      "url": "https://wh40k.lexicanum.com/wiki/Carcharodons",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 19858,
+      "sha256": "9a4e1737634c95d392637f8533ca77ded1c73a558ac925cc972b70b89ef32b3e",
+      "file": "sources/raw/lex-carcharodons.wikitext"
+    },
+    "lex-crimson-fists": {
+      "title": "Crimson Fists",
+      "url": "https://wh40k.lexicanum.com/wiki/Crimson_Fists",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 43991,
+      "sha256": "39e3a20bac21cbbc753cfa88c74ca62aa69f800c4ace2d5c5b902d1c6000c8b6",
+      "file": "sources/raw/lex-crimson-fists.wikitext"
+    },
+    "lex-dark-angels": {
+      "title": "Dark Angels",
+      "url": "https://wh40k.lexicanum.com/wiki/Dark_Angels",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 97791,
+      "sha256": "f6b97fb2cb3ab5503f59bed3b54b01d89b2d86d8d4aa51cf3cef3bd55fb463c4",
+      "file": "sources/raw/lex-dark-angels.wikitext"
+    },
+    "lex-death-guard": {
+      "title": "Death Guard",
+      "url": "https://wh40k.lexicanum.com/wiki/Death_Guard",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 46339,
+      "sha256": "de26dda12d96b184a62be60b0d0db5530e5718ae00009748b77312046dce450c",
+      "file": "sources/raw/lex-death-guard.wikitext"
+    },
+    "lex-deathwatch": {
+      "title": "Deathwatch",
+      "url": "https://wh40k.lexicanum.com/wiki/Deathwatch",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 36266,
+      "sha256": "c6bbca0dad2908a0b03539bce91a417b209236c4123805c7f2b3a7b7adc4e400",
+      "file": "sources/raw/lex-deathwatch.wikitext"
+    },
+    "lex-emperor-s-children": {
+      "title": "Emperor's Children",
+      "url": "https://wh40k.lexicanum.com/wiki/Emperor's_Children",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 45626,
+      "sha256": "ceeef7807d2179d910879cb3dbe287f9db8e5df649fa8ad55090e76d8d81c001",
+      "file": "sources/raw/lex-emperor-s-children.wikitext"
+    },
+    "lex-exorcists": {
+      "title": "Exorcists",
+      "url": "https://wh40k.lexicanum.com/wiki/Exorcists",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 22183,
+      "sha256": "6504a48f7864f2e63b8bbaa3dc969be756a93826cb40b91d971aa5790391282d",
+      "file": "sources/raw/lex-exorcists.wikitext"
+    },
+    "lex-flesh-tearers": {
+      "title": "Flesh Tearers",
+      "url": "https://wh40k.lexicanum.com/wiki/Flesh_Tearers",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 33560,
+      "sha256": "da10b2be8094c303d446a470afffe3c6890f09430beb09bd49a0b8c8a3db7103",
+      "file": "sources/raw/lex-flesh-tearers.wikitext"
+    },
+    "lex-grey-knights": {
+      "title": "Grey Knights",
+      "url": "https://wh40k.lexicanum.com/wiki/Grey_Knights",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 54221,
+      "sha256": "9be83f9f5b3472c991aa2a30393d7d9cd73fb7836cdf910e4a71ae1436d4c9df",
+      "file": "sources/raw/lex-grey-knights.wikitext"
+    },
+    "lex-howling-griffons": {
+      "title": "Howling Griffons",
+      "url": "https://wh40k.lexicanum.com/wiki/Howling_Griffons",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 34381,
+      "sha256": "bdeb3793bb18ccd653fe11453018b220cf4afd5eacf630f28f285866a4543aba",
+      "file": "sources/raw/lex-howling-griffons.wikitext"
     },
     "lex-immaterium": {
       "title": "Immaterium",
@@ -28,6 +154,78 @@
       "file": "sources/raw/lex-immaterium.wikitext",
       "redirect_to": "Warp"
     },
+    "lex-imperial-fists": {
+      "title": "Imperial Fists",
+      "url": "https://wh40k.lexicanum.com/wiki/Imperial_Fists",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 94747,
+      "sha256": "dcd337aa4e760e40f6c506c4313918402dfafbddf9b023f055f7b620f29e43dc",
+      "file": "sources/raw/lex-imperial-fists.wikitext"
+    },
+    "lex-iron-hands": {
+      "title": "Iron Hands",
+      "url": "https://wh40k.lexicanum.com/wiki/Iron_Hands",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 55757,
+      "sha256": "f18e3562ea7624e9d049a33316cf63b7ced5f0870b89d30f9b632831d3b2257f",
+      "file": "sources/raw/lex-iron-hands.wikitext"
+    },
+    "lex-iron-warriors": {
+      "title": "Iron Warriors",
+      "url": "https://wh40k.lexicanum.com/wiki/Iron_Warriors",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 54786,
+      "sha256": "51fa93e4975d30eef61047e61f2178aa0fbb4c064fb12311f70d3a97dc04ddad",
+      "file": "sources/raw/lex-iron-warriors.wikitext"
+    },
+    "lex-lamenters": {
+      "title": "Lamenters",
+      "url": "https://wh40k.lexicanum.com/wiki/Lamenters",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 25176,
+      "sha256": "1ac63ee1982237123d01c2886e42cbe795b2bcac160e916123d52f5d49855da1",
+      "file": "sources/raw/lex-lamenters.wikitext"
+    },
+    "lex-minotaurs": {
+      "title": "Minotaurs",
+      "url": "https://wh40k.lexicanum.com/wiki/Minotaurs",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 24482,
+      "sha256": "bac7512cb9059e2bae9c414c91e8e8fee5b50cf7c0d70a7bb4c2f725b74ed5e1",
+      "file": "sources/raw/lex-minotaurs.wikitext"
+    },
+    "lex-night-lords": {
+      "title": "Night Lords",
+      "url": "https://wh40k.lexicanum.com/wiki/Night_Lords",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 51028,
+      "sha256": "2edaf51db4146679eef28c4af5781715696e6478bb5be155b3f192895b973527",
+      "file": "sources/raw/lex-night-lords.wikitext"
+    },
+    "lex-raven-guard": {
+      "title": "Raven Guard",
+      "url": "https://wh40k.lexicanum.com/wiki/Raven_Guard",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 71239,
+      "sha256": "6036aa7cc388bba22d3240d658edae3a39ab9e72e1c9eff663f7a523b5858438",
+      "file": "sources/raw/lex-raven-guard.wikitext"
+    },
+    "lex-salamanders": {
+      "title": "Salamanders",
+      "url": "https://wh40k.lexicanum.com/wiki/Salamanders",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 74869,
+      "sha256": "9f96455c4f2d301742145a222357be6b571f78d82a59e26b3fe4af769fde7b30",
+      "file": "sources/raw/lex-salamanders.wikitext"
+    },
     "lex-segmentum-tempestus": {
       "title": "Segmentum Tempestus",
       "url": "https://wh40k.lexicanum.com/wiki/Segmentum_Tempestus",
@@ -37,6 +235,33 @@
       "sha256": "fdc8f5affe424bdce183880eaa3bf9af6d12c7b7b9f9111f465a12f6809ebd1b",
       "file": "sources/raw/lex-segmentum-tempestus.wikitext"
     },
+    "lex-space-wolves": {
+      "title": "Space Wolves",
+      "url": "https://wh40k.lexicanum.com/wiki/Space_Wolves",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 92743,
+      "sha256": "c57e27c6bcdd8b5d0ce72b518433b4a541619728c2df45ce00d1dc2520904f65",
+      "file": "sources/raw/lex-space-wolves.wikitext"
+    },
+    "lex-thousand-sons": {
+      "title": "Thousand Sons",
+      "url": "https://wh40k.lexicanum.com/wiki/Thousand_Sons",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 83998,
+      "sha256": "00a829b3b1471fa4b8717c4d7a1578de7ecd9ca6280d1e697fc72368c19c7842",
+      "file": "sources/raw/lex-thousand-sons.wikitext"
+    },
+    "lex-ultramarines": {
+      "title": "Ultramarines",
+      "url": "https://wh40k.lexicanum.com/wiki/Ultramarines",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 73363,
+      "sha256": "caba2e83c9f43b1fa9c1ee88d3d59677cd95407464a931faea3218bda6af2ba3",
+      "file": "sources/raw/lex-ultramarines.wikitext"
+    },
     "lex-warp": {
       "title": "Warp",
       "url": "https://wh40k.lexicanum.com/wiki/Warp",
@@ -45,6 +270,33 @@
       "bytes": 16398,
       "sha256": "f0aec78215b9f1a0c5aeba7e517c7523d003ea9355a8eaedb9d22a9192a92bd5",
       "file": "sources/raw/lex-warp.wikitext"
+    },
+    "lex-white-scars": {
+      "title": "White Scars",
+      "url": "https://wh40k.lexicanum.com/wiki/White_Scars",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 66226,
+      "sha256": "4425425b865d0b1b89ff1657e9ca1ac6f10137e74609d4fb4f45763ca3df5541",
+      "file": "sources/raw/lex-white-scars.wikitext"
+    },
+    "lex-word-bearers": {
+      "title": "Word Bearers",
+      "url": "https://wh40k.lexicanum.com/wiki/Word_Bearers",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 49784,
+      "sha256": "c51548a659d1ae492a0f7b269920e69756bf82ceb90a33b56f1b40642581eea2",
+      "file": "sources/raw/lex-word-bearers.wikitext"
+    },
+    "lex-world-eaters": {
+      "title": "World Eaters",
+      "url": "https://wh40k.lexicanum.com/wiki/World_Eaters",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 75497,
+      "sha256": "b46040b2eb8dc3d13521766dbe264a652eaa0e059241ecd4462c64fc43d76dd6",
+      "file": "sources/raw/lex-world-eaters.wikitext"
     }
   }
 }

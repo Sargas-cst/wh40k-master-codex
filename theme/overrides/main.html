@@ -14,6 +14,22 @@
   it here keeps a single source of truth.
 #}
 
+{% block extrahead %}
+  {{ super() }}
+  <script>
+    // Applied before first paint so the chosen livery does not flash. The
+    // attribute goes on <html>, which survives navigation.instant page swaps.
+    (function () {
+      try {
+        var t = localStorage.getItem("cx-livery");
+        document.documentElement.setAttribute("data-cx-theme", t || "ultramarines");
+      } catch (e) {
+        document.documentElement.setAttribute("data-cx-theme", "ultramarines");
+      }
+    })();
+  </script>
+{% endblock %}
+
 {% block content %}
   {% if page.meta and page.meta.id %}
     {% set parts = page.meta.id.split('.') %}
@@ -23,11 +39,11 @@
           <span>{% if parts[0] == 'APX' %}Appendix A{% else %}Volume {{ parts[0] }}{% endif %}</span>
         {% endif %}
         {% if parts | length > 1 %}
-          <span class="cx-sep">&middot;</span>
+          <span class="cx-sep">&#9670;</span>
           <span>Title {{ parts[1] | replace('T', '') }}</span>
         {% endif %}
         {% if parts | length > 2 %}
-          <span class="cx-sep">&middot;</span>
+          <span class="cx-sep">&#9670;</span>
           <span>Chapter {{ parts[2] | replace('Ch', '') }}</span>
         {% endif %}
 
@@ -53,21 +69,178 @@
 {% block scripts %}
   {{ super() }}
   <script>
-    // The apparatus pages — bibliography, registries, audit trail — render in a
-    // denser technical register. PROMPT.md permits only the appendix to break
-    // voice, so the design breaks register in exactly the same place.
-    //
-    // Driven from JS rather than a template class because `navigation.instant`
-    // keeps <body> across page loads; document$ re-fires on every navigation.
     (function () {
-      function apply() {
+      // ---------------------------------------------------------------
+      // Apparatus register
+      // ---------------------------------------------------------------
+      // Bibliography, registries and audit trail render in a denser technical
+      // register. PROMPT.md permits only the appendix to break voice, so the
+      // design breaks register in the same place.
+      //
+      // Driven from JS rather than a template class because navigation.instant
+      // keeps <body> across page loads; document$ re-fires on every navigation.
+      function applyApparatus() {
         var isApparatus = /\/(appendix|audit)(\/|$)/.test(window.location.pathname);
         document.body.toggleAttribute("data-cx-apparatus", isApparatus);
       }
+
+      // ---------------------------------------------------------------
+      // Livery picker
+      // ---------------------------------------------------------------
+      // Palettes are named for Legions and Chapters, and every one is derived
+      // from what that Chapter's Lexicanum article states in its `Colours=`
+      // field — see the header comment in liveries.css. Colour only: no
+      // insignia or iconography is reproduced anywhere in this project.
+      var LIVERIES = [
+        ["First Founding", [
+          ["ultramarines",      "Ultramarines"],
+          ["blood-angels",      "Blood Angels"],
+          ["dark-angels",       "Dark Angels"],
+          ["space-wolves",      "Space Wolves"],
+          ["imperial-fists",    "Imperial Fists"],
+          ["salamanders",       "Salamanders"],
+          ["raven-guard",       "Raven Guard"],
+          ["iron-hands",        "Iron Hands"],
+          ["white-scars",       "White Scars"]
+        ]],
+        ["Successors & Orders", [
+          ["black-templars",    "Black Templars"],
+          ["crimson-fists",     "Crimson Fists"],
+          ["blood-ravens",      "Blood Ravens"],
+          ["flesh-tearers",     "Flesh Tearers"],
+          ["lamenters",         "Lamenters"],
+          ["carcharodons",      "Carcharodons"],
+          ["howling-griffons",  "Howling Griffons"],
+          ["minotaurs",         "Minotaurs"],
+          ["exorcists",         "Exorcists"],
+          ["grey-knights",      "Grey Knights"],
+          ["deathwatch",        "Deathwatch"]
+        ]],
+        ["Traitor Legions", [
+          ["black-legion",      "Black Legion"],
+          ["death-guard",       "Death Guard"],
+          ["world-eaters",      "World Eaters"],
+          ["thousand-sons",     "Thousand Sons"],
+          ["night-lords",       "Night Lords"],
+          ["word-bearers",      "Word Bearers"],
+          ["emperors-children", "Emperor's Children"],
+          ["iron-warriors",     "Iron Warriors"]
+        ]],
+        ["Unliveried", [
+          ["codex",             "Codex (neutral)"]
+        ]]
+      ];
+
+      function currentLivery() {
+        return document.documentElement.getAttribute("data-cx-theme") || "ultramarines";
+      }
+
+      function setLivery(id) {
+        document.documentElement.setAttribute("data-cx-theme", id);
+        try { localStorage.setItem("cx-livery", id); } catch (e) {}
+        document.querySelectorAll(".cx-livery__opt").forEach(function (b) {
+          b.setAttribute("aria-checked", String(b.dataset.livery === id));
+        });
+      }
+
+      // Swatches are read back out of the stylesheet rather than duplicated
+      // here, so liveries.css stays the single source of truth for colour.
+      function swatchColours(id) {
+        var probe = document.createElement("div");
+        probe.setAttribute("data-cx-theme", id);
+        probe.style.display = "none";
+        document.body.appendChild(probe);
+        var cs = getComputedStyle(probe);
+        var out = ["--cx-t-shade", "--cx-t-acc-d", "--cx-t-metal"].map(function (v) {
+          return cs.getPropertyValue(v).trim() || "transparent";
+        });
+        probe.remove();
+        return out;
+      }
+
+      function buildPicker() {
+        if (document.querySelector(".cx-livery")) return;
+
+        var root = document.createElement("div");
+        root.className = "cx-livery";
+        root.setAttribute("data-open", "false");
+
+        var toggle = document.createElement("button");
+        toggle.className = "cx-livery__toggle";
+        toggle.type = "button";
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.appendChild(document.createTextNode("Livery"));
+
+        var panel = document.createElement("div");
+        panel.className = "cx-livery__panel";
+        panel.setAttribute("role", "radiogroup");
+        panel.setAttribute("aria-label", "Colour livery");
+
+        var head = document.createElement("div");
+        head.className = "cx-livery__head";
+        head.textContent = "Select livery";
+        panel.appendChild(head);
+
+        LIVERIES.forEach(function (group) {
+          var label = document.createElement("div");
+          label.className = "cx-livery__group";
+          label.textContent = group[0];
+          panel.appendChild(label);
+
+          group[1].forEach(function (entry) {
+            var btn = document.createElement("button");
+            btn.className = "cx-livery__opt";
+            btn.type = "button";
+            btn.setAttribute("role", "radio");
+            btn.dataset.livery = entry[0];
+            btn.setAttribute("aria-checked", String(entry[0] === currentLivery()));
+
+            var sw = document.createElement("span");
+            sw.className = "cx-livery__sw";
+            swatchColours(entry[0]).forEach(function (c) {
+              var i = document.createElement("i");
+              i.style.background = c;
+              sw.appendChild(i);
+            });
+
+            btn.appendChild(sw);
+            btn.appendChild(document.createTextNode(entry[1]));
+            btn.addEventListener("click", function () { setLivery(entry[0]); });
+            panel.appendChild(btn);
+          });
+        });
+
+        function open(state) {
+          root.setAttribute("data-open", String(state));
+          toggle.setAttribute("aria-expanded", String(state));
+        }
+        toggle.addEventListener("click", function (e) {
+          e.stopPropagation();
+          open(root.getAttribute("data-open") !== "true");
+        });
+        document.addEventListener("click", function (e) {
+          if (!root.contains(e.target)) open(false);
+        });
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") open(false);
+        });
+
+        root.appendChild(panel);
+        root.appendChild(toggle);
+        document.body.appendChild(root);
+      }
+
+      function init() {
+        applyApparatus();
+        buildPicker();
+      }
+
       if (typeof document$ !== "undefined" && document$.subscribe) {
-        document$.subscribe(apply);
+        document$.subscribe(init);
+      } else if (document.readyState !== "loading") {
+        init();
       } else {
-        apply();
+        document.addEventListener("DOMContentLoaded", init);
       }
     })();
   </script>

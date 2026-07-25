@@ -59,15 +59,37 @@ to the preview only — CI builds without the flag, so it can never reach the si
 
 ## Design
 
-The book proper reads as a **scholarly critical edition**; the apparatus — bibliography,
-registries, audit trail — shifts to a **denser technical register**.
+**Brutalist.** Notched steel plates, rivets, hard unblurred shadows, hazard striping,
+heavy condensed display caps, and a fractal-noise grain overlay. The apparatus —
+bibliography, registries, audit trail — shifts to a denser technical register, since the
+brief permits only the appendix to break voice.
 
-That split is not decoration. The brief fixes the voice as encyclopedic and
-out-of-universe, analytical and willing to call something contradictory or unknowable.
-An in-universe gothic treatment would fight that on every page, and would sit far closer
-to Games Workshop's trade dress than original prose does. The brief separately permits
-only the appendix to break voice, so the design breaks register in exactly the same
-place the writing does.
+One deliberate restraint: the reading column keeps a serif at roughly 68 characters.
+Everything around it is brutal, but a quarter of a million words set in condensed heavy
+caps would go unread.
+
+### Liveries
+
+29 selectable colour schemes named for Legions and Chapters, picked from a control in the
+bottom-right corner and remembered across visits.
+
+**Every palette is sourced.** A Chapter's livery is a fact about the setting, and rule
+3.1 forbids writing facts from memory — so each was taken from that Chapter's Lexicanum
+`Colours=` infobox field, retrieved 2026-07-25 and cached with hashes in
+`sources/manifest.json`. Where the article gives an explicit hex it is used verbatim and
+the entry in `liveries.css` is marked **SOURCED** (Salamanders `#1E7331`, Space Wolves
+`#4E5067`, Lamenters `#FFF56B`, Crimson Fists `#002151`, and others). Where it names a
+colour — "Brass", "Putrid Green" — the keyword anchors the hue and the exact shade is a
+design choice, marked **NAMED**.
+
+No Chapter insignia, iconography or artwork is reproduced anywhere. These are colour
+palettes only.
+
+All 29 liveries were contrast-audited in both light and dark schemes — 58 combinations,
+**zero failures**. Worst body text measures 12.3:1 and worst accent 5.2:1, against a
+4.5:1 AA threshold. Callout colours deliberately do *not* change with livery: a disputed
+fact must look the same whichever Chapter's colours the reader picked, or the signal
+moves.
 
 Components exist for the things the content actually needs, rather than being decorative:
 
