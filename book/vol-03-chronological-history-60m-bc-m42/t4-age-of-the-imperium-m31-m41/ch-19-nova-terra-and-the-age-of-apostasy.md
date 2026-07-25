@@ -203,7 +203,7 @@ present**.[^lex-age-of-apostasy]
 
 Vandire's insanity, the sources note, **was only ever directed outwards**. While other planets
 raised spires to him, **the Palaces on Terra were falling into decay again** — whole wings
-collapsing, chandeliers left unlit, **dust at knee depth in some places**, tapestries **ripped and
+collapsing, chandeliers left unlit, dust **at knee depth in some places**, tapestries **ripped and
 chewed by rats, who used the priceless carpets for nests**. When rain cleaned the windows and light
 poured in, **Vandire would retreat to his chambers and sit in silence for days at a
 time**.[^lex-age-of-apostasy]
@@ -219,8 +219,8 @@ had an eloquence and charisma that none could match or understand and could reac
 and minds of the people.**[^lex-age-of-apostasy] Within three months **eighty planets had fallen to
 the new Confederation of Light**.[^lex-age-of-apostasy]
 
-The decisive event was a second warp storm, and it is impossible to read as coincidence. Vandire
-sent **the most trusted of the Templar Frateris to raze Dimmamar to the ground** — and **soon after
+The decisive event was a second warp storm, and it is impossible to read as coincidence. **The
+most trusted of the Templar Frateris were dispatched to raze Dimmamar to the ground** — and **soon after
 the war fleet jumped into the warp from the base on Clax, it was destroyed by a gigantic warp
 storm**. The last astropath reported **white arcs of light tearing the ships apart, literally, as
 well as the soldiers on board**, and the Clax system has been cut off ever since, **by the Storm of
@@ -247,7 +247,8 @@ Lords** and ordered attacks on the revolting Space Marines and Mechanicus; **man
 refused and were hanged or burnt as heretics** — **but by this time Vandire had been revealed as the
 fraud he was**.[^lex-age-of-apostasy]
 
-The Fabricator-General **Gastaph Hediatrix ordered his Martian Tech-Guard to Terra**, joined by the
+The Fabricator-General **Gastaph Hediatrix** ordered his **Martian Tech-Guard to transport to
+Terra**, joined by the
 **Imperial Fists, Fire Hawks, Soul Drinkers and Black Templars**.[^lex-age-of-apostasy] And the
 siege that followed inverted the founding image: **images were set up relating to the Horus Heresy,
 except this time the other way around — the heretics within the

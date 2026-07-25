@@ -130,7 +130,7 @@ increase in production of arms and technology to carry out the Great Crusade, an
 **placed the acquisition of STCs among their most paramount
 objectives**.[^lex-standard-template-construct] Many recovered systems proved only partly
 complete — but following the Treaty of Olympus the Martian Mechanicum provided the Imperium
-with **the first intact STCs, such as the Land Raider**, and over the Crusade more usable
+with the first intact STCs, **such as the Land Raider**, and over the Crusade more usable
 systems were acquired, their designs becoming **the backbone for technologies used by the
 Legiones Astartes and the Imperial Army**.[^lex-standard-template-construct]
 

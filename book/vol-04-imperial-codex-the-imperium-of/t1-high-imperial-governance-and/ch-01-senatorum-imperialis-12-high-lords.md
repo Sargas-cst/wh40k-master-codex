@@ -155,7 +155,7 @@ thousand years for the Emperor's state to be captured by a religion about the Em
 
 Then the failures, in order.
 
-**The War of the Beast, 544.M32.** During the conflict the **Senatorum was paralysed by
+**The War of the Beast**, 544.M32. During the conflict the **Senatorum was paralysed by
 inaction as the Orks devastated humanity, and multiple High Lords were removed, arrested,
 and even killed**. The Imperial Fist **Koorland** rose to become Lord Commander of the
 Imperium and removed the Ecclesiarchy from the High

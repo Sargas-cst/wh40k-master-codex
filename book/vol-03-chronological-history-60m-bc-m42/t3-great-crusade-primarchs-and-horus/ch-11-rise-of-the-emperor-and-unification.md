@@ -153,7 +153,7 @@ The doctrine the Emperor imposed is one of the setting's great ironies, and its 
 setting out exactly.
 
 The **Imperial Truth** was the doctrine preached during the years of the Great
-Crusade.[^lex-imperial-truth] Its content was **the removal of religion, faith and superstition**
+Crusade.[^lex-imperial-truth] Its content was **the removal of religion, faith, and superstition**
 from the human worlds Terra recontacted; in their place, **Iterators** offered **the cold
 clarity of logic and science**.[^lex-imperial-truth] Its other key aspects were **the manifest
 destiny of mankind to rule the stars, the exceptionalism of humanity, and the danger posed by

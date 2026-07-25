@@ -187,7 +187,7 @@ their new academies**.[^lex-schola-progenium] There, alongside the specialised t
 meet **the unregulated cruelty of their peers**, which is **allowed and encouraged, justified
 as an adherence to custom and values, upheld as vaunted Schola traditions across the
 galaxy**.[^lex-schola-progenium] Graduation has no fixed point: it ranges from **16** or
-**17** to **well into an individual's early twenties**, and **there is no set age for
+**17** to well into **an individual's early twenties**, and **there is no set age for
 graduation**.[^lex-schola-progenium]
 
 ## Progena, Truants and the Dead {#outcomes}

@@ -396,6 +396,7 @@ for (const ch of chapters.values()) {
     .replace(/[‘’]/g, "'").replace(/[“”]/g, '"')
     .replace(/[–—]/g, '-').replace(/\s+/g, ' ').toLowerCase()
     .replace(/([a-z])iz(e|ed|es|ing|ation|ations)\b/g, '$1is$2')
+    .replace(/\bpractic(e|ed|es|ing)\b/g, 'practis$1')
     .replace(/\b(col|hon|lab|behavi|neighb|arm|fav|rum|val|vig)or(s|ed|ing|less|able|ite)?\b/g, '$1our$2')
     .trim();
 

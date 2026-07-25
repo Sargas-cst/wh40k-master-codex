@@ -115,7 +115,7 @@ was entering the galaxy and became determined to warn the
 Imperium.**[^lex-behemoth]
 
 And even then the warning nearly failed, for infrastructural reasons that will be familiar from
-[[II.T1.Ch2]]. Kryptman **attempted to send a message via the Telepathica Matrix** orbiting Thandros
+[[II.T1.Ch2]]. Kryptman **attempted to send a message via this Telepathica Matrix** orbiting Thandros
 I, **but he couldn't get through**; in desperation he went to Thandros **and found it destroyed**,
 salvaging the Matrix so it could project the data-codex with his own report. The Ordo Xenos replied
 **with orders to travel to Macragge and assist in mounting a
@@ -158,7 +158,7 @@ That comparison is the Hive Mind's learning curve made visible, and it is [[VI.T
 The first fleet the galaxy met was the crude one. Every fleet since has been better.
 
 Behemoth's advance into Ultramar is the material [[II.T2.Ch6]] records from the defenders' side.
-**Prandium, known as "the jewel in Ultramar's crown", was an easy conquest.** The Ultramarines under
+**Prandium, known as the "jewel in Ultramar's crown", was an easy conquest**. The Ultramarines under
 Marneus Calgar mounted a defence in support of the local Prandium Defence Auxilia — **however, the
 luscious agri-world was stripped of all life**, the Tyranids **so thorough that even Prandium's
 atmosphere was consumed for whatever biomass it

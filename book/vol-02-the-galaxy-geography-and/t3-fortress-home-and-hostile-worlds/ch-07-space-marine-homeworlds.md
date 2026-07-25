@@ -339,7 +339,7 @@ Imperium is shown *improving* on inherited knowledge instead of merely preservin
 Compare the Mechanicus of [[II.T2.Ch5]], whose whole method is recovery.
 
 And then the practice that distinguishes the Chapter entirely. Because of the Salamanders' ethos
-of protecting humanity, they **live among the people of Nocturne**: with the exception of
+of protecting humanity, they live among **the people of Nocturne**: with the exception of
 Neophytes and the First Company Firedrakes, most seasoned Salamanders maintain private domiciles
 throughout Nocturne and the Sanctuary Cities. In times of war the companies are gathered by a
 host of sacred teleportation translation points across the

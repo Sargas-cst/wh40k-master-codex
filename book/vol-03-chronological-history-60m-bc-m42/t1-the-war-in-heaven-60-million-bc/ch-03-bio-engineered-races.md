@@ -147,7 +147,7 @@ There is one more inheritance from the Old Ones, and it is the one the sources c
 resolve.
 
 The **Slanni** — also written **Slann** — are a sentient reptilian or amphibian species
-described as those who **are, or were, or have inherited the legacy of** the Old
+described as those who **are or were or have inherited the legacy of** the Old
 Slann.[^lex-slanni] Before the Imperium, and even before the Aeldari, the Slanni ruled a
 mighty galactic domain.[^lex-slanni] They **claim to be, and may actually be, the oldest of
 all the races in the galaxy**, and in the heyday of their old empire they discovered and
@@ -185,7 +185,7 @@ rather than discovered — [[V.T1.Ch1]] uses terms handed down from a civilisati
 already lost a war to them.
 
 The teaching was not one-sided in tone. While the Old Slann taught the Eldar the dangers of
-the Warp, **they also taught them its many positive aspects**: how the mind of a living
+the Warp, **they also taught them about its many positive aspects**: how the mind of a living
 creature passes at death into the Warp, where it may — if that mind has achieved
 power — remain whole and immortal as a spirit. It was the Slann belief that **the object of
 life was to perfect the mind**, and thereby achieve conscious immortality.[^lex-slanni]

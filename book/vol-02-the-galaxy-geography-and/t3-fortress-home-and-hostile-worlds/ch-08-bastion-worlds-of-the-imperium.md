@@ -164,7 +164,7 @@ the largest wars in the Imperium's history.[^lex-armageddon] To the Orks it is k
 world that has been fought over four times and is being fought over now.
 
 Its origin is a secret the Imperium keeps from itself. Unknown to the greater Imperium,
-**Armageddon was originally the world of Ullanor** — made famous by the Ullanor Crusade in the
+**Armageddon was in fact originally the world of Ullanor** — made famous by the Ullanor Crusade in the
 Emperor's own time. Fifteen hundred years after the Horus Heresy, during the War of the Beast,
 Ullanor became the capital world of The Beast and was thought destroyed by the Mechanicum. In
 truth the Mechanicum simply **teleported Ullanor into the Armageddon
@@ -275,7 +275,7 @@ fighting attracted the World Eaters' battleship *Conqueror* at the head of a Kho
 forcing a major intervention by Grey Knights, Space Wolves, Black Templars and Imperial Guard
 before he was pushed back through it.[^lex-armageddon] Shortly afterwards Ghazghkull launched the
 **Fourth War**: the shock of a Speedwaaagh! under Wazdakka Gutsmek ahead of the main force has
-taken **four of Armageddon's nine major hives**, and though the Imperium mounts a determined
+taken **four out of nine major hives on Armageddon**, and though the Imperium mounts a determined
 resistance under Yarrick — with the arrival of Operation Imperator buying enough time to prevent
 total loss — the war continues.[^lex-armageddon]
 

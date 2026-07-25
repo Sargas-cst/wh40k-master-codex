@@ -164,7 +164,7 @@ is in the founding record.
 
 !!! disputed "Recorded conflict — first-primarch-found"
 
-    **Traditional accounts state that the first Primarch found was Horus**, who became the
+    **Traditional accounts state that the first Primarch to be found was Horus**, who became the
     Emperor's favourite. **However a dubious account given by Alpharius states he was the
     first**, and landed on Terra itself following the
     scattering.[^lex-primarch]
@@ -203,7 +203,7 @@ Legions.[^lex-primarch]
 
 And there is a suggestion about the instrument. In *Prospero Burns* it is suggested that **Leman
 Russ and his Space Wolves had been used by the Emperor to cull or pacify the two Legions**, and
-that **the Emperor created the Wolves for just such an event** — using their barbaric, untamed
+that **the Emperor had created the Wolves for just such an event** — using their barbaric, untamed
 nature as **a sort of insurance policy for use against other Space Marine
 Legions**.[^lex-primarch] The unleashing of the Wolves on the Thousand Sons in
 [[III.T3.Ch15]] is offered as further demonstration.[^lex-primarch]

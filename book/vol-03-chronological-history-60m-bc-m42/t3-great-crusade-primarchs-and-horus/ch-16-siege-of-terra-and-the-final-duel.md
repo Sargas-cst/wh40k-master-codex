@@ -104,7 +104,7 @@ to leave**, all present instead pledging themselves to him.[^lex-siege-of-terra]
 The battle itself brought the daemon he had already beaten once. **Ka'Bandha**, bested by
 Sanguinius during the Signus Campaign, **vowed to reap 500 Blood Angels in the presence of their
 Primarch** and nearly succeeded before Sanguinius intervened; their airborne duel ended when
-**Sanguinius broke the daemon's back with the hilt of his sword**, and Ka'Bandha fell to be
+Sanguinius broke the daemon's back **with the hilt of his sword**, and Ka'Bandha fell to be
 consumed by lesser daemons taking advantage of his weakness.[^lex-siege-of-terra]
 
 Ka'Bandha's name appears again in [[II.T3.Ch7]] — his sigil arranged from Tyranid skulls on Baal
@@ -155,7 +155,8 @@ overwhelmed.[^lex-siege-of-terra]
 Horus then **dragged the Emperor towards the fifth throne he had constructed alongside those of
 the four Chaos Gods**, proclaiming he would **punish the Emperor by forcing Him to be his
 slave**.[^lex-siege-of-terra] The Emperor absorbed some of Horus's dark power for a
-counterattack — **only a small portion, in order to avoid corruption** — and was overpowered again:
+counterattack, having **only absorbed a small portion of Horus' power in order to avoid
+corruption** — and was overpowered again:
 Horus **punctured his throat with a talon and nailed his father back to the throne using his own
 sigil-blades**, then **created a crown of red energy and placed it upon the Emperor's head,
 completing his tableau**.[^lex-siege-of-terra]
@@ -191,7 +192,7 @@ Primarch**.[^lex-siege-of-terra] Horus agreed, **since the battle was over anywa
 the Emperor's skull with *Worldbreaker* **as the Chaos Gods and daemons around them angrily
 shouted and protested, trying to warn Horus of something**.[^lex-siege-of-terra]
 
-**Loken and the Emperor's corpse had both been illusions.**[^lex-siege-of-terra]
+**Loken and the Emperor's corpse had both been illusions**.[^lex-siege-of-terra]
 
 The Emperor won by persuading his son to give up the only advantage he had, using an appeal to the
 one virtue Horus had left. The Chaos Gods saw it coming and could not make him listen.
@@ -228,7 +229,7 @@ The Imperium's founding atrocity is officially a father executing a traitor. The
 as a father granting a dying son's request, and forgiving him. The Ecclesiarchy of [[IV.T3.Ch8]]
 has never taught it that way.
 
-**With the deed done, the Emperor immediately collapsed.** Furious that their pawn was dead, **the
+**With the deed done, the Emperor immediately collapsed**. Furious that their pawn was dead, **the
 Chaos Gods instantly retreated back into the shadows**, and the Warp-madness that had plagued
 Terra and the *Vengeful Spirit* went with them.[^lex-siege-of-terra]
 

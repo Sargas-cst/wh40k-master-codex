@@ -114,7 +114,7 @@ arrived too late by the length of a ceremony.
 The second instruction took the whole ten thousand years, and its product is the Imperium's largest
 military reform since the Codex Astartes.
 
-**Primaris Space Marines are the next step in the evolution of the Emperor's Space Marines** —
+Primaris Space Marines **are the next step in the evolution of the Emperor's Space Marines** —
 **larger and more physically powerful than their standard cousins, in addition to having a more
 stable gene-seed**.[^lex-primaris-space-marines] They **appeared in the closing days of the 41st
 Millennium following the Thirteenth Black Crusade and resurrection of Roboute
@@ -134,7 +134,8 @@ process**.[^lex-primaris-space-marines]
 So the Primaris Marines were built using Dark Age Standard Template Constructs — the artificial
 intelligences of [[III.T2.Ch7]] whose recovery is the Mechanicus's holiest quest and whose nature is
 its holiest prohibition — and genetic data on all twenty Primarchs, two of whom the Emperor ordered
-forgotten. **The task would take ten thousand years to complete.**[^lex-primaris-space-marines]
+forgotten. Nonetheless, **the task would take ten thousand years to
+complete**.[^lex-primaris-space-marines]
 
 And the scale was ready before anyone was told. **Tens of thousands of Primaris Marines were secretly
 created by Cawl over the millennia, while many more were made after the rebirth of Guilliman. Many

@@ -149,7 +149,7 @@ his own control and left.
 The Great Sleep is usually described as a strategy. It was also a slow disaster, and the
 sources are specific about it.
 
-**For sixty million years the Necrons remained in their deathless slumber.** As time
+**For sixty million years the Necrons remained in their deathless slumber**. As time
 passed, **many Tomb Worlds fell prey to malfunction or ill-fortune. Some were destroyed by
 marauding Eldar. These failures destroyed millions, if not billions, of dormant
 Necrons.**[^lex-necron]

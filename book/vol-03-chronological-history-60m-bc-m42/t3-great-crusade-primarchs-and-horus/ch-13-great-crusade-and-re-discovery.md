@@ -113,7 +113,7 @@ was actually for.
 The **Interex** were **a highly advanced human civilisation** during the time of the Great
 Crusade[^lex-interex] — humans originating from Terra who had built their own
 civilisation.[^lex-interex] They were tall, with **one genetically engineered difference: large
-bat-like ears** that helped them use **a unique language based on music and sounds**, though
+bat-like ears** that helped them use a **unique language based on music and sounds**, though
 they still retained an evolved human dialect of Terra and used it
 rarely.[^lex-interex]
 
@@ -121,7 +121,7 @@ They had also solved, independently, the problem the Imperium existed to address
 they made contact with the Eldar, who told them about the dangers of Chaos and the threat that
 the inhabitants of the Warp pose to humanity.**[^lex-interex] They were **devoted to fighting
 Chaos** — which they called **'Kaos'** — and they regarded the Imperial 63rd Expedition
-sceptically, **as they thought it might be tainted by it**.[^lex-interex]
+sceptically, **as they thought they might be tainted by it**.[^lex-interex]
 
 Stop on that. A human civilisation that had survived Old Night, learned the truth about Chaos
 from the Aeldari, organised itself around fighting it, and then met the Emperor's Crusade and

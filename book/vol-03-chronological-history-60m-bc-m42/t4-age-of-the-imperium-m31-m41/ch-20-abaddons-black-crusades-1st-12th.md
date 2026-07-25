@@ -75,7 +75,7 @@ single campaign. What follows is that list, with what Abaddon took from each.
 | 8 | 999.M37 | The Skullgather | Appeased Tzeentch with **sequences of death forming a mathematical equation** |
 | 9 | 573.M38 | The Starving of Cancephalus | Got several fleets **out of the Eye undetected** |
 | 10 | 001.M39 | The Conflict of Helica | Fought the Iron Hands at Medusa |
-| 11 | 301.M39 | The Doom of Relorria | Abducted thousands of **Orks for experiments on their use of the Warp** |
+| 11 | 301.M39 | The Doom of Relorria | Abducted thousands of **orks to conduct experiments on their use of the warp** |
 | 12 | 139.M41 | The **Gothic War** | The last two **Blackstone Fortresses** |
 
 [^lex-black-crusade]
@@ -98,9 +98,9 @@ Changer of Ways with sequences of death creating a mathematical equation of terr
 perfection**.[^lex-black-crusade] A campaign fought so that the pattern of the casualties would
 constitute a formula. Tzeentch is [[V.T1.Ch3]].
 
-And the ninth is the one an Imperial strategist should have noticed. Its recorded achievement is
-that **several Chaos fleets left the Eye of Terror undetected** during the Antecanis
-Massacre.[^lex-black-crusade] The Imperium counted that as a massacre survived. It was a test of
+And the ninth is the one an Imperial strategist should have noticed. Its recorded achievement is one line:
+**Several Chaos fleets leave the Eye of Terror undetected during the Antecanis
+Massacre.**[^lex-black-crusade] The Imperium counted that as a massacre survived. It was a test of
 whether the Cadian Gate could be slipped.
 
 ## The Crimson Path {#crimson-path}
@@ -133,8 +133,8 @@ being carried out in front of it, over nine thousand years, by an enemy whose ap
 disorganisation was the disguise. [[III.T5.Ch22]] is what happens when the programme reaches its
 objective, and [[III.T5.Ch23]] is the result.
 
-One detail completes the picture and it belongs here rather than later. The thirteenth Crusade began
-with Abaddon **gathering the blessings of the daemon primarchs** — Fulgrim, Perturabo, Angron,
+One detail completes the picture and it belongs here rather than later. The thirteenth Crusade began as the source records it:
+**Abaddon gathers the blessings of the daemon primarchs** — Fulgrim, Perturabo, Angron,
 Mortarion, Magnus and Lorgar — before launching on the Cadian
 system.[^lex-black-crusade] Six of the Primarchs of [[III.T3.Ch12]], every one of them a figure
 from [[III.T3.Ch13]]'s catalogue of feuds, endorsing the successor to the brother who recruited

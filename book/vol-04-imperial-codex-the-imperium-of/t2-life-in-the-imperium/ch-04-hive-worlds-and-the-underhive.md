@@ -149,7 +149,7 @@ crews patching the wall against the weather so the tower does not open.
 
 **The Heat Sink** is the engine, and it explains the whole economy. At the core of every
 spire is **a vertical shaft known as the heat sink, extending from the topmost levels to deep
-below the planet's crust** — **a vast, hollow plasteel tube, several kilometres wide**, which
+below the planet's crust** — **This vast, hollow plasteel tube, several kilometres wide**, which
 **harnesses heat from the planet's core to generate power for the spire**. Generator stations
 along it **convert raw heat into energy, which is distributed to manufactories and hab layers
 around the core**.[^lex-hive]
@@ -244,7 +244,7 @@ The domes themselves **are filled with rubble, toxic dust, and filth, creating a
 environment**, each providing **a wide open space, divided into zones of factories, houses,
 commercial buildings, and other structures**. **Between each dome, the maze of tunnels and
 shafts is the scene of bitter gang wars and bloody raids**, which is why the underhive
-**highly values scouts who can navigate them**.[^lex-underhive]
+highly values **scouts who can navigate them**.[^lex-underhive]
 
 People live there anyway, and the sources are careful to record that they build rather than
 merely survive. **Despite the harsh living conditions, habitable pockets exist and are

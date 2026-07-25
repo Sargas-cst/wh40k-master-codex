@@ -206,7 +206,7 @@ Agemman.[^lex-ultramar] Calgar is [[VIII.T2.Ch6]].
 There is one provision that explains Ultramar's autonomy better than any of its titles, and it
 is fiscal.
 
-**The worlds of Ultramar do not pay the usual tithes.** They contribute directly to the upkeep
+**The worlds of Ultramar do not pay the usual tithes**. They contribute directly to the upkeep
 of the Ultramarines Chapter instead.[^lex-ultramar] Macragge's own tithe grade is recorded as
 Adeptus Non.[^lex-macragge] Each world maintains its own Planetary Defence Force, the
 well-disciplined and equipped **Ultramar Auxilia**, similarly exempt from the wider tithe system

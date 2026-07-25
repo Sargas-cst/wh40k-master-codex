@@ -70,7 +70,7 @@ military doctrine — fleets, sieges, orbital bombardment — has almost no purc
 itself is [[I.T3.Ch10]].
 
 Its origins explain its character precisely. Commorragh traces to the ancient Eldar empire, when
-it became one of the greatest Webway port-cities; **Port Commorragh was established in M18** as
+it became one of the greatest Webway port-cities; Port Commorragh **was established in M18** as
 the primary nodal port in the Webway, able to transport a fleet to any of the Eldar's most vital
 planets.[^lex-commorragh] Its ability to reach the far-flung corners of realspace made it the
 most important location in the entire Webway — and therefore too valuable to belong to any one
@@ -197,7 +197,7 @@ race — a Mechanicus Explorator fleet had found them at Stone Age level in
 M35[^lex-t-au-empire] — and escalating inter-tribal conflict produced the **Mont'au**, the darkest
 period in their history, at the end of M37. Wars lasted years; thousands died each year, and
 squalid conditions and lack of fresh food and water bred a plague that killed more T'au than the
-fighting. **They were on the verge of wiping themselves out.**[^lex-t-au-empire]
+fighting. **The T'au were on the verge of wiping themselves out.**[^lex-t-au-empire]
 
 Then, at the fortress city of Fio'taun — under siege for five years by an alliance of plains and air
 T'au who would settle for nothing less than annihilation, its defenders beginning to starve — two

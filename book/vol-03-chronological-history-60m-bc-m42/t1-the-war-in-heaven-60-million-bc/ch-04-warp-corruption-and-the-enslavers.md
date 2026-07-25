@@ -54,9 +54,10 @@ the thing that ate them.
 
 !!! disputed "Recorded conflict — empyrean-before-the-young-races"
 
-    The Empyrean was **peaceful** before the Young Races disturbed it,[^lex-enslaver] or
-    it already held **the diseased consciousnesses of the Powers of Chaos**, which the Old
-    Ones taught the Eldar to resist.[^lex-slanni]
+    The Empyrean was **peaceful** before the Young Races disturbed it,[^lex-enslaver] — or
+    it already held what the Old Slann taught the Eldar to call **the sentient creatures of
+    the warp**, and warned them of **the dangers of the warp** in the same
+    breath.[^lex-slanni]
 
     Both cannot be simply true. The Old Ones' own spiritual doctrine — that a perfected
     mind survives death in the Warp *if it can resist* the Powers of Chaos — presupposes
@@ -70,7 +71,7 @@ the thing that ate them.
 ## The Enslavers {#enslavers}
 
 The **Enslavers** — *spiritus subjugator*, also known as Psyrens, Krell, dominators or
-puppeteers — are **biological entities native to the Warp**.[^lex-enslaver] They broke the
+puppeteers — are **biological entities that are native to the Warp**.[^lex-enslaver] They broke the
 boundaries between dimensions, and among all the Warp-spawned creatures the war produced
 they were the most proficient.[^lex-enslaver]
 
