@@ -2516,3 +2516,119 @@ lex-mutant:
   cites:
     - "Codex: Eye of Terror (3rd Edition)"                        # {{Fn|1a}}{{Fn|1b}}
     - "Codex: Chaos Knights (8th Edition)"                        # {{Fn|2}}
+
+lex-living-saint:
+  tier: 2
+  what: Lexicanum article "Living Saint"
+  url: https://wh40k.lexicanum.com/wiki/Living_Saint
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-living-saint.wikitext
+  cites:
+    - "Codex: Witch Hunters (3rd Edition)"                        # {{Fn|1a}}{{Fn|1b}}
+    - "The Inquisition (Background Book)"                         # {{Fn|2}}
+
+lex-saint-celestine:
+  tier: 2
+  what: Lexicanum article "Saint Celestine"
+  url: https://wh40k.lexicanum.com/wiki/Saint_Celestine
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-saint-celestine.wikitext
+  cites:
+    - "Codex: Witch Hunters (3rd Edition)"                        # {{Fn|1a}}{{Fn|1b}}
+    - "White Dwarf 380 (UK)"                                      # {{Fn|2}}
+
+lex-list-of-imperial-saints:
+  tier: 2
+  what: Lexicanum article "List of Imperial Saints"
+  url: https://wh40k.lexicanum.com/wiki/List_of_Imperial_Saints
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-list-of-imperial-saints.wikitext
+  cites:
+    - "Dark Heresy Core Rulebook"                                 # {{Fn|1a}}-{{Fn|1c}}
+  notes: >
+    "Imperial Saint" and "Saint" both redirect here. Mostly a table; the prose used from
+    it is the short preamble on how sainthood is conferred.
+
+lex-war-of-faith:
+  tier: 2
+  what: Lexicanum article "War of Faith"
+  url: https://wh40k.lexicanum.com/wiki/War_of_Faith
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-war-of-faith.wikitext
+  cites:
+    - "Codex: Sisters of Battle (2nd Edition)"                    # {{Fn|1a}}{{Fn|1b}}
+    - "Warhammer 40,000 5th Edition Rulebook"                     # {{Fn|2}}
+
+lex-saint-sabbat:
+  tier: 2
+  what: Lexicanum article "Saint Sabbat"
+  url: https://wh40k.lexicanum.com/wiki/Saint_Sabbat
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-saint-sabbat.wikitext
+  cites:
+    - "Codex: Sisters of Battle (2nd Edition)"                    # {{Fn|1}}
+    - "Sabbat Martyr (Novel)"                                     # {{Fn|2}}
+    - "The Sabbat Worlds Crusade (Background Book)"               # {{Fn|3}}
+
+lex-missionarus-galaxia:
+  tier: 2
+  what: Lexicanum article "Missionarus Galaxia"
+  url: https://wh40k.lexicanum.com/wiki/Missionarus_Galaxia
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-missionarus-galaxia.wikitext
+  cites:
+    - "Grey Knights (Novel)"                                      # {{Fn|1}}
+    - "Warhammer 40,000 4th Edition Rulebook"                     # {{Fn|2}}
+  notes: >
+    "Missionaria Galaxia" redirects here; the article gives three spellings of the name.
+
+lex-frateris-militia:
+  tier: 2
+  what: Lexicanum article "Frateris Militia"
+  url: https://wh40k.lexicanum.com/wiki/Frateris_Militia
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-frateris-militia.wikitext
+  cites:
+    - "Codex: Sisters of Battle (2nd Edition)"                    # {{Fn|1a}}-{{Fn|1c}}
+
+lex-redemption-cult:
+  tier: 2
+  what: Lexicanum article "Redemption Cult"
+  url: https://wh40k.lexicanum.com/wiki/Redemption_Cult
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-redemption-cult.wikitext
+  cites:
+    - "Necromunda: Outlanders Rulebook, The Redemption pgs. 31-38"  # {{Fn|1}}
+    - "Chapter Approved 2001"                                     # {{Fn|2}}
+  notes: >
+    "Redemptionists" redirects here. Carries an incomplete-citation marker on the claim
+    that similar cults exist beyond Necromunda.
+
+lex-confessor:
+  tier: 2
+  what: Lexicanum article "Confessor"
+  url: https://wh40k.lexicanum.com/wiki/Confessor
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-confessor.wikitext
+  cites:
+    - "Warhammer 40,000 6th Edition Rulebook"                     # {{Fn|1}}
+    - "Codex: Sisters of Battle (2nd Edition)"                    # {{Fn|2a}}
+
+lex-adepta-sororitas:
+  tier: 2
+  what: Lexicanum article "Adepta Sororitas"
+  url: https://wh40k.lexicanum.com/wiki/Adepta_Sororitas
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-adepta-sororitas.wikitext
+  cites:
+    - "Codex: Sisters of Battle (2nd Edition)"                    # {{Fn|1a}}-{{Fn|1f}}
+    - "Codex: Witch Hunters (3rd Edition)"                        # {{Fn|2b}}{{Fn|2c}}
+lex-canoness:
+  tier: 2
+  what: Lexicanum article "Canoness"
+  url: https://wh40k.lexicanum.com/wiki/Canoness
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-canoness.wikitext
+  cites:
+    - "Codex: Witch Hunters (3rd Edition)"                        # {{Fn|1a}}{{Fn|1b}}
+    - "White Dwarf 379 (US)"                                      # {{Fn|2a}}

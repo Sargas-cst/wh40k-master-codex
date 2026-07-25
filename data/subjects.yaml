@@ -636,7 +636,7 @@ senatorum-imperialis:
   gloss: >
     The Council of the High Lords of Terra — twelve office-holders, nine of them
     effectively permanent, who interpret and enact the will of a silent Emperor.
-  aliases: [High Lords of Terra, the High Twelve, Council of the High Lords, Great Chamber, Primarch's Scourge, Hexarchy, Chancellor of the Imperial Council]
+  aliases: [High Lords of Terra, the High Twelve, Council of the High Lords, Great Chamber, Primarch's Scourge, Hexarchy, Chancellor of the Imperial Council, Inquisitorial Representative]
 
 the-beheading:
   name: the Beheading
@@ -764,3 +764,66 @@ the-mutant-line:
     twenty to healthy parents produces a mutant.
   aliases: [Mutant, Mutants, Sanctioned-Mutation Work Pass, sanctioned strain, scavvy]
   see_also: [abhumans]
+
+the-imperial-creed:
+  name: the Imperial Creed
+  gloss: >
+    Five compulsory tenets — the Emperor's godhood, the rejection of prior faiths, the
+    purging of heretic, psyker, mutant and alien, a divinely ordered place for everyone,
+    and unquestioning obedience. Everything else is left to the world.
+  aliases: [Imperial Truth, Lectitio Divinitatus, Temple of the Saviour Emperor, Fatidicus, Euphrati Keeler, Grand Pilgrimage, Confederation of Light]
+  see_also: [the-ecclesiarchy, imperial-citizenship]
+
+the-ecclesiarchy:
+  name: the Ecclesiarchy
+  gloss: >
+    The Adeptus Ministorum — the state church, deliberately not part of the Adeptus Terra,
+    whose Ecclesiarch holds a permanent High Lord's seat and whose several thousand
+    Cardinals each govern a diocese of roughly one world.
+  aliases: [Adeptus Ministorum, Ministorum, Holy Synod, diocese, Creed Temporal, Arch-Deacon, Pontifex, Militant-Apostolic, Decree Passive, Ecclesiarchal Palace]
+  see_also: [the-imperial-creed, shrine-worlds, schola-progenium]
+
+imperial-sainthood:
+  name: Imperial sainthood
+  gloss: >
+    An honour the Ecclesiarchy confers for faith, usually posthumously — and a conversion
+    tool, since canonising a world's existing heroes redirects its devotion without
+    replacing it. Living Saints require a conclave of church and Inquisition.
+  aliases: [Imperial Saint, Living Saint, Living Saints, Saint Celestine, Saint Sabbat, Sister Repentia, Palatine Schism, Macharian Crusade]
+  see_also: [wars-of-faith, the-ecclesiarchy]
+
+wars-of-faith:
+  name: Wars of Faith
+  gloss: >
+    Religious wars ordered by the Ecclesiarch alone and fought by the Ministorum's own
+    forces, funded from church resources — subject only to a High Lords' veto, and usable
+    against heretical factions of the Ecclesiarchy itself.
+  aliases: [War of Faith]
+  see_also: [imperial-sainthood, the-ecclesiarchy]
+
+missionaria-galaxia:
+  name: the Missionaria Galaxia
+  gloss: >
+    The Ministorum's missionary arm, attached to exploratory vessels and willing to spend
+    generations replacing a world's gods — planting coded prophecies for its own
+    successors to fulfil.
+  aliases: [Missionarus Galaxia, Ministorum Galaxia, Missionary, Missionaries, Confessor, Confessors, Preacher, coded prophecies]
+  see_also: [the-ecclesiarchy, frateris-militia]
+
+frateris-militia:
+  name: the Frateris Militia
+  gloss: >
+    Mobs of the faithful raised for Wars of Faith, tolerated because they have no formal
+    connection to the Ecclesiarchy — the device by which a church forbidden men under arms
+    fields an army.
+  aliases: [Frateris Templars, Confessor-Sergeant, Redemption Cult, Redemptionists, Crusade of the Red Redemption, Zealot]
+  see_also: [missionaria-galaxia, wars-of-faith]
+
+adepta-sororitas:
+  name: the Adepta Sororitas
+  gloss: >
+    The Ecclesiarchy's only legal fighting force, permitted because the Decree Passive
+    forbade the church "men under arms" and Sebastian Thor left the all-female order in
+    place — a loophole the sources call blatantly disregarding the decree's spirit.
+  aliases: [Sisters of Battle, the Sisterhood, Daughters of the Emperor, Brides of the Emperor, Orders Militant, Orders Hospitaller, Orders Dialogus, Orders Famulous, Canoness, Alicia Dominica, San Leor, Ophelia VII, Convent Prioris, Convent Sanctorum, Rosarius]
+  see_also: [the-ecclesiarchy, wars-of-faith, frateris-militia]

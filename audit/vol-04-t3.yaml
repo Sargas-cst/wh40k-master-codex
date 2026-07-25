@@ -1,0 +1,97 @@
+title: "Volume IV, Title 3 — Adeptus Ministorum (The Ecclesiarchy)"
+chapters: [IV.T3.Ch8, IV.T3.Ch9, IV.T3.Ch10, IV.T3.Ch11]
+retrieved_this_title:
+  - lex-living-saint
+  - lex-saint-celestine
+  - lex-saint-sabbat
+  - lex-list-of-imperial-saints
+  - lex-war-of-faith
+  - lex-missionarus-galaxia
+  - lex-frateris-militia
+  - lex-redemption-cult
+  - lex-confessor
+  - lex-adepta-sororitas
+  - lex-canoness
+already_cached_and_now_cited:
+  - lex-imperial-cult
+  - lex-ecclesiarchy
+redirects_found:
+  - "Imperial Saint -> List of Imperial Saints"
+  - "Saint -> List of Imperial Saints"
+  - "Missionaria Galaxia -> Missionarus Galaxia"
+  - "Redemptionists -> Redemption Cult"
+  - "Order Militant -> Sisters of Battle"
+  - "Sabbat -> Saint Sabbat"
+not_found:
+  - "Relic — no such page. Relics are thin across the retrieved set, so the brief's third
+     Ch9 Section was written as Wars of Faith instead, which the sources support in full."
+
+section_counts: { IV.T3.Ch8: 4, IV.T3.Ch9: 3, IV.T3.Ch10: 4, IV.T3.Ch11: 4 }
+
+departures_from_the_brief:
+  - >
+    The brief gives Ch9 as "Canonisation & the Making of a Saint / Saint Celestine & the
+    Living Saints / Relics, Miracles & Shrine Worlds". Relics have no article and shrine
+    worlds are already treated in IV.T2.Ch5, where they belong with the pilgrim economy.
+    The third Section is Wars of Faith, which the Ecclesiarch may order alone and which the
+    sources document properly — and which Ch10 and Ch11 both depend on.
+
+contradictions:
+  registered: []
+  note: >
+    None found. The Ecclesiarchy articles are unusually consistent with each other, and
+    where they are candid — the staged miracle on San Leor, the Decree Passive loophole —
+    they are candid in the same words across articles.
+
+subjects_registered:
+  - the-imperial-creed
+  - the-ecclesiarchy
+  - imperial-sainthood
+  - wars-of-faith
+  - missionaria-galaxia
+  - frateris-militia
+  - adepta-sororitas
+
+threads_closed:
+  - >
+    The Decree Passive is stated in Ch8, and both devices that defeat it are in this Title:
+    the Frateris Militia in Ch10, legal because it has no formal connection to the church,
+    and the Sororitas in Ch11, legal because the decree says "men". The sources' own phrase
+    for the second is that the spirit of the decree was "rather blatantly disregarded".
+  - >
+    Ch8 establishes that the Emperor outlawed organised religion and that the founding text
+    of the state church was written by Lorgar. Ch9 then records the loyalist Primarchs as
+    Imperial Saints — which makes Guilliman, who created a new Ecclesiarchy rank in the
+    present, a saint of a religion he was raised to deny.
+  - >
+    Ch10's Confessors — promoted for zeal, whose skill is working a crowd until it denounces
+    itself — are the missing step between the Arbites of IV.T1.Ch2, who only monitor whether
+    psykers are being rounded up, and the Black Ships of I.T2.Ch9, which only collect them.
+  - >
+    Ch10's Redemptionists take the Creed's third tenet and delete its list of targets. Their
+    factual premise about hive life is the Imperium's own account in IV.T2.Ch4; only the
+    conclusion is theirs, and the recorded objection to them is that they cannot be
+    controlled rather than that they are wrong.
+
+process_errors:
+  - >
+    Appended lex-imperial-cult and lex-ecclesiarchy to data/sources.yaml without checking:
+    both were already registered, which produced a duplicate-key YAML parse failure. Removed
+    the duplicates and confirmed the originals were untouched by diffing the file.
+  - >
+    The possessive check fired twice — "[[IV.T3.Ch11]]'s subject" in Ch9 and two instances in
+    Ch11. All three rewritten. The check has now caught this in every Title of Volume IV.
+  - >
+    Ch11 §3 declared lex-sisters-of-battle without citing it; the Orders Militant material
+    all came from the Adepta Sororitas article. Dropped the declaration, which then left the
+    source registered and uncited anywhere, so the entry was removed from sources.yaml
+    rather than a citation invented to justify it. The raw page stays cached.
+
+verification:
+  validator: OK
+  warnings: 9
+  strict_build: clean
+  rendered_check: >
+    All four pages read from build/site. 8,708 words, 72 cross-references, 101 tooltips and
+    103 footnote references. No leaked link syntax or citation markers, and no Section
+    without a definition — the new coverage check passes on all four.

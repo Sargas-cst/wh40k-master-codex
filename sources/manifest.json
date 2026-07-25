@@ -28,6 +28,15 @@
       "sha256": "b0ddd4a7e2122274cf7ab300fe342e57a5336a72b66be82fb80f290e2823b8ed",
       "file": "sources/raw/lex-abhuman.wikitext"
     },
+    "lex-adepta-sororitas": {
+      "title": "Adepta Sororitas",
+      "url": "https://wh40k.lexicanum.com/wiki/Adepta_Sororitas",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 26694,
+      "sha256": "1b535fb98eb44538d9e284229153e9d46ba9591cd8aec1a333e58ac1b44f9691",
+      "file": "sources/raw/lex-adepta-sororitas.wikitext"
+    },
     "lex-adeptus-administratum": {
       "title": "Adeptus Administratum",
       "url": "https://wh40k.lexicanum.com/wiki/Adeptus_Administratum",
@@ -401,6 +410,15 @@
       "sha256": "87cd39c3a2e21426dba5c12072ebc624b11675f2cfde842de147deefa750768a",
       "file": "sources/raw/lex-callidus-temple.wikitext"
     },
+    "lex-canoness": {
+      "title": "Canoness",
+      "url": "https://wh40k.lexicanum.com/wiki/Canoness",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 9165,
+      "sha256": "89607b1ee804cd50e9249ec4ea62a993bb094dba406c6dbc540a25af9b3df3c4",
+      "file": "sources/raw/lex-canoness.wikitext"
+    },
     "lex-carcharodons": {
       "title": "Carcharodons",
       "url": "https://wh40k.lexicanum.com/wiki/Carcharodons",
@@ -409,6 +427,15 @@
       "bytes": 19858,
       "sha256": "9a4e1737634c95d392637f8533ca77ded1c73a558ac925cc972b70b89ef32b3e",
       "file": "sources/raw/lex-carcharodons.wikitext"
+    },
+    "lex-cardinal": {
+      "title": "Cardinal",
+      "url": "https://wh40k.lexicanum.com/wiki/Cardinal",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 2561,
+      "sha256": "943af81a2b5ce63597e3cd2e44fe7bd97a2f9c36bd2a97f0376dd813be996247",
+      "file": "sources/raw/lex-cardinal.wikitext"
     },
     "lex-catachan": {
       "title": "Catachan",
@@ -491,6 +518,15 @@
       "bytes": 13526,
       "sha256": "dca52fb127804b8ca2dd7d463cb7aa728162191c8bbab87e62d1905face6cf88",
       "file": "sources/raw/lex-commorragh.wikitext"
+    },
+    "lex-confessor": {
+      "title": "Confessor",
+      "url": "https://wh40k.lexicanum.com/wiki/Confessor",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 4575,
+      "sha256": "aef239aee8a48c48942fa2e71bad13fced64b76340f7e34c613641110283272a",
+      "file": "sources/raw/lex-confessor.wikitext"
     },
     "lex-corpse-starch": {
       "title": "Corpse-Starch",
@@ -626,6 +662,15 @@
       "bytes": 1723,
       "sha256": "59c6336acc543a673f4ff7084e59d9017d771b22af62e6c0171446f7272b460a",
       "file": "sources/raw/lex-dolmen-gate.wikitext"
+    },
+    "lex-ecclesiarch": {
+      "title": "Ecclesiarch",
+      "url": "https://wh40k.lexicanum.com/wiki/Ecclesiarch",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 1755,
+      "sha256": "1f17d17c82614b02dce9bb71aa86d225104b7ed36241094a41dfe5f0621ea15a",
+      "file": "sources/raw/lex-ecclesiarch.wikitext"
     },
     "lex-ecclesiarchy": {
       "title": "Ecclesiarchy",
@@ -802,6 +847,15 @@
       "sha256": "c29a851782a919c249b250e006b66a84b2e0c364d482cfe1fc2f2936ff79bbf0",
       "file": "sources/raw/lex-fourth-tyrannic-war.wikitext",
       "redirect_to": "Leviathan_#Fourth Tyrannic War"
+    },
+    "lex-frateris-militia": {
+      "title": "Frateris Militia",
+      "url": "https://wh40k.lexicanum.com/wiki/Frateris_Militia",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 4230,
+      "sha256": "c47a596bfee06f4790348def6b2514878cc6e61b2c20f4eaa8a756616104169f",
+      "file": "sources/raw/lex-frateris-militia.wikitext"
     },
     "lex-gellar-field": {
       "title": "Gellar field",
@@ -1098,6 +1152,16 @@
       "sha256": "91e2f2a129465c7146e522a1030d56e661713a3aa260ba507dc103e09ffe54b1",
       "file": "sources/raw/lex-imperial-palace.wikitext"
     },
+    "lex-imperial-saint": {
+      "title": "Imperial Saint",
+      "url": "https://wh40k.lexicanum.com/wiki/Imperial_Saint",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 37,
+      "sha256": "05b8f4dc263275b1c8658fb17eba63fac6918bf1c3152fc8185997795d89ac86",
+      "file": "sources/raw/lex-imperial-saint.wikitext",
+      "redirect_to": "List of Imperial Saints"
+    },
     "lex-imperial-tithe": {
       "title": "Imperial Tithe",
       "url": "https://wh40k.lexicanum.com/wiki/Imperial_Tithe",
@@ -1297,6 +1361,24 @@
       "sha256": "460c98ed3923983606873c96459c696bc309e899a2243306a2a98b1d69222f46",
       "file": "sources/raw/lex-lex-imperialis.wikitext"
     },
+    "lex-list-of-imperial-saints": {
+      "title": "List of Imperial Saints",
+      "url": "https://wh40k.lexicanum.com/wiki/List_of_Imperial_Saints",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 19427,
+      "sha256": "f19bdc7f003431f7476ad55785bcbf8c6cac7c3043b4d241362ca299ccd66754",
+      "file": "sources/raw/lex-list-of-imperial-saints.wikitext"
+    },
+    "lex-living-saint": {
+      "title": "Living Saint",
+      "url": "https://wh40k.lexicanum.com/wiki/Living_Saint",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 5597,
+      "sha256": "2a6b9ed70d4777edccb0014d6ab46df6690452abdef4378cf0fab8efc06085ca",
+      "file": "sources/raw/lex-living-saint.wikitext"
+    },
     "lex-low-gothic": {
       "title": "Low Gothic",
       "url": "https://wh40k.lexicanum.com/wiki/Low_Gothic",
@@ -1389,6 +1471,25 @@
       "bytes": 24482,
       "sha256": "bac7512cb9059e2bae9c414c91e8e8fee5b50cf7c0d70a7bb4c2f725b74ed5e1",
       "file": "sources/raw/lex-minotaurs.wikitext"
+    },
+    "lex-missionaria-galaxia": {
+      "title": "Missionaria Galaxia",
+      "url": "https://wh40k.lexicanum.com/wiki/Missionaria_Galaxia",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 33,
+      "sha256": "d08a21b62e29fed551714316ceb420c159f9045283dcdedd5238cd5b85b77a40",
+      "file": "sources/raw/lex-missionaria-galaxia.wikitext",
+      "redirect_to": "Missionarus Galaxia"
+    },
+    "lex-missionarus-galaxia": {
+      "title": "Missionarus Galaxia",
+      "url": "https://wh40k.lexicanum.com/wiki/Missionarus_Galaxia",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 5410,
+      "sha256": "1a46a3d5a523625f29261a89ba2358c0982b805d089a1856b249c7d9e793bf4d",
+      "file": "sources/raw/lex-missionarus-galaxia.wikitext"
     },
     "lex-mutant": {
       "title": "Mutant",
@@ -1564,6 +1665,16 @@
       "bytes": 15381,
       "sha256": "e556b2c22fb4c254d49cbca4533dd730ac94d3a0fcc73370c3c8456d9608f457",
       "file": "sources/raw/lex-old-ones.wikitext"
+    },
+    "lex-order-militant": {
+      "title": "Order Militant",
+      "url": "https://wh40k.lexicanum.com/wiki/Order_Militant",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 31,
+      "sha256": "29ced03c0ecb5bb374f950276a53f328d236c8f7b3d8f8b422fc568eb1396838",
+      "file": "sources/raw/lex-order-militant.wikitext",
+      "redirect_to": "Sisters of Battle"
     },
     "lex-ork-empire-of-charadon": {
       "title": "Ork Empire of Charadon",
@@ -1781,6 +1892,25 @@
       "sha256": "d3c5d792f9d56ddf4e3c5e14445e3df91d5aa9158e4d1467f2e9609dafe73e2b",
       "file": "sources/raw/lex-real-space.wikitext"
     },
+    "lex-redemption-cult": {
+      "title": "Redemption Cult",
+      "url": "https://wh40k.lexicanum.com/wiki/Redemption_Cult",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 6997,
+      "sha256": "38d2c7fcc4d2a9a72ef8e8e91ff54c7e8b18d3dd2be749dba61e64a4b9ce3fa7",
+      "file": "sources/raw/lex-redemption-cult.wikitext"
+    },
+    "lex-redemptionists": {
+      "title": "Redemptionists",
+      "url": "https://wh40k.lexicanum.com/wiki/Redemptionists",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 29,
+      "sha256": "08c01eefccc76f58adf4825b90db8d787e53a73e45db7d0c6a999adb130b76de",
+      "file": "sources/raw/lex-redemptionists.wikitext",
+      "redirect_to": "Redemption Cult"
+    },
     "lex-roboute-guilliman": {
       "title": "Roboute Guilliman",
       "url": "https://wh40k.lexicanum.com/wiki/Roboute_Guilliman",
@@ -1798,6 +1928,44 @@
       "bytes": 18162,
       "sha256": "6160ae0f05f413f02b515d1e5d654b424833f81b8bd656f9deed4ed3a32e4bd3",
       "file": "sources/raw/lex-rogue-trader.wikitext"
+    },
+    "lex-sabbat": {
+      "title": "Sabbat",
+      "url": "https://wh40k.lexicanum.com/wiki/Sabbat",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 25,
+      "sha256": "dd5c53cade89fa821a5146a3d19fe319a3f8de2bb798d95d828e2e490a88fdb4",
+      "file": "sources/raw/lex-sabbat.wikitext",
+      "redirect_to": "Saint Sabbat"
+    },
+    "lex-saint": {
+      "title": "Saint",
+      "url": "https://wh40k.lexicanum.com/wiki/Saint",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 37,
+      "sha256": "05b8f4dc263275b1c8658fb17eba63fac6918bf1c3152fc8185997795d89ac86",
+      "file": "sources/raw/lex-saint.wikitext",
+      "redirect_to": "List of Imperial Saints"
+    },
+    "lex-saint-celestine": {
+      "title": "Saint Celestine",
+      "url": "https://wh40k.lexicanum.com/wiki/Saint_Celestine",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 11157,
+      "sha256": "bf2db386609e5280db12c2ed003869820befe57174d52d7e61574160036e1a5a",
+      "file": "sources/raw/lex-saint-celestine.wikitext"
+    },
+    "lex-saint-sabbat": {
+      "title": "Saint Sabbat",
+      "url": "https://wh40k.lexicanum.com/wiki/Saint_Sabbat",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 6408,
+      "sha256": "520c5b6adca5834353e399befb39431bd9e8fb178d23a1b2e8c07009df11b2f2",
+      "file": "sources/raw/lex-saint-sabbat.wikitext"
     },
     "lex-salamanders": {
       "title": "Salamanders",
@@ -1973,6 +2141,15 @@
       "bytes": 1051,
       "sha256": "2cc104e0896caa1aa12badc4342990356f7b5932a042ecd5f870f73d6fdc6a7e",
       "file": "sources/raw/lex-silent-king.wikitext"
+    },
+    "lex-sisters-of-battle": {
+      "title": "Sisters of Battle",
+      "url": "https://wh40k.lexicanum.com/wiki/Sisters_of_Battle",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 22782,
+      "sha256": "6bba546bffc6dbe5f4465c853745e88cc819da0ee674e404b48ba8724175e5c3",
+      "file": "sources/raw/lex-sisters-of-battle.wikitext"
     },
     "lex-slann": {
       "title": "Slann",
@@ -2358,6 +2535,15 @@
       "bytes": 8333,
       "sha256": "9b9ba12577fb60d086e80a96a3d88143f45ba4d2b4dee5237636ed29385abd8a",
       "file": "sources/raw/lex-war-in-heaven-necron.wikitext"
+    },
+    "lex-war-of-faith": {
+      "title": "War of Faith",
+      "url": "https://wh40k.lexicanum.com/wiki/War_of_Faith",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 2728,
+      "sha256": "05e8e3f1722fd53e466d29dc5febf1eb0b34de940785838731037e967f245aae",
+      "file": "sources/raw/lex-war-of-faith.wikitext"
     },
     "lex-warhammer-40-000": {
       "title": "Warhammer 40,000",
