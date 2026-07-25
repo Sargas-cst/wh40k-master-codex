@@ -86,6 +86,39 @@ The explicit anchor exists so the HTML anchor can never drift from the ID, regar
 of how the Markdown renderer happens to slugify headings. The validator enforces that
 the `##` headings match the frontmatter `sections` list in name, slug and order.
 
+### The three shapes
+
+A reader arriving from a search engine lands mid-book with no context. Every Section
+therefore **defines its subject before doing anything else with it** — that half of the
+rule is universal. What follows the definition depends on which of three shapes the
+material is:
+
+| Shape | Use for | Structure |
+|---|---|---|
+| **Entity with a history** | Legions, Chapters, orders, institutions, named people | Define → standing facts → origin → turning point → present state |
+| **Concept or system** | the Warp, the soul, implants, the tithe, hive anatomy | Define → prerequisite → mechanism → consequence |
+| **List of like things** | seven regiments, seven clades, six Ork klans | Frame the set → per item: what it is, then what made it that way |
+
+**The definition states what the thing IS. It never previews what happens to it.** This
+is the discipline the first shape lives or dies by. An opening that says "their Primarch,
+who died at the Siege of Terra" spends the reveal, and the narrative that follows reads as
+a re-run of its own summary. Write the identity — numeral, parentage, homeworld, present
+condition — and let the story deliver the events.
+
+**A concept has no chronology, so nothing is narrated.** Ordering after the definition is
+by *dependency*: whatever the reader must understand first comes first. Gene-seed before
+the organs, the organs before the progenoid gland, the progenoid before why a Chapter
+retrieves its dead. The failure this replaces is following the source article's own
+running order — which is how the implants Chapter came to open with eight hundred words on
+recruitment before saying what a Space Marine physically is.
+
+**A list keeps its entries parallel**, so the set can be compared, and separates them
+clearly enough to read as a set — a `###` heading per item, not a run of paragraphs. The
+frame above the list should make a claim the entries then test.
+
+**Sub-headings are a function of length, not of shape.** A three-thousand-word Section
+needs them; a five-hundred-word one is shattered by them.
+
 ---
 
 ## 5. Links — one syntax family, all validated

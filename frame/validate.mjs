@@ -12,12 +12,12 @@
 
 import {
   loadChapters, loadRegistries, parseChapterId, depthFor, BANDS,
-  SLUG_OK, collectMarkup, CITE_RE, DATA_DIR, loadYaml,
+  SLUG_OK, collectMarkup, CITE_RE, DATA_DIR, ROOT, loadYaml,
   glossaryForms, glossaryRegex, glossaryKeysIn,
   namedTermCandidates, mentionsTerm,
 } from './lib.mjs';
 import { join } from 'node:path';
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 
 const strict = process.argv.includes('--strict');
 
@@ -374,6 +374,87 @@ for (const ch of chapters.values()) {
         `unbalanced [[ ]] on this line — a link cannot span a line break, and one that does is silently not a link`);
     }
   });
+}
+
+// --- a bolded quotation must still be the source's words -------------------
+// House style bolds source language. That makes fidelity checkable: a bolded run long
+// enough to be a quotation should appear verbatim in one of the sources its Section
+// declares. Nothing else in this validator can catch a claim quietly changing meaning
+// while it is moved, which is the drift a restructure is most likely to introduce.
+//
+// Reported only when MOST of the run is present and some of it is not — that is an
+// altered quotation. A run with little in common with any source is the author's own
+// emphasis, which is legitimate and passes silently.
+{
+  const rawCache = new Map();
+  // Spelling is normalised on BOTH sides before comparison. The codex is written in
+  // British English and the sources are mixed, so "realized" -> "realised" inside a
+  // quotation is a declared house convention (schema.md §4), not an alteration.
+  // Everything else — a changed word, a changed tense, a truncation closed with a full
+  // stop the source does not have — is an alteration, and is reported.
+  const norm = (t) => t
+    .replace(/[‘’]/g, "'").replace(/[“”]/g, '"')
+    .replace(/[–—]/g, '-').replace(/\s+/g, ' ').toLowerCase()
+    .replace(/([a-z])iz(e|ed|es|ing|ation|ations)\b/g, '$1is$2')
+    .replace(/\b(col|hon|lab|behavi|neighb|arm|fav|rum|val|vig)or(s|ed|ing|less|able|ite)?\b/g, '$1our$2')
+    .trim();
+
+  const stripWiki = (t) => t
+    .replace(/\{\{[^}]*\}\}/g, ' ')
+    .replace(/\[\[([^\]|]*\|)?([^\]]*)\]\]/g, '$2')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/g, ' ')
+    .split("'''").join('')
+    .split("''").join('');
+
+  function sourceText(id) {
+    if (rawCache.has(id)) return rawCache.get(id);
+    const rel = sources[id]?.raw;
+    const path = rel ? join(ROOT, rel) : null;
+    let t = '';
+    if (path && existsSync(path)) t = norm(stripWiki(readFileSync(path, 'utf8')));
+    rawCache.set(id, t);
+    return t;
+  }
+
+  /** length of the longest run of consecutive words from q that appears in pool */
+  const longestRun = (q, pool) => {
+    const w = q.split(' ');
+    let best = 0;
+    for (let i = 0; i < w.length; i++) {
+      for (let len = w.length - i; len > best; len--) {
+        if (pool.includes(w.slice(i, i + len).join(' '))) { best = len; break; }
+      }
+    }
+    return best;
+  };
+
+  for (const ch of chapters.values()) {
+    if (ch.front.status === 'stub') continue;
+    const frontSecs = ch.front.sections ?? [];
+    (ch.sections ?? []).forEach((sec, i) => {
+      const declared = frontSecs[i]?.sources ?? [];
+      if (!declared.length || !sec.text) return;
+      const pool = declared.map(sourceText).join('  ');
+      if (!pool) return;
+
+      for (const m of sec.text.matchAll(/\*\*([^*\n]{25,})\*\*/g)) {
+        // Whitespace inside the asterisks means this is the text BETWEEN two adjacent
+        // bold spans rather than a span — the artifact namedTermCandidates also guards.
+        if (/^\s|\s$/.test(m[1])) continue;
+        const q = norm(m[1].replace(/\[\^[^\]]*\]/g, '').replace(/\[\[[^\]]*\]\]/g, ''));
+        const words = q.split(' ').length;
+        if (words < 6) continue;
+        if (pool.includes(q)) continue;
+        const cover = longestRun(q, pool) / words;
+        if (cover < 0.5) continue;   // the author's own emphasis, not a quotation
+        warn(ch.rel,
+          `§ "${sec.name}" — a bolded quotation is ${Math.round(cover * 100)}% present in `
+          + `its declared sources but not verbatim: "${m[1].slice(0, 60)}…". Quote the source `
+          + `exactly, or drop the bold and write it as your own sentence.`);
+      }
+    });
+  }
 }
 
 // --- every Section must offer the reader at least one definition ----------
