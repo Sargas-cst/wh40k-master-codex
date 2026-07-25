@@ -256,9 +256,6 @@
         document.documentElement.style.setProperty("--cx-text-scale", String(v));
         try { localStorage.setItem("cx-text-scale", String(v)); } catch (e) {}
         document.querySelectorAll(".cx-textsize").forEach(function (root) {
-          root.querySelectorAll(".cx-textsize__level i").forEach(function (bar, n) {
-            bar.classList.toggle("on", n <= i);
-          });
           var dn = root.querySelector(".cx-textsize__btn--dn");
           var up = root.querySelector(".cx-textsize__btn--up");
           if (dn) dn.disabled = i === 0;
@@ -288,14 +285,9 @@
           return b;
         }
 
-        var level = document.createElement("span");
-        level.className = "cx-textsize__level";
-        level.setAttribute("aria-hidden", "true");
-        for (var n = 0; n < SCALES.length; n++) level.appendChild(document.createElement("i"));
-
-        root.appendChild(btn("cx-textsize__btn--dn", "Smaller text", "A", -1));
-        root.appendChild(level);
-        root.appendChild(btn("cx-textsize__btn--up", "Larger text", "A", +1));
+        // Explicit "A−" and "A+". Two buttons, one job each.
+        root.appendChild(btn("cx-textsize__btn--dn", "Smaller text", "A−", -1));
+        root.appendChild(btn("cx-textsize__btn--up", "Larger text", "A+", +1));
 
         palette.parentNode.insertBefore(root, palette);
         setScale(currentScaleIndex());

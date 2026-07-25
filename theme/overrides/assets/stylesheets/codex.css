@@ -226,18 +226,58 @@ body {
 }
 
 /* --------------------------------------------------------------------------
-   Layout width
+   Layout width — full bleed, everything grouped left
    --------------------------------------------------------------------------
-   Material caps its grid at 61rem — 1220px at this root size — and gives each
-   sidebar 12.1rem (242px). Two sidebars then leave roughly 736px of content area
-   for a 600px prose column, which puts the navigation hard against the text with
-   almost no breathing space.
+   Material caps its grid with a max-width and centres it. Any display wider than
+   that cap gets dead margin on BOTH sides, so the navigation rail floats in from
+   the left edge instead of being attached to it. Raising the cap only moves the
+   problem to a wider monitor.
 
-   Widening the grid does NOT widen the prose (that stays at --cx-measure); it
-   moves the sidebars outward and lets the column sit in open space instead. */
-.md-grid { max-width: 82rem; }
+   So there is no cap. `.md-main__inner` is a flex row; with no max-width the
+   sidebar sits at x=0 on every viewport, and the columns pack from the left:
+
+       [ nav ][ prose ][ toc ]·············· page margin
+
+   The prose is left-aligned inside its own column rather than centred, and the
+   column is only as wide as the measure plus a gutter. That removes the interior
+   dead zone — previously 212px of nothing on each side of the text — and pushes
+   any leftover width to the far right, where it reads as page margin instead of
+   as a broken layout.
+
+   The measure itself does not grow to fill wide screens. 67 characters is the
+   readable line length; stretching it would trade legibility for tidiness. */
+/* Material raises the ROOT font-size on wide viewports — 125% by default, 137.5%
+   past 100em, 150% past 125em. Every rem in the theme grows with it, so on a wide
+   monitor the body text rendered at 21.6px even with the reader's scale set to
+   0.9, and the sidebar grew in step. That made "the text is too big" true on a
+   large display and false on a laptop, from the same stylesheet.
+
+   The root is pinned so the reader's own setting is the only thing that changes
+   text size. Browser zoom still works, because that scales the whole page. */
+@media screen and (min-width: 100em) { html { font-size: 125%; } }
+@media screen and (min-width: 125em) { html { font-size: 125%; } }
+
+.md-grid { max-width: none; }
+.md-main__inner { justify-content: flex-start; }
 .md-sidebar--primary,
 .md-sidebar--secondary { width: 11.5rem; }
+
+.md-content {
+  flex: 0 1 auto;
+  max-width: calc(var(--cx-measure) + 5rem);
+}
+.md-content__inner { padding-inline: 2.2rem 1.5rem; }
+/* Left-aligned, not centred — centring inside a wide column is what produced the
+   gap the navigation appeared to be pressing against. */
+.md-content__inner.md-typeset > * { margin-inline: 0; }
+.md-content__inner.md-typeset > .footnote { margin-inline: 0; }
+
+@media screen and (max-width: 76.1875em) {
+  /* Below Material's desktop breakpoint the nav is a drawer, so the content
+     column should reclaim the full width rather than hug a phantom sidebar. */
+  .md-content { max-width: none; }
+  .md-content__inner { padding-inline: 1.2rem; }
+}
 
 /* In Material 9 the content element carries BOTH classes —
    <article class="md-content__inner md-typeset"> — so they are one node, not
@@ -657,59 +697,48 @@ body {
 
 /* ------------------------------------- 11a. The text-size control */
 
-/* Sits in the header beside the light/dark toggle. Adjusts only the reading
-   text — the chrome, navigation and labels keep their size, because scaling the
-   whole interface is a browser zoom feature and duplicating it here would fight
-   the browser's own. */
+/* Two buttons in the header beside the light/dark toggle: smaller, larger.
+   Nothing else.
+
+   The first attempt put the letter "A" on BOTH buttons and distinguished them
+   only by font-size, with a bar-graph indicator wedged between them. At header
+   scale that is unreadable — two near-identical glyphs and no way to tell which
+   does what. These carry explicit minus and plus signs, visible borders, and
+   enough size to be hit accurately.
+
+   It scales only the reading text; chrome and navigation keep their size, since
+   scaling the whole interface is what browser zoom is for. */
 .cx-textsize {
   display: flex;
   align-items: center;
-  gap: 0.15rem;
-  margin-right: 0.2rem;
+  gap: 0.25rem;
+  margin-right: 0.35rem;
 }
 .cx-textsize__btn {
   display: grid;
   place-items: center;
-  width: 1.6rem;
-  height: 1.6rem;
-  padding: 0;
+  min-width: 2rem;
+  height: 1.8rem;
+  padding: 0 0.35rem;
   cursor: pointer;
   background: transparent;
-  border: 2px solid transparent;
+  border: 2px solid color-mix(in srgb, currentcolor 45%, transparent);
+  border-radius: 0;
   color: var(--md-primary-bg-color, var(--cx-ink));
   font-family: var(--cx-display);
   font-weight: 800;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
   line-height: 1;
+  white-space: nowrap;
 }
 .cx-textsize__btn:hover:not(:disabled) {
   border-color: currentcolor;
+  background: color-mix(in srgb, currentcolor 16%, transparent);
 }
-.cx-textsize__btn:disabled { opacity: 0.35; cursor: default; }
-.cx-textsize__btn--dn { font-size: 0.72rem; }
-.cx-textsize__btn--up { font-size: 1rem; }
-.cx-textsize__level {
-  display: flex;
-  gap: 2px;
-  align-items: flex-end;
-  height: 0.9rem;
-  padding: 0 0.15rem;
-}
-.cx-textsize__level i {
-  display: block;
-  width: 3px;
-  background: currentcolor;
-  opacity: 0.28;
-}
-.cx-textsize__level i:nth-child(1) { height: 30%; }
-.cx-textsize__level i:nth-child(2) { height: 48%; }
-.cx-textsize__level i:nth-child(3) { height: 66%; }
-.cx-textsize__level i:nth-child(4) { height: 84%; }
-.cx-textsize__level i:nth-child(5) { height: 100%; }
-.cx-textsize__level i.on { opacity: 1; background: var(--cx-accent); }
+.cx-textsize__btn:active:not(:disabled) { transform: translateY(1px); }
+.cx-textsize__btn:disabled { opacity: 0.3; cursor: default; }
 
-@media screen and (max-width: 44.9375em) {
-  .cx-textsize__level { display: none; }
-}
 @media print { .cx-textsize { display: none; } }
 
 /* ------------------------------------------------ 11. The livery picker */
