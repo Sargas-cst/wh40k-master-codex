@@ -28,3 +28,8 @@ Delta Plus: as above
 Beta Plus: as above
 Epsilon Plus: as above
 Eta Plus: as above
+
+# --- names that collide with common English words -------------------------
+Murder: >
+  the Imperial name for Urisarach, the Megarachnid world. Auto-marking it would turn every
+  ordinary use of the word "murder" in the book into a link to a planet. Covered in III.T3.Ch13.

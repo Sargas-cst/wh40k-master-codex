@@ -228,6 +228,15 @@
       "sha256": "98ea46ebc82ca61446cc431f35f576a952086629f62cede02f41dae5fab9f24c",
       "file": "sources/raw/lex-blood-ravens.wikitext"
     },
+    "lex-burning-of-prospero": {
+      "title": "Burning of Prospero",
+      "url": "https://wh40k.lexicanum.com/wiki/Burning_of_Prospero",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 48611,
+      "sha256": "ebe9cdeef44826b2046c2b2b92fd481d623e8ad8b5ae542f29a024753d60e2de",
+      "file": "sources/raw/lex-burning-of-prospero.wikitext"
+    },
     "lex-c-tan": {
       "title": "C'tan",
       "url": "https://wh40k.lexicanum.com/wiki/C'tan",
@@ -346,6 +355,15 @@
       "sha256": "dca52fb127804b8ca2dd7d463cb7aa728162191c8bbab87e62d1905face6cf88",
       "file": "sources/raw/lex-commorragh.wikitext"
     },
+    "lex-council-of-nikaea": {
+      "title": "Council of Nikaea",
+      "url": "https://wh40k.lexicanum.com/wiki/Council_of_Nikaea",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 29232,
+      "sha256": "757e8ba1ea441d7251e754c9be5596c29d15d808c52ced06dfe9cda805b38d62",
+      "file": "sources/raw/lex-council-of-nikaea.wikitext"
+    },
     "lex-craftworld": {
       "title": "Craftworld",
       "url": "https://wh40k.lexicanum.com/wiki/Craftworld",
@@ -399,6 +417,15 @@
       "bytes": 97791,
       "sha256": "f6b97fb2cb3ab5503f59bed3b54b01d89b2d86d8d4aa51cf3cef3bd55fb463c4",
       "file": "sources/raw/lex-dark-angels.wikitext"
+    },
+    "lex-davin": {
+      "title": "Davin",
+      "url": "https://wh40k.lexicanum.com/wiki/Davin",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 8161,
+      "sha256": "315411629ccc9bf8dcba76872c31de5f16c235d528b632a0ee2197e60988b71e",
+      "file": "sources/raw/lex-davin.wikitext"
     },
     "lex-death-guard": {
       "title": "Death Guard",
@@ -463,6 +490,15 @@
       "sha256": "72b79e118604761b9feaeafc4cd3d2a1814bf2047870e4818a78980bab1dc3e0",
       "file": "sources/raw/lex-eldar-gods.wikitext",
       "redirect_to": "Aeldari Mythology"
+    },
+    "lex-emperor-of-mankind": {
+      "title": "Emperor of Mankind",
+      "url": "https://wh40k.lexicanum.com/wiki/Emperor_of_Mankind",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 82094,
+      "sha256": "235c6c3aaf6aeeb629aabe34e60001341f27e21de39c0ccf7163a1ed9adf1814",
+      "file": "sources/raw/lex-emperor-of-mankind.wikitext"
     },
     "lex-emperor-s-children": {
       "title": "Emperor's Children",
@@ -574,6 +610,15 @@
       "sha256": "a9cac3fb6484a50ef1deecdbb7f241b4cddc673d1bc174d31ed0880a964a586e",
       "file": "sources/raw/lex-ghoul-stars.wikitext"
     },
+    "lex-golden-throne": {
+      "title": "Golden Throne",
+      "url": "https://wh40k.lexicanum.com/wiki/Golden_Throne",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 13571,
+      "sha256": "b650bdf5f33ec88727aab4a2101be842145bd1ed7f3e11bce48181cf1770c326",
+      "file": "sources/raw/lex-golden-throne.wikitext"
+    },
     "lex-gork-and-mork": {
       "title": "Gork and Mork",
       "url": "https://wh40k.lexicanum.com/wiki/Gork_and_Mork",
@@ -582,6 +627,15 @@
       "bytes": 3093,
       "sha256": "fe4d09dd8aba9904ca18f90c6b7028ebce449e74bd74397079679b7f6aadc692",
       "file": "sources/raw/lex-gork-and-mork.wikitext"
+    },
+    "lex-great-crusade": {
+      "title": "Great Crusade",
+      "url": "https://wh40k.lexicanum.com/wiki/Great_Crusade",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 12105,
+      "sha256": "299b03cbbbc36547f456957272b09ca11c962588c62af4c0986e77b353b6da38",
+      "file": "sources/raw/lex-great-crusade.wikitext"
     },
     "lex-great-rift": {
       "title": "Great Rift",
@@ -646,6 +700,34 @@
       "bytes": 3072,
       "sha256": "d86406f55a9c80c1fcfbc3624ed288daef6e3e314eca0acd0ec246be615af1e1",
       "file": "sources/raw/lex-hive-ship.wikitext"
+    },
+    "lex-horus": {
+      "title": "Horus",
+      "url": "https://wh40k.lexicanum.com/wiki/Horus",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 28,
+      "sha256": "f0e23f04048a88e185b69ab87da5c5b1ccea75472bfa5541b4e633465005d63f",
+      "file": "sources/raw/lex-horus.wikitext",
+      "redirect_to": "Horus Lupercal"
+    },
+    "lex-horus-heresy": {
+      "title": "Horus Heresy",
+      "url": "https://wh40k.lexicanum.com/wiki/Horus_Heresy",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 55972,
+      "sha256": "5d398883482e6f4f1af52c56ac6bc3da6f4e8ad989ba5c50cea23d632efa6fef",
+      "file": "sources/raw/lex-horus-heresy.wikitext"
+    },
+    "lex-horus-lupercal": {
+      "title": "Horus Lupercal",
+      "url": "https://wh40k.lexicanum.com/wiki/Horus_Lupercal",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 43283,
+      "sha256": "f10f8e837a212adbe9eb67ce6510249f85c42eea50616c97c3cac234403872cb",
+      "file": "sources/raw/lex-horus-lupercal.wikitext"
     },
     "lex-howling-griffons": {
       "title": "Howling Griffons",
@@ -712,6 +794,15 @@
       "sha256": "91e2f2a129465c7146e522a1030d56e661713a3aa260ba507dc103e09ffe54b1",
       "file": "sources/raw/lex-imperial-palace.wikitext"
     },
+    "lex-imperial-truth": {
+      "title": "Imperial Truth",
+      "url": "https://wh40k.lexicanum.com/wiki/Imperial_Truth",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 2470,
+      "sha256": "d7a2a3ab73e608924412a33034fcdd4e75ac42870f5385ae7390579079fee2fd",
+      "file": "sources/raw/lex-imperial-truth.wikitext"
+    },
     "lex-imperium-nihilus": {
       "title": "Imperium Nihilus",
       "url": "https://wh40k.lexicanum.com/wiki/Imperium_Nihilus",
@@ -748,6 +839,15 @@
       "sha256": "60433ed59db1edc4283baa2e76dbef6f6885c3fd6d44b1243f18f0b8ff6d0b0b",
       "file": "sources/raw/lex-inertialess-drive.wikitext"
     },
+    "lex-interex": {
+      "title": "Interex",
+      "url": "https://wh40k.lexicanum.com/wiki/Interex",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 5502,
+      "sha256": "de7b6e39342cec57a6e0210a7fdca8780eb1623ed5a1318d2b81ee4e6ff87db7",
+      "file": "sources/raw/lex-interex.wikitext"
+    },
     "lex-iron-hands": {
       "title": "Iron Hands",
       "url": "https://wh40k.lexicanum.com/wiki/Iron_Hands",
@@ -774,6 +874,15 @@
       "bytes": 6190,
       "sha256": "d01f8714fc245927da161f69c708a4cfc9904794adbc43b015409445d1456259",
       "file": "sources/raw/lex-isha.wikitext"
+    },
+    "lex-isstvan-v": {
+      "title": "Isstvan V",
+      "url": "https://wh40k.lexicanum.com/wiki/Isstvan_V",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 7322,
+      "sha256": "3b71e53fb1f28287dc5b9a8ebd6b18dd3f5abf1013c4f9487359aeb4ade6b530",
+      "file": "sources/raw/lex-isstvan-v.wikitext"
     },
     "lex-jokaero": {
       "title": "Jokaero",
@@ -866,6 +975,25 @@
       "sha256": "60756b91e67bf289d178e3ba90fea654b383fa814755fa94d1b1d96da9d03d96",
       "file": "sources/raw/lex-maelstrom.wikitext",
       "redirect_to": "The Maelstrom"
+    },
+    "lex-magnus": {
+      "title": "Magnus",
+      "url": "https://wh40k.lexicanum.com/wiki/Magnus",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 36847,
+      "sha256": "d54a3305aa6314cab34c0abfee57d2ee5b6d4114e0490a2ba116e02f30a314a0",
+      "file": "sources/raw/lex-magnus.wikitext"
+    },
+    "lex-magnus-the-red": {
+      "title": "Magnus the Red",
+      "url": "https://wh40k.lexicanum.com/wiki/Magnus_the_Red",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 20,
+      "sha256": "1ebb25e6c7338991ffc99356a5f9858cdbc021eea0140f810c0f3a0a5645a77b",
+      "file": "sources/raw/lex-magnus-the-red.wikitext",
+      "redirect_to": "Magnus"
     },
     "lex-mars": {
       "title": "Mars",
@@ -1090,6 +1218,15 @@
       "file": "sources/raw/lex-perils-of-the-warp.wikitext",
       "redirect_to": "Psychic Phenomena"
     },
+    "lex-primarch": {
+      "title": "Primarch",
+      "url": "https://wh40k.lexicanum.com/wiki/Primarch",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 24650,
+      "sha256": "a99257d3cbb900146bf3a866cbf72e75f75522f35025f4342bdb2c1f4b5e3008",
+      "file": "sources/raw/lex-primarch.wikitext"
+    },
     "lex-psionics": {
       "title": "Psionics",
       "url": "https://wh40k.lexicanum.com/wiki/Psionics",
@@ -1292,6 +1429,15 @@
       "sha256": "aa7883df64417257262fb03e0018bfb999bab995073514f341b3ae7e9eb37c05",
       "file": "sources/raw/lex-segmentum-ultima.wikitext",
       "redirect_to": "Ultima Segmentum"
+    },
+    "lex-siege-of-terra": {
+      "title": "Siege of Terra",
+      "url": "https://wh40k.lexicanum.com/wiki/Siege_of_Terra",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 103979,
+      "sha256": "12b9b13a51869ecaf170282d5c3ec964fbee45b076002031e251e130f6504b8a",
+      "file": "sources/raw/lex-siege-of-terra.wikitext"
     },
     "lex-silent-king": {
       "title": "Silent King",
@@ -1511,6 +1657,15 @@
       "bytes": 35635,
       "sha256": "fcf0520a42094c162f44a84c8a08d0b1a6f8c5000d70032a1d3f6307d1134ec4",
       "file": "sources/raw/lex-tyranid.wikitext"
+    },
+    "lex-ullanor-crusade": {
+      "title": "Ullanor Crusade",
+      "url": "https://wh40k.lexicanum.com/wiki/Ullanor_Crusade",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 10119,
+      "sha256": "b93a2aad00cfb9d7ed5372683a091617204c3335808c49183fd139865fb43af6",
+      "file": "sources/raw/lex-ullanor-crusade.wikitext"
     },
     "lex-ultima-segmentum": {
       "title": "Ultima Segmentum",

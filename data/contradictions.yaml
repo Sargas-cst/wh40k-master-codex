@@ -694,3 +694,97 @@ cybernetic-revolt-date:
     - claim: Late M26, per an in-universe 41st-Millennium history.
       source: lex-cybernetic-revolt
       marker: "citation 1 — Warhammer 40,000 3rd Edition Rulebook, pg. 278"
+
+thunder-warriors-fate:
+  kind: sequence
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume III Title 3 research
+  summary: >
+    The Thunder Warriors all died at the Battle of Mount Ararat, or the Emperor massacred them
+    and fabricated Mount Ararat to cover it.
+  reverification_note: >
+    This is not two texts disagreeing about a date. It is an official Imperial history
+    contradicted by a named witness — the surviving Thunder Warrior Arik Taranis — who, if the
+    official history were true, could not be testifying at all. His existence is itself the
+    counter-evidence.
+
+    The account allows three readings: that the Emperor simply did not replenish their
+    numbers, that he massacred them outright, or that he used the battle to expend the last of
+    them. The purges are implied to have been carried out by the Templi Veritas of the Legio
+    Custodes. The stated motive is consistent across all three: the Thunder Warriors were
+    suitable for conquering Terra but did not fit a vision of warriors who would take the
+    galaxy.
+  handling: >
+    Give the official account as the official account, and Taranis's as a witness statement.
+    Do not present Mount Ararat as settled fact, and do not assert the massacre either.
+  positions:
+    - claim: All died at the Battle of Mount Ararat; the Astartes were created to replace them.
+      source: lex-thunder-warriors
+      marker: "citation 2 — The Outcast Dead (Novel), Imperial history"
+    - claim: The Emperor massacred them and fabricated Mount Ararat as a cover-up.
+      source: lex-thunder-warriors
+      marker: "citation 2 — The Outcast Dead (Novel), per Arik Taranis"
+
+primarch-scattering-cause:
+  kind: sequence
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume III Title 3 research
+  summary: >
+    The Primarchs were scattered by the Chaos Gods, by a causal loop in which time-travelling
+    Word Bearers disabled the Gellar Fields protecting them, or by the Perpetual Erda.
+  reverification_note: >
+    Three accounts, and they are structurally different rather than merely rival. The first is
+    the plain statement that the Chaos Gods spirited the infants away with a Warp vortex. The
+    second has Argel Tal and his men sent back in time inside the Eye of Terror to the
+    Emperor's laboratory and persuaded by the daemon Ingethel to destroy the Gellar Field
+    generators — after which the vortex took the Primarchs almost immediately. The third has
+    Erda, whose own genetic material went into them, creating the vortex out of anger at the
+    fate the Emperor planned for her "children", with Erebus adding that she was unwittingly
+    manipulated by the Chaos Gods.
+
+    The second and third can be read as MECHANISMS for the first rather than alternatives to
+    it, since both have Chaos acting through intermediaries. Whether that reconciliation is
+    intended or whether these are three unreconciled stories, the sources do not say.
+  handling: >
+    Give all three and note that two of them describe Chaos acting through agents. Do not
+    present any single account as what happened.
+  positions:
+    - claim: The Chaos Gods spirited them away with a Warp vortex.
+      source: lex-primarch
+      marker: "citation 9 — False Gods (Novel), Chapters 15-16"
+    - claim: A causal loop — time-displaced Word Bearers disabled the Gellar Fields.
+      source: lex-primarch
+      marker: "citation 14 — The First Heretic (Novel), Chapter 17"
+    - claim: Erda created the vortex, possibly manipulated into it.
+      source: lex-primarch
+      marker: "citation 38a; citation 6 — Warhawk (Novel), Chapter 13"
+
+first-primarch-found:
+  kind: sequence
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume III Title 3 research
+  summary: >
+    Horus was the first Primarch found, or Alpharius was, having landed on Terra itself.
+  reverification_note: >
+    The article calls the Alpharius version "a dubious account given by Alpharius" — the
+    unreliability is attributed in the source, not added here. It is worth recording anyway,
+    because Alpharius is the Primarch defined by deception, and a claim by him to have been
+    first and to have landed on Terra is exactly the claim he would make whether or not it
+    were true. The traditional account, that Horus was first and became the Emperor's
+    favourite, carries the weight.
+  handling: >
+    State Horus as the traditional account and Alpharius's as his own dubious claim. Do not
+    treat the latter as equally weighted.
+  positions:
+    - claim: Horus was found first and became the Emperor's favourite.
+      source: lex-primarch
+      marker: "citation 30e — Index Astartes IV, The Enemy Within"
+    - claim: Alpharius was first, landing on Terra — by his own dubious account.
+      source: lex-primarch
+      marker: "citation 40a — Discovery"

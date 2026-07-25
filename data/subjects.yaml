@@ -277,7 +277,7 @@ astartes-homeworlds:
   gloss: >
     What a fortress-monastery is and how a Chapter holds its planet — with Fenris, Baal and
     Nocturne as the worked cases.
-  aliases: [fortress-monastery, the Fang, Fenris, Baal, Nocturne, Arx Angelicum, Mount Deathfire]
+  aliases: [fortress-monastery, the Fang, Fenris, Baal, Nocturne, Arx Angelicum, Mount Deathfire, Time of Trial, Sanctuary Cities]
   see_also: [bastion-worlds, death-worlds]
 
 bastion-worlds:
@@ -405,3 +405,48 @@ old-night-on-terra:
     Marine plate. Mars, meanwhile, rebuilt itself and judged Terra beyond saving.
   aliases: [techno-barbarian, Techno-barbarians, Narthan Dume, Terrawatt Clan, Saturnine Fleet, Ringers]
   see_also: [age-of-strife, terra, mars]
+
+the-unification-wars:
+  name: the Unification Wars
+  gloss: >
+    The Emperor's conquest of Terra in M30, begun when the Warp storms becalmed and finished
+    in anticipation of their lifting. Compliance was genuinely offered; Boeotia got a hundred
+    and fifty years of it before annihilation.
+  aliases: [Unification Wars, Wars of Unification, Battle of Mount Ararat, Terrawatt Clan, Boeotia, Yeselti]
+  see_also: [old-night-on-terra, the-thunder-warriors, the-imperial-truth]
+
+the-thunder-warriors:
+  name: the Thunder Warriors
+  gloss: >
+    The Emperor's first super-soldiers — stronger than Space Marines, unstable, short-lived,
+    organised into twenty Legions before the Primarchs existed. Officially killed at Mount
+    Ararat; a survivor says otherwise.
+  aliases: [Thunder Warriors, Thunder Legion, Legiones Cataegis, Arik Taranis]
+  see_also: [the-unification-wars]
+
+the-imperial-truth:
+  name: the Imperial Truth
+  gloss: >
+    The Great Crusade's doctrine: no religion, no superstition, human manifest destiny, and
+    all xenos a danger. Its anti-religious core was a Warp-defence measure, and it is now a
+    synonym for the state church.
+  aliases: [Imperial Truth, Iterators, Lectitio Divinitatus]
+  see_also: [the-unification-wars]
+
+the-primarchs:
+  name: the Primarchs
+  gloss: >
+    The Emperor's twenty gene-wrought sons, engineered from his own DNA for strength and
+    charisma to command the Legions — described by their maker as tools and weapons, scattered
+    before maturity, and two of them erased from the record.
+  aliases: [Primarch, Primarchs, Primarch II, Primarch XI, the two lost Legions, Erda, Lorgar, Perturabo, Konrad Curze, Angron, Alpharius]
+  see_also: [the-thunder-warriors, the-unification-wars]
+
+the-great-crusade:
+  name: the Great Crusade
+  gloss: >
+    Two centuries of reconquest, 798.M30 to 005.M31, fought by 4,300 expeditionary fleets:
+    tyrants overthrown, religion outlawed, hundreds of species exterminated, and human worlds
+    judged too mutated destroyed from orbit. Ended by a management structure.
+  aliases: [Great Crusade, Pax Imperialis, Void Harbour, Expeditionary Fleet, Ullanor Crusade, Interex, Anathame, Monarchia]
+  see_also: [the-unification-wars, the-primarchs, the-imperial-truth]

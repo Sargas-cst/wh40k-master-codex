@@ -1659,3 +1659,116 @@ lex-techno-barbarian:
   notes: >
     2 KB, largely a list of named warlords. The claim used here — that techno-barbarian
     powered armour became the basis for Space Marine armour — rests on citation 1.
+
+lex-unification-wars:
+  tier: 2
+  what: Lexicanum article "Unification Wars"
+  url: https://wh40k.lexicanum.com/wiki/Unification_Wars
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-unification-wars.wikitext
+  cites:
+    - "The Horus Heresy Book One - Betrayal, pgs. 175-180"   # {{Fn|11b}} — the becalming, the Emperor's timing
+    - "Vengeful Spirit (Novel), Chapter 4"                   # {{Fn|8}} — the coalition, the Terrawatt alliance
+    - "The First Heretic (Novel), Chapter 17, pgs. 300-301"  # {{Fn|6}} — the secret laboratories
+    - "Prospero Burns (Novel), Chapter 1"                    # {{Fn|4a}} — Boeotia's 150 years and destruction
+    - "The Horus Heresy Book Two - Massacre, pg. 132"        # {{Fn|7c}} — Terra, Luna, Mars, then the Crusade
+    - "Valdor: Birth of the Imperium (Novel), Chapter 5"     # {{Fn|19a}} — the Maulland Sen campaign
+  notes: >
+    Its Factions & Tribes section is a long gazetteer of Terran polities; only the ones that
+    carry a decision are used here. The rest are covered by III.T2.Ch10's treatment of what
+    the surviving names demonstrate.
+
+lex-thunder-warriors:
+  tier: 2
+  what: Lexicanum article "Thunder Warriors"
+  url: https://wh40k.lexicanum.com/wiki/Thunder_Warriors
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-thunder-warriors.wikitext
+  cites:
+    - "Valdor: Birth of the Imperium (Novel), Chapter 5"     # {{Fn|10a}} — Legiones Cataegis, the twenty Legions, the instability
+    - "The Outcast Dead (Novel)"                             # {{Fn|2}} — Mount Ararat, and Arik Taranis's counter-account
+    - "The First Heretic (Novel), Chapter 17"                # {{Fn|3}} — less efficient engineering than the Astartes
+    - "The Horus Heresy Book One - Betrayal, pg. 27"         # {{Fn|5a}} — the unwilling geneticists
+    - "Collected Visions, pg. 17"                            # {{Fn|4b}} — twenty regiments, named by the Emperor
+    - "Master of Mankind (Novel), Chapter 6"                 # {{Fn|7}} — the Templi Veritas implication
+  notes: >
+    Carries the clearest example in the codex of an official history contradicted by a witness
+    who, on that history's own terms, should not exist; see thunder-warriors-fate.
+
+lex-imperial-truth:
+  tier: 2
+  what: Lexicanum article "Imperial Truth"
+  url: https://wh40k.lexicanum.com/wiki/Imperial_Truth
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-imperial-truth.wikitext
+  cites:
+    - "Horus Rising (Novel), Part One, Chapter Three, pgs. 58-59"   # {{Fn|1}} — the Iterators and the content
+    - "The First Heretic (Novel), Chapter 7"                 # {{Fn|4}} — manifest destiny, human exceptionalism, xenos danger
+    - "The Last Church (Short Story)"                        # {{Fn|3}} — the destruction of Terra's churches
+    - "Master of Mankind (Novel), Chapter 13"                # {{Fn|5}} — religion as the door Chaos enters by
+    - "Galaxy In Flames (Novel)"                             # {{Fn|2}} — the disintegration; the Lectitio Divinitatus
+    - "Death Rider (Novel), Chapter 6"                       # {{Fn|7}} — the phrase surviving as a synonym for the Imperial Cult
+  notes: >
+    2.5 KB. The article's own framing — that the Emperor's motive was Warp defence rather than
+    philosophy — is the load-bearing claim used here, and rests on citation 5.
+
+lex-primarch:
+  tier: 2
+  what: Lexicanum article "Primarch"
+  url: https://wh40k.lexicanum.com/wiki/Primarch
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-primarch.wikitext
+  cites:
+    - "Index Astartes I - Children of the Emperor"       # {{Fn|8a}} — the design brief, the DNA, the Legions from samples
+    - "The First Heretic (Novel), Chapter 17"            # {{Fn|14}} — the secret laboratory; the Argel Tal causal loop; the lost Legions
+    - "False Gods (Novel), Chapters 15-16"               # {{Fn|9}} — the Chaos Gods' Warp vortex
+    - "Master of Mankind (Novel), Chapter 7"             # {{Fn|25}} — no emotional attachment; the puppet story
+    - "Fulgrim (Novel), Chapter 14"                      # {{Fn|19}} — Eldrad on dark powers
+    - "Vengeful Spirit (Novel)"                          # {{Fn|20}} — the Molech Warp Portal speculation
+    - "Perturabo: The Hammer of Olympia (Novel), Chapter 7"   # {{Fn|26}} — 792.M30
+    - "Malcador: First Lord of the Imperium (Audio Drama)"    # {{Fn|27}} — Malcador's account of the intended purge
+    - "Index Astartes IV - The Enemy Within"             # {{Fn|30e}} — recognition, contests, Angron's abduction
+    - "The Lightning Tower (Short Story)"                # {{Fn|12}} — Dorn on the vacant plinths
+    - "Prospero Burns (Novel)"                           # {{Fn|18}} — the Space Wolves as an insurance policy
+    - "Warhawk (Novel), Chapter 13"                      # {{Fn|6}} — Erebus on Erda being manipulated
+  notes: >
+    24.6 KB, carries a trivia block. Its section on the two lost Legions includes a piece of
+    fan arithmetic (that two plus eleven equals thirteen, the Ultramarines' number) which the
+    article itself labels "a coincidental side-note"; that is tier 4 material and is NOT
+    reproduced here. Every account of what went into the Primarchs comes from a hostile or
+    compromised witness — a daemon, an Aeldari farseer, or Malcador declining to confirm his own
+    story — and the Chapter says so rather than presenting any of it as settled.
+
+lex-great-crusade:
+  tier: 2
+  what: Lexicanum article "Great Crusade"
+  url: https://wh40k.lexicanum.com/wiki/Great_Crusade
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-great-crusade.wikitext
+  cites:
+    - "White Dwarf 129 (UK), pg. 14"                     # {{Fn|1}} — the dates, the Primarch Project, the decline afterwards
+    - "Horus Rising (Novel), Part One, Chapter Nine, pgs. 172-173"   # {{Fn|5}} — 4,300 fleets, Ullanor, the Warmastership, the Terran Council
+    - "The Horus Heresy Book One - Betrayal, pgs. 18-22" # {{Fn|7a}} — the method: tyrants, religion outlawed, worlds exterminated from orbit
+    - "The Horus Heresy Book One - Betrayal, pg. 81"     # {{Fn|7c}} — hundreds of alien races exterminated
+    - "The Horus Heresy Book Five, pg. 73"               # {{Fn|8}} — the three thrusts
+    - "The Dark King (Short Story)"                      # {{Fn|9}} — the Primarchs' feuds, Curze's attack on Dorn
+    - "Dropsite Massacre (Novel), Chapter 5"             # {{Fn|17}} — the Void Harbours
+    - "Master of Mankind (Novel), Chapter 15"            # {{Fn|16}} — the scale of xenos extermination
+  notes: >
+    Carries an uncited-works block. Its list of noteworthy battles is not used; individual
+    campaigns belong to Volume VII.
+
+lex-interex:
+  tier: 2
+  what: Lexicanum article "Interex"
+  url: https://wh40k.lexicanum.com/wiki/Interex
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-interex.wikitext
+  cites:
+    - "Horus Rising (Novel), Part Three, Chapter One"    # {{Fn|2a}} — the civilisation, the ears, the Kinebrach, the Megarachnids
+    - "Horus Rising (Novel), Part Three, Chapter Three"  # {{Fn|2c}} — contact with the Eldar, 'Kaos', the sabotage, the Anathame
+    - "Horus Rising (Novel), Part Three, Chapter Four"   # {{Fn|2d}} — Erebus identified; the fighting and Horus's evacuation
+  notes: >
+    5.5 KB. The Interex are the Crusade's clearest counter-example: a human civilisation that
+    had learned the truth about Chaos from the Aeldari and integrated a xenos species, met at
+    the moment the Imperium was exterminating hundreds of species and denying Chaos existed.
