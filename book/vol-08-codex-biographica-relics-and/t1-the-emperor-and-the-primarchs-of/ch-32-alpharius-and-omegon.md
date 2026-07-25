@@ -1,12 +1,12 @@
 ---
-id: IX.T1.Ch1
-name: Solid & Energy Weapons
+id: VIII.T1.Ch32
+name: Alpharius and Omegon
 status: stub
 owns: []
 sections: []
 ---
 
-# Solid & Energy Weapons
+# Alpharius and Omegon
 
 !!! note "Not yet written"
 
@@ -20,6 +20,6 @@ Indicative, not binding. A Chapter carries two to five Sections depending on
 what the sources actually support — this list is the researched starting plan,
 and it will change where the material demands it.
 
-- Autoguns, Stubbers & Solid Shot
-- Lasguns & Las-Weaponry
-- Bolt Weapons & Mass-Reactive Shells
+- The Twin Primarch
+- The Cabal’s Offer
+- Loyal to What

@@ -1,12 +1,12 @@
 ---
-id: IX.T4.Ch10
-name: Starship Classes & Battle-Barges
+id: III.T2.Ch27
+name: The Fall of the Eldar
 status: stub
 owns: []
 sections: []
 ---
 
-# Starship Classes & Battle-Barges
+# The Fall of the Eldar
 
 !!! note "Not yet written"
 
@@ -20,6 +20,6 @@ Indicative, not binding. A Chapter carries two to five Sections depending on
 what the sources actually support — this list is the researched starting plan,
 and it will change where the material demands it.
 
-- Escort Frigates & Destroyers
-- Cruisers & Battleships
-- Space Marine Battle-Barges
+- The Empire That Had Everything
+- The Birth of Slaanesh & the Eye of Terror
+- What It Did to Humanity's Age of Strife

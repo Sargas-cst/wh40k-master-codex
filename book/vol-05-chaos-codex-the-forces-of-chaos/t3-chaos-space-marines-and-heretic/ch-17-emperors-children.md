@@ -1,12 +1,12 @@
 ---
-id: IX.T3.Ch9
-name: Dreadnoughts & Walkers
+id: V.T3.Ch17
+name: Emperor's Children
 status: stub
 owns: []
 sections: []
 ---
 
-# Dreadnoughts & Walkers
+# Emperor's Children
 
 !!! note "Not yet written"
 
@@ -20,6 +20,6 @@ Indicative, not binding. A Chapter carries two to five Sections depending on
 what the sources actually support — this list is the researched starting plan,
 and it will change where the material demands it.
 
-- The Interred and the Honoured Dead
-- Contemptor, Redemptor & Patterns
-- Sentinels, Armigers & Light Walkers
+- Fulgrim and the Pursuit of Perfection
+- The Fall to Slaanesh
+- Noise Marines and the Kakophoni

@@ -713,7 +713,10 @@ const totalWords = drafted.flatMap(c => c.sections).reduce((n, s) => n + s.words
 console.log('');
 console.log('  Codex structural validation');
 console.log('  ' + '-'.repeat(52));
-console.log(`  Chapters found        ${chapters.size} of 171`);
+// The plan is the table of contents, not a number typed here — it changed once and this
+// line went stale within the hour.
+const planned = (readFileSync(join(ROOT, 'PROMPT.md'), 'utf8').match(/^- \*\*Ch \d+ — /gm) ?? []).length;
+console.log(`  Chapters found        ${chapters.size} of ${planned}`);
 console.log(`  Stubs                 ${stubs}`);
 console.log(`  Drafted (not stub)    ${drafted.length}`);
 console.log(`  Sections              ${sectionIds.size}`);

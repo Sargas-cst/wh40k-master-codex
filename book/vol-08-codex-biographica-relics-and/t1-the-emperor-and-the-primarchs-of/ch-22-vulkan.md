@@ -1,12 +1,12 @@
 ---
-id: IX.T4.Ch12
-name: Exterminatus Protocols
+id: VIII.T1.Ch22
+name: Vulkan
 status: stub
 owns: []
 sections: []
 ---
 
-# Exterminatus Protocols
+# Vulkan
 
 !!! note "Not yet written"
 
@@ -20,6 +20,6 @@ Indicative, not binding. A Chapter carries two to five Sections depending on
 what the sources actually support — this list is the researched starting plan,
 and it will change where the material demands it.
 
-- Legal Justification & Decree
-- Cyclonic Torpedoes & Core Crackers
-- Life-Eater Virus Bombs
+- Nocturne and the Anvil
+- The Perpetual Question
+- Living Among His People

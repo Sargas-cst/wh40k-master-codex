@@ -1,12 +1,12 @@
 ---
-id: IX.T2.Ch5
-name: Flak, Carapace & Void Protection
+id: IX.T1.Ch2
+name: Dreadnoughts and the Honoured Dead
 status: stub
 owns: []
 sections: []
 ---
 
-# Flak, Carapace & Void Protection
+# Dreadnoughts and the Honoured Dead
 
 !!! note "Not yet written"
 
@@ -20,6 +20,6 @@ Indicative, not binding. A Chapter carries two to five Sections depending on
 what the sources actually support — this list is the researched starting plan,
 and it will change where the material demands it.
 
-- Guard Flak & Carapace
-- Void Suits & Environmental Gear
-- Sororitas & Ecclesiarchy Plate
+- The Interring of a Dying Brother
+- A Coffin That Fights
+- Waking the Ancients

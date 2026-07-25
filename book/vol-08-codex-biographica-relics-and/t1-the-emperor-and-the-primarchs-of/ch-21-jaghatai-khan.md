@@ -1,12 +1,12 @@
 ---
-id: IX.T2.Ch4
-name: Power Armour Marks & Terminator Plate
+id: VIII.T1.Ch21
+name: Jaghatai Khan
 status: stub
 owns: []
 sections: []
 ---
 
-# Power Armour Marks & Terminator Plate
+# Jaghatai Khan
 
 !!! note "Not yet written"
 
@@ -20,6 +20,6 @@ Indicative, not binding. A Chapter carries two to five Sections depending on
 what the sources actually support — this list is the researched starting plan,
 and it will change where the material demands it.
 
-- MK I Thunder to MK VIII Errant
-- MK X Tacticus, Phobos & Gravis
-- Terminator Armour Variants
+- Chogoris and the Ordu
+- The Legion That Kept Its Own Name
+- The Khan’s Choice

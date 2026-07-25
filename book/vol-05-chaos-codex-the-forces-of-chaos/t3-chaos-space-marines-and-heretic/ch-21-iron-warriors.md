@@ -1,12 +1,12 @@
 ---
-id: IX.T4.Ch11
-name: Aircraft & Atmospheric Craft
+id: V.T3.Ch21
+name: Iron Warriors
 status: stub
 owns: []
 sections: []
 ---
 
-# Aircraft & Atmospheric Craft
+# Iron Warriors
 
 !!! note "Not yet written"
 
@@ -20,6 +20,6 @@ Indicative, not binding. A Chapter carries two to five Sections depending on
 what the sources actually support — this list is the researched starting plan,
 and it will change where the material demands it.
 
-- Thunderhawks & Drop Pods
-- Valkyries, Vendettas & Marauders
-- Lightning, Thunderbolt & Void Fighters
+- Perturabo and the Siege Masters
+- The Grudge Against Dorn
+- Medrengard and the Grand Company

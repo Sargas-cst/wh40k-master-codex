@@ -1,12 +1,12 @@
 ---
-id: IX.T3.Ch7
-name: Super-Heavies & Siege Engines
+id: V.T3.Ch16
+name: Death Guard
 status: stub
 owns: []
 sections: []
 ---
 
-# Super-Heavies & Siege Engines
+# Death Guard
 
 !!! note "Not yet written"
 
@@ -20,6 +20,6 @@ Indicative, not binding. A Chapter carries two to five Sections depending on
 what the sources actually support — this list is the researched starting plan,
 and it will change where the material demands it.
 
-- The Baneblade Family
-- Shadowsword & Titan-Killers
-- Siege & Assault Engines
+- Mortarion and the Voyage
+- Nurgle’s Bargain
+- The Plague Marine Condition

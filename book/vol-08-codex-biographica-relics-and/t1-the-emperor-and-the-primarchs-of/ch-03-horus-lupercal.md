@@ -1,12 +1,12 @@
 ---
-id: IX.T3.Ch6
-name: Astra Militarum Armour
+id: VIII.T1.Ch3
+name: Horus Lupercal
 status: stub
 owns: []
 sections: []
 ---
 
-# Astra Militarum Armour
+# Horus Lupercal
 
 !!! note "Not yet written"
 
@@ -20,6 +20,6 @@ Indicative, not binding. A Chapter carries two to five Sections depending on
 what the sources actually support — this list is the researched starting plan,
 and it will change where the material demands it.
 
-- Leman Russ Patterns
-- Chimeras & Troop Transports
-- Basilisks & Artillery Batteries
+- The Favoured Son
+- Davin and the Anathame
+- The Warmaster’s War

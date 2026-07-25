@@ -1,12 +1,12 @@
 ---
-id: VIII.T1.Ch3
-name: Daemon & Traitor Primarchs
+id: VIII.T1.Ch17
+name: Lion El'Jonson
 status: stub
 owns: []
 sections: []
 ---
 
-# Daemon & Traitor Primarchs
+# Lion El'Jonson
 
 !!! note "Not yet written"
 
@@ -20,6 +20,6 @@ Indicative, not binding. A Chapter carries two to five Sections depending on
 what the sources actually support — this list is the researched starting plan,
 and it will change where the material demands it.
 
-- Horus, Lorgar & Magnus
-- Mortarion, Fulgrim & Angron
-- Curze, Perturabo & Alpharius
+- Caliban and the Order
+- The Fallen and the Secret
+- Ten Thousand Years Asleep

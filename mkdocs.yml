@@ -164,6 +164,7 @@ nav:
           - Standard Template Constructs: vol-03-chronological-history-60m-bc-m42/t2-dark-age-of-technology-and-age-of/ch-07-standard-template-constructs.md
           - The Cybernetic Revolt: vol-03-chronological-history-60m-bc-m42/t2-dark-age-of-technology-and-age-of/ch-08-the-cybernetic-revolt.md
           - "Age of Strife & Warp Isolation": vol-03-chronological-history-60m-bc-m42/t2-dark-age-of-technology-and-age-of/ch-09-age-of-strife-and-warp-isolation.md
+          - The Fall of the Eldar: vol-03-chronological-history-60m-bc-m42/t2-dark-age-of-technology-and-age-of/ch-27-the-fall-of-the-eldar.md
           - Descent of Holy Terra: vol-03-chronological-history-60m-bc-m42/t2-dark-age-of-technology-and-age-of/ch-10-descent-of-holy-terra.md
       - "Title 3 — Great Crusade, Primarchs & Horus Heresy":
           - "Rise of the Emperor & Unification": vol-03-chronological-history-60m-bc-m42/t3-great-crusade-primarchs-and-horus/ch-11-rise-of-the-emperor-and-unification.md
@@ -237,7 +238,15 @@ nav:
           - "Daemon Worlds & Warp Incursions": vol-05-chaos-codex-the-forces-of-chaos/t2-the-realms-of-chaos-and-daemon/ch-07-daemon-worlds-and-warp-incursions.md
           - The Daemonic Hierarchy: vol-05-chaos-codex-the-forces-of-chaos/t2-the-realms-of-chaos-and-daemon/ch-08-the-daemonic-hierarchy.md
       - "Title 3 — Chaos Space Marines & Heretic Warbands":
-          - The 9 Traitor Space Marine Legions: vol-05-chaos-codex-the-forces-of-chaos/t3-chaos-space-marines-and-heretic/ch-09-the-9-traitor-space-marine-legions.md
+          - Black Legion: vol-05-chaos-codex-the-forces-of-chaos/t3-chaos-space-marines-and-heretic/ch-09-black-legion.md
+          - World Eaters: vol-05-chaos-codex-the-forces-of-chaos/t3-chaos-space-marines-and-heretic/ch-15-world-eaters.md
+          - Death Guard: vol-05-chaos-codex-the-forces-of-chaos/t3-chaos-space-marines-and-heretic/ch-16-death-guard.md
+          - "Emperor's Children": vol-05-chaos-codex-the-forces-of-chaos/t3-chaos-space-marines-and-heretic/ch-17-emperors-children.md
+          - Thousand Sons: vol-05-chaos-codex-the-forces-of-chaos/t3-chaos-space-marines-and-heretic/ch-18-thousand-sons.md
+          - Word Bearers: vol-05-chaos-codex-the-forces-of-chaos/t3-chaos-space-marines-and-heretic/ch-19-word-bearers.md
+          - Night Lords: vol-05-chaos-codex-the-forces-of-chaos/t3-chaos-space-marines-and-heretic/ch-20-night-lords.md
+          - Iron Warriors: vol-05-chaos-codex-the-forces-of-chaos/t3-chaos-space-marines-and-heretic/ch-21-iron-warriors.md
+          - Alpha Legion: vol-05-chaos-codex-the-forces-of-chaos/t3-chaos-space-marines-and-heretic/ch-22-alpha-legion.md
           - "Renegade Warbands & the Red Corsairs": vol-05-chaos-codex-the-forces-of-chaos/t3-chaos-space-marines-and-heretic/ch-10-renegade-warbands-and-the-red-corsairs.md
           - "Dark Mechanicum & Daemon Engines": vol-05-chaos-codex-the-forces-of-chaos/t3-chaos-space-marines-and-heretic/ch-11-dark-mechanicum-and-daemon-engines.md
       - "Title 4 — Cults, Corruption & the Fall of Worlds":
@@ -298,8 +307,24 @@ nav:
   - "Volume VIII — Codex Biographica, Relics & Titans":
       - "Title 1 — The Emperor & the Primarchs of Mankind":
           - The Emperor of Mankind: vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-01-the-emperor-of-mankind.md
-          - The Loyalist Primarchs: vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-02-the-loyalist-primarchs.md
-          - "Daemon & Traitor Primarchs": vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-03-daemon-and-traitor-primarchs.md
+          - Roboute Guilliman: vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-02-roboute-guilliman.md
+          - "Lion El'Jonson": vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-17-lion-eljonson.md
+          - Sanguinius: vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-18-sanguinius.md
+          - Leman Russ: vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-19-leman-russ.md
+          - Rogal Dorn: vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-20-rogal-dorn.md
+          - Jaghatai Khan: vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-21-jaghatai-khan.md
+          - Vulkan: vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-22-vulkan.md
+          - Corvus Corax: vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-23-corvus-corax.md
+          - Ferrus Manus: vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-24-ferrus-manus.md
+          - Horus Lupercal: vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-03-horus-lupercal.md
+          - Lorgar Aurelian: vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-25-lorgar-aurelian.md
+          - Magnus the Red: vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-26-magnus-the-red.md
+          - Mortarion: vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-27-mortarion.md
+          - Fulgrim: vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-28-fulgrim.md
+          - Angron: vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-29-angron.md
+          - Konrad Curze: vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-30-konrad-curze.md
+          - Perturabo: vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-31-perturabo.md
+          - Alpharius and Omegon: vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-32-alpharius-and-omegon.md
           - "The Lost & the Erased": vol-08-codex-biographica-relics-and/t1-the-emperor-and-the-primarchs-of/ch-04-the-lost-and-the-erased.md
       - "Title 2 — Imperial Legends & Champions":
           - Founders of the Imperium: vol-08-codex-biographica-relics-and/t2-imperial-legends-and-champions/ch-05-founders-of-the-imperium.md
@@ -319,22 +344,12 @@ nav:
           - Imperial Titan Legions: vol-08-codex-biographica-relics-and/t6-titan-legions-and-knight-houses/ch-15-imperial-titan-legions.md
           - "Traitor Titans & Chaos Knights": vol-08-codex-biographica-relics-and/t6-titan-legions-and-knight-houses/ch-16-traitor-titans-and-chaos-knights.md
   - "Volume IX — Compendium Imperialis (Armaments & Materiel)":
-      - "Title 1 — Small Arms & Personal Weaponry":
-          - "Solid & Energy Weapons": vol-09-compendium-imperialis-armaments/t1-small-arms-and-personal-weaponry/ch-01-solid-and-energy-weapons.md
-          - "Thermal, Plasma & Exotic Weapons": vol-09-compendium-imperialis-armaments/t1-small-arms-and-personal-weaponry/ch-02-thermal-plasma-and-exotic-weapons.md
-          - Close Combat Arms: vol-09-compendium-imperialis-armaments/t1-small-arms-and-personal-weaponry/ch-03-close-combat-arms.md
-      - "Title 2 — Armour & Personal Protection":
-          - "Power Armour Marks & Terminator Plate": vol-09-compendium-imperialis-armaments/t2-armour-and-personal-protection/ch-04-power-armour-marks-and-terminator-plate.md
-          - "Flak, Carapace & Void Protection": vol-09-compendium-imperialis-armaments/t2-armour-and-personal-protection/ch-05-flak-carapace-and-void-protection.md
-      - "Title 3 — Vehicles, Walkers & War Machines":
-          - Astra Militarum Armour: vol-09-compendium-imperialis-armaments/t3-vehicles-walkers-and-war-machines/ch-06-astra-militarum-armour.md
-          - "Super-Heavies & Siege Engines": vol-09-compendium-imperialis-armaments/t3-vehicles-walkers-and-war-machines/ch-07-super-heavies-and-siege-engines.md
-          - Adeptus Astartes Vehicles: vol-09-compendium-imperialis-armaments/t3-vehicles-walkers-and-war-machines/ch-08-adeptus-astartes-vehicles.md
-          - "Dreadnoughts & Walkers": vol-09-compendium-imperialis-armaments/t3-vehicles-walkers-and-war-machines/ch-09-dreadnoughts-and-walkers.md
-      - "Title 4 — Voidcraft, Aircraft & Exterminatus":
-          - "Starship Classes & Battle-Barges": vol-09-compendium-imperialis-armaments/t4-voidcraft-aircraft-and-exterminatus/ch-10-starship-classes-and-battle-barges.md
-          - "Aircraft & Atmospheric Craft": vol-09-compendium-imperialis-armaments/t4-voidcraft-aircraft-and-exterminatus/ch-11-aircraft-and-atmospheric-craft.md
-          - Exterminatus Protocols: vol-09-compendium-imperialis-armaments/t4-voidcraft-aircraft-and-exterminatus/ch-12-exterminatus-protocols.md
+      - Title 1 — What the Wargear Means:
+          - Power Armour and the Black Carapace: vol-09-compendium-imperialis-armaments/t1-what-the-wargear-means/ch-01-power-armour-and-the-black-carapace.md
+          - Dreadnoughts and the Honoured Dead: vol-09-compendium-imperialis-armaments/t1-what-the-wargear-means/ch-02-dreadnoughts-and-the-honoured-dead.md
+      - Title 2 — The Weapons of Last Resort:
+          - Titans and the God-Engine Question: vol-09-compendium-imperialis-armaments/t2-the-weapons-of-last-resort/ch-03-titans-and-the-god-engine-question.md
+          - Exterminatus Protocols: vol-09-compendium-imperialis-armaments/t2-the-weapons-of-last-resort/ch-04-exterminatus-protocols.md
   - "Appendix A — Apparatus & Reading Paths":
       - Title 1 — The Setting in Publication:
           - "Editions & the Shape of the Setting": vol-10-apparatus-and-reading-paths/t1-the-setting-in-publication/ch-01-editions-and-the-shape-of-the-setting.md

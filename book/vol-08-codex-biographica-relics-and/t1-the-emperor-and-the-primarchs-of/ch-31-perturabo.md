@@ -1,12 +1,12 @@
 ---
-id: IX.T1.Ch2
-name: Thermal, Plasma & Exotic Weapons
+id: VIII.T1.Ch31
+name: Perturabo
 status: stub
 owns: []
 sections: []
 ---
 
-# Thermal, Plasma & Exotic Weapons
+# Perturabo
 
 !!! note "Not yet written"
 
@@ -20,6 +20,6 @@ Indicative, not binding. A Chapter carries two to five Sections depending on
 what the sources actually support — this list is the researched starting plan,
 and it will change where the material demands it.
 
-- Meltaguns & Flamers
-- Plasma Weapons & Their Perils
-- Grav, Volkite & Archeotech
+- Olympia and the Iron Cage
+- The Grudge Against Dorn
+- Lord of Iron

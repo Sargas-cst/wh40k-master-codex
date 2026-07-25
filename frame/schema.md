@@ -16,7 +16,7 @@ are fixed, so their IDs are numeric. Sections flex, so their IDs are slugs.**
 |---|---|---|
 | Volume | Roman numeral, or `APX` for Appendix A | `IV` |
 | Title | `T<n>` | `IV.T9` |
-| Chapter | `Ch<n>` — numbered continuously *within a Volume* | `IV.T9.Ch31` |
+| Chapter | `Ch<n>` — allocated once, never reassigned | `IV.T9.Ch31` |
 | Section | `<chapter-id>.<slug>` | `IV.T9.Ch31.emperors-beacon` |
 
 Section IDs are slugs, not indices, **on purpose**. The brief allows a Chapter to carry
@@ -25,8 +25,15 @@ deleting one would silently renumber the rest and break every inbound link. Slug
 survive insertion, deletion and reordering. A Section's *display name* may be reworded
 freely without breaking links; its `slug` must never change once published.
 
-Chapter numbers come from the table of contents in `PROMPT.md` and are not ours to
-reassign.
+Chapter numbers are **identifiers, not positions.** They are allocated once from the free
+pool for that Volume and never reassigned, and reading order lives in `PROMPT.md`, which is
+what generates the nav. A Chapter inserted into the middle of a Volume therefore takes the
+next unused number rather than displacing the ones after it.
+
+This is the same reasoning that makes Section IDs slugs. The first draft of this rule said
+numbers ran continuously within a Volume, and inserting one Chapter into Volume III would
+have renumbered seventeen written Chapters and rewritten 185 cross-references. Nothing
+required that: a reader never sees a Chapter number, and the nav does not derive from it.
 
 ---
 
@@ -40,8 +47,9 @@ home.
 book/vol-04-imperium/t9-telepathica-navis/ch-31-astronomican.md
 ```
 
-Directory and file names carry zero-padded numeric prefixes so that filesystem order
-equals reading order without any tooling.
+Directory and file names carry zero-padded numeric prefixes from the Chapter number.
+Since numbers are allocated rather than positional, filesystem order approximates
+reading order but is not authoritative — `PROMPT.md` is.
 
 ---
 

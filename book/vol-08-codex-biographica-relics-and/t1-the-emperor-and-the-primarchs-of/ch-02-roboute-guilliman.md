@@ -1,12 +1,12 @@
 ---
 id: VIII.T1.Ch2
-name: The Loyalist Primarchs
+name: Roboute Guilliman
 status: stub
 owns: []
 sections: []
 ---
 
-# The Loyalist Primarchs
+# Roboute Guilliman
 
 !!! note "Not yet written"
 
@@ -20,6 +20,6 @@ Indicative, not binding. A Chapter carries two to five Sections depending on
 what the sources actually support — this list is the researched starting plan,
 and it will change where the material demands it.
 
-- Guilliman & Lion El'Jonson
-- Sanguinius, Russ & Dorn
-- Khan, Vulkan, Corax & Ferrus
+- The Boy Consul of Macragge
+- Author of the Codex
+- The Regent Who Came Back

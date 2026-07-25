@@ -1,12 +1,12 @@
 ---
-id: V.T3.Ch9
-name: The 9 Traitor Space Marine Legions
+id: V.T3.Ch20
+name: Night Lords
 status: stub
 owns: []
 sections: []
 ---
 
-# The 9 Traitor Space Marine Legions
+# Night Lords
 
 !!! note "Not yet written"
 
@@ -20,6 +20,6 @@ Indicative, not binding. A Chapter carries two to five Sections depending on
 what the sources actually support — this list is the researched starting plan,
 and it will change where the material demands it.
 
-- Black Legion, World Eaters, Death Guard
-- Thousand Sons, Emperor's Children, Word Bearers
-- Iron Warriors, Night Lords, Alpha Legion
+- Konrad Curze and Nostramo
+- Terror as Method
+- A Legion Without a Cause

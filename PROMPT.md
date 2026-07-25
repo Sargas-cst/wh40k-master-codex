@@ -405,7 +405,7 @@ take these on trust.**
 ---
 
 ## VOLUME III — Chronological History (~60M BC – M42)
-*5 Titles · 26 Chapters · Full depth*
+*5 Titles · 27 Chapters · Full depth*
 
 ### Title 1: The War in Heaven (~60 Million BC)
 - **Ch 1 — Prehistoric Powers (Old Ones vs Necrontyr)** · Old Ones Warp Mastery / The Necrontyr Radiation Curse / The First Galactic Outbreak
@@ -419,6 +419,7 @@ take these on trust.**
 - **Ch 7 — Standard Template Constructs** · STC Supercomputer Logic / Automated Fabrication / Loss & Modern Scavenging
 - **Ch 8 — The Cybernetic Revolt** · Gold, Stone & Iron Hierarchy / The AI Sentient Uprising / Sun-Snuffers & Pyrrhic Victory
 - **Ch 9 — Age of Strife & Warp Isolation** · Psychic Mutation Explosion / The Aeldari Fall & Warp Storms / Cannibalism & Isolated Worlds
+- **Ch 27 — The Fall of the Eldar** · The Empire That Had Everything / The Birth of Slaanesh & the Eye of Terror / What It Did to Humanity's Age of Strife
 - **Ch 10 — Descent of Holy Terra** · Dried Oceans & Toxic Skies / Techno-Barbarian Warlords / The Brink of Extinction
 
 ### Title 3: Great Crusade, Primarchs & Horus Heresy
@@ -500,7 +501,7 @@ take these on trust.**
 ---
 
 ## VOLUME V — Chaos Codex (The Forces of Chaos)
-*4 Titles · 14 Chapters · Full depth*
+*4 Titles · 22 Chapters · Full depth*
 
 ### Title 1: The Four Chaos Gods
 - **Ch 1 — Khorne (Blood God of War)** · Realm of Khorne & the Skull Throne / Bloodthirsters & Bloodletters / Code of Honour & Anti-Sorcery
@@ -515,7 +516,15 @@ take these on trust.**
 - **Ch 8 — The Daemonic Hierarchy** · Greater Daemons & Heralds / Lesser Daemons, Beasts & Steeds / Be'lakor and the First of the Princes
 
 ### Title 3: Chaos Space Marines & Heretic Warbands
-- **Ch 9 — The 9 Traitor Space Marine Legions** · Black Legion, World Eaters, Death Guard / Thousand Sons, Emperor's Children, Word Bearers / Iron Warriors, Night Lords, Alpha Legion
+- **Ch 9 — Black Legion** · Abaddon, the Warmaster of Chaos / From Luna Wolves to Black Legion / The Long Grudge
+- **Ch 15 — World Eaters** · Angron and the Butcher’s Nails / Khorne’s Chosen Legion / Khârn and the Eightfold Path
+- **Ch 16 — Death Guard** · Mortarion and the Voyage / Nurgle’s Bargain / The Plague Marine Condition
+- **Ch 17 — Emperor's Children** · Fulgrim and the Pursuit of Perfection / The Fall to Slaanesh / Noise Marines and the Kakophoni
+- **Ch 18 — Thousand Sons** · Magnus and the Flesh Change / The Rubric of Ahriman / Sorcery as Doctrine
+- **Ch 19 — Word Bearers** · Lorgar and the First Faith / The Legion That Started It / Dark Apostles and the Cult
+- **Ch 20 — Night Lords** · Konrad Curze and Nostramo / Terror as Method / A Legion Without a Cause
+- **Ch 21 — Iron Warriors** · Perturabo and the Siege Masters / The Grudge Against Dorn / Medrengard and the Grand Company
+- **Ch 22 — Alpha Legion** · Alpharius, Omegon and the Twin / The Cabal and the Long Game / Whose Side They Are On
 - **Ch 10 — Renegade Warbands & the Red Corsairs** · Huron Blackheart & the Corsair Fleet / The Maelstrom as a Power Base / Modern Renegade Warbands
 - **Ch 11 — Dark Mechanicum & Daemon Engines** · Schism of Mars & the Dark Priests / Forgefiends, Maulerfiends & Helbrutes / Traitor Titans & Chaos Knights
 
@@ -597,12 +606,28 @@ take these on trust.**
 ---
 
 ## VOLUME VIII — Codex Biographica, Relics & Titans
-*6 Titles · 16 Chapters · Title 1 Full depth, remainder Medium*
+*6 Titles · 32 Chapters · Title 1 Full depth, remainder Medium*
 
 ### Title 1: The Emperor & the Primarchs of Mankind
 - **Ch 1 — The Emperor of Mankind** · Origins & the Perpetual Question / Psychic Nature & the Imperial Truth / The Throne, and Whether He Lives
-- **Ch 2 — The Loyalist Primarchs** · Guilliman & Lion El'Jonson / Sanguinius, Russ & Dorn / Khan, Vulkan, Corax & Ferrus
-- **Ch 3 — Daemon & Traitor Primarchs** · Horus, Lorgar & Magnus / Mortarion, Fulgrim & Angron / Curze, Perturabo & Alpharius
+- **Ch 2 — Roboute Guilliman** · The Boy Consul of Macragge / Author of the Codex / The Regent Who Came Back
+- **Ch 17 — Lion El'Jonson** · Caliban and the Order / The Fallen and the Secret / Ten Thousand Years Asleep
+- **Ch 18 — Sanguinius** · The Angel of Baal / The Death That Never Finished / What He Left His Sons
+- **Ch 19 — Leman Russ** · Fenris and the Wolf King / The Emperor’s Executioner / The Wolves at Prospero
+- **Ch 20 — Rogal Dorn** · Inwit and the Fortifier / The Palace and the Siege / The Coward Accusation
+- **Ch 21 — Jaghatai Khan** · Chogoris and the Ordu / The Legion That Kept Its Own Name / The Khan’s Choice
+- **Ch 22 — Vulkan** · Nocturne and the Anvil / The Perpetual Question / Living Among His People
+- **Ch 23 — Corvus Corax** · Deliverance and the Prison Moon / Isstvan and the Ruin / The Gene-Seed That Was Poisoned
+- **Ch 24 — Ferrus Manus** · Medusa and the Silver Hands / The Flesh Is Weak / The First Primarch to Die
+- **Ch 3 — Horus Lupercal** · The Favoured Son / Davin and the Anathame / The Warmaster’s War
+- **Ch 25 — Lorgar Aurelian** · The Faith That Was Forbidden / Monarchia and the Humiliation / Author of the Imperium’s Religion
+- **Ch 26 — Magnus the Red** · Prospero and the Flesh Change / The Warning That Broke the Webway / The Crimson King
+- **Ch 27 — Mortarion** · Barbarus and the Overlords / The Pact With Nurgle / The Daemon Primarch of Plague
+- **Ch 28 — Fulgrim** · Chemos and the Perfect Legion / The Laer Blade / What Perfection Became
+- **Ch 29 — Angron** · The Nails and the Pits / The Legion He Never Wanted / Khorne’s Daemon Prince
+- **Ch 30 — Konrad Curze** · Nostramo and the Night Haunter / Terror as Justice / The Assassin He Allowed
+- **Ch 31 — Perturabo** · Olympia and the Iron Cage / The Grudge Against Dorn / Lord of Iron
+- **Ch 32 — Alpharius and Omegon** · The Twin Primarch / The Cabal’s Offer / Loyal to What
 - **Ch 4 — The Lost & the Erased** · The II and XI Legions / Theories of the Purge / Erasure from Imperial Record
 
 ### Title 2: Imperial Legends & Champions
@@ -630,29 +655,21 @@ take these on trust.**
 ---
 
 ## VOLUME IX — Compendium Imperialis (Armaments & Materiel)
-*4 Titles · 12 Chapters · Reference depth*
+*2 Titles · 4 Chapters · Reference depth*
 
-### Title 1: Small Arms & Personal Weaponry
-- **Ch 1 — Solid & Energy Weapons** · Autoguns, Stubbers & Solid Shot / Lasguns & Las-Weaponry / Bolt Weapons & Mass-Reactive Shells
-- **Ch 2 — Thermal, Plasma & Exotic Weapons** · Meltaguns & Flamers / Plasma Weapons & Their Perils / Grav, Volkite & Archeotech
-- **Ch 3 — Close Combat Arms** · Chain & Power Weapons / Force Weapons & Psychic Blades / Thunder Hammers & Relic Blades
+Cut from twelve Chapters to four. The removed material was an equipment catalogue —
+autoguns, Leman Russ patterns, Rhino variants, Thunderhawks — which is the one kind of
+content a wiki does better, drawn from stat blocks and pattern designations this project
+cannot reach. What survives is the equipment that carries an argument; the rest belongs
+inside the Chapters about the people who use it.
 
-### Title 2: Armour & Personal Protection
-- **Ch 4 — Power Armour Marks & Terminator Plate** · MK I Thunder to MK VIII Errant / MK X Tacticus, Phobos & Gravis / Terminator Armour Variants
-- **Ch 5 — Flak, Carapace & Void Protection** · Guard Flak & Carapace / Void Suits & Environmental Gear / Sororitas & Ecclesiarchy Plate
+### Title 1: What the Wargear Means
+- **Ch 1 — Power Armour and the Black Carapace** · MK I Thunder to MK X Tacticus / Why the Carapace Makes It a Body / What a Suit Outlives
+- **Ch 2 — Dreadnoughts and the Honoured Dead** · The Interring of a Dying Brother / A Coffin That Fights / Waking the Ancients
 
-### Title 3: Vehicles, Walkers & War Machines
-- **Ch 6 — Astra Militarum Armour** · Leman Russ Patterns / Chimeras & Troop Transports / Basilisks & Artillery Batteries
-- **Ch 7 — Super-Heavies & Siege Engines** · The Baneblade Family / Shadowsword & Titan-Killers / Siege & Assault Engines
-- **Ch 8 — Adeptus Astartes Vehicles** · Rhino, Razorback & Predator / Land Raiders & Assault Transports / Repulsor, Impulsor & Primaris Patterns
-- **Ch 9 — Dreadnoughts & Walkers** · The Interred and the Honoured Dead / Contemptor, Redemptor & Patterns / Sentinels, Armigers & Light Walkers
-
-### Title 4: Voidcraft, Aircraft & Exterminatus
-- **Ch 10 — Starship Classes & Battle-Barges** · Escort Frigates & Destroyers / Cruisers & Battleships / Space Marine Battle-Barges
-- **Ch 11 — Aircraft & Atmospheric Craft** · Thunderhawks & Drop Pods / Valkyries, Vendettas & Marauders / Lightning, Thunderbolt & Void Fighters
-- **Ch 12 — Exterminatus Protocols** · Legal Justification & Decree / Cyclonic Torpedoes & Core Crackers / Life-Eater Virus Bombs
-
----
+### Title 2: The Weapons of Last Resort
+- **Ch 3 — Titans and the God-Engine Question** · The Princeps and the Mind Impulse Unit / A Machine With a Crew and a Soul / What a Titan Costs to Field
+- **Ch 4 — Exterminatus Protocols** · Legal Justification & the Decree / Cyclonic Torpedoes & Virus Bombs / Who Is Permitted to Order It
 
 ## APPENDIX A — Apparatus & Reading Paths
 *3 Titles · 8 Chapters · Reference depth*

@@ -1,12 +1,12 @@
 ---
-id: IX.T1.Ch3
-name: Close Combat Arms
+id: VIII.T1.Ch23
+name: Corvus Corax
 status: stub
 owns: []
 sections: []
 ---
 
-# Close Combat Arms
+# Corvus Corax
 
 !!! note "Not yet written"
 
@@ -20,6 +20,6 @@ Indicative, not binding. A Chapter carries two to five Sections depending on
 what the sources actually support — this list is the researched starting plan,
 and it will change where the material demands it.
 
-- Chain & Power Weapons
-- Force Weapons & Psychic Blades
-- Thunder Hammers & Relic Blades
+- Deliverance and the Prison Moon
+- Isstvan and the Ruin
+- The Gene-Seed That Was Poisoned
