@@ -515,3 +515,243 @@ gork-and-mork:
   variants: [the Ork Gods]
   category: cosmology
   sources: [lex-gork-and-mork]
+
+# --- Volume II Title 1 -----------------------------------------------------
+
+segmentum:
+  term: Segmentum
+  definition: >
+    One of the five great fleet zones into which the Imperium divides its space, each with
+    its own navy and a Segmentum Fortress as its base of operations.
+  variants: [Segmentae Majoris, segmenta]
+  category: institutions
+  sources: [lex-segmentum]
+  full_treatment: II.T1.Ch1
+
+sector:
+  term: sector
+  definition: >
+    A division of a Segmentum, usually equivalent to a cube two hundred light years on a
+    side, defended by its own battlefleet.
+  category: institutions
+  sources: [lex-sector]
+
+subsector:
+  term: subsector
+  definition: >
+    A block of systems within a sector, ten to twenty light years across, centred on
+    populous worlds or the meeting points of warp trade routes.
+  variants: [sub-sector]
+  category: institutions
+  sources: [lex-subsector, lex-sector]
+
+wilderness-space:
+  term: wilderness space
+  definition: >
+    The unadministered volume between sectors and subsectors, which makes up more of the
+    galaxy than the Imperium controls.
+  variants: [wilderness zones, inter sectors, forbidden zones, frontier space, empty space]
+  category: institutions
+  sources: [lex-sector]
+
+imperium-sanctus:
+  term: Imperium Sanctus
+  definition: >
+    The half of the Imperium left within the Astronomican's light after the Great Rift
+    opened, comprising Segmenta Solar, Pacificus, Tempestus and parts of Ultima and
+    Obscurus.
+  category: institutions
+  sources: [lex-imperium-sanctus]
+  full_treatment: II.T1.Ch2
+
+imperium-nihilus:
+  term: Imperium Nihilus
+  definition: >
+    The half of the Imperium cut off beyond the Great Rift, where the Astronomican is
+    obscured, travel is extremely dangerous and astropathic contact is difficult.
+  variants: [the Dark Imperium]
+  category: institutions
+  sources: [lex-imperium-nihilus]
+  full_treatment: II.T1.Ch2
+
+noctis-aeterna:
+  term: the Noctis Aeterna
+  definition: >
+    The period of catastrophic darkness following the Great Rift's formation, when the
+    Astronomican failed and worlds across the galaxy lost contact with the Imperium.
+  variants: [the Blackness, the Great Blackness, the Days of Blindness]
+  category: chronology
+  sources: [lex-noctis-aeterna]
+
+eye-of-terror:
+  term: the Eye of Terror
+  definition: >
+    The largest and best known warp rift in the galaxy, where the Warp coexists with real
+    space, lying to the galactic north and west of Terra in Segmentum Obscurus.
+  variants: [Ocularis Terribus, Ocularis Malifica, Anathema Nonplus Ultra]
+  category: cosmology
+  sources: [lex-eye-of-terror]
+  full_treatment: II.T1.Ch3
+
+maelstrom:
+  term: the Maelstrom
+  definition: >
+    A majoris-grade interference between the Warp and real space, second only to the Eye of
+    Terror among the galaxy's older rifts.
+  variants: [the Shadow Mere, the Twisted Reach, the Well of Lies, the Maw, Guair Dromlaith]
+  category: cosmology
+  sources: [lex-the-maelstrom]
+
+cadian-gate:
+  term: the Cadian Gate
+  definition: >
+    The area of calm space that was the only predictably stable route in and out of the Eye
+    of Terror, held open by the blackstone pylons on Cadia.
+  category: cosmology
+  sources: [lex-cadian-gate, lex-pylon]
+
+ghoul-stars:
+  term: the Ghoul Stars
+  definition: >
+    A desolate region in the extreme galactic north-east, of worlds lit by dying suns.
+  variants: [the Ghost Stars]
+  category: cosmology
+  sources: [lex-ghoul-stars]
+
+halo-zone:
+  term: the Halo Zone
+  definition: >
+    The region of Segmentum Pacificus beyond the Astronomican's light, where Navigators
+    must travel blind and mostly refuse to go.
+  category: cosmology
+  sources: [lex-halo-zone]
+
+# --- Volume II Title 2 -----------------------------------------------------
+
+imperial-palace:
+  term: the Imperial Palace
+  definition: >
+    The Emperor's palace and the Imperium's capital city, a continent-scale complex on Terra
+    divided into Inner and Outer Palaces, whose rooms no surviving record lists in full.
+  category: institutions
+  sources: [lex-imperial-palace]
+  full_treatment: II.T2.Ch4
+
+sanctum-imperialis:
+  term: the Sanctum Imperialis
+  definition: >
+    The chamber at the heart of the Inner Palace housing the Golden Throne and the Emperor's
+    body, guarded by three hundred Custodes.
+  category: institutions
+  sources: [lex-terra]
+
+eternity-gate:
+  term: the Eternity Gate
+  definition: >
+    The largest entrance to the Sanctum Imperialis, and the end point of the galactic
+    pilgrimage trail — itself the Imperium's foremost pilgrimage site.
+  category: institutions
+  sources: [lex-terra]
+
+forbidden-fortress:
+  term: the Forbidden Fortress
+  definition: >
+    The complex built through Terra's Himalayas, one peak of which is carved into the Chamber
+    of the Astronomican where ten thousand psykers power the beacon with their lives.
+  category: institutions
+  sources: [lex-terra]
+
+arx-doctrine:
+  term: the Arx Doctrine
+  definition: >
+    The order issued during the Noctis Aeterna ceding much of Terra to mob rule so that
+    remaining forces could hold the Palace and the Forbidden Fortress; a quarter of the
+    planet was temporarily lost.
+  category: institutions
+  sources: [lex-terra]
+
+fabricator-general:
+  term: the Fabricator-General
+  definition: >
+    The direct ruler of Mars and head of the Synod of Mars, and thereby of the Cult
+    Mechanicus.
+  variants: [Fabricator General]
+  category: institutions
+  sources: [lex-mars]
+  full_treatment: II.T2.Ch5
+
+synod-of-mars:
+  term: the Synod of Mars
+  definition: >
+    The ruling body of Mars and, by extension, of the whole Cult Mechanicus.
+  variants: [the Great Synod, the Martian Synod]
+  category: institutions
+  sources: [lex-mars]
+
+treaty-of-olympus:
+  term: the Treaty of Olympus
+  definition: >
+    The union the Emperor established with Mars, bringing the Red Planet into the Imperium
+    as a negotiating party rather than a conquest.
+  category: institutions
+  sources: [lex-mars]
+
+schism-of-mars:
+  term: the Schism of Mars
+  definition: >
+    The Horus Heresy split between the loyalist Mechanicus and the Dark Mechanicum, which
+    devastated the planet and which the Dark Mechanicum won.
+  category: warfare
+  sources: [lex-mars]
+
+ultramar:
+  term: Ultramar
+  definition: >
+    The Ultramarines' quasi-autonomous realm of approximately five hundred inhabited worlds
+    on the Eastern Fringe — an empire within an empire, exempt from the ordinary tithe.
+  variants: [the Five Hundred Worlds, the Realm of Ultramar]
+  category: institutions
+  sources: [lex-ultramar]
+  full_treatment: II.T2.Ch6
+
+tetrarch:
+  term: Tetrarch of Ultramar
+  definition: >
+    One of four governors appointed by Guilliman over the northern, southern, eastern and
+    western sectors of Ultramar; two of the current four are not Ultramarines.
+  variants: [Tetrarchy]
+  category: institutions
+  sources: [lex-ultramar]
+
+fortress-of-hera:
+  term: the Fortress of Hera
+  definition: >
+    The Ultramarines' fortress-monastery, atop Macragge's Crown Mountains in the centre of
+    Magna Macragge Civitas, holding the Shrine of Guilliman.
+  category: institutions
+  sources: [lex-macragge]
+
+ultramar-auxilia:
+  term: the Ultramar Auxilia
+  definition: >
+    Ultramar's planetary defence forces — well equipped, exempt from the wider tithe, and
+    capable of numbering billions of soldiers.
+  category: warfare
+  sources: [lex-ultramar]
+
+shield-chapters:
+  term: the Shield Chapters of Ultramar
+  definition: >
+    The ten Space Marine Chapters Guilliman ordered permanently stationed within Ultramar,
+    all descended from the Ultramarines, giving the realm roughly ten thousand standing
+    Astartes.
+  category: warfare
+  sources: [lex-ultramar]
+
+imperium-secundus:
+  term: Imperium Secundus
+  definition: >
+    The contingency empire Guilliman sought to raise around Ultramar when the Ruinstorm cut
+    it off and he feared the Imperium itself was lost.
+  category: institutions
+  sources: [lex-ultramar]

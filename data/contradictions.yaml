@@ -33,7 +33,7 @@ astronomican-psyker-toll:
     totals.
   reverification_note: >
     Confirmed against the retrieved article. The decisive detail is that BOTH figures
-    carry the same citation marker, {{Fn|1b}}, resolving to a single page of a single
+    carry the same citation marker, citation 1b, resolving to a single page of a single
     book. Two numbers sourced to one page are not rival claims about the same
     quantity; the article describes a population and a rate of loss from it.
   why_kept: >
@@ -42,10 +42,10 @@ astronomican-psyker-toll:
   positions:
     - claim: A standing choir of ten thousand psykers powers the beacon.
       source: lex-astronomican
-      marker: "{{Fn|1b}}"
+      marker: "citation 1b"
     - claim: Up to one hundred psykers die each day powering it.
       source: lex-astronomican
-      marker: "{{Fn|1b}}"
+      marker: "citation 1b"
 
 gellar-field-spelling:
   kind: terminology
@@ -71,7 +71,7 @@ gellar-field-spelling:
       marker: article title and lead
     - claim: '"Geller Field" is also used, per an official GW web article.'
       source: lex-gellar-field
-      marker: "{{Fn|6}}"
+      marker: "citation 6"
 
 imperial-year-fraction:
   kind: undefined
@@ -87,7 +87,7 @@ imperial-year-fraction:
     The article states plainly that each year is divided into 1,000 equal parts, and
     that "an exact method for breaking the year fraction into 1000 equal parts is not
     given by in-universe sources". Every duration figure appears inside the article's
-    {{Trivia}} block, and that block's support is a DakkaDakka forum post plus
+    a trivia block, and that block's support is a DakkaDakka forum post plus
     arithmetic contributed by named Lexicanum users in 2015 and 2025. That is tier 4
     material. So the figures are fan calculation, not canon in dispute.
   handling: >
@@ -98,10 +98,10 @@ imperial-year-fraction:
   positions:
     - claim: The year is divided into 1,000 equal parts, numbered 000-999.
       source: lex-imperial-dating-system
-      marker: "{{Fn|1}}"
+      marker: "citation 1"
     - claim: No in-universe source specifies the method of division.
       source: lex-imperial-dating-system
-      marker: "{{Trivia}} block"
+      marker: "the article's trivia block"
 
 the-veil-as-structure:
   kind: undefined
@@ -133,7 +133,7 @@ the-veil-as-structure:
       marker: whole article
     - claim: A rift is "a weakening of the barrier between real space and the Warp".
       source: lex-warp-rift
-      marker: "{{Fn|1}}"
+      marker: "citation 1"
 
 # ===========================================================================
 # NEW — found during Volume I Title 1 research
@@ -147,7 +147,7 @@ millennium-year-range:
   found_in: Volume I Title 1 research
   summary: >
     Whether the years within an Imperial millennium run 001-000 or 000-999. Lexicanum
-    flags this itself under a {{Conflicting Sources}} heading.
+    flags this itself under a conflicting-sources notice heading.
   notation_note: >
     "001-000" is not a countdown and does not imply time running backwards — a
     reasonable reading of the bare notation, and one the prose originally invited by
@@ -169,10 +169,10 @@ millennium-year-range:
         Years run 001 through to 000, where 000 is the LAST (thousandth) year of the
         millennium.
       source: lex-imperial-dating-system
-      marker: "{{Fn|1}}{{Fn|4}}{{Fn|6}}"
+      marker: "citations 1, 4 and 6"
     - claim: Years run from 000 to 999, starting at zero.
       source: lex-imperial-dating-system
-      marker: "{{Fn|5}} — Warhammer 40,000 5th Edition Rulebook, pg. 126"
+      marker: "citation 5 — Warhammer 40,000 5th Edition Rulebook, pg. 126"
 
 is-it-really-m42:
   kind: edition
@@ -184,7 +184,7 @@ is-it-really-m42:
     Whether the period following the opening of the Great Rift is actually the 42nd
     Millennium is, per Lexicanum, "intentionally put into doubt by Games Workshop".
   reverification_note: >
-    The dating article carries a {{Conflicting Sources}} marker on its very first use
+    The dating article carries a conflicting-sources notice marker on its very first use
     of "42nd millennium". This is not an error between sources but a deliberate
     authorial refusal to fix the date — the setting declining to say what year it is.
   handling: >
@@ -196,7 +196,7 @@ is-it-really-m42:
       marker: article lead
     - claim: Whether it is M42 is intentionally left in doubt by GW.
       source: lex-imperial-dating-system
-      marker: "{{Conflicting Sources}} block"
+      marker: "the article's conflicting-sources block"
 
 age-of-strife-start-date:
   kind: numerical
@@ -210,15 +210,15 @@ age-of-strife-start-date:
   reverification_note: >
     The article presents both in one sentence with both markers attached, which is
     Lexicanum recording a disagreement rather than choosing. Not flagged with a
-    {{Conflicting Sources}} template, so it would be easy to read past.
+    a conflicting-sources notice template, so it would be easy to read past.
   handling: Give both millennia and both sources. Do not average or pick.
   positions:
     - claim: The Age of Strife began in M23.
       source: lex-age-of-strife
-      marker: "{{Fn|2}} — Warhammer 40,000 5th Edition Rulebook, pg. 122"
+      marker: "citation 2 — Warhammer 40,000 5th Edition Rulebook, pg. 122"
     - claim: The Age of Strife began in M25.
       source: lex-age-of-strife
-      marker: "{{Fn|5}} — Warhammer 40,000 6th Edition Rulebook, pg. 167"
+      marker: "citation 5 — Warhammer 40,000 6th Edition Rulebook, pg. 167"
 
 # ===========================================================================
 # STILL AWAITING RE-VERIFICATION — seeded from PROMPT.md §11
@@ -226,17 +226,33 @@ age-of-strife-start-date:
 
 cadian-pylon-dimensions:
   kind: numerical
-  status: open
-  reverified: false
+  status: resolved
+  reverified: true
+  reverified_on: 2026-07-25
   seeded_from: PROMPT.md §11
   summary: >
-    The brief records the Cadian pylons as 500 metres high and 250 metres square, and
-    flags kilometre-scale figures as an error made in a prior draft.
+    The pylons are one kilometre tall, of which half a kilometre is below ground, and half
+    a kilometre on each side.
+  reverification_note: >
+    THE BRIEF'S OWN CORRECTION WAS WRONG, and wrong on two counts. PROMPT.md §11 records the
+    pylons as "500 metres high, 250 metres square" and explicitly flags kilometre-scale
+    figures as a mistake made in a prior draft. The source says the opposite: one kilometre
+    tall, half a kilometre under the earth, half a kilometre on each side. So the kilometre
+    scale is correct for the total height, and each side is 500 metres rather than 250.
+
+    The 500-metre figure the brief preserved is most plausibly the ABOVE-GROUND portion —
+    one kilometre total less the half-kilometre buried — which would make the prior draft
+    the brief set out to correct closer to right than the correction itself.
+
+    Recorded as the clearest case so far of why §11 says re-verify rather than trust: the
+    seeded corrections are not more reliable than the material they correct.
   handling: >
-    Re-verify the figures before any use. Do not restate the kilometre scale. The
-    Pylon article was retrieved during Volume I Title 1 research but the dimensions
-    were not checked, because Title 1 does not need them — Cadia's pylons belong to
-    Volume II and Volume VII.
+    One kilometre tall, half below ground, half a kilometre square. Do not repeat the
+    250-metre figure. Cadia itself is II.T3.Ch8.
+  positions:
+    - claim: One kilometre tall, half a kilometre buried, half a kilometre on each side.
+      source: lex-pylon
+      marker: "citation 4a — Malleus (Novel), Chapter Twelve"
 
 imperial-forms-of-address:
   kind: undefined
@@ -274,10 +290,10 @@ phenomena-versus-perils:
   positions:
     - claim: Perils of the warp are a rare, severe subset of psychic phenomena.
       source: lex-psychic-phenomena
-      marker: "{{Fn|1}}{{Fn|4}}"
+      marker: "citations 1 and 4"
     - claim: Some material makes no distinction, classing all phenomena as perils.
       source: lex-psychic-phenomena
-      marker: "{{Fn|6}}"
+      marker: "citation 6"
 
 tau-ftl-retcon:
   kind: edition
@@ -300,10 +316,10 @@ tau-ftl-retcon:
   positions:
     - claim: The T'au had slow but working FTL via gravitic drives and hooks.
       source: lex-al-38-slipstream-module
-      marker: "{{Fn|2}} — Battlefleet Gothic: Armada, pg. 96"
+      marker: "citation 2 — Battlefleet Gothic: Armada, pg. 96"
     - claim: The T'au had no true FTL until the AL-38 Slipstream Module.
       source: lex-al-38-slipstream-module
-      marker: "{{Fn|1a}} — Codex: Tau Empire (8th Edition), pgs. 22-23"
+      marker: "citation 1a — Codex: Tau Empire (8th Edition), pgs. 22-23"
 
 ctan-discovery-accounts:
   kind: sequence
@@ -349,7 +365,56 @@ ork-gods-precedence:
   positions:
     - claim: The gods preceded the Orks.
       source: lex-gork-and-mork
-      marker: "{{Fn|7}}"
+      marker: "citation 7"
     - claim: The Orks preceded the gods.
       source: lex-gork-and-mork
-      marker: "{{Fn|7}}"
+      marker: "citation 7"
+
+terra-population:
+  kind: numerical
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume II Title 2 research
+  summary: >
+    Terra's population is given as 200 billion, or as quadrillions — a spread of four
+    orders of magnitude.
+  reverification_note: >
+    Both figures sit in the same infobox on the same article. The low figure's source is a
+    video game main menu; the high figure is carried by two separate novels of the same
+    series. No source reconciles them, and no source states which supersedes the other.
+  handling: >
+    Record both, assert neither. Do not average, do not pick the more-cited. The number is
+    unknown and the codex says so.
+  positions:
+    - claim: 200 billion.
+      source: lex-terra
+      marker: "citation 38"
+    - claim: Quadrillions.
+      source: lex-terra
+      marker: "citations 31c and 36e"
+
+imperial-palace-extent:
+  kind: numerical
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume II Title 2 research
+  summary: >
+    The Imperial Palace covers the better part of Terra's northern hemisphere, or a large
+    part of the Asian continent.
+  reverification_note: >
+    The two claims sit in adjacent articles, each separately cited — the hemisphere figure to
+    Codex Imperialis, the continent figure to a Horus Heresy short story. They differ by
+    roughly an order of magnitude in area. The Inner Palace's placement over the ruins of
+    Kathmandu is consistent with either reading, so it does not settle the question.
+  handling: >
+    State both. The discrepancy is itself informative about how the setting's scale has been
+    revised between eras of publication.
+  positions:
+    - claim: The better part of the northern hemisphere.
+      source: lex-terra
+      marker: "citation 4a"
+    - claim: A large part of the Asian continent.
+      source: lex-imperial-palace
+      marker: "citation 8"

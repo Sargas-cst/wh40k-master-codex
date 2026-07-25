@@ -1,0 +1,119 @@
+# Audit trail — Volume II, Titles 1 and 2
+# Recorded per PROMPT.md §3: what was retrieved, what was used, what was left out.
+
+title: "Volume II — The Galaxy: Geography & Astrography"
+covers: Title 1 (Chapters 1-3), Title 2 (Chapters 4-6)
+depth_band: Medium
+completed_on: 2026-07-25
+
+retrieval:
+  method: >
+    Lexicanum Special:Export in batches of eight, 5 seconds apart per the wiki's own
+    robots.txt Crawl-delay, over curl. Nothing re-fetched that was already cached.
+  pages_added_this_pass:
+    - Segmentum_Tempestus
+    - Nachmund_Gauntlet
+    - Imperial_Palace
+    - Mars
+    - Ultramar
+    - Macragge
+  corrections_during_retrieval:
+    - >
+      "Charadon" resolved to a disambiguation page, 195 bytes, holding no article text.
+      The Ork empire article was fetched separately for Title 3.
+    - >
+      "Fortress-Monastery" and "T'au_Empire" both resolved to redirects. Both were
+      re-fetched under their exact titles; the cache-collision check in the retriever
+      caught the case variants rather than silently keeping the redirect stubs.
+
+titles:
+  t1:
+    name: The Shape of the Galaxy
+    chapters:
+      - id: II.T1.Ch1
+        owns: imperial-astrography
+        sections: 3
+        note: >
+          The five segmenta, their fortresses, and the shift from sector-as-volume to
+          subsector-as-cluster. Segmentum Solar's fortress is Mars, not Terra — the reason
+          is given in II.T2.Ch5.
+      - id: II.T1.Ch2
+        owns: the-sundered-imperium
+        sections: 3
+        note: >
+          The Cicatrix Maledictum, Imperium Sanctus and Imperium Nihilus. The division is
+          not geographical: it is the lit and unlit portions of one volume, and parts of the
+          same segmentum fall on either side.
+      - id: II.T1.Ch3
+        owns: regions-of-ruin
+        sections: 3
+        note: >
+          Eye of Terror and Cadian Gate; Maelstrom; Ghoul Stars and Halo Zone. The pylon
+          dimensions were re-verified against the source and the register corrected.
+
+  t2:
+    name: Worlds of the Throne
+    chapters:
+      - id: II.T2.Ch4
+        owns: terra
+        sections: 4
+        note: >
+          Terra as hive world, the Imperial Palace, the institutions of the Throneworld, and
+          the Noctis Aeterna on Terra. Two contradictions opened here.
+      - id: II.T2.Ch5
+        owns: mars
+        sections: 5
+        note: >
+          Mars as first colony, the origin of Omnissiah worship in the Age of Strife fallout
+          shelters, the Fabricator-General's domain, the rust, the Schism and the Void Dragon
+          rumour. The rumour is reproduced as rumour, on the article's own terms.
+      - id: II.T2.Ch6
+        owns: ultramar
+        sections: 5
+        note: >
+          Ultramar's autonomy, Macragge, the Tetrarchy, the tithe exemption and four
+          invasions. The mid-30s life expectancy figure is kept because it calibrates every
+          other claim about Imperial prosperity.
+
+contradictions_opened:
+  - id: terra-population
+    kind: numerical
+    note: 200 billion against quadrillions — four orders of magnitude, same infobox.
+  - id: imperial-palace-extent
+    kind: numerical
+    note: Northern hemisphere against a large part of the Asian continent.
+
+contradictions_reverified:
+  - id: cadian-pylon-dimensions
+    outcome: >
+      Resolved against the brief's own correction. The source gives one kilometre tall, half
+      a kilometre buried, half a kilometre on each side. Figures of "500 metres high, 250
+      metres square" are not supported; the first is defensible only as the above-ground
+      portion.
+
+left_out:
+  - >
+    Ultramar's full planetary gazetteer — the article's Inner/Northern/Southern/Western/
+    Eastern/Other/Former world lists. The realm's structure and government are the subject
+    here; individual worlds belong to Title 3 or to Volume VII's campaign Chapters.
+  - >
+    Terra's complete location list, which runs to some seventy named sites. Only the sites
+    that carry an institution or explain the planet's condition are used.
+  - >
+    Mars's Tharsis Quadrangle location list beyond the entries that show industry and
+    worship occupying the same buildings.
+  - >
+    The Nachmund Gauntlet's current order of battle beyond the Sanctus Wall; that belongs
+    to VII.T4.Ch14.
+
+housekeeping:
+  - >
+    Wiki reliability-template names ({{Uncited}}, {{Trivia}}, {{Cite Marker End}} and the
+    rest) were rendering literally into reader-facing footnotes and into the disputed-facts
+    appendix. All 53 occurrences across data/sources.yaml and data/contradictions.yaml were
+    rewritten into plain English. A reader has no reason to know a wiki's template names.
+  - >
+    Five cross-references in Chapter 4 pointed at Volume IV Titles that do not exist, and
+    four more pointed at real Chapters with the wrong subject. All were traced against the
+    actual file tree and corrected. Existence is checked by the validator; subject match is
+    not, so these were checked by hand.

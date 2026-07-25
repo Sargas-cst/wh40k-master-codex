@@ -55,6 +55,15 @@
       "file": "sources/raw/lex-alpha-plus.wikitext",
       "redirect_to": "The Assignment_#The Imperial Assignment: Positive Psionic Levels"
     },
+    "lex-armageddon": {
+      "title": "Armageddon",
+      "url": "https://wh40k.lexicanum.com/wiki/Armageddon",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 19566,
+      "sha256": "dedbd271d73ba4a4729ee2b5320c9538e640518a2d3f98a38caa38a525e8c32e",
+      "file": "sources/raw/lex-armageddon.wikitext"
+    },
     "lex-astronomican": {
       "title": "Astronomican",
       "url": "https://wh40k.lexicanum.com/wiki/Astronomican",
@@ -90,6 +99,15 @@
       "bytes": 11921,
       "sha256": "ed8865ee35b8f8a8ec9264524030a2c142e509d82010d90caa26ea0c315be23c",
       "file": "sources/raw/lex-aza-gorod.wikitext"
+    },
+    "lex-baal": {
+      "title": "Baal",
+      "url": "https://wh40k.lexicanum.com/wiki/Baal",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 8669,
+      "sha256": "f532491d0a05fbad87d768e559a8ff4eea44c3d59cc9d2b0ae9360bf386f6d40",
+      "file": "sources/raw/lex-baal.wikitext"
     },
     "lex-biomancy": {
       "title": "Biomancy",
@@ -219,6 +237,15 @@
       "sha256": "480d5e19f77f58c08752ad0f0348eda0366014f4ae4343e1778fb88e396d3fba",
       "file": "sources/raw/lex-cadia.wikitext"
     },
+    "lex-cadian-gate": {
+      "title": "Cadian Gate",
+      "url": "https://wh40k.lexicanum.com/wiki/Cadian_Gate",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 2550,
+      "sha256": "3cce99e5b218cb722ddafbaadb82bbd2668b3ed5208c45a323535b640a7d06c0",
+      "file": "sources/raw/lex-cadian-gate.wikitext"
+    },
     "lex-calastar": {
       "title": "Calastar",
       "url": "https://wh40k.lexicanum.com/wiki/Calastar",
@@ -236,6 +263,15 @@
       "bytes": 19858,
       "sha256": "9a4e1737634c95d392637f8533ca77ded1c73a558ac925cc972b70b89ef32b3e",
       "file": "sources/raw/lex-carcharodons.wikitext"
+    },
+    "lex-catachan": {
+      "title": "Catachan",
+      "url": "https://wh40k.lexicanum.com/wiki/Catachan",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 20341,
+      "sha256": "cf8669ac077ab78d23954d89f3b51377281952911b676cb7bf7a88de18483e92",
+      "file": "sources/raw/lex-catachan.wikitext"
     },
     "lex-cegorach": {
       "title": "Cegorach",
@@ -263,6 +299,15 @@
       "bytes": 17496,
       "sha256": "8809a051cdb8fed30ce384ba4db9816748e4664ca2970f6925178ad976af09dd",
       "file": "sources/raw/lex-chaos.wikitext"
+    },
+    "lex-charadon": {
+      "title": "Charadon",
+      "url": "https://wh40k.lexicanum.com/wiki/Charadon",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 195,
+      "sha256": "324ea5dd1f386595c8b8f1d09eacfb99f0b2949a500ad0434bfaf0d7dfd41f0e",
+      "file": "sources/raw/lex-charadon.wikitext"
     },
     "lex-cicatrix-maledictum": {
       "title": "Cicatrix Maledictum",
@@ -327,6 +372,15 @@
       "bytes": 46339,
       "sha256": "de26dda12d96b184a62be60b0d0db5530e5718ae00009748b77312046dce450c",
       "file": "sources/raw/lex-death-guard.wikitext"
+    },
+    "lex-death-world": {
+      "title": "Death World",
+      "url": "https://wh40k.lexicanum.com/wiki/Death_World",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 17778,
+      "sha256": "ef7b26260f9dc76b16ea29e54b4fec0037a69cd207de737e1a9b5118d297e8a9",
+      "file": "sources/raw/lex-death-world.wikitext"
     },
     "lex-deathwatch": {
       "title": "Deathwatch",
@@ -393,6 +447,24 @@
       "sha256": "6504a48f7864f2e63b8bbaa3dc969be756a93826cb40b91d971aa5790391282d",
       "file": "sources/raw/lex-exorcists.wikitext"
     },
+    "lex-eye-of-terror": {
+      "title": "Eye of Terror",
+      "url": "https://wh40k.lexicanum.com/wiki/Eye_of_Terror",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 32072,
+      "sha256": "4e5626c14ceebaf41aad6466b1016ca164a3ffbb29b2df766ac7425ade4da50f",
+      "file": "sources/raw/lex-eye-of-terror.wikitext"
+    },
+    "lex-fenris": {
+      "title": "Fenris",
+      "url": "https://wh40k.lexicanum.com/wiki/Fenris",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 25319,
+      "sha256": "249851484e1b9b57d6abb87850182d76795af312eafb482b125839fc8eba35e3",
+      "file": "sources/raw/lex-fenris.wikitext"
+    },
     "lex-flesh-tearers": {
       "title": "Flesh Tearers",
       "url": "https://wh40k.lexicanum.com/wiki/Flesh_Tearers",
@@ -402,6 +474,15 @@
       "sha256": "da10b2be8094c303d446a470afffe3c6890f09430beb09bd49a0b8c8a3db7103",
       "file": "sources/raw/lex-flesh-tearers.wikitext"
     },
+    "lex-fortress-monastery": {
+      "title": "Fortress-monastery",
+      "url": "https://wh40k.lexicanum.com/wiki/Fortress-monastery",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 14222,
+      "sha256": "0957674573b0336601f6e2cacb0e5cb2ebe6cee3fea5ab36bcb3a419eac1203e",
+      "file": "sources/raw/lex-fortress-monastery.wikitext"
+    },
     "lex-gellar-field": {
       "title": "Gellar field",
       "url": "https://wh40k.lexicanum.com/wiki/Gellar_field",
@@ -410,6 +491,15 @@
       "bytes": 3141,
       "sha256": "3ffb44f9070b31dce3840a1884832ee9bf7dcf533973560ff20885cebad9e38a",
       "file": "sources/raw/lex-gellar-field.wikitext"
+    },
+    "lex-ghoul-stars": {
+      "title": "Ghoul Stars",
+      "url": "https://wh40k.lexicanum.com/wiki/Ghoul_Stars",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 7392,
+      "sha256": "a9cac3fb6484a50ef1deecdbb7f241b4cddc673d1bc174d31ed0880a964a586e",
+      "file": "sources/raw/lex-ghoul-stars.wikitext"
     },
     "lex-gork-and-mork": {
       "title": "Gork and Mork",
@@ -437,6 +527,15 @@
       "bytes": 54221,
       "sha256": "9be83f9f5b3472c991aa2a30393d7d9cd73fb7836cdf910e4a71ae1436d4c9df",
       "file": "sources/raw/lex-grey-knights.wikitext"
+    },
+    "lex-halo-zone": {
+      "title": "Halo Zone",
+      "url": "https://wh40k.lexicanum.com/wiki/Halo_Zone",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 1262,
+      "sha256": "8e63a529a572423165f96dcf5a23e024c079968dbecb73a0082db88333a64e1a",
+      "file": "sources/raw/lex-halo-zone.wikitext"
     },
     "lex-harlequin": {
       "title": "Harlequin",
@@ -531,6 +630,24 @@
       "sha256": "dcd337aa4e760e40f6c506c4313918402dfafbddf9b023f055f7b620f29e43dc",
       "file": "sources/raw/lex-imperial-fists.wikitext"
     },
+    "lex-imperial-palace": {
+      "title": "Imperial Palace",
+      "url": "https://wh40k.lexicanum.com/wiki/Imperial_Palace",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 25066,
+      "sha256": "91e2f2a129465c7146e522a1030d56e661713a3aa260ba507dc103e09ffe54b1",
+      "file": "sources/raw/lex-imperial-palace.wikitext"
+    },
+    "lex-imperium-nihilus": {
+      "title": "Imperium Nihilus",
+      "url": "https://wh40k.lexicanum.com/wiki/Imperium_Nihilus",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 3956,
+      "sha256": "b54d4bba88abe6baa71aa28f72d028504d1acd8e663cc326ed9614c46d932bbd",
+      "file": "sources/raw/lex-imperium-nihilus.wikitext"
+    },
     "lex-imperium-of-man": {
       "title": "Imperium of Man",
       "url": "https://wh40k.lexicanum.com/wiki/Imperium_of_Man",
@@ -539,6 +656,15 @@
       "bytes": 49809,
       "sha256": "9b6df5a4feabbce713d37a2d09c756df912db16f754aab5928549c197889f9a1",
       "file": "sources/raw/lex-imperium-of-man.wikitext"
+    },
+    "lex-imperium-sanctus": {
+      "title": "Imperium Sanctus",
+      "url": "https://wh40k.lexicanum.com/wiki/Imperium_Sanctus",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 1808,
+      "sha256": "cecdd2a736962d76983e7eb322bfa44e673da4ef4868b29fa59df0d00dfb8595",
+      "file": "sources/raw/lex-imperium-sanctus.wikitext"
     },
     "lex-inertialess-drive": {
       "title": "Inertialess Drive",
@@ -595,6 +721,15 @@
       "file": "sources/raw/lex-khaine.wikitext",
       "redirect_to": "Kaela Mensha Khaine"
     },
+    "lex-krieg": {
+      "title": "Krieg",
+      "url": "https://wh40k.lexicanum.com/wiki/Krieg",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 7743,
+      "sha256": "30782a7e7176c312c5830dfeee9a997c696f92b3530e272a2b3a35b597cea6fe",
+      "file": "sources/raw/lex-krieg.wikitext"
+    },
     "lex-lamenters": {
       "title": "Lamenters",
       "url": "https://wh40k.lexicanum.com/wiki/Lamenters",
@@ -622,6 +757,34 @@
       "sha256": "359ee9c758e21bd0e443d50734f4222a8d5e7e35ebd6fc4065e7c29091d6f916",
       "file": "sources/raw/lex-low-gothic.wikitext"
     },
+    "lex-macragge": {
+      "title": "Macragge",
+      "url": "https://wh40k.lexicanum.com/wiki/Macragge",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 13253,
+      "sha256": "b85e1dc8e60d7fed32f097d3e21077b4bcf485d107794f1b0ec10de7553e6231",
+      "file": "sources/raw/lex-macragge.wikitext"
+    },
+    "lex-maelstrom": {
+      "title": "Maelstrom",
+      "url": "https://wh40k.lexicanum.com/wiki/Maelstrom",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 27,
+      "sha256": "60756b91e67bf289d178e3ba90fea654b383fa814755fa94d1b1d96da9d03d96",
+      "file": "sources/raw/lex-maelstrom.wikitext",
+      "redirect_to": "The Maelstrom"
+    },
+    "lex-mars": {
+      "title": "Mars",
+      "url": "https://wh40k.lexicanum.com/wiki/Mars",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 15947,
+      "sha256": "bef655277fdd86246908205ec192cea6ac2eae29e48d1c261ca220bc6d7d32f7",
+      "file": "sources/raw/lex-mars.wikitext"
+    },
     "lex-materium": {
       "title": "Materium",
       "url": "https://wh40k.lexicanum.com/wiki/Materium",
@@ -640,6 +803,15 @@
       "bytes": 24482,
       "sha256": "bac7512cb9059e2bae9c414c91e8e8fee5b50cf7c0d70a7bb4c2f725b74ed5e1",
       "file": "sources/raw/lex-minotaurs.wikitext"
+    },
+    "lex-nachmund-gauntlet": {
+      "title": "Nachmund Gauntlet",
+      "url": "https://wh40k.lexicanum.com/wiki/Nachmund_Gauntlet",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 5021,
+      "sha256": "7b2d894c060910003b9cf292e028652aeb0c7842ce2ec20a27960bbda2956961",
+      "file": "sources/raw/lex-nachmund-gauntlet.wikitext"
     },
     "lex-narvhal": {
       "title": "Narvhal",
@@ -705,6 +877,24 @@
       "sha256": "35f604c00925f60470430be2cf5defa15855c82d05beaf56c7bf5a9d22be440c",
       "file": "sources/raw/lex-noctilith.wikitext"
     },
+    "lex-noctis-aeterna": {
+      "title": "Noctis Aeterna",
+      "url": "https://wh40k.lexicanum.com/wiki/Noctis_Aeterna",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 5298,
+      "sha256": "3c3898923cc72b41d66d4555b8bd045ef589e51602c3e23fddc14fbeb48733a1",
+      "file": "sources/raw/lex-noctis-aeterna.wikitext"
+    },
+    "lex-nocturne": {
+      "title": "Nocturne",
+      "url": "https://wh40k.lexicanum.com/wiki/Nocturne",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 20021,
+      "sha256": "0f51c7b4fc0ab8c93f23cf37a8bb36f3993d1b4341fb338a3f9f81d8d491e471",
+      "file": "sources/raw/lex-nocturne.wikitext"
+    },
     "lex-old-ones": {
       "title": "Old Ones",
       "url": "https://wh40k.lexicanum.com/wiki/Old_Ones",
@@ -713,6 +903,15 @@
       "bytes": 15381,
       "sha256": "e556b2c22fb4c254d49cbca4533dd730ac94d3a0fcc73370c3c8456d9608f457",
       "file": "sources/raw/lex-old-ones.wikitext"
+    },
+    "lex-ork-empire-of-charadon": {
+      "title": "Ork Empire of Charadon",
+      "url": "https://wh40k.lexicanum.com/wiki/Ork_Empire_of_Charadon",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 2217,
+      "sha256": "fc55a6f6ee160b9e4aba78713ec5a9059b862927043237b300b3af22bb8aee49",
+      "file": "sources/raw/lex-ork-empire-of-charadon.wikitext"
     },
     "lex-ork-fleet": {
       "title": "Ork Fleet",
@@ -892,6 +1091,60 @@
       "file": "sources/raw/lex-sea-of-souls.wikitext",
       "redirect_to": "Warp"
     },
+    "lex-sector": {
+      "title": "Sector",
+      "url": "https://wh40k.lexicanum.com/wiki/Sector",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 1670,
+      "sha256": "a907ce591ae403f3a1532eb485f602949212ea239484e1e02cad0adc2ba4e51b",
+      "file": "sources/raw/lex-sector.wikitext"
+    },
+    "lex-segmentum": {
+      "title": "Segmentum",
+      "url": "https://wh40k.lexicanum.com/wiki/Segmentum",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 1913,
+      "sha256": "d8c4bfa43e4dd66e1763ba2dafe9bffb6885dccf9b507aa59433cc6f6526bae4",
+      "file": "sources/raw/lex-segmentum.wikitext"
+    },
+    "lex-segmentum-fortress": {
+      "title": "Segmentum Fortress",
+      "url": "https://wh40k.lexicanum.com/wiki/Segmentum_Fortress",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 1330,
+      "sha256": "b9b94af3d9a341c05eb6eae3aa2b330d2c70609ee65e4ab6ad88c6e84f3c2150",
+      "file": "sources/raw/lex-segmentum-fortress.wikitext"
+    },
+    "lex-segmentum-obscurus": {
+      "title": "Segmentum Obscurus",
+      "url": "https://wh40k.lexicanum.com/wiki/Segmentum_Obscurus",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 3527,
+      "sha256": "73a27848962c59fb23f11514666185d0cd5bc8261c35a7c6e63a0511b7ab90cb",
+      "file": "sources/raw/lex-segmentum-obscurus.wikitext"
+    },
+    "lex-segmentum-pacificus": {
+      "title": "Segmentum Pacificus",
+      "url": "https://wh40k.lexicanum.com/wiki/Segmentum_Pacificus",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 2999,
+      "sha256": "4c6f295a60866ec7a5028d5a6badb4d6f316a0c7869d8a5dd6528ea0e4b2ae14",
+      "file": "sources/raw/lex-segmentum-pacificus.wikitext"
+    },
+    "lex-segmentum-solar": {
+      "title": "Segmentum Solar",
+      "url": "https://wh40k.lexicanum.com/wiki/Segmentum_Solar",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 2377,
+      "sha256": "85bfe67fb3b2d1af221e1362d38d5bad83f0340532a3f4bb257861d3911ae96e",
+      "file": "sources/raw/lex-segmentum-solar.wikitext"
+    },
     "lex-segmentum-tempestus": {
       "title": "Segmentum Tempestus",
       "url": "https://wh40k.lexicanum.com/wiki/Segmentum_Tempestus",
@@ -900,6 +1153,16 @@
       "bytes": 2823,
       "sha256": "fdc8f5affe424bdce183880eaa3bf9af6d12c7b7b9f9111f465a12f6809ebd1b",
       "file": "sources/raw/lex-segmentum-tempestus.wikitext"
+    },
+    "lex-segmentum-ultima": {
+      "title": "Segmentum Ultima",
+      "url": "https://wh40k.lexicanum.com/wiki/Segmentum_Ultima",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 30,
+      "sha256": "aa7883df64417257262fb03e0018bfb999bab995073514f341b3ae7e9eb37c05",
+      "file": "sources/raw/lex-segmentum-ultima.wikitext",
+      "redirect_to": "Ultima Segmentum"
     },
     "lex-soul": {
       "title": "Soul",
@@ -936,6 +1199,44 @@
       "bytes": 20124,
       "sha256": "7a0c64d2f4ebe630db79f444e32591d60f2560747ed03bbbc41c4863d8b37e57",
       "file": "sources/raw/lex-standard-template-construct.wikitext"
+    },
+    "lex-sub-sector": {
+      "title": "Sub-sector",
+      "url": "https://wh40k.lexicanum.com/wiki/Sub-sector",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 23,
+      "sha256": "c48bcf77c50e4b87358eaf9a1bf64090c88f9b7a597cae5e7cdfec0b364fdad8",
+      "file": "sources/raw/lex-sub-sector.wikitext",
+      "redirect_to": "Subsector"
+    },
+    "lex-subsector": {
+      "title": "Subsector",
+      "url": "https://wh40k.lexicanum.com/wiki/Subsector",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 1629,
+      "sha256": "6a5edda05327de4f2917898635e7005987ed972ec6266844b2edd0f4d79984d2",
+      "file": "sources/raw/lex-subsector.wikitext"
+    },
+    "lex-t-au-empire": {
+      "title": "T'au Empire",
+      "url": "https://wh40k.lexicanum.com/wiki/T'au_Empire",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 28675,
+      "sha256": "6886b7e94e07b4eb62abafb2ad5b32be51b1e0a651e7333534436d67c8bc6581",
+      "file": "sources/raw/lex-t-au-empire.wikitext"
+    },
+    "lex-tau-empire": {
+      "title": "Tau Empire",
+      "url": "https://wh40k.lexicanum.com/wiki/Tau_Empire",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 25,
+      "sha256": "d13865348507e49795bfbfe4715455060b615d4f7fa5e8eab1f3df2d88b65b57",
+      "file": "sources/raw/lex-tau-empire.wikitext",
+      "redirect_to": "T'au Empire"
     },
     "lex-telekinesis": {
       "title": "Telekinesis",
@@ -1000,6 +1301,15 @@
       "sha256": "e754dc836da40d8f6a853a0cfb841430b35bd415c40296ff3723f4a759c7fd08",
       "file": "sources/raw/lex-the-assignment.wikitext"
     },
+    "lex-the-maelstrom": {
+      "title": "The Maelstrom",
+      "url": "https://wh40k.lexicanum.com/wiki/The_Maelstrom",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 6493,
+      "sha256": "252c6b230fa15f74e4c284ca450d1151fa112b602372ab4872fb271f5ecf7685",
+      "file": "sources/raw/lex-the-maelstrom.wikitext"
+    },
     "lex-thousand-sons": {
       "title": "Thousand Sons",
       "url": "https://wh40k.lexicanum.com/wiki/Thousand_Sons",
@@ -1008,6 +1318,33 @@
       "bytes": 83998,
       "sha256": "00a829b3b1471fa4b8717c4d7a1578de7ecd9ca6280d1e697fc72368c19c7842",
       "file": "sources/raw/lex-thousand-sons.wikitext"
+    },
+    "lex-tomb-world": {
+      "title": "Tomb World",
+      "url": "https://wh40k.lexicanum.com/wiki/Tomb_World",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 19411,
+      "sha256": "1f0ca39a9d314c7990b9b375288a309c4be89691a0fe5dbfe60aa6a1064393c7",
+      "file": "sources/raw/lex-tomb-world.wikitext"
+    },
+    "lex-ultima-segmentum": {
+      "title": "Ultima Segmentum",
+      "url": "https://wh40k.lexicanum.com/wiki/Ultima_Segmentum",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 7299,
+      "sha256": "9065bc0c7f487e012c2321b1d5136b62d7b49d2fa969fd424383100dd2f57a02",
+      "file": "sources/raw/lex-ultima-segmentum.wikitext"
+    },
+    "lex-ultramar": {
+      "title": "Ultramar",
+      "url": "https://wh40k.lexicanum.com/wiki/Ultramar",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 23515,
+      "sha256": "31d86237b1f5539c59d57350fe3ffeb7088526d89a359442e9a0c739f642f823",
+      "file": "sources/raw/lex-ultramar.wikitext"
     },
     "lex-ultramarines": {
       "title": "Ultramarines",
@@ -1045,6 +1382,15 @@
       "bytes": 1223,
       "sha256": "b123d91db1f9e7d50a9f2891f39de5ecdc00948df7b2c7e062d342e9f02b4e21",
       "file": "sources/raw/lex-veil.wikitext"
+    },
+    "lex-vigilus": {
+      "title": "Vigilus",
+      "url": "https://wh40k.lexicanum.com/wiki/Vigilus",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 18041,
+      "sha256": "7476214cdab2a8abe27b778ad64e219f443d8835236dfd898be9fcc69972f358",
+      "file": "sources/raw/lex-vigilus.wikitext"
     },
     "lex-warhammer-40-000": {
       "title": "Warhammer 40,000",

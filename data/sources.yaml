@@ -44,9 +44,9 @@ lex-astronomican:
     - "Warhammer 40,000 6th Edition Rulebook, pg. 168"                         # {{Fn|3}}
     - "The Horus Heresy Book One - Betrayal, pg. 21"                           # {{Fn|4}}
   notes: >
-    Carries {{Uncited}} — two works are listed that are tied to no specific claim
+    Carries an uncited-works block — two works are listed that are tied to no specific claim
     (Warhammer 40,000 3rd Edition Rulebook; White Dwarf 140 UK). Also carries
-    {{Cite Marker End}} on {{Fn|5}}, an incomplete citation. Neither may be used
+    an incomplete-citation marker on citation 5. Neither may be used
     as support for anything.
 
 # ===========================================================================
@@ -124,7 +124,7 @@ lex-age-of-strife:
     - "Space Hulk (1989), Missions and Background book, pg. 24"                 # {{Fn|1}}
   notes: >
     The start date carries two different citations for two different millennia — M23
-    per Fn|2 and M25 per Fn|5. Recorded as contradiction age-of-strife-start-date.
+    per citation 2 and M25 per citation 5. Recorded as contradiction age-of-strife-start-date.
 
 lex-imperial-dating-system:
   tier: 2
@@ -140,7 +140,7 @@ lex-imperial-dating-system:
     - "Deathwatch: Rising Tempest, 'Imperial Date Stamps', pg. 4"                       # {{Fn|6}}
     - "The Emperor's Gift (Novel), Chapter 23"                                          # {{Fn|7}}
   notes: >
-    Carries BOTH a {{Trivia}} block and a {{Conflicting Sources}} block. The Trivia
+    Carries BOTH a trivia block and a conflicting-sources notice. The Trivia
     cites a DakkaDakka forum post and arithmetic contributed by named Lexicanum users
     in 2015 and 2025. That material is tier 4 and is used here only as evidence that
     no in-universe source gives the method — never as a figure.
@@ -158,7 +158,7 @@ lex-high-gothic:
   notes: >
     Also cites a Warhammer Community article (archived) for the first official
     Imperial hymn — a tier 1 source. The comparison of High Gothic to Latin sits
-    inside the article's {{Trivia}} block and is therefore not treated as sourced.
+    inside the article's trivia block and is therefore not treated as sourced.
 
 lex-low-gothic:
   tier: 2
@@ -209,7 +209,7 @@ lex-soul:
     - "Warhammer 40,000: Dark Millennium (Box Set) Rulebook, pg. 4"     # {{Fn|1a}}
     - "Warhammer 40,000: Dark Millennium (Box Set) Rulebook, pg. 6"     # {{Fn|17b}}
   notes: >
-    Carries a {{WIP}} tag — Lexicanum marks this article incomplete. Usable for the
+    Carries an incomplete-article notice — Lexicanum marks this article incomplete. Usable for the
     claims cited above, but not treated as settled coverage of the subject.
 
 lex-gellar-field:
@@ -221,7 +221,7 @@ lex-gellar-field:
   cites:
     - "Codex: Chaos Daemons (4th Edition), pg. 43"      # {{Fn|1}}
   notes: >
-    The variant spelling "Geller Field" is attested by the article's {{Fn|6}}, which
+    The variant spelling "Geller Field" is attested by the article's citation 6, which
     is a Warhammer Community article archived December 2024 — a TIER 1 source. Note
     the title-case trap: "Gellar Field" is a redirect and "Gellar field" is the
     article, and the two collide under our slug scheme.
@@ -247,7 +247,7 @@ lex-warp-rift:
     - "Warhammer 40,000: Rogue Trader, pg. 131"                 # {{Fn|6}}
     - "Blood Reaver (Novel), Chapter VII 'Flight'"              # {{Fn|10}}
   notes: >
-    Fn|10 is the article explicitly correcting an in-universe exaggeration: the
+    Citation 10 is the article explicitly correcting an in-universe exaggeration: the
     Navigators' account of rifts flaying souls is called "partial truth".
 
 lex-great-rift:
@@ -261,7 +261,7 @@ lex-great-rift:
     - "Warhammer 40,000 8th Edition Rulebook, pg. 50"           # {{Fn|4a}}
     - "Avenging Son (Novel), Chapter 26"                        # {{Fn|7}}
   notes: >
-    "Cicatrix Maledictum" redirects here. Fn|1 is an official GW web article, so the
+    "Cicatrix Maledictum" redirects here. Citation 1 is an official GW web article, so the
     core description rests on tier 1 rather than tier 2 — unusually well founded for
     this project. The article states the Rift's origin "remains a mystery" and lists
     five competing theories.
@@ -337,9 +337,9 @@ lex-the-assignment:
     - "Dark Heresy: Ascension, pg. 197"                     # {{Fn|12b}}
     - "Throne of Light (Novel), Chapter 7"                  # {{Fn|20}}
   notes: >
-    CARRIES {{Quarantine}} — passages were removed from this article for insufficient
+    CARRIES a quarantine notice — passages were removed from this article for insufficient
     citation and parked on its discussion page. What remains is what survived review,
-    and the surviving scale table is cited throughout to Fn|1, but the article is
+    and the surviving scale table is cited throughout to citation 1, but the article is
     known-incomplete and must not be treated as exhaustive.
     Separately, the bracket numbers in the scale table are explicitly labelled by the
     article as NOT approved terminology — a wiki device to show cardinal order. They
@@ -357,7 +357,7 @@ lex-blank:
     - "The Inquisition (Background Book), pg. 67"       # {{Fn|2}}
     - "Codex: Sisters of Silence (7th Edition)"         # {{Fn|3}}
   notes: >
-    Carries BOTH {{Trivia}} and {{Quarantine}}. "Untouchable" and "Pariah" both route
+    Carries BOTH a trivia block and a quarantine notice. "Untouchable" and "Pariah" both route
     here — Pariah via a disambiguation page that also lists Necron Pariahs, noctilith
     ("Pariah stone") and the Pariah Nexus, none of which are this subject.
 
@@ -381,7 +381,7 @@ lex-pyromancy:
   raw: sources/raw/lex-pyromancy.wikitext
   cites: []
   notes: >
-    Carries {{Cite Marker End}} and {{Trivia}}. Used only for the discipline's
+    Carries an incomplete-citation marker and a trivia block. Used only for the discipline's
     definition and practitioner names; the ability lists are drawn from game rules
     across several editions and are not summarised here.
 
@@ -428,8 +428,8 @@ lex-psychic-phenomena:
     - "Black Crusade Core Rulebook, pgs. 210-211"                   # {{Fn|4}}
     - "Wrath & Glory Core Rulebook (2nd Edition), pgs. 263-264"     # {{Fn|6}}
   notes: >
-    Carries {{Cite Marker End}} and {{Trivia}}. "Perils of the Warp" redirects here.
-    Fn|6 records that some material makes no distinction between phenomena and
+    Carries an incomplete-citation marker and a trivia block. "Perils of the Warp" redirects here.
+    Citation 6 records that some material makes no distinction between phenomena and
     perils — see contradiction phenomena-versus-perils.
 
 lex-daemonic-possession:
@@ -461,7 +461,7 @@ lex-league-of-black-ships:
     - "Imperium Maledictum: Inquisition Player's Guide, pg. 7"                  # {{Fn|22}}
     - "White Dwarf 140 (UK), pg. 54"                                            # {{Fn|23}}
   notes: >
-    Carries {{Trivia}}. "Black Ships" is a disambiguation page; this fleet must not be
+    Carries a trivia block. "Black Ships" is a disambiguation page; this fleet must not be
     confused with the Inquisition's own Black Ships, which the article states
     explicitly. Also spelled "Blackship".
 
@@ -476,7 +476,7 @@ lex-sanctioned-psyker:
     - "Dark Heresy: Ascension, pg. 48 'The Mind's Eye Opens'"       # {{Fn|15a}}
     - "Warhammer 40,000: Rogue Trader, pg. 146"                     # {{Fn|16}}
     - "Wrath & Glory Core Rulebook (2nd Edition), pg. 100"          # {{Fn|21}}
-  notes: Carries {{Uncited}} — works listed that support no specific claim.
+  notes: Carries an uncited-works block — works listed that support no specific claim.
 
 lex-scholastia-psykana:
   tier: 2
@@ -503,7 +503,7 @@ lex-soul-binding:
     - "Codex Imperialis (Background Book), pg. 37"      # {{Fn|1}}
     - "Faith and Fire (Novel), Chapter Seventeen"       # {{Fn|4}}
     - "Deathwatch Core Rulebook, pg. 285"               # {{Fn|7}}
-  notes: Carries {{Uncited}} and {{Cite Marker End}}.
+  notes: Carries an uncited-works block and an incomplete-citation marker.
 
 # ===========================================================================
 # VOLUME I · TITLE 3 — retrieved 2026-07-25
@@ -550,7 +550,7 @@ lex-webway-project:
     - "Collected Visions, pgs. 326-330, 350-351"    # {{Fn|4}}
   notes: >
     Also known as the Imperial Webway and the Emperor's Great Work. No reliability
-    template. Note that {{Fn|3}} is the same chapter of the same novel cited by the
+    template. Note that citation 3 is the same chapter of the same novel cited by the
     "Veil" article for the destruction of Dark Glass — the Navigator agent and the
     prototype are the same episode seen from two sides.
 
@@ -579,7 +579,7 @@ lex-old-ones:
   raw: sources/raw/lex-old-ones.wikitext
   cites: []
   notes: >
-    Carries {{Uncited}} and {{Trivia}}. The Old Ones are the canonical subject of
+    Carries an uncited-works block and a trivia block. The Old Ones are the canonical subject of
     III.T1.Ch1; nothing is cited from this article here beyond what the Webway
     article already supports.
 
@@ -606,7 +606,7 @@ lex-commorragh:
     - "Codex: Dark Eldar (5th Edition), pgs. 8-9"       # {{Fn|1a}}
     - "Codex: Dark Eldar (5th Edition), pg. 20"         # {{Fn|1c}}
   notes: >
-    Carries {{Uncited}} and {{Trivia}}. Commorragh as a place belongs to II.T3.Ch10
+    Carries an uncited-works block and a trivia block. Commorragh as a place belongs to II.T3.Ch10
     and as a society to VI.T2.Ch6; only its role as a webway node is treated in
     Volume I.
 
@@ -621,7 +621,7 @@ lex-black-library-of-chaos:
     - "Ahriman: Undying (Novel), Prologue"              # {{Fn|9}}
     - "Codex: Eldar (4th Edition), pg. 13"              # {{Fn|14}}
   notes: >
-    Carries {{Cite Marker End}}. "Black Library" redirects here — not to be confused
+    Carries an incomplete-citation marker. "Black Library" redirects here — not to be confused
     with Black Library the publisher.
 
 lex-cegorach:
@@ -643,7 +643,7 @@ lex-harlequin:
   raw: sources/raw/lex-harlequin.wikitext
   cites: []
   notes: >
-    41 KB, carries {{Uncited}} and {{Trivia}}. The Harlequins are the canonical
+    41 KB, carries an uncited-works block and a trivia block. The Harlequins are the canonical
     subject of VI.T2.Ch8; Volume I cites only their role as guardians of the Black
     Library, which that article supports directly.
 
@@ -687,7 +687,7 @@ lex-al-38-slipstream-module:
     - "Battlefleet Gothic: Armada (Book), pg. 96"                       # {{Fn|2}}
     - "Wrath & Glory Threat Assessment: Xenos, pgs. 160-161"            # {{Fn|3}}
   notes: >
-    Carries {{Trivia}}, and inside it a "Conflicting sources" note recording an
+    Carries a trivia block, and inside it a "Conflicting sources" note recording an
     explicit retcon — see contradiction tau-ftl-retcon.
 
 lex-ork-fleet:
@@ -706,7 +706,7 @@ lex-warp-drive:
   retrieved: 2026-07-25
   raw: sources/raw/lex-warp-drive.wikitext
   cites: []
-  notes: Carries {{Uncited}}. Used only for comparison against the non-warp methods.
+  notes: Carries an uncited-works block. Used only for comparison against the non-warp methods.
 
 # ===========================================================================
 # VOLUME I · TITLE 4 — retrieved 2026-07-25
@@ -814,3 +814,305 @@ lex-gork-and-mork:
     "Ork Gods" redirects here. Carries one reliability marker. The article records a
     dispute over whether the gods preceded the Orks — see contradiction
     ork-gods-precedence.
+
+# ===========================================================================
+# VOLUME II · TITLE 1 — retrieved 2026-07-25
+# ===========================================================================
+
+lex-segmentum:
+  tier: 2
+  what: Lexicanum article "Segmentum"
+  url: https://wh40k.lexicanum.com/wiki/Segmentum
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-segmentum.wikitext
+  cites:
+    - "Battlefleet Gothic Rulebook, pg. 86"      # {{Fn|1}}
+    - "Codex: Tyranids (8th Edition), pg. 6"     # {{Fn|2}}
+
+lex-segmentum-solar:
+  tier: 2
+  what: Lexicanum article "Segmentum Solar"
+  url: https://wh40k.lexicanum.com/wiki/Segmentum_Solar
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-segmentum-solar.wikitext
+  cites:
+    - "Rogue Trader Rulebook, pg. 315"       # {{Fn|1}}
+    - "I Am Slaughter (Novel)"               # {{Fn|4}}, incomplete citation on the wiki
+
+lex-segmentum-obscurus:
+  tier: 2
+  what: Lexicanum article "Segmentum Obscurus"
+  url: https://wh40k.lexicanum.com/wiki/Segmentum_Obscurus
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-segmentum-obscurus.wikitext
+  cites:
+    - "Rogue Trader Rulebook, pg. 315"       # {{Fn|1}}
+
+lex-segmentum-pacificus:
+  tier: 2
+  what: Lexicanum article "Segmentum Pacificus"
+  url: https://wh40k.lexicanum.com/wiki/Segmentum_Pacificus
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-segmentum-pacificus.wikitext
+  cites:
+    - "Rogue Trader Rulebook, pg. 315"       # {{Fn|1a}}
+
+lex-ultima-segmentum:
+  tier: 2
+  what: Lexicanum article "Ultima Segmentum"
+  url: https://wh40k.lexicanum.com/wiki/Ultima_Segmentum
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-ultima-segmentum.wikitext
+  cites:
+    - "Rogue Trader Rulebook, pg. 315"       # {{Fn|1}}
+  notes: '"Segmentum Ultima" redirects here — the article title inverts the usual order.'
+
+lex-sector:
+  tier: 2
+  what: Lexicanum article "Sector"
+  url: https://wh40k.lexicanum.com/wiki/Sector
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-sector.wikitext
+  cites:
+    - "Battlefleet Gothic Rulebook, pg. 86"          # {{Fn|1}}
+    - "Dark Heresy: Blood of Martyrs, pg. 26"        # {{Fn|2}}
+
+lex-subsector:
+  tier: 2
+  what: Lexicanum article "Subsector"
+  url: https://wh40k.lexicanum.com/wiki/Subsector
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-subsector.wikitext
+  cites:
+    - "White Dwarf 139 (UK), pg. 18 'Interstellar Travel'"     # {{Fn|1}}
+
+lex-imperium-sanctus:
+  tier: 2
+  what: Lexicanum article "Imperium Sanctus"
+  url: https://wh40k.lexicanum.com/wiki/Imperium_Sanctus
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-imperium-sanctus.wikitext
+  cites:
+    - "White Dwarf July 2019, 'Indomitus Crusade Fleets'"      # {{Fn|1}}
+
+lex-imperium-nihilus:
+  tier: 2
+  what: Lexicanum article "Imperium Nihilus"
+  url: https://wh40k.lexicanum.com/wiki/Imperium_Nihilus
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-imperium-nihilus.wikitext
+  cites:
+    - "Warhammer Community: 'New Warhammer 40,000: The Dark Imperium' (2017-05-16)"   # {{Fn|1}} TIER 1
+  notes: Also known as the Dark Imperium. Its lead citation is an official GW web article.
+
+lex-noctis-aeterna:
+  tier: 2
+  what: Lexicanum article "Noctis Aeterna"
+  url: https://wh40k.lexicanum.com/wiki/Noctis_Aeterna
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-noctis-aeterna.wikitext
+  cites:
+    - "Warhammer 40,000 8th Edition Rulebook, pgs. 50-53"                  # {{Fn|1}}
+    - "Watchers of the Throne: The Emperor's Legion (Novel)"               # {{Fn|4}}
+  notes: Also called the Blackness, the Great Blackness, and the Days of Blindness.
+
+lex-eye-of-terror:
+  tier: 2
+  what: Lexicanum article "Eye of Terror"
+  url: https://wh40k.lexicanum.com/wiki/Eye_of_Terror
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-eye-of-terror.wikitext
+  cites:
+    - "Realm of Chaos: The Lost and the Damned, pgs. 162-164"      # {{Fn|1}}
+  notes: 32 KB, unflagged. Also Ocularis Terribus, Anathema Nonplus Ultra, Ocularis Malifica.
+
+lex-the-maelstrom:
+  tier: 2
+  what: Lexicanum article "The Maelstrom"
+  url: https://wh40k.lexicanum.com/wiki/The_Maelstrom
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-the-maelstrom.wikitext
+  cites:
+    - "Warhammer 40,000 5th Edition Rulebook, pg. 117"     # {{Fn|1a}}
+    - "The Maelstrom: Lair of the Tyrant, pg. 1"           # {{Fn|6a}}
+  notes: >
+    "Maelstrom" redirects here. Also the Shadow Mere, the Twisted Reach, the Well of Lies,
+    the Maw, and to the Aeldari Guair Dromlaith, the Nightmare Gulf.
+
+lex-ghoul-stars:
+  tier: 2
+  what: Lexicanum article "Ghoul Stars"
+  url: https://wh40k.lexicanum.com/wiki/Ghoul_Stars
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-ghoul-stars.wikitext
+  cites:
+    - "Codex: Black Templars (4th Edition), pg. 44"    # {{Fn|1}}
+    - "Codex: Necrons (5th Edition), pg. 15"           # {{Fn|4}}
+  notes: Carries two reliability markers. Also called the Ghost Stars.
+
+lex-halo-zone:
+  tier: 2
+  what: Lexicanum article "Halo Zone"
+  url: https://wh40k.lexicanum.com/wiki/Halo_Zone
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-halo-zone.wikitext
+  cites:
+    - "Codex: Imperial Guard (3rd Edition)"    # {{Fn|2}}
+  notes: >
+    1.3 KB, and its first citation carries an incomplete-citation marker. Thin, but the
+    subject is itself an absence — the region beyond the Astronomican's light.
+
+lex-cadian-gate:
+  tier: 2
+  what: Lexicanum article "Cadian Gate"
+  url: https://wh40k.lexicanum.com/wiki/Cadian_Gate
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-cadian-gate.wikitext
+  cites:
+    - "Codex: Eye of Terror (3rd Edition), pg. 5"      # {{Fn|1}}
+
+lex-segmentum-tempestus:
+  tier: 2
+  what: Lexicanum article "Segmentum Tempestus"
+  url: https://wh40k.lexicanum.com/wiki/Segmentum_Tempestus
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-segmentum-tempestus.wikitext
+  cites:
+    - "Rogue Trader Rulebook, pg. 315"                            # {{Fn|3}} — Bakka as Segmentum Fortress
+    - "Battlefleet Gothic Magazine Issue 2, pg. 30"               # {{Fn|4}}, incomplete citation on the wiki
+    - "Codex: Space Marines (5th Edition), pg. 30"                # {{Fn|1}}
+  notes: >
+    Carries an Uncited block listing two Imperial Armour volumes with no page references.
+    The claim used in this codex — Bakka as the Segmentum Fortress — rests on citation 3, the
+    same Rogue Trader page that anchors the other four segmentum articles.
+
+lex-nachmund-gauntlet:
+  tier: 2
+  what: Lexicanum article "Nachmund Gauntlet"
+  url: https://wh40k.lexicanum.com/wiki/Nachmund_Gauntlet
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-nachmund-gauntlet.wikitext
+  cites:
+    - "War Zone Nachmund: Rift War, pgs. 8-9"                     # {{Fn|3a}} — "The Nachmund Gauntlet"
+    - "War Zone Nachmund: Vigilus Alone, pgs. 8-12"               # {{Fn|2a}}
+    - "Crusade: Nachmund Gauntlet, pgs. 44-45"                    # {{Fn|5}}
+    - "Hand of Abaddon (Novel), Chapter 28"                       # {{Fn|4}}
+
+lex-terra:
+  tier: 2
+  what: Lexicanum article "Terra"
+  url: https://wh40k.lexicanum.com/wiki/Terra
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-terra.wikitext
+  cites:
+    - "Warhammer 40,000: Rogue Trader, pgs. 82-83"                      # {{Fn|1a}} — temple the size of a planet
+    - "Warhammer 40,000: Rogue Trader, pg. 133"                        # {{Fn|1b}}
+    - "Codex Imperialis (Background Book), pgs. 48-49"                 # {{Fn|4a}} — Palace, Eternity Gate, Sanctum
+    - "Draco (Novel), Chapter 17"                                      # {{Fn|6a}} — the Himalayas
+    - "The Purge (Novella), Chapter 1"                                 # {{Fn|21}} — boiled oceans
+    - "Wolfblade (Novel), Chapter Four, pgs. 60-61"                    # {{Fn|8a}} — land prices, catacombs
+    - "Watchers of the Throne: The Emperor's Legion (Novel), Chapter 13"   # {{Fn|31d}} — Arx Doctrine
+    - "Watchers of the Throne: The Emperor's Legion (Novel), Chapter 20"   # {{Fn|31e}} — Battle of Lion's Gate
+    - "Watchers of the Throne: The Emperor's Legion (Novel), Chapter 5"    # {{Fn|31f}} — Forbidden Fortress
+    - "Watchers of the Throne: The Emperor's Legion (Novel), Chapter 1"    # {{Fn|31c}} — quadrillions
+    - "Vaults of Terra: The Carrion Throne (Novel), Chapter 16"        # {{Fn|36e}} — quadrillions
+    - "Vaults of Terra: The Hollow Mountain (Novel), Chapter 17"       # {{Fn|37b}} — Trench of the Astronomican
+    - "Space Hulk: Deathwing (Video Game) - Main Menu"                 # {{Fn|38}} — 200 billion
+    - "The Last Wall (Novel)"                                          # {{Fn|20}} — the Castellan
+  notes: >
+    33.7 KB, 173 inline markers, 117 endnotes — one of the largest articles used in this
+    codex. Carries a trivia block. The population figures in its infobox disagree by four
+    orders of magnitude; see contradiction terra-population.
+
+lex-imperial-palace:
+  tier: 2
+  what: Lexicanum article "Imperial Palace"
+  url: https://wh40k.lexicanum.com/wiki/Imperial_Palace
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-imperial-palace.wikitext
+  cites:
+    - "Codex: Adeptus Custodes (8th Edition), pg. 16"      # {{Fn|19b}} — depth, sub-nations, lost inventory
+    - "The End and the Death: Volume II (Novel), 6:I"      # {{Fn|38}} — wall dimensions
+    - "The Lightning Tower (Short Story)"                  # {{Fn|8}} — the Asian continent
+    - "Master of Mankind (Novel), Chapter 14"              # {{Fn|16a}} — Inner Palace over Kathmandu
+    - "Watchers of the Throne: The Emperor's Legion (Novel), Chapter 8"  # {{Fn|18a}} — the empty ground
+    - "Dark Heresy Rulebook, pg. 247"                      # {{Fn|6}}
+  notes: >
+    Carries an incomplete-citation marker (at least one incomplete citation — the Draco and Harlequin
+    references) and a trivia block. Its statement of the Palace's extent conflicts with the Terra
+    article's; see contradiction imperial-palace-extent.
+
+lex-mars:
+  tier: 2
+  what: Lexicanum article "Mars"
+  url: https://wh40k.lexicanum.com/wiki/Mars
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-mars.wikitext
+  cites:
+    - "Imperial Armour Volume One - Imperial Guard and Imperial Navy, pg. 8"  # {{Fn|8a}} — Forge World, grades, Segmentum Fortress
+    - "Codex Imperialis (Background Book), pg. 42"          # {{Fn|2}} — terraforming, Treaty of Olympus, Titan Legions
+    - "Horus Heresy Book One - Betrayal, pg. 16"            # {{Fn|6a}} — Age of Strife isolation, birth of Omnissiah worship
+    - "Horus Heresy Book One - Betrayal, pg. 17"            # {{Fn|6b}} — cannibal mutants, expeditions to Earth
+    - "Codex: Skitarii (7th Edition), pgs. 14-15"           # {{Fn|7a}} — repository of knowledge, toxic surface
+    - "Codex: Skitarii (7th Edition), pg. 16"               # {{Fn|7b}} — the social strata, Fabricator-General
+    - "Mechanicum (Novel)"                                  # {{Fn|4}} — Schism of Mars; incomplete citation on the wiki
+    - "The Solar War (Novel), Chapter 22"                   # {{Fn|12}} — Imperial Fists blockade
+    - "Codex: Necrons (3rd Edition), pg. 11"                # {{Fn|3a}} — the M41 Necron raid
+    - "Codex: Necrons (3rd Edition), pg. 65"                # {{Fn|3d}} — population, quarantine
+    - "Eye of Terror (Novel), Chapter 1"                    # {{Fn|25}} — the red is rust
+    - "Genefather (Novel), Chapter 5"                       # {{Fn|22}} — Synod of Mars
+    - "Wolfsbane (Novel), Chapter 3"                        # {{Fn|23}} — Martian physiology
+    - "Wrath & Glory: Redacted Records 2, pg. 50"            # {{Fn|27}} — mutants, rogue psykers, abominable intelligences
+  notes: >
+    Carries an incomplete-citation marker — several Codex: Necrons references and the Mechanicum novel
+    reference are incomplete. The Void Dragon and Ferrus Manus claims are presented by the
+    article itself as rumour, and are reproduced here on those terms.
+
+lex-ultramar:
+  tier: 2
+  what: Lexicanum article "Ultramar"
+  url: https://wh40k.lexicanum.com/wiki/Ultramar
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-ultramar.wikitext
+  cites:
+    - "The Horus Heresy Book Five - Tempest, pg. 79"           # {{Fn|13a}} — quasi-autonomous, "empire within an empire"
+    - "The Horus Heresy Book Five - Tempest, pg. 81"           # {{Fn|13b}} — military government, Vigil Opertii
+    - "Codex: Space Marines (5th Edition), pgs. 12-15"         # {{Fn|1a}} — founding, recruitment pride
+    - "Codex: Space Marines (5th Edition), pg. 31"             # {{Fn|1b}} — the reduced realm's worlds
+    - "Codex: Ultramarines (2nd Edition), pgs. 14-15"          # {{Fn|3b}} — society, self-sufficiency, feudal lords
+    - "Dark Imperium (Novel) (Second Edition), Chapter 20"     # {{Fn|11a}} — the Tetrarchy, Shield Chapters
+    - "Dark Imperium (Novel) (Second Edition), Chapter 10"     # {{Fn|11c}} — post-Heresy reduction, restoration by force
+    - "Codex Supplement: Ultramarines (8th Edition), pg. 8"    # {{Fn|27a}} — civil unrest, Auxilia billions
+    - "Codex: Space Marines (8th Edition), pg. 25"             # {{Fn|15a}} — location on the Eastern Fringe
+    - "Warhammer 40,000: The Ultimate Guide, pg. 49"           # {{Fn|26}} — 500 *inhabited* worlds
+    - "Marneus Calgar (Comic) Issue #1"                        # {{Fn|24}}, {{Fn|19}} — life expectancy, feudal noble houses
+    - "Codex: Space Marines (7th Edition) - Ultramarines"       # {{Fn|8}} — the six star fortresses
+    - "Warhammer 40,000 8th Edition Rulebook, pgs. 154-159"     # {{Fn|12}} — the Plague Wars
+    - "Dark Imperium: Godblight (Novel), Chapter 1"            # {{Fn|20}} — Shield Chapters of Ultramar
+    - "The Laurel of Defiance (Short Story)"                   # {{Fn|6}} — Calth, the Shadow Crusade's fifth
+    - "The Unremembered Empire (Novel)"                        # {{Fn|7}} — Imperium Secundus, Praecental Guard
+  notes: >
+    23.5 KB, 202 inline markers, 46 endnotes. No reliability flags. The article's own
+    "Former Worlds" and "Other Worlds" lists are longer than the material used here; this
+    codex takes the realm's structure and government rather than the planetary gazetteer.
+
+lex-macragge:
+  tier: 2
+  what: Lexicanum article "Macragge"
+  url: https://wh40k.lexicanum.com/wiki/Macragge
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-macragge.wikitext
+  cites:
+    - "The Chapter's Due (Novel), Chapter One, pg. 12"         # {{Fn|5a}} — the dominion exception, planetary character
+    - "Codex: Space Marines (5th Edition), pgs. 12-14"         # {{Fn|3a}} — Consuls, Konor, Gallan, the Emperor's arrival
+    - "Codex: Space Marines (5th Edition), pgs. 32-33"         # {{Fn|3b}} — Behemoth, the First Company
+    - "The Horus Heresy Book Five - Tempest, pg. 76"           # {{Fn|9}} — surviving warp-capable craft, retained contact
+    - "Codex Supplement: Ultramarines (8th Edition), pg. 8"    # {{Fn|19}} — Guilliman's planned infrastructure, defences
+    - "White Dwarf 97 (UK), pg. 40"                            # {{Fn|21}} — continents, dust ocean, atmosphere
+    - "Codex: Ultramarines (2nd Edition), pg. 18"              # {{Fn|2}} — the Shrine of Guilliman, stasis field
+    - "Gathering Storm: Rise of the Primarch, Part 1"          # {{Fn|12}} — the Black Legion assault, the rebirth
+    - "Warhammer 40,000 8th Edition Rulebook, pg. 154"         # {{Fn|14}} — Plague Wars probing attacks, Illyrium mutinies
+    - "Warhammer 40,000 5th Edition Rulebook, pg. 117"         # {{Fn|20}} — population, class, designation
+  notes: >
+    Carries an uncited-works block — it lists the Warhammer 40,000 4th Edition Rulebook without tying it
+    to any claim, and nothing in this codex rests on it.

@@ -216,3 +216,58 @@ divine-archetypes:
     twin deities whose existence may postdate their worshippers.
   aliases: [pantheons, Khaine, Isha, Gork and Mork, the God-Emperor]
   see_also: [the-ctan]
+
+# --- Volume II Title 1 -----------------------------------------------------
+# Deliberately absent, belonging elsewhere:
+#   The Great Rift as an event   -> III.T5.Ch23
+#   Cadia as a world             -> II.T3.Ch8
+#   The Astronomican             -> IV.T9.Ch31
+#   The 13th Black Crusade       -> III.T5.Ch22
+
+imperial-astrography:
+  name: The shape of Imperial space
+  gloss: >
+    How the Imperium divides the galaxy — segmenta, sectors, subsectors — and how much of it
+    lies outside any of those divisions.
+  aliases: [Segmentum, Segmentae Majoris, sector, subsector, wilderness space]
+  see_also: [the-sundered-imperium]
+
+the-sundered-imperium:
+  name: The sundered Imperium
+  gloss: >
+    The Great Rift as a feature of the map: the two halves it created, and what being on the
+    dark side of it means.
+  aliases: [Imperium Sanctus, Imperium Nihilus, the Dark Imperium, Noctis Aeterna, Cicatrix Maledictum]
+  see_also: [imperial-astrography, regions-of-ruin]
+
+regions-of-ruin:
+  name: Regions of terror and ruin
+  gloss: >
+    The galaxy's permanent wounds and dark places — the Eye of Terror, the Maelstrom, the
+    Ghoul Stars and the unlit space beyond the beacon.
+  aliases: [Eye of Terror, the Maelstrom, Ghoul Stars, Halo Zone, Cadian Gate]
+  see_also: [the-sundered-imperium]
+
+terra:
+  name: Terra
+  gloss: >
+    Humanity's homeworld and the Imperium's capital: a hive world stripped to bedrock, the
+    Imperial Palace, the Astronomican's chamber, and the institutions of the Throneworld.
+  aliases: [Holy Terra, Earth, the Throneworld, Imperial Palace, Sanctum Imperialis, Eternity Gate]
+  see_also: [mars, imperial-astrography, the-sundered-imperium]
+
+mars:
+  name: Mars
+  gloss: >
+    The Red Planet: humanity's first colony, the principal Forge World, birthplace of the
+    Omnissiah's worship and seat of the Fabricator-General.
+  aliases: [Sacred Mars, the Red Planet, Olympus Mons, Synod of Mars]
+  see_also: [terra]
+
+ultramar:
+  name: Ultramar
+  gloss: >
+    The Five Hundred Worlds — the Ultramarines' quasi-autonomous realm on the Eastern Fringe,
+    its capital Macragge, and the Tetrarchy that governs it.
+  aliases: [the Five Hundred Worlds, Macragge, Fortress of Hera, Tetrarchy, Imperium Secundus]
+  see_also: [terra, imperial-astrography]
