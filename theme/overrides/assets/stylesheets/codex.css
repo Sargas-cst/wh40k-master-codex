@@ -287,8 +287,6 @@ body, input, .md-typeset {
   text-transform: none;
   color: var(--cx-ink);
   margin: 0 0 0.45em;
-  /* Hard offset in the livery accent — the single loudest gesture on a page. */
-  text-shadow: 3px 3px 0 var(--cx-accent);
 }
 
 /* Stencil is condensed, so it needs more size and a little tracking to carry
@@ -722,7 +720,6 @@ body[data-cx-apparatus] .md-typeset h1 {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.02em;
-  text-shadow: 2px 2px 0 var(--cx-accent);
 }
 body[data-cx-apparatus] .md-typeset h2 {
   font-family: var(--cx-sans);
@@ -751,7 +748,6 @@ body[data-cx-apparatus] .md-typeset table:not([class]) { font-size: 0.76rem; }
   body::after { display: none; }
   .md-content__inner.md-typeset > * { max-width: none; }
   .md-typeset { font-size: 10.5pt; }
-  .md-typeset h1 { text-shadow: none; }
   .md-typeset .admonition, .md-typeset table:not([class]) { box-shadow: none; clip-path: none; }
 }
 
@@ -765,7 +761,7 @@ body[data-cx-apparatus] .md-typeset table:not([class]) { font-size: 0.76rem; }
 @media screen and (max-width: 44.9375em) {
   :root { --cx-hard: 3px; --cx-notch: 10px; }
   .md-typeset { font-size: 0.98rem; }
-  .md-typeset h1 { font-size: 1.9rem; text-shadow: 2px 2px 0 var(--cx-accent); }
+  .md-typeset h1 { font-size: 1.9rem; }
   .md-typeset h2 { font-size: 1.15rem; }
   .cx-livery { right: 0.6rem; bottom: 0.6rem; }
 }
