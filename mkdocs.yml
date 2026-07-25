@@ -95,6 +95,13 @@ plugins:
   - search:
       separator: '[\s\-\.\,\!\?\(\)\[\]]+'
 
+# Appends a content hash to extra_css/extra_javascript URLs. Material fingerprints
+# its own bundles but not ours, and GitHub Pages serves these with a 10-minute
+# cache — so without this, a style change is invisible to returning visitors even
+# though the deploy contains it. See frame/mkdocs_hooks.py.
+hooks:
+  - frame/mkdocs_hooks.py
+
 # Explicit nav, deliberately. The brief fixes the reading order and says it carries
 # meaning ("nothing important should be referenced long before it is explained"), so
 # ordering is not left to a plugin's guess.
