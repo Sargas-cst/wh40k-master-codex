@@ -262,20 +262,28 @@ body {
 .md-sidebar--primary,
 .md-sidebar--secondary { width: 11.5rem; }
 
+/* The content column takes ALL the space between the two rails. That is what
+   pushes the table of contents out to the right edge: with the middle column
+   growing, the flex row has nothing left to distribute, so both rails sit hard
+   against their respective edges of the viewport.
+
+       [ nav ]········· prose ·········[ toc ]
+       x=0                              right edge
+
+   The prose is then centred inside that middle column, so the whitespace falls
+   symmetrically either side of the text rather than pooling on one flank. */
 .md-content {
-  flex: 0 1 auto;
-  max-width: calc(var(--cx-measure) + 5rem);
+  flex: 1 1 auto;
+  max-width: none;
+  min-width: 0;
 }
-.md-content__inner { padding-inline: 2.2rem 1.5rem; }
-/* Left-aligned, not centred — centring inside a wide column is what produced the
-   gap the navigation appeared to be pressing against. */
-.md-content__inner.md-typeset > * { margin-inline: 0; }
-.md-content__inner.md-typeset > .footnote { margin-inline: 0; }
+.md-content__inner { padding-inline: 2rem; }
+.md-content__inner.md-typeset > * { margin-inline: auto; }
 
 @media screen and (max-width: 76.1875em) {
-  /* Below Material's desktop breakpoint the nav is a drawer, so the content
-     column should reclaim the full width rather than hug a phantom sidebar. */
-  .md-content { max-width: none; }
+  /* Below Material's desktop breakpoint the nav collapses to a drawer, so the
+     column should reclaim the full width rather than reserve space for a rail
+     that is no longer there. */
   .md-content__inner { padding-inline: 1.2rem; }
 }
 
