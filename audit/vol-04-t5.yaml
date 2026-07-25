@@ -1,0 +1,87 @@
+title: "Volume IV, Title 5 — Astra Militarum & Imperial Navy"
+chapters: [IV.T5.Ch16, IV.T5.Ch17, IV.T5.Ch18]
+retrieved_this_title:
+  - lex-astra-militarum
+  - lex-astra-militarum-regiment
+  - lex-departmento-munitorum
+  - lex-imperial-navy
+  - lex-battlefleet
+  - lex-cadian-shock-troopers
+  - lex-catachan-jungle-fighters
+  - lex-death-korps-of-krieg
+  - lex-tanith-first-and-only
+  - lex-mordian-iron-guard
+  - lex-tallarn-desert-raiders
+  - lex-valhallan-ice-warriors
+redirects_found:
+  - "Imperial Guard Regiment -> Astra Militarum Regiment"
+  - "Cadian Shock Troops -> Cadian Shock Troopers"
+
+section_counts: { IV.T5.Ch16: 3, IV.T5.Ch17: 3, IV.T5.Ch18: 3 }
+section_count_note: >
+  Three Chapters at three Sections each, against the brief's 2-5. The Guard's material is
+  broad rather than deep — the regiment article is largely a taxonomy of regiment types,
+  and splitting it further would have produced Sections that restate one another.
+
+source_uncertainty_preserved:
+  - >
+    The Astra Militarum's strength is explicitly uncountable: "even the Departmento
+    Munitorum cannot place a figure on the number of Guardsmen under arms at any one time".
+    Ch16 reports that rather than quoting one of the loose estimates.
+  - >
+    Warship crew figures differ by two orders of magnitude between sources — a battleship
+    at "25,000 to 3,000,000 or more depending on sources". Ch18 keeps the range and the
+    "depending on sources" qualifier.
+
+contradictions:
+  registered: []
+  note: >
+    None. The crew-size spread in Ch18 is a source disagreement the article flags itself
+    rather than a claim in conflict, and it is reported inline instead of registered.
+
+subjects_registered:
+  - astra-militarum
+  - the-munitorum
+  - famous-regiments
+  - the-imperial-navy
+
+findings_worth_keeping:
+  - >
+    Guard regiments are deliberately not combined-arms: "Infantry Regiments are unlikely to
+    contain much or any heavy artillery, while tank regiments contain little to no
+    infantry. This was intentionally designed, as it prevents Traitor Regiments from having
+    full arsenals should they turn against the Emperor." Every tactical inefficiency in the
+    Astra Militarum follows from a decision about loyalty rather than warfare — the same
+    instinct as the thousand-Marine cap in IV.T4.Ch13.
+  - >
+    The Navy was separated from the Imperial Army after the Heresy. During the Great Crusade
+    the Legions held the invasion fleets; when half of them defected they defected with the
+    means to cross the galaxy and land armies. The Guard now cannot move without a Navy that
+    does not report to it, and the Navy's foremost duty is carrying an army it does not
+    command.
+  - >
+    Six of the seven regiments in Ch17 are defined by a catastrophe their world suffered —
+    Cadia destroyed, Catachan lethal by ecology, Krieg self-atomised, Tanith annihilated
+    mid-founding, Tallarn reduced to desert by the Iron Warriors in M31, Valhalla admired
+    for absorbing casualties. Only Mordian is famous for something it chose.
+
+process_errors:
+  - >
+    Ch16 §3 declared lex-astra-militarum-regiment without citing it, and Ch18 §2 cited
+    lex-imperial-navy without declaring it. Both caught by the declared-vs-cited check,
+    which tests in both directions.
+  - >
+    Registered the-imperial-navy with see_also "the-segmenta", a subject key I invented; the
+    real key is imperial-astrography. Caught by the see_also resolution check.
+  - >
+    The possessive check fired on Ch17 and twice on Ch18.
+
+verification:
+  validator: OK
+  warnings: 9
+  strict_build: clean
+  rendered_check: >
+    All three pages read from build/site. 4,877 words, 39 cross-references, 41 tooltips and
+    53 footnote references. No leaked markup, no Section without a definition. IV.T5.Ch17
+    carries only five tooltips because it is the owning Chapter for most of the regiment
+    names it uses.

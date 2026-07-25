@@ -753,7 +753,7 @@ abhumans:
     Human subspecies that evolved in isolation during the Age of Strife. The Imperium
     recognises 73 stable strains, 46 of them extinct, and its own record holds them no more
     prone to mutation than baseline humans.
-  aliases: [Abhuman, Ogryn, Ogryns, Ratling, Ratlings, Beastman, Beastmen, Felinid, Felinids, Kin, Squats, Halflings, Bone 'ead, Militarum Auxilla, Homo sapiens gigantus]
+  aliases: [Abhuman, Ogryn, Ogryns, Ratling, Ratlings, Beastman, Beastmen, Felinid, Felinids, Kin, Squats, Halflings, Bone 'ead, Militarum Auxilla, Homo sapiens gigantus, Slabs]
   see_also: [the-mutant-line, imperial-citizenship]
 
 the-mutant-line:
@@ -871,3 +871,38 @@ the-foundings:
     whose Chapters fell to mutation, heresy and rebellion.
   aliases: [Founding, Second Founding, Dark Founding, Cursed Founding, Sentinel Founding, Progenitor, Black Templars, Crimson Fists, Flesh Tearers, Carcharodons, Space Sharks, Blood Ravens, Sigismund, Pedro Kantor, Rynn's World, Arx Tyrannus, Sons of Medusa, Founding Chapter, Grey Knights]
   see_also: [the-loyalist-legions, gene-seed, the-codex-astartes-doctrine]
+
+astra-militarum:
+  name: the Astra Militarum
+  gloss: >
+    The Imperial Guard — billions of soldiers in millions of regiments, uncountable even by
+    the office that raises them, and deliberately denied combined arms so that a regiment
+    which rebels cannot fight a full war.
+  aliases: [Imperial Guard, Guardsmen, Militarum Regimentum, Planetary Defence Force, PDF, Battle Group, Astra Militarum Company]
+  see_also: [the-munitorum, the-commissariat]
+
+the-munitorum:
+  name: the Departmento Munitorum
+  gloss: >
+    The Administratum department that raises, trains, equips and moves the Imperial Guard —
+    and which the Guard itself regards as ineffective.
+  aliases: [Departmento Munitorum, Munitorium]
+  see_also: [astra-militarum, the-administratum]
+
+famous-regiments:
+  name: the renowned Guard regiments
+  gloss: >
+    Cadians, Catachans, the Death Korps of Krieg, the Tanith First and Only, Mordians,
+    Tallarns and Valhallans — six of the seven defined by a catastrophe their world
+    suffered, and one by a discipline it chose.
+  aliases: [Cadian Shock Troopers, Catachan Jungle Fighters, Death Korps of Krieg, Korpsmen, Tanith First and Only, Gaunt's Ghosts, Mordian Iron Guard, Tallarn Desert Raiders, Valhallan Ice Warriors]
+  see_also: [astra-militarum, death-worlds, bastion-worlds]
+
+the-imperial-navy:
+  name: the Imperial Navy
+  gloss: >
+    The Navis Imperialis — five Segmentum fleets, split from the Imperial Army after the
+    Heresy so that no force could both cross the galaxy and land an army, and crewed at the
+    bottom by bondsmen seized off the nearest world.
+  aliases: [Navis Imperialis, Imperialis Armada, Battlefleet, Battlefleet Solar, Battlefleet Gothic, Lord Admiral, Naval Security, Naval Armsmen, Fleet Commissariat, bondsmen, Press Gang, Hydraphur, Cypra Mundi]
+  see_also: [astra-militarum, imperial-astrography]

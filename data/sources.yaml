@@ -2828,3 +2828,135 @@ lex-blood-ravens:
     - "Dawn of War II: Retribution"
     - "Dawn of War"
     - "Dawn of War: Dark Crusade"
+
+lex-astra-militarum:
+  tier: 2
+  what: Lexicanum article "Astra Militarum"
+  url: https://wh40k.lexicanum.com/wiki/Astra_Militarum
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-astra-militarum.wikitext
+  cites:
+    - "Warhammer 40,000 5th Edition Rulebook"
+    - "Codex: Imperial Guard (5th Edition)"
+    - "Codex: Imperial Guard (5th Edition)"
+
+lex-astra-militarum-regiment:
+  tier: 2
+  what: Lexicanum article "Astra Militarum Regiment"
+  url: https://wh40k.lexicanum.com/wiki/Astra_Militarum_Regiment
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-astra-militarum-regiment.wikitext
+  cites:
+    - "Warhammer 40,000 5th Edition Rulebook"
+    - "Codex: Imperial Guard (3rd Edition, 2nd Codex)"
+    - "Imperial Armour Volume Three - The Taros Campaign"
+
+lex-departmento-munitorum:
+  tier: 2
+  what: Lexicanum article "Departmento Munitorum"
+  url: https://wh40k.lexicanum.com/wiki/Departmento_Munitorum
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-departmento-munitorum.wikitext
+  cites:
+    - "Imperial Munitorum Manual (Background Book)"
+    - "Dark Heresy Core Rulebook"
+    - "Codex: Eye of Terror (3rd Edition)"
+
+lex-imperial-navy:
+  tier: 2
+  what: Lexicanum article "Imperial Navy"
+  url: https://wh40k.lexicanum.com/wiki/Imperial_Navy
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-imperial-navy.wikitext
+  cites:
+    - "White Dwarf 140 (UK)"
+    - "Battlefleet Koronus"
+    - "Dark Heresy Core Rulebook"
+
+lex-battlefleet:
+  tier: 2
+  what: Lexicanum article "Battlefleet"
+  url: https://wh40k.lexicanum.com/wiki/Battlefleet
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-battlefleet.wikitext
+  cites:
+    - "Battlefleet Gothic Rulebook"
+    - "Gathering Storm: Rise of the Primarch Part 3"
+    - "Imperial Armour Volume Nine - The Badab War - Part One"
+
+lex-cadian-shock-troopers:
+  tier: 2
+  what: Lexicanum article "Cadian Shock Troopers"
+  url: https://wh40k.lexicanum.com/wiki/Cadian_Shock_Troopers
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-cadian-shock-troopers.wikitext
+  cites:
+    - "Codex: Imperial Guard (2nd Edition)"
+    - "Codex: Imperial Guard (3rd Edition, 1st Codex)"
+    - "Codex: Imperial Guard (3rd Edition, 2nd Codex)"
+
+lex-catachan-jungle-fighters:
+  tier: 2
+  what: Lexicanum article "Catachan Jungle Fighters"
+  url: https://wh40k.lexicanum.com/wiki/Catachan_Jungle_Fighters
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-catachan-jungle-fighters.wikitext
+  cites:
+    - "Codex: Imperial Guard (2nd Edition)"
+    - "Codex: Imperial Guard (3rd Edition, 1st Codex)"
+    - "Codex: Imperial Guard (3rd Edition, 2nd Codex)"
+
+lex-death-korps-of-krieg:
+  tier: 2
+  what: Lexicanum article "Death Korps of Krieg"
+  url: https://wh40k.lexicanum.com/wiki/Death_Korps_of_Krieg
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-death-korps-of-krieg.wikitext
+  cites:
+    - "Codex: Imperial Guard (5th Edition)"
+    - "Codex: Imperial Guard (5th Edition)"
+    - "Imperial Armour Volume Five - The Siege of Vraks - Part One"
+
+lex-tanith-first-and-only:
+  tier: 2
+  what: Lexicanum article "Tanith First and Only"
+  url: https://wh40k.lexicanum.com/wiki/Tanith_First_and_Only
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-tanith-first-and-only.wikitext
+  cites:
+    - "First and Only (Novel) — The Founding (Omnibus)"
+    - "First and Only (Novel) — The Founding (Omnibus)"
+    - "First and Only (Novel) — The Founding (Omnibus)"
+
+lex-mordian-iron-guard:
+  tier: 2
+  what: Lexicanum article "Mordian Iron Guard"
+  url: https://wh40k.lexicanum.com/wiki/Mordian_Iron_Guard
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-mordian-iron-guard.wikitext
+  cites:
+    - "Codex: Imperial Guard (2nd Edition)"
+    - "Codex: Imperial Guard (2nd Edition)"
+    - "Codex: Imperial Guard (2nd Edition)"
+
+lex-tallarn-desert-raiders:
+  tier: 2
+  what: Lexicanum article "Tallarn Desert Raiders"
+  url: https://wh40k.lexicanum.com/wiki/Tallarn_Desert_Raiders
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-tallarn-desert-raiders.wikitext
+  cites:
+    - "Desert Raiders (Novel)"
+    - "Desert Raiders (Novel)"
+    - "Codex: Imperial Guard (5th Edition)"
+
+lex-valhallan-ice-warriors:
+  tier: 2
+  what: Lexicanum article "Valhallan Ice Warriors"
+  url: https://wh40k.lexicanum.com/wiki/Valhallan_Ice_Warriors
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-valhallan-ice-warriors.wikitext
+  cites:
+    - "Codex: Imperial Guard (5th Edition)"
+    - "Codex: Imperial Guard (5th Edition)"
+    - "Imperial Armour - Imperial Vehicles for Warhammer 40,000"

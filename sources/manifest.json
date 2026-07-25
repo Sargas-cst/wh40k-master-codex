@@ -165,6 +165,24 @@
       "sha256": "f6f4cea8eec26e7b1c66e8287394eff5702c27e1c45ba8112aa50fc96b347c7e",
       "file": "sources/raw/lex-ash-wastes.wikitext"
     },
+    "lex-astra-militarum": {
+      "title": "Astra Militarum",
+      "url": "https://wh40k.lexicanum.com/wiki/Astra_Militarum",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 37847,
+      "sha256": "1b4a56a747c59ff9f8af2cec6d01b88dbfa7ab772f92a42f60afee2eb7ceae23",
+      "file": "sources/raw/lex-astra-militarum.wikitext"
+    },
+    "lex-astra-militarum-regiment": {
+      "title": "Astra Militarum Regiment",
+      "url": "https://wh40k.lexicanum.com/wiki/Astra_Militarum_Regiment",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 32389,
+      "sha256": "256fdc40a8e0b1e342c11899ad39af54f311daafc09ed13bbc0014e683b5f7d6",
+      "file": "sources/raw/lex-astra-militarum-regiment.wikitext"
+    },
     "lex-astronomican": {
       "title": "Astronomican",
       "url": "https://wh40k.lexicanum.com/wiki/Astronomican",
@@ -209,6 +227,15 @@
       "bytes": 8669,
       "sha256": "f532491d0a05fbad87d768e559a8ff4eea44c3d59cc9d2b0ae9360bf386f6d40",
       "file": "sources/raw/lex-baal.wikitext"
+    },
+    "lex-battlefleet": {
+      "title": "Battlefleet",
+      "url": "https://wh40k.lexicanum.com/wiki/Battlefleet",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 2916,
+      "sha256": "cb2c824e7ed340814758babe5b9ff8696046257b977c1ffd523b4527c908df8a",
+      "file": "sources/raw/lex-battlefleet.wikitext"
     },
     "lex-beastman": {
       "title": "Beastman",
@@ -392,6 +419,25 @@
       "sha256": "3cce99e5b218cb722ddafbaadb82bbd2668b3ed5208c45a323535b640a7d06c0",
       "file": "sources/raw/lex-cadian-gate.wikitext"
     },
+    "lex-cadian-shock-troopers": {
+      "title": "Cadian Shock Troopers",
+      "url": "https://wh40k.lexicanum.com/wiki/Cadian_Shock_Troopers",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 30346,
+      "sha256": "2f165a967d174f54d0bd21156cc95c58d055b54e9ce2d668d424f78c6f377606",
+      "file": "sources/raw/lex-cadian-shock-troopers.wikitext"
+    },
+    "lex-cadian-shock-troops": {
+      "title": "Cadian Shock Troops",
+      "url": "https://wh40k.lexicanum.com/wiki/Cadian_Shock_Troops",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 35,
+      "sha256": "e22ad7c9f7d48b426a1259b7450955e44bcd35e01a8ed53b95fd1007286cdfed",
+      "file": "sources/raw/lex-cadian-shock-troops.wikitext",
+      "redirect_to": "Cadian Shock Troopers"
+    },
     "lex-calastar": {
       "title": "Calastar",
       "url": "https://wh40k.lexicanum.com/wiki/Calastar",
@@ -445,6 +491,15 @@
       "bytes": 20341,
       "sha256": "cf8669ac077ab78d23954d89f3b51377281952911b676cb7bf7a88de18483e92",
       "file": "sources/raw/lex-catachan.wikitext"
+    },
+    "lex-catachan-jungle-fighters": {
+      "title": "Catachan Jungle Fighters",
+      "url": "https://wh40k.lexicanum.com/wiki/Catachan_Jungle_Fighters",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 28780,
+      "sha256": "562e97a81f8ab323874505debe0e422aee64b861068386d4eb296e42d01f1bdf",
+      "file": "sources/raw/lex-catachan-jungle-fighters.wikitext"
     },
     "lex-cegorach": {
       "title": "Cegorach",
@@ -645,6 +700,15 @@
       "sha256": "de26dda12d96b184a62be60b0d0db5530e5718ae00009748b77312046dce450c",
       "file": "sources/raw/lex-death-guard.wikitext"
     },
+    "lex-death-korps-of-krieg": {
+      "title": "Death Korps of Krieg",
+      "url": "https://wh40k.lexicanum.com/wiki/Death_Korps_of_Krieg",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 44124,
+      "sha256": "0c769368e96512c2d576c30ad537b1a15515247751c3d5ab6f30b6fc489c3b40",
+      "file": "sources/raw/lex-death-korps-of-krieg.wikitext"
+    },
     "lex-death-world": {
       "title": "Death World",
       "url": "https://wh40k.lexicanum.com/wiki/Death_World",
@@ -662,6 +726,15 @@
       "bytes": 36266,
       "sha256": "c6bbca0dad2908a0b03539bce91a417b209236c4123805c7f2b3a7b7adc4e400",
       "file": "sources/raw/lex-deathwatch.wikitext"
+    },
+    "lex-departmento-munitorum": {
+      "title": "Departmento Munitorum",
+      "url": "https://wh40k.lexicanum.com/wiki/Departmento_Munitorum",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 10190,
+      "sha256": "39f7dc8575f84dea46a050869da4b1b5417d4612f0f6ca2e517c28df4e713e9f",
+      "file": "sources/raw/lex-departmento-munitorum.wikitext"
     },
     "lex-divination": {
       "title": "Divination",
@@ -1170,6 +1243,25 @@
       "sha256": "dcd337aa4e760e40f6c506c4313918402dfafbddf9b023f055f7b620f29e43dc",
       "file": "sources/raw/lex-imperial-fists.wikitext"
     },
+    "lex-imperial-guard-regiment": {
+      "title": "Imperial Guard Regiment",
+      "url": "https://wh40k.lexicanum.com/wiki/Imperial_Guard_Regiment",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 38,
+      "sha256": "dcc9208af3d3be02895f9d3591d32378c0cd6a03ebdc8a742535614b3c5a45c3",
+      "file": "sources/raw/lex-imperial-guard-regiment.wikitext",
+      "redirect_to": "Astra Militarum Regiment"
+    },
+    "lex-imperial-navy": {
+      "title": "Imperial Navy",
+      "url": "https://wh40k.lexicanum.com/wiki/Imperial_Navy",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 23581,
+      "sha256": "5dbf009f054ed2fa5e5bf5b68b3a8cc584643ab18f04c0fa5c283b5ecff0d684",
+      "file": "sources/raw/lex-imperial-navy.wikitext"
+    },
     "lex-imperial-palace": {
       "title": "Imperial Palace",
       "url": "https://wh40k.lexicanum.com/wiki/Imperial_Palace",
@@ -1517,6 +1609,15 @@
       "bytes": 5410,
       "sha256": "1a46a3d5a523625f29261a89ba2358c0982b805d089a1856b249c7d9e793bf4d",
       "file": "sources/raw/lex-missionarus-galaxia.wikitext"
+    },
+    "lex-mordian-iron-guard": {
+      "title": "Mordian Iron Guard",
+      "url": "https://wh40k.lexicanum.com/wiki/Mordian_Iron_Guard",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 12261,
+      "sha256": "a6d57a4d175736cf558d1c64f901dee4b71cbf4b10fb86c9b209b170e6c81095",
+      "file": "sources/raw/lex-mordian-iron-guard.wikitext"
     },
     "lex-mutant": {
       "title": "Mutant",
@@ -2319,6 +2420,24 @@
       "sha256": "6886b7e94e07b4eb62abafb2ad5b32be51b1e0a651e7333534436d67c8bc6581",
       "file": "sources/raw/lex-t-au-empire.wikitext"
     },
+    "lex-tallarn-desert-raiders": {
+      "title": "Tallarn Desert Raiders",
+      "url": "https://wh40k.lexicanum.com/wiki/Tallarn_Desert_Raiders",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 12935,
+      "sha256": "99e36964debc8d623eee590b1974d8e6375360a7b3a5f2b2529281dc3406dc50",
+      "file": "sources/raw/lex-tallarn-desert-raiders.wikitext"
+    },
+    "lex-tanith-first-and-only": {
+      "title": "Tanith First and Only",
+      "url": "https://wh40k.lexicanum.com/wiki/Tanith_First_and_Only",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 35927,
+      "sha256": "2091dca070a8853e29b8c313345c05bde726f70ed78cad2c31100d317a32f48e",
+      "file": "sources/raw/lex-tanith-first-and-only.wikitext"
+    },
     "lex-tau-empire": {
       "title": "Tau Empire",
       "url": "https://wh40k.lexicanum.com/wiki/Tau_Empire",
@@ -2528,6 +2647,15 @@
       "sha256": "fe3e9ca38439572ba54244673f258fe8db172efb7747a08430c81a463c726c52",
       "file": "sources/raw/lex-untouchable.wikitext",
       "redirect_to": "Blank"
+    },
+    "lex-valhallan-ice-warriors": {
+      "title": "Valhallan Ice Warriors",
+      "url": "https://wh40k.lexicanum.com/wiki/Valhallan_Ice_Warriors",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 9433,
+      "sha256": "3f7e58c234ca625ebf2440855f2b992829eaef54cf6644b49363b85be7fb0309",
+      "file": "sources/raw/lex-valhallan-ice-warriors.wikitext"
     },
     "lex-vanus-temple": {
       "title": "Vanus Temple",
