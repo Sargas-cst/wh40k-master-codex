@@ -59,11 +59,17 @@
   --cx-notch: 14px;          /* corner cut on plates */
   --cx-hard: 5px;            /* hard shadow offset — no blur, ever */
 
-  /* Callout hues survive every livery unchanged: a disputed fact must look the
-     same whichever Chapter's colours the reader picked, or the signal moves. */
-  --cx-disputed:  #b8860b;
-  --cx-undefined: #6b7a8f;
-  --cx-verified:  #3d8168;
+  /* Callout hues survive every LIVERY unchanged: a disputed fact must look the
+     same whichever Chapter's colours the reader picked, or the signal moves with
+     the decoration. They do vary by light/dark SCHEME, which is a different
+     thing — the semantic stays put, only its lightness adapts to the stock.
+     Defaults here are the dark-scheme values; the light overrides are below.
+
+     Measured, not assumed: the single ochre that worked on near-black scored
+     2.77–2.94:1 on parchment across all 27 light liveries, failing every one. */
+  --cx-disputed:  #d6a94f;
+  --cx-undefined: #93a1b8;
+  --cx-verified:  #74ab93;
 }
 
 /* Dark scheme — the primary presentation. */
@@ -111,6 +117,12 @@
   --cx-metal:        color-mix(in srgb, var(--cx-t-metal) 70%, black);
   --cx-shadow:       color-mix(in srgb, var(--cx-t-ink-l) 88%, transparent);
   --cx-grain:        0.03;
+
+  /* Light-scheme callout hues: same semantics, darkened to clear contrast on
+     parchment. See the note in :root. */
+  --cx-disputed:  #7a5600;
+  --cx-undefined: #46536b;
+  --cx-verified:  #205344;
 
   --md-default-bg-color:           var(--cx-paper);
   --md-default-fg-color:           var(--cx-ink);
@@ -178,6 +190,19 @@ body::after {
 body, input, .md-typeset {
   font-family: var(--cx-serif);
   font-feature-settings: "kern" 1, "liga" 1;
+}
+
+/* Diagonal hatching across the whole page, at the threshold of visibility. Set as
+   a background-image on <body> rather than a fixed pseudo-element, so it
+   composites behind content without any stacking-context fight. Large flat
+   fields of colour are what made the first pass read as a documentation site. */
+body {
+  background-image: repeating-linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--cx-metal) 5%, transparent) 0 2px,
+    transparent 2px 10px
+  );
+  background-attachment: fixed;
 }
 
 .md-typeset {
@@ -541,9 +566,16 @@ body, input, .md-typeset {
 
 /* -------------------------------------------------------- 10. Chrome */
 
+/* The header's bottom edge IS a hazard strip, via border-image — so every page
+   in the codex carries the motif, not just the ones with callouts on them. */
 .md-header {
   box-shadow: none;
-  border-bottom: 4px solid var(--cx-accent);
+  border-bottom: 7px solid var(--cx-accent);
+  border-image: repeating-linear-gradient(
+    135deg,
+    var(--cx-accent) 0 9px,
+    color-mix(in srgb, var(--cx-accent) 22%, transparent) 9px 18px
+  ) 7;
 }
 .md-header__title {
   font-family: var(--cx-display);
@@ -740,6 +772,304 @@ body[data-cx-apparatus] .md-typeset h3 {
   border-top: 2px solid var(--cx-rule);
 }
 body[data-cx-apparatus] .md-typeset table:not([class]) { font-size: 0.76rem; }
+
+/* ==========================================================================
+   14. BRUTAL VOCABULARY — reusable aggression
+   ==========================================================================
+   These are the primitives the landing page and chapter furniture are built
+   from. They exist as classes rather than one-off styles so a Chapter can reach
+   for a stamp or a hazard band without new CSS.
+   ========================================================================== */
+
+/* Diagonal hazard band. The single most 40K gesture available in pure CSS. */
+.cx-hazard, .cx-home .cx-hazard {
+  height: 10px;
+  background-image: repeating-linear-gradient(
+    135deg,
+    var(--cx-accent) 0 10px,
+    transparent 10px 20px
+  );
+  border-block: 2px solid var(--cx-rule-strong);
+}
+.cx-hazard--thin { height: 6px; border-block-width: 1px; }
+
+/* Notched, riveted plate. Generalised from the callout treatment. */
+.cx-slab {
+  position: relative;
+  background: var(--cx-paper-raised);
+  border: 2px solid var(--cx-rule-strong);
+  box-shadow: var(--cx-hard) var(--cx-hard) 0 var(--cx-shadow);
+  clip-path: polygon(
+    0 0, calc(100% - var(--cx-notch)) 0, 100% var(--cx-notch),
+    100% 100%, var(--cx-notch) 100%, 0 calc(100% - var(--cx-notch))
+  );
+}
+.cx-slab::after {
+  content: "";
+  position: absolute; inset: 0; pointer-events: none;
+  background-image:
+    radial-gradient(circle at 10px 10px, var(--cx-metal) 0 2px, transparent 2.5px),
+    radial-gradient(circle at calc(100% - 10px) calc(100% - 10px), var(--cx-metal) 0 2px, transparent 2.5px);
+  opacity: .5;
+}
+
+/* Torn plate — an irregular edge, for when order should look broken. */
+.cx-torn {
+  clip-path: polygon(
+    0 0, 98% 1%, 100% 12px, 99% 47%, 100% 100%,
+    22px 100%, 2% 74%, 0 calc(100% - 18px), 1% 30%
+  );
+}
+
+/* Inspection stamp — rotated stencil, as struck onto a requisition form. */
+.cx-stamp {
+  display: inline-block;
+  font-family: var(--cx-display);
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cx-disputed);
+  border: 3px solid currentcolor;
+  padding: 0.35em 0.8em;
+  transform: rotate(-4deg);
+  opacity: 0.92;
+}
+.cx-stamp--verified { color: var(--cx-verified); transform: rotate(2.5deg); }
+
+/* Redaction. The Imperium censors its own records, and this codex is explicit
+   about what cannot be known — so a redaction bar is both thematically right
+   and functionally honest. Screen readers still get the text via aria-label
+   where it is used semantically. */
+.cx-redacted {
+  background: currentcolor;
+  color: var(--cx-ink);
+  padding: 0 0.2em;
+  user-select: none;
+}
+.cx-redacted > * { visibility: hidden; }
+
+/* Illuminated opening capital, for the first paragraph of a Chapter. */
+.md-typeset .cx-dropcap::first-letter {
+  font-family: var(--cx-title);
+  font-size: 3.6em;
+  font-weight: 700;
+  float: left;
+  line-height: 0.82;
+  margin: 0.06em 0.1em 0 0;
+  color: var(--cx-accent);
+}
+
+/* ==========================================================================
+   15. THE LANDING PAGE
+   ==========================================================================
+   Rendered by theme/overrides/home.html, which uses `template:` in the
+   homepage's frontmatter. It escapes the reading measure entirely: a 30rem
+   column is correct for a chapter and looks abandoned on a front door.
+   ========================================================================== */
+
+/* The landing page must escape TWO constraints, both of which silently clamped
+   it on the first attempt:
+     1. `.md-content__inner.md-typeset > *` sets the 30rem reading measure on every
+        direct child — including this wrapper.
+     2. Material's own `.md-grid` caps the whole content area at 61rem.
+   Widening only one of them does nothing visible, which is exactly how the first
+   version came out looking like a narrow, empty documentation page. */
+.md-main__inner:has(.cx-home) { max-width: 84rem; }
+.md-content__inner.md-typeset > .cx-home { max-width: none; }
+.md-main__inner:has(.cx-home) .md-content__inner { padding-block: 0 0; }
+
+.cx-home { margin: 0 auto; padding: 0 0 5rem; }
+.cx-home__inner > * { max-width: 34rem !important; }
+
+/* Landing selectors carry a `.cx-home` ancestor so they beat Material's own
+   element rules. `.md-typeset h1` scores 0,1,1 — a bare `.cx-hero__title` at
+   0,1,0 loses to it, which is why the hero title rendered at the chapter size. */
+.cx-home .cx-hero__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* --- hero ------------------------------------------------------------- */
+.cx-hero {
+  position: relative;
+  padding: 2.4rem 0 2rem;
+  border-bottom: 4px solid var(--cx-rule-strong);
+  margin-bottom: 2.6rem;
+}
+.cx-home .cx-hero__kicker {
+  font-family: var(--cx-display);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--cx-accent);
+  margin-bottom: 0.5rem;
+}
+.cx-home .cx-hero__title {
+  font-family: var(--cx-title);
+  font-weight: 700;
+  font-size: clamp(3rem, 8.5vw, 6.5rem);
+  line-height: 0.92;
+  margin: 0 0 0.4em;
+  color: var(--cx-ink);
+}
+.cx-home .cx-hero__title em {
+  display: block;
+  font-style: normal;
+  color: var(--cx-accent);
+}
+.cx-home .cx-hero__lede {
+  font-family: var(--cx-serif);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 32rem;
+  color: var(--cx-ink-soft);
+  border-left: 6px solid var(--cx-accent);
+  padding-left: 1rem;
+}
+.cx-home .cx-hero__stamp {
+  position: absolute;
+  top: 2rem; right: 0;
+}
+@media screen and (max-width: 59.9375em) {
+  .cx-hero__stamp { position: static; margin-top: 1.2rem; display: block; }
+}
+
+/* --- stat plates ------------------------------------------------------ */
+.cx-home .cx-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: 1rem;
+  margin: 0 0 3rem;
+}
+.cx-home .cx-stat { padding: 1rem 1.1rem 1.1rem; }
+.cx-home .cx-stat__n {
+  font-family: var(--cx-display);
+  font-weight: 800;
+  font-size: 2.6rem;
+  line-height: 1;
+  color: var(--cx-accent);
+  display: block;
+}
+.cx-home .cx-stat__l {
+  font-family: var(--cx-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cx-ink-muted);
+}
+
+/* --- section headings on the landing page ----------------------------- */
+.cx-home h2.cx-h {
+  font-family: var(--cx-display);
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--cx-ink);
+  margin: 0 0 1.2rem;
+  padding: 0.2em 0 0.3em 0.8rem;
+  border-left: 10px solid var(--cx-accent);
+  background: linear-gradient(90deg, color-mix(in srgb, var(--cx-accent) 14%, transparent), transparent 60%);
+}
+
+/* --- volume grid ------------------------------------------------------ */
+.cx-home .cx-vols {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.cx-vol {
+  display: block;
+  padding: 1rem 1.1rem 1.2rem;
+  text-decoration: none !important;
+  color: inherit;
+  transition: transform .08s linear;
+}
+.cx-vol:hover { transform: translate(-2px, -2px); }
+.cx-vol:nth-child(3n+2) { --cx-notch: 10px; }
+.cx-vol:nth-child(4n+3) { --cx-notch: 18px; }
+.cx-home .cx-vol__n {
+  font-family: var(--cx-display);
+  font-weight: 800;
+  font-size: 2.2rem;
+  line-height: 1;
+  color: var(--cx-accent);
+}
+.cx-home .cx-vol__t {
+  font-family: var(--cx-title);
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 1.1;
+  margin: 0.1em 0 0.3em;
+  color: var(--cx-ink);
+}
+.cx-home .cx-vol__d {
+  font-family: var(--cx-sans);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--cx-ink-muted);
+}
+.cx-home .cx-vol__meta {
+  font-family: var(--cx-mono);
+  font-size: 0.72rem;
+  color: var(--cx-metal);
+  margin-top: 0.6rem;
+  display: block;
+}
+
+/* --- the method panel: apparatus register, inside the landing page ---- */
+.cx-home .cx-method {
+  padding: 1.4rem 1.5rem 1.5rem;
+  margin-bottom: 3rem;
+  font-family: var(--cx-mono);
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: var(--cx-ink-soft);
+}
+.cx-home .cx-method h3 {
+  font-family: var(--cx-display);
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cx-accent);
+  margin: 0 0 0.9rem;
+}
+.cx-home .cx-method dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 0.5rem 1.1rem; }
+.cx-home .cx-method dt { color: var(--cx-accent); white-space: nowrap; }
+.cx-home .cx-method dd { margin: 0; }
+.cx-home .cx-method__foot {
+  margin-top: 1.1rem;
+  padding-top: 0.9rem;
+  border-top: 2px solid var(--cx-rule);
+  font-family: var(--cx-serif);
+  font-size: 0.95rem;
+  color: var(--cx-ink-muted);
+}
+
+/* --- warning slab ----------------------------------------------------- */
+.cx-home .cx-warn {
+  padding: 1.2rem 1.4rem 1.3rem;
+  margin-bottom: 3rem;
+  border-color: var(--cx-disputed) !important;
+}
+.cx-home .cx-warn h3 {
+  font-family: var(--cx-display);
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--cx-disputed);
+  margin: 0 0 0.6rem;
+}
+.cx-home .cx-warn p { font-family: var(--cx-serif); margin: 0; color: var(--cx-ink-soft); line-height: 1.6; }
 
 /* ------------------------------------- 13. Print and reduced motion */
 

@@ -1,0 +1,139 @@
+{# Extends main.html, NOT base.html. main.html carries the livery bootstrap in
+   `extrahead` and the picker in `scripts`; extending base.html directly bypasses
+   both, which left the landing page stuck on the neutral default palette with no
+   picker at all. #}
+{% extends "main.html" %}
+
+{#
+  The landing page.
+
+  Selected by `template: home.html` in book/index.md's frontmatter. It exists
+  because a 30rem reading measure is correct for a Chapter and looks abandoned
+  on a front door — the homepage needs to escape the column, not sit inside it.
+
+  The Volume list is hardcoded here. That is deliberate rather than lazy: the ten
+  Volumes are fixed by PROMPT.md and are not ours to reassign, so there is no
+  drift risk. Anything that CAN drift — chapter counts, subjects, sources — is
+  generated from the registries instead.
+#}
+
+{% block content %}
+<div class="cx-home">
+
+  <!-- ================= HERO ================= -->
+  <header class="cx-hero">
+    <div class="cx-hero__head">
+      <div>
+        <div class="cx-hero__kicker">Unofficial &#9670; Sourced &#9670; Out-of-universe</div>
+        <h1 class="cx-hero__title">Warhammer 40,000<em>Master Codex</em></h1>
+      </div>
+      <div class="cx-hero__stamp"><span class="cx-stamp">Not yet written</span></div>
+    </div>
+    <p class="cx-hero__lede">
+      A reference to the cosmology, geography, history, factions, wars, people and
+      materiel of the 41st Millennium — in which every load-bearing claim is traced
+      to a source, and every place the setting contradicts itself is recorded
+      rather than quietly resolved.
+    </p>
+  </header>
+
+  <div class="cx-hazard" role="presentation"></div>
+
+  <!-- ================= SCALE ================= -->
+  <section class="cx-stats" style="margin-top:2.4rem">
+    <div class="cx-slab cx-stat"><span class="cx-stat__n">10</span><span class="cx-stat__l">Volumes</span></div>
+    <div class="cx-slab cx-stat"><span class="cx-stat__n">49</span><span class="cx-stat__l">Titles</span></div>
+    <div class="cx-slab cx-stat"><span class="cx-stat__n">171</span><span class="cx-stat__l">Chapters</span></div>
+    <div class="cx-slab cx-stat"><span class="cx-stat__n">~250k</span><span class="cx-stat__l">Words, when complete</span></div>
+  </section>
+
+  <!-- ================= STATUS ================= -->
+  <div class="cx-slab cx-torn cx-warn">
+    <h3>&#9888; This codex is not yet written</h3>
+    <p>
+      The structure, the toolchain and the sourcing pipeline are in place. Almost no
+      content exists — nothing is drafted until it has been researched, and research
+      has barely begun. Pages that do not exist are not hidden behind placeholders;
+      they simply are not here.
+    </p>
+  </div>
+
+  <!-- ================= VOLUMES ================= -->
+  <h2 class="cx-h">The Ten Volumes</h2>
+  <section class="cx-vols">
+    {% set volumes = [
+      ("I",    "Cosmology &amp; Warp Mechanics", "The warp, the soul, the webway, the star gods.", "4 Titles &#183; 16 Chapters"),
+      ("II",   "The Galaxy",                     "Segmenta, the Great Rift, and the worlds that matter.", "3 Titles &#183; 10 Chapters"),
+      ("III",  "Chronological History",          "The War in Heaven to the 42nd Millennium.", "5 Titles &#183; 26 Chapters"),
+      ("IV",   "Imperial Codex",                 "The institutions of the Imperium of Man.", "9 Titles &#183; 31 Chapters"),
+      ("V",    "Chaos Codex",                    "The four powers, their realms and their servants.", "4 Titles &#183; 14 Chapters"),
+      ("VI",   "Xenos Codex",                    "Necrons, Aeldari, Orks, Tyranids, T&#8217;au and others.", "7 Titles &#183; 23 Chapters"),
+      ("VII",  "Chronicles of War",              "Crusades, sieges and campaigns.", "4 Titles &#183; 15 Chapters"),
+      ("VIII", "Codex Biographica",              "The Emperor, the primarchs, relics and god-engines.", "6 Titles &#183; 16 Chapters"),
+      ("IX",   "Compendium Imperialis",          "Arms, armour, vehicles and voidcraft.", "4 Titles &#183; 12 Chapters"),
+      ("A",    "Apparatus",                      "Publication history, index, glossary, reading paths.", "3 Titles &#183; 8 Chapters")
+    ] %}
+    {% for num, title, desc, meta in volumes %}
+      <div class="cx-slab cx-vol">
+        <span class="cx-vol__n">{{ num }}</span>
+        <div class="cx-vol__t">{{ title }}</div>
+        <div class="cx-vol__d">{{ desc }}</div>
+        <span class="cx-vol__meta">{{ meta }}</span>
+      </div>
+    {% endfor %}
+  </section>
+
+  <!-- ================= METHOD ================= -->
+  <h2 class="cx-h">How this is built</h2>
+  <div class="cx-slab cx-method">
+    <h3>// Sourcing protocol</h3>
+    <dl>
+      <dt>TIER 1</dt><dd>Official Games Workshop web pages. Authoritative where reachable.</dd>
+      <dt>TIER 2</dt><dd>Lexicanum. The working ceiling of this project.</dd>
+      <dt>TIER 3</dt><dd>Fandom wiki. Leads only — corroborated at tier 2 before use.</dd>
+      <dt>NEVER</dt><dd>Reddit, forums, fan essays. Not sources.</dd>
+    </dl>
+    <p class="cx-method__foot">
+      Printed codices, rulebooks and Black Library novels are the authoritative texts
+      for this setting, and they exist only in print. They were not consulted. Where a
+      wiki cites a printed page, that citation is reproduced and labelled
+      <strong>unverified by us</strong> — because nobody here opened that book. This
+      codex can confirm what a wiki claims. It cannot confirm whether the wiki is
+      right, and it never pretends otherwise.
+    </p>
+  </div>
+
+  <h2 class="cx-h">What makes it different</h2>
+  <div class="cx-stats" style="grid-template-columns:repeat(auto-fit,minmax(17rem,1fr))">
+    <div class="cx-slab cx-stat">
+      <span class="cx-stat__l" style="color:var(--cx-accent)">Traced</span>
+      <p style="font-family:var(--cx-serif);font-size:.92rem;line-height:1.55;margin:.5rem 0 0;color:var(--cx-ink-soft)">
+        Names, dates, numbers, sequences and spellings each carry a citation to a source
+        that was actually retrieved, with the date it was read.
+      </p>
+    </div>
+    <div class="cx-slab cx-stat">
+      <span class="cx-stat__l" style="color:var(--cx-accent)">Contradicted</span>
+      <p style="font-family:var(--cx-serif);font-size:.92rem;line-height:1.55;margin:.5rem 0 0;color:var(--cx-ink-soft)">
+        The setting contradicts itself deliberately. Every conflict found is logged in the
+        register rather than silently resolved in favour of one account.
+      </p>
+    </div>
+    <div class="cx-slab cx-stat">
+      <span class="cx-stat__l" style="color:var(--cx-accent)">Unfinished</span>
+      <p style="font-family:var(--cx-serif);font-size:.92rem;line-height:1.55;margin:.5rem 0 0;color:var(--cx-ink-soft)">
+        What could not be sourced is marked unverified, or cut. Nothing is padded and no
+        gap is bridged with a plausible-sounding invention.
+      </p>
+    </div>
+  </div>
+
+  <div class="cx-hazard cx-hazard--thin" role="presentation" style="margin-bottom:2rem"></div>
+
+  <!-- Markdown body from book/index.md renders below, if any. -->
+  <div class="cx-home__inner md-typeset">
+    {{ page.content }}
+  </div>
+
+</div>
+{% endblock %}

@@ -34,11 +34,23 @@ const chapters = new Map();   // id -> chapter
 const sectionIds = new Set(); // "chapterId.slug"
 const ownership = new Map();  // subject slug -> [chapter ids]
 
+// Chapters live under book/vol-*/. Anything at the top level of book/ is
+// apparatus — the homepage, the about page — and is not held to the Chapter
+// contract. It may still carry frontmatter: the homepage uses `template:` and
+// `hide:`, which are MkDocs meta and have nothing to do with Chapter IDs.
+const isChapterPath = (rel) => /^book\/vol-/.test(rel);
+
 for (const ch of parsed) {
   if (!ch.ok) {
-    // Non-Chapter pages (homepage, about) are allowed to have no frontmatter.
-    if (ch.error === 'no YAML frontmatter') continue;
+    if (!isChapterPath(ch.rel)) continue;
     err(ch.rel, ch.error);
+    continue;
+  }
+  // A file outside a Volume directory that nonetheless declares an id is a
+  // Chapter filed in the wrong place — worth saying so rather than ignoring.
+  if (!isChapterPath(ch.rel) && !ch.front.id) continue;
+  if (!isChapterPath(ch.rel) && ch.front.id) {
+    err(ch.rel, `declares Chapter id "${ch.front.id}" but is not under book/vol-*/`);
     continue;
   }
 
