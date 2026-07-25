@@ -1,0 +1,105 @@
+# THE DISPUTED FACTS REGISTER
+#
+# PROMPT.md §4: Warhammer 40,000 is deliberately unreliable. Contradiction is a real
+# property of the setting, and a reference work should RECORD it, not launder it.
+# Rule §3.4: record contradictions rather than resolving them silently.
+#
+# Prose that touches a disputed fact must say so, and name the entry here. The prose
+# carries the honest sentence; this file carries the structured record.
+#
+# Compiles into: Appendix A · Ch 6 — Disputed Facts Register.
+#
+# ---------------------------------------------------------------------------
+# Fields
+# ---------------------------------------------------------------------------
+# kind:       numerical | sequence | terminology | undefined | edition
+# status:     open            — genuinely unresolved; the prose must say so
+#             resolved        — looked like a conflict, wasn't; keep as a warning
+#             undefined       — no source defines it at all; do not invent one
+# reverified: whether WE have re-checked it against a retrieved source in THIS project
+# positions:  each claim, with the source that makes it
+#
+# ---------------------------------------------------------------------------
+# SEEDED FROM PROMPT.md §11 — ALL UNVERIFIED
+# ---------------------------------------------------------------------------
+# These are recorded so they are not rediscovered from scratch. The brief is explicit:
+# "Re-verify — do not take these on trust." Every entry below therefore has
+# reverified: false, and its only source is the project brief itself — NOT a retrieved
+# Lexicanum page. None of them may be used in prose until reverified: true.
+# ---------------------------------------------------------------------------
+
+astronomican-psyker-toll:
+  kind: numerical
+  status: resolved
+  reverified: false
+  seeded_from: PROMPT.md §11
+  summary: >
+    Search summaries make the Astronomican's cost look like an unresolvable three-way
+    conflict. Per the brief, the article itself is consistent: a standing choir of ten
+    thousand psykers, of whom up to one hundred die per day — a pool and an attrition
+    rate, not competing totals. The "thousand sacrificed daily" figure belongs to the
+    Golden Throne, a different subject entirely.
+  why_kept: >
+    Retained as the standing example of why one opens the page instead of trusting a
+    search summary. The failure it documents is a methodology failure, not a lore one.
+  positions: []
+
+gellar-field-spelling:
+  kind: terminology
+  status: open
+  reverified: false
+  seeded_from: PROMPT.md §11
+  summary: >
+    Both "Gellar field" and "Geller field" are in wide use; the brief reports that
+    Lexicanum and GW print materials differ. No basis for declaring one correct.
+  positions: []
+
+imperial-year-fraction:
+  kind: numerical
+  status: open
+  reverified: false
+  seeded_from: PROMPT.md §11
+  summary: >
+    The fraction of an Imperial year represented by a check number is given variously
+    as ~8.5 hours and ~8h45m; arithmetic on a standard year yields ~8h46m. Lexicanum
+    reportedly notes that no in-universe source specifies the division method at all.
+  positions: []
+
+the-veil-as-structure:
+  kind: undefined
+  status: undefined
+  reverified: false
+  seeded_from: PROMPT.md §11
+  summary: >
+    "The Veil" is widely used for the Materium/Immaterium boundary, but per the brief
+    no source defines it as a structure with measurable properties.
+  handling: >
+    Treat as metaphor, not mechanism. Do NOT assign it a thickness, composition or
+    location. Volume I Title 1 Chapter 4 is titled "The Veil & Metaphysical
+    Boundaries" and must be written around this absence rather than filling it.
+  positions: []
+
+cadian-pylon-dimensions:
+  kind: numerical
+  status: open
+  reverified: false
+  seeded_from: PROMPT.md §11
+  summary: >
+    The brief records the Cadian pylons as 500 metres high and 250 metres square, and
+    flags kilometre-scale figures as an error made in a prior draft.
+  handling: Re-verify the figures before any use. Do not restate the kilometre scale.
+  positions: []
+
+imperial-forms-of-address:
+  kind: undefined
+  status: undefined
+  reverified: false
+  seeded_from: PROMPT.md §11
+  summary: >
+    Individual titles (Magos, Canoness, Lord/Lady Inquisitor) are attested, but per the
+    brief no source describes a unified Imperial etiquette.
+  handling: >
+    Do not generalise individual titles into a system. Volume I Title 1 Chapter 2's
+    "Measures, Ranks & Forms of Address" Section must present attested titles as
+    attested titles, and say that no unified scheme is documented.
+  positions: []

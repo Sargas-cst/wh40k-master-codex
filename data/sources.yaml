@@ -1,0 +1,42 @@
+# EVERY SOURCE EVER RETRIEVED — defined exactly once, referenced by id from prose.
+#
+# Prose cites a source by writing [^<id>]. The build turns that into a rendered
+# footnote using the entry below, so a source's details live in one place and a
+# correction propagates to every Section that cites it.
+#
+# ---------------------------------------------------------------------------
+# The two levels, and why they are separate
+# ---------------------------------------------------------------------------
+# what / url / retrieved  ->  OUR EVIDENCE. We read this page, on this date.
+# cites                   ->  HEARSAY. The wiki's own citation of a print source
+#                             we cannot reach. Never presented as verified.
+#
+# Nothing may collapse these into "verified against official source". See
+# frame/schema.md §6 and PROMPT.md §5.
+# ---------------------------------------------------------------------------
+#
+# tier:  1 = official GW web (warhammer-community.com, GW product pages)
+#        2 = Lexicanum  (the working ceiling for this project)
+#        3 = Fandom 40k wiki  (LEADS ONLY — corroborate at tier 2 before use)
+#        0 = out-of-universe reference: Wikipedia, publisher metadata, GW IP policy
+#
+# raw:   path to the cached retrieval on local disk. GITIGNORED — the cache is
+#        never committed, because this repo is public. See frame/schema.md §8.
+#
+# ---------------------------------------------------------------------------
+# Template — copy, do not edit in place
+# ---------------------------------------------------------------------------
+#
+# lex-astronomican:
+#   tier: 2
+#   what: Lexicanum article "Astronomican"
+#   url: https://wh40k.lexicanum.com/wiki/Astronomican
+#   retrieved: 2026-07-25
+#   raw: sources/raw/lex-astronomican-2026-07-25.wikitext
+#   cites:
+#     - Warhammer 40,000 Rulebook 5th Ed., pg. 152
+#   notes: Article carries a [Conflicting Sources] tag on the psyker toll.
+#
+# ---------------------------------------------------------------------------
+
+# No sources retrieved yet. Retrieval is not yet verified — see PROMPT.md §5.

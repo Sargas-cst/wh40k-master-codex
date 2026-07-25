@@ -1,0 +1,40 @@
+# THE CANONICAL-HOME REGISTRY
+#
+# PROMPT.md §8: "Every subject has exactly ONE owning chapter that treats it in full.
+# Everywhere else gets a framing sentence and a cross-reference — never a retelling."
+#
+# This file is what makes that rule enforceable rather than aspirational. Two Chapters
+# declaring `owns:` on the same subject is a HARD BUILD FAILURE, not something anyone
+# has to remember across 171 Chapters.
+#
+# Prose writes [[s:cadia]] and the build resolves it to whichever Chapter owns `cadia`.
+# The indirection matters: if ownership moves, every inbound link follows automatically.
+# Prefer [[s:...]] over a hard Chapter ID whenever what you mean is "the place that
+# covers X".
+#
+# Ownership is declared in the CHAPTER's frontmatter (`owns:`). This file adds the
+# reader-facing material the index needs: what the subject is, and what else it is
+# called. The build cross-checks the two and reports any subject that is declared here
+# but owned by nobody, or owned by a Chapter but missing from here.
+#
+# Compiles into: Appendix A · Ch 4 — Master Index, and its Alternative Names section.
+#
+# ---------------------------------------------------------------------------
+# Template
+# ---------------------------------------------------------------------------
+#
+# cadia:
+#   name: Cadia
+#   gloss: Fortress world guarding the Cadian Gate; destroyed during the 13th Black Crusade.
+#   aliases: [Cadia Primus, the Cadian Gate]   # feeds index cross-references
+#   see_also: [eye-of-terror, black-crusade-13th]
+#
+# The worked example from PROMPT.md §8, for reference once these exist:
+#   Cadia the WORLD      -> II.T3.Ch8
+#   Cadia's DESTRUCTION  -> III.T5.Ch22
+#   the SIEGE of Cadia   -> VII.T2.Ch7
+# Three subjects, three owners, three IDs. Not one subject in three places.
+#
+# ---------------------------------------------------------------------------
+
+# No subjects registered yet.

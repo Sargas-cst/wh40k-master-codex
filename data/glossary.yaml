@@ -1,0 +1,32 @@
+# THE MASTER GLOSSARY — each term defined exactly once, everywhere.
+#
+# PROMPT.md §8: "Never restate a definition inline in twelve places — one correction
+# should propagate everywhere."
+#
+# Prose writes [[g:gellar-field]] and the build links it to this entry. The definition
+# exists here and nowhere else. A Section may of course *discuss* a term at length in
+# the Chapter that owns it; what it must not do is restate the one-line definition.
+#
+# Compiles into: Appendix A · Ch 5 — Consolidated Glossary.
+#
+# ---------------------------------------------------------------------------
+# Template
+# ---------------------------------------------------------------------------
+#
+# gellar-field:
+#   term: Gellar field
+#   definition: >
+#     The protective envelope that shields a warp-transiting vessel from the
+#     Immaterium and the entities within it.
+#   variants: [Geller field]        # see data/contradictions.yaml: spelling is disputed
+#   category: warp-technology       # institutions | ranks | high-gothic | warp-technology | ...
+#   sources: [lex-gellar-field]
+#   full_treatment: I.T1.Ch3        # the Chapter that discusses it properly, optional
+#
+# `variants` feeds Appendix A · Ch 5's "Disputed and Variant Usages" section. Where a
+# spelling or rendering is genuinely contested, record BOTH here and cross-reference
+# the contradictions register rather than quietly picking one.
+#
+# ---------------------------------------------------------------------------
+
+# No terms defined yet.

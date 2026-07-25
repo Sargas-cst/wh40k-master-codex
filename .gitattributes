@@ -1,0 +1,7 @@
+# Normalise to LF in the repository. The site builds on Linux in CI; committing CRLF
+# would make every cross-platform diff noisy for no benefit.
+* text=auto eol=lf
+
+# Cached wikitext is gitignored, but mark it binary-ish if it ever appears so that a
+# stray add cannot produce a 60,000-line diff.
+*.wikitext -text -diff

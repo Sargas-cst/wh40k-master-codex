@@ -1,0 +1,84 @@
+name: Build codex
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: 'Also deploy the built site to GitHub Pages'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: codex-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # -------------------------------------------------------------------------
+  # Validate, then build. Validation runs FIRST and fails the job on any
+  # dangling cross-reference, uncited draft Section or duplicated canonical
+  # home — so a structurally broken codex can never reach the site.
+  # -------------------------------------------------------------------------
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Validate structure
+        run: node frame/validate.mjs
+
+      - name: Prepare MkDocs input
+        run: node frame/build.mjs
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Build site
+        run: mkdocs build --strict
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/site
+
+  # -------------------------------------------------------------------------
+  # Deployment is OFF by default: the site stays unpublished until asked for.
+  #
+  # To publish once:      run this workflow manually with publish = true
+  #                       (Actions tab -> Build codex -> Run workflow)
+  # To publish on every push to main:
+  #                       replace the `if:` below with
+  #                         if: github.ref == 'refs/heads/main'
+  #
+  # GitHub Pages must also be enabled once, in repo Settings -> Pages, with
+  # Source set to "GitHub Actions".
+  # -------------------------------------------------------------------------
+  deploy:
+    needs: build
+    if: github.event_name == 'workflow_dispatch' && inputs.publish
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

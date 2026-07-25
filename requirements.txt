@@ -1,0 +1,9 @@
+# Site build (runs in GitHub Actions; Python is not required locally unless you want
+# live preview via `mkdocs serve`).
+#
+# Deliberately unpinned for the first build, because the current versions could not be
+# verified offline. PIN THESE to the exact versions from the first successful CI run —
+# an unpinned docs build is a site that breaks on someone else's schedule.
+
+mkdocs
+mkdocs-material
