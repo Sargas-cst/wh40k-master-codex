@@ -1034,3 +1034,40 @@ leagues-of-votann:
   variants: [Kin, Votann]
   category: institutions
   sources: [lex-dark-age-of-technology, lex-standard-template-construct]
+
+# --- Volume III Title 3 ----------------------------------------------------
+
+dead-world:
+  term: Dead World
+  definition: >
+    A world whose population has been extinguished, whether by war, virus-bombing or cyclonic
+    torpedo. Davin's classification after three loyal Primarchs sterilised it.
+  category: cosmology
+  sources: [lex-davin]
+
+dysjunction:
+  term: Dysjunction
+  definition: >
+    The catastrophic destabilisation of Commorragh caused by the partial awakening of Ynnead,
+    which opened Khaine's Gate and let daemons into the Dark City.
+  category: cosmology
+  sources: [lex-commorragh]
+
+malcador:
+  term: Malcador the Sigillite
+  definition: >
+    The Emperor's first minister, head of the Council of Terra, who took the Golden Throne while
+    the Emperor fought Horus and died doing it. He claimed the Primarchs were meant to purge each
+    other, and would not confirm whether he meant it.
+  variants: [Malcador, Malcador the Sigilite, the Sigillite]
+  category: institutions
+  sources: [lex-primarch, lex-golden-throne]
+
+nurgle:
+  term: Nurgle
+  definition: >
+    One of the four great powers of Chaos, whose domain is decay and disease. Its blade wounded
+    Horus on Davin's Moon and its influence rotted that moon's ecosystem.
+  variants: [Nurg-leth]
+  category: cosmology
+  sources: [lex-davin]

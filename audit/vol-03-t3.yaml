@@ -1,0 +1,140 @@
+# Audit trail — Volume III, Title 3
+title: "Volume III Title 3 — Great Crusade, Primarchs & Horus"
+covers: Chapters 11-17
+depth_band: full
+completed_on: 2026-07-25
+
+retrieval:
+  pages_added_this_pass:
+    - Emperor_of_Mankind
+    - Primarch
+    - Great_Crusade
+    - Imperial_Truth
+    - Ullanor_Crusade
+    - Interex
+    - Council_of_Nikaea
+    - Horus_Lupercal
+    - Davin
+    - Magnus
+    - Burning_of_Prospero
+    - Siege_of_Terra
+    - Golden_Throne
+    - Horus_Heresy
+    - Isstvan_V
+  already_cached_and_reused: [Unification_Wars, Thunder_Warriors, Techno-barbarian]
+  corrections_during_retrieval:
+    - '"Horus" resolved to a redirect; the article is under Horus Lupercal.'
+    - '"Magnus the Red" resolved to a redirect; the article is under Magnus.'
+
+chapters:
+  - id: III.T3.Ch11
+    owns: [the-unification-wars, the-thunder-warriors, the-imperial-truth]
+    sections: 5
+  - id: III.T3.Ch12
+    owns: [the-primarchs]
+    sections: 5
+  - id: III.T3.Ch13
+    owns: [the-great-crusade]
+    sections: 5
+  - id: III.T3.Ch14
+    owns: [davin]
+    sections: 6
+  - id: III.T3.Ch15
+    owns: [magnus-folly, council-of-nikaea]
+    sections: 6
+  - id: III.T3.Ch16
+    owns: [siege-of-terra]
+    sections: 5
+  - id: III.T3.Ch17
+    owns: [the-golden-throne]
+    sections: 5
+
+section_count_justification:
+  note: >
+    Two Chapters carry six Sections against the brief's 2-5, and the validator asks for a
+    justification here rather than silently allowing it.
+
+    III.T3.Ch14 (Davin) needs six because the corruption of Horus is a sequence of discrete
+    events with distinct causes — the world's neglect, the compliance that exported the warrior
+    lodge, the wound, the ritual, the content of the temptation, and the consequences — and
+    collapsing any two would obscure the causal chain that is the Chapter's whole argument.
+
+    III.T3.Ch15 needs six because it carries two subjects: the Council of Nikaea and Magnus's
+    Folly. Nikaea requires three Sections (the crisis, the Edict, and what was actually happening
+    behind it), and the breach requires three (the breach, Prospero, and the Edict's cost in the
+    war). Splitting them into two Chapters is not available — the Chapter list is fixed by the brief.
+
+contradictions_opened:
+  - id: thunder-warriors-fate
+    kind: sequence
+    note: >
+      An official history contradicted by a named survivor who, on that history's own terms,
+      could not be testifying. The sharpest kind of conflict in this project.
+  - id: primarch-scattering-cause
+    kind: sequence
+    note: Chaos Gods, a causal loop, or Erda. Two of the three have Chaos acting through agents.
+  - id: first-primarch-found
+    kind: sequence
+    note: Horus, or Alpharius by his own account — which the article itself calls dubious.
+  - id: emperors-final-words
+    kind: edition
+    note: >
+      A full valedictory address, or one word Dorn could not make out. What is at stake is
+      whether the Emperor consented to the Throne at all.
+  - id: who-stood-before-horus
+    kind: edition
+    status: resolved
+    note: >
+      Custodian, Space Marine or Guardsman — deliberately resolved by making all three true in
+      sequence. Recorded as resolved because the resolution is the notable fact.
+  - id: sanguinius-armour-chink
+    kind: edition
+    note: >
+      Present in the artbook, absent from the novelisation. It is what makes Sanguinius's death
+      causally necessary in the older telling.
+  - id: golden-throne-construction-date
+    kind: edition
+    note: >
+      Built after the wounding, or in use long before. This codex follows the later account
+      because the Webway Project requires it, and records the earlier one.
+
+judgement_calls:
+  - what: The Primarch article's arithmetic about the two lost Legions
+    decision: not reproduced
+    why: >
+      The article notes that two plus eleven equals thirteen, the Ultramarines' number, and
+      labels it "a coincidental side-note". That is fan speculation, tier 4, and reproducing it
+      would dress a coincidence as evidence.
+  - what: What went into the Primarchs
+    decision: attributed to its witnesses, never asserted
+    why: >
+      Every account — forbidden sciences, dark powers, the Molech portal — comes from a daemon, an
+      Aeldari farseer, or a marked speculation. Two hostile witnesses of different species
+      describing the same method is worth recording; it is not proof.
+  - what: Malcador's claim that the Primarchs were meant to purge each other
+    decision: recorded as a claim he would not confirm
+    why: >
+      The article states it may be a partial or total lie and that Malcador keeps its validity
+      ambiguous. The codex records that he said it, that he would not stand behind it, and that
+      it matches a documented earlier precedent. That is as far as the evidence goes.
+  - what: The convergence between Erebus's vision and Malcador's account
+    decision: stated, without asserting either
+    why: >
+      Erebus showed Horus a future in which the Emperor had discarded the Primarchs once they
+      outlived their usefulness. Malcador described that as the plan, and the Emperor called the
+      Primarchs tools and weapons. Three independent sources pointing the same way is a fact
+      about the record even when none of them can be certified.
+  - what: The Emperor's mercy to Horus
+    decision: reported as the sources give it
+    why: >
+      The Imperium teaches an execution. The sources record Horus begging to be killed before
+      Chaos could reclaim him, and the Emperor forgiving him and saying he would wait for him.
+      The Ecclesiarchy's version is not the sources' version, and the difference is the point.
+
+left_out:
+  - The Horus Heresy article (56 KB) and Isstvan V, retrieved but belonging to Volume VII's campaigns.
+  - The Siege of Terra's full order of battle, which runs to 160 lines.
+  - The Emperor of Mankind article's Transcendence and Appearance sections; the Emperor as a figure is Volume VIII Title 1.
+  - The Ullanor Crusade in detail — the Chapter needs only its outcome, the Warmastership.
+  - Individual Primarch biographies, which are Volume VIII.
+  - The Council of Nikaea's full attendee list (90 lines).

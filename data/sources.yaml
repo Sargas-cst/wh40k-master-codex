@@ -1772,3 +1772,138 @@ lex-interex:
     5.5 KB. The Interex are the Crusade's clearest counter-example: a human civilisation that
     had learned the truth about Chaos from the Aeldari and integrated a xenos species, met at
     the moment the Imperium was exterminating hundreds of species and denying Chaos existed.
+
+lex-davin:
+  tier: 2
+  what: Lexicanum article "Davin"
+  url: https://wh40k.lexicanum.com/wiki/Davin
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-davin.wikitext
+  cites:
+    - "False Gods (Novel), Chapter Two, pgs. 36-37"      # {{Fn|1a}} — compliance, the Legion taking the warrior-lodge, Kor Phaeron
+    - "False Gods (Novel), Chapter Three, pg. 60"        # {{Fn|1b}} — Temba's governorship, the planet's geography
+    - "False Gods (Novel), Chapters Five and Six"        # {{Fn|1c}} — the moon's transformation, the Glory of Terra
+    - "False Gods (Novel)"                               # {{Fn|1}} — the assault, Temba's death, the healing in the Serpent Lodge
+    - "Horus Rising (Novel), Part Three, Chapter Four, pg. 412"   # {{Fn|2}} — Erebus's report bringing Horus back
+    - "Ruinstorm (Novel)"                                # {{Fn|4}} — Davin as the Ruinstorm nexus, Madail, the world's destruction
+    - "White Dwarf 266 (UK), pg. 65"                     # {{Fn|9}} — former Feral World classification
+  notes: >
+    The article's own observation is the one this codex builds on: Davin's beast cults were
+    tolerated only because it was one unremarkable world among hundreds of thousands, and would
+    otherwise have stayed ignored. Its "(supposed) planetary compliance" parenthesis is the
+    source's, not ours.
+
+lex-horus-lupercal:
+  tier: 2
+  what: Lexicanum article "Horus Lupercal"
+  url: https://wh40k.lexicanum.com/wiki/Horus_Lupercal
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-horus-lupercal.wikitext
+  cites:
+    - "False Gods (Novel), Chapters 12-17"               # {{Fn|2a}} — the ritual, Sejanus, the visions, Magnus's failed intervention
+    - "False Gods (Novel), Chapter 21"                   # {{Fn|2c}} — Horus manipulating Russ into purging Prospero
+    - "The First Heretic (Novel)"                        # {{Fn|11}} — Lorgar's conspiracy; Warrior Lodges inside the Legions
+    - "Horus Rising (Novel)"                             # {{Fn|1}} — Horus as first rediscovered, the Luna Wolves
+  notes: >
+    43 KB, carries an incomplete-citation marker, a trivia block, and a Citation issues banner
+    on its own Sources section. Reached after "Horus" resolved to a redirect. Used here for the
+    corruption only; Horus as a figure is Volume VIII's subject.
+
+    The load-bearing detail — that Horus realised Sejanus was an impostor and accepted the
+    revelations anyway, "for unknown reasons" — is the article's own phrasing and is reproduced
+    exactly, because it is the point at which both the Imperium's account and a simple
+    ambition reading break down.
+
+lex-council-of-nikaea:
+  tier: 2
+  what: Lexicanum article "Council of Nikaea"
+  url: https://wh40k.lexicanum.com/wiki/Council_of_Nikaea
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-council-of-nikaea.wikitext
+  cites:
+    - "Index Astartes III, pgs. 41-43"                   # {{Fn|1}} — the Librarian crisis; the young Imperium's wariness
+    - "Collected Visions, pgs. 92-94"                    # {{Fn|3}} — the Edict itself; sorcery "not proven"
+    - "A Thousand Sons (Novel), Chapter Eighteen"        # {{Fn|2b}} — the Trial of the Thousand Sons
+    - "A Thousand Sons (Novel), Chapters Nineteen and Twenty"  # {{Fn|2d}} — the speech aimed at Magnus
+    - "Prospero Burns (Novel), Chapters Nine, Ten and Eleven"  # {{Fn|4}} — Hawser, the false Amon, the Primordial Annihilator's scheme
+    - "Know No Fear (Novel), pg. 349"                    # {{Fn|5}} — Guilliman at Calth; the suspiciously convenient timing
+    - "Garro: Legion of One (Audio Book), Track 7"       # {{Fn|6}} — Rubio recruited; Malcador's licence
+    - "Garro: Sword of Truth (Audio Book), Track 5"      # {{Fn|10}} — Khorarinn's threat
+    - "Salamander (Novel), pg. 91"                       # {{Fn|7}} — Nikaea unenforced by M41
+    - "The Serpent Beneath (Short Story)"                # {{Fn|13}} — the Alpha Legion's secret Librarians
+    - "The Horus Heresy Book Three, pg. 19"              # {{Fn|12}} — the date, 001.M31
+  notes: >
+    29 KB, carries a trivia block. Its Hidden Events section is the load-bearing material here:
+    the sorcerous attack that condemned the Thousand Sons was made by an aspect of the
+    Primordial Annihilator impersonating Magnus's equerry, and the real Thousand Sons knew
+    nothing of it.
+
+lex-magnus:
+  tier: 2
+  what: Lexicanum article "Magnus"
+  url: https://wh40k.lexicanum.com/wiki/Magnus
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-magnus.wikitext
+  cites:
+    - "War Zone Fenris: Wrath of Magnus - Echoes in Time"   # {{Fn|12a}} — the astral projection, the corridor, the breach, the banishment
+    - "False Gods (Novel), Chapters 15-16"               # {{Fn|2}} — entering Horus's mind to dissuade him
+    - "False Gods (Novel), Chapter 21"                   # {{Fn|2a}} — Horus converting Russ's arrest order into extermination
+    - "A Thousand Sons (Novel)"                          # {{Fn|6}} — the Burning of Prospero; the escape ritual with Ahriman
+    - "Betrayer (Novel), Chapter One, pgs. 16-20"        # {{Fn|7}} — Magnus as corporeal Warp energy in the Eye of Terror
+    - "The Crimson King (Novel), Chapter 23"             # {{Fn|16d}} — shattered into independently acting shards
+    - "The Serpent Beneath (Short Story)"                # {{Fn|13}} — the breach named Magnus's Folly
+  notes: >
+    36.8 KB, reached after "Magnus the Red" resolved to a redirect. Used here for the breach and
+    Prospero; Magnus as a Daemon Primarch is Volume VIII's subject and his part in the Siege of
+    Terra is III.T3.Ch16's.
+
+lex-siege-of-terra:
+  tier: 2
+  what: Lexicanum article "Siege of Terra"
+  url: https://wh40k.lexicanum.com/wiki/Siege_of_Terra
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-siege-of-terra.wikitext
+  cites:
+    - "Horus Heresy (Artbook Series), pgs. 352-353"       # {{Fn|1a}} — who was in the Sol System; Lorgar leading at Terra
+    - "Horus Heresy (Artbook Series), pgs. 362-369"       # {{Fn|1d}} — the armour chink; the ambiguity over who stood before Horus
+    - "Echoes of Eternity (Novel), Chapter 3"            # {{Fn|22a}} — the 70,000 defenders; Corswain's offer declined
+    - "Echoes of Eternity (Novel), Chapter 33"           # {{Fn|22e}} — Ka'Bandha and Sanguinius
+    - "The End and the Death: Volume II (Novel), 8:xxiii"   # {{Fn|26e}} — the armour chink absent
+    - "The End and the Death: Volume III (Novel), 9:ix"     # {{Fn|27a}} — Lupercal's Court; the Emperor addressing the Gods
+    - "The End and the Death: Volume III (Novel), 10:viii"  # {{Fn|27e}} — the fifth throne; the crown of red energy
+    - "The End and the Death: Volume III (Novel), 10:xii"   # {{Fn|27g}} — Ollanius Persson, the Athame, the lasgun
+    - "The End and the Death: Volume III (Novel)"           # {{Fn|27i}} — Loken's ruse; the Gods denying Horus; the mercy
+    - "Horus Heresy: Collected Visions, pgs. 366-367"    # {{Fn|32}} — the Throne ascension and the Emperor's valedictory speech
+    - "Ashes of the Imperium (Novel), Chapter 11"        # {{Fn|31f}} — Dorn's account: one word, "Now" or "No"
+  notes: >
+    104 KB — the largest article used in this codex — and carries a trivia block. Its own
+    Conflicting Sources section is unusually systematic: it separates NEW ADDITIONS by the Black
+    Library novels from DIRECT CHANGES to previous accounts, and lists the competing iterations of
+    the boarding of the Vengeful Spirit by edition. Three of this Chapter's recorded conflicts
+    come straight from that section, including the two irreconcilable versions of the Emperor's
+    final words.
+
+lex-golden-throne:
+  tier: 2
+  what: Lexicanum article "Golden Throne"
+  url: https://wh40k.lexicanum.com/wiki/Golden_Throne
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-golden-throne.wikitext
+  cites:
+    - "Horus Heresy: Collected Visions, pgs. 322-328"    # {{Fn|1a}} — the installation, the Webway war, Malcador's stint, the conversion
+    - "The End and the Death: Volume III (Novel), 10:xx" # {{Fn|18}} — Malcador's "he is the throne's only chance"
+    - "A Thousand Sons (Novel), Chapter 25"              # {{Fn|5}} — found in sunken ruins in Asia's deserts
+    - "Master of Mankind (Novel), Epilogue"              # {{Fn|7}} — the Emperor unsure whether the idea was his; Throne pre-Heresy
+    - "The Path of Heaven (Novel), Chapter 22"           # {{Fn|6}} — Dark Glass
+    - "Warhammer 40,000 5th Edition Rulebook, pg. 101"   # {{Fn|2a}} — stasis fields and psi-fusion beyond Imperial understanding
+    - "Warhammer 40,000 5th Edition Rulebook, pg. 129"   # {{Fn|2b}} — M41 failures beyond repair
+    - "Warhammer 40,000 6th Edition Rulebook, pg. 170"   # {{Fn|3}} — quadrupled psyker consumption by early M41
+    - "Ashes of the Imperium (Novel), Chapter 11"        # {{Fn|15a}} — reduced to 20% operation; the Adnector Concillium
+    - "Vaults of Terra: The Hollow Mountain (Novel), Chapter 2"   # {{Fn|10a}} — Rassilo's cabal and the High Lords involved
+    - "Vaults of Terra: The Carrion Throne (Novel), Chapter 25"   # {{Fn|11}} — the Haemonculus cornered and slain
+    - "Vaults of Terra: The Dark City (Novel), Chapter 22"        # {{Fn|13}} — the bargain, the Black Throne, "a few centuries"
+    - "Realm of Chaos: The Lost and the Damned, pg. 185"          # {{Fn|20}} — the Throne built AFTER the wounding
+  notes: >
+    Carries its own Conflicting Sources note on whether the Throne predates the Heresy; recorded
+    as golden-throne-construction-date. This codex follows the later account, because the Webway
+    Project and the War Within the Webway both require the Throne to exist already.

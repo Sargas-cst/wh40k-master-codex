@@ -448,5 +448,50 @@ the-great-crusade:
     Two centuries of reconquest, 798.M30 to 005.M31, fought by 4,300 expeditionary fleets:
     tyrants overthrown, religion outlawed, hundreds of species exterminated, and human worlds
     judged too mutated destroyed from orbit. Ended by a management structure.
-  aliases: [Great Crusade, Pax Imperialis, Void Harbour, Expeditionary Fleet, Ullanor Crusade, Interex, Anathame, Monarchia]
+  aliases: [Great Crusade, Pax Imperialis, Void Harbour, Expeditionary Fleet, Ullanor Crusade, Interex, Anathame, Monarchia, Hall of Devices, Kinebrach, Megarachnids]
   see_also: [the-unification-wars, the-primarchs, the-imperial-truth]
+
+davin:
+  name: Davin
+  gloss: >
+    The unremarkable feral world whose Warrior Lodges the Luna Wolves adopted as a harmless
+    soldiers' institution, and where Horus was wounded with a stolen Interex blade and 'healed'
+    into treason. Later destroyed by three loyal Primarchs, too late.
+  aliases: [Davin, Serpent Lodge, Warrior Lodge, Eugen Temba, Erebus, Hastur Sejanus, Madail]
+  see_also: [the-great-crusade, the-primarchs]
+
+council-of-nikaea:
+  name: the Council of Nikaea
+  gloss: >
+    The 001.M31 trial that acquitted Magnus of sorcery and then banned the practice across every
+    Legion. Its decisive incident was staged by Chaos in the Thousand Sons' name, and the Edict
+    disarmed the loyalists against daemons two years before daemons were unleashed on them.
+  aliases: [Council of Nikaea, Edict of Nikaea, Trial of the Thousand Sons, Hearing of the Thousands, Librarius]
+  see_also: [magnus-folly, the-great-crusade]
+
+magnus-folly:
+  name: Magnus's Folly
+  gloss: >
+    The breach Magnus tore in the Emperor's secret Webway corridor while carrying a warning about
+    Horus, using power offered by an anonymous voice in the Warp. It ruined the Webway Project,
+    the warning went undelivered, and Prospero burned for it.
+  aliases: [Magnus's Folly, Magnus' Folly, Burning of Prospero, Prospero, Choronzon]
+  see_also: [council-of-nikaea, davin]
+
+siege-of-terra:
+  name: the Siege of Terra
+  gloss: >
+    The Heresy's penultimate battle, fought by three loyal Legions because the other six had been
+    arranged elsewhere. Sanguinius held the Eternity Gate with 70,000; the Emperor won the duel by
+    persuading Horus to give up his power, and what he said afterwards is disputed.
+  aliases: [Siege of Terra, Eternity Gate, Lupercal's Court, Delphic Battlement, Ollanius Persson, Caecaltus Dusk, Athame, Ka'Bandha, Garviel Loken]
+  see_also: [magnus-folly, davin, the-primarchs]
+
+the-golden-throne:
+  name: the Golden Throne
+  gloss: >
+    A Dark Age device the Emperor found in Asian ruins and restored as a Webway portal control,
+    not as life support. It has run at 20% since the Siege, its psyker consumption has quadrupled,
+    and the Mechanicum bought it a few more centuries by selling billions of humans to Commorragh.
+  aliases: [Golden Throne, Dark Glass, Imperial Dungeon, Talisman of Seven Hammers, Adnector Concillium, Black Throne]
+  see_also: [siege-of-terra, magnus-folly, terra]

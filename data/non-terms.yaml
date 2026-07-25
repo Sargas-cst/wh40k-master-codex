@@ -33,3 +33,9 @@ Eta Plus: as above
 Murder: >
   the Imperial name for Urisarach, the Megarachnid world. Auto-marking it would turn every
   ordinary use of the word "murder" in the book into a link to a planet. Covered in III.T3.Ch13.
+None: >
+  appears bolded only in quoted planetary infobox fields ("Population: None"). A common English
+  word; auto-marking it would be nonsense.
+Dungeon: >
+  a chamber in a fortress-monastery (II.T3.Ch7) and part of the Imperial Dungeon (III.T3.Ch17).
+  Both are covered where they occur, and the bare word is far too common to mark.

@@ -788,3 +788,123 @@ first-primarch-found:
     - claim: Alpharius was first, landing on Terra — by his own dubious account.
       source: lex-primarch
       marker: "citation 40a — Discovery"
+
+emperors-final-words:
+  kind: edition
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume III Title 3 research
+  summary: >
+    The Emperor delivered a valedictory address before ascending the Golden Throne, or he spoke
+    a single word that Dorn could not make out.
+  reverification_note: >
+    The article sets the two accounts out side by side, and the disagreement is not about detail
+    but about whether he spoke at all.
+
+    In Horus Heresy: Collected Visions he is found alive, sustained by a fragment of strength
+    Malcador reserved for him, and speaks at length — naming Malcador, explaining that his
+    powers will return but his body will never heal, and instructing Dorn and Jaghatai to fight
+    on: "This is just the beginning of our crusade to save Humanity."
+
+    In The End and the Death: Volume III he does not speak during the deliberation at all. Leetu
+    suggests the Throne after looking at an Imperial Tarot deck, and Dorn's later account of the
+    only thing the Emperor said is: "He said one word to me as I took him to the seat. 'Now,' I
+    think He said. Or it might have been 'No.'"
+
+    What is at stake is consent. In one account the Emperor commands the Throne and founds the
+    Imperium's mission with his last breath; in the other he may have been refusing it, and the
+    man carrying him could not tell.
+  handling: >
+    Give both. Never quote the valedictory speech as the Emperor's settled last words, and never
+    assert that he consented to the Throne.
+  positions:
+    - claim: A full valedictory address, instructing Dorn and Jaghatai to fight on.
+      source: lex-siege-of-terra
+      marker: "citation 32 — Horus Heresy: Collected Visions, pgs. 366-367"
+    - claim: One word, 'Now' or possibly 'No', per Dorn's own account.
+      source: lex-siege-of-terra
+      marker: "citation 31f — Ashes of the Imperium (Novel), Chapter 11"
+
+who-stood-before-horus:
+  kind: edition
+  status: resolved
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume III Title 3 research
+  summary: >
+    A Custodian, a Space Marine, or the lone Guardsman Ollanius Pius stood between Horus and the
+    Emperor's broken body.
+  reverification_note: >
+    Long ambiguous across editions, and deliberately resolved by making every version true in
+    sequence: the article records that the Black Library novelisation "reveal all three to have
+    been true at different points". Caecaltus Dusk the Custodian, Garviel Loken the Space Marine,
+    and Ollanius Persson each intervene in turn.
+
+    Recorded here as resolved because the resolution is the notable fact — three incompatible
+    accounts of the setting's most famous act of defiance were reconciled by staging all three.
+  handling: >
+    Give the sequence rather than choosing a version, and note that the multiplicity was
+    intentional.
+  positions:
+    - claim: Ambiguous — a Custodian, a Space Marine, or the Guardsman Ollanius Pius.
+      source: lex-siege-of-terra
+      marker: "citation 1d — Horus Heresy (Artbook Series), pgs. 362-369"
+    - claim: All three, at different points.
+      source: lex-siege-of-terra
+      marker: "citation 27g — The End and the Death: Volume III (Novel), 10:xii"
+
+sanguinius-armour-chink:
+  kind: edition
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume III Title 3 research
+  summary: >
+    Sanguinius cracked a chink in Horus's armour which the Emperor later exploited, or he did not.
+  reverification_note: >
+    Listed among the article's own "Changes from Previous". The chink appears in the Horus Heresy
+    artbook and is absent from the Black Library novelisation. It matters because it is what
+    makes Sanguinius's death causally necessary in the older telling — his defeat enables his
+    father's victory. Without it the Great Angel dies having bought time and nothing more.
+  handling: >
+    Record both. Do not present the chink as the reason the Emperor was able to win.
+  positions:
+    - claim: Sanguinius cracked the armour; the Emperor exploited it.
+      source: lex-siege-of-terra
+      marker: "citation 1d — Horus Heresy (Artbook Series), pgs. 362-369"
+    - claim: Not present.
+      source: lex-siege-of-terra
+      marker: "citation 26e — The End and the Death: Volume II (Novel), 8:xxiii"
+
+golden-throne-construction-date:
+  kind: edition
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume III Title 3 research
+  summary: >
+    The Golden Throne was built after Horus mortally wounded the Emperor, or it was complete and
+    in use well before the Heresy.
+  reverification_note: >
+    The article carries this in its own Conflicting Sources section. In Realm of Chaos: The Lost
+    and the Damned the Throne is constructed AFTER the wounding — the Emperor "dead by any
+    ordinary understanding" but with enough living cells for his spirit to animate the body,
+    letting him speak and supervise its construction. Later sources have the Throne finished and
+    in use well before the Heresy, as the control station of the Webway Project.
+
+    The difference is not chronological trivia. On the older account the Throne is purpose-built
+    life support the Emperor designed for himself while dying. On the later one it is a recovered
+    Dark Age portal control that he was forced to remain on because Magnus's breach left a hole
+    only he could hold shut.
+  handling: >
+    Follow the later account, because the Webway Project and the War Within the Webway both
+    require the Throne to exist beforehand — but record the earlier version rather than discarding
+    it, and do not present the Throne as having been designed as life support.
+  positions:
+    - claim: Constructed after the wounding, under the dying Emperor's supervision.
+      source: lex-golden-throne
+      marker: "citation 20 — Realm of Chaos: The Lost and the Damned, pg. 185"
+    - claim: Complete and in use well before the Horus Heresy.
+      source: lex-golden-throne
+      marker: "citation 7 — Master of Mankind (Novel), Epilogue"
