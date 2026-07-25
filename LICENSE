@@ -1,0 +1,54 @@
+Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+=======================================================================
+
+Copyright (c) 2026 Sargas-cst
+
+The original prose, structure, toolchain and compiled apparatus of this work are
+licensed under the Creative Commons Attribution-ShareAlike 4.0 International
+License.
+
+Canonical legal code:
+    https://creativecommons.org/licenses/by-sa/4.0/legalcode
+Human-readable summary (not a substitute for the licence):
+    https://creativecommons.org/licenses/by-sa/4.0/
+
+You are free to share and adapt this material for any purpose, including
+commercially, provided that you give appropriate credit, indicate whether changes
+were made, and distribute your contributions under the same licence.
+
+The licence is applied here by reference, which is effective. The full legal code
+may be pasted into this file verbatim from the URL above if desired — doing so
+improves automatic licence detection but changes nothing about the terms.
+
+
+WHAT THIS LICENCE DOES NOT AND CANNOT COVER
+-------------------------------------------
+
+This licence applies **only to original expression created for this project**: the
+prose written here, the organising structure, and the code in `frame/`.
+
+It does not and cannot extend to:
+
+1. **Games Workshop's intellectual property.** Warhammer 40,000, Games Workshop,
+   and all associated names, marks, characters, races, factions, vehicles,
+   locations, units, illustrations and images are trademarks or registered
+   trademarks of Games Workshop Limited. None of it is licensed here, because none
+   of it is ours to license. This is an unofficial work with no affiliation with or
+   endorsement by Games Workshop Limited, and no challenge to their intellectual
+   property is intended.
+
+   Facts about a fictional setting are described here in original words. The
+   setting itself remains entirely Games Workshop's.
+
+2. **Third-party source material.** Text retrieved from Lexicanum, the Warhammer
+   40k Fandom wiki, or any other source carries its own licence and is not
+   relicensed by this file. Such material is not reproduced here: sources are
+   cited, and any quotation is short and attributed. The cached retrievals used
+   during research are held locally and are deliberately excluded from this
+   repository — see `frame/schema.md` section 8.
+
+3. **Short attributed quotations** reproduced under fair dealing / fair use, which
+   remain the property of their respective rights holders.
+
+Rights holders who believe something here requires correction or removal are asked
+to open an issue on the repository.

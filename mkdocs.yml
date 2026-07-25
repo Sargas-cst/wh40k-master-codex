@@ -14,10 +14,11 @@ site_description: >-
 docs_dir: build/docs
 site_dir: build/site
 
-# Set these once the GitHub repository exists.
-# repo_url: https://github.com/<owner>/<repo>
-# repo_name: <owner>/<repo>
-# edit_uri: edit/main/book/
+repo_url: https://github.com/Sargas-cst/wh40k-master-codex
+repo_name: Sargas-cst/wh40k-master-codex
+# Points at book/, not build/docs — an "edit this page" link must land on the source
+# a human wrote, never on generated output.
+edit_uri: edit/main/book/
 
 theme:
   name: material
@@ -87,9 +88,9 @@ extra:
   generator: false
   social: []
 
-# TODO(user decision): choose a licence for the original prose before publishing.
-# Left unstated here on purpose — it is not mine to pick.
 copyright: >-
-  Warhammer 40,000 and all associated marks are the property of Games Workshop Ltd.
-  This is an unofficial reference work, independently written, with no affiliation with
-  or endorsement by Games Workshop.
+  Original text and code licensed
+  <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
+  Warhammer 40,000 and all associated marks are the property of Games Workshop Ltd —
+  not covered by that licence. This is an unofficial reference work, independently
+  written, with no affiliation with or endorsement by Games Workshop.

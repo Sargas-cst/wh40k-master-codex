@@ -91,10 +91,19 @@ themselves.
 
 ## Open decisions
 
-- **A licence for the original prose has not been chosen.** Nothing in this repository
-  states one yet, so default copyright applies. This needs settling before publication.
 - Version pins in `requirements.txt` are deliberately loose pending the first successful
   CI run, then should be pinned exactly.
+- Retrieval has not yet been verified against Lexicanum, and no content may be written
+  until it has been.
+
+## Licence
+
+Original prose, structure and code: **[CC BY-SA 4.0](LICENSE)** — share and adapt with
+attribution, under the same licence.
+
+That licence covers only what was created here. It does not extend to Games Workshop's
+intellectual property, which is not ours to license, nor to third-party source material,
+which keeps its own terms. See [LICENSE](LICENSE) for the full scoping.
 
 ## Legal
 
