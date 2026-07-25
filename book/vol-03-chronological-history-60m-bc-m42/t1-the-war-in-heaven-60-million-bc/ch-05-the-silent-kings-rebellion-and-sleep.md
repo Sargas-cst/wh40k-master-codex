@@ -185,5 +185,5 @@ galaxy emptied by a plague, with no explanation of why they lived.
 Everything from [[III.T2.Ch6]] onward — the Dark Age of Technology, the Age of Strife, the
 Emperor, the Imperium — takes place in the ruins of this, on worlds seeded by the losers,
 above tombs whose occupants set an alarm for a date that has now passed. The Aeldari Empire
-that inherited it all fell too, and that fall is [[I.T4.Ch16]]'s. Humanity's rise happens in
-[[III.T2.Ch6]], and nothing in it is aware of any of this.
+that inherited it all fell too, and [[s:fall-of-the-eldar|that fall]] is treated with the survivors
+who carry it. Humanity's rise happens in [[III.T2.Ch6]], and nothing in it is aware of any of this.

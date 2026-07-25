@@ -45,9 +45,10 @@ Note what has happened here. A species whose worlds were destroyed did not lose 
 territory now moves. Their populations were named for the planets the vessels served, and the
 planets are gone while the names remain. Compare every Imperial world in this Volume: Terra
 cannot relocate, Cadia could not be evacuated, Catachan's settlements retreat across a surface
-they cannot leave. A craftworld has no surface to defend and no coordinates to besiege. The Fall
-that produced them is [[I.T3.Ch11]]'s and [[I.T4.Ch16]]'s; the Asuryani themselves,
-[[VI.T2.Ch4]].
+they cannot leave. A craftworld has no surface to defend and no coordinates to besiege.
+How they attach to the Webway is described under
+[[I.T3.Ch11.craftworld-gates]]; [[s:fall-of-the-eldar|the Fall that produced them]] is treated with
+the Asuryani who survived it, and what that Fall did to their gods is taken up in [[I.T4.Ch16]].
 
 ## Commorragh — A City in the Webway {#commorragh}
 
@@ -91,7 +92,7 @@ suns were taken from, and the Eldar did not care.**[^lex-commorragh]
 
 Whole star systems extinguished to light a city, recorded without a note of regret. The
 Illmaea predate the Fall, which makes them evidence about the Eldar empire rather than about its
-survivors — the decadence of [[I.T4.Ch16]] was not a late symptom.
+survivors — the decadence that ends in [[s:fall-of-the-eldar]] was not a late symptom.
 
 Its history is a list of things that could not be permanently done to it. The Imperium raided
 Commorragh and virtually wiped out the old aristocracy, which by M35 left Asdrubael Vect in total

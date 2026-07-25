@@ -175,9 +175,9 @@ massive proportions.**[^lex-age-of-strife]
 Read the causality in both directions, because it runs both ways. The storms that isolated
 humanity for five thousand years were the Aeldari Empire's decline registering in the
 Immaterium — [[III.T2.Ch6]] dates that decline's beginning to M18, the same millennium as the
-Warp Drive. And they ended in the single catastrophic event of the Fall itself, treated at
-[[I.T4.Ch16]]. Humanity spent Old Night suffering the symptoms of another species' decadence,
-and was released by that species' destruction.
+Warp Drive. And they ended in the single catastrophic event of
+[[s:fall-of-the-eldar|the Fall itself]]. Humanity spent Old Night suffering the symptoms of
+another species' decadence, and was released by that species' destruction.
 
 What that release made possible is the rest of this Volume. **As the Warp began to calm the
 Emperor was able to lead his Thunder Warriors, and later twenty Space Marine Legions, from

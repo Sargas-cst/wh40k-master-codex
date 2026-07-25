@@ -2,7 +2,8 @@
 id: VI.T2.Ch4
 name: Craftworld Aeldari & the Path
 status: stub
-owns: []
+owns:
+  - fall-of-the-eldar
 sections: []
 ---
 

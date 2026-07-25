@@ -210,5 +210,5 @@ directly: **the Age of Strife ended because the Aeldari Empire fell.** The warp 
 cut humanity into isolated worlds for five millennia subsided when Slaanesh was born and the
 Warp's turbulence resolved into the Eye of Terror. Humanity did not recover through its own
 efforts, and the Emperor's Great Crusade of [[III.T3.Ch13]] became possible because another
-species destroyed itself at the right moment. The Fall is [[I.T4.Ch16]]'s subject; the
-collapse it ended is [[III.T2.Ch9]]'s.
+species destroyed itself at the right moment. [[s:fall-of-the-eldar|That destruction]] is treated
+with the Aeldari; the collapse it ended is [[III.T2.Ch9]]'s.
