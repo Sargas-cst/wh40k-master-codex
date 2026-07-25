@@ -9,12 +9,12 @@ owns:
 sections:
   - name: The Asymmetry of Real Space
     slug: real-space
-    sources: [lex-real-space, lex-warp]
+    sources: [lex-real-space]
     unverified:
       - Any account of the physical laws of the Materium as a subject in its own right
   - name: The Nature of the Empyrean
     slug: the-empyrean
-    sources: [lex-warp, lex-soul, lex-chaos]
+    sources: [lex-warp, lex-soul]
   - name: Warp Travel and the Gellar Field
     slug: warp-travel
     sources: [lex-warp, lex-gellar-field]
@@ -128,4 +128,5 @@ entities.[^lex-gellar-field]
 
 On the spelling: both "Gellar" and "Geller" are in circulation, and neither is an error.
 Games Workshop has used the variant form itself.[^lex-gellar-field] *Gellar field* is the
-commoner rendering and the one used here.
+commoner rendering and the one used here; the variant is
+[[d:gellar-field-spelling|recorded in the register]] rather than corrected away.

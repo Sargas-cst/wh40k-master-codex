@@ -15,6 +15,7 @@ import { dirname, join, relative, sep } from 'node:path';
 import {
   ROOT, BOOK_DIR, loadChapters, loadRegistries, parseChapterId, depthFor,
   LINK_RE, CITE_RE,
+  glossaryForms, glossaryRegex, markGlossaryFirstUse,
 } from './lib.mjs';
 
 const OUT = join(ROOT, 'build', 'docs');
@@ -84,8 +85,23 @@ function resolveLinks(text, fromDocPath) {
       const entry = glossary[key];
       if (!entry) return label ?? key;
       const href = `${linkFrom(fromDocPath, APPENDIX.glossary)}#${key}`;
-      const def = attrEsc(entry.definition ?? '').slice(0, 240);
-      return `[${label ?? entry.term}](${href}){ .cx-term title="${def}" }`;
+      return `[${label ?? entry.term}](${href}){ .cx-term title="${tooltipFor(entry)}" }`;
+    }
+
+    // [[d:contradiction-key]] — a link to one ENTRY in the Disputed Facts Register,
+    // rather than to the register as a whole.
+    //
+    // Added because a `!!! disputed` callout is not the only honest way to surface a
+    // source conflict, and treating it as the only way was distorting the prose. Two
+    // Volume I Chapters handle a conflict in running argument — the deliberately
+    // undefined date, and the Gellar/Geller spelling — where a boxed callout would be
+    // heavier than the point deserves. This gives those passages a way to point the
+    // reader at the register entry, and gives the validator a way to see that they do.
+    if (target.startsWith('d:')) {
+      const key = target.slice(2);
+      if (!contradictions[key]) return label ?? key;
+      const href = `${linkFrom(fromDocPath, APPENDIX.disputed)}#${key}`;
+      return `[${label ?? APPENDIX_LABELS['disputed-facts']}](${href}){ .cx-xref }`;
     }
 
     // [[a:disputed-facts]] and friends. Added because the first hand-written
@@ -170,6 +186,58 @@ function attrEsc(s) {
   return esc(s).replace(/"/g, '&quot;').replace(/\s+/g, ' ').trim();
 }
 
+/**
+ * Tooltip text for a glossary entry.
+ *
+ * Glossary definitions are written for the appendix page, where there is room. A
+ * hover box has less, so an entry may carry an optional `short:` written for this
+ * purpose. Where it does not, the definition is used — truncated at a word boundary
+ * with an ellipsis, because the previous hard 240-character cut ended mid-word.
+ */
+const TOOLTIP_MAX = 220;
+
+function tooltipFor(entry) {
+  const raw = attrEsc(entry.short ?? entry.definition ?? '');
+  if (raw.length <= TOOLTIP_MAX) return raw;
+  const cut = raw.slice(0, TOOLTIP_MAX);
+  const lastSpace = cut.lastIndexOf(' ');
+  return `${(lastSpace > TOOLTIP_MAX * 0.6 ? cut.slice(0, lastSpace) : cut).replace(/[,;:.\s]+$/, '')}…`;
+}
+
+// ---------------------------------------------------------------------------
+// Glossary tooltips — marked here, not by hand
+// ---------------------------------------------------------------------------
+//
+// A drift audit found 95 registered terms against 13 hand-placed [[g:]] marks, all
+// of them in Volume I: the registry grew and the prose never caught up. Marking by
+// hand is a discipline that demonstrably does not hold across 171 Chapters, so the
+// build does it — first use per Chapter, generated from data/glossary.yaml, which
+// means it cannot fall out of step with the registry the way hand-marking did.
+//
+// FIRST use, not every use: there are 235 occurrences of "the Warp" in the drafted
+// book, and 235 dotted underlines would be a rash rather than an aid.
+//
+// [[g:...]] written by hand still wins. It is how an author marks a LATER mention
+// deliberately, and this pass leaves any term already marked in a Chapter alone.
+
+const glossaryByForm = glossaryForms(glossary);
+const glossaryPattern = glossaryRegex(glossaryByForm);
+
+/** Terms this Chapter must not auto-mark. */
+function skipKeysFor(ch) {
+  const skip = new Set();
+
+  // Already marked by hand somewhere in this Chapter.
+  for (const m of ch.body.matchAll(/\[\[g:([^\]|]+)/g)) skip.add(m[1].trim());
+
+  // The Chapter that treats a term in full does not need a tooltip for it: the
+  // surrounding prose IS the definition, and a hover box repeating it is noise.
+  for (const [key, entry] of Object.entries(glossary)) {
+    if (entry?.full_treatment === ch.front.id) skip.add(key);
+  }
+  return skip;
+}
+
 function hostOf(url) {
   try { return new URL(url).host.replace(/^www\./, ''); } catch { return url; }
 }
@@ -186,6 +254,8 @@ if (existsSync(BOOK_DIR)) {
 }
 
 let pages = 0;
+let tooltipsAdded = 0;
+let tooltipsByHand = 0;
 for (const ch of parsed) {
   const docPath = relative(BOOK_DIR, ch.file).split(sep).join('/');
   const outFile = join(OUT, docPath);
@@ -204,7 +274,22 @@ for (const ch of parsed) {
   }
 
   const heading = `# ${ch.front.name}\n\n`;
-  const resolved = resolveLinks(body, docPath);
+
+  // Auto-mark BEFORE resolution, while the text is still authored markdown: the
+  // protected-region rules are written against that shape, and emitting [[g:key|as
+  // written]] lets the existing resolver do the rest. Running afterwards would risk
+  // marking terms inside generated cross-reference labels and footnote definitions.
+  tooltipsByHand += [...body.matchAll(/\[\[g:/g)].length;
+  const { text: withTerms, marked } = ch.front.status === 'stub'
+    ? { text: body, marked: [] }
+    : markGlossaryFirstUse(body, {
+        byForm: glossaryByForm,
+        regex: glossaryPattern,
+        skipKeys: skipKeysFor(ch),
+      });
+  tooltipsAdded += marked.length;
+
+  const resolved = resolveLinks(withTerms, docPath);
   const hasH1 = /^\s*#\s+/m.test(body.split('\n').slice(0, 3).join('\n'));
 
   writeFileSync(outFile, front + (hasH1 ? '' : heading) + resolved + footnotesFor(resolved), 'utf8');
@@ -351,3 +436,4 @@ if (process.argv.includes('--specimen')) {
 }
 
 console.log(`  build/docs ready — ${pages} chapter page(s) + 4 compiled appendix pages`);
+console.log(`  glossary tooltips — ${tooltipsAdded} auto-marked (first use per Chapter) + ${tooltipsByHand} placed by hand`);

@@ -523,6 +523,31 @@ body {
 }
 .md-typeset a.cx-term:hover { border-bottom-color: var(--cx-accent); }
 
+/* Material's own tooltip box (content.tooltips), which is what a glossary term
+   actually shows on hover. Its defaults are a 10px rounded card with a soft drop
+   shadow — unreadably small at our pinned root size, and rounded and shadowed in a
+   design system that is neither. Restyled as a hard-edged slab. */
+.md-tooltip2 {
+  --md-tooltip-width: 22rem;
+}
+.md-tooltip2 .md-tooltip2__inner {
+  font-family: var(--cx-sans);
+  /* 0.7rem, not 0.8: the root is pinned to 125% on wide viewports, so 0.8rem lands
+     at full body size and the tooltip stops reading as secondary. */
+  font-size: 0.7rem;
+  line-height: 1.45;
+  color: var(--cx-ink);
+  background: var(--cx-paper);
+  border: 2px solid var(--cx-accent);
+  border-radius: 0;
+  box-shadow: 4px 4px 0 rgb(0 0 0 / 45%);
+  padding: 0.6em 0.8em;
+  text-align: left;
+}
+/* The arrow Material draws is a rounded nub; square it off to match the slab. */
+.md-tooltip2 .md-tooltip2__inner::before,
+.md-tooltip2 .md-tooltip2__inner::after { border-radius: 0; }
+
 .cx-seealso {
   font-family: var(--cx-sans);
   font-size: 0.75rem;

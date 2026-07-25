@@ -11,7 +11,7 @@ sections:
     contradictions: [ctan-discovery-accounts]
   - name: Necrodermis
     slug: necrodermis
-    sources: [lex-necrodermis, lex-c-tan]
+    sources: [lex-necrodermis]
   - name: Rewriting the Laws of Reality
     slug: reality
     sources: [lex-c-tan]

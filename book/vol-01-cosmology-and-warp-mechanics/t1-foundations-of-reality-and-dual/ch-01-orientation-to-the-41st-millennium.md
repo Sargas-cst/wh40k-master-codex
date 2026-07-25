@@ -47,8 +47,9 @@ written about the setting places events in the 41st and 42nd Millennia — yet
 Lexicanum's article on Imperial dating attaches a conflicting-sources marker to its own
 first use of "42nd millennium", noting that whether the period following the opening of
 the Great Rift is actually M42 has been *intentionally* put into doubt by Games
-Workshop.[^lex-imperial-dating-system] The setting declines to say what year it is. Not
-through carelessness, but as a choice.
+Workshop.[^lex-imperial-dating-system] The setting declines to say what year it is, and
+that refusal is [[d:is-it-really-m42|recorded here as a disputed fact]] in its own
+right. Not carelessness, but a choice.
 
 This has a consequence worth holding onto: contradiction here is not always a mistake
 to be corrected. Sometimes it is the content. A codex that resolved every conflict into

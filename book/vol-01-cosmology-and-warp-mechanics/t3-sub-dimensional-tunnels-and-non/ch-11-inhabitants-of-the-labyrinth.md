@@ -10,7 +10,7 @@ sections:
     sources: [lex-craftworld, lex-webway]
   - name: The Dark City
     slug: commorragh
-    sources: [lex-commorragh, lex-webway]
+    sources: [lex-commorragh]
   - name: Harlequins and the Black Library
     slug: black-library
     sources: [lex-black-library-of-chaos, lex-harlequin, lex-cegorach]

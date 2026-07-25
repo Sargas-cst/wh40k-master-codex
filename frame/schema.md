@@ -96,13 +96,51 @@ the `##` headings match the frontmatter `sections` list in name, slug and order.
 | `[[IV.T9.Ch31.emperors-beacon]]` | Section cross-reference | link + `#anchor` |
 | `[[IV.T9.Ch31\|the beacon]]` | Either, with custom link text | link, text = as given |
 | `[[s:cadia]]` | **Subject** cross-reference | link to whichever Chapter *owns* `cadia` |
-| `[[g:gellar-field]]` | Glossary term | link to the glossary entry |
+| `[[g:gellar-field]]` | Glossary term | link to the glossary entry, definition on hover |
+| `[[a:disputed-facts]]` | Appendix page | link to the compiled page |
+| `[[d:fenris-segmentum]]` | One **register entry** | link to that entry in the Disputed Facts Register |
 | `[^lex-astronomican]` | Citation | footnote, generated from `data/sources.yaml` |
 
 `[[s:...]]` is the important one. It is indirect: it points at a *subject*, and
 `data/subjects.yaml` says which Chapter owns that subject. If ownership ever moves,
 every inbound link follows automatically. Prefer it over a hard Chapter ID whenever
 what you mean is "the place that covers X".
+
+`[[d:...]]` exists because a `!!! disputed` callout is not the only honest way to show
+a reader a source conflict. Where a conflict belongs in running argument rather than in
+a box — a deliberately undefined date, a spelling variant — this links the passage to the
+register entry, and satisfies the rule in §11 that a declared contradiction must
+actually reach the reader.
+
+### Glossary terms are marked by the build, not by hand
+
+`[[g:...]]` may be written by hand, but it usually is not. The build marks the **first
+use per Chapter** of every registered term automatically, from `data/glossary.yaml`.
+
+This is not a convenience. Hand-marking was tried and it failed measurably: an audit
+after Volume II found 95 registered terms against 13 hand-placed marks, all 13 in
+Volume I. The registry grew and the prose never caught up, because remembering to mark
+a term is a discipline that does not survive 171 Chapters. Generating the marks means
+they cannot fall out of step with the registry.
+
+Rules the marker follows:
+
+- **First use only.** There are 235 occurrences of "the Warp" in the drafted book; 235
+  dotted underlines would be a rash, not an aid.
+- **`term` and `mark:`, never `variants`.** `variants` are aliases for the glossary page
+  and for search. As auto-link triggers they are dangerous — the first run used them and
+  produced 36 wrong links, pointing every adjectival "psychic" at *psyker*, every
+  "force" and "forces" at *psionics*, and every material "tithe" at the *psyker tithe*.
+  An entry with a second spelling genuinely worth marking lists it under `mark:`.
+- **Inflections are matched.** The registry holds "Tomb World" while the prose only ever
+  writes "Tomb Worlds"; plurals and a leading article are handled.
+- **A hand-written `[[g:]]` wins.** If a Chapter marks a term itself, the marker leaves
+  that term alone in that Chapter — which is how you mark a *later* mention on purpose.
+- **The owning Chapter is skipped.** Where `full_treatment` names this Chapter, the
+  surrounding prose *is* the definition and a tooltip repeating it is noise.
+- **Protected regions are never touched:** code, headings, admonition title lines,
+  footnote definitions, existing links and attribute blocks, and raw HTML. Admonition
+  *bodies* are fair game — they are prose the reader reads.
 
 **Every link is checked at build time and a dangling one fails the build.** For a
 reference work of ~500 Sections this is not fussiness; unvalidated cross-references
@@ -152,6 +190,25 @@ brief.
 `subjects.yaml` is also how the canonical-home rule becomes *enforceable*: two Chapters
 declaring `owns:` on the same subject is a hard build failure, not a matter of
 remembering.
+
+### Glossary entry fields
+
+```yaml
+gellar-field:
+  term: Gellar field          # the canonical form. AUTO-MARKED in prose.
+  variants: [Geller Field]    # aliases for the glossary page and search. NOT auto-marked.
+  mark: [Geller field]        # optional: extra forms that ARE safe to auto-mark.
+  short: >                    # optional: tooltip text, where the definition is too long.
+    The field that keeps a ship's crew alive in the Warp.
+  definition: >               # required: the full definition, for the appendix page.
+    A protective system used by warp-capable vessels …
+  category: technology
+  sources: [lex-gellar-field]
+  full_treatment: I.T1.Ch3    # the Chapter that treats it in full; skipped when marking.
+```
+
+`definition` is written for the appendix, where there is room. `short` exists for the
+hover box, which has less; without it the definition is truncated at a word boundary.
 
 ---
 
@@ -229,8 +286,35 @@ Derived from the Volume, per §7 of the brief. Not stored per file.
 | Medium | 350–450 | II, VII, and the rest of VIII |
 | Reference | 300–400 | IX, Appendix A |
 
-The validator **warns when a Section falls short of its band and stays quiet when it
-runs over.** That asymmetry is deliberate and comes straight from the brief: dense
-material is allowed to exceed, thin material must never be inflated to reach a number.
-A short Section is a signal to check whether the sources really support more — not an
-instruction to pad.
+**No band is enforced, in either direction.** The bands above are kept as a record of
+the original plan, and the validator reports the observed distribution, but they are not
+a target: a Section runs as long as its material warrants and no longer. There is no
+floor to reach and no ceiling to respect, and nothing is ever padded to hit a number.
+
+---
+
+## 11. The reverse direction — registered, but never used
+
+Passes 1–4 of the validator all check the same direction: that nothing in the prose
+points at something missing from a registry. That is a real guarantee, and it is why the
+build stayed green through two Volumes while drift accumulated in the other direction,
+invisibly. An audit found 23 defects of that kind, none of which any check could see:
+
+- a Section declaring a source it never cites, and a Section citing one it never declares
+- a contradiction declared in frontmatter that no prose ever shows the reader
+- a contradiction shown to the reader that no frontmatter declares
+- `full_treatment`, `see_also` and `positions[].source` pointers into nothing
+- glossary entries whose term appears in no Chapter at all
+
+Pass 5 checks all of it. The rules that matter for writing:
+
+**A Section's `sources:` is exactly the set of sources that Section cites.** Not
+"consulted", not "relevant" — cited. Both directions are errors, because the frontmatter
+*is* the audit trail and an audit trail that disagrees with the text is worse than none.
+
+**A declared contradiction must reach the reader**, by a callout titled `… — <key>` or by
+a `[[d:<key>]]` link. Either counts; see §5.
+
+**Registered-but-unused is a warning, not an error.** Recording a conflict or retrieving
+a source before the Chapter that will carry it is legitimate — Volume II opened conflicts
+due in Volume IV. Forgetting is not, so the count stays visible in every build.

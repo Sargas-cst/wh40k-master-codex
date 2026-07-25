@@ -718,11 +718,11 @@ ultramar:
   full_treatment: II.T2.Ch6
 
 tetrarch:
-  term: Tetrarch of Ultramar
+  term: Tetrarch
   definition: >
     One of four governors appointed by Guilliman over the northern, southern, eastern and
     western sectors of Ultramar; two of the current four are not Ultramarines.
-  variants: [Tetrarchy]
+  variants: [Tetrarch of Ultramar, Tetrarchy]
   category: institutions
   sources: [lex-ultramar]
 

@@ -13,7 +13,7 @@ sections:
     sources: [lex-webway-project, lex-veil]
   - name: The Breach and the Throne
     slug: the-breach
-    sources: [lex-webway-project, lex-webway]
+    sources: [lex-webway-project]
 ---
 
 # Humanity's Golden Conduit

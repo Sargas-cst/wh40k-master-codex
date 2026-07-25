@@ -159,6 +159,154 @@ export function loadChapters() {
   return walk(BOOK_DIR).map(parseChapter);
 }
 
+// ---------------------------------------------------------------------------
+// Glossary surface forms — how a registered term actually appears in prose
+// ---------------------------------------------------------------------------
+//
+// A drift audit found three terms that looked unused and were not: the registry
+// holds "Tomb World" while the prose only ever writes "Tomb Worlds"; "Tetrarch of
+// Ultramar" against a prose that says plain "Tetrarch"; "Dolmen Gate" against
+// "dolmen gates". Matching the registered string alone misses the majority of real
+// occurrences, so both the validator and the build expand each entry into the forms
+// a writer would actually type.
+
+const LEADING_ARTICLE = /^(?:the|a|an)\s+/i;
+
+/** Plural of the final word only. "Tomb World" -> "Tomb Worlds". */
+function pluralise(phrase) {
+  const m = /^(.*?)([\p{L}][\p{L}'’]*)$/u.exec(phrase);
+  if (!m) return [];
+  const [, head, last] = m;
+  if (/(?:s|x|z|ch|sh)$/i.test(last)) return [`${head}${last}es`];
+  if (/[^aeiou]y$/i.test(last)) return [`${head}${last.slice(0, -1)}ies`];
+  return [`${head}${last}s`];
+}
+
+const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+/**
+ * Map of lowercased surface form -> glossary key.
+ *
+ * Forms shorter than three characters are dropped: they generate far more false
+ * positives in running prose than they could ever be worth.
+ *
+ * `variants` is deliberately EXCLUDED by default, because it answers a different
+ * question. As an alias for the glossary page and for search, "psychic" for psyker
+ * or "the Force" for psionics is helpful. As an auto-link trigger it is a disaster:
+ * the first run of this marker used variants and produced 36 wrong links — every
+ * adjectival "psychic", every "force" and "forces" in a book about warfare, and
+ * every material "tithe" pointed at the psyker tithe.
+ *
+ * An entry that genuinely has a second spelling worth marking says so explicitly
+ * with `mark: [...]`. Passing `variants: true` includes them anyway, which is what
+ * the validator wants when asking the looser question "does this entry appear in
+ * the book under ANY of its names?".
+ */
+export function glossaryForms(glossary, { variants = false } = {}) {
+  const byForm = new Map();
+  for (const [key, entry] of Object.entries(glossary)) {
+    const base = [
+      entry?.term ?? key,
+      ...(entry?.mark ?? []),
+      ...(variants ? (entry?.variants ?? []) : []),
+    ].filter(Boolean).map(String);
+    const forms = new Set();
+    for (const b of base) {
+      for (const variant of new Set([b.trim(), b.trim().replace(LEADING_ARTICLE, '')])) {
+        if (variant.length < 3) continue;
+        forms.add(variant);
+        for (const p of pluralise(variant)) forms.add(p);
+      }
+    }
+    for (const form of forms) {
+      const norm = form.toLowerCase();
+      // First entry to claim a form keeps it. A genuine collision across two
+      // entries is a registry error, and Pass 4 already fails the build on it.
+      if (!byForm.has(norm)) byForm.set(norm, key);
+    }
+  }
+  return byForm;
+}
+
+/** One alternation over every surface form, longest first so "C'tan Shard" beats "C'tan". */
+export function glossaryRegex(byForm) {
+  const alternatives = [...byForm.keys()]
+    .sort((a, b) => b.length - a.length || a.localeCompare(b))
+    // The sources are inconsistent about which apostrophe they use, and so is prose
+    // written from them. Accept either for any form containing one.
+    .map((f) => escapeRe(f).replace(/['’]/g, "['’]"));
+  return new RegExp(`(?<![\\p{L}\\p{N}\\-])(${alternatives.join('|')})(?![\\p{L}\\p{N}\\-])`, 'giu');
+}
+
+/**
+ * Byte ranges of a body that are not running prose, and must never be marked up:
+ * code, headings, admonition title lines, generated footnote definitions, our own
+ * link syntax, existing links, attribute blocks and raw HTML.
+ *
+ * Admonition BODIES are deliberately not protected — they are prose the reader
+ * reads, and a term's first use is often inside a disputed-facts callout.
+ */
+export function protectedRanges(text) {
+  const ranges = [];
+  const add = (re) => {
+    for (const m of text.matchAll(re)) ranges.push([m.index, m.index + m[0].length]);
+  };
+  add(/```[\s\S]*?```/g);
+  add(/`[^`\n]*`/g);
+  add(/^#{1,6}\s.*$/gm);
+  add(/^\s*!!!.*$/gm);
+  add(/^\s*\[\^[^\]]+\]:.*$/gm);
+  add(/\[\[[^\]]*\]\]/g);
+  add(/\[[^\]\n]*\]\([^)\n]*\)/g);
+  add(/\{[^}\n]*\}/g);
+  add(/<!--[\s\S]*?-->/g);
+  add(/<[^>\n]+>/g);
+  return ranges.sort((a, b) => a[0] - b[0]);
+}
+
+const inAnyRange = (i, ranges) => ranges.some(([s, e]) => i >= s && i < e);
+
+/**
+ * Which glossary keys does this body actually contain, ignoring protected regions?
+ * Used by the validator to report registry entries no Chapter ever mentions.
+ */
+export function glossaryKeysIn(body, byForm, regex) {
+  const ranges = protectedRanges(body);
+  const found = new Set();
+  for (const m of body.matchAll(regex)) {
+    if (inAnyRange(m.index, ranges)) continue;
+    const key = byForm.get(m[1].toLowerCase());
+    if (key) found.add(key);
+  }
+  return found;
+}
+
+/**
+ * Wrap the FIRST occurrence of each glossary term in `[[g:key|as written]]`.
+ *
+ * First use per Chapter, not every use: 235 occurrences of "the Warp" across the
+ * book do not want 235 dotted underlines. `skipKeys` carries the terms this Chapter
+ * must leave alone — ones an author marked by hand, and the term's own
+ * `full_treatment` Chapter, where the surrounding prose IS the definition.
+ */
+export function markGlossaryFirstUse(body, { byForm, regex, skipKeys = new Set() }) {
+  const ranges = protectedRanges(body);
+  const done = new Set();
+  const edits = [];
+
+  for (const m of body.matchAll(regex)) {
+    const key = byForm.get(m[1].toLowerCase());
+    if (!key || done.has(key) || skipKeys.has(key)) continue;
+    if (inAnyRange(m.index, ranges)) continue;
+    done.add(key);
+    edits.push({ at: m.index, len: m[0].length, text: `[[g:${key}|${m[0]}]]` });
+  }
+
+  let out = body;
+  for (const e of edits.reverse()) out = out.slice(0, e.at) + e.text + out.slice(e.at + e.len);
+  return { text: out, marked: [...done] };
+}
+
 /**
  * Collect every [[...]] and [^...] in a body.
  * `offset` is the chapter's bodyOffset, so reported lines point into the real file.

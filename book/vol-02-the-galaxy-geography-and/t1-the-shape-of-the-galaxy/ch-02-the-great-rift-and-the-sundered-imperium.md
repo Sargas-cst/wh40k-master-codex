@@ -10,7 +10,7 @@ sections:
     sources: [lex-great-rift, lex-noctis-aeterna]
   - name: Imperium Sanctus
     slug: sanctus
-    sources: [lex-imperium-sanctus, lex-great-rift]
+    sources: [lex-imperium-sanctus, lex-imperium-nihilus]
   - name: Imperium Nihilus
     slug: nihilus
     sources: [lex-imperium-nihilus, lex-nachmund-gauntlet]

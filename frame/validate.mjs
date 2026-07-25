@@ -12,7 +12,8 @@
 
 import {
   loadChapters, loadRegistries, parseChapterId, depthFor, BANDS,
-  SLUG_OK, collectMarkup,
+  SLUG_OK, collectMarkup, CITE_RE,
+  glossaryForms, glossaryRegex, glossaryKeysIn,
 } from './lib.mjs';
 
 const strict = process.argv.includes('--strict');
@@ -186,6 +187,13 @@ for (const ch of chapters.values()) {
       if (!(term in glossary)) err(at, `[[g:${term}]] — no such glossary term in data/glossary.yaml`);
       continue;
     }
+    if (target.startsWith('d:')) {
+      const key = target.slice(2);
+      if (!(key in contradictions)) {
+        err(at, `[[d:${key}]] — no such contradiction in data/contradictions.yaml`);
+      }
+      continue;
+    }
     if (target.startsWith('a:')) {
       const APPENDIX_NAMES = ['glossary', 'master-index', 'disputed-facts', 'bibliography'];
       const key = target.slice(2);
@@ -321,6 +329,153 @@ for (const ch of chapters.values()) {
 }
 
 // ---------------------------------------------------------------------------
+// Pass 5 — the reverse direction: registered, but never used
+// ---------------------------------------------------------------------------
+//
+// Passes 1–4 check one direction only: that nothing in the prose points at something
+// missing from a registry. That is why the build stayed green while real drift
+// accumulated — a stale frontmatter entry, a contradiction recorded and never
+// surfaced, a source declared for a Section that never cites it. All of it was
+// invisible because it fails in the OTHER direction.
+//
+// An audit by hand found 23 such defects across the first two Volumes. This pass
+// exists so the twenty-sixth Chapter cannot quietly become the hundred-and-first.
+
+// --- a link must not span a line break ------------------------------------
+// LINK_RE deliberately forbids newlines inside a [[...]], so a link whose display text
+// wraps is not a link at all: it is invisible to the resolver AND to every check that
+// walks links, and it reaches the reader as literal double brackets. That happened
+// once, to a [[d:...]] added in this very pass, and nothing caught it — the build was
+// green and the page showed raw markup. Cheap to detect, so detect it.
+for (const ch of chapters.values()) {
+  ch.body.split(/\r?\n/).forEach((line, i) => {
+    const opens = (line.match(/\[\[/g) ?? []).length;
+    const closes = (line.match(/\]\]/g) ?? []).length;
+    if (opens !== closes) {
+      err(`${ch.rel}:${ch.bodyOffset + i + 1}`,
+        `unbalanced [[ ]] on this line — a link cannot span a line break, and one that does is silently not a link`);
+    }
+  });
+}
+
+// --- a Section's declared sources must be the sources it actually cites -----
+// schema.md §6: `sources` on a Section is the list of sources that Section cites.
+// Not "consulted", not "relevant" — cited. If the two lists disagree, one of them is
+// wrong, and the audit trail is only as good as the agreement.
+for (const ch of chapters.values()) {
+  if (ch.front.status === 'stub') continue;
+  (ch.front.sections ?? []).forEach((sec, i) => {
+    const at = `${ch.rel} §${i + 1} ${sec.slug ?? ''}`.trimEnd();
+    const bodyText = ch.sections[i]?.text ?? '';
+    const cited = new Set([...bodyText.matchAll(CITE_RE)].map((m) => m[1]));
+    const declared = new Set(sec.sources ?? []);
+
+    for (const id of declared) {
+      if (!cited.has(id)) {
+        err(at, `declares source "${id}" but the Section never cites [^${id}] — remove the declaration or add the citation`);
+      }
+    }
+    for (const id of cited) {
+      if (!declared.has(id)) {
+        err(at, `cites [^${id}] but does not declare it in \`sources\` — the frontmatter is the audit trail`);
+      }
+    }
+  });
+}
+
+// --- a declared contradiction must actually reach the reader ---------------
+// A Chapter surfaces a conflict in one of two ways, and both count:
+//
+//   a `!!! disputed "… — <key>"` callout, or
+//   a [[d:<key>]] link from the prose into the register entry.
+//
+// The first version of this check demanded a callout. That was wrong, and it would
+// have damaged good prose to satisfy it: two Volume I Chapters carry a conflict in
+// running argument — the deliberately undefined date, and the Gellar/Geller
+// spelling — where boxing it would be heavier than the point deserves. What matters is
+// that the reader is told, not the shape of the telling.
+const CALLOUT_KEY_RE = /^\s*!!!\s+\w+\s+"[^"]*?—\s*([a-z0-9][a-z0-9-]*)"/gm;
+const REGISTER_LINK_RE = /\[\[d:([a-z0-9][a-z0-9-]*)(?:\|[^\]]*)?\]\]/g;
+
+for (const ch of chapters.values()) {
+  if (ch.front.status === 'stub') continue;
+  const inCallouts = new Set([...ch.body.matchAll(CALLOUT_KEY_RE)].map((m) => m[1]));
+  const inLinks = new Set([...ch.body.matchAll(REGISTER_LINK_RE)].map((m) => m[1]));
+  const surfaced = new Set([...inCallouts, ...inLinks]);
+  const declared = new Set((ch.front.sections ?? []).flatMap((s) => s.contradictions ?? []));
+
+  for (const key of inCallouts) {
+    if (!(key in contradictions)) {
+      err(ch.rel, `a callout is titled for contradiction "${key}", which is not in data/contradictions.yaml`);
+    }
+  }
+  for (const key of surfaced) {
+    if (key in contradictions && !declared.has(key)) {
+      err(ch.rel, `surfaces contradiction "${key}" to the reader but no Section declares it in \`contradictions\``);
+    }
+  }
+  for (const key of declared) {
+    if (!surfaced.has(key)) {
+      err(ch.rel, `declares contradiction "${key}" but nothing in the prose surfaces it — add a callout titled "… — ${key}" or a [[d:${key}]] link`);
+    }
+  }
+}
+
+// --- registry pointers must resolve ----------------------------------------
+for (const [key, entry] of Object.entries(glossary)) {
+  if (entry?.full_treatment && !chapters.has(entry.full_treatment)) {
+    err('glossary', `"${key}" has full_treatment "${entry.full_treatment}", which is not a Chapter that exists`);
+  }
+}
+for (const [key, entry] of Object.entries(subjects)) {
+  for (const other of entry?.see_also ?? []) {
+    if (!(other in subjects)) err('subjects', `"${key}" see_also "${other}", which is not a registered subject`);
+  }
+}
+for (const [key, entry] of Object.entries(contradictions)) {
+  for (const pos of entry?.positions ?? []) {
+    if (pos?.source && !(pos.source in sources)) {
+      err('contradictions', `"${key}" has a position sourced to "${pos.source}", not in data/sources.yaml`);
+    }
+  }
+}
+
+// --- a contradiction nobody surfaces, and a term nobody uses ---------------
+// Both are warnings, not errors. Recording a conflict before the Chapter that will
+// carry it is legitimate — Volume II opened conflicts due in Volume IV. What is not
+// legitimate is forgetting, so the count stays visible in every build.
+{
+  const surfaced = new Set();
+  for (const ch of chapters.values())
+    for (const sec of ch.front.sections ?? [])
+      for (const key of sec.contradictions ?? []) surfaced.add(key);
+  for (const key of Object.keys(contradictions)) {
+    if (!surfaced.has(key)) {
+      warn('contradictions', `"${key}" is recorded but no Chapter surfaces it yet.`);
+    }
+  }
+}
+
+const glossaryUse = new Map(); // key -> count of Chapters whose prose contains it
+{
+  // The looser question here: does this entry appear under ANY of its names? An
+  // entry the prose only ever writes by a variant spelling is still in use.
+  const byForm = glossaryForms(glossary, { variants: true });
+  const re = glossaryRegex(byForm);
+  for (const ch of chapters.values()) {
+    if (ch.front.status === 'stub') continue;
+    for (const key of glossaryKeysIn(ch.body, byForm, re)) {
+      glossaryUse.set(key, (glossaryUse.get(key) ?? 0) + 1);
+    }
+  }
+  for (const key of Object.keys(glossary)) {
+    if (!glossaryUse.has(key)) {
+      warn('glossary', `"${key}" is defined but its term appears in no Chapter — dead registry weight, or the registered form does not match how the prose writes it.`);
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
 // Report
 // ---------------------------------------------------------------------------
 
@@ -348,7 +503,7 @@ console.log(`  Words of prose        ${totalWords.toLocaleString('en-US')} of ~2
   }
 }
 console.log(`  Sources recorded      ${Object.keys(sources).length}`);
-console.log(`  Glossary terms        ${Object.keys(glossary).length}`);
+console.log(`  Glossary terms        ${Object.keys(glossary).length} (${glossaryUse.size} appear in the prose)`);
 console.log(`  Subjects registered   ${Object.keys(subjects).length}`);
 const unrev = Object.values(contradictions).filter(c => c?.reverified === false).length;
 console.log(`  Contradictions        ${Object.keys(contradictions).length} (${unrev} awaiting re-verification)`);

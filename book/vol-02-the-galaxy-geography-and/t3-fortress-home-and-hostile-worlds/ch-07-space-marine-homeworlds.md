@@ -7,11 +7,11 @@ owns:
 sections:
   - name: What a Fortress-Monastery Is
     slug: fortress-monastery
-    sources: [lex-fortress-monastery]
+    sources: [lex-fortress-monastery, lex-fenris]
     contradictions: [space-wolves-fortress-world]
   - name: Fenris
     slug: fenris
-    sources: [lex-fenris, lex-fortress-monastery]
+    sources: [lex-fenris]
     contradictions: [fenris-segmentum, fenrisian-year-length]
   - name: Baal and Its Moons
     slug: baal

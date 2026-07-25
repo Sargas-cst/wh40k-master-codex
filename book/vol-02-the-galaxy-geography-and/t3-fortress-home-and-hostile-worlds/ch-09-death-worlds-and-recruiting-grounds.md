@@ -10,7 +10,7 @@ sections:
     sources: [lex-death-world]
   - name: Catachan
     slug: catachan
-    sources: [lex-catachan, lex-death-world]
+    sources: [lex-catachan]
   - name: Krieg
     slug: krieg
     sources: [lex-krieg]

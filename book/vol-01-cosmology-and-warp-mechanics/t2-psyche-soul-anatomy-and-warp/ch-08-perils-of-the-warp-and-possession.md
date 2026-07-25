@@ -7,11 +7,11 @@ owns:
 sections:
   - name: Phenomena and Perils
     slug: phenomena-and-perils
-    sources: [lex-psychic-phenomena, lex-psyker]
+    sources: [lex-psychic-phenomena]
     contradictions: [phenomena-versus-perils]
   - name: Daemonic Possession
     slug: possession
-    sources: [lex-daemonic-possession, lex-psychic-phenomena]
+    sources: [lex-daemonic-possession]
     unverified:
       - A staged progression of possession, and any rite of Inquisitorial exorcism
 ---

@@ -15,7 +15,7 @@ sections:
     contradictions: [imperial-palace-extent]
   - name: The Institutions of the Throneworld
     slug: institutions
-    sources: [lex-terra, lex-imperial-palace]
+    sources: [lex-terra]
   - name: Terra in the Age of the Rift
     slug: noctis-terra
     sources: [lex-terra]

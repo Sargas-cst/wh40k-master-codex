@@ -52,7 +52,11 @@ theme:
     - search.share
     - search.suggest
     - content.code.copy
-    - content.tooltips       # glossary terms get a hover definition
+    # Glossary terms carry their definition in a title attribute. This replaces the
+    # browser's native tooltip — a one-second delay, unstyleable OS chrome, and
+    # nothing at all on a touch device — with a positioned, themed, instant box that
+    # also works on tap. Material selects on [title], so it needs no extra markup.
+    - content.tooltips
   palette:
     - media: "(prefers-color-scheme)"
       toggle:

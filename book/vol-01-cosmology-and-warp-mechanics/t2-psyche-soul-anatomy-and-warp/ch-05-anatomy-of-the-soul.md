@@ -7,12 +7,12 @@ owns:
 sections:
   - name: What a Soul Is
     slug: what-a-soul-is
-    sources: [lex-soul, lex-psionics, lex-warp]
+    sources: [lex-soul, lex-psionics, lex-the-assignment]
     unverified:
       - '"Soul luminosity" as a property or measure. No source uses the term.'
   - name: Species and Their Warp Presence
     slug: species
-    sources: [lex-soul, lex-the-assignment, lex-psyker]
+    sources: [lex-soul, lex-the-assignment]
   - name: The Soul at Death
     slug: at-death
     sources: [lex-soul, lex-warp]

@@ -7,7 +7,7 @@ owns:
 sections:
   - name: Necron Inertialess Drives
     slug: inertialess
-    sources: [lex-inertialess-drive, lex-dolmen-gate]
+    sources: [lex-inertialess-drive]
   - name: Tyranid Gravity Compression
     slug: narvhal
     sources: [lex-narvhal]

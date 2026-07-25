@@ -13,7 +13,7 @@ sections:
     sources: [lex-sector, lex-subsector]
   - name: Warp Routes and Stable Passage
     slug: warp-routes
-    sources: [lex-subsector, lex-sector, lex-halo-zone]
+    sources: [lex-subsector, lex-halo-zone]
 ---
 
 # Segmenta, Sectors & Sub-Sectors

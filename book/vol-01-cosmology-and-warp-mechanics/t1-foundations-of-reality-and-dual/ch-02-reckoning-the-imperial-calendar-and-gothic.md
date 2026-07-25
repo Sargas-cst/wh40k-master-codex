@@ -9,7 +9,7 @@ sections:
   - name: Millennial Dating and Check Numbers
     slug: dating-and-check-numbers
     sources: [lex-imperial-dating-system]
-    contradictions: [millennium-year-range]
+    contradictions: [millennium-year-range, imperial-year-fraction]
     unverified:
       - Any duration for the year fraction. No in-universe source gives the division method.
   - name: High Gothic and Low Gothic

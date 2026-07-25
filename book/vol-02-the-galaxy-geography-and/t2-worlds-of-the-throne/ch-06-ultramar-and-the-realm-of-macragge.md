@@ -10,7 +10,7 @@ sections:
     sources: [lex-ultramar]
   - name: Macragge
     slug: macragge
-    sources: [lex-macragge, lex-ultramar]
+    sources: [lex-macragge]
   - name: Government by Tetrarchy
     slug: tetrarchy
     sources: [lex-ultramar]

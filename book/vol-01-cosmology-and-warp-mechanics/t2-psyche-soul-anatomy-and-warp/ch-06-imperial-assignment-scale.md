@@ -7,7 +7,7 @@ owns:
 sections:
   - name: The Twenty-Four Point Scale
     slug: the-scale
-    sources: [lex-the-assignment, lex-psionics]
+    sources: [lex-the-assignment]
     unverified:
       - The bracket numbering used in the source table is the wiki's device, not Imperial notation
   - name: Beyond the Scale — the Plus Grades
