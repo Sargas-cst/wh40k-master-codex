@@ -53,19 +53,9 @@ least common of them, and pyromancy as one of the most.[^lex-psyker] That asymme
 worth noticing: the most common discipline is the one that throws fire, and the rarest is
 the one that sees.
 
-!!! unverified "Could not be sourced"
-
-    The Section proposed here was "Divination & Spatial Magic". **No retrieved source
-    records a discipline called spatial magic**, and no article exists under that name.
-    It is not among the five, nor among the culture-specific disciplines the Psyker
-    article enumerates. It has been dropped rather than invented, and biomancy — which
-    the proposed breakdown left without a home — takes its place alongside divination.
-
-One general caution applies to the two Sections below. The discipline articles are
-largely built from game-rules material across several editions, and several carry
-`{{Cite Marker End}}` and `{{Trivia}}` markers. What follows is confined to what each
-discipline *is* and what its practitioners are called. The catalogues of named individual
-powers are rules content rather than setting description, and are not summarised here.
+The two Sections below describe what each discipline is and what its practitioners are
+called. They do not catalogue individual powers: those exist mainly as game rules, vary
+between editions, and describe how the setting is played rather than how it works.
 
 ## Fire, Force and Mind {#fire-force-mind}
 
@@ -83,10 +73,9 @@ distribution noted above: the commonest discipline is also the least versatile.
 telekines, psykinetics or kinetics — three names for one discipline, which is itself a
 small illustration of how unstandardised this vocabulary is.[^lex-telekinesis] They
 manipulate the material world directly: lashing at enemies with psychic force, raising
-invisible barriers, and — in the article's own phrasing — rending apart the fabric of
-reality.[^lex-telekinesis] That last is worth flagging as description rather than
-mechanism. Nothing in the retrieved material explains what tearing reality by telekinesis
-consists of, and [[I.T1.Ch4]] records why this codex declines to fill such gaps.
+invisible barriers, and rending apart the fabric of reality.[^lex-telekinesis] That last
+claim goes unexplained — what it means to tear reality by telekinesis is never described,
+which is of a piece with the undefined boundary in [[I.T1.Ch4]].
 
 **Telepathy** is the contacting and controlling of other minds. Its practitioners are
 telepaths, and the described range runs from communication to outright domination: a

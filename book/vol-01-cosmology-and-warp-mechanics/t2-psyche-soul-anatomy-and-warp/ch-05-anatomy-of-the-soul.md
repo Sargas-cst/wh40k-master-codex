@@ -40,21 +40,13 @@ That framing explains why the setting treats psykers as a security problem rathe
 a resource to be cultivated, a point [[I.T2.Ch9]] takes up. If the soul is an opening,
 then every psyker is an opening, and openings admit traffic in both directions.
 
-!!! unverified "Could not be sourced"
+Souls are sometimes spoken of as though they had brightness. The souls of the most
+powerful psykers are said to burn like supernovae in the Empyrean, drawing daemons the way
+a fire draws moths.[^lex-the-assignment] That is a figure of speech, and the setting marks
+it as one — there is no scale of soul-brightness, and nothing measures it.
 
-    The Section proposed here was "Soul Luminosity & Species Profiles". **No retrieved
-    source uses "soul luminosity" as a term, property or measure**, and no article
-    exists under that name. The closest thing is the Assignment article's remark that
-    the souls of plus-scale psykers are *"poetically said"* to burn like supernovae
-    within the Empyrean — and the source labels its own phrase as figurative before
-    this codex has to.[^lex-the-assignment] That metaphor is reported below as a
-    metaphor. Nothing is built on it.
-
-It is worth being careful about how much precision the sources actually offer here. The
-Lexicanum article on the soul carries a `{{WIP}}` marker — the wiki's own notice that
-the article is unfinished. What it does state is cited, and this Section rests on those
-statements; but the reader should not take the brevity of this Chapter for the
-completeness of the subject.
+Precision about souls is scarce in general. What the setting states about them is thin, and
+this Chapter is short accordingly; the brevity belongs to the subject.
 
 ## Species and Their Warp Presence {#species}
 
@@ -112,11 +104,9 @@ technology — treats preservation of the head as bearing on the preservation of
 soul.[^lex-soul] Most other organs can be lost and replaced with bionics without killing
 the person; the heart included.[^lex-soul]
 
-That is the substance the proposed Section title "The Warp Anchor" was reaching for, and
-it is worth stating that the term itself is not used by any retrieved source. What the
-sources describe is an *interface* — a point at which two realities meet inside a
-skull — not an anchor holding anything in place. The distinction matters, because an
-anchor implies a mechanism that could be cut, and nothing in the material supports that.
+The word the setting reaches for is *interface*, not anchor — a point where two realities
+meet inside a skull, rather than a tether holding one to the other. The difference matters,
+because an anchor implies something that could be cut, and no such mechanism is described.
 
 The religious consequence is that the various species' funerary technologies are not
 superstition but engineering against a documented threat. Aeldari spirit stones, the

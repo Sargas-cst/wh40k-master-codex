@@ -147,7 +147,6 @@ added protection against the perils described in
 [[I.T2.Ch8]].[^lex-soul-binding] Legend holds the first to undergo it was Malcador the
 Sigillite.[^lex-soul-binding] The Astropaths themselves are [[IV.T9.Ch29]].
 
-Note that both the Sanctioned Psyker and Soul Binding articles carry `{{Uncited}}`
-markers, and Soul Binding also carries `{{Cite Marker End}}`. The figures above — millions
-daily, the majority expended — rest on tier 2 material flagged as imperfectly cited, and
-should be read with that in mind.
+The figures above — millions collected daily, the majority expended — are the ones the
+setting gives, and they are poorly attested even by its own standards. Treat them as an
+indication of scale and intent rather than as a count.

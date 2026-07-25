@@ -36,15 +36,13 @@ indeed.[^lex-psychic-phenomena]
 
 !!! disputed "Recorded conflict — phenomena-versus-perils"
 
-    Whether these are **two categories or one** is not settled. Most retrieved material
-    treats perils of the warp as a rare and far more severe subset of psychic phenomena.
-    Other material makes no distinction at all, classing every phenomenon as a peril of
-    the warp.[^lex-psychic-phenomena] The article states both positions in consecutive
-    sentences, each with its own citation, and does not choose.
+    Whether these are **two categories or one** is not settled. Most material treats
+    perils of the warp as a rare and far more severe subset of psychic phenomena; other
+    material makes no distinction at all, calling every phenomenon a peril of the
+    warp.[^lex-psychic-phenomena]
 
-    This codex uses *phenomena* for the general class and *perils* for the harmful
-    subset, and records here that the distinction is not universal. Readers will
-    encounter the broader usage elsewhere and should not assume an error.
+    *Phenomena* is used here for the general class and *perils* for the harmful subset.
+    The broader usage is equally correct and equally common.
 
 Some things are shielded from it. Warded objects, daemons, and Untouchables tend to be
 immune to weaker phenomena, or less affected by the more violent
@@ -52,17 +50,11 @@ perils.[^lex-psychic-phenomena] The presence of an Omega-grade blank — the sub
 [[I.T2.Ch6]] — therefore does two jobs at once: it suppresses a psyker's power, and it
 damps the backlash.
 
-Two limits on what this Section claims. The source states its own list of phenomena is by
-no means exhaustive, since the potential side effects of Warp powers are
-endless[^lex-psychic-phenomena] — so no catalogue is given here, and the absence of a
-particular effect from this codex is not evidence against it. And the dangers are not
-confined to phenomena proper: using Warp powers can also attract miscellaneous Warp
-entities such as Psychneuein or Enslavers,[^lex-psychic-phenomena] which are creatures
-rather than effects, and belong to [[VI.T7.Ch23]] and Volume V.
-
-The article carries `{{Cite Marker End}}` and `{{Trivia}}` markers, meaning at least one
-of its citations is incomplete and some of its content is flagged by the wiki as
-incidental.
+No exhaustive list of phenomena exists, and none is possible: the potential side effects of
+Warp powers are described as endless.[^lex-psychic-phenomena] Nor are the dangers confined
+to phenomena proper. Drawing on the Warp can attract entities in their own right —
+Psychneuein, Enslavers[^lex-psychic-phenomena] — which are creatures rather than effects,
+and belong to [[VI.T7.Ch23]] and Volume V.
 
 ## Daemonic Possession {#possession}
 
@@ -94,20 +86,17 @@ because they imply very different degrees of culpability:
   the icon and the daemons are banished, and the corpses collapse
   again.[^lex-daemonic-possession]
 
-That last mechanism is the only one in the retrieved material with a stated
-counter-measure, and it is a mundane one: break the object. It is worth noticing what
-that implies about the rest — for a living host, no equivalent remedy is described.
+That last is the only form of possession with a stated counter-measure, and it is a
+mundane one: break the object. Which is worth noticing for what it implies about the
+rest — for a living host, no equivalent remedy is described anywhere.
 
-!!! unverified "Could not be sourced"
+!!! undefined "No stages, and no exorcism"
 
-    The Chapter's proposed breakdown included **"Stages of Daemonic Possession"** and
-    **"Inquisitorial Exorcism"**. Neither could be written. No retrieved source describes
-    possession as a staged progression — the material gives mechanisms and host types, not
-    a sequence — and **no article for exorcism exists on Lexicanum at all**. A rite of
-    Imperial exorcism may well be described somewhere in print; it is not reachable at
-    this project's sources, and inventing a set of stages to fill a Section heading is
-    precisely what §5 of the brief forbids. This Chapter therefore carries two Sections
-    rather than three.
+    Possession is often described as though it proceeded in stages. It does not: the
+    setting gives mechanisms and kinds of host, never a sequence. Nor is there any
+    Imperial rite of exorcism on record — which for a civilisation this preoccupied with
+    daemons is conspicuous. What the Imperium has instead is the Ordo Malleus, and its
+    answer is not to cleanse the possessed.
 
 What the Imperium does about possession, as opposed to how possession works, belongs to
 the Ordo Malleus and the Grey Knights at [[IV.T7.Ch25]]. The daemons themselves — what

@@ -229,6 +229,37 @@ for (const ch of chapters.values()) {
   if (ch.front.status !== 'stub' && cites.length === 0) {
     err(ch.rel, 'not a stub, but contains no [^citation] markers at all (PROMPT.md §3.1)');
   }
+
+  // -----------------------------------------------------------------------
+  // Process commentary must not reach the reader
+  // -----------------------------------------------------------------------
+  // The prose is for someone who wants to read about Warhammer 40,000. It is not
+  // the place to discuss the table of contents, which sources were retrievable, or
+  // what this project could and could not do — that is what audit/ is for, and
+  // duplicating it into the chapters talks past the reader.
+  //
+  // A statement about the SETTING is fine and often valuable: "nothing defines the
+  // Veil as a structure" tells a reader something real. A statement about our
+  // WORKFLOW is not: "the Section proposed here was X, and no retrieved source
+  // supports it" refers to a document the reader has never seen.
+  const PROCESS_PATTERNS = [
+    [/\b(Section|Chapter)(?:'s)? (?:originally )?(?:proposed|planned) (?:here|for this)/i,
+      'refers to the planning document; the reader has not seen it'],
+    [/\bproposed (?:breakdown|Section|section titles)\b/i,
+      'refers to the planning document'],
+    [/\bno retrieved source\b/i, 'say what the setting does not state, not what we could not retrieve'],
+    [/\bretrieved (?:source|material)s?\b/i, '"retrieved" describes our process, not the setting'],
+    [/\bthis (?:codex|project) (?:declines|cannot|could not|has not verified)\b/i,
+      'state the fact instead of narrating the decision'],
+    [/\bCould not be sourced\b/i, 'reframe as what the setting does not say'],
+    [/\bat this project\b/i, 'process commentary'],
+    [/\{\{(?:Uncited|Trivia|WIP|Quarantine|Cite Marker End|Conflicting Sources)\}\}/,
+      'wiki template names are project plumbing; describe the uncertainty in plain words'],
+  ];
+  for (const [re, why] of PROCESS_PATTERNS) {
+    const m = re.exec(ch.body);
+    if (m) err(ch.rel, `process commentary in prose — "${m[0]}": ${why}`);
+  }
 }
 
 for (const id of Object.keys(sources)) {

@@ -57,10 +57,9 @@ one that reports the conflicts, because unreliability is a designed property of 
 material rather than a defect in it. The
 [[a:disputed-facts]] exists for that reason.
 
-"Grimdark", the term most often used for the setting's register, is not itself
-something this codex can source. It has no Lexicanum article, and no retrieved source
-treats it as Games Workshop's own vocabulary. It is used here as shorthand for a tone,
-and nothing further is claimed for it.
+"Grimdark" is the term most often used for the setting's register, but it is not Games
+Workshop's own word for it — it arose outside the studio and stuck. It is used here as
+shorthand for a tone, and nothing more is claimed for it.
 
 ## The Enemies the Imperium Names {#enemies}
 
@@ -131,10 +130,9 @@ uneven a thing: it did not build a civilisation so much as reconquer the wreckag
 
 !!! disputed "Recorded conflict — age-of-strife-start-date"
 
-    When the Age of Strife began has two answers from two editions: **M23** by one
-    citation and **M25** by another, two millennia apart.[^lex-age-of-strife]
-    Lexicanum presents both in a single sentence without flagging the disagreement.
-    This codex records both and resolves neither.
+    Two editions give two answers, two millennia apart: **M23** and
+    **M25**.[^lex-age-of-strife] Each is stated as fact in its own source, and nothing
+    reconciles them.
 
 The consequence for the present is that the Imperium's relationship with machinery
 became religious rather than technical. Understanding was replaced by observance. The

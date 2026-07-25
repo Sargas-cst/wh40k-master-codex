@@ -65,23 +65,20 @@ occurring in roughly one human birth per billion.[^lex-the-assignment] A grade i
 fixed for life, either — psykers not uncommonly unlock greater power with practice and
 maturity, and are reclassified accordingly.[^lex-the-assignment]
 
-!!! unverified "Not Imperial notation"
+!!! undefined "Not Imperial notation"
 
-    Lexicanum's table also numbers the grades from −7 to 16, with the plus grades above
-    that. The article states explicitly that these numbers are **not associated with the
-    approved terminology** and exist only to show cardinal order.[^lex-the-assignment]
-    They are the wiki's presentational device. This codex uses them nowhere, and a
-    reader who encounters "a Delta is a 13" elsewhere should know it is not Imperial
-    usage.
+    The grades are sometimes seen numbered — Omega as −7, Alpha as 16, and upward from
+    there. That numbering was added by later readers to show the order at a glance. The
+    Imperium does not use it, and no source treats it as approved
+    terminology.[^lex-the-assignment] A Delta is a Delta, not a 13.
 
-!!! disputed "Source is known-incomplete — {{Quarantine}}"
+!!! unverified "Thinly attested"
 
-    The article this Chapter rests on carries Lexicanum's `{{Quarantine}}` tag, which
-    means passages were **removed** from it for insufficient citation and parked on its
-    discussion page. What remains is what survived that review, and the scale table is
-    cited throughout to a single page of *The Inquisition*. But the article is
-    known-incomplete, and this Chapter should not be read as exhaustive coverage of the
-    scale.
+    Almost the entire scale — every grade, every description above — traces to a single
+    page of one background book.[^lex-the-assignment] For a system the Imperium
+    supposedly applies to every human birth, that is a remarkably narrow foundation, and
+    the detail thins further at the extremes. Take the scale as the shape of Imperial
+    thinking rather than as a specification.
 
 ## Beyond the Scale — the Plus Grades {#plus-scale}
 
@@ -158,7 +155,7 @@ of Aeldari Solitaires.[^lex-the-assignment][^lex-blank] Those bodies are treated
 civilisation that classifies psychic absence on the same instrument as psychic power,
 and then recruits from both ends of it.
 
-Note that the Blank article carries both `{{Trivia}}` and `{{Quarantine}}` markers, and
-that "Pariah" reaches it through a disambiguation page also listing Necron Pariahs,
-noctilith — "Pariah stone" — and the Pariah Nexus. Those are four different subjects
-sharing a word, and conflating them is an easy error.
+One caution about the word *pariah*, which the setting uses for at least four unrelated
+things: human blanks, the Necron Pariahs built from captured ones, noctilith — "pariah
+stone" — and the Pariah Nexus. Only the first is the subject of this Chapter, and
+conflating them is an easy mistake to make.

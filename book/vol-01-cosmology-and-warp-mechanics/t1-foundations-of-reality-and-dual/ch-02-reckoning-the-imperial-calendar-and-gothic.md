@@ -66,12 +66,10 @@ anywhere.
 
 !!! undefined "No source defines this — imperial-year-fraction"
 
-    No in-universe source gives a method for dividing the year into a thousand parts.
-    Figures for the length of a year fraction do circulate, but every one sits inside
-    Lexicanum's own `{{Trivia}}` block, whose support is a forum post and arithmetic
-    contributed by named wiki users in 2015 and 2025. That is not canon in dispute; it
-    is fan calculation. **No duration is given here**, because giving one would promote
-    a reader's arithmetic into a fact about the setting.
+    Nothing in the setting states how the year is divided into a thousand parts. Figures
+    for the length of a single fraction do circulate — around eight and three-quarter
+    hours — but they are arithmetic performed by readers, not anything the Imperium or its
+    authors ever specified. **No duration is given here**, because there is none to give.
 
 !!! disputed "Recorded conflict — millennium-year-range"
 
@@ -147,7 +145,7 @@ Written Low Gothic uses capitalisation, and there is evidence it retains letters
 ancient Terran alphabets, recognised as script rather than as meaningless marks by at
 least one M41 observer.[^lex-low-gothic]
 
-On forms of address, this codex declines to generalise. Individual Imperial titles are
-widely attested, but no retrieved source describes a unified etiquette governing them,
-and language articles are not where such a thing could be established. The question is
-deferred to Volume IV, where the institutions that issue those titles are treated.
+A word on forms of address. Individual Imperial titles are everywhere — Magos, Canoness,
+Lord Inquisitor — but nothing describes a unified etiquette governing them. There is no
+Imperial protocol, only a great many separate customs belonging to separate institutions,
+each treated with its own body in Volume IV.

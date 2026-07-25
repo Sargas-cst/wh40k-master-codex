@@ -41,13 +41,6 @@ thought to operate, no discussion of the material universe as a thing with prope
 The article's function is almost entirely negative: it defines real space as *what the
 Warp is not*.
 
-!!! unverified "Could not be sourced"
-
-    No retrieved source treats the physics of the Materium as a subject. The Section
-    proposed for this Chapter was "Physical Laws of Realspace"; it could not be written,
-    because the material to write it from does not exist at tier 2. What follows is an
-    account of that absence, which is the honest substitute.
-
 The asymmetry is worth stating plainly rather than papering over, because it tells you
 something real about how the setting is constructed. Warhammer 40,000 does not describe
 a physical universe with a strange dimension attached. It describes a strange dimension,
@@ -133,8 +126,6 @@ without a field is a means of dying somewhere unusual. The field protects ship a
 occupants both from the hostility of the Warp itself and from the predations of warp
 entities.[^lex-gellar-field]
 
-On the spelling: readers will encounter both "Gellar" and "Geller". This is not a live
-dispute. Lexicanum's article opens by giving both forms, attributing the variant to an
-official Games Workshop web article.[^lex-gellar-field] This codex uses *Gellar field*,
-matching the article title, and records the variant in the glossary rather than
-relitigating it in prose.
+On the spelling: both "Gellar" and "Geller" are in circulation, and neither is an error.
+Games Workshop has used the variant form itself.[^lex-gellar-field] *Gellar field* is the
+commoner rendering and the one used here.

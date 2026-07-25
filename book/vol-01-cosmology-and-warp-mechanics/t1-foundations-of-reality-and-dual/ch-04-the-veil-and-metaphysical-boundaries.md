@@ -29,23 +29,20 @@ is say so at the start rather than at the end.
 
 "The Veil" is in wide circulation as a name for the boundary between the Materium and
 the Immaterium. It appears in fan writing, in discussion, and in loose summary. What it
-does not appear in is any retrieved source that defines it.
+does not appear in is any source that defines it.
 
-The position is starker than mere absence. Lexicanum *has* an article at "Veil" — and it
-is about a person. Veil was a human vassal and magister of the Navis Nobilite during the
-Great Crusade, sworn to House Achelieux, who survived the invasion of Herevail, was
-rescued by the White Scars, and ultimately destroyed the Dark Glass station with two
-vortex charges on the Paternova's orders.[^lex-veil] That is the whole of what the
-Lexicanum "Veil" refers to. There is no article treating the Veil as a cosmological
-boundary at all.
+The position is starker than mere absence. There *is* a Veil in the setting — and he is a
+man. Veil was a human vassal and magister of the Navis Nobilite during the Great Crusade,
+sworn to House Achelieux. He survived the invasion of Herevail, was rescued by the White
+Scars, and destroyed the Dark Glass station with two vortex charges on the Paternova's
+orders.[^lex-veil] That is the only Veil the setting names. The cosmological one has no
+entry anywhere.
 
-!!! undefined "No source defines this — the-veil-as-structure"
+!!! undefined "Undefined — the-veil-as-structure"
 
-    No retrieved source describes a Veil between the Materium and the Immaterium as a
-    structure with measurable properties. It is given **no thickness, no composition, no
-    location and no mechanism** in this codex, because none is available to give. The
-    Section originally planned here was "Structure of The Veil"; writing it would have
-    required inventing the object it purported to describe.
+    Nothing anywhere describes the Veil as a structure with measurable properties. It has
+    **no stated thickness, composition, location or mechanism**. Accounts that give it
+    any of those are supplying what the setting does not.
 
 What *is* attested is a barrier, referred to but never characterised. The Warp Rift
 article describes a rift as a weakening of the barrier between real space and the Warp,
@@ -128,16 +125,12 @@ trigger.[^lex-great-rift]
 
 !!! disputed "Multiple accounts, none settled"
 
-    The Great Rift's cause is given five theories plus Guilliman's speculation. The
-    source states that all that is truly known is that the Rift's emergence divided the
-    Imperium in half.[^lex-great-rift] This codex reports the theories as theories. The
-    galaxy's largest cosmological event has no agreed cause — which is a fact about the
-    setting, not a gap in this account.
+    Five theories, plus Guilliman's own speculation, and no way to choose between them.
+    All that is stated as known is that the Rift divided the Imperium in
+    half.[^lex-great-rift] The largest cosmological event in the setting's history has no
+    agreed cause.
 
-Two limits on what has been said here. First, this codex has **not** verified the
-dimensions of the Cadian pylons; the figures in circulation are recorded in the Disputed
-Facts Register as awaiting re-verification, and none is quoted. Second, the pylons and
-noctilith are treated in full as xenos technology at [[VIII.T5.Ch14]], and Cadia itself
-at [[II.T3.Ch8]]. What belongs here is only the principle: the boundary can be
+The pylons and noctilith are treated in full as xenos technology at [[VIII.T5.Ch14]], and
+Cadia itself at [[II.T3.Ch8]]. What belongs here is the principle: the boundary can be
 reinforced, the means are not human, and the one place it was reinforced at scale is the
 place whose failure tore the galaxy.
