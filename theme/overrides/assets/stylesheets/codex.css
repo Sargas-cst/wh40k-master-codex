@@ -68,7 +68,24 @@
      resolves against each element's OWN font-size, so an h2 at 1.7rem would get
      a column nearly twice as wide as the paragraphs and break the alignment. */
   --cx-text-scale: 0.9;
-  --cx-measure: calc(30rem * var(--cx-text-scale));
+
+  /* --------------------------------------------------------------------
+     The measure now FILLS the column rather than holding a fixed character
+     count, at the user's explicit direction: the centred layout left large
+     symmetrical margins, and they are to be used.
+
+     `min(100%, 58rem)` means the text takes the full width available between
+     the two rails, up to a ceiling of 1160px. The ceiling exists because with
+     no bound at all an ultrawide display produces lines of roughly 260
+     characters, which is not readable by any measure — it engages only past
+     about 2000px of viewport.
+
+     Note the consequence: because the column no longer scales WITH the text
+     size, raising the text size now REDUCES the characters per line rather
+     than keeping it constant. That is the correct behaviour when filling is
+     the goal, and it gives the A+ button a second use — it is now also the
+     control for shortening the line. */
+  --cx-measure: min(100%, 58rem);
   --cx-notch: 14px;          /* corner cut on plates */
   --cx-hard: 5px;            /* hard shadow offset — no blur, ever */
 
@@ -220,7 +237,10 @@ body {
 
 .md-typeset {
   font-size: calc(1rem * var(--cx-text-scale));
-  line-height: 1.68;
+  /* Raised from 1.68. A longer line needs more leading, or the eye loses its
+     place returning to the start of the next one — the failure mode of a wide
+     measure is not the width itself but the return sweep. */
+  line-height: 1.78;
   -webkit-hyphens: auto;
   hyphens: auto;
 }
@@ -294,9 +314,12 @@ body {
   max-width: var(--cx-measure);
   margin-inline: auto;
 }
+/* These used to be the escape hatch for content wider than a narrow reading
+   column. Now that the prose fills the column, a fixed 46rem would make tables
+   NARROWER than the text around them, so they simply track it. */
 .md-content__inner.md-typeset > .md-typeset__table,
 .md-content__inner.md-typeset > table,
-.md-content__inner.md-typeset > .cx-wide { max-width: 46rem; }
+.md-content__inner.md-typeset > .cx-wide { max-width: var(--cx-measure); }
 .md-content__inner.md-typeset > .md-content__button { max-width: none; margin-inline: 0; }
 .md-content__inner { padding-block: 1.4rem 4rem; }
 
@@ -860,7 +883,7 @@ body {
    to break voice; the design breaks register in the same place. Denser,
    monospaced, tabular — records rather than prose. */
 
-body[data-cx-apparatus] .md-content__inner.md-typeset > * { max-width: 46rem; }
+body[data-cx-apparatus] .md-content__inner.md-typeset > * { max-width: var(--cx-measure); }
 body[data-cx-apparatus] .md-typeset { font-size: 0.92rem; line-height: 1.58; }
 body[data-cx-apparatus] .md-typeset p + p { text-indent: 0; margin-top: 0; }
 
