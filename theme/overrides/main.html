@@ -17,14 +17,17 @@
 {% block extrahead %}
   {{ super() }}
   <script>
-    // Applied before first paint so the chosen livery does not flash. The
-    // attribute goes on <html>, which survives navigation.instant page swaps.
+    // Applied before first paint so neither the chosen livery nor the chosen text
+    // size flashes on load. Both go on <html>, which survives navigation.instant
+    // page swaps.
     (function () {
+      var el = document.documentElement;
       try {
-        var t = localStorage.getItem("cx-livery");
-        document.documentElement.setAttribute("data-cx-theme", t || "ultramarines");
+        el.setAttribute("data-cx-theme", localStorage.getItem("cx-livery") || "ultramarines");
+        var s = localStorage.getItem("cx-text-scale");
+        if (s) el.style.setProperty("--cx-text-scale", s);
       } catch (e) {
-        document.documentElement.setAttribute("data-cx-theme", "ultramarines");
+        el.setAttribute("data-cx-theme", "ultramarines");
       }
     })();
   </script>
@@ -230,9 +233,78 @@
         document.body.appendChild(root);
       }
 
+      // ---------------------------------------------------------------
+      // Text-size control
+      // ---------------------------------------------------------------
+      // Placed beside the light/dark toggle in the header. It scales only
+      // --cx-text-scale, which drives both the body font-size AND the reading
+      // measure — so the column keeps roughly the same character count at every
+      // size instead of growing into an unreadably long line.
+      var SCALES = [0.8, 0.85, 0.9, 1.0, 1.1];   // 16, 17, 18, 20, 22px
+      var DEFAULT_SCALE_INDEX = 2;
+
+      function currentScaleIndex() {
+        var v;
+        try { v = parseFloat(localStorage.getItem("cx-text-scale")); } catch (e) {}
+        var i = SCALES.indexOf(v);
+        return i === -1 ? DEFAULT_SCALE_INDEX : i;
+      }
+
+      function setScale(i) {
+        i = Math.max(0, Math.min(SCALES.length - 1, i));
+        var v = SCALES[i];
+        document.documentElement.style.setProperty("--cx-text-scale", String(v));
+        try { localStorage.setItem("cx-text-scale", String(v)); } catch (e) {}
+        document.querySelectorAll(".cx-textsize").forEach(function (root) {
+          root.querySelectorAll(".cx-textsize__level i").forEach(function (bar, n) {
+            bar.classList.toggle("on", n <= i);
+          });
+          var dn = root.querySelector(".cx-textsize__btn--dn");
+          var up = root.querySelector(".cx-textsize__btn--up");
+          if (dn) dn.disabled = i === 0;
+          if (up) up.disabled = i === SCALES.length - 1;
+          root.setAttribute("aria-label", "Text size, step " + (i + 1) + " of " + SCALES.length);
+        });
+      }
+
+      function buildTextSize() {
+        if (document.querySelector(".cx-textsize")) return;
+        // Anchor to the palette toggle so the two controls read as a pair.
+        var palette = document.querySelector(".md-header__option");
+        if (!palette || !palette.parentNode) return;
+
+        var root = document.createElement("div");
+        root.className = "md-header__option cx-textsize";
+        root.setAttribute("role", "group");
+
+        function btn(cls, label, glyph, delta) {
+          var b = document.createElement("button");
+          b.className = "cx-textsize__btn " + cls;
+          b.type = "button";
+          b.title = label;
+          b.setAttribute("aria-label", label);
+          b.textContent = glyph;
+          b.addEventListener("click", function () { setScale(currentScaleIndex() + delta); });
+          return b;
+        }
+
+        var level = document.createElement("span");
+        level.className = "cx-textsize__level";
+        level.setAttribute("aria-hidden", "true");
+        for (var n = 0; n < SCALES.length; n++) level.appendChild(document.createElement("i"));
+
+        root.appendChild(btn("cx-textsize__btn--dn", "Smaller text", "A", -1));
+        root.appendChild(level);
+        root.appendChild(btn("cx-textsize__btn--up", "Larger text", "A", +1));
+
+        palette.parentNode.insertBefore(root, palette);
+        setScale(currentScaleIndex());
+      }
+
       function init() {
         applyApparatus();
         buildPicker();
+        buildTextSize();
       }
 
       if (typeof document$ !== "undefined" && document$.subscribe) {

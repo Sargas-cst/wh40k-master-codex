@@ -52,10 +52,23 @@
   --cx-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
              "Helvetica Neue", Arial, sans-serif;
 
-  /* 30rem, not 34. Vollkorn is a narrower face than the system serif this
-     replaced, so the old measure yielded 79 characters a line — at the very edge
-     of comfortable. Measured, not guessed: 30rem lands near 70. */
-  --cx-measure: 30rem;
+  /* --------------------------------------------------------------------
+     Reading size, and why the measure is computed from it
+     --------------------------------------------------------------------
+     Material's root is 20px, so a 1rem body ran at 20px — too large for
+     sustained reading. Default is now 0.9 (18px), and the reader can change it
+     from the header control; the choice persists in localStorage.
+
+     The measure is derived from the scale rather than fixed, so the column
+     always holds about the same NUMBER OF CHARACTERS whatever size the reader
+     picks. Measured, not guessed: Vollkorn averages 0.429em per character, so
+     70 characters is 30em of body text — hence 30rem x scale.
+
+     It is deliberately calc(rem x scale) and not plain `em`. An `em` max-width
+     resolves against each element's OWN font-size, so an h2 at 1.7rem would get
+     a column nearly twice as wide as the paragraphs and break the alignment. */
+  --cx-text-scale: 0.9;
+  --cx-measure: calc(30rem * var(--cx-text-scale));
   --cx-notch: 14px;          /* corner cut on plates */
   --cx-hard: 5px;            /* hard shadow offset — no blur, ever */
 
@@ -206,11 +219,25 @@ body {
 }
 
 .md-typeset {
-  font-size: 1rem;
+  font-size: calc(1rem * var(--cx-text-scale));
   line-height: 1.68;
   -webkit-hyphens: auto;
   hyphens: auto;
 }
+
+/* --------------------------------------------------------------------------
+   Layout width
+   --------------------------------------------------------------------------
+   Material caps its grid at 61rem — 1220px at this root size — and gives each
+   sidebar 12.1rem (242px). Two sidebars then leave roughly 736px of content area
+   for a 600px prose column, which puts the navigation hard against the text with
+   almost no breathing space.
+
+   Widening the grid does NOT widen the prose (that stays at --cx-measure); it
+   moves the sidebars outward and lets the column sit in open space instead. */
+.md-grid { max-width: 82rem; }
+.md-sidebar--primary,
+.md-sidebar--secondary { width: 11.5rem; }
 
 /* In Material 9 the content element carries BOTH classes —
    <article class="md-content__inner md-typeset"> — so they are one node, not
@@ -627,6 +654,63 @@ body {
   letter-spacing: 0.06em;
   border-width: 2px;
 }
+
+/* ------------------------------------- 11a. The text-size control */
+
+/* Sits in the header beside the light/dark toggle. Adjusts only the reading
+   text — the chrome, navigation and labels keep their size, because scaling the
+   whole interface is a browser zoom feature and duplicating it here would fight
+   the browser's own. */
+.cx-textsize {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  margin-right: 0.2rem;
+}
+.cx-textsize__btn {
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid transparent;
+  color: var(--md-primary-bg-color, var(--cx-ink));
+  font-family: var(--cx-display);
+  font-weight: 800;
+  line-height: 1;
+}
+.cx-textsize__btn:hover:not(:disabled) {
+  border-color: currentcolor;
+}
+.cx-textsize__btn:disabled { opacity: 0.35; cursor: default; }
+.cx-textsize__btn--dn { font-size: 0.72rem; }
+.cx-textsize__btn--up { font-size: 1rem; }
+.cx-textsize__level {
+  display: flex;
+  gap: 2px;
+  align-items: flex-end;
+  height: 0.9rem;
+  padding: 0 0.15rem;
+}
+.cx-textsize__level i {
+  display: block;
+  width: 3px;
+  background: currentcolor;
+  opacity: 0.28;
+}
+.cx-textsize__level i:nth-child(1) { height: 30%; }
+.cx-textsize__level i:nth-child(2) { height: 48%; }
+.cx-textsize__level i:nth-child(3) { height: 66%; }
+.cx-textsize__level i:nth-child(4) { height: 84%; }
+.cx-textsize__level i:nth-child(5) { height: 100%; }
+.cx-textsize__level i.on { opacity: 1; background: var(--cx-accent); }
+
+@media screen and (max-width: 44.9375em) {
+  .cx-textsize__level { display: none; }
+}
+@media print { .cx-textsize { display: none; } }
 
 /* ------------------------------------------------ 11. The livery picker */
 
@@ -1090,7 +1174,9 @@ body[data-cx-apparatus] .md-typeset table:not([class]) { font-size: 0.76rem; }
 
 @media screen and (max-width: 44.9375em) {
   :root { --cx-hard: 3px; --cx-notch: 10px; }
-  .md-typeset { font-size: 0.98rem; }
+  /* Must keep the scale factor, or the reader's text-size choice is silently
+     discarded on narrow screens — which is where it matters most. */
+  .md-typeset { font-size: calc(0.98rem * var(--cx-text-scale)); }
   .md-typeset h1 { font-size: 1.9rem; }
   .md-typeset h2 { font-size: 1.15rem; }
   .cx-livery { right: 0.6rem; bottom: 0.6rem; }
