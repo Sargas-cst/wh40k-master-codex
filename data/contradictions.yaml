@@ -960,3 +960,27 @@ who-rules-the-imperium:
       source: lex-senatorum-imperialis
     - claim: The High Lords continue to rule the Imperium after his return.
       source: lex-senatorum-imperialis
+kin-abhuman-or-xenos:
+  kind: terminology
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: lex-kin
+  summary: >
+    Whether the Kin (Squats) are classified by the Imperium as an abhuman strain or as
+    xenos. The article states that their Imperial classification varies between the two,
+    and carries its own note that many in the Imperium — the Inquisition most notably —
+    treat their culture, religion and technology as xenos.
+  reverification_note: >
+    Confirmed in the retrieved article, which flags the split itself rather than leaving it
+    to be inferred. The two readings carry different citations: Codex: Leagues of Votann
+    for the abhuman classification, and separate sources for the xenos one.
+  handling: >
+    Surfaced in IV.T2.Ch7. Neither reading chosen. The stake is real — an abhuman strain
+    may be conscripted into the Militarum Auxilla, while a xenos species falls to the Ordo
+    Xenos. Revisit when Volume VI covers the Leagues of Votann.
+  positions:
+    - claim: The Kin are an abhuman strain, the most ancient and derived in existence.
+      source: lex-kin
+    - claim: The Kin are xenos, and are so treated by the Inquisition.
+      source: lex-kin

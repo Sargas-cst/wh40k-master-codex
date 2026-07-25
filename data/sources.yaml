@@ -2296,3 +2296,223 @@ lex-venenum-temple:
   retrieved: 2026-07-25
   raw: sources/raw/lex-venenum-temple.wikitext
   cites: ["Nemesis (Novel)"]
+
+lex-hive-world:
+  tier: 2
+  what: Lexicanum article "Hive World"
+  url: https://wh40k.lexicanum.com/wiki/Hive_World
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-hive-world.wikitext
+  cites:
+    - "Warhammer 40,000: Rogue Trader"                            # {{Fn|1}}
+    - "Warhammer 40,000 5th Edition Rulebook"                     # {{Fn|2a}}
+    - "Warhammer 40,000 8th Edition Rulebook"                     # {{Fn|4a}}
+    - "Urban Conquest"                                            # {{Fn|5}}
+    - "White Dwarf 130 (UK)"                                      # {{Fn|7}}
+
+lex-hive:
+  tier: 2
+  what: Lexicanum article "Hive"
+  url: https://wh40k.lexicanum.com/wiki/Hive
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-hive.wikitext
+  cites:
+    - "Necromunda (Hardback Rulebook)"                            # {{Fn|1a}}-{{Fn|1d}}
+    - "Necromunda Sourcebook"                                     # {{Fn|2}}
+    - "Necromunda Rulebook (2018)"                                # {{Fn|3a}}-{{Fn|3c}}
+  notes: >
+    "Hive City" redirects here. Much of the anatomy is drawn from Necromunda material and
+    is explicitly about that world; the article says so, and this codex keeps the
+    attribution rather than generalising it to every Hive World.
+
+lex-underhive:
+  tier: 2
+  what: Lexicanum article "Underhive"
+  url: https://wh40k.lexicanum.com/wiki/Underhive
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-underhive.wikitext
+  cites:
+    - "Necromunda: Gangs of the Underhive"                        # {{Fn|1a}}-{{Fn|1d}}
+    - "Necromunda Rulebook (2018)"                                # {{Fn|2a}}
+    - "Necromunda: The Book of Peril"                             # {{Fn|3a}}
+
+lex-hive-scum:
+  tier: 2
+  what: Lexicanum article "Hive Scum"
+  url: https://wh40k.lexicanum.com/wiki/Hive_Scum
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-hive-scum.wikitext
+  cites:
+    - "Necromunda: Gangs of the Underhive"                        # {{Fn|1}}
+    - "White Dwarf 192 (UK)"                                      # {{Fn|2}}
+    - "Dark Heresy Core Rulebook"                                 # {{Fn|4}}
+
+lex-corpse-starch:
+  tier: 2
+  what: Lexicanum article "Corpse-Starch"
+  url: https://wh40k.lexicanum.com/wiki/Corpse-Starch
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-corpse-starch.wikitext
+  cites:
+    - "Imperium Maledictum: Core Rulebook"                        # {{Fn|1}}
+    - "Warhammer 40,000: Darktide: Character Creation"            # {{Fn|8}}
+    - "White Dwarf December 2019"                                 # {{Fn|9}}
+  notes: >
+    "Corpse Starch" without the hyphen redirects here.
+
+lex-imperial-citizen:
+  tier: 2
+  what: Lexicanum article "Imperial citizen"
+  url: https://wh40k.lexicanum.com/wiki/Imperial_citizen
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-imperial-citizen.wikitext
+  cites:
+    - "Codex Imperialis (Background Book)"                        # {{Fn|1}}
+    - "Warhammer 40,000: Rogue Trader"                            # {{Fn|2}}
+  notes: >
+    A very short article carrying an uncited-sources flag and two incomplete citation
+    markers. Its one substantive sentence — that citizenship confers no rights, only
+    responsibilities — is used here and nothing is built on top of it.
+
+lex-shrine-world:
+  tier: 2
+  what: Lexicanum article "Shrine World"
+  url: https://wh40k.lexicanum.com/wiki/Shrine_World
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-shrine-world.wikitext
+  cites:
+    - "Codex: Khorne Daemonkin (7th Edition)"                     # {{Fn|1}}
+    - "War Zone Fenris: Curse of the Wulfen"                      # {{Fn|4}}
+    - "Warhammer 40,000 8th Edition Rulebook"                     # {{Fn|6}}
+    - "Blood of Asaheim (Novel)"                                  # {{Fn|8}}
+
+lex-imperial-tithe:
+  tier: 2
+  what: Lexicanum article "Imperial Tithe"
+  url: https://wh40k.lexicanum.com/wiki/Imperial_Tithe
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-imperial-tithe.wikitext
+  cites:
+    - "Warhammer 40,000 3rd Edition Rulebook"                     # {{Fn|1}}
+    - "Warhammer 40,000 6th Edition Rulebook"                     # {{Fn|2a}}-{{Fn|2c}}
+    - "Codex: Astra Militarum (6th Edition)"                      # {{Fn|4}}
+
+lex-schola-progenium:
+  tier: 2
+  what: Lexicanum article "Schola Progenium"
+  url: https://wh40k.lexicanum.com/wiki/Schola_Progenium
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-schola-progenium.wikitext
+  cites:
+    - "Codex: Militarum Tempestus (6th Edition)"                  # {{Fn|2c}}{{Fn|2j}}
+    - "Echoes of the Long War (Novel)"                            # {{Fn|3}}
+    - "Inquisitor Rulebook"                                       # {{Fn|15}}
+    - "Death Rider (Novel)"                                       # {{Fn|21a}}-{{Fn|21d}}
+    - "Codex: Astra Militarum (9th Edition)"                      # {{Fn|25}}
+    - "War Zone Nachmund: Rift War"                               # {{Fn|30}}
+  notes: >
+    "Progena" redirects to a section of this article. The article carries an uncited-sources
+    block at the foot.
+
+lex-commissar:
+  tier: 2
+  what: Lexicanum article "Commissar"
+  url: https://wh40k.lexicanum.com/wiki/Commissar
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-commissar.wikitext
+  cites:
+    - "Codex: Imperial Guard (5th Edition)"                       # {{Fn|1a}}
+    - "Dark Heresy Core Rulebook"                                 # {{Fn|6}}
+    - "Codex Imperialis (Background Book)"                        # {{Fn|18}}
+    - "White Dwarf 115 (UK) - Commissar Training Squads"          # {{Fn|4}}
+
+lex-tempestus-scions:
+  tier: 2
+  what: Lexicanum article "Tempestus Scions"
+  url: https://wh40k.lexicanum.com/wiki/Tempestus_Scions
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-tempestus-scions.wikitext
+  cites:
+    - "Codex: Militarum Tempestus (6th Edition)"                  # {{Fn|1a}}
+    - "Codex: Imperial Guard (2nd Edition)"                       # {{Fn|3}}
+    - "War Zone Nachmund: Rift War"                               # {{Fn|30}}
+  notes: >
+    "Storm Trooper" redirects here. The article notes that all Tempestus Scions are storm
+    troopers but not all storm troopers are Scions.
+
+lex-abhuman:
+  tier: 2
+  what: Lexicanum article "Abhuman"
+  url: https://wh40k.lexicanum.com/wiki/Abhuman
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-abhuman.wikitext
+  cites:
+    - "Warhammer 40,000 6th Edition Rulebook"                     # {{Fn|3b}}
+    - "Warhammer 40,000 9th Edition Rulebook"                     # {{Fn|6}}
+    - "Necromunda: Outlanders Rulebook"                           # {{Fn|2}}
+
+lex-ogryn:
+  tier: 2
+  what: Lexicanum article "Ogryn"
+  url: https://wh40k.lexicanum.com/wiki/Ogryn
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-ogryn.wikitext
+  cites:
+    - "Codex: Imperial Guard (3rd Edition, 2nd Codex)"            # {{Fn|1a}}{{Fn|1b}}
+    - "Codex: Imperial Guard (3rd Edition, 1st Codex)"            # {{Fn|2}}
+
+lex-ratling:
+  tier: 2
+  what: Lexicanum article "Ratling"
+  url: https://wh40k.lexicanum.com/wiki/Ratling
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-ratling.wikitext
+  cites:
+    - "Codex: Imperial Guard (5th Edition)"                       # {{Fn|1}}
+    - "Warhammer 40,000 6th Edition Rulebook"                     # {{Fn|2}}
+    - "Codex Imperialis (Background Book)"                        # {{Fn|3}}
+
+lex-kin:
+  tier: 2
+  what: Lexicanum article "Kin"
+  url: https://wh40k.lexicanum.com/wiki/Kin
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-kin.wikitext
+  cites:
+    - "Codex: Leagues of Votann (9th Edition)"                    # {{Fn|1a}}{{Fn|1b}}
+    - "Warhammer 40,000 6th Edition Rulebook"                     # {{Fn|2}}
+  notes: >
+    "Squat" redirects here. The article carries its own editorial note that Kin are
+    classified as abhuman by some Imperial authorities and as xenos by others, notably the
+    Inquisition — recorded as kin-abhuman-or-xenos.
+
+lex-beastman:
+  tier: 2
+  what: Lexicanum article "Beastman"
+  url: https://wh40k.lexicanum.com/wiki/Beastman
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-beastman.wikitext
+  cites:
+    - "White Dwarf 109 (UK)"                                      # {{Fn|1}}
+    - "Imperial Armour Volume Six - The Siege of Vraks - Part Two"  # {{Fn|2}}
+    - "Realm of Chaos: The Lost and the Damned"                   # {{Fn|3}}
+
+lex-felinid:
+  tier: 2
+  what: Lexicanum article "Felinid"
+  url: https://wh40k.lexicanum.com/wiki/Felinid
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-felinid.wikitext
+  cites:
+    - "Warhammer 40,000 6th Edition Rulebook"                     # {{Fn|1}}
+    - "Liber Xenologis"                                           # {{Fn|2}}
+
+lex-mutant:
+  tier: 2
+  what: Lexicanum article "Mutant"
+  url: https://wh40k.lexicanum.com/wiki/Mutant
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-mutant.wikitext
+  cites:
+    - "Codex: Eye of Terror (3rd Edition)"                        # {{Fn|1a}}{{Fn|1b}}
+    - "Codex: Chaos Knights (8th Edition)"                        # {{Fn|2}}

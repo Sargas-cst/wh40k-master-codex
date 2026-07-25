@@ -19,6 +19,15 @@
       "file": "sources/raw/lex-abaddon-the-despoiler.wikitext",
       "redirect_to": "Ezekyle Abaddon"
     },
+    "lex-abhuman": {
+      "title": "Abhuman",
+      "url": "https://wh40k.lexicanum.com/wiki/Abhuman",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 18413,
+      "sha256": "b0ddd4a7e2122274cf7ab300fe342e57a5336a72b66be82fb80f290e2823b8ed",
+      "file": "sources/raw/lex-abhuman.wikitext"
+    },
     "lex-adeptus-administratum": {
       "title": "Adeptus Administratum",
       "url": "https://wh40k.lexicanum.com/wiki/Adeptus_Administratum",
@@ -138,6 +147,15 @@
       "sha256": "dedbd271d73ba4a4729ee2b5320c9538e640518a2d3f98a38caa38a525e8c32e",
       "file": "sources/raw/lex-armageddon.wikitext"
     },
+    "lex-ash-wastes": {
+      "title": "Ash Wastes",
+      "url": "https://wh40k.lexicanum.com/wiki/Ash_Wastes",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 705,
+      "sha256": "f6f4cea8eec26e7b1c66e8287394eff5702c27e1c45ba8112aa50fc96b347c7e",
+      "file": "sources/raw/lex-ash-wastes.wikitext"
+    },
     "lex-astronomican": {
       "title": "Astronomican",
       "url": "https://wh40k.lexicanum.com/wiki/Astronomican",
@@ -182,6 +200,15 @@
       "bytes": 8669,
       "sha256": "f532491d0a05fbad87d768e559a8ff4eea44c3d59cc9d2b0ae9360bf386f6d40",
       "file": "sources/raw/lex-baal.wikitext"
+    },
+    "lex-beastman": {
+      "title": "Beastman",
+      "url": "https://wh40k.lexicanum.com/wiki/Beastman",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 14292,
+      "sha256": "b3ce810dfa3d51927b4be232fc03d34d6d0412503b9b17c2186f69bc53df3d5d",
+      "file": "sources/raw/lex-beastman.wikitext"
     },
     "lex-behemoth": {
       "title": "Behemoth",
@@ -447,6 +474,15 @@
       "sha256": "6ab53229dbfd360db053b2d5510ffdb453d9c6494e6e10eaef3cb42960900453",
       "file": "sources/raw/lex-codex-astartes.wikitext"
     },
+    "lex-commissar": {
+      "title": "Commissar",
+      "url": "https://wh40k.lexicanum.com/wiki/Commissar",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 16638,
+      "sha256": "7a563c8a5863b007b18a426052c3cd654b20cc63c177066c7f3fdd1774c73ec5",
+      "file": "sources/raw/lex-commissar.wikitext"
+    },
     "lex-commorragh": {
       "title": "Commorragh",
       "url": "https://wh40k.lexicanum.com/wiki/Commorragh",
@@ -455,6 +491,15 @@
       "bytes": 13526,
       "sha256": "dca52fb127804b8ca2dd7d463cb7aa728162191c8bbab87e62d1905face6cf88",
       "file": "sources/raw/lex-commorragh.wikitext"
+    },
+    "lex-corpse-starch": {
+      "title": "Corpse-Starch",
+      "url": "https://wh40k.lexicanum.com/wiki/Corpse-Starch",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 5240,
+      "sha256": "7d48f32afb46134e71ccb400424d9acec278e8924fb536311aa244ea7b136c12",
+      "file": "sources/raw/lex-corpse-starch.wikitext"
     },
     "lex-council-of-nikaea": {
       "title": "Council of Nikaea",
@@ -694,6 +739,15 @@
       "file": "sources/raw/lex-fall-of-cadia.wikitext",
       "redirect_to": "13th Black Crusade#Fall of Cadia"
     },
+    "lex-felinid": {
+      "title": "Felinid",
+      "url": "https://wh40k.lexicanum.com/wiki/Felinid",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 2155,
+      "sha256": "1ccb40b0cbb758eec6d81a59418165f2e80a825f43981537579ffa7bacd847af",
+      "file": "sources/raw/lex-felinid.wikitext"
+    },
     "lex-fenris": {
       "title": "Fenris",
       "url": "https://wh40k.lexicanum.com/wiki/Fenris",
@@ -886,6 +940,25 @@
       "file": "sources/raw/lex-high-lords-of-terra.wikitext",
       "redirect_to": "Senatorum Imperialis"
     },
+    "lex-hive": {
+      "title": "Hive",
+      "url": "https://wh40k.lexicanum.com/wiki/Hive",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 9456,
+      "sha256": "63ac2388b233cafdee38a7250c3b38ec79f26edfa9dad3cae8ecb217bc60b028",
+      "file": "sources/raw/lex-hive.wikitext"
+    },
+    "lex-hive-city": {
+      "title": "Hive City",
+      "url": "https://wh40k.lexicanum.com/wiki/Hive_City",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 18,
+      "sha256": "f84a9c435edbd3bbe931488a577747f9bb16e9156cd36ca1578fa5da91288beb",
+      "file": "sources/raw/lex-hive-city.wikitext",
+      "redirect_to": "Hive"
+    },
     "lex-hive-fleet-behemoth": {
       "title": "Hive Fleet Behemoth",
       "url": "https://wh40k.lexicanum.com/wiki/Hive_Fleet_Behemoth",
@@ -896,6 +969,15 @@
       "file": "sources/raw/lex-hive-fleet-behemoth.wikitext",
       "redirect_to": "Behemoth"
     },
+    "lex-hive-scum": {
+      "title": "Hive Scum",
+      "url": "https://wh40k.lexicanum.com/wiki/Hive_Scum",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 3011,
+      "sha256": "e61ab1c9ce93c9db89494907599d6924149cad46de7b6c1d13ab6e11b6e1afdb",
+      "file": "sources/raw/lex-hive-scum.wikitext"
+    },
     "lex-hive-ship": {
       "title": "Hive Ship",
       "url": "https://wh40k.lexicanum.com/wiki/Hive_Ship",
@@ -904,6 +986,15 @@
       "bytes": 3072,
       "sha256": "d86406f55a9c80c1fcfbc3624ed288daef6e3e314eca0acd0ec246be615af1e1",
       "file": "sources/raw/lex-hive-ship.wikitext"
+    },
+    "lex-hive-world": {
+      "title": "Hive World",
+      "url": "https://wh40k.lexicanum.com/wiki/Hive_World",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 20514,
+      "sha256": "f23225ae8555c877349574563e6ed597760fcf7ef47949cdb3d2d24ac2848dce",
+      "file": "sources/raw/lex-hive-world.wikitext"
     },
     "lex-horus": {
       "title": "Horus",
@@ -952,6 +1043,15 @@
       "file": "sources/raw/lex-immaterium.wikitext",
       "redirect_to": "Warp"
     },
+    "lex-imperial-citizen": {
+      "title": "Imperial citizen",
+      "url": "https://wh40k.lexicanum.com/wiki/Imperial_citizen",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 787,
+      "sha256": "acb327ad8ed0c7c59a49ff55cf2efb6ab35c023beaf8c373d6808e0f4c2832e8",
+      "file": "sources/raw/lex-imperial-citizen.wikitext"
+    },
     "lex-imperial-creed": {
       "title": "Imperial Creed",
       "url": "https://wh40k.lexicanum.com/wiki/Imperial_Creed",
@@ -997,6 +1097,15 @@
       "bytes": 25066,
       "sha256": "91e2f2a129465c7146e522a1030d56e661713a3aa260ba507dc103e09ffe54b1",
       "file": "sources/raw/lex-imperial-palace.wikitext"
+    },
+    "lex-imperial-tithe": {
+      "title": "Imperial Tithe",
+      "url": "https://wh40k.lexicanum.com/wiki/Imperial_Tithe",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 5380,
+      "sha256": "865a845d2e8c044fdab6c3b9f845d5a1ca7ad549d43b01386ef400a74aada090",
+      "file": "sources/raw/lex-imperial-tithe.wikitext"
     },
     "lex-imperial-truth": {
       "title": "Imperial Truth",
@@ -1124,6 +1233,15 @@
       "sha256": "cf9d925737a0c9009da1d1a2ab8f00caadc19d8285b540eb475562fd222a5181",
       "file": "sources/raw/lex-khaine.wikitext",
       "redirect_to": "Kaela Mensha Khaine"
+    },
+    "lex-kin": {
+      "title": "Kin",
+      "url": "https://wh40k.lexicanum.com/wiki/Kin",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 17336,
+      "sha256": "7344cd25416625893d94c2a6e27f3a20b7c3f6603f6d515da1e0f992d35b9a53",
+      "file": "sources/raw/lex-kin.wikitext"
     },
     "lex-krieg": {
       "title": "Krieg",
@@ -1254,6 +1372,15 @@
       "sha256": "233e5d0af7b94356a390cd556fe31d4e35a9ac4f25ee11604fe932fe85a7af57",
       "file": "sources/raw/lex-men-of-iron.wikitext"
     },
+    "lex-militarum-tempestus": {
+      "title": "Militarum Tempestus",
+      "url": "https://wh40k.lexicanum.com/wiki/Militarum_Tempestus",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 1613,
+      "sha256": "537ce80ca80674b96fcfe1d6d0bf2f3b958acd79c5b636e7222d0821cf8bb3d7",
+      "file": "sources/raw/lex-militarum-tempestus.wikitext"
+    },
     "lex-minotaurs": {
       "title": "Minotaurs",
       "url": "https://wh40k.lexicanum.com/wiki/Minotaurs",
@@ -1262,6 +1389,15 @@
       "bytes": 24482,
       "sha256": "bac7512cb9059e2bae9c414c91e8e8fee5b50cf7c0d70a7bb4c2f725b74ed5e1",
       "file": "sources/raw/lex-minotaurs.wikitext"
+    },
+    "lex-mutant": {
+      "title": "Mutant",
+      "url": "https://wh40k.lexicanum.com/wiki/Mutant",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 10570,
+      "sha256": "fbe04b9ad12a309a07d5a14c44a106200f31d20ff83379974b3f52fae0567f97",
+      "file": "sources/raw/lex-mutant.wikitext"
     },
     "lex-nachmund-gauntlet": {
       "title": "Nachmund Gauntlet",
@@ -1308,6 +1444,16 @@
       "bytes": 1620,
       "sha256": "a8b778c908bd5ea03856e800dea99aa68edb31e505a9d26fc8cad4d9b53b5a3e",
       "file": "sources/raw/lex-necrodermis.wikitext"
+    },
+    "lex-necromunda": {
+      "title": "Necromunda",
+      "url": "https://wh40k.lexicanum.com/wiki/Necromunda",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 40,
+      "sha256": "465111d4a2e78f7248d01c7becc45abb4063bfd5146a78f4d4d5198e239a4e54",
+      "file": "sources/raw/lex-necromunda.wikitext",
+      "redirect_to": "Necromunda (disambiguation)"
     },
     "lex-necron": {
       "title": "Necron",
@@ -1401,6 +1547,15 @@
       "sha256": "22604df83588a9d556c18756d46c095d0228f35daa9b1298d7d2ab2e8595ae27",
       "file": "sources/raw/lex-officio-assassinorum.wikitext"
     },
+    "lex-ogryn": {
+      "title": "Ogryn",
+      "url": "https://wh40k.lexicanum.com/wiki/Ogryn",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 28942,
+      "sha256": "b6a03ddf1ea0739c102802088fc7eb52ddeeb24a1db7e0e7de5e53fe318f6369",
+      "file": "sources/raw/lex-ogryn.wikitext"
+    },
     "lex-old-ones": {
       "title": "Old Ones",
       "url": "https://wh40k.lexicanum.com/wiki/Old_Ones",
@@ -1476,6 +1631,16 @@
       "file": "sources/raw/lex-perils-of-the-warp.wikitext",
       "redirect_to": "Psychic Phenomena"
     },
+    "lex-pilgrimage": {
+      "title": "Pilgrimage",
+      "url": "https://wh40k.lexicanum.com/wiki/Pilgrimage",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 28,
+      "sha256": "ddff60c63ee6cbc0403aaac87a57b1ec140c600a1f79189ec8157a19b1f95ca6",
+      "file": "sources/raw/lex-pilgrimage.wikitext",
+      "redirect_to": "The Pilgrimage"
+    },
     "lex-primarch": {
       "title": "Primarch",
       "url": "https://wh40k.lexicanum.com/wiki/Primarch",
@@ -1503,6 +1668,16 @@
       "bytes": 15287,
       "sha256": "38a822bb7d37490a7ee1989c9452c95971d0d90175f0876323660773acde4f9c",
       "file": "sources/raw/lex-primaris-space-marines.wikitext"
+    },
+    "lex-progena": {
+      "title": "Progena",
+      "url": "https://wh40k.lexicanum.com/wiki/Progena",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 37,
+      "sha256": "df97b67ca4afa5353921a0acd9dc201daf287bf09c3da6a86e8cb199204a0556",
+      "file": "sources/raw/lex-progena.wikitext",
+      "redirect_to": "Schola Progenium#Progena"
     },
     "lex-psionics": {
       "title": "Psionics",
@@ -1579,6 +1754,15 @@
       "sha256": "d90a85584232600975a2c3a68a4a3d2aae560732c26b550c8eadb42c0f1a9a36",
       "file": "sources/raw/lex-pyromancy.wikitext"
     },
+    "lex-ratling": {
+      "title": "Ratling",
+      "url": "https://wh40k.lexicanum.com/wiki/Ratling",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 15904,
+      "sha256": "b7c45d0e86bcf134c6cb14c8d36abb432d4bb1fa248161dd94351bf8a4e268c5",
+      "file": "sources/raw/lex-ratling.wikitext"
+    },
     "lex-raven-guard": {
       "title": "Raven Guard",
       "url": "https://wh40k.lexicanum.com/wiki/Raven_Guard",
@@ -1633,6 +1817,15 @@
       "sha256": "4a02a62e100c2f9414ec5a7a0862111796575d0efa5d6b850ff5f111528a6dba",
       "file": "sources/raw/lex-sanctioned-psyker.wikitext"
     },
+    "lex-schola-progenium": {
+      "title": "Schola Progenium",
+      "url": "https://wh40k.lexicanum.com/wiki/Schola_Progenium",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 26155,
+      "sha256": "be3d8f4e0db2f2cc6774c5e9bbc94138bb2900296752e38f7087cb8215733688",
+      "file": "sources/raw/lex-schola-progenium.wikitext"
+    },
     "lex-scholastia-psykana": {
       "title": "Scholastia Psykana",
       "url": "https://wh40k.lexicanum.com/wiki/Scholastia_Psykana",
@@ -1641,6 +1834,16 @@
       "bytes": 10826,
       "sha256": "ffa24a462181cdf88ab2c9d6724a5cd7ffe6e3a0f4dc46c4a4bd629d329b8b08",
       "file": "sources/raw/lex-scholastia-psykana.wikitext"
+    },
+    "lex-scum": {
+      "title": "Scum",
+      "url": "https://wh40k.lexicanum.com/wiki/Scum",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 23,
+      "sha256": "6e9fec0f03b1ec992c96e3ac25c494b0bd6f26e9fcff73fc92d6a1c05f34ef14",
+      "file": "sources/raw/lex-scum.wikitext",
+      "redirect_to": "Hive Scum"
     },
     "lex-sea-of-souls": {
       "title": "Sea of Souls",
@@ -1744,6 +1947,15 @@
       "sha256": "5075d99d59f0e879b2bf652d89bd37a565b78924bb60ab1a25b2259a5baaf168",
       "file": "sources/raw/lex-senatorum-imperialis.wikitext"
     },
+    "lex-shrine-world": {
+      "title": "Shrine World",
+      "url": "https://wh40k.lexicanum.com/wiki/Shrine_World",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 11957,
+      "sha256": "6c5bc2e99dcbed5f9e4970dff96aa6e39cd4af5352c3340ac59cc83256af2fcb",
+      "file": "sources/raw/lex-shrine-world.wikitext"
+    },
     "lex-siege-of-terra": {
       "title": "Siege of Terra",
       "url": "https://wh40k.lexicanum.com/wiki/Siege_of_Terra",
@@ -1808,6 +2020,16 @@
       "sha256": "c57e27c6bcdd8b5d0ce72b518433b4a541619728c2df45ce00d1dc2520904f65",
       "file": "sources/raw/lex-space-wolves.wikitext"
     },
+    "lex-squat": {
+      "title": "Squat",
+      "url": "https://wh40k.lexicanum.com/wiki/Squat",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 51,
+      "sha256": "4c67d10db1b5c21f3556bd6c1b2c1171a09e18ccd9e41b8d585c6838b1977d22",
+      "file": "sources/raw/lex-squat.wikitext",
+      "redirect_to": "Kin"
+    },
     "lex-standard-template-construct": {
       "title": "Standard Template Construct",
       "url": "https://wh40k.lexicanum.com/wiki/Standard_Template_Construct",
@@ -1816,6 +2038,16 @@
       "bytes": 20124,
       "sha256": "7a0c64d2f4ebe630db79f444e32591d60f2560747ed03bbbc41c4863d8b37e57",
       "file": "sources/raw/lex-standard-template-construct.wikitext"
+    },
+    "lex-storm-trooper": {
+      "title": "Storm Trooper",
+      "url": "https://wh40k.lexicanum.com/wiki/Storm_Trooper",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 30,
+      "sha256": "45b01e477276f8eb0f8bf5780f6bb36e3e6ac168d7afbcda4860b5d0e0a4c7ce",
+      "file": "sources/raw/lex-storm-trooper.wikitext",
+      "redirect_to": "Tempestus Scions"
     },
     "lex-sub-sector": {
       "title": "Sub-sector",
@@ -1881,6 +2113,15 @@
       "bytes": 2548,
       "sha256": "d383b46da7105ac45996e727fed9014cad7817525e33601210cc2d8623969a1a",
       "file": "sources/raw/lex-telepathy.wikitext"
+    },
+    "lex-tempestus-scions": {
+      "title": "Tempestus Scions",
+      "url": "https://wh40k.lexicanum.com/wiki/Tempestus_Scions",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 36966,
+      "sha256": "739b1ca74264ba1cb59b03c9c794cae4443ac4458bb15af2613a2e010ee393f9",
+      "file": "sources/raw/lex-tempestus-scions.wikitext"
     },
     "lex-template-quarantine": {
       "title": "Template:Quarantine",
@@ -2017,6 +2258,15 @@
       "bytes": 73363,
       "sha256": "caba2e83c9f43b1fa9c1ee88d3d59677cd95407464a931faea3218bda6af2ba3",
       "file": "sources/raw/lex-ultramarines.wikitext"
+    },
+    "lex-underhive": {
+      "title": "Underhive",
+      "url": "https://wh40k.lexicanum.com/wiki/Underhive",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 8451,
+      "sha256": "f5c7ef86d5daed353d256c70f85c915cddd6b4d6307e4a768bb2fc64b0571d99",
+      "file": "sources/raw/lex-underhive.wikitext"
     },
     "lex-unification-wars": {
       "title": "Unification Wars",

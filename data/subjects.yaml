@@ -686,3 +686,81 @@ the-clades:
     status the Imperium's own records cannot establish.
   aliases: [Vindicare, Eversor, Culexus, Callidus, Vanus, Venenum, Adamus Temple, Exitus Rifle, Animus Speculum, polymorphine, infocyte, bio-meltdown, cryo-crypt, Meh'Lindi, Tormentius, Fon Tariel]
   see_also: [officio-assassinorum-org]
+
+hive-worlds:
+  name: Hive Worlds
+  gloss: >
+    Roughly 32,380 worlds whose populations, often exceeding a trillion, live inside
+    stacked cities with no natural ground surface left and almost all food imported.
+  aliases: [Hive World, hive city, hive cluster, spire, heat sink, hab zone, manufactory, skyhive, Clan House, Necromunda, Lord Helmawr]
+  see_also: [the-underhive]
+
+the-underhive:
+  name: the Underhive
+  gloss: >
+    The layers below a hive city, outside the reach of the Governor, the Clan Houses and
+    the guilds — built in the ruins of the world's original colony settlements.
+  aliases: [Underhive, Badzones, undercity, Dust Falls, Dead End Pass, Hive Scum, Scummers, hab-rat]
+  see_also: [hive-worlds]
+
+imperial-citizenship:
+  name: Imperial citizenship
+  gloss: >
+    Confers no rights, only responsibilities. Adepts alone hold guaranteed housing and
+    employment; everyone else owes the tithe and may be governed in any way at all,
+    provided their world pays it.
+  aliases: [Imperial citizen, Imperial Tithe, Grand Harvesting, Terra's Due, Exacta, Eaxector, Adept]
+  see_also: [the-administratum, corpse-starch]
+
+corpse-starch:
+  name: corpse-starch
+  gloss: >
+    Synthetic food rendered from the recycled dead of the Imperium's own citizens, issued
+    on hive worlds and to unlucky Astra Militarum regiments. Expressing disgust at it is
+    treated in some places as sedition.
+  aliases: [Corpse-Starch, Corpse Starch, protein reclamator, Mercator Pallidus, Corpse Guild, Corpse Grinders, Pale Consort]
+  see_also: [hive-worlds, imperial-citizenship]
+
+shrine-worlds:
+  name: Shrine Worlds
+  gloss: >
+    Worlds devoted to a saint and ruled directly by the Adeptus Ministorum, drawing
+    pilgrims from across the Imperium and lit by candles rendered from human bodies.
+  aliases: [Shrine World, Shrineworld, Cathedral World, Tallow World, Hagia, Herodor]
+  see_also: [imperial-citizenship]
+
+schola-progenium:
+  name: the Schola Progenium
+  gloss: >
+    Ecclesiarchy-run academies that raise the orphans of Imperial servants — some of them
+    orphaned to order — into the Imperium's officer class. A Munitorum offshoot staffed by
+    the Ministorum, whose three recorded outcomes are progena, truant and dead.
+  aliases: [Schola Progenium, Progena, progenii, truants, drill abbot, sol-lamps, Commandant of the Schola Progenium, Emperor's Day, Officio Prefectus]
+  see_also: [the-commissariat, officio-assassinorum-org]
+
+the-commissariat:
+  name: the Commissariat
+  gloss: >
+    The Departmento Munitorum department that assigns Commissars to Guard regiments and
+    Navy ships, with the right and duty to execute any soldier or officer showing cowardice
+    or incompetence.
+  aliases: [Commissar, Commissars, Ordo Tempestus, Tempestus Scions, Militarum Tempestus, storm troopers]
+  see_also: [schola-progenium]
+
+abhumans:
+  name: abhumans
+  gloss: >
+    Human subspecies that evolved in isolation during the Age of Strife. The Imperium
+    recognises 73 stable strains, 46 of them extinct, and its own record holds them no more
+    prone to mutation than baseline humans.
+  aliases: [Abhuman, Ogryn, Ogryns, Ratling, Ratlings, Beastman, Beastmen, Felinid, Felinids, Kin, Squats, Halflings, Bone 'ead, Militarum Auxilla, Homo sapiens gigantus]
+  see_also: [the-mutant-line, imperial-citizenship]
+
+the-mutant-line:
+  name: the mutant line
+  gloss: >
+    The administrative boundary between recognised abhuman strains, sanctioned mutants
+    holding a work pass, and the illegal remainder — in a population where one birth in
+    twenty to healthy parents produces a mutant.
+  aliases: [Mutant, Mutants, Sanctioned-Mutation Work Pass, sanctioned strain, scavvy]
+  see_also: [abhumans]

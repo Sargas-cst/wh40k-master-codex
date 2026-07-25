@@ -1,0 +1,98 @@
+title: "Volume IV, Title 2 — Life in the Imperium"
+chapters: [IV.T2.Ch4, IV.T2.Ch5, IV.T2.Ch6, IV.T2.Ch7]
+retrieved_this_title:
+  - lex-hive-world
+  - lex-hive
+  - lex-underhive
+  - lex-hive-scum
+  - lex-corpse-starch
+  - lex-imperial-citizen
+  - lex-imperial-tithe
+  - lex-shrine-world
+  - lex-schola-progenium
+  - lex-commissar
+  - lex-tempestus-scions
+  - lex-abhuman
+  - lex-ogryn
+  - lex-ratling
+  - lex-kin
+  - lex-beastman
+  - lex-felinid
+  - lex-mutant
+redirects_found:
+  - "Hive City -> Hive"
+  - "Corpse Starch -> Corpse-Starch"
+  - "Squat -> Kin"
+  - "Imperial Citizen -> Imperial citizen"
+  - "Scum -> Hive Scum"
+  - "Storm Trooper -> Tempestus Scions"
+  - "Progena -> Schola Progenium#Progena"
+not_found:
+  - "Pilgrim — no such page. Not pursued; the pilgrim economy is carried by lex-shrine-world."
+
+section_counts: { IV.T2.Ch4: 4, IV.T2.Ch5: 3, IV.T2.Ch6: 4, IV.T2.Ch7: 4 }
+
+attribution_care:
+  - >
+    Most of the hive anatomy in IV.T2.Ch4 §2 — spire, shell, heat sink, hab zones,
+    manufactories — is sourced to Necromunda material and is explicitly about that world.
+    The Chapter says so in its opening line rather than generalising it to all 32,380 Hive
+    Worlds.
+  - >
+    IV.T2.Ch7 records that the Ratling inbreeding claim is presented as natural history by
+    lex-age-of-strife (used in III.T2.Ch9) and attributed to "the propagandists that spread
+    anti-abhuman rhetoric" by lex-ratling. Both framings are reported; neither is chosen.
+    Not registered as a contradiction because the underlying claim does not differ — only
+    who is said to be making it.
+
+contradictions:
+  registered:
+    - key: kin-abhuman-or-xenos
+      kind: terminology
+      why: >
+        The Kin article flags its own split: Imperial classification varies between abhuman
+        and xenos, with the Inquisition treating them as the latter. Surfaced in
+        IV.T2.Ch7 §3. The stake is conscription versus extermination doctrine.
+
+subjects_registered:
+  - hive-worlds
+  - the-underhive
+  - imperial-citizenship
+  - corpse-starch
+  - shrine-worlds
+  - schola-progenium
+  - the-commissariat
+  - abhumans
+  - the-mutant-line
+glossary_added: [hive, inquisitor]
+
+cross_title_threads:
+  - >
+    The corpse-starch of Ch5 and the tallow candles of Ch5 §3 are the same raw material
+    processed by two different guilds for two different purposes. Neither source article
+    mentions the other; the Chapter sets them side by side.
+  - >
+    Ch6 closes the loop opened in IV.T1.Ch3: the Officio Assassinorum recruits from the
+    Schola, and the children who "disappear one-by-one without any explanation" are, some
+    of them, going there to a journey nine in ten do not survive.
+  - >
+    Ch4's finding that hive gang warfare is the Astra Militarum's unpaid basic training,
+    and that the Arbites cull the surplus, connects IV.T1.Ch2's account of what the Arbites
+    do and do not police.
+
+process_errors:
+  - >
+    IV.T2.Ch4 §1 cited [^lex-hive] without declaring it in the Section's sources. Caught by
+    the declared-vs-cited check in both directions.
+  - >
+    IV.T2.Ch6 §4 cited [^lex-schola-progenium] without declaring it. Same check, same fix.
+
+verification:
+  validator: OK
+  warnings: 10
+  strict_build: clean
+  rendered_check: >
+    All four pages read from build/site. 10,433 words, 42 cross-references, 40 tooltips and
+    140 footnote references, no leaked link syntax or citation markers. IV.T2.Ch4 shows only
+    two tooltips because it is the full_treatment Chapter for "hive" and the marker
+    deliberately skips a term where the surrounding prose is the definition.

@@ -1135,3 +1135,24 @@ adeptus-terra:
   category: institution
   sources: [lex-adeptus-terra]
   full_treatment: IV.T1.Ch2
+
+hive:
+  term: Hive
+  definition: >
+    A huge urban accretion built up over thousands of years, its peaks called spires and
+    its lowest layers the underhive. Over 85% of Imperial planets carry at least one
+    hive city cluster.
+  variants: [hive city, hive cluster, city hive]
+  category: institutions
+  sources: [lex-hive]
+  full_treatment: IV.T2.Ch4
+
+inquisitor:
+  term: Inquisitor
+  definition: >
+    An agent of the Inquisition, answerable to no Imperial authority below the High Lords
+    and empowered by the Inquisitorial rosette to commandeer any Imperial resource.
+  variants: [Inquisitors, Lord Inquisitor]
+  category: rank
+  sources: [lex-officio-assassinorum]
+  full_treatment: IV.T7.Ch23
