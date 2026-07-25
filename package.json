@@ -8,7 +8,10 @@
     "validate": "node frame/validate.mjs",
     "validate:strict": "node frame/validate.mjs --strict",
     "prepare-docs": "node frame/build.mjs",
-    "build": "node frame/validate.mjs && node frame/build.mjs"
+    "build": "node frame/validate.mjs && node frame/build.mjs",
+    "retrieve": "node frame/retrieve.mjs",
+    "cached": "node frame/retrieve.mjs --list",
+    "cites": "node frame/cite-map.mjs"
   },
   "dependencies": {
     "yaml": "^2.5.0"

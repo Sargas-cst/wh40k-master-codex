@@ -1,0 +1,50 @@
+{
+  "retrievals": {
+    "lex-astronomican": {
+      "title": "Astronomican",
+      "url": "https://wh40k.lexicanum.com/wiki/Astronomican",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 7201,
+      "sha256": "a67e3301e1f15ab066aab541b634846043add10f3f320918590152948201ac73",
+      "file": "sources/raw/lex-astronomican.wikitext"
+    },
+    "lex-cadia": {
+      "title": "Cadia",
+      "url": "https://wh40k.lexicanum.com/wiki/Cadia",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 18981,
+      "sha256": "480d5e19f77f58c08752ad0f0348eda0366014f4ae4343e1778fb88e396d3fba",
+      "file": "sources/raw/lex-cadia.wikitext"
+    },
+    "lex-immaterium": {
+      "title": "Immaterium",
+      "url": "https://wh40k.lexicanum.com/wiki/Immaterium",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 18,
+      "sha256": "01bc5f1fdb8fb79fb304bcae96fd16d54505fb597eabb432604d10114655da3b",
+      "file": "sources/raw/lex-immaterium.wikitext",
+      "redirect_to": "Warp"
+    },
+    "lex-segmentum-tempestus": {
+      "title": "Segmentum Tempestus",
+      "url": "https://wh40k.lexicanum.com/wiki/Segmentum_Tempestus",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 2823,
+      "sha256": "fdc8f5affe424bdce183880eaa3bf9af6d12c7b7b9f9111f465a12f6809ebd1b",
+      "file": "sources/raw/lex-segmentum-tempestus.wikitext"
+    },
+    "lex-warp": {
+      "title": "Warp",
+      "url": "https://wh40k.lexicanum.com/wiki/Warp",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 16398,
+      "sha256": "f0aec78215b9f1a0c5aeba7e517c7523d003ea9355a8eaedb9d22a9192a92bd5",
+      "file": "sources/raw/lex-warp.wikitext"
+    }
+  }
+}

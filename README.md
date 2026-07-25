@@ -20,6 +20,8 @@ Ten volumes · 49 titles · 171 chapters · ~210,000–250,000 words when comple
 | `frame/schema.md` | **The data contract.** Definitive — if prose and this disagree, this wins |
 | `frame/validate.mjs` | Structural validator. Runs before every build |
 | `frame/build.mjs` | Resolves cross-references, generates footnotes, compiles the appendix |
+| `frame/retrieve.mjs` | Polite batch retriever for Lexicanum |
+| `frame/cite-map.mjs` | Resolves a page's citation markers to books and pages |
 | `frame/example-chapter.md` | Syntax fixture. Deliberately not in `book/` |
 | `book/` | The codex itself. One Markdown file per Chapter |
 | `data/` | The four registries: sources, glossary, subjects, contradictions |
@@ -53,6 +55,28 @@ CI runs validate → prepare → build on every push. **Deployment is off by def
 site is published only by running the *Build codex* workflow manually with
 `publish = true`. GitHub Pages must also be enabled once under Settings → Pages with
 Source set to *GitHub Actions*.
+
+## Researching
+
+```bash
+npm run retrieve -- Astronomican Cadia Segmentum_Tempestus
+npm run cites -- lex-astronomican
+npm run cites -- lex-astronomican --yaml     # paste-ready data/sources.yaml entry
+npm run cached                               # what is already on disk
+```
+
+Retrieval goes through `Special:Export`, which returns raw wikitext for up to eight
+pages per request. Wikitext is preferable to rendered HTML here because Lexicanum marks
+citations structurally — `{{Fn|1b}}` inline, `{{Endn|1b}}: pg. 140` in the Sources
+section — so resolving a claim to a book and page is mechanical rather than a matter of
+squinting at `[1b]` in rendered output. `cite-map.mjs` does that resolution and also
+surfaces the wiki's own reliability tags (`{{Uncited}}`, `{{Cite Marker End}}`,
+`{{Conflicting Sources}}`), which summaries tend to bury.
+
+The retriever honours `robots.txt`: `Crawl-delay: 5` between requests, sequential only,
+and it never re-fetches a page already cached. Lexicanum is fan-run on limited hardware
+and deserves the courtesy; batching plus caching also cuts total requests by more than
+an order of magnitude against page-at-a-time browsing.
 
 ## What the validator enforces
 
@@ -91,10 +115,11 @@ themselves.
 
 ## Open decisions
 
-- Version pins in `requirements.txt` are deliberately loose pending the first successful
-  CI run, then should be pinned exactly.
-- Retrieval has not yet been verified against Lexicanum, and no content may be written
-  until it has been.
+- Whether to mirror Lexicanum locally. Not needed for ordinary research now that batch
+  retrieval works, but the Master Index needs corpus-wide visibility rather than
+  page-at-a-time reads.
+- Pace: Title-by-title with an approval gate each time (49 cycles), or pilot one Title
+  and then batch by Volume (11 cycles).
 
 ## Licence
 

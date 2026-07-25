@@ -31,18 +31,47 @@
 astronomican-psyker-toll:
   kind: numerical
   status: resolved
-  reverified: false
+  reverified: true
+  reverified_on: 2026-07-25
   seeded_from: PROMPT.md §11
   summary: >
     Search summaries make the Astronomican's cost look like an unresolvable three-way
-    conflict. Per the brief, the article itself is consistent: a standing choir of ten
-    thousand psykers, of whom up to one hundred die per day — a pool and an attrition
-    rate, not competing totals. The "thousand sacrificed daily" figure belongs to the
-    Golden Throne, a different subject entirely.
+    conflict. The article is consistent: a standing choir of ten thousand psykers, of
+    whom up to one hundred die per day — a pool and an attrition rate, not competing
+    totals.
+  reverification_note: >
+    Confirmed against the retrieved article. The decisive detail is that BOTH figures
+    carry the same citation marker, {{Fn|1b}}, resolving to a single page of a single
+    book. Two numbers sourced to one page are not rival claims about the same
+    quantity; the article is describing a population and a rate of loss from it. This
+    is exactly the distinction a search summary destroys by stripping the markers that
+    show two figures share a source.
   why_kept: >
     Retained as the standing example of why one opens the page instead of trusting a
     search summary. The failure it documents is a methodology failure, not a lore one.
-  positions: []
+  positions:
+    - claim: A standing choir of ten thousand psykers powers the beacon.
+      source: lex-astronomican
+      marker: "{{Fn|1b}}"
+    - claim: Up to one hundred psykers die each day powering it.
+      source: lex-astronomican
+      marker: "{{Fn|1b}}"
+    - claim: >
+        The Emperor directs the energy across the galaxy but does not supply it; only
+        he has the psychic power to handle and aim it.
+      source: lex-astronomican
+      marker: "{{Fn|1b}}"
+    - claim: >
+        Range about fifty thousand light years across a galaxy about eighty-five
+        thousand light years wide, which is why the Eastern Fringe lies outside it and
+        why that defines the Imperium's practical borders.
+      source: lex-astronomican
+      marker: "{{Fn|1a}}"
+  not_in_this_article: >
+    The "thousand sacrificed daily" figure does not appear in this article at all. Per
+    PROMPT.md §11 it belongs to the Golden Throne, a separate subject — to be confirmed
+    against that article when Volume VIII Title 5 Chapter 12 is researched, not assumed
+    here.
 
 gellar-field-spelling:
   kind: terminology

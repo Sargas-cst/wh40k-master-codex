@@ -39,4 +39,34 @@
 #
 # ---------------------------------------------------------------------------
 
-# No sources retrieved yet. Retrieval is not yet verified — see PROMPT.md §5.
+# Generate an entry mechanically instead of typing it:
+#     node frame/retrieve.mjs Astronomican
+#     node frame/cite-map.mjs lex-astronomican --yaml
+# The `cites` list and the reliability notes come straight out of the wikitext.
+
+lex-astronomican:
+  tier: 2
+  what: Lexicanum article "Astronomican"
+  url: https://wh40k.lexicanum.com/wiki/Astronomican
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-astronomican.wikitext
+  cites:                                  # print sources, UNVERIFIED BY US
+    - "Warhammer 40,000: Rogue Trader, pg. 132"                                # {{Fn|1a}}
+    - "Warhammer 40,000: Rogue Trader, pg. 140"                                # {{Fn|1b}}
+    - "Codex: Tyranids (5th Edition), pg. 28"                                  # {{Fn|2}}
+    - "Warhammer 40,000 6th Edition Rulebook, pg. 168"                         # {{Fn|3}}
+    - "The Horus Heresy Book One - Betrayal, pg. 21"                           # {{Fn|4}}
+    - "Dawn of War (Novel Series), [incomplete citation]"                      # {{Fn|5}}
+    - "Watchers of the Throne: The Emperor's Legion (Novel), Ch. Five, Tieron" # {{Fn|6}}
+    - "Vaults of Terra: The Carrion Throne (Novel) - Cover"                    # {{Fn|7}}
+    - "Mortis (Novel) - Chapter 16"                                            # {{Fn|8}}
+    - "The End and the Death: Volume III (Novel) - 10:xv"                      # {{Fn|9}}
+    - "Fabius Bile: Clonelord (Novel), Chapter 18"                             # {{Fn|10}}
+    - "White Dwarf February 2017 (e-version), pgs. 82-83 'Illuminations'"      # {{Fn|11}}
+    - "Witchbringer (Novel), Chapter 1"                                        # {{Fn|12a}}
+    - "Witchbringer (Novel), Chapter 7"                                        # {{Fn|12b}}
+  notes: >
+    Carries {{Uncited}} — two works are listed that are tied to no specific claim
+    (Warhammer 40,000 3rd Edition Rulebook; White Dwarf 140 UK). Also carries
+    {{Cite Marker End}} on {{Fn|5}}, an incomplete citation. Neither may be used
+    as support for anything.

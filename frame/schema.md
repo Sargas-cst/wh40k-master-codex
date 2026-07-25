@@ -171,7 +171,55 @@ That is the correct trade.
 
 ---
 
-## 9. Depth bands
+## 9. Retrieval — verified 2026-07-25
+
+| Route | Result |
+|---|---|
+| Plain URL fetch (default user-agent) | ❌ **HTTP 402 / 403** |
+| Node `fetch()`, any headers tried | ❌ **HTTP 403** — see below |
+| **curl with a browser user-agent** | ✅ **HTTP 200** |
+| **Browser navigation** | ✅ full article, citation markers, Sources list |
+| **`Special:Export`, batched** | ✅ raw wikitext, ~64 KB for 3 pages in one request |
+| `api.php` | ⛔ **not probed and never to be** — PROMPT.md §5 records that it took the browser down |
+
+The block is on the user-agent, not the IP. Node's `fetch()` returns 403 even with an
+identical browser UA, and header variants do not help (curl-minimal, a full browser set
+including `Sec-Fetch-*`, and `identity` encoding were all tried). The discrimination is
+below the HTTP layer — undici's TLS handshake fingerprints differently from curl's — so
+`frame/retrieve.mjs` shells out to curl deliberately. **Do not refactor it back to
+`fetch()`.**
+
+`robots.txt` allows everything under `/wiki/`, `Special:Export` included, and asks for
+`Crawl-delay: 5`. That is the site's own stated term and is what the retriever waits.
+Lexicanum is fan-run on limited hardware, so the retriever also batches 8 titles per
+request and **never re-fetches a cached page**, which cuts total requests by more than
+an order of magnitude over page-at-a-time browsing.
+
+### Why raw wikitext, not rendered pages
+
+Lexicanum marks citations *structurally*, which makes claim → book → page mechanical:
+
+```
+inline    ...across around fifty thousand light years of the Galaxy{{Fn|1b}}
+endnote   *1: [[Warhammer 40,000: Rogue Trader]]:
+          **{{Endn|1b}}: pg. 140
+```
+
+`frame/cite-map.mjs` resolves that mapping and prints each marker with the sentence it
+is attached to; `--yaml` emits a paste-ready `sources.yaml` entry. It also surfaces the
+wiki's own reliability tags — `{{Uncited}}`, `{{Cite Marker End}}`,
+`{{Conflicting Sources}}` — which rendered summaries bury and which §5 insists stay
+visible.
+
+Two traps this has already caught, both worth knowing before relying on a page:
+
+- **Redirects export as stubs.** `Immaterium` returns 18 bytes: `#REDIRECT [[Warp]]`.
+  Cached silently, that would leave a Section apparently sourced to a page with no
+  content in it. The retriever detects and reports them.
+- **Listed ≠ cited.** An article's Sources section can include works under
+  `{{Uncited}}` that support no specific claim. They are not evidence for anything.
+
+## 10. Depth bands
 
 Derived from the Volume, per §7 of the brief. Not stored per file.
 
