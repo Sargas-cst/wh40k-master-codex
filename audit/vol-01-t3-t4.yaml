@@ -1,0 +1,130 @@
+title: I.T3 and I.T4
+name: Sub-Dimensional Tunnels & Non-Warp Transit; Material Gods & Cosmic Entities
+depth_band: none — no band enforced from this point, by the user's direction
+researched: 2026-07-25
+note: >
+  Recorded jointly because these two Titles were researched and written in one pass to
+  complete Volume I, following the switch from Title-by-Title to Volume-by-Volume working.
+
+# ---------------------------------------------------------------------------
+# RETRIEVALS
+# ---------------------------------------------------------------------------
+# Title 3: 21 page titles across 4 Special:Export requests.
+# Title 4: 20 page titles across 3 requests.
+# All at the Crawl-delay: 5 robots.txt asks for. api.php untouched.
+
+queries:
+  - route: Special:Export — Title 3 core
+    outcome: >
+      15 of 16 returned. Redirects again carried information: Black Library resolves to
+      "Black Library of Chaos", Harlequins to "Harlequin", Warp Drive to "Warp drive".
+      "Imperial Webway Project" does not exist; the article is at "Webway Project".
+  - route: Special:Export — Title 4 core
+    outcome: >
+      Yngir redirects to C'tan, Nightbringer to Aza'gorod, Khaine to Kaela Mensha Khaine,
+      Eldar Gods to Aeldari Mythology, Ork Gods to Gork and Mork. "Aeldari Pantheon" does
+      not exist as a title.
+
+# ---------------------------------------------------------------------------
+# RELIABILITY FLAGS
+# ---------------------------------------------------------------------------
+# Swept with cite-map.mjs before drafting, as now standard.
+reliability_flags:
+  - note: >
+      Title 3 is the best-founded material in Volume I. The four articles carrying the
+      Title — Webway, Webway Project, Webway Gate, Craftworld — are all unflagged, and the
+      Webway article is 23 KB. Commorragh, Old Ones and Harlequin carry {{Uncited}} and
+      {{Trivia}}, but Volume I cites them only for claims their own text states directly,
+      with the fuller treatment left to Volumes II and VI.
+  - note: >
+      Title 4 is thinner. The C'tan article is 25 KB and unflagged, but Necrodermis is
+      1.6 KB, and the Celestial Orrery, Tesseract Vault and C'tan Shard articles are all
+      under 4 KB. Two C'tan citations are Warhammer TV video timestamps rather than texts.
+      Chapter 14 says in its own prose that the C'tan material is assertive and thin.
+
+# ---------------------------------------------------------------------------
+# CONTRADICTIONS FOUND
+# ---------------------------------------------------------------------------
+contradictions_found:
+  - id: tau-ftl-retcon
+    note: >
+      Whether the T'au had any FTL before the AL-38 Slipstream Module. An explicit
+      edition-level retcon, recorded on the wiki under its own conflicting-sources
+      heading. Material for Appendix A Title 1.
+  - id: ctan-discovery-accounts
+    note: >
+      How the Necrontyr found the C'tan — accident by stellar probe (Solemnace archives)
+      versus drawn by a beacon of hatred (Aeldari Book of Mournful Night). Two rival
+      in-universe records, each flattering its keeper. The setting's preferred form of
+      unreliability.
+  - id: ork-gods-precedence
+    note: >
+      Whether Gork and Mork preceded the Orks or the reverse. Left open by the article
+      despite the same article deriving the gods from Ork traits — which bears on how Warp
+      gods come to exist at all, and is used in Chapter 16 as the closing argument.
+
+contradictions_reverified: []
+# The two §11 items still outstanding — cadian-pylon-dimensions and
+# imperial-forms-of-address — belong to Volumes II, VII and IV. Both remain
+# reverified: false and prose still cannot cite them.
+
+# ---------------------------------------------------------------------------
+# CORRECTIONS TO THE PLAN
+# ---------------------------------------------------------------------------
+factual_corrections:
+  - subject: '"Ork Sub-Warp" as a non-warp FTL method'
+    finding: >
+      Orks do not travel sub-warp. Ork fleets use Warp engines — volatile and dangerous
+      ones, comparable to human Warp drives. What is distinctive is the navigation, not
+      the physics: ships frequently enter the Warp with no destination, trusting Gork and
+      Mork to deposit them somewhere with a good fight, or are steered by Weirdboyz with
+      highly variable results.
+    disposition: >
+      Chapter 13 covers the three genuinely non-warp methods — Necron, Tyranid, T'au — and
+      states the correction explicitly, since Orks are routinely listed among non-warp
+      travellers and do not belong there.
+
+  - subject: '"Aeldari Pantheon" and "Eldar Gods" as article titles'
+    finding: Neither exists. The material is at "Aeldari Mythology" and the individual gods.
+    disposition: No consequence for the prose; recorded so the next Title does not re-probe.
+
+departures_from_plan:
+  - chapter: I.T3.Ch10 to I.T3.Ch13, I.T4.Ch14 to I.T4.Ch16
+    change: All seven Chapters written at three Sections each, as proposed.
+    reason: >
+      Unlike Titles 1 and 2, every proposed Section title in these two Titles turned out to
+      name something the sources actually cover. The only substantive change is Chapter
+      13's third Section, retitled to accommodate the Ork correction above.
+
+# ---------------------------------------------------------------------------
+# LENGTH
+# ---------------------------------------------------------------------------
+length:
+  policy: >
+    No band enforced. The user's direction is explicit: use whatever words the material
+    warrants, neither padding to reach a figure nor cutting to respect one. The
+    below-band warning has been removed from the validator, which now reports the
+    distribution as information only.
+  outcome: >
+    Volume I finishes at 21 Chapters, 55 Sections. Sections range from 280 to roughly 660
+    words. The longer ones are where the material is concrete and enumerable — the
+    Assignment scale, the Webway Project, the Necron super-weapons. The shorter ones are
+    where it is genuinely sparse, chiefly Real Space and the soul. That spread is now
+    treated as the correct outcome rather than a defect to correct.
+
+notes: >
+  Two connections emerged across Titles that neither Title would have produced alone, and
+  both are the canonical-home rule paying off rather than an accident.
+
+  The first: the man called Veil, found in Title 1 Chapter 4 as a curiosity — the only Veil
+  the setting names, in a Chapter about an undefined boundary — turns out in Title 3 to be
+  the Navigator agent who destroyed Dark Glass, the prototype that would have linked the
+  Webway to the Golden Throne. The same novel chapter is cited by both articles. He is not
+  a footnote; he is the instrument by which the Navis Nobilite attacked the one project
+  that would have made Navigators obsolete.
+
+  The second: the shattering of a god into usable fragments occurs twice, in two pantheons,
+  for two different reasons — the Necrons breaking the C'tan deliberately, Slaanesh
+  breaking Khaine through exhaustion — and in both cases the survivors keep the pieces and
+  deploy them as weapons. Chapter 16 makes that parallel explicit because Chapter 15 had
+  already established one half of it.

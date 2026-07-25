@@ -142,3 +142,77 @@ psyker-sanctioning:
     scale on which most of them are expended.
   aliases: [Black Ships, the Tithe, sanctioning, Scholastica Psykana, Soul Binding]
   see_also: [the-assignment-scale]
+
+# --- Volume I Title 3 ------------------------------------------------------
+# Deliberately absent, belonging elsewhere:
+#   The Old Ones                 -> III.T1.Ch1
+#   Commorragh as a place        -> II.T3.Ch10
+#   The Drukhari as a society    -> VI.T2.Ch6
+#   The Harlequins               -> VI.T2.Ch8
+#   Craftworlds as places        -> II.T3.Ch10 and VI.T2.Ch4
+#   Magnus's breach as an event  -> III.T3.Ch15
+#   The Golden Throne as a relic -> VIII.T5.Ch12
+
+the-webway:
+  name: The Webway
+  gloss: >
+    The labyrinth between realspace and the Warp: who built it, how it is shaped, and how
+    badly it has decayed.
+  aliases: [Webway, the Labyrinth Dimension, webway gates, Dolmen Gate]
+  see_also: [the-webway-project, non-warp-transit]
+
+webway-inhabitants:
+  name: Inhabitants of the Webway
+  gloss: >
+    Who lives inside the labyrinth and how they hold their ground — craftworld gates, the
+    Dark City, and the guarded library at its heart.
+  aliases: [Commorragh, the Dark City, the Black Library, Cegorach]
+  see_also: [the-webway]
+
+the-webway-project:
+  name: The Webway Project
+  gloss: >
+    The Emperor's attempt to take humanity out of the Warp altogether, and the breach that
+    ended it and put him on the Golden Throne.
+  aliases: [the Imperial Webway, the Emperor's Great Work, Magnus' Folly, Dark Glass]
+  see_also: [the-webway]
+
+non-warp-transit:
+  name: Faster-than-light without the Warp
+  gloss: >
+    The methods other species use to cross the galaxy without entering the Immaterium, and
+    what each one costs.
+  aliases: [inertialess drive, Narvhal, slipstream module, AL-38, non-warp FTL]
+  see_also: [the-webway]
+
+# --- Volume I Title 4 ------------------------------------------------------
+# Deliberately absent, belonging elsewhere:
+#   The Necrons as a faction        -> VI.T1
+#   The Necrontyr and War in Heaven -> III.T1
+#   The Emperor himself             -> VIII.T1.Ch1
+#   Tesseract Vaults as war engines -> VIII.T5.Ch14
+#   The Aeldari as a culture        -> VI.T2
+
+the-ctan:
+  name: The C'tan
+  gloss: >
+    The star gods: what they are held to be, how they were bound into metal bodies, and
+    what they can do to physical law.
+  aliases: [C'tan, Yngir, Star Gods, star vampires, necrodermis]
+  see_also: [ctan-shards, divine-archetypes]
+
+ctan-shards:
+  name: C'tan shards and Necron super-weapons
+  gloss: >
+    What remains of the star gods after their servants broke them, and the devices built
+    to hold and aim the pieces.
+  aliases: [C'tan Shard, shards, tesseract labyrinth, Tesseract Vault, Celestial Orrery]
+  see_also: [the-ctan]
+
+divine-archetypes:
+  name: Divine archetypes across the pantheons
+  gloss: >
+    How the setting's gods differ in kind — worshipped corpse, shattered war god, and
+    twin deities whose existence may postdate their worshippers.
+  aliases: [pantheons, Khaine, Isha, Gork and Mork, the God-Emperor]
+  see_also: [the-ctan]

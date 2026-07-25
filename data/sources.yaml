@@ -504,3 +504,313 @@ lex-soul-binding:
     - "Faith and Fire (Novel), Chapter Seventeen"       # {{Fn|4}}
     - "Deathwatch Core Rulebook, pg. 285"               # {{Fn|7}}
   notes: Carries {{Uncited}} and {{Cite Marker End}}.
+
+# ===========================================================================
+# VOLUME I · TITLE 3 — retrieved 2026-07-25
+# ===========================================================================
+
+lex-webway:
+  tier: 2
+  what: Lexicanum article "Webway"
+  url: https://wh40k.lexicanum.com/wiki/Webway
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-webway.wikitext
+  cites:
+    - "Codex: Necrons (5th Edition), pg. 6"                          # {{Fn|1a}}
+    - "Codex: Necrons (5th Edition), pg. 8"                          # {{Fn|1b}}
+    - "Codex: Dark Eldar (5th Edition), pg. 8"                       # {{Fn|2c}}
+    - "Codex: Dark Eldar (5th Edition), pg. 20"                      # {{Fn|2d}}
+    - "Codex: Chaos Daemons (4th Edition), pg. 18"                   # {{Fn|3}}
+    - "Codex: Necrons (3rd Edition), pg. 24"                         # {{Fn|4}}
+    - "Codex: Eldar (4th Edition), pg. 12"                           # {{Fn|5a}}
+    - "Codex: Eldar (4th Edition), pg. 13"                           # {{Fn|5b}}
+    - "Epic: Swordwind, pg. 3"                                       # {{Fn|7a}}
+    - "Harlequin (Novel), Chapter 16"                                # {{Fn|10}}
+    - "Battlefleet Gothic Magazine Issue 13, pg. 22"                 # {{Fn|11}}
+    - "Atlas Infernal (Novel), Act I, Canto III"                     # {{Fn|13}}
+    - "Realm of Chaos: Slaves to Darkness, pg. 215"                  # {{Fn|15}}
+    - "Fist of Demetrius (Novel), Chapter 28"                        # {{Fn|17}}
+  notes: >
+    No reliability template. 23 KB, and the best-founded core article in Volume I
+    outside the Psyker page.
+
+lex-webway-project:
+  tier: 2
+  what: Lexicanum article "Webway Project"
+  url: https://wh40k.lexicanum.com/wiki/Webway_Project
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-webway-project.wikitext
+  cites:
+    - "Master of Mankind (Novel), Chapter 10"       # {{Fn|1a}}
+    - "Master of Mankind (Novel), Chapter 11"       # {{Fn|1b}}
+    - "Master of Mankind (Novel), Epilogue"         # {{Fn|1c}}
+    - "Master of Mankind (Novel), Chapter 13"       # {{Fn|1d}}
+    - "A Thousand Sons (Novel), Chapter 20"         # {{Fn|2}}
+    - "The Path of Heaven (Novel), Chapter 22"      # {{Fn|3}}
+    - "Collected Visions, pgs. 326-330, 350-351"    # {{Fn|4}}
+  notes: >
+    Also known as the Imperial Webway and the Emperor's Great Work. No reliability
+    template. Note that {{Fn|3}} is the same chapter of the same novel cited by the
+    "Veil" article for the destruction of Dark Glass — the Navigator agent and the
+    prototype are the same episode seen from two sides.
+
+lex-webway-gate:
+  tier: 2
+  what: Lexicanum article "Webway Gate"
+  url: https://wh40k.lexicanum.com/wiki/Webway_Gate
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-webway-gate.wikitext
+  cites: []
+
+lex-dolmen-gate:
+  tier: 2
+  what: Lexicanum article "Dolmen Gate"
+  url: https://wh40k.lexicanum.com/wiki/Dolmen_Gate
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-dolmen-gate.wikitext
+  cites:
+    - "Codex: Necrons (5th Edition), pg. 8"     # {{Fn|1}}
+
+lex-old-ones:
+  tier: 2
+  what: Lexicanum article "Old Ones"
+  url: https://wh40k.lexicanum.com/wiki/Old_Ones
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-old-ones.wikitext
+  cites: []
+  notes: >
+    Carries {{Uncited}} and {{Trivia}}. The Old Ones are the canonical subject of
+    III.T1.Ch1; nothing is cited from this article here beyond what the Webway
+    article already supports.
+
+lex-craftworld:
+  tier: 2
+  what: Lexicanum article "Craftworld"
+  url: https://wh40k.lexicanum.com/wiki/Craftworld
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-craftworld.wikitext
+  cites:
+    - "Codex: Eldar (6th Edition) (Ebook), pg. 6"                       # {{Fn|8a}}
+    - "Codex: Eldar (6th Edition) (Ebook), pg. 20"                      # {{Fn|8b}}
+    - "White Dwarf 127 (UK), pgs. 13-21"                                # {{Fn|4}}
+    - "Codex: Aeldari (10th Edition), pg. 50"                           # {{Fn|19}}
+  notes: No reliability template.
+
+lex-commorragh:
+  tier: 2
+  what: Lexicanum article "Commorragh"
+  url: https://wh40k.lexicanum.com/wiki/Commorragh
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-commorragh.wikitext
+  cites:
+    - "Codex: Dark Eldar (5th Edition), pgs. 8-9"       # {{Fn|1a}}
+    - "Codex: Dark Eldar (5th Edition), pg. 20"         # {{Fn|1c}}
+  notes: >
+    Carries {{Uncited}} and {{Trivia}}. Commorragh as a place belongs to II.T3.Ch10
+    and as a society to VI.T2.Ch6; only its role as a webway node is treated in
+    Volume I.
+
+lex-black-library-of-chaos:
+  tier: 2
+  what: Lexicanum article "Black Library of Chaos"
+  url: https://wh40k.lexicanum.com/wiki/Black_Library_of_Chaos
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-black-library-of-chaos.wikitext
+  cites:
+    - "Realm of Chaos: Slaves to Darkness, pg. 215"     # {{Fn|1}}
+    - "Ahriman: Undying (Novel), Prologue"              # {{Fn|9}}
+    - "Codex: Eldar (4th Edition), pg. 13"              # {{Fn|14}}
+  notes: >
+    Carries {{Cite Marker End}}. "Black Library" redirects here — not to be confused
+    with Black Library the publisher.
+
+lex-cegorach:
+  tier: 2
+  what: Lexicanum article "Cegorach"
+  url: https://wh40k.lexicanum.com/wiki/Cegorach
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-cegorach.wikitext
+  cites:
+    - "Codex: Harlequins (7th Edition), 'Ghosts of the Webway'"                 # {{Fn|2}}
+    - "Codex: Aeldari (10th Edition), pgs. 12-13"                               # {{Fn|3}}
+    - "White Dwarf 273 (UK), 'Translations of Pertinent Eldar Myths'"           # {{Fn|4}}
+
+lex-harlequin:
+  tier: 2
+  what: Lexicanum article "Harlequin"
+  url: https://wh40k.lexicanum.com/wiki/Harlequin
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-harlequin.wikitext
+  cites: []
+  notes: >
+    41 KB, carries {{Uncited}} and {{Trivia}}. The Harlequins are the canonical
+    subject of VI.T2.Ch8; Volume I cites only their role as guardians of the Black
+    Library, which that article supports directly.
+
+lex-inertialess-drive:
+  tier: 2
+  what: Lexicanum article "Inertialess Drive"
+  url: https://wh40k.lexicanum.com/wiki/Inertialess_Drive
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-inertialess-drive.wikitext
+  cites:
+    - "Battlefleet Gothic: Armada, pg. 74"                              # {{Fn|1}}
+    - "Shield of Baal: Exterminatus, pg. 64 'Alliance on Asphodex'"     # {{Fn|2a}}
+    - "Shield of Baal: Exterminatus, pg. 147 'Death of Worlds'"         # {{Fn|2b}}
+    - "Battlefleet Gothic: Armada II"                                   # {{Fn|4}}
+    - "White Dwarf 522, pg. 63 'Traversing the Void'"                   # {{Fn|6}}
+  notes: >
+    Two of its citations carry incomplete-citation markers: a Warhammer TV video
+    timestamp, and Codex: Necrons (3rd Edition) with no page.
+
+lex-narvhal:
+  tier: 2
+  what: Lexicanum article "Narvhal"
+  url: https://wh40k.lexicanum.com/wiki/Narvhal
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-narvhal.wikitext
+  cites:
+    - "Codex: Tyranids (5th Edition), pg. 19"       # {{Fn|1}}
+  notes: >
+    The entire article rests on one page. No reliability template, but the narrowness
+    is worth knowing.
+
+lex-al-38-slipstream-module:
+  tier: 2
+  what: Lexicanum article "AL-38 Slipstream Module"
+  url: https://wh40k.lexicanum.com/wiki/AL-38_Slipstream_Module
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-al-38-slipstream-module.wikitext
+  cites:
+    - "Codex: Tau Empire (8th Edition), pgs. 22-23"                     # {{Fn|1a}}
+    - "Codex: Tau Empire (8th Edition), pg. 25"                         # {{Fn|1b}}
+    - "Battlefleet Gothic: Armada (Book), pg. 96"                       # {{Fn|2}}
+    - "Wrath & Glory Threat Assessment: Xenos, pgs. 160-161"            # {{Fn|3}}
+  notes: >
+    Carries {{Trivia}}, and inside it a "Conflicting sources" note recording an
+    explicit retcon — see contradiction tau-ftl-retcon.
+
+lex-ork-fleet:
+  tier: 2
+  what: Lexicanum article "Ork Fleet"
+  url: https://wh40k.lexicanum.com/wiki/Ork_Fleet
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-ork-fleet.wikitext
+  cites:
+    - "Battlefleet Gothic Rulebook, pg. 135"    # {{Fn|1}}
+
+lex-warp-drive:
+  tier: 2
+  what: Lexicanum article "Warp drive"
+  url: https://wh40k.lexicanum.com/wiki/Warp_drive
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-warp-drive.wikitext
+  cites: []
+  notes: Carries {{Uncited}}. Used only for comparison against the non-warp methods.
+
+# ===========================================================================
+# VOLUME I · TITLE 4 — retrieved 2026-07-25
+# ===========================================================================
+
+lex-c-tan:
+  tier: 2
+  what: Lexicanum article "C'tan"
+  url: https://wh40k.lexicanum.com/wiki/C%27tan
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-c-tan.wikitext
+  cites:
+    - "Codex: Necrons (3rd Edition), pg. 9"                             # {{Fn|1a}}
+    - "Codex: Necrons (8th Edition), pgs. 8-9 'In the Beginning'"       # {{Fn|25a}}
+    - "Codex: Necrons (8th Edition), pg. 68 \"C'tan Shard\""             # {{Fn|25d}}
+    - "White Dwarf 450, pg. 29"                                         # {{Fn|50}}
+  notes: >
+    25 KB, no reliability template. "Yngir" — the Aeldari name — redirects here. The
+    article states outright that accounts of the C'tan's discovery conflict; recorded as
+    contradiction ctan-discovery-accounts. One citation is a Warhammer TV video
+    timestamp rather than a text.
+
+lex-necrodermis:
+  tier: 2
+  what: Lexicanum article "Necrodermis"
+  url: https://wh40k.lexicanum.com/wiki/Necrodermis
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-necrodermis.wikitext
+  cites:
+    - "The Infinite and the Divine (Novel), Chapter 2"      # {{Fn|2}}
+    - "The Bleeding Stars (Short Story)"                    # {{Fn|3}}
+  notes: Carries one reliability marker; 1.6 KB.
+
+lex-c-tan-shard:
+  tier: 2
+  what: Lexicanum article "C'tan Shard"
+  url: https://wh40k.lexicanum.com/wiki/C%27tan_Shard
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-c-tan-shard.wikitext
+  cites: []
+
+lex-tesseract-labyrinth:
+  tier: 2
+  what: Lexicanum article "Tesseract labyrinth"
+  url: https://wh40k.lexicanum.com/wiki/Tesseract_labyrinth
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-tesseract-labyrinth.wikitext
+  cites:
+    - "Codex: Grey Knights (5th Edition), pg. 11"       # {{Fn|1}}
+    - "Codex: Necrons (5th Edition), pg. 7"             # {{Fn|2a}}
+    - "Codex: Necrons (5th Edition), pg. 40"            # {{Fn|2b}}
+
+lex-tesseract-vault:
+  tier: 2
+  what: Lexicanum article "Tesseract Vault"
+  url: https://wh40k.lexicanum.com/wiki/Tesseract_Vault
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-tesseract-vault.wikitext
+  cites:
+    - "White Dwarf July 2013, 'Necron Tesseract Vault'"     # {{Fn|2}}
+
+lex-celestial-orrery:
+  tier: 2
+  what: Lexicanum article "Celestial Orrery"
+  url: https://wh40k.lexicanum.com/wiki/Celestial_Orrery
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-celestial-orrery.wikitext
+  cites:
+    - "Codex: Necrons (5th Edition), pg. 15"        # {{Fn|1}}
+    - "The Bleeding Stars (Short Story)"            # {{Fn|2}}
+
+lex-kaela-mensha-khaine:
+  tier: 2
+  what: Lexicanum article "Kaela Mensha Khaine"
+  url: https://wh40k.lexicanum.com/wiki/Kaela_Mensha_Khaine
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-kaela-mensha-khaine.wikitext
+  cites:
+    - "Codex: Craftworlds (8th Edition), pg. 9"     # {{Fn|4b}}
+    - "Codex: Aeldari (10th Edition), pg. 13"       # {{Fn|9}}
+    - "White Dwarf 511 (UK), pgs. 78-81"            # {{Fn|10}}
+  notes: '"Khaine" redirects here. Carries two reliability markers.'
+
+lex-isha:
+  tier: 2
+  what: Lexicanum article "Isha"
+  url: https://wh40k.lexicanum.com/wiki/Isha
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-isha.wikitext
+  cites:
+    - "Codex: Aeldari (10th Edition), pg. 13"       # {{Fn|4}}
+    - "Codex: Eldar (4th Edition), pg. 5"           # {{Fn|5}}
+
+lex-gork-and-mork:
+  tier: 2
+  what: Lexicanum article "Gork and Mork"
+  url: https://wh40k.lexicanum.com/wiki/Gork_and_Mork
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-gork-and-mork.wikitext
+  cites:
+    - "Waaargh: Orks, pg. 60"                                               # {{Fn|2}}
+    - "Ghazghkull Thraka: Prophet of the Waaagh! (Novel), Chapter 2"        # {{Fn|6}}
+    - "Grotsnik: Da Mad Dok (Novel), Chapter 19"                            # {{Fn|7}}
+  notes: >
+    "Ork Gods" redirects here. Carries one reliability marker. The article records a
+    dispute over whether the gods preceded the Orks — see contradiction
+    ork-gods-precedence.

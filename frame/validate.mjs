@@ -129,16 +129,14 @@ for (const ch of parsed) {
       err(`${rel}:${headingLine}`, `heading "${inBody.name}" does not match declared name "${sec.name}"`);
     }
 
-    // --- depth band ----------------------------------------------------
-    // Asymmetric ON PURPOSE (PROMPT.md §7): short is a signal to re-check the
-    // sources, long is permitted. "Let dense Sections run over. Never inflate
-    // a thin one."
-    if (depth && front.status !== 'stub') {
-      const band = BANDS[depth];
-      if (inBody.words < band.min) {
-        warn(at, `${inBody.words} words, below the ${depth} band (${band.min}–${band.max}). Check whether the sources support more — do NOT pad.`);
-      }
-    }
+    // --- length --------------------------------------------------------
+    // NO BAND IS ENFORCED, by the user's explicit direction: a Section runs as
+    // long as its material warrants and no longer. PROMPT.md §7's bands are kept
+    // in lib.mjs as documentation of the original plan, but they are not a target
+    // in either direction — there is no floor to reach and no ceiling to respect.
+    //
+    // Length is still measured and reported in the summary, because knowing the
+    // distribution is useful. It is information, not a verdict.
 
     // --- sources cited by this Section --------------------------------
     for (const sid2 of sec.sources ?? []) {
@@ -340,6 +338,15 @@ console.log(`  Stubs                 ${stubs}`);
 console.log(`  Drafted (not stub)    ${drafted.length}`);
 console.log(`  Sections              ${sectionIds.size}`);
 console.log(`  Words of prose        ${totalWords.toLocaleString('en-US')} of ~210,000–250,000`);
+{
+  // Reported, never enforced. No band applies.
+  const lens = drafted.flatMap(c => c.sections).map(s => s.words).filter(n => n > 0);
+  if (lens.length) {
+    const mean = Math.round(lens.reduce((a, b) => a + b, 0) / lens.length);
+    const sorted = [...lens].sort((a, b) => a - b);
+    console.log(`  Section length        ${sorted[0]}–${sorted[sorted.length - 1]} words, mean ${mean}`);
+  }
+}
 console.log(`  Sources recorded      ${Object.keys(sources).length}`);
 console.log(`  Glossary terms        ${Object.keys(glossary).length}`);
 console.log(`  Subjects registered   ${Object.keys(subjects).length}`);

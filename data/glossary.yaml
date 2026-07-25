@@ -341,3 +341,177 @@ psyker-tithe:
   variants: [the Tithe, customary levy]
   category: institutions
   sources: [lex-league-of-black-ships]
+
+# --- Volume I Title 3 ------------------------------------------------------
+
+webway:
+  term: the Webway
+  definition: >
+    A labyrinth of tunnels built by the Old Ones that lies between the Materium and the
+    Warp, part of both and in neither, allowing transit without entering the Warp itself.
+  variants: [the Labyrinth Dimension, webway]
+  category: cosmology
+  sources: [lex-webway]
+  full_treatment: I.T3.Ch10
+
+webway-gate:
+  term: webway gate
+  definition: >
+    A portal linking realspace to the Webway. Aeldari gates are stable and ancient;
+    artificially forced openings are neither.
+  variants: [wraithgate, webway portal, Nexus of Webway Gates]
+  category: warp-technology
+  sources: [lex-webway, lex-webway-gate]
+
+dolmen-gate:
+  term: Dolmen Gate
+  definition: >
+    A Necron device that forces an opening into the Webway, taught to them by the C'tan
+    Nyadra'zatha during the War in Heaven.
+  category: warp-technology
+  sources: [lex-dolmen-gate, lex-webway]
+
+webway-project:
+  term: the Webway Project
+  definition: >
+    The Emperor's secret attempt to give humanity access to the Webway and sever it from
+    the Warp entirely, abandoned after Magnus the Red breached its tunnels.
+  variants: [the Imperial Webway, the Emperor's Great Work]
+  category: institutions
+  sources: [lex-webway-project]
+  full_treatment: I.T3.Ch12
+
+craftworld:
+  term: craftworld
+  definition: >
+    A continent-sized Aeldari vessel, self-sufficient and housing tens of millions, which
+    survived the Fall by fleeing into the void.
+  variants: [Craftworld, world-ship]
+  category: cosmology
+  sources: [lex-craftworld]
+
+commorragh:
+  term: Commorragh
+  definition: >
+    The Dark City: the Drukhari capital, built deep inside the Webway from a former
+    Aeldari port-city and the sub-realms it absorbed.
+  variants: [the Dark City, Port Commorragh, Commoragh]
+  category: cosmology
+  sources: [lex-commorragh]
+
+black-library:
+  term: the Black Library
+  definition: >
+    The Aeldari repository of forbidden knowledge concerning Chaos, hidden in the Webway
+    and guarded by Harlequins.
+  variants: [the Black Library of Chaos]
+  category: institutions
+  sources: [lex-black-library-of-chaos]
+
+cegorach:
+  term: Cegorach
+  definition: >
+    The Aeldari trickster god, patron of the Harlequins, who survived the Fall and gave
+    his people irony as a defence against pride.
+  variants: [the Laughing God, the Great Harlequin, the Great Fool, the First Fool]
+  category: cosmology
+  sources: [lex-cegorach]
+
+inertialess-drive:
+  term: inertialess drive
+  definition: >
+    Necron propulsion that crosses interstellar distance without entering the Warp, at
+    accelerations no living body can survive.
+  category: technology
+  sources: [lex-inertialess-drive]
+
+narvhal:
+  term: Narvhal
+  definition: >
+    A small, near-unarmed Tyranid bio-ship that detects distant star systems and
+    compresses the space between, drawing a hive fleet along a gravitic corridor.
+  category: technology
+  sources: [lex-narvhal]
+
+slipstream-module:
+  term: AL-38 Slipstream Module
+  definition: >
+    An experimental T'au faster-than-light device that wraps a vessel in antimatter to
+    pierce reality, abandoned after the Fourth Sphere disaster.
+  variants: [slipstream module, AL-38]
+  category: technology
+  sources: [lex-al-38-slipstream-module]
+
+# --- Volume I Title 4 ------------------------------------------------------
+
+ctan:
+  term: the C'tan
+  definition: >
+    Beings of pure energy said to be the first entities in existence, described as a
+    fundamental constant of the universe. Awakened and enslaved by the Necrontyr, later
+    shattered by them.
+  variants: [Yngir, Star Gods, star vampires]
+  category: cosmology
+  sources: [lex-c-tan]
+  full_treatment: I.T4.Ch14
+
+necrodermis:
+  term: necrodermis
+  definition: >
+    The living metal that houses a Necron's essence, and which contains a C'tan's
+    compressed essence when it manifests in the material world.
+  category: technology
+  sources: [lex-necrodermis]
+
+ctan-shard:
+  term: C'tan Shard
+  definition: >
+    A fragment of a shattered C'tan, retaining near-unlimited power but bound to Necron
+    control.
+  variants: [shard]
+  category: cosmology
+  sources: [lex-c-tan-shard, lex-c-tan]
+  full_treatment: I.T4.Ch15
+
+tesseract-labyrinth:
+  term: tesseract labyrinth
+  definition: >
+    A fist-sized Necron cube able to imprison any being, including creatures of pure
+    energy such as daemons and C'tan shards.
+  category: technology
+  sources: [lex-tesseract-labyrinth]
+
+celestial-orrery:
+  term: the Celestial Orrery
+  definition: >
+    A Necron device on Thanatos recording the location of every star in the galaxy, whose
+    manipulation is said to extinguish the star it represents.
+  category: technology
+  sources: [lex-celestial-orrery]
+
+khaine:
+  term: Kaela Mensha Khaine
+  definition: >
+    The Aeldari god of murder, violence, strife, destruction and war, shattered by
+    Slaanesh and surviving as fragments lodged in the craftworlds.
+  variants: [Khaine, the Lord of Murder, the Bloody-Handed God]
+  category: cosmology
+  sources: [lex-kaela-mensha-khaine]
+
+isha:
+  term: Isha
+  definition: >
+    The Aeldari goddess of harvest, fertility and nature, forming a trinity with Lileath
+    the Maiden and Morai-Heg the Crone.
+  variants: [the Mother]
+  category: cosmology
+  sources: [lex-isha]
+
+gork-and-mork:
+  term: Gork and Mork
+  definition: >
+    The twin gods of the Orks, dwelling in the Great Green — one brutally cunning and the
+    other cunningly brutal, though which is which is disputed among Orks.
+  variants: [the Ork Gods]
+  category: cosmology
+  sources: [lex-gork-and-mork]

@@ -278,3 +278,78 @@ phenomena-versus-perils:
     - claim: Some material makes no distinction, classing all phenomena as perils.
       source: lex-psychic-phenomena
       marker: "{{Fn|6}}"
+
+tau-ftl-retcon:
+  kind: edition
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume I Title 3 research
+  summary: >
+    Whether the T'au possessed faster-than-light travel before the AL-38 Slipstream
+    Module. Earlier material gives them working, slow FTL in the form of gravitic drives
+    and hooks; 8th Edition retconned them into having had no true FTL at all until the
+    slipstream module was invented.
+  reverification_note: >
+    This is recorded on the wiki under its own "Conflicting sources" heading, and it is a
+    retcon rather than an inconsistency — a later edition deliberately overwriting an
+    earlier position. Both states are attested; neither is an error.
+  handling: >
+    Present it as what it is: a change made between editions, not a disagreement inside
+    the setting. Useful in Appendix A Title 1, which covers retcons directly.
+  positions:
+    - claim: The T'au had slow but working FTL via gravitic drives and hooks.
+      source: lex-al-38-slipstream-module
+      marker: "{{Fn|2}} — Battlefleet Gothic: Armada, pg. 96"
+    - claim: The T'au had no true FTL until the AL-38 Slipstream Module.
+      source: lex-al-38-slipstream-module
+      marker: "{{Fn|1a}} — Codex: Tau Empire (8th Edition), pgs. 22-23"
+
+ctan-discovery-accounts:
+  kind: sequence
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume I Title 4 research
+  summary: >
+    How the Necrontyr found the C'tan. The archives of Solemnace record an accident — a
+    chance discovery by a stellar probe investigating a dying star. The Aeldari Book of
+    Mournful Night claims the Necrontyr's raw hatred for the Old Ones sang out across
+    space and drew the C'tan like a beacon.
+  reverification_note: >
+    The article states outright that various conflicting accounts exist, and attributes
+    each to a named in-universe archive. This is the setting's preferred form of
+    unreliability: not an editorial error but two rival records, one Necron and one
+    Aeldari, each with a motive for its version.
+  handling: >
+    Give both and attribute both to their archives. Do not synthesise. The disagreement
+    between a Necron account and an Aeldari one is itself informative.
+  positions:
+    - claim: Discovery was accidental, by a stellar probe at a dying star.
+      source: lex-c-tan
+      marker: archives of Solemnace
+    - claim: Necrontyr hatred drew the C'tan across space like a beacon.
+      source: lex-c-tan
+      marker: Aeldari Book of Mournful Night
+
+ork-gods-precedence:
+  kind: sequence
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume I Title 4 research
+  summary: >
+    Whether Gork and Mork preceded the Orks, or the Orks preceded their gods.
+  reverification_note: >
+    Recorded as disputed in the article itself. It matters more than it first appears:
+    Ork traits are described as being reflected in the Warp exactly as human and Aeldari
+    traits are, which would make the gods a product of their worshippers — yet the
+    precedence is explicitly left open.
+  handling: State the dispute. It bears directly on how Warp gods come to exist at all.
+  positions:
+    - claim: The gods preceded the Orks.
+      source: lex-gork-and-mork
+      marker: "{{Fn|7}}"
+    - claim: The Orks preceded the gods.
+      source: lex-gork-and-mork
+      marker: "{{Fn|7}}"
