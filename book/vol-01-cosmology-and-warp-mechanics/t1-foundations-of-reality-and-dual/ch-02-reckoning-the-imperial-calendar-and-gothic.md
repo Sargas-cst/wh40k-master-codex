@@ -75,11 +75,23 @@ anywhere.
 
 !!! disputed "Recorded conflict — millennium-year-range"
 
-    Whether the years within a millennium run **001 to 000** or **000 to 999** is
-    disputed. Three citations give 001–000; the 5th Edition Rulebook gives
-    000–999.[^lex-imperial-dating-system] Lexicanum flags this itself, and notes that
-    all sources claim to follow the Anno Domini system, which runs 001–000 — an
-    internal-consistency argument for the majority reading, though not a resolution.
+    How the years *inside* a millennium are numbered is disputed, and the notation
+    needs unpacking before the disagreement makes sense.
+
+    The majority reading, carried by three citations, runs **001 to 000**. That is
+    not a countdown and time is not running backwards: the field holds three
+    digits, so the thousandth and final year of a millennium overflows to `000`.
+    The article's own worked example confirms it — the year 1998 is written
+    `998.M2`, which places M2 across the years 1001 to 2000, making the year 2000
+    `000.M2`.[^lex-imperial-dating-system] The count runs forward throughout; only
+    the notation wraps.
+
+    The 5th Edition Rulebook instead runs **000 to 999**, starting at
+    zero.[^lex-imperial-dating-system] Lexicanum flags the disagreement itself and
+    notes that every source claims to follow the Anno Domini system — which has no
+    year zero, and therefore runs 001 to 000. That is an internal-consistency
+    argument for the majority reading rather than a resolution, and this codex
+    records both.
 
 The system has also failed in-universe. Between the Great Crusade and the formation of
 the Great Rift, a conflict arose within the Ordo Chronos over what the correct date
