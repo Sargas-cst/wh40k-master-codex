@@ -2,31 +2,23 @@
 #
 # PROMPT.md §4: Warhammer 40,000 is deliberately unreliable. Contradiction is a real
 # property of the setting, and a reference work should RECORD it, not launder it.
-# Rule §3.4: record contradictions rather than resolving them silently.
 #
 # Prose that touches a disputed fact must say so, and name the entry here. The prose
 # carries the honest sentence; this file carries the structured record.
 #
 # Compiles into: Appendix A · Ch 6 — Disputed Facts Register.
 #
-# ---------------------------------------------------------------------------
-# Fields
-# ---------------------------------------------------------------------------
 # kind:       numerical | sequence | terminology | undefined | edition
-# status:     open            — genuinely unresolved; the prose must say so
-#             resolved        — looked like a conflict, wasn't; keep as a warning
-#             undefined       — no source defines it at all; do not invent one
+# status:     open | resolved | undefined
 # reverified: whether WE have re-checked it against a retrieved source in THIS project
-# positions:  each claim, with the source that makes it
 #
-# ---------------------------------------------------------------------------
-# SEEDED FROM PROMPT.md §11 — ALL UNVERIFIED
-# ---------------------------------------------------------------------------
-# These are recorded so they are not rediscovered from scratch. The brief is explicit:
-# "Re-verify — do not take these on trust." Every entry below therefore has
-# reverified: false, and its only source is the project brief itself — NOT a retrieved
-# Lexicanum page. None of them may be used in prose until reverified: true.
-# ---------------------------------------------------------------------------
+# Entries seeded from PROMPT.md §11 begin at reverified: false. The validator REFUSES
+# to let prose cite an unreverified entry, so the brief's "re-verify — do not take
+# these on trust" is enforced rather than remembered.
+
+# ===========================================================================
+# RE-VERIFIED — Volume I Title 1 research, 2026-07-25
+# ===========================================================================
 
 astronomican-psyker-toll:
   kind: numerical
@@ -43,9 +35,7 @@ astronomican-psyker-toll:
     Confirmed against the retrieved article. The decisive detail is that BOTH figures
     carry the same citation marker, {{Fn|1b}}, resolving to a single page of a single
     book. Two numbers sourced to one page are not rival claims about the same
-    quantity; the article is describing a population and a rate of loss from it. This
-    is exactly the distinction a search summary destroys by stripping the markers that
-    show two figures share a source.
+    quantity; the article describes a population and a rate of loss from it.
   why_kept: >
     Retained as the standing example of why one opens the page instead of trusting a
     search summary. The failure it documents is a methodology failure, not a lore one.
@@ -56,57 +46,171 @@ astronomican-psyker-toll:
     - claim: Up to one hundred psykers die each day powering it.
       source: lex-astronomican
       marker: "{{Fn|1b}}"
-    - claim: >
-        The Emperor directs the energy across the galaxy but does not supply it; only
-        he has the psychic power to handle and aim it.
-      source: lex-astronomican
-      marker: "{{Fn|1b}}"
-    - claim: >
-        Range about fifty thousand light years across a galaxy about eighty-five
-        thousand light years wide, which is why the Eastern Fringe lies outside it and
-        why that defines the Imperium's practical borders.
-      source: lex-astronomican
-      marker: "{{Fn|1a}}"
-  not_in_this_article: >
-    The "thousand sacrificed daily" figure does not appear in this article at all. Per
-    PROMPT.md §11 it belongs to the Golden Throne, a separate subject — to be confirmed
-    against that article when Volume VIII Title 5 Chapter 12 is researched, not assumed
-    here.
 
 gellar-field-spelling:
   kind: terminology
-  status: open
-  reverified: false
+  status: resolved
+  reverified: true
+  reverified_on: 2026-07-25
   seeded_from: PROMPT.md §11
   summary: >
-    Both "Gellar field" and "Geller field" are in wide use; the brief reports that
-    Lexicanum and GW print materials differ. No basis for declaring one correct.
-  positions: []
+    Both "Gellar field" and "Geller Field" are in use. This is not an unresolved
+    conflict between sources: Lexicanum's own article opens by giving both spellings,
+    and attributes the variant to an official Games Workshop web article.
+  reverification_note: >
+    The article's first sentence reads "Gellar Fields (also spelled Geller Field)"
+    with a citation marker on the variant, and that marker resolves to a Warhammer
+    Community article archived December 2024 — a TIER 1 source. So the variant is
+    attested by GW themselves. The codex uses "Gellar field", matching the article
+    title, and records the variant in the glossary rather than in prose.
+  handling: >
+    Do not present this as a live dispute. Note the variant once, in the glossary.
+  positions:
+    - claim: The primary spelling is "Gellar field".
+      source: lex-gellar-field
+      marker: article title and lead
+    - claim: '"Geller Field" is also used, per an official GW web article.'
+      source: lex-gellar-field
+      marker: "{{Fn|6}}"
 
 imperial-year-fraction:
-  kind: numerical
-  status: open
-  reverified: false
+  kind: undefined
+  status: undefined
+  reverified: true
+  reverified_on: 2026-07-25
   seeded_from: PROMPT.md §11
   summary: >
-    The fraction of an Imperial year represented by a check number is given variously
-    as ~8.5 hours and ~8h45m; arithmetic on a standard year yields ~8h46m. Lexicanum
-    reportedly notes that no in-universe source specifies the division method at all.
-  positions: []
+    The brief recorded competing figures of ~8.5h and ~8h45m for the Imperial year
+    fraction, with arithmetic suggesting ~8h46m. Re-verification changes the shape of
+    this entry: it is not a conflict between sources, because there are no sources.
+  reverification_note: >
+    The article states plainly that each year is divided into 1,000 equal parts, and
+    that "an exact method for breaking the year fraction into 1000 equal parts is not
+    given by in-universe sources". Every duration figure appears inside the article's
+    {{Trivia}} block, and that block's support is a DakkaDakka forum post plus
+    arithmetic contributed by named Lexicanum users in 2015 and 2025. That is tier 4
+    material. So the figures are fan calculation, not canon in dispute.
+  handling: >
+    State that the year is divided into 1,000 parts and that no source specifies how.
+    Do NOT quote any duration — not 8.5 hours, not 8h45m, not 8h46m. Reporting fan
+    arithmetic as a contested canon figure would be the exact error the brief warns
+    against, one level deeper.
+  positions:
+    - claim: The year is divided into 1,000 equal parts, numbered 000-999.
+      source: lex-imperial-dating-system
+      marker: "{{Fn|1}}"
+    - claim: No in-universe source specifies the method of division.
+      source: lex-imperial-dating-system
+      marker: "{{Trivia}} block"
 
 the-veil-as-structure:
   kind: undefined
   status: undefined
-  reverified: false
+  reverified: true
+  reverified_on: 2026-07-25
   seeded_from: PROMPT.md §11
   summary: >
-    "The Veil" is widely used for the Materium/Immaterium boundary, but per the brief
-    no source defines it as a structure with measurable properties.
+    "The Veil" is widely used for the boundary between the Materium and the
+    Immaterium, but no retrieved source defines it as a structure with measurable
+    properties. Re-verification found the position is stronger than the brief stated.
+  reverification_note: >
+    Lexicanum has an article at "Veil" and it is about a PERSON — a Navis Nobilite
+    magister of the Great Crusade, sworn to House Achelieux, who destroyed the Dark
+    Glass station during the Horus Heresy. There is no Lexicanum article treating the
+    Veil as a cosmological boundary at all. The nearest attested formulation is in the
+    Warp Rift article, which describes a rift as "a weakening of the barrier between
+    real space and the Warp" — a barrier referred to but never named, located,
+    measured or given composition.
   handling: >
-    Treat as metaphor, not mechanism. Do NOT assign it a thickness, composition or
-    location. Volume I Title 1 Chapter 4 is titled "The Veil & Metaphysical
-    Boundaries" and must be written around this absence rather than filling it.
-  positions: []
+    Treat as metaphor, not mechanism. Assign it no thickness, composition or location.
+    Volume I Title 1 Chapter 4 is titled "The Veil & Metaphysical Boundaries" and its
+    first proposed Section was "Structure of The Veil"; that Section was dropped,
+    because writing it would have required inventing the thing it describes. The
+    Chapter reports the absence instead.
+  positions:
+    - claim: Lexicanum's "Veil" article describes a person, not a boundary.
+      source: lex-veil
+      marker: whole article
+    - claim: A rift is "a weakening of the barrier between real space and the Warp".
+      source: lex-warp-rift
+      marker: "{{Fn|1}}"
+
+# ===========================================================================
+# NEW — found during Volume I Title 1 research
+# ===========================================================================
+
+millennium-year-range:
+  kind: edition
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume I Title 1 research
+  summary: >
+    Whether the years within an Imperial millennium run 001-000 or 000-999. Lexicanum
+    flags this itself under a {{Conflicting Sources}} heading.
+  reverification_note: >
+    Three citations give 001-000; one, the 5th Edition Rulebook, gives 000-999. The
+    article notes that all of them claim to be based on the Anno Domini system, which
+    runs 001-000. A genuine edition-level disagreement, and the majority reading has
+    an internal-consistency argument behind it.
+  handling: Present both, name the 5th Edition Rulebook as the outlier, resolve neither.
+  positions:
+    - claim: Years run from 001 through to 000.
+      source: lex-imperial-dating-system
+      marker: "{{Fn|1}}{{Fn|4}}{{Fn|6}}"
+    - claim: Years run from 000 to 999.
+      source: lex-imperial-dating-system
+      marker: "{{Fn|5}} — Warhammer 40,000 5th Edition Rulebook, pg. 126"
+
+is-it-really-m42:
+  kind: edition
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume I Title 1 research
+  summary: >
+    Whether the period following the opening of the Great Rift is actually the 42nd
+    Millennium is, per Lexicanum, "intentionally put into doubt by Games Workshop".
+  reverification_note: >
+    The dating article carries a {{Conflicting Sources}} marker on its very first use
+    of "42nd millennium". This is not an error between sources but a deliberate
+    authorial refusal to fix the date — the setting declining to say what year it is.
+  handling: >
+    Excellent illustration of §4: the ambiguity is the content. Use it in Chapter 2
+    and cross-reference from Chapter 1's account of the setting's unreliability.
+  positions:
+    - claim: The current period is the 42nd Millennium.
+      source: lex-imperial-dating-system
+      marker: article lead
+    - claim: Whether it is M42 is intentionally left in doubt by GW.
+      source: lex-imperial-dating-system
+      marker: "{{Conflicting Sources}} block"
+
+age-of-strife-start-date:
+  kind: numerical
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume I Title 1 research
+  summary: >
+    The Age of Strife is given as beginning in either M23 or M25 — a two-millennium
+    discrepancy, with a separate citation for each.
+  reverification_note: >
+    The article presents both in one sentence with both markers attached, which is
+    Lexicanum recording a disagreement rather than choosing. Not flagged with a
+    {{Conflicting Sources}} template, so it would be easy to read past.
+  handling: Give both millennia and both sources. Do not average or pick.
+  positions:
+    - claim: The Age of Strife began in M23.
+      source: lex-age-of-strife
+      marker: "{{Fn|2}} — Warhammer 40,000 5th Edition Rulebook, pg. 122"
+    - claim: The Age of Strife began in M25.
+      source: lex-age-of-strife
+      marker: "{{Fn|5}} — Warhammer 40,000 6th Edition Rulebook, pg. 167"
+
+# ===========================================================================
+# STILL AWAITING RE-VERIFICATION — seeded from PROMPT.md §11
+# ===========================================================================
 
 cadian-pylon-dimensions:
   kind: numerical
@@ -116,8 +220,11 @@ cadian-pylon-dimensions:
   summary: >
     The brief records the Cadian pylons as 500 metres high and 250 metres square, and
     flags kilometre-scale figures as an error made in a prior draft.
-  handling: Re-verify the figures before any use. Do not restate the kilometre scale.
-  positions: []
+  handling: >
+    Re-verify the figures before any use. Do not restate the kilometre scale. The
+    Pylon article was retrieved during Volume I Title 1 research but the dimensions
+    were not checked, because Title 1 does not need them — Cadia's pylons belong to
+    Volume II and Volume VII.
 
 imperial-forms-of-address:
   kind: undefined
@@ -125,10 +232,11 @@ imperial-forms-of-address:
   reverified: false
   seeded_from: PROMPT.md §11
   summary: >
-    Individual titles (Magos, Canoness, Lord/Lady Inquisitor) are attested, but per the
-    brief no source describes a unified Imperial etiquette.
+    Individual titles (Magos, Canoness, Lord/Lady Inquisitor) are attested, but per
+    the brief no source describes a unified Imperial etiquette.
   handling: >
     Do not generalise individual titles into a system. Volume I Title 1 Chapter 2's
-    "Measures, Ranks & Forms of Address" Section must present attested titles as
-    attested titles, and say that no unified scheme is documented.
-  positions: []
+    "Measures, Ranks & Forms of Address" Section was NOT written for this reason —
+    see the Title report. Verifying an absence properly requires searching the
+    institutional articles in Volume IV, not the language articles in Volume I, so it
+    is deferred rather than asserted.

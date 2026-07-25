@@ -46,6 +46,20 @@ const APPENDIX = {
   sources: 'appendix/bibliography.md',
 };
 
+// Reader-facing names for [[a:...]] links, so prose never hand-writes a path.
+const APPENDIX_BY_NAME = {
+  'glossary': APPENDIX.glossary,
+  'master-index': APPENDIX.subjects,
+  'disputed-facts': APPENDIX.disputed,
+  'bibliography': APPENDIX.sources,
+};
+const APPENDIX_LABELS = {
+  'glossary': 'Consolidated Glossary',
+  'master-index': 'Master Index',
+  'disputed-facts': 'Disputed Facts Register',
+  'bibliography': 'Bibliography',
+};
+
 /** Relative link from one docs-relative page to another. */
 function linkFrom(fromDocPath, toDocPath) {
   const rel = relative(dirname(fromDocPath), toDocPath).split(sep).join('/');
@@ -72,6 +86,17 @@ function resolveLinks(text, fromDocPath) {
       const href = `${linkFrom(fromDocPath, APPENDIX.glossary)}#${key}`;
       const def = attrEsc(entry.definition ?? '').slice(0, 240);
       return `[${label ?? entry.term}](${href}){ .cx-term title="${def}" }`;
+    }
+
+    // [[a:disputed-facts]] and friends. Added because the first hand-written
+    // relative link to an appendix page was wrong by one directory level and only
+    // surfaced in a --strict build. Depth-relative paths written by hand are a bug
+    // waiting to happen; the resolver already knows where these pages are.
+    if (target.startsWith('a:')) {
+      const key = target.slice(2);
+      const path = APPENDIX_BY_NAME[key];
+      if (!path) return label ?? key;
+      return `[${label ?? APPENDIX_LABELS[key]}](${linkFrom(fromDocPath, path)}){ .cx-xref }`;
     }
 
     if (target.startsWith('s:')) {

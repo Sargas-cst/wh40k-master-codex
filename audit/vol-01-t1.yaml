@@ -1,0 +1,218 @@
+title: I.T1
+name: Foundations of Reality & Dual Realities
+depth_band: full
+researched: 2026-07-25
+
+# ---------------------------------------------------------------------------
+# QUERIES / RETRIEVALS
+# ---------------------------------------------------------------------------
+# All retrieval via Special:Export, batched, at the Crawl-delay: 5 that
+# Lexicanum's robots.txt requests. 4 requests total for 35 page titles.
+# No page was fetched twice; api.php was not touched.
+
+queries:
+  - route: Special:Export (batch 1, 16 titles)
+    titles: [Warhammer 40,000, Imperial Dating System, High Gothic, Low Gothic,
+             Gellar Field, Materium, Empyrean, Soul, Warp Storm, Warp Rift,
+             Blackstone Fortress, Pylons, Noctilith, Standard Template Construct,
+             Imperial Creed, Psyker]
+    outcome: >
+      11 articles, 5 redirects. The redirects were the useful part: Materium ->
+      Real Space, Empyrean -> Warp, Imperial Creed -> Imperial Cult, Pylons ->
+      Pylon, Gellar Field -> Gellar field.
+
+  - route: Special:Export (batch 2, 16 titles)
+    titles: [Gellar field, Real Space, Pylon, Imperial Cult, Navigator, Veil,
+             Sea of Souls, Cicatrix Maledictum, Imperium of Man, Chaos, Xenos,
+             Adeptus Mechanicus, Age of Strife, Terra, Warp travel, Grimdark]
+    outcome: >
+      14 articles, 3 further redirects (Sea of Souls -> Warp, Cicatrix Maledictum
+      -> Great Rift, Warp travel -> Warp jump). "Grimdark" does not exist as a
+      Lexicanum article.
+
+  - route: Special:Export (batch 3, 4 titles)
+    titles: [Gellar field, Warp jump, Great Rift, Grand Alliance]
+    outcome: >
+      3 articles. "Grand Alliance" does not exist — see departures, Chapter 1.
+      This batch also exposed a retriever bug; see tooling_defects.
+
+# ---------------------------------------------------------------------------
+# TOOLING DEFECTS FOUND AND FIXED
+# ---------------------------------------------------------------------------
+tooling_defects:
+  - defect: >
+      Slug collision between case-variant page titles. "Gellar Field" and "Gellar
+      field" are different pages on MediaWiki (only the first letter is
+      case-insensitive) but both slugify to lex-gellar-field. Batch 1 cached the
+      redirect stub under that id; batch 2's request for the real article was then
+      skipped as "already cached".
+    consequence_if_missed: >
+      Chapter 3 would have carried a Section apparently sourced to 18 bytes of
+      "#REDIRECT [[Gellar field]]" — the exact failure redirect detection exists to
+      prevent, walked around by a naming collision.
+    fix: >
+      frame/retrieve.mjs now distrusts a cached entry when it is a redirect pointing
+      at its own slug, or when the cache slot holds a different page title than the
+      one requested. Both cases re-fetch and log why.
+
+# ---------------------------------------------------------------------------
+# SOURCES RETRIEVED AND USED
+# ---------------------------------------------------------------------------
+retrieved_and_cited:
+  - lex-imperium-of-man
+  - lex-chaos
+  - lex-xenos
+  - lex-imperial-cult
+  - lex-standard-template-construct
+  - lex-age-of-strife
+  - lex-imperial-dating-system
+  - lex-high-gothic
+  - lex-low-gothic
+  - lex-warp
+  - lex-real-space
+  - lex-soul
+  - lex-gellar-field
+  - lex-warp-storm
+  - lex-warp-rift
+  - lex-great-rift
+  - lex-pylon
+  - lex-noctilith
+  - lex-veil
+
+retrieved_not_cited:
+  - id: lex-adeptus-mechanicus
+    reason: >
+      Only the infobox was read. Citing an article whose body has not been read would
+      be dishonest, and Chapter 1 did not need it — the STC and Age of Strife articles
+      carry the technological-decay material. Left cached for Volume IV Title 6.
+  - id: lex-psyker
+    reason: 99 KB; belongs to Volume I Title 2, not here.
+  - id: lex-navigator
+    reason: >
+      Read only in part. Chapter 3 cites the Warp article for the Navigators' role
+      instead, which is where the claim it needed actually sits.
+  - id: lex-blackstone-fortress
+    reason: Belongs to Volume VII Title 3 and Volume VIII Title 5.
+  - id: lex-terra
+    reason: Belongs to Volume II Title 2.
+  - id: lex-warp-jump
+    reason: >
+      Retrieved and skimmed; the claims Chapter 3 needed were better cited from the
+      Warp article itself. Left cached for Volume I Title 3.
+
+# ---------------------------------------------------------------------------
+# CONTRADICTIONS
+# ---------------------------------------------------------------------------
+contradictions_reverified:
+  - id: astronomican-psyker-toll
+    outcome: resolved — both figures share one citation marker, so not rival claims.
+  - id: gellar-field-spelling
+    outcome: >
+      resolved — the article itself gives both spellings, and attributes the variant
+      to an official Games Workshop web article (tier 1). Not a live dispute.
+  - id: imperial-year-fraction
+    outcome: >
+      reclassified from `numerical/open` to `undefined`. This is not a conflict
+      between sources: the article says no in-universe source gives the method, and
+      every duration figure sits in a {{Trivia}} block supported by a DakkaDakka
+      forum post and arithmetic by named wiki users. The brief treated fan
+      calculation as contested canon. No duration is quoted in the prose.
+  - id: the-veil-as-structure
+    outcome: >
+      confirmed, and stronger than recorded. Lexicanum's "Veil" article is about a
+      PERSON — a Navis Nobilite magister. There is no article treating the Veil as a
+      cosmological boundary at all.
+
+contradictions_found:
+  - id: millennium-year-range
+    note: Lexicanum's own {{Conflicting Sources}} block. 5th Ed Rulebook is the outlier.
+  - id: is-it-really-m42
+    note: >
+      Whether the present is M42 is "intentionally put into doubt by Games Workshop".
+      A deliberate authorial refusal, not an error — and a gift to Chapter 1's thesis.
+  - id: age-of-strife-start-date
+    note: >
+      M23 vs M25, two millennia apart, one citation each, presented in a single
+      sentence with no dispute template. Easy to read straight past.
+
+# ---------------------------------------------------------------------------
+# UNVERIFIED — omitted or explicitly marked in the prose
+# ---------------------------------------------------------------------------
+unverified:
+  - subject: The Veil as a structure with measurable properties
+    reason: No source defines it; Lexicanum's "Veil" is a person.
+    disposition: >
+      Written as an absence. Chapter 4's first Section reports that the term has no
+      referent in the sources, rather than describing a thing.
+
+  - subject: Any duration for the Imperial year fraction
+    reason: Fan arithmetic in a {{Trivia}} block, one leg of it a forum post.
+    disposition: Omitted entirely. The division into 1,000 parts is stated; no length is.
+
+  - subject: A unified Imperial etiquette or system of forms of address
+    reason: >
+      Per PROMPT.md §11 no source describes one, and verifying that absence properly
+      means searching Volume IV's institutional articles, not Volume I's language
+      articles.
+    disposition: >
+      Section not written. See departures. The register entry stays
+      reverified: false, so the validator still blocks prose from citing it.
+
+  - subject: '"The Three Faction Alliances"'
+    reason: >
+      Not a sourceable concept. "Grand Alliance" returns nothing on Lexicanum, and no
+      retrieved article groups the setting into three alliances.
+    disposition: >
+      Section rewritten to cover what IS attested: the categories of enemy the
+      Imperium names in its own doctrine.
+
+  - subject: Physical laws of realspace
+    reason: >
+      The Real Space article is 512 bytes with a single citation. There is no body of
+      sourced material about the physics of the Materium as such.
+    disposition: >
+      Section rewritten to report the asymmetry itself — that the material universe is
+      barely documented as a subject, being defined almost entirely by contrast.
+
+# ---------------------------------------------------------------------------
+# DEPARTURES FROM THE PROPOSED SECTION BREAKDOWN
+# ---------------------------------------------------------------------------
+# PROMPT.md §1: the breakdown is "a proposed breakdown, not a quota"; a Chapter
+# carries 2–5 Sections, "determined by what the sources actually support".
+# 11 Sections written against 12 proposed.
+
+departures_from_plan:
+  - chapter: I.T1.Ch1
+    change: '"The Three Faction Alliances" -> "The Enemies the Imperium Names"'
+    reason: The proposed concept is not attested anywhere retrieved. The replacement is.
+
+  - chapter: I.T1.Ch2
+    change: 3 Sections -> 2. Dropped "Measures, Ranks & Forms of Address".
+    reason: >
+      §11 says no source describes a unified Imperial etiquette, and the language
+      articles are the wrong place to establish that absence. Writing the Section from
+      the Gothic articles alone would have meant generalising scattered titles into a
+      system — precisely what the brief forbids. Deferred to Volume IV.
+
+  - chapter: I.T1.Ch3
+    change: '"Physical Laws of Realspace" -> "The Asymmetry of Real Space"'
+    reason: 512 bytes of source. The absence is the honest subject.
+
+  - chapter: I.T1.Ch4
+    change: '"Structure of The Veil" -> "The Veil: A Term Without a Referent"'
+    reason: >
+      Writing the proposed Section would have required inventing the structure it
+      describes. This is the first real test of "cut what you cannot source", and the
+      Section now reports the gap.
+
+notes: >
+  Title 1 turned out to be a good pilot for an unexpected reason: three of the five
+  contradictions carried over from §11 live in it, and re-verifying them changed two.
+  One (Gellar/Geller) dissolved into a non-dispute attested by GW itself; one (the
+  year fraction) was worse than recorded, in that the "conflicting figures" are fan
+  arithmetic rather than canon. That is a useful early signal about how much of the
+  seeded material needs re-examining rather than transcribing.
+
+  The Title is also unusually well founded in places: the Great Rift article rests on
+  an official Warhammer Community page, and the Gellar field variant on another. Both
+  are tier 1 — rare for this project.

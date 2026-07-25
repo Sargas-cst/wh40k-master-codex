@@ -3,30 +3,170 @@
 # PROMPT.md §8: "Never restate a definition inline in twelve places — one correction
 # should propagate everywhere."
 #
-# Prose writes [[g:gellar-field]] and the build links it to this entry. The definition
-# exists here and nowhere else. A Section may of course *discuss* a term at length in
-# the Chapter that owns it; what it must not do is restate the one-line definition.
+# Prose writes [[g:gellar-field]] and the build links it to this entry, carrying the
+# definition as a hover tooltip. The definition exists here and nowhere else. A
+# Chapter may of course DISCUSS a term at length where it owns it; what it must not
+# do is restate the one-line definition.
 #
 # Compiles into: Appendix A · Ch 5 — Consolidated Glossary.
-#
-# ---------------------------------------------------------------------------
-# Template
-# ---------------------------------------------------------------------------
-#
-# gellar-field:
-#   term: Gellar field
-#   definition: >
-#     The protective envelope that shields a warp-transiting vessel from the
-#     Immaterium and the entities within it.
-#   variants: [Geller field]        # see data/contradictions.yaml: spelling is disputed
-#   category: warp-technology       # institutions | ranks | high-gothic | warp-technology | ...
-#   sources: [lex-gellar-field]
-#   full_treatment: I.T1.Ch3        # the Chapter that discusses it properly, optional
-#
-# `variants` feeds Appendix A · Ch 5's "Disputed and Variant Usages" section. Where a
-# spelling or rendering is genuinely contested, record BOTH here and cross-reference
-# the contradictions register rather than quietly picking one.
-#
-# ---------------------------------------------------------------------------
 
-# No terms defined yet.
+warp:
+  term: the Warp
+  definition: >
+    A psychic dimension parallel to real space, formed and fuelled by the emotions
+    and souls of sentient beings, in which the laws of time and space do not hold.
+  variants: [Warpspace, Immaterium, Empyrean, the Ether, the Aether, Sea of Souls, Realm of Chaos]
+  category: cosmology
+  sources: [lex-warp]
+  full_treatment: I.T1.Ch3
+
+real-space:
+  term: real space
+  definition: >
+    The material universe, as opposed to the parallel dimension of the Warp. Also
+    rendered Materium.
+  variants: [Materium, Real Space, Warp Space]
+  category: cosmology
+  sources: [lex-real-space]
+  full_treatment: I.T1.Ch3
+
+soul:
+  term: soul
+  definition: >
+    The existence a living creature of flesh and blood has within the Warp — a
+    shadow-self of pure energy, parted from the body at death.
+  category: cosmology
+  sources: [lex-soul]
+  full_treatment: I.T2.Ch5
+
+gellar-field:
+  term: Gellar field
+  definition: >
+    The protective system that shields a vessel and its occupants from the Warp and
+    from the entities within it while in transit.
+  variants: [Geller Field, Gellar Fields]
+  category: warp-technology
+  sources: [lex-gellar-field]
+  full_treatment: I.T1.Ch3
+
+warp-rift:
+  term: Warp rift
+  definition: >
+    A tear in reality linking the Materium to the Immaterium — a weakening of the
+    barrier between them, through which Warp entities may pass.
+  variants: [Warp Portal, Warp Rifts]
+  category: cosmology
+  sources: [lex-warp-rift]
+  full_treatment: I.T1.Ch4
+
+warp-storm:
+  term: Warp storm
+  definition: >
+    A volatile disturbance affecting both Immaterium and Materium, capable of
+    scattering vessels, distorting elapsed time, and cutting whole regions off from
+    Warp travel for centuries.
+  category: cosmology
+  sources: [lex-warp-storm]
+  full_treatment: I.T1.Ch4
+
+great-rift:
+  term: the Great Rift
+  definition: >
+    The largest Warp rift ever observed, opened at the end of the 41st Millennium and
+    dividing much of the galaxy. Known to the Imperium as the Cicatrix Maledictum.
+  variants: [Cicatrix Maledictum, the Warpscar, the Crimson Path, the Mouth of Ruin]
+  category: cosmology
+  sources: [lex-great-rift]
+
+high-gothic:
+  term: High Gothic
+  definition: >
+    The hierarchic and official language of the Imperium, used in the titles of
+    ancient institutions and regarded as holy.
+  variants: [Archaic Gothic, Principle Gothic, Prime Gothic]
+  category: high-gothic
+  sources: [lex-high-gothic]
+  full_treatment: I.T1.Ch2
+
+low-gothic:
+  term: Low Gothic
+  definition: >
+    The common tongue of the Imperium, a bastardised descendant of High Gothic that
+    varies from world to world.
+  variants: [Imperial Gothic]
+  category: high-gothic
+  sources: [lex-low-gothic]
+  full_treatment: I.T1.Ch2
+
+check-number:
+  term: check number
+  definition: >
+    The first element of a full Imperial date, running 0 to 9, recording how
+    reliably that date can be related to time on Terra rather than how precise it is.
+  variants: [Source Class]
+  category: institutions
+  sources: [lex-imperial-dating-system]
+  full_treatment: I.T1.Ch2
+
+year-fraction:
+  term: year fraction
+  definition: >
+    The second element of a full Imperial date: the year divided into 1,000 equal
+    parts numbered 000 to 999. No in-universe source specifies how the division is
+    performed.
+  category: institutions
+  sources: [lex-imperial-dating-system]
+  full_treatment: I.T1.Ch2
+
+pylon:
+  term: pylon
+  definition: >
+    A Necron-built structure of blackstone able to suppress Warp phenomena in the
+    space around it.
+  variants: [Cadian Pylons]
+  category: warp-technology
+  sources: [lex-pylon]
+
+noctilith:
+  term: noctilith
+  definition: >
+    The material of Necron pylon construction, which interferes with the boundary
+    between real space and the Warp. Also called blackstone.
+  variants: [blackstone]
+  category: warp-technology
+  sources: [lex-noctilith]
+
+xenos:
+  term: xenos
+  definition: >
+    Imperial term for all non-human sentient species, synonymous with "alien" from
+    the human perspective.
+  category: institutions
+  sources: [lex-xenos]
+
+imperial-cult:
+  term: the Imperial Cult
+  definition: >
+    The state religion of the Imperium, worshipping the Emperor as god, administered
+    by the Ecclesiarchy. Its doctrine is the Imperial Creed.
+  variants: [Cult Imperialis, the Imperial Creed]
+  category: institutions
+  sources: [lex-imperial-cult]
+
+stc:
+  term: Standard Template Construct
+  definition: >
+    Artificial-intelligence systems of the Dark Age of Technology said to have held
+    the whole of human technical knowledge, now lost except as degraded hard copies.
+  variants: [STC, STC systems]
+  category: technology
+  sources: [lex-standard-template-construct]
+
+age-of-strife:
+  term: the Age of Strife
+  definition: >
+    The period of collapse and isolation between the Dark Age of Technology and the
+    founding of the Imperium, during which Warp storms severed interstellar travel.
+  variants: [Old Night]
+  category: chronology
+  sources: [lex-age-of-strife]

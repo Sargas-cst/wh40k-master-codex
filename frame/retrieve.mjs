@@ -157,10 +157,36 @@ if (!titles.length) {
 
 titles = [...new Set(titles.map(t => t.replace(/ /g, '_')))];
 
+// ---------------------------------------------------------------------------
+// Cache check, with two traps that bit in practice
+// ---------------------------------------------------------------------------
+// MediaWiki treats "Gellar Field" and "Gellar field" as DIFFERENT pages — only
+// the first letter is case-insensitive. Our slug lowercases everything, so both
+// map to `lex-gellar-field`. The first request cached a redirect stub under that
+// id; the second request, for the real article, was then skipped as "already
+// cached". The result would have been a Section apparently sourced to 18 bytes
+// of "#REDIRECT" — the precise failure redirect detection exists to prevent,
+// walked around by a slug collision.
+//
+// So: a cached entry is only trusted when it is (a) not a redirect that points at
+// its own slug, and (b) actually the same page title that is being asked for.
 const needed = force ? titles : titles.filter(t => {
-  const cached = existsSync(join(RAW_DIR, `${slug(t)}.wikitext`));
-  if (cached) console.log(`  cached, skipping   ${t}`);
-  return !cached;
+  const id = slug(t);
+  if (!existsSync(join(RAW_DIR, `${id}.wikitext`))) return true;
+
+  const entry = manifest.retrievals[id];
+  const wanted = t.replace(/_/g, ' ');
+
+  if (entry?.redirect_to && slug(entry.redirect_to) === id) {
+    console.log(`  re-fetching        ${t} (cached copy is a redirect to the same slug)`);
+    return true;
+  }
+  if (entry?.title && entry.title !== wanted) {
+    console.log(`  re-fetching        ${t} (cache slot holds "${entry.title}" — case-variant collision)`);
+    return true;
+  }
+  console.log(`  cached, skipping   ${t}`);
+  return false;
 });
 
 if (!needed.length) {

@@ -23,26 +23,13 @@
 # raw:   path to the cached retrieval on local disk. GITIGNORED — the cache is
 #        never committed, because this repo is public. See frame/schema.md §8.
 #
-# ---------------------------------------------------------------------------
-# Template — copy, do not edit in place
-# ---------------------------------------------------------------------------
+# `cites` lists only the endnotes actually relied on in prose, not every endnote in
+# the article. A source entry records what supports OUR claims; dumping a whole
+# bibliography would make it useless.
 #
-# lex-astronomican:
-#   tier: 2
-#   what: Lexicanum article "Astronomican"
-#   url: https://wh40k.lexicanum.com/wiki/Astronomican
-#   retrieved: 2026-07-25
-#   raw: sources/raw/lex-astronomican-2026-07-25.wikitext
-#   cites:
-#     - Warhammer 40,000 Rulebook 5th Ed., pg. 152
-#   notes: Article carries a [Conflicting Sources] tag on the psyker toll.
-#
-# ---------------------------------------------------------------------------
-
 # Generate an entry mechanically instead of typing it:
 #     node frame/retrieve.mjs Astronomican
 #     node frame/cite-map.mjs lex-astronomican --yaml
-# The `cites` list and the reliability notes come straight out of the wikitext.
 
 lex-astronomican:
   tier: 2
@@ -50,23 +37,267 @@ lex-astronomican:
   url: https://wh40k.lexicanum.com/wiki/Astronomican
   retrieved: 2026-07-25
   raw: sources/raw/lex-astronomican.wikitext
-  cites:                                  # print sources, UNVERIFIED BY US
+  cites:
     - "Warhammer 40,000: Rogue Trader, pg. 132"                                # {{Fn|1a}}
     - "Warhammer 40,000: Rogue Trader, pg. 140"                                # {{Fn|1b}}
     - "Codex: Tyranids (5th Edition), pg. 28"                                  # {{Fn|2}}
     - "Warhammer 40,000 6th Edition Rulebook, pg. 168"                         # {{Fn|3}}
     - "The Horus Heresy Book One - Betrayal, pg. 21"                           # {{Fn|4}}
-    - "Dawn of War (Novel Series), [incomplete citation]"                      # {{Fn|5}}
-    - "Watchers of the Throne: The Emperor's Legion (Novel), Ch. Five, Tieron" # {{Fn|6}}
-    - "Vaults of Terra: The Carrion Throne (Novel) - Cover"                    # {{Fn|7}}
-    - "Mortis (Novel) - Chapter 16"                                            # {{Fn|8}}
-    - "The End and the Death: Volume III (Novel) - 10:xv"                      # {{Fn|9}}
-    - "Fabius Bile: Clonelord (Novel), Chapter 18"                             # {{Fn|10}}
-    - "White Dwarf February 2017 (e-version), pgs. 82-83 'Illuminations'"      # {{Fn|11}}
-    - "Witchbringer (Novel), Chapter 1"                                        # {{Fn|12a}}
-    - "Witchbringer (Novel), Chapter 7"                                        # {{Fn|12b}}
   notes: >
     Carries {{Uncited}} — two works are listed that are tied to no specific claim
     (Warhammer 40,000 3rd Edition Rulebook; White Dwarf 140 UK). Also carries
     {{Cite Marker End}} on {{Fn|5}}, an incomplete citation. Neither may be used
     as support for anything.
+
+# ===========================================================================
+# VOLUME I · TITLE 1 — retrieved 2026-07-25
+# ===========================================================================
+
+lex-imperium-of-man:
+  tier: 2
+  what: Lexicanum article "Imperium of Man"
+  url: https://wh40k.lexicanum.com/wiki/Imperium_of_Man
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-imperium-of-man.wikitext
+  cites:
+    - "Warhammer 40,000 6th Edition Rulebook, pgs. 136-137 'The Imperium of Man'"   # {{Fn|3a}}
+    - "Necromunda Rulebook (2018), pg. 4"                                           # {{Fn|67}}
+    - "Dark Heresy Core Rulebook"                                                   # {{Fn|10}}
+  notes: >
+    The article states the million-worlds figure as what is "commonly stated", and
+    separately that the Administratum itself cannot give an exact number. Both are
+    cited. The hedge is in the source, not added by us.
+
+lex-chaos:
+  tier: 2
+  what: Lexicanum article "Chaos"
+  url: https://wh40k.lexicanum.com/wiki/Chaos
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-chaos.wikitext
+  cites:
+    - "Codex: Chaos Space Marines (4th Edition), pgs. 8-9"      # {{Fn|2b}}
+    - "Codex: Chaos Daemons (6th Edition), pgs. 6-7"            # {{Fn|7}}
+    - "The Armour of Fate (Short Story)"                        # {{Fn|8}}
+
+lex-xenos:
+  tier: 2
+  what: Lexicanum article "Xenos"
+  url: https://wh40k.lexicanum.com/wiki/Xenos
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-xenos.wikitext
+  cites:
+    - "Warhammer 40,000 6th Edition Rulebook, pg. 199"              # {{Fn|6}}
+    - "Wrath & Glory: Forsaken System Player's Guide, pg. 90"       # {{Fn|9}}
+    - "Codex Imperialis (Background Book), pg. 90"                    # {{Fn|2}}
+
+lex-imperial-cult:
+  tier: 2
+  what: Lexicanum article "Imperial Cult"
+  url: https://wh40k.lexicanum.com/wiki/Imperial_Cult
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-imperial-cult.wikitext
+  cites:
+    - "Codex Imperialis (Background Book), pg. 38"              # {{Fn|1b}}
+    - "Realm of Chaos: Slaves to Darkness, pg. 214"             # {{Fn|2}}
+  notes: >
+    "Imperial Creed" redirects here; the article treats Cult and Creed together.
+
+lex-standard-template-construct:
+  tier: 2
+  what: Lexicanum article "Standard Template Construct"
+  url: https://wh40k.lexicanum.com/wiki/Standard_Template_Construct
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-standard-template-construct.wikitext
+  cites:
+    - "Warhammer 40,000: Rogue Trader, pg. 271"                 # {{Fn|9}}
+
+lex-age-of-strife:
+  tier: 2
+  what: Lexicanum article "Age of Strife"
+  url: https://wh40k.lexicanum.com/wiki/Age_of_Strife
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-age-of-strife.wikitext
+  cites:
+    - "Warhammer 40,000 5th Edition Rulebook, pg. 122"                          # {{Fn|2}}
+    - "Warhammer 40,000 6th Edition Rulebook, pg. 167"                          # {{Fn|5}}
+    - "Warhammer 40,000 3rd Edition Rulebook, 'The Journal of Keeper Cripias'"  # {{Fn|7}}
+    - "Space Hulk (1989), Missions and Background book, pg. 24"                 # {{Fn|1}}
+  notes: >
+    The start date carries two different citations for two different millennia — M23
+    per Fn|2 and M25 per Fn|5. Recorded as contradiction age-of-strife-start-date.
+
+lex-imperial-dating-system:
+  tier: 2
+  what: Lexicanum article "Imperial Dating System"
+  url: https://wh40k.lexicanum.com/wiki/Imperial_Dating_System
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-imperial-dating-system.wikitext
+  cites:
+    - "Warhammer 40,000 3rd Edition Rulebook, pg. 269, Appendix 'The March of Time'"    # {{Fn|1}}
+    - "Dark Imperium (Novel), Chapter 9, pgs. 109-110"                                  # {{Fn|2}}
+    - "White Dwarf 97 (UK), pg. 63"                                                     # {{Fn|4}}
+    - "Warhammer 40,000 5th Edition Rulebook, pg. 126"                                  # {{Fn|5}}
+    - "Deathwatch: Rising Tempest, 'Imperial Date Stamps', pg. 4"                       # {{Fn|6}}
+    - "The Emperor's Gift (Novel), Chapter 23"                                          # {{Fn|7}}
+  notes: >
+    Carries BOTH a {{Trivia}} block and a {{Conflicting Sources}} block. The Trivia
+    cites a DakkaDakka forum post and arithmetic contributed by named Lexicanum users
+    in 2015 and 2025. That material is tier 4 and is used here only as evidence that
+    no in-universe source gives the method — never as a figure.
+
+lex-high-gothic:
+  tier: 2
+  what: Lexicanum article "High Gothic"
+  url: https://wh40k.lexicanum.com/wiki/High_Gothic
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-high-gothic.wikitext
+  cites:
+    - "Warhammer 40,000 3rd Edition Rulebook, pg. 268, 'Languages'"     # {{Fn|1}}
+    - "Rogue Trader Core Rulebook, pgs. 308-309, 'Language'"            # {{Fn|7}}
+    - "Dark Heresy Second Edition: Core Rulebook, pg. 107"              # {{Fn|4}}
+  notes: >
+    Also cites a Warhammer Community article (archived) for the first official
+    Imperial hymn — a tier 1 source. The comparison of High Gothic to Latin sits
+    inside the article's {{Trivia}} block and is therefore not treated as sourced.
+
+lex-low-gothic:
+  tier: 2
+  what: Lexicanum article "Low Gothic"
+  url: https://wh40k.lexicanum.com/wiki/Low_Gothic
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-low-gothic.wikitext
+  cites:
+    - "Warhammer 40,000 3rd Edition Rulebook, pg. 268"      # {{Fn|1}}
+    - "Warhammer 40,000: Rogue Trader, pg. 267"             # {{Fn|19}}
+    - "Pariah (Novel) (e-version), Chapter 7"               # {{Fn|18}}
+
+lex-warp:
+  tier: 2
+  what: Lexicanum article "Warp"
+  url: https://wh40k.lexicanum.com/wiki/Warp
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-warp.wikitext
+  cites:
+    - "Warhammer 40,000: Rogue Trader, pgs. 130-132"            # {{Fn|3a}}
+    - "Codex: Chaos Daemons (6th Edition), pgs. 6-7"            # {{Fn|5}}
+    - "Master of Mankind (Novel), Part 2 Chapter 13"            # {{Fn|6}}
+    - "Of Honour and Iron (Novel), Chapter Eight"               # {{Fn|10}}
+  notes: >
+    "Immaterium", "Empyrean" and "Sea of Souls" all redirect to this article — the
+    wiki treats them as names for one subject, not distinct concepts.
+
+lex-real-space:
+  tier: 2
+  what: Lexicanum article "Real Space"
+  url: https://wh40k.lexicanum.com/wiki/Real_Space
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-real-space.wikitext
+  cites:
+    - "White Dwarf 139 (UK), pg. 9"                             # {{Endn|1}}
+  notes: >
+    512 bytes, one citation. "Materium" redirects here. The material half of the
+    Materium/Immaterium pairing has almost no dedicated coverage on Lexicanum, which
+    directly constrains what Chapter 3 can say about it.
+
+lex-soul:
+  tier: 2
+  what: Lexicanum article "Soul"
+  url: https://wh40k.lexicanum.com/wiki/Soul
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-soul.wikitext
+  cites:
+    - "Warhammer 40,000: Dark Millennium (Box Set) Rulebook, pg. 4"     # {{Fn|1a}}
+    - "Warhammer 40,000: Dark Millennium (Box Set) Rulebook, pg. 6"     # {{Fn|17b}}
+  notes: >
+    Carries a {{WIP}} tag — Lexicanum marks this article incomplete. Usable for the
+    claims cited above, but not treated as settled coverage of the subject.
+
+lex-gellar-field:
+  tier: 2
+  what: Lexicanum article "Gellar field"
+  url: https://wh40k.lexicanum.com/wiki/Gellar_field
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-gellar-field.wikitext
+  cites:
+    - "Codex: Chaos Daemons (4th Edition), pg. 43"      # {{Fn|1}}
+  notes: >
+    The variant spelling "Geller Field" is attested by the article's {{Fn|6}}, which
+    is a Warhammer Community article archived December 2024 — a TIER 1 source. Note
+    the title-case trap: "Gellar Field" is a redirect and "Gellar field" is the
+    article, and the two collide under our slug scheme.
+
+lex-warp-storm:
+  tier: 2
+  what: Lexicanum article "Warp Storm"
+  url: https://wh40k.lexicanum.com/wiki/Warp_Storm
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-warp-storm.wikitext
+  cites:
+    - "Warhammer 40,000: Rogue Trader (1987), pgs. 130-132"     # {{Fn|1}}
+    - "Warhammer 40,000 5th Edition Rulebook, pg. 122"          # {{Fn|2}}
+
+lex-warp-rift:
+  tier: 2
+  what: Lexicanum article "Warp Rift"
+  url: https://wh40k.lexicanum.com/wiki/Warp_Rift
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-warp-rift.wikitext
+  cites:
+    - "Codex: Chaos Daemons (4th Edition), pgs. 13-16"          # {{Fn|1}}
+    - "Warhammer 40,000: Rogue Trader, pg. 131"                 # {{Fn|6}}
+    - "Blood Reaver (Novel), Chapter VII 'Flight'"              # {{Fn|10}}
+  notes: >
+    Fn|10 is the article explicitly correcting an in-universe exaggeration: the
+    Navigators' account of rifts flaying souls is called "partial truth".
+
+lex-great-rift:
+  tier: 2
+  what: Lexicanum article "Great Rift"
+  url: https://wh40k.lexicanum.com/wiki/Great_Rift
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-great-rift.wikitext
+  cites:
+    - "Warhammer Community: 'New Warhammer 40,000: The Great Rift' (2017-05-04, archived)"  # {{Fn|1}} TIER 1
+    - "Warhammer 40,000 8th Edition Rulebook, pg. 50"           # {{Fn|4a}}
+    - "Avenging Son (Novel), Chapter 26"                        # {{Fn|7}}
+  notes: >
+    "Cicatrix Maledictum" redirects here. Fn|1 is an official GW web article, so the
+    core description rests on tier 1 rather than tier 2 — unusually well founded for
+    this project. The article states the Rift's origin "remains a mystery" and lists
+    five competing theories.
+
+lex-pylon:
+  tier: 2
+  what: Lexicanum article "Pylon"
+  url: https://wh40k.lexicanum.com/wiki/Pylon
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-pylon.wikitext
+  cites:
+    - "The 13th Black Crusade (Background Book), pg. 15"        # {{Fn|1}}
+    - "Codex: Chaos Space Marines (6th Edition), pgs. 19-20"    # {{Fn|2}}
+    - "Codex: Necrons (8th Edition), pg. 11"                    # {{Fn|3}}
+
+lex-noctilith:
+  tier: 2
+  what: Lexicanum article "Noctilith"
+  url: https://wh40k.lexicanum.com/wiki/Noctilith
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-noctilith.wikitext
+  cites:
+    - "Codex: Necrons (8th Edition), pg. 11"                    # {{Fn|1}}
+    - "Imperium Nihilus: Vigilus Defiant, pg. 90"               # {{Fn|2}}
+
+lex-veil:
+  tier: 2
+  what: Lexicanum article "Veil"
+  url: https://wh40k.lexicanum.com/wiki/Veil
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-veil.wikitext
+  cites:
+    - "The Path of Heaven (Novel), Chapter 16"      # {{Fn|1a}}
+    - "The Path of Heaven (Novel), Chapter 22"      # {{Fn|1b}}
+  notes: >
+    CRITICAL, and cited for a negative. Lexicanum's "Veil" article is about a PERSON —
+    a Navis Nobilite magister of the Great Crusade sworn to House Achelieux. There is
+    no Lexicanum article treating "the Veil" as a boundary between the Materium and
+    the Immaterium. This is the evidence for contradiction the-veil-as-structure.

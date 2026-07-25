@@ -3,38 +3,93 @@
 # PROMPT.md §8: "Every subject has exactly ONE owning chapter that treats it in full.
 # Everywhere else gets a framing sentence and a cross-reference — never a retelling."
 #
-# This file is what makes that rule enforceable rather than aspirational. Two Chapters
-# declaring `owns:` on the same subject is a HARD BUILD FAILURE, not something anyone
-# has to remember across 171 Chapters.
+# This file makes that rule enforceable rather than aspirational. Two Chapters
+# declaring `owns:` on the same subject is a HARD BUILD FAILURE.
 #
-# Prose writes [[s:cadia]] and the build resolves it to whichever Chapter owns `cadia`.
-# The indirection matters: if ownership moves, every inbound link follows automatically.
-# Prefer [[s:...]] over a hard Chapter ID whenever what you mean is "the place that
-# covers X".
-#
-# Ownership is declared in the CHAPTER's frontmatter (`owns:`). This file adds the
-# reader-facing material the index needs: what the subject is, and what else it is
-# called. The build cross-checks the two and reports any subject that is declared here
-# but owned by nobody, or owned by a Chapter but missing from here.
-#
-# Compiles into: Appendix A · Ch 4 — Master Index, and its Alternative Names section.
+# Prose writes [[s:the-warp]] and the build resolves it to whichever Chapter owns it.
+# The indirection matters: if ownership moves, every inbound link follows.
 #
 # ---------------------------------------------------------------------------
-# Template
+# A subject is registered here ONLY when the Chapter that owns it exists and treats
+# it in full. Registering a subject whose owner has not been written yet produces a
+# link with nowhere to go, which is worse than no link.
+#
+# Several subjects Volume I Title 1 *mentions* are deliberately absent, because they
+# belong to Chapters elsewhere. Title 1 refers to those by Chapter ID instead:
+#
+#   Chaos as a power            -> Volume V           (V.T1)
+#   The Imperium as an institution -> Volume IV        (IV.T1.Ch1)
+#   The Adeptus Mechanicus      -> IV.T6.Ch19
+#   The soul in detail          -> I.T2.Ch5, "Anatomy of the Soul"
+#   Blackstone pylons as xenos technology -> VIII.T5.Ch14
+#   The Great Rift as geography -> II.T1.Ch2
+#   Xenos species              -> Volume VI
+#
+# That restraint is the rule working. Volume I Title 1 is an orientation; it is not
+# the canonical home of the institutions it introduces.
 # ---------------------------------------------------------------------------
 #
-# cadia:
-#   name: Cadia
-#   gloss: Fortress world guarding the Cadian Gate; destroyed during the 13th Black Crusade.
-#   aliases: [Cadia Primus, the Cadian Gate]   # feeds index cross-references
-#   see_also: [eye-of-terror, black-crusade-13th]
-#
-# The worked example from PROMPT.md §8, for reference once these exist:
-#   Cadia the WORLD      -> II.T3.Ch8
-#   Cadia's DESTRUCTION  -> III.T5.Ch22
-#   the SIEGE of Cadia   -> VII.T2.Ch7
-# Three subjects, three owners, three IDs. Not one subject in three places.
-#
-# ---------------------------------------------------------------------------
+# Compiles into: Appendix A · Ch 4 — Master Index.
 
-# No subjects registered yet.
+the-grimdark-premise:
+  name: The premise of the setting
+  gloss: >
+    What kind of fiction Warhammer 40,000 is, why its own sources cannot be taken at
+    face value, and how a reference work should handle that.
+  aliases: [grimdark, the 41st Millennium, the premise]
+  see_also: [imperial-dating]
+
+imperial-dating:
+  name: The Imperial dating system
+  gloss: >
+    How the Imperium records dates — check number, year fraction, year, millennium —
+    and what the system concedes about its own reliability.
+  aliases: [Imperial Calendar, Terran Standard Calendar, Imperial Dating System, check number]
+  see_also: [the-warp, the-grimdark-premise]
+
+the-gothic-tongues:
+  name: High and Low Gothic
+  gloss: >
+    The hierarchic and common languages of the Imperium, their descent from the Dark
+    Age of Technology, and how far apart they have drifted.
+  aliases: [Gothic, High Gothic, Low Gothic, Imperial Gothic, Archaic Gothic]
+
+the-materium:
+  name: The Materium
+  gloss: >
+    Real space — the material universe — and how thinly it is documented as a subject
+    in its own right compared to the dimension it is defined against.
+  aliases: [real space, Real Space, realspace, Materium, Warp Space]
+  see_also: [the-warp]
+
+the-warp:
+  name: The Warp
+  gloss: >
+    The psychic dimension parallel to real space: its nature, its many names, and its
+    dependence on the emotions of mortal beings.
+  aliases: [Immaterium, Empyrean, Warpspace, Sea of Souls, the Ether, the Aether, Sha'iel]
+  see_also: [the-materium, warp-travel, warp-rifts]
+
+warp-travel:
+  name: Warp travel and the Gellar field
+  gloss: >
+    How the Imperium crosses the galaxy, what protects a vessel in transit, and why
+    the method is unreliable in principle rather than by accident.
+  aliases: [warp jump, Gellar field, Geller field, warp drive, warp travel]
+  see_also: [the-warp]
+
+the-veil:
+  name: The Veil
+  gloss: >
+    A widely used term for the boundary between the Materium and the Immaterium, for
+    which no retrieved source provides any definition at all.
+  aliases: [the veil, the barrier]
+  see_also: [warp-rifts, the-warp]
+
+warp-rifts:
+  name: Warp rifts and storms
+  gloss: >
+    Tears and disturbances linking the Warp to real space — their attested causes,
+    their forms, and what is claimed to suppress them.
+  aliases: [Warp Rift, Warp Storm, Warp Portal, rifts]
+  see_also: [the-veil, the-warp]

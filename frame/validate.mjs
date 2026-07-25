@@ -188,6 +188,15 @@ for (const ch of chapters.values()) {
       if (!(term in glossary)) err(at, `[[g:${term}]] — no such glossary term in data/glossary.yaml`);
       continue;
     }
+    if (target.startsWith('a:')) {
+      const APPENDIX_NAMES = ['glossary', 'master-index', 'disputed-facts', 'bibliography'];
+      const key = target.slice(2);
+      if (!APPENDIX_NAMES.includes(key)) {
+        err(at, `[[a:${key}]] — not an appendix page. Expected one of: ${APPENDIX_NAMES.join(', ')}`);
+      }
+      continue;
+    }
+
     if (target.startsWith('s:')) {
       const subject = target.slice(2);
       if (!ownership.has(subject)) {
@@ -235,10 +244,15 @@ for (const [key, entry] of Object.entries(glossary)) {
   if (!SLUG_OK.test(key)) err('glossary', `key "${key}" must be lowercase-hyphenated`);
   if (!entry?.term) err('glossary', `"${key}" has no \`term\``);
   if (!entry?.definition) err('glossary', `"${key}" has no \`definition\``);
-  for (const name of [entry?.term, ...(entry?.variants ?? [])].filter(Boolean)) {
-    const norm = String(name).toLowerCase();
-    if (seenTerms.has(norm)) {
-      err('glossary', `"${name}" is defined by both "${seenTerms.get(norm)}" and "${key}" — a term is defined exactly once (§8)`);
+  // Dedupe WITHIN the entry first. An entry whose term is "real space" and whose
+  // variants include "Real Space" is not defining the term twice — it is recording a
+  // capitalisation the sources use. Only collisions ACROSS entries matter.
+  const ownNames = new Set(
+    [entry?.term, ...(entry?.variants ?? [])].filter(Boolean).map(n => String(n).toLowerCase())
+  );
+  for (const norm of ownNames) {
+    if (seenTerms.has(norm) && seenTerms.get(norm) !== key) {
+      err('glossary', `"${norm}" is defined by both "${seenTerms.get(norm)}" and "${key}" — a term is defined exactly once (§8)`);
     }
     seenTerms.set(norm, key);
   }
