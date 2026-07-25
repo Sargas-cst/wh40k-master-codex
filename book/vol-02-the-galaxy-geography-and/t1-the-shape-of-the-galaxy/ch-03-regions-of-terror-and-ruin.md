@@ -7,7 +7,7 @@ owns:
 sections:
   - name: The Eye of Terror and the Cadian Gate
     slug: eye-of-terror
-    sources: [lex-eye-of-terror, lex-cadian-gate, lex-pylon]
+    sources: [lex-eye-of-terror, lex-cadian-gate, lex-pylon, lex-cadia]
     contradictions: [cadian-pylon-dimensions]
   - name: The Maelstrom
     slug: maelstrom
@@ -58,15 +58,16 @@ found on numerous worlds, and they employ negatively charged noctilith to dampen
 effects.[^lex-pylon] The stabilised corridor described in [[I.T1.Ch4]] was, in practice, this
 one.
 
-!!! disputed "Corrected figures — cadian-pylon-dimensions"
+!!! disputed "Recorded conflict — cadian-pylon-dimensions"
 
     The pylons are **one kilometre tall, half a kilometre of that below ground, and half a
-    kilometre on each side**.[^lex-pylon]
+    kilometre on each side**,[^lex-pylon] or each rose **precisely half a kilometre in
+    height and extended a quarter-kilometre into the ground**.[^lex-cadia]
 
-    Figures of "500 metres high, 250 metres square" circulate widely. The first is
-    defensible as the above-ground portion; the second is not. This entry is recorded in the
-    register because the codex's own working notes had it wrong, and the error survived
-    several passes before the source was checked.
+    Every figure in the second set is exactly half its counterpart in the first, and both
+    trace to the same chapter of the same novel. One of the two readings is a
+    mistranscription, and nothing available here settles which. The dimensions are treated as
+    unresolved throughout this codex; see [[II.T3.Ch8]] for the pylons' count and function.
 
 There is a final property of the material that explains everything in [[II.T1.Ch2]].
 Noctilith can ward against Warp energies *or* act as a locus for them, and the forces of

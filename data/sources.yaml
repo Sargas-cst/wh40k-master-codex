@@ -1116,3 +1116,271 @@ lex-macragge:
   notes: >
     Carries an uncited-works block — it lists the Warhammer 40,000 4th Edition Rulebook without tying it
     to any claim, and nothing in this codex rests on it.
+
+lex-fortress-monastery:
+  tier: 2
+  what: Lexicanum article "Fortress-monastery"
+  url: https://wh40k.lexicanum.com/wiki/Fortress-monastery
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-fortress-monastery.wikitext
+  cites:
+    - "Warhammer 40,000: Rogue Trader, pgs. 158-161"                       # {{Fn|1}} — siting, tithe for land, the full chamber list
+    - "Index Astartes: Fortress Monasteries (Background Book)"             # {{Fn|2a}}, {{Fn|2b}} — crypts, named fortresses
+    - "Battle of the Fang (Novel)"                                         # {{Fn|3}} — the Fang's interior
+  notes: >
+    Carries an incomplete-citation marker and a trivia block. The chamber-by-chamber
+    description is transcribed from the earliest published material and repeatedly names
+    Lucan rather than Fenris as the world it stands on; see contradiction
+    space-wolves-fortress-world. The description is used here for what a fortress-monastery
+    contains, which is how the article presents it.
+
+lex-fenris:
+  tier: 2
+  what: Lexicanum article "Fenris"
+  url: https://wh40k.lexicanum.com/wiki/Fenris
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-fenris.wikitext
+  cites:
+    - "Codex: Space Marines (5th Edition), pgs. 6-7"        # {{Fn|2a}} — shifting geography, classifications
+    - "Codex: Space Wolves (8th Edition), pg. 10"           # {{Fn|12b}} — Asaheim, the Wolf's Eye, the elliptical orbit
+    - "Wolfsbane (Novel), Chapter 11"                       # {{Fn|10c}} — the Fimbolsommer, the solstice, Krakgard
+    - "Wolfsbane (Novel), Prologue"                         # {{Fn|10a}} — colonisation, regression in the Age of Strife
+    - "Wolfsbane (Novel), Chapters 12-13"                   # {{Fn|10b}} — Syrtyr's Door, the Erlking
+    - "Prospero Burns (Novel), Chapter 1"                   # {{Fn|8a}} — Mother Fenris, the Aesir, the tribes
+    - "Prospero Burns (Novel), Chapter 4"                   # {{Fn|8b}} — three to four Terran years
+    - "White Dwarf 359 (UK), pg. 45"                        # {{Fn|42}} — roughly two Terran years
+    - "Battle of the Fang (Novel), Chapter 6"               # {{Fn|16}} — the Seven Peaks, recruitment, the Kaerls
+    - "Space Wolf (Novel), Chapters 15-16"                  # {{Fn|18b}} — the cavern cities, Nightgangers, the Tzeentch temple
+    - "White Dwarf 452, pg. 19"                             # {{Fn|29}} — High King of Fenris, population, Segmentum Solar
+    - "Codex: Space Marines (4th Edition), pg. 81"          # {{Fn|3}} — Segmentum Obscurus
+    - "White Dwarf 93 (UK), pg. 39"                         # {{Fn|36}} — the fortress-monastery on Lucan
+  notes: >
+    25 KB, 161 inline markers, 66 endnotes. Carries an uncited-works block, an
+    incomplete-citation marker and a trivia block. It also carries its own explicit
+    "Conflicting sources" section, which is the source for two of this Chapter's recorded
+    conflicts — the segmentum placement and the Lucan fortress.
+
+lex-baal:
+  tier: 2
+  what: Lexicanum article "Baal"
+  url: https://wh40k.lexicanum.com/wiki/Baal
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-baal.wikitext
+  cites:
+    - "Index Astartes II — Angels of Death, pgs. 30-37"     # {{Fn|2}} — the civil war, the moons, Sanguinius, The Blood
+    - "Darkness in the Blood (Novel), Chapters 18-19"       # {{Fn|9}} — the two Warp angels and how they feed
+    - "Codex: Space Marines (5th Edition), pgs. 10-11"      # {{Fn|1a}} — Baal as Blood Angels homeworld
+    - "The Horus Heresy: Book Six - Retribution, pgs. 35-38"  # {{Fn|3}} — loyalist hub, the Shattered Legions
+    - "Warhammer 40,000 8th Edition Rulebook, pgs. 52-53"   # {{Fn|6}} — the Devastation, Ka'Bandha's sigil
+    - "The Devastation of Baal (Novel), Chapter Nineteen"   # {{Fn|7e}} — Ruberica, the self-repairing cavern
+    - "The Devastation of Baal (Novel), Chapter Thirty"     # {{Fn|7d}} — the bombardment of the moon
+    - "Dante (Novel), Chapter One"                          # {{Fn|5}} — Arx Angelicum
+  notes: >
+    Carries an uncited-works block. The article uses "Baal Primus" and "Baal Prime" for the
+    same moon in adjacent sentences; this codex uses Primus, the form its own moons list
+    gives.
+
+lex-nocturne:
+  tier: 2
+  what: Lexicanum article "Nocturne"
+  url: https://wh40k.lexicanum.com/wiki/Nocturne
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-nocturne.wikitext
+  cites:
+    - "Index Astartes IV — Promethean Warriors"             # {{Fn|1}} — the binary system, the Time of Trial
+    - "The Horus Heresy: Book Two - Massacre, pg. 117"      # {{Fn|11}} — settlement, Vulkan, obsidian skin
+    - "Salamander (Novel), Chapter One, pgs. 27-29"         # {{Fn|2a}} — the Sanctuary Cities, living among the people, the Pyreum
+    - "Salamander (Novel), Chapter Four, pgs. 134-158"      # {{Fn|2b}} — refuge during the Trial, teleport points
+    - "Firedrake (Novel), Chapter Four"                     # {{Fn|3a}} — the unmapped undercroft beneath Mount Deathfire
+    - "Dataslate: Adeptus Astartes Storm Wing, pg. 8"       # {{Fn|9}} — the Soulsmelter, the opened reliquaries
+    - "Hell Night (Short Story)"                            # {{Fn|5}} — the Dragon Warriors attack
+  notes: >
+    Carries an uncited-works block. Its geography section is a long gazetteer; only the
+    features that carry an institution or explain the world's condition are used here.
+
+lex-cadia:
+  tier: 2
+  what: Lexicanum article "Cadia"
+  url: https://wh40k.lexicanum.com/wiki/Cadia
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-cadia.wikitext
+  cites:
+    - "Codex: Eye of Terror (3rd Edition), pg. 5"        # {{Fn|1b}} — pylon count and dimensions, Interior Guard
+    - "Codex: Eye of Terror (3rd Edition), pg. 11"       # {{Fn|1d}} — Baphomael, the Gellar-Field resonance
+    - "Codex: Eye of Terror (3rd Edition), pg. 24"       # {{Fn|1a}} — 71.75% under arms, Battlefleet Cadia, planetary data
+    - "Codex: Eye of Terror (3rd Edition), pg. 37"       # {{Fn|1c}} — Shock Trooper reputation, Internal Guard
+    - "Malleus (Novel), Chapter Twelve"                  # {{Fn|2}} — pylon dimensions, martial law, Law of Decipherability
+    - "Codex: Imperial Guard (2nd Edition), pg. 11"      # {{Fn|5}} — the Cadian Gate, industry
+    - "Codex: Imperial Guard (5th Edition), pg. 14"      # {{Fn|6a}} — birth rate equal to recruitment rate, Whiteshields
+    - "Codex: Imperial Guard (5th Edition), pg. 57"      # {{Fn|6b}} — Governor Primus, Lord Castellan
+    - "Gathering Storm: Fall of Cadia, Chapter 3"        # {{Fn|10}} — Cawl, Trazyn, the pylon chain reaction
+    - "Cadia Stands (Novel), Part 1, Ch. 3"              # {{Fn|14b}} — Kasr void shields
+    - "Eye of Terror: Reign of Iron (Lorebook), pgs. 54-59"  # {{Fn|19b}} — the daemon world, the Oubliette, Iron Warriors
+    - "Gunheads (Novel), Chapter 3"                      # {{Fn|9d}} — class by military rank
+    - "Assassinorum: Execution Force (Novel)"            # {{Fn|15}} — purple eyes
+  notes: >
+    Carries its own "Conflicting sources" note on how complete the planet's destruction was;
+    recorded here as cadia-destruction-extent. Its pylon dimensions disagree by a factor of two
+    with the Pylon article's while citing the same novel chapter; see
+    cadian-pylon-dimensions. The pylon COUNT — 5,810 intact plus some two thousand buried or
+    damaged — appears only here.
+
+lex-armageddon:
+  tier: 2
+  what: Lexicanum article "Armageddon"
+  url: https://wh40k.lexicanum.com/wiki/Armageddon
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-armageddon.wikitext
+  cites:
+    - "Codex: Armageddon (3rd Edition), pgs. 2-3"        # {{Fn|6b}} — the Second War, von Strab, Yarrick, Dante
+    - "Codex: Armageddon (3rd Edition), pg. 4"           # {{Fn|6c}} — Ghazghkull rebuilding the Waaagh!
+    - "Codex: Armageddon (3rd Edition), pg. 5"           # {{Fn|6d}} — the military council, the Third War
+    - "Codex: Armageddon (3rd Edition), pg. 33"          # {{Fn|6h}} — the three landmasses, Prime and Secundus
+    - "Codex: Chaos Space Marines (3rd Edition, 2nd Codex), pg. 8"   # {{Fn|5}} — the First War, Angron, the Grey Knights
+    - "The Emperor's Gift (Novel), Chapters 19-20"        # {{Fn|10a}} — sterilisation and the work camps
+    - "The Emperor's Gift (Novel), Chapters 21-22"        # {{Fn|10b}} — Grimnar's grievance
+    - "Codex: Grey Knights (5th Edition), pg. 13"        # {{Fn|4}} — the troopships, the three worlds of Tremayne
+    - "The Beheading (Novel), Chapters 5-6"              # {{Fn|8}} — Armageddon as the relocated Ullanor
+    - "Codex: Orks (4th Edition), pg. 25"                # {{Fn|3}} — Armageddon as an Ork Valhalla
+    - "Crusade: Armageddon, pgs. 14-15"                  # {{Fn|17a}} — the Season of Blood, the Conqueror
+    - "Armageddon: Operation Imperator (Lore Book), pg. 16"   # {{Fn|22a}} — diameter, the 690.M37 census caveat
+    - "Armageddon: Operation Imperator (Lore Book), fold-out"  # {{Fn|22b}} — four of nine hives fallen
+    - "Codex: Imperial Guard (5th Edition), pg. 19"      # {{Fn|12a}} — the Steel Legion
+  notes: >
+    Carries an incomplete-citation marker and a trivia block. Its own Notes section flags the
+    population figure as taken from a hive census of 690.M37 and therefore grossly out of
+    date — and as describing a population that was subsequently replaced. No population figure
+    is quoted in this codex for that reason.
+
+lex-vigilus:
+  tier: 2
+  what: Lexicanum article "Vigilus"
+  url: https://wh40k.lexicanum.com/wiki/Vigilus
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-vigilus.wikitext
+  cites:
+    - "Imperium Nihilus: Vigilus Defiant, pgs. 1-20"     # {{Fn|5a}} — the STC, the Agamemnus Dynasty, the water castes, Neo-vellum
+    - "Warhammer Community: Vigilus 101 (2018)"          # {{Fn|4}} — geography, the roll of invaders
+    - "Warhammer Community: Lore: Tooth and Claw (2018)" # {{Fn|1}} — the only stable route through the Rift
+    - "Warhammer Community: 500 Facts for 500 Stores, Fact #46"  # {{Fn|3}} — Sentinel World classification
+  notes: >
+    Its infobox figures and several classifications rest on a third-party campaign website
+    archived in June 2026 (citation 8) rather than on a Games Workshop publication. The
+    population, tithe grade and sub-sector are corroborated by Vigilus Defiant; the Aestimare
+    and surface gravity are not, and are not used here.
+
+lex-death-world:
+  tier: 2
+  what: Lexicanum article "Death World"
+  url: https://wh40k.lexicanum.com/wiki/Death_World
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-death-world.wikitext
+  cites:
+    - "Warhammer 40,000 3rd Edition Rulebook, pg. 115"     # {{Fn|2}} — the class definition, populations, tithe grades
+    - "Warhammer 40,000: Rogue Trader, pg. 134"            # {{Fn|1}} — the biomass as if consciously motivated
+    - "Codex: Catachans, pgs. 1-2"                         # {{Fn|9}} — Deathworld Veteran Regiments as tithe
+    - "Codex: Astra Militarum (9th Edition), pg. 20"       # {{Fn|7}} — Indiga, "Man-Made Death World"
+    - "Savage Weapons (Short Story)"                       # {{Fn|5}} — In Articulo Mortis, Caliban
+  notes: >
+    Carries an incomplete-citation marker. Its long table of notable death worlds is not used;
+    the class definition and the tithe provision are.
+
+lex-catachan:
+  tier: 2
+  what: Lexicanum article "Catachan"
+  url: https://wh40k.lexicanum.com/wiki/Catachan
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-catachan.wikitext
+  cites:
+    - "Codex: Imperial Guard (2nd Edition), pg. 10"        # {{Fn|1}} — the crash-landing, the losing settlements, the flora
+    - "Codex: Astra Militarum (8th Edition), pgs. 20-21"   # {{Fn|12}} — traded resources, "Baby Ogryn"
+    - "Codex: Astra Militarum (10th Edition), pg. 34"      # {{Fn|32}} — Munitorum supplies for the soldier tithe
+    - "Codex: Imperial Guard (3rd Edition, 2nd Codex), pg. 60"   # {{Fn|22}} — the climate itself
+    - "Codex: Imperial Guard (5th Edition), pg. 64"        # {{Fn|3b}} — disdain for outsiders
+    - "The Killing Ground (Novel), Prologue"               # {{Fn|6}} — pragmatism
+    - "Gathering Storm: Fracture of Biel-Tan, Chapter 2"   # {{Fn|10}} — the unsent warning, Badrukk, Bas Infernia
+    - "Codex: Space Marines (8th Edition), pg. 20"         # {{Fn|11}} — the daemons already dealt with
+    - "Only War: Hammer of the Emperor, cp. 2"             # {{Fn|15}} — the Catachan Devil, Shambling Mamorphs
+  notes: >
+    Carries an uncited-works block, an incomplete-citation marker and a trivia block. Its own
+    conflicting-sources note concerns a spelling variant in a licensed card game and is not
+    material.
+
+lex-krieg:
+  tier: 2
+  what: Lexicanum article "Krieg"
+  url: https://wh40k.lexicanum.com/wiki/Krieg
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-krieg.wikitext
+  cites:
+    - "Codex: Astra Militarum (10th Edition), pgs. 24-26"  # {{Fn|6}} — purged records, Munitorum control, the maximum tithe
+    - "Imperial Armour Volume Five, pgs. 86-88"            # {{Fn|2}} — the Autocrats, the civil war, Jurten, the Purging
+    - "Warhammer 40,000 5th Edition Rulebook, pg. 116"     # {{Fn|1}} — the Vitae Womb system
+    - "Krieg (Novel), Chapter Two"                         # {{Fn|9a}} — former Hive World, no psykers, the subterranean cities
+    - "Krieg (Novel), Chapter Four"                        # {{Fn|9b}} — Death World classification
+    - "Codex: Imperial Guard (3rd Edition, 2nd Codex), pg. 61"   # {{Fn|3}} — the Death Korps
+    - "White Dwarf 509, pgs. 59-60"                        # {{Fn|7}} — numbers given at birth
+    - "Imperial Armour Volume Twelve - The Fall of Orpheus" # {{Fn|8b}} — names lost on enlistment, how names are re-earned
+  notes: >
+    Carries a trivia block and its own conflicting-sources note on when a Kriegsman receives
+    his number; recorded here as krieg-naming-point. Note that the article states much of
+    Krieg's history was deliberately purged, which limits what any source can establish about
+    the world before 433.M40.
+
+lex-tomb-world:
+  tier: 2
+  what: Lexicanum article "Tomb World"
+  url: https://wh40k.lexicanum.com/wiki/Tomb_World
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-tomb-world.wikitext
+  cites:
+    - "Codex: Necrons (5th Edition), pg. 14"        # {{Fn|7a}} — the class, disappearing explorators, crownworlds, fringeworlds
+    - "Codex: Necrons (5th Edition), pgs. 7-8"      # {{Fn|7c}} — concealment against the Eldar
+    - "Codex: Necrons (8th Edition), pg. 6"         # {{Fn|20a}} — the Deep Spirit, Canoptek constructs
+    - "Codex: Necrons (8th Edition), pg. 11"        # {{Fn|20b}} — hidden worlds, pocket dimensions
+    - "Codex: Necrons (8th Edition), pgs. 14-15"    # {{Fn|20c}} — how few have been found
+    - "The Infinite and the Divine (Novel), Act 2, Chapter 4"   # {{Fn|13b}} — isolation in pocket dimensions
+  notes: >
+    Carries a trivia block. The coreworlds tier carries marker citation 7q, which resolves to no
+    endnote on the page — a dangling reference. The tier is reported as the article gives it,
+    between crownworlds and fringeworlds, without a print citation behind it. The article's long
+    table of known Tomb Worlds is not used.
+
+lex-t-au-empire:
+  tier: 2
+  what: Lexicanum article "T'au Empire"
+  url: https://wh40k.lexicanum.com/wiki/T%27au_Empire
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-t-au-empire.wikitext
+  cites:
+    - "Codex: Tau Empire (6th Edition), pgs. 10-11"   # {{Fn|10a}} — the Mont'au, Fio'taun, the Ethereals, the Greater Good
+    - "Codex: Tau Empire (6th Edition), pgs. 13-15"   # {{Fn|10b}} — first contact with humanity, Aun'va, the first wars
+    - "Codex: Tau Empire (6th Edition), pg. 28"       # {{Fn|10f}} — the Spheres, the client species
+    - "Codex: T'au Empire (8th Edition), pg. 6"        # {{Fn|14}} — the caste procedure for new species, terraforming
+    - "Codex: T'au Empire (10th Edition), pg. 10"      # {{Fn|23}} — the castes' roles, the external image, deviants
+    - "Planetstrike, pg. 56"                           # {{Fn|1}} — the Empire's extent and allies
+    - "Codex: Tyranids (5th Edition), pgs. 18-21"      # {{Fn|3}} — within the Astronomican's reach, Kraken splinters
+    - "Elemental Council (Novel), Chapter 19"          # {{Fn|22c}} — client-resident status, biometric registration
+    - "Elemental Council (Novel), Chapter 1"           # {{Fn|22a}} — Re-Education Facilities
+    - "Courage and Honour (Novel)"                     # {{Fn|15}} — the Empire's claims about the Gue'vesa
+  notes: >
+    28.7 KB, carries an uncited-works block. The article is careful to attribute the Empire's
+    account of its human subjects to the Empire ("It is claimed by the Empire"), and this codex
+    preserves that attribution rather than restating it as fact. Its military and sept sections
+    belong to Volume VI.
+
+lex-ork-empire-of-charadon:
+  tier: 2
+  what: Lexicanum article "Ork Empire of Charadon"
+  url: https://wh40k.lexicanum.com/wiki/Ork_Empire_of_Charadon
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-ork-empire-of-charadon.wikitext
+  cites:
+    - "Codex: Orks (4th Edition), pg. 23"              # {{Fn|1}} — the Arch-Arsonist, Tigurius's strikes, the invasion of Ultramar
+    - "Codex: Space Marines (5th Edition), pg. 90"     # {{Fn|2}} — Snagrod, Rynn's World, the Crimson Fists
+    - "Codex: Orks (8th Edition)"                      # {{Fn|4}} — the empire's territory
+    - "Codex Supplement: Ultramarines (8th Edition), pg. 8"   # {{Fn|5}}
+  notes: >
+    Short — 2.2 KB. Reached via the "Charadon" disambiguation page, which holds no article text.
+    No reliability flags. Used for what an Ork empire is as a political fact rather than for
+    Ork biology or culture.

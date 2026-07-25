@@ -385,19 +385,22 @@ craftworld:
   term: craftworld
   definition: >
     A continent-sized Aeldari vessel, self-sufficient and housing tens of millions, which
-    survived the Fall by fleeing into the void.
+    survived the Fall by fleeing into the void. Originally a trading ship of the Eldar Empire.
   variants: [Craftworld, world-ship]
   category: cosmology
   sources: [lex-craftworld]
+  full_treatment: II.T3.Ch10
 
 commorragh:
   term: Commorragh
   definition: >
     The Dark City: the Drukhari capital, built deep inside the Webway from a former
-    Aeldari port-city and the sub-realms it absorbed.
+    Aeldari port-city and the sub-realms it absorbed — not one place but a set of nodes
+    thousands of light years apart and one step from each other.
   variants: [the Dark City, Port Commorragh, Commoragh]
   category: cosmology
   sources: [lex-commorragh]
+  full_treatment: II.T3.Ch10
 
 black-library:
   term: the Black Library
@@ -755,3 +758,116 @@ imperium-secundus:
     it off and he feared the Imperium itself was lost.
   category: institutions
   sources: [lex-ultramar]
+
+# --- Volume II Title 3 -----------------------------------------------------
+
+fortress-monastery:
+  term: fortress-monastery
+  definition: >
+    A Space Marine Chapter's headquarters — a fortress devoted equally to battle and worship,
+    sited on an Imperial world, a moon or an asteroid, or carried aboard a fleet-based
+    Chapter's flagship.
+  category: institutions
+  sources: [lex-fortress-monastery]
+  full_treatment: II.T3.Ch7
+
+kasr:
+  term: Kasr
+  definition: >
+    A Cadian city — a fortress in its own right, void-shielded, ringed by earthworks and gun
+    emplacements and separated from the outside by a moat.
+  variants: [Kasrs]
+  category: warfare
+  sources: [lex-cadia]
+
+law-of-decipherability:
+  term: the Law of Decipherability
+  definition: >
+    The Cadian statute under which graves whose tombstones had become illegible were exhumed
+    and the bones added to a communal pit, the obligation to honour a name lapsing with the
+    name itself.
+  category: institutions
+  sources: [lex-cadia]
+
+death-world:
+  term: Death World
+  definition: >
+    A δτ-class world classified by extremely dangerous native flora and fauna. Inhabited death
+    worlds may pay their tithe in Deathworld Veteran Regiments.
+  variants: [Deathworld, δτ-class]
+  category: cosmology
+  sources: [lex-death-world]
+  full_treatment: II.T3.Ch9
+
+in-articulo-mortis:
+  term: In Articulo Mortis
+  definition: >
+    "At the moment of demise" — the phrase some Imperial ledgers use for a death world.
+    Caliban was so recorded before its destruction.
+  category: institutions
+  sources: [lex-death-world]
+
+the-purging:
+  term: the Purging
+  definition: >
+    Colonel Jurten's atomic cleansing of Krieg in 433.M40, which ended the planet's civil war
+    by rendering its surface uninhabitable and founded the culture of the Death Korps.
+  category: warfare
+  sources: [lex-krieg]
+
+vitae-womb:
+  term: the Vitae Womb
+  definition: >
+    The system by which much of Krieg's population growth is now undertaken, the surface being
+    uninhabitable.
+  category: technology
+  sources: [lex-krieg]
+
+illmaea:
+  term: the Illmaea
+  definition: >
+    Commorragh's "stolen suns" — stars drawn out of realspace into Webway sub-realms before the
+    Fall to power the city, killing the systems they were taken from.
+  category: cosmology
+  sources: [lex-commorragh]
+
+tomb-world:
+  term: Tomb World
+  definition: >
+    A world holding dormant Necrons, graded crownworld, coreworld or fringeworld. Only a tiny
+    portion have been found, and the true number is known to no one but the Necrons.
+  category: cosmology
+  sources: [lex-tomb-world]
+
+deep-spirit:
+  term: Deep Spirit
+  definition: >
+    The master control programme that runs a Tomb World in the absence of an active Necron
+    population, directing its Canoptek constructs.
+  category: technology
+  sources: [lex-tomb-world]
+
+montau:
+  term: the Mont'au
+  definition: >
+    The T'au's darkest age, at the end of M37, when inter-tribal war and plague brought the
+    species to the verge of self-extinction — ended by the Ethereals at Fio'taun.
+  category: cosmology
+  sources: [lex-t-au-empire]
+
+sphere-of-expansion:
+  term: Sphere of Expansion
+  definition: >
+    A phase of T'au growth in which nearby worlds are colonised, conquered, or persuaded to
+    join the Greater Good — a negotiation that may run for decades before the Fire Caste is used.
+  variants: [Spheres]
+  category: institutions
+  sources: [lex-t-au-empire]
+
+gue-vesa:
+  term: Gue'vesa
+  definition: >
+    Humans within the T'au Empire, from ideological defectors to captured guardsmen and their
+    children. The Empire claims they are content and permitted to worship the Emperor.
+  category: institutions
+  sources: [lex-t-au-empire]

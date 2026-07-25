@@ -226,33 +226,41 @@ age-of-strife-start-date:
 
 cadian-pylon-dimensions:
   kind: numerical
-  status: resolved
+  status: open
   reverified: true
   reverified_on: 2026-07-25
   seeded_from: PROMPT.md §11
   summary: >
-    The pylons are one kilometre tall, of which half a kilometre is below ground, and half
-    a kilometre on each side.
+    The Cadian pylons are one kilometre tall with half a kilometre buried and half a kilometre
+    on each side, or half a kilometre tall with a quarter-kilometre buried.
   reverification_note: >
-    THE BRIEF'S OWN CORRECTION WAS WRONG, and wrong on two counts. PROMPT.md §11 records the
-    pylons as "500 metres high, 250 metres square" and explicitly flags kilometre-scale
-    figures as a mistake made in a prior draft. The source says the opposite: one kilometre
-    tall, half a kilometre under the earth, half a kilometre on each side. So the kilometre
-    scale is correct for the total height, and each side is 500 metres rather than 250.
+    Two Lexicanum articles give figures in which every dimension of one set is exactly half
+    its counterpart in the other — and BOTH cite the same chapter of the same novel, Malleus
+    Chapter Twelve. The Cadia article adds a second citation, Codex: Eye of Terror (3rd
+    Edition) pg. 5. One of the two readings must be a mistranscription of the primary text,
+    and nothing available here settles which.
 
-    The 500-metre figure the brief preserved is most plausibly the ABOVE-GROUND portion —
-    one kilometre total less the half-kilometre buried — which would make the prior draft
-    the brief set out to correct closer to right than the correction itself.
+    PROMPT.md §11 records the pylons as "500 metres high, 250 metres square" and flags
+    kilometre-scale figures as a prior draft's error. The 500-metre height matches the Cadia
+    article; the 250-metre figure matches neither article's side measurement, and appears to
+    be the tunnel length — the Cadia article gives tunnels "exactly two hundred fifty metres
+    long", each no wider than a man's head.
 
-    Recorded as the clearest case so far of why §11 says re-verify rather than trust: the
-    seeded corrections are not more reliable than the material they correct.
+    An earlier pass of this codex recorded the conflict as RESOLVED in favour of the
+    kilometre-scale figures, on the strength of the pylon article alone, and stated in prose
+    that the 500-metre figures were unsupported. That was wrong: they are supported, by two
+    citations, one of them the same novel chapter. The entry is reopened.
   handling: >
-    One kilometre tall, half below ground, half a kilometre square. Do not repeat the
-    250-metre figure. Cadia itself is II.T3.Ch8.
+    State both sets and note that they stand in exact 2:1 proportion and share a primary
+    source. Assert neither. Do not carry the 250-metre figure as a side measurement at all —
+    it is the tunnel length.
   positions:
     - claim: One kilometre tall, half a kilometre buried, half a kilometre on each side.
       source: lex-pylon
       marker: "citation 4a — Malleus (Novel), Chapter Twelve"
+    - claim: Half a kilometre tall, a quarter-kilometre buried; tunnels 250 metres long.
+      source: lex-cadia
+      marker: "citation 2 — Malleus (Novel), Chapter Twelve; citation 1b — Codex: Eye of Terror (3rd Edition), pg. 5"
 
 imperial-forms-of-address:
   kind: undefined
@@ -418,3 +426,127 @@ imperial-palace-extent:
     - claim: A large part of the Asian continent.
       source: lex-imperial-palace
       marker: "citation 8"
+
+space-wolves-fortress-world:
+  kind: edition
+  status: resolved
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume II Title 3 research
+  summary: >
+    The Space Wolves' fortress-monastery stands on Lucan, or it is the Fang on Fenris.
+  reverification_note: >
+    Traced to its origin. When the Chapter was introduced in White Dwarf 93, the
+    fortress-monastery was sited on Lucan — described as airless, its fortress silent and
+    without mirth. The chamber-by-chamber description of a "typical" fortress-monastery,
+    transcribed from Rogue Trader, still names Lucan for its generatorum, its missile silos
+    and its Great Hall. Lucan is separately identified as a VI Legion fief world of the Great
+    Crusade era, which reconciles the two without either being wrong.
+  handling: >
+    Treat the chamber description as what a fortress-monastery contains, which is how it is
+    presented. The Fang on Fenris is the Space Wolves' home. Record Lucan as the earliest
+    published siting rather than as a competing present-day claim.
+  positions:
+    - claim: The fortress-monastery is on Lucan.
+      source: lex-fortress-monastery
+      marker: "citation 1 — Rogue Trader, pgs. 158-161"
+    - claim: Lucan was the original published siting; Lucan is a VI Legion fief world.
+      source: lex-fenris
+      marker: "citation 36 — White Dwarf 93 (UK), pg. 39; citation 32"
+
+fenris-segmentum:
+  kind: edition
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume II Title 3 research
+  summary: >
+    Fenris lies in Segmentum Solar, or in Segmentum Obscurus.
+  reverification_note: >
+    The article flags this itself. Two editions of Codex: Space Marines place Fenris in
+    Obscurus; the weight of other references, including the infobox, gives Solar. It is not
+    cosmetic: the Great Rift left Segmentum Solar in Imperium Sanctus and much of Obscurus in
+    Imperium Nihilus, so the two placements put the Space Wolves' homeworld on opposite sides
+    of the galaxy's dividing line.
+  handling: >
+    State Solar as the majority placement and record Obscurus, with the consequence for which
+    half of the sundered Imperium Fenris falls in.
+  positions:
+    - claim: Segmentum Solar.
+      source: lex-fenris
+      marker: "citations 2 and 29"
+    - claim: Segmentum Obscurus.
+      source: lex-fenris
+      marker: "citation 3 — Codex: Space Marines (4th Edition), pg. 81; citation 12a"
+
+fenrisian-year-length:
+  kind: numerical
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume II Title 3 research
+  summary: >
+    A Fenrisian year is three to four Terran years, or roughly two.
+  reverification_note: >
+    Both figures are in the article's opening paragraph, the second introduced with "however
+    some say". Each traces to a published source — a Horus Heresy novel and a White Dwarf
+    article. The figure governs how a Fenrisian's age, a Space Wolf's seniority and the
+    interval between the world's catastrophic summers all convert into Imperial reckoning.
+  handling: State both. Do not convert Fenrisian ages into Terran years anywhere in the codex.
+  positions:
+    - claim: Once every three to four Terran years.
+      source: lex-fenris
+      marker: "citation 8b — Prospero Burns (Novel), Chapter 4"
+    - claim: Roughly two Terran years.
+      source: lex-fenris
+      marker: "citation 42 — White Dwarf 359 (UK), pg. 45"
+
+cadia-destruction-extent:
+  kind: undefined
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume II Title 3 research
+  summary: >
+    How completely Cadia was destroyed is unclear: it is depicted as an asteroid field, and it
+    is also a daemon world.
+  reverification_note: >
+    The article raises the problem against itself. Cadia has been graphically depicted as an
+    asteroid field and has produced at least one named asteroid, yet a significant portion of
+    its mass must have survived intact to become the daemon world the Black Legion and then
+    the Iron Warriors ruled from. Both depictions are in current use and neither is withdrawn.
+  handling: >
+    Record it as an open question. The daemon-world Cadia is well documented and is used; the
+    asteroid-field depiction is noted rather than reconciled.
+  positions:
+    - claim: Cadia was reduced to an asteroid field.
+      source: lex-cadia
+      marker: "the article's conflicting-sources note"
+    - claim: Enough of Cadia survived to become a daemon world.
+      source: lex-cadia
+      marker: "citation 19b — Eye of Terror: Reign of Iron (Lorebook), pgs. 54-59"
+
+krieg-naming-point:
+  kind: sequence
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume II Title 3 research
+  summary: >
+    A Kriegsman receives his identifying number at birth, or on enlisting in the Astra
+    Militarum.
+  reverification_note: >
+    The article flags this itself, between White Dwarf 509 and Imperial Armour Volume Twelve.
+    The two readings give the practice different meanings: a number from birth makes
+    namelessness the ordinary civilian condition on Krieg, while a number issued on enlistment
+    makes it a sacrament — a name surrendered in exchange for service. Both sources are current.
+  handling: >
+    State both and state what each would imply. Do not describe Krieg civilians as nameless
+    without qualification.
+  positions:
+    - claim: The number is given at birth.
+      source: lex-krieg
+      marker: "citation 7 — White Dwarf 509, pgs. 59-60"
+    - claim: The original name is lost and the number gained on enlistment.
+      source: lex-krieg
+      marker: "citation 8b — Imperial Armour Volume Twelve - The Fall of Orpheus"

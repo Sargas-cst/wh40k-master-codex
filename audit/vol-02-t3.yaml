@@ -1,0 +1,130 @@
+# Audit trail — Volume II, Title 3
+# Recorded per PROMPT.md §3.
+
+title: "Volume II Title 3 — Fortress, Home & Hostile Worlds"
+covers: Chapters 7-10
+depth_band: Medium
+completed_on: 2026-07-25
+
+retrieval:
+  pages_added_this_pass:
+    - Fortress-monastery
+    - Baal
+    - Fenris
+    - Nocturne
+    - Armageddon
+    - Vigilus
+    - Death_World
+    - Catachan
+    - Krieg
+    - Tomb_World
+    - "T'au_Empire"
+    - Ork_Empire_of_Charadon
+    - Segmentum_Fortress
+  already_cached_and_reused:
+    - Cadia
+    - Craftworld
+    - Commorragh
+    - Pylon
+  corrections_during_retrieval:
+    - >
+      "Charadon" is a disambiguation page holding 195 bytes and no article text. The Ork
+      empire article was fetched under its own title.
+    - >
+      "Fortress-Monastery" and "Tau_Empire" both resolved to redirect stubs. The retriever's
+      case-variant and self-redirect checks forced a re-fetch under the exact titles rather
+      than leaving 200-byte stubs in place of the articles.
+
+chapters:
+  - id: II.T3.Ch7
+    owns: astartes-homeworlds
+    sections: 4
+    note: >
+      What a fortress-monastery is, then Fenris, Baal and Nocturne. Three contradictions
+      opened, two of them from the Fenris article's own "Conflicting sources" section.
+  - id: II.T3.Ch8
+    owns: bastion-worlds
+    sections: 3
+    note: >
+      Cadia, Armageddon, Vigilus. Cadia's pylon count appears only in the Cadia article; its
+      dimensions conflict with the Pylon article's by a factor of two.
+  - id: II.T3.Ch9
+    owns: death-worlds
+    sections: 4
+    note: >
+      The death-world classification and the tithe provision behind it, then Catachan and
+      Krieg as the two mechanisms — trade and inherited debt — that produce the same regiments.
+  - id: II.T3.Ch10
+    owns: xenos-domains
+    sections: 5
+    note: >
+      Craftworlds, Commorragh, Tomb Worlds, the T'au Empire and the Ork empires — grouped by
+      how each fails to behave like Imperial territory. The T'au Empire's claims about its
+      human subjects are reported as claims, as the article itself does.
+
+contradictions_opened:
+  - id: space-wolves-fortress-world
+    kind: edition
+    status: resolved
+    note: >
+      Traced to origin. The fortress-monastery chamber list still names Lucan; Lucan was the
+      Space Wolves' original published siting and is separately a VI Legion fief world, which
+      reconciles the two.
+  - id: fenris-segmentum
+    kind: edition
+    note: >
+      Solar or Obscurus. Not cosmetic — the two placements put Fenris on opposite sides of the
+      Great Rift's division.
+  - id: fenrisian-year-length
+    kind: numerical
+    note: Three to four Terran years, or roughly two. Both in the article's opening paragraph.
+  - id: cadia-destruction-extent
+    kind: undefined
+    note: Asteroid field or surviving daemon world. The article raises it against itself.
+  - id: krieg-naming-point
+    kind: sequence
+    note: The identifying number is issued at birth, or on enlistment.
+
+corrections_to_earlier_work:
+  - id: cadian-pylon-dimensions
+    was: resolved
+    now: open
+    note: >
+      An earlier pass recorded this as resolved in favour of the kilometre-scale figures on the
+      strength of the Pylon article alone, and stated in prose that the half-kilometre figures
+      were unsupported. That was wrong. The Cadia article gives every dimension at exactly half
+      the Pylon article's value, with two citations, one of them the same novel chapter the
+      Pylon article cites. The register entry and the Chapter 3 callout were both rewritten to
+      state both readings and assert neither.
+  - what: Nine cross-references in Chapter 4
+    note: >
+      Five pointed at Volume IV Titles that do not exist; four pointed at real Chapters holding
+      a different subject. The validator checks that a target exists, not that it is the right
+      target, so every Volume II cross-reference was traced against the file tree by hand.
+      Further mismatches were found and fixed in Chapters 3, 6, 8, 9 and 10.
+
+housekeeping:
+  - >
+    Wiki reliability-template names were rendering literally into reader-facing footnotes and
+    into the disputed-facts appendix. All 53 occurrences across data/sources.yaml and
+    data/contradictions.yaml were rewritten into plain English.
+
+left_out:
+  - >
+    The fortress-monastery article's table of named Chapter fortresses; individual Chapters
+    belong to Volume IV Title 4.
+  - >
+    Fenris's tribe list, fauna and language sections beyond what explains the society; Nocturne's
+    seven Sanctuary Cities individually, and its full geographical gazetteer.
+  - >
+    Armageddon's war narratives in detail — they are Volume VII Title 2 Chapter 5 — and its
+    population figure, which the article itself flags as a census from 690.M37 describing a
+    population since replaced.
+  - >
+    Vigilus's Aestimare and surface gravity, which rest on a third-party campaign website
+    rather than a Games Workshop publication.
+  - >
+    The Tomb World and Death World articles' long tables of named worlds.
+  - >
+    The T'au Empire's military structure, septs and full client-species roster; those are
+    Volume VI Title 5.

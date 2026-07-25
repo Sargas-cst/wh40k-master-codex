@@ -271,3 +271,35 @@ ultramar:
     its capital Macragge, and the Tetrarchy that governs it.
   aliases: [the Five Hundred Worlds, Macragge, Fortress of Hera, Tetrarchy, Imperium Secundus]
   see_also: [terra, imperial-astrography]
+
+astartes-homeworlds:
+  name: Space Marine homeworlds
+  gloss: >
+    What a fortress-monastery is and how a Chapter holds its planet — with Fenris, Baal and
+    Nocturne as the worked cases.
+  aliases: [fortress-monastery, the Fang, Fenris, Baal, Nocturne, Arx Angelicum, Mount Deathfire]
+  see_also: [bastion-worlds, death-worlds]
+
+bastion-worlds:
+  name: Bastion worlds
+  gloss: >
+    The worlds the Imperium fortifies because it cannot afford to lose them: Cadia and its
+    pylons, Armageddon's four wars, and Vigilus at the mouth of the Nachmund Gauntlet.
+  aliases: [Cadia, Kasr, Armageddon, Vigilus, the Cadian pylons, Ullanor]
+  see_also: [the-sundered-imperium, regions-of-ruin, death-worlds]
+
+death-worlds:
+  name: Death worlds
+  gloss: >
+    The δτ classification, and the worlds the Imperium keeps on its books because their
+    survivors make good soldiers — Catachan and Krieg.
+  aliases: [Catachan, Krieg, Death Korps, Deathworld Veterans, Jungle Fighters]
+  see_also: [bastion-worlds, astartes-homeworlds]
+
+xenos-domains:
+  name: Xenos domains
+  gloss: >
+    Territory that does not work the way Imperial territory works: craftworlds, Commorragh,
+    the Tomb Worlds, the T'au Empire and the Ork empires.
+  aliases: [craftworld, Commorragh, the Dark City, Tomb World, T'au Empire, Charadon]
+  see_also: [imperial-astrography, bastion-worlds]
