@@ -42,21 +42,20 @@ for (const ch of parsed) {
 
 const APPENDIX = {
   glossary: 'appendix/glossary.md',
-  subjects: 'appendix/master-index.md',
   disputed: 'appendix/disputed-facts.md',
   sources: 'appendix/bibliography.md',
 };
 
 // Reader-facing names for [[a:...]] links, so prose never hand-writes a path.
+// No master-index entry: there is no published page, so [[a:master-index]] must
+// not be able to compile into a link that goes nowhere.
 const APPENDIX_BY_NAME = {
   'glossary': APPENDIX.glossary,
-  'master-index': APPENDIX.subjects,
   'disputed-facts': APPENDIX.disputed,
   'bibliography': APPENDIX.sources,
 };
 const APPENDIX_LABELS = {
   'glossary': 'Consolidated Glossary',
-  'master-index': 'Master Index',
   'disputed-facts': 'Disputed Facts Register',
   'bibliography': 'Bibliography',
 };
@@ -350,12 +349,10 @@ const NOTE = (what) =>
 // Equivalents. The brief says write it LAST, and only the first of those three
 // can be compiled today.
 //
-// So the reader gets the same "not yet written" stub as every other unwritten
-// Chapter, rather than one third of a Chapter under the whole Chapter's name.
-// The canonical-home register itself still compiles on every build — to
-// audit/canonical-homes.md, outside docs_dir, where it serves the authoring
-// job it was always doing: one owning Chapter per subject, and which subjects
-// are still homeless.
+// There is no reader-facing page. The register is an authoring tool — one
+// owning Chapter per subject, and which subjects are still homeless — so it
+// compiles to audit/canonical-homes.md, outside docs_dir. Nothing is published
+// and nothing appears in the nav.
 {
   const keys = Object.keys(subjects).sort((a, b) =>
     (subjects[a].name ?? a).localeCompare(subjects[b].name ?? b));
@@ -384,19 +381,6 @@ const NOTE = (what) =>
   reg += `\n${keys.length} subject(s) registered · ${homeless} without an owning Chapter.\n`;
   mkdirSync(join(ROOT, 'audit'), { recursive: true });
   writeFileSync(join(ROOT, 'audit', 'canonical-homes.md'), reg, 'utf8');
-
-  // What the reader sees: an honest stub, matching the 116 others.
-  const stub = '# Master Index\n\n'
-    + '!!! note "Not yet written"\n\n'
-    + '    This Chapter is compiled from the finished book, so it is written last —\n'
-    + '    an index assembled while Volumes are still being drafted would send readers\n'
-    + '    to entries that do not exist yet. It is empty rather than partial.\n\n'
-    + '## Planned Sections\n\n'
-    + 'Indicative, not binding.\n\n'
-    + '- Subjects and Their Canonical Homes\n'
-    + '- The Cross-Reference Map\n'
-    + '- Alternative Names, Spellings & High Gothic Equivalents\n';
-  writeFileSync(join(OUT, APPENDIX.subjects), stub, 'utf8');
 }
 
 // --- Disputed Facts Register ----------------------------------------------

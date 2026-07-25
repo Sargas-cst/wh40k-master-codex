@@ -50,10 +50,14 @@ const VOL_ORDER = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6, VII: 7, VIII: 8, IX
 // So these Chapters are not scaffolded. The nav points at the compiled pages.
 // ---------------------------------------------------------------------------
 const COMPILED = {
-  'APX.T2.Ch4': 'appendix/master-index.md',
   'APX.T2.Ch5': 'appendix/glossary.md',
   'APX.T2.Ch6': 'appendix/disputed-facts.md',
 };
+
+// Not scaffolded and not in the nav. The Master Index is compiled to
+// audit/canonical-homes.md for the authoring job it does — one owning Chapter
+// per subject — and there is no reader-facing page for it at all.
+const UNPUBLISHED = new Set(['APX.T2.Ch4']);
 
 function slug(s, max = 48) {
   const base = s
@@ -134,6 +138,8 @@ for (const v of volumes) {
 
     for (const c of t.chapters) {
       const id = `${v.roman}.T${t.no}.Ch${c.no}`;
+
+      if (UNPUBLISHED.has(id)) continue;
 
       if (COMPILED[id]) {
         tNav.push({ label: c.name, path: COMPILED[id] });

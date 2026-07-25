@@ -65,7 +65,7 @@ contradiction, so one rule governs the whole work:
 
 Cadia is the standard illustration. One chapter owns the world, another owns its
 destruction, a third owns the siege. Each points at the other two instead of repeating
-them. The [Master Index](appendix/master-index.md) records where every subject lives.
+them.
 
 Definitions work the same way: each term is defined once, in the
 [Consolidated Glossary](appendix/glossary.md), and referenced from the prose. One
