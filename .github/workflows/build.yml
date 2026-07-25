@@ -58,20 +58,20 @@ jobs:
           path: build/site
 
   # -------------------------------------------------------------------------
-  # Deployment is OFF by default: the site stays unpublished until asked for.
+  # The site is live at https://sargas-cst.github.io/wh40k-master-codex/
+  # and publishes on every push to main.
   #
-  # To publish once:      run this workflow manually with publish = true
-  #                       (Actions tab -> Build codex -> Run workflow)
-  # To publish on every push to main:
-  #                       replace the `if:` below with
-  #                         if: github.ref == 'refs/heads/main'
+  # Note this job only ever runs after `build` succeeds, and `build` runs the
+  # structural validator first — so a dangling cross-reference, a citation to
+  # an unrecorded source, or a subject with two canonical homes fails the
+  # pipeline and the live site keeps serving the last good version rather than
+  # publishing a broken one.
   #
-  # GitHub Pages must also be enabled once, in repo Settings -> Pages, with
-  # Source set to "GitHub Actions".
+  # Pull requests build but never deploy.
   # -------------------------------------------------------------------------
   deploy:
     needs: build
-    if: github.event_name == 'workflow_dispatch' && inputs.publish
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     permissions:
       pages: write

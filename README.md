@@ -7,6 +7,8 @@ quietly resolved.
 
 Ten volumes · 49 titles · 171 chapters · ~210,000–250,000 words when complete.
 
+**Live site:** https://sargas-cst.github.io/wh40k-master-codex/
+
 > **Status: scaffolding only.** The structure, toolchain and CI are in place. Almost no
 > content exists. Research has not begun.
 

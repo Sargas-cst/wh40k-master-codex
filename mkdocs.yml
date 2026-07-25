@@ -6,6 +6,9 @@
 # it is deleted and regenerated on every build.
 
 site_name: Warhammer 40,000 Master Codex
+# Needed for canonical URLs, the sitemap, and correct absolute links. The site is
+# served from a repository subpath, not a domain root.
+site_url: https://sargas-cst.github.io/wh40k-master-codex/
 site_description: >-
   An unofficial, independently written reference to the Warhammer 40,000 setting.
   Every claim is traced to a retrieved source, and every source conflict is recorded
