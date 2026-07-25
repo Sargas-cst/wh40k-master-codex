@@ -16,6 +16,7 @@ warp:
     A psychic dimension parallel to real space, formed and fuelled by the emotions
     and souls of sentient beings, in which the laws of time and space do not hold.
   variants: [Warpspace, Immaterium, Empyrean, the Ether, the Aether, Sea of Souls, Realm of Chaos]
+  mark_scope: chapter   # ubiquitous: once per Chapter, not per Section
   category: cosmology
   sources: [lex-warp]
   full_treatment: I.T1.Ch3
@@ -26,6 +27,7 @@ real-space:
     The material universe, as opposed to the parallel dimension of the Warp. Also
     rendered Materium.
   variants: [Materium, Real Space, Warp Space]
+  mark_scope: chapter   # ubiquitous: once per Chapter, not per Section
   category: cosmology
   sources: [lex-real-space]
   full_treatment: I.T1.Ch3
@@ -35,6 +37,7 @@ soul:
   definition: >
     The existence a living creature of flesh and blood has within the Warp — a
     shadow-self of pure energy, parted from the body at death.
+  mark_scope: chapter   # ubiquitous: once per Chapter, not per Section
   category: cosmology
   sources: [lex-soul]
   full_treatment: I.T2.Ch5
@@ -141,6 +144,7 @@ xenos:
   definition: >
     Imperial term for all non-human sentient species, synonymous with "alien" from
     the human perspective.
+  mark_scope: chapter   # ubiquitous: once per Chapter, not per Section
   category: institutions
   sources: [lex-xenos]
 
@@ -179,6 +183,7 @@ psyker:
     An individual able to draw energy from the Warp through their own soul and
     manifest it as psychic power.
   variants: [psychic, witch]
+  mark_scope: chapter   # ubiquitous: once per Chapter, not per Section
   category: cosmology
   sources: [lex-psyker, lex-psionics]
   full_treatment: I.T2.Ch5
@@ -350,6 +355,7 @@ webway:
     A labyrinth of tunnels built by the Old Ones that lies between the Materium and the
     Warp, part of both and in neither, allowing transit without entering the Warp itself.
   variants: [the Labyrinth Dimension, webway]
+  mark_scope: chapter   # ubiquitous: once per Chapter, not per Section
   category: cosmology
   sources: [lex-webway]
   full_treatment: I.T3.Ch10
@@ -527,6 +533,7 @@ segmentum:
     One of the five great fleet zones into which the Imperium divides its space, each with
     its own navy and a Segmentum Fortress as its base of operations.
   variants: [Segmentae Majoris, segmenta]
+  mark_scope: chapter   # ubiquitous: once per Chapter, not per Section
   category: institutions
   sources: [lex-segmentum]
   full_treatment: II.T1.Ch1
@@ -871,3 +878,83 @@ gue-vesa:
     children. The Empire claims they are content and permitted to worship the Emperor.
   category: institutions
   sources: [lex-t-au-empire]
+
+# --- Terms the prose used across Chapters without defining -----------------
+# Added after the validator began reporting bolded named terms that no registry
+# defines. Each definition is drawn from a source the prose already rests on.
+
+forge-world:
+  term: Forge World
+  definition: >
+    A Φ-class world of the Adeptus Mechanicus, given over entirely to industry and to
+    the Cult Mechanicus's own worship. Most of the surface is built-up industrial
+    complex, and each is assigned a Production Grade it is expected to meet.
+  variants: [Φ-class, forge world]
+  category: cosmology
+  sources: [lex-forge-world]
+  full_treatment: II.T2.Ch5
+
+tech-priest:
+  term: Tech-Priest
+  definition: >
+    A member of the ruling order of the Cult Mechanicus, ranking above the unaugmented
+    menials and the Skitarii in a society that sorts its members by how much of the body
+    has been replaced.
+  variants: [Tech-Priests, tech-priest]
+  category: institutions
+  sources: [lex-mars]
+
+tau:
+  term: T'au
+  definition: >
+    The species that founded and leads the T'au Empire, organised into castes under the
+    Ethereals and united by the Greater Good.
+  variants: [Tau]
+  category: xenos
+  sources: [lex-t-au-empire]
+
+ecclesiarchy:
+  term: Ecclesiarchy
+  definition: >
+    Officially the Adeptus Ministorum: the hierarchy of the Imperial Cult, which
+    maintains and spreads the Imperial Creed, the Imperium's only official religion.
+    Serious deviance from its strictures is treated as heresy.
+  variants: [Adeptus Ministorum, Ministorum]
+  category: institutions
+  sources: [lex-ecclesiarchy]
+
+tyranids:
+  term: Tyranids
+  definition: >
+    An extragalactic species, also called the Great Devourer, whose purpose is the
+    consumption of all genetic and biological material. Their technology is entirely
+    biological, every function carried out by engineered creatures directed by a single
+    Hive Mind.
+  variants: [Tyranid, the Great Devourer]
+  category: xenos
+  sources: [lex-tyranid]
+
+conduit:
+  term: the Conduit
+  definition: >
+    The centre of Imperial transgalactic communication, housed within the City of Sight
+    on Terra — the single point through which astropathic traffic passes.
+  category: institutions
+  sources: [lex-terra]
+
+castellan:
+  term: the Castellan
+  definition: >
+    The senior Inquisitor overseeing the Fortress of the Inquisition on Terra. The post
+    changes every year, so that no single person can build a powerbase over the facility.
+  category: institutions
+  sources: [lex-terra]
+
+librarium:
+  term: Librarium
+  definition: >
+    A fortress-monastery's record repository and seat of communications, where the
+    Chapter's astropaths work and from whose armoured room the base's defences are
+    controlled.
+  category: institutions
+  sources: [lex-fortress-monastery]

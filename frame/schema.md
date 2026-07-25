@@ -115,7 +115,7 @@ actually reach the reader.
 ### Glossary terms are marked by the build, not by hand
 
 `[[g:...]]` may be written by hand, but it usually is not. The build marks the **first
-use per Chapter** of every registered term automatically, from `data/glossary.yaml`.
+use per Section** of every registered term automatically, from `data/glossary.yaml`.
 
 This is not a convenience. Hand-marking was tried and it failed measurably: an audit
 after Volume II found 95 registered terms against 13 hand-placed marks, all 13 in
@@ -125,8 +125,13 @@ they cannot fall out of step with the registry.
 
 Rules the marker follows:
 
-- **First use only.** There are 235 occurrences of "the Warp" in the drafted book; 235
-  dotted underlines would be a rash, not an aid.
+- **First use per Section**, because the Section is the addressable unit: it carries the
+  anchor, it is what the contents tree links to, and it is where a reader arriving from
+  search lands. Resetting per *Chapter* left anyone deep-linked into a later Section with
+  no tooltip, the term having been marked screens above in a Section they never saw.
+- **Except for terms marked `mark_scope: chapter`.** A handful are too common for
+  per-Section marking: "the Warp" alone produced forty dotted underlines that way. Those
+  reset once per Chapter. It is a judgement about the term, so it lives on the term.
 - **`term` and `mark:`, never `variants`.** `variants` are aliases for the glossary page
   and for search. As auto-link triggers they are dangerous — the first run used them and
   produced 36 wrong links, pointing every adjectival "psychic" at *psyker*, every
@@ -186,6 +191,7 @@ brief.
 | `data/glossary.yaml` | Every term, defined once | Appendix A · Ch 5 |
 | `data/subjects.yaml` | Subject → owning Chapter, plus aliases | Appendix A · Ch 4 |
 | `data/contradictions.yaml` | Every recorded source conflict | Appendix A · Ch 6 |
+| `data/non-terms.yaml` | Bolded names deliberately left undefined | nothing — validator only |
 
 `subjects.yaml` is also how the canonical-home rule becomes *enforceable*: two Chapters
 declaring `owns:` on the same subject is a hard build failure, not a matter of
@@ -198,6 +204,8 @@ gellar-field:
   term: Gellar field          # the canonical form. AUTO-MARKED in prose.
   variants: [Geller Field]    # aliases for the glossary page and search. NOT auto-marked.
   mark: [Geller field]        # optional: extra forms that ARE safe to auto-mark.
+  mark_scope: chapter         # optional: reset marking per Chapter, not per Section.
+                              #   Only for terms so common that per-Section is noise.
   short: >                    # optional: tooltip text, where the definition is too long.
     The field that keeps a ship's crew alive in the Warp.
   definition: >               # required: the full definition, for the appendix page.
@@ -317,4 +325,22 @@ a `[[d:<key>]]` link. Either counts; see §5.
 
 **Registered-but-unused is a warning, not an error.** Recording a conflict or retrieving
 a source before the Chapter that will carry it is legitimate — Volume II opened conflicts
-due in Volume IV. Forgetting is not, so the count stays visible in every build.
+due in Volume IV. Forgetting is not, so the count stays visible in every build. A source
+that supports a *registry entry* counts as used: a glossary definition could not exist
+without the article it rests on.
+
+**Used-but-unregistered is also a warning.** The prose bolds a term where it introduces
+it, so a bolded proper-noun phrase that no registry defines is a coverage gap — and every
+check before this one asked only the opposite question. Only candidates appearing in
+**two or more Chapters** are reported: a term introduced and used inside the single
+Chapter that explains it needs no entry, and counting those overstated the backlog
+sixfold. Three outcomes are available for each — add a glossary entry, register it as a
+subject, or record the decision not to in `data/non-terms.yaml`.
+
+### `data/non-terms.yaml`
+
+A fifth, small registry: bolded names that deliberately get no entry, each with a reason.
+It exists so "we looked at this and decided against it" is recorded once instead of
+re-decided every build. Two kinds live there — fragments of a longer term already defined
+(`Solar`, for `Segmentum Solar`), and values on a scale a Chapter tabulates in full
+(`Omega`, a grade on the Assignment).

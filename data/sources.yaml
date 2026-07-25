@@ -1384,3 +1384,41 @@ lex-ork-empire-of-charadon:
     Short — 2.2 KB. Reached via the "Charadon" disambiguation page, which holds no article text.
     No reliability flags. Used for what an Ork empire is as a political fact rather than for
     Ork biology or culture.
+
+lex-forge-world:
+  tier: 2
+  what: Lexicanum article "Forge World"
+  url: https://wh40k.lexicanum.com/wiki/Forge_World
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-forge-world.wikitext
+  cites:
+    - "Warhammer 40,000 3rd Edition Rulebook, pg. 115"     # {{Fn|11}} — the Φ classification
+    - "Warhammer 40,000 5th Edition Rulebook"              # {{Fn|1}} — surface given over to industry, Production Grade
+  notes: >
+    67 KB, carries an incomplete-citation marker. Retrieved for a definition of the world
+    class only; the Forge Worlds themselves are IV.T6.Ch22's subject.
+
+lex-ecclesiarchy:
+  tier: 2
+  what: Lexicanum article "Ecclesiarchy"
+  url: https://wh40k.lexicanum.com/wiki/Ecclesiarchy
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-ecclesiarchy.wikitext
+  cites:
+    - "Codex: Sisters of Battle (2nd Edition), pgs. 4-5"    # {{Fn|1a}} — the hierarchy of the Imperial Cult
+    - "Codex: Sisters of Battle (2nd Edition), pgs. 33-36"  # {{Fn|1b}} — the clergy, the Holy Synod, dioceses
+  notes: >
+    Retrieved because "Ecclesiarchy" was used across three drafted Chapters with no
+    definition anywhere. Full treatment belongs to Volume IV Title 3.
+
+lex-tyranid:
+  tier: 2
+  what: Lexicanum article "Tyranid"
+  url: https://wh40k.lexicanum.com/wiki/Tyranid
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-tyranid.wikitext
+  cites:
+    - "Warhammer 40,000 6th Edition Rulebook, pg. 215"     # {{Fn|10b}} — the gravest threat, the main fleet still in the void
+  notes: >
+    Carries a trivia block. Retrieved for a definition only; the Tyranids are Volume VI
+    Title 4's subject.

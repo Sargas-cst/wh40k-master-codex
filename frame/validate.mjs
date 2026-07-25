@@ -12,9 +12,12 @@
 
 import {
   loadChapters, loadRegistries, parseChapterId, depthFor, BANDS,
-  SLUG_OK, collectMarkup, CITE_RE,
+  SLUG_OK, collectMarkup, CITE_RE, DATA_DIR, loadYaml,
   glossaryForms, glossaryRegex, glossaryKeysIn,
+  namedTermCandidates, mentionsTerm,
 } from './lib.mjs';
+import { join } from 'node:path';
+import { existsSync } from 'node:fs';
 
 const strict = process.argv.includes('--strict');
 
@@ -268,8 +271,23 @@ for (const ch of chapters.values()) {
   }
 }
 
-for (const id of Object.keys(sources)) {
-  if (!usedSources.has(id)) warn('sources', `"${id}" is recorded but never cited in any Chapter.`);
+// A source is "used" if a Chapter footnotes it OR a registry entry rests on it. A
+// glossary definition sourced to an article is a real use of that article — the entry
+// could not exist without it — and reporting those as unused made three legitimate
+// entries into permanent noise.
+{
+  const inRegistries = new Set();
+  for (const entry of Object.values(glossary))
+    for (const id of entry?.sources ?? []) inRegistries.add(id);
+  for (const entry of Object.values(contradictions))
+    for (const pos of entry?.positions ?? []) if (pos?.source) inRegistries.add(pos.source);
+
+  for (const id of Object.keys(sources)) {
+    if (usedSources.has(id)) continue;
+    warn('sources', inRegistries.has(id)
+      ? `"${id}" supports a registry entry but is not yet cited in any Chapter.`
+      : `"${id}" is recorded but never cited in any Chapter.`);
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -453,6 +471,46 @@ for (const [key, entry] of Object.entries(contradictions)) {
     if (!surfaced.has(key)) {
       warn('contradictions', `"${key}" is recorded but no Chapter surfaces it yet.`);
     }
+  }
+}
+
+// --- terms the prose introduces that no registry defines -------------------
+// The mirror of the check above, and the one that was missing entirely: every earlier
+// check asked whether registered terms get used, never whether used terms get
+// registered. Only CROSS-CHAPTER candidates are reported — a term introduced and used
+// inside the single Chapter that explains it is handled in situ, and counting those as
+// gaps overstated the backlog by a factor of six.
+let undefinedTerms = [];
+{
+  const nonTermsPath = join(DATA_DIR, 'non-terms.yaml');
+  const nonTerms = existsSync(nonTermsPath) ? loadYaml(nonTermsPath) : {};
+  const waived = new Set(Object.keys(nonTerms).map((k) => k.toLowerCase()));
+
+  const byForm = glossaryForms(glossary, { variants: true });
+  const known = new Set([...byForm.keys()]);
+  for (const entry of Object.values(subjects))
+    for (const n of [entry?.name, ...(entry?.aliases ?? [])].filter(Boolean)) {
+      known.add(String(n).toLowerCase());
+    }
+
+  const drafted = [...chapters.values()].filter((c) => c.front.status !== 'stub');
+  const candidates = new Map(); // normalised -> display
+  for (const ch of drafted) {
+    for (const term of namedTermCandidates(ch.body)) {
+      const norm = term.toLowerCase();
+      if (known.has(norm) || waived.has(norm) || candidates.has(norm)) continue;
+      candidates.set(norm, term);
+    }
+  }
+
+  for (const [, term] of candidates) {
+    const inChapters = drafted.filter((ch) => mentionsTerm(ch.body, term)).length;
+    if (inChapters >= 2) undefinedTerms.push({ term, chapters: inChapters });
+  }
+  undefinedTerms.sort((a, b) => b.chapters - a.chapters || a.term.localeCompare(b.term));
+
+  for (const { term, chapters: n } of undefinedTerms) {
+    warn('glossary', `"${term}" is introduced in bold and used across ${n} Chapters, but no registry defines it — add a glossary entry, register it as a subject, or waive it in data/non-terms.yaml.`);
   }
 }
 

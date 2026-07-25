@@ -409,6 +409,15 @@
       "sha256": "59c6336acc543a673f4ff7084e59d9017d771b22af62e6c0171446f7272b460a",
       "file": "sources/raw/lex-dolmen-gate.wikitext"
     },
+    "lex-ecclesiarchy": {
+      "title": "Ecclesiarchy",
+      "url": "https://wh40k.lexicanum.com/wiki/Ecclesiarchy",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 18614,
+      "sha256": "c28fb8dc64fc5f313a642688b5c55e87fc44d743a1502997278343fb544047bf",
+      "file": "sources/raw/lex-ecclesiarchy.wikitext"
+    },
     "lex-eldar-gods": {
       "title": "Eldar Gods",
       "url": "https://wh40k.lexicanum.com/wiki/Eldar_Gods",
@@ -473,6 +482,15 @@
       "bytes": 33560,
       "sha256": "da10b2be8094c303d446a470afffe3c6890f09430beb09bd49a0b8c8a3db7103",
       "file": "sources/raw/lex-flesh-tearers.wikitext"
+    },
+    "lex-forge-world": {
+      "title": "Forge World",
+      "url": "https://wh40k.lexicanum.com/wiki/Forge_World",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 67584,
+      "sha256": "01404666da73275a6dedaaa2425a30d19b7f623140d88ca652e408e2c7fef6b4",
+      "file": "sources/raw/lex-forge-world.wikitext"
     },
     "lex-fortress-monastery": {
       "title": "Fortress-monastery",
@@ -1327,6 +1345,15 @@
       "bytes": 19411,
       "sha256": "1f0ca39a9d314c7990b9b375288a309c4be89691a0fe5dbfe60aa6a1064393c7",
       "file": "sources/raw/lex-tomb-world.wikitext"
+    },
+    "lex-tyranid": {
+      "title": "Tyranid",
+      "url": "https://wh40k.lexicanum.com/wiki/Tyranid",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 35635,
+      "sha256": "fcf0520a42094c162f44a84c8a08d0b1a6f8c5000d70032a1d3f6307d1134ec4",
+      "file": "sources/raw/lex-tyranid.wikitext"
     },
     "lex-ultima-segmentum": {
       "title": "Ultima Segmentum",

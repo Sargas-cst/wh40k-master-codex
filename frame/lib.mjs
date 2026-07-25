@@ -289,22 +289,86 @@ export function glossaryKeysIn(body, byForm, regex) {
  * must leave alone — ones an author marked by hand, and the term's own
  * `full_treatment` Chapter, where the surrounding prose IS the definition.
  */
-export function markGlossaryFirstUse(body, { byForm, regex, skipKeys = new Set() }) {
+export function markGlossaryFirstUse(body, {
+  byForm, regex, skipKeys = new Set(), chapterScoped = new Set(), perSection = true,
+}) {
   const ranges = protectedRanges(body);
-  const done = new Set();
   const edits = [];
+  const allMarked = new Set();
+  // Two windows. Most terms reset at each Section, so a reader arriving deep in a
+  // Chapter still gets the definition. A handful are too common for that: marking "the
+  // Warp" once per Section produced forty dotted underlines across the book, which is
+  // visual noise rather than help. Those carry `mark_scope: chapter` in the registry and
+  // reset only once per Chapter.
+  const doneChapter = new Set();
+  let done = new Set();
+
+  // Section boundaries, so the first-use window can reset at each `##`. The Section is
+  // this book's addressable unit — it carries the anchor, it is what the contents tree
+  // links to, and it is where a reader arriving from search lands. Resetting per
+  // Chapter left anyone deep-linked into a later Section with no tooltip at all,
+  // because the term had been marked screens above in a Section they never saw.
+  const bounds = perSection
+    ? [...body.matchAll(/^##\s+/gm)].map((m) => m.index)
+    : [];
+  let nextBound = 0;
 
   for (const m of body.matchAll(regex)) {
+    while (nextBound < bounds.length && m.index >= bounds[nextBound]) {
+      done = new Set();
+      nextBound++;
+    }
     const key = byForm.get(m[1].toLowerCase());
-    if (!key || done.has(key) || skipKeys.has(key)) continue;
+    if (!key || skipKeys.has(key)) continue;
+    const seen = chapterScoped.has(key) ? doneChapter : done;
+    if (seen.has(key)) continue;
     if (inAnyRange(m.index, ranges)) continue;
-    done.add(key);
+    seen.add(key);
+    allMarked.add(key);
     edits.push({ at: m.index, len: m[0].length, text: `[[g:${key}|${m[0]}]]` });
   }
 
   let out = body;
   for (const e of edits.reverse()) out = out.slice(0, e.at) + e.text + out.slice(e.at + e.len);
-  return { text: out, marked: [...done] };
+  return { text: out, marked: [...allMarked], marks: edits.length };
+}
+
+// ---------------------------------------------------------------------------
+// Named terms the prose introduces but no registry defines
+// ---------------------------------------------------------------------------
+//
+// House style bolds a term where it is introduced (**Arx Doctrine**, **Kasrs**). That
+// makes bolded proper-noun phrases a usable signal for "the prose treats this as a
+// term", and comparing them against the registries finds coverage gaps that no
+// existing check could see — every earlier check asked only whether REGISTERED terms
+// get used, never whether used terms get registered.
+//
+// Bolding marks introduction, which happens once, so it says nothing about reach. The
+// validator therefore only reports candidates that appear in SEVERAL Chapters: a term
+// introduced and used inside the one Chapter that explains it needs no glossary entry,
+// and treating those as gaps produced a backlog six times larger than the real one.
+
+const CONNECTIVE = new Set(['of', 'the', 'and', 'to', 'in', 'for']);
+
+export function namedTermCandidates(body) {
+  const out = new Set();
+  for (const m of body.matchAll(/\*\*([^*\n]{3,60})\*\*/g)) {
+    const term = m[1].trim().replace(/^(?:the|a|an)\s+/i, '').replace(/[.,;:!?'"]+$/, '').trim();
+    if (term.length < 4) continue;
+    if (!/^[A-Z]/.test(term)) continue;          // emphasis, not a name
+    if (/[[\]^*|]/.test(term)) continue;         // stray markup
+    const words = term.split(/\s+/);
+    if (words.length > 4) continue;              // a clause, not a term
+    if (!words.every((w, i) => /^[A-Z]/.test(w) || (i > 0 && CONNECTIVE.has(w.toLowerCase())))) continue;
+    out.add(term);
+  }
+  return out;
+}
+
+/** Does `term` occur in this body at all, bold or not, singular or plural? */
+export function mentionsTerm(body, term) {
+  const re = new RegExp(`(?<![\\p{L}\\p{N}\\-])${escapeRe(term)}(?:s|es)?(?![\\p{L}\\p{N}\\-])`, 'iu');
+  return re.test(body.replace(/[*_`]/g, ''));
 }
 
 /**

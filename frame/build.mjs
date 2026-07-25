@@ -223,6 +223,14 @@ function tooltipFor(entry) {
 const glossaryByForm = glossaryForms(glossary);
 const glossaryPattern = glossaryRegex(glossaryByForm);
 
+// Terms whose first-use window is the Chapter rather than the Section — set on the
+// registry entry, because how often a term wants marking is a judgement about the term.
+const chapterScoped = new Set(
+  Object.entries(glossary)
+    .filter(([, e]) => e?.mark_scope === 'chapter')
+    .map(([key]) => key),
+);
+
 /** Terms this Chapter must not auto-mark. */
 function skipKeysFor(ch) {
   const skip = new Set();
@@ -280,14 +288,15 @@ for (const ch of parsed) {
   // written]] lets the existing resolver do the rest. Running afterwards would risk
   // marking terms inside generated cross-reference labels and footnote definitions.
   tooltipsByHand += [...body.matchAll(/\[\[g:/g)].length;
-  const { text: withTerms, marked } = ch.front.status === 'stub'
-    ? { text: body, marked: [] }
+  const { text: withTerms, marks } = ch.front.status === 'stub'
+    ? { text: body, marks: 0 }
     : markGlossaryFirstUse(body, {
         byForm: glossaryByForm,
         regex: glossaryPattern,
         skipKeys: skipKeysFor(ch),
+        chapterScoped,
       });
-  tooltipsAdded += marked.length;
+  tooltipsAdded += marks;
 
   const resolved = resolveLinks(withTerms, docPath);
   const hasH1 = /^\s*#\s+/m.test(body.split('\n').slice(0, 3).join('\n'));
@@ -436,4 +445,4 @@ if (process.argv.includes('--specimen')) {
 }
 
 console.log(`  build/docs ready — ${pages} chapter page(s) + 4 compiled appendix pages`);
-console.log(`  glossary tooltips — ${tooltipsAdded} auto-marked (first use per Chapter) + ${tooltipsByHand} placed by hand`);
+console.log(`  glossary tooltips — ${tooltipsAdded} auto-marked (first use per Section) + ${tooltipsByHand} placed by hand`);

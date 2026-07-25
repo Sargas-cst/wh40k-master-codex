@@ -1,0 +1,30 @@
+# Bolded names that deliberately get no glossary entry.
+#
+# The validator warns when the prose introduces a named term in bold that no registry
+# defines (schema.md §11). Most such warnings are real and get fixed by adding an entry.
+# These are the exceptions: names that are fragments of a longer term already defined,
+# or values on a scale a Chapter sets out in full, where a glossary entry would add
+# nothing a reader could use.
+#
+# This file exists so that "we looked at this and decided against it" is recorded once,
+# rather than re-decided every time the warning appears. Anything listed here should
+# carry a reason.
+
+# --- fragments of names the reader meets in full elsewhere ------------------
+Solar: the segmentum's short form; `segmentum` is defined and II.T1.Ch1 names all five
+Ultima: as above
+Obscurus: as above
+Pacificus: as above
+Tempestus: as above
+Segmentum Solar: the compound is covered by `segmentum` plus II.T1.Ch1's table
+Segmentum Obscurus: as above
+Heresy: short for the Horus Heresy, an event with its own Chapters in Volume III
+Blood: the Baal tribe, named only where II.T3.Ch7 explains it
+
+# --- values on a scale a Chapter already tabulates --------------------------
+Omega: a grade on the Imperial assignment scale, set out in full in I.T2.Ch6
+Delta: as above
+Delta Plus: as above
+Beta Plus: as above
+Epsilon Plus: as above
+Eta Plus: as above
