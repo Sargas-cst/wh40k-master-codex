@@ -50,8 +50,8 @@ faster-than-light system it can neither use nor explain.
 The Necrons also force entry into the Webway with Dolmen Gates, described in
 [[I.T3.Ch10]] — which means they alone among the galaxy's powers can travel both without the
 Warp *and* through the labyrinth. It has not made them dominant, which is a useful
-corrective to the assumption that mobility decides wars. Their fleet is [[VI.T1.Ch3]]'s
-subject.
+corrective to the assumption that mobility decides wars. Their fleet is treated in
+[[VI.T1.Ch3]].
 
 ## Tyranid Gravity Compression {#narvhal}
 

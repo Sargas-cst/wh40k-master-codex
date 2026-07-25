@@ -181,7 +181,7 @@ governor.[^lex-fenris]
 A world that thinks dying in bed is a moral failure, whose god is the Emperor under a local name,
 governed in fact by the Chapter Master. The Imperial Creed of [[IV.T3.Ch8]] did not have to
 convert Fenris; it only had to supply a name for a god the Fenrisians already had. Whether that
-counts as conversion is [[IV.T3.Ch10]]'s question.
+counts as conversion is a question for [[IV.T3.Ch10]].
 
 Two features record older and worse things. The first colonists built great **cavern cities**
 under the northern pole out of the remains of their colony ships; they became shelters during
@@ -254,7 +254,7 @@ species that worships them and will outlast it; what they feed on is the behavio
 happens to be there. The Blood Angels' gene-flaw is not a curse laid on them — it is a diet. Set
 it against the Ork gods of [[I.T4.Ch16]], where the precedence question is left open: here the
 answer is given, and the answer is that the gods came first and the worshippers are
-interchangeable. The Black Rage is [[IV.T4.Ch15]]'s subject.
+interchangeable. The Black Rage is treated in [[IV.T4.Ch15]].
 
 Baal's transformation into a fortress came by invitation. After unification with the Imperium
 during the Great Crusade, the empty rad-scoured world was transformed by the Mechanicum of
@@ -295,7 +295,7 @@ erasing the daemon's name from its surface.[^lex-baal]
 
 A Chapter shelling its own dead moon to scrub a signature off it. The Devastation is
 [[VII.T4.Ch13]]; that Baal is now the acting capital of the Dark Imperium under Dante's regency
-is [[II.T1.Ch2]]'s — and the world holding that office is a rad-poisoned rock with one building on
+is treated in [[II.T1.Ch2]] — and the world holding that office is a rad-poisoned rock with one building on
 it and a moon its owners have bombed.
 
 ## Nocturne {#nocturne}

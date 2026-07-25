@@ -204,6 +204,10 @@ const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
  */
 export function glossaryForms(glossary, { variants = false } = {}) {
   const byForm = new Map();
+  // Forms that must only match when the prose capitalises them. See below.
+  const capitalOnly = new Set();
+  const declaredVerbatim = new Set();
+
   for (const [key, entry] of Object.entries(glossary)) {
     const base = [
       entry?.term ?? key,
@@ -212,10 +216,32 @@ export function glossaryForms(glossary, { variants = false } = {}) {
     ].filter(Boolean).map(String);
     const forms = new Set();
     for (const b of base) {
-      for (const variant of new Set([b.trim(), b.trim().replace(LEADING_ARTICLE, '')])) {
+      const declared = b.trim();
+      declaredVerbatim.add(declared.toLowerCase());
+      const stripped = declared.replace(LEADING_ARTICLE, '');
+
+      for (const variant of new Set([declared, stripped])) {
         if (variant.length < 3) continue;
         forms.add(variant);
         for (const p of pluralise(variant)) forms.add(p);
+      }
+
+      // "the Conduit" and "the Purging" are proper nouns whose article-stripped
+      // forms — conduit, purging — are ordinary English words. Matching those
+      // case-insensitively put a tooltip for the Astropathic Conduit on "bundles
+      // of cables, wires and conduits", and one for the atomic bombardment of
+      // Krieg on "he was purging their souls". So a form that only exists because
+      // an article was stripped off a capitalised name may match only where the
+      // prose capitalises it too.
+      //
+      // Restricted to SINGLE words: "the Great Crusade" -> "Great Crusade"
+      // cannot collide with a common noun, and demanding capitals there would
+      // lose nothing but could cost a legitimate mark.
+      if (stripped !== declared && /^[A-Z]\S*$/.test(stripped)) {
+        for (const variant of [stripped, ...pluralise(stripped)]) {
+          if (variant.length < 3) continue;
+          capitalOnly.add(variant.toLowerCase());
+        }
       }
     }
     for (const form of forms) {
@@ -225,7 +251,24 @@ export function glossaryForms(glossary, { variants = false } = {}) {
       if (!byForm.has(norm)) byForm.set(norm, key);
     }
   }
+
+  // An entry that deliberately declares a lowercase form — `mark: [warp]` —
+  // means it, and outranks the inference above.
+  for (const form of declaredVerbatim) capitalOnly.delete(form);
+
+  byForm.capitalOnly = capitalOnly;
   return byForm;
+}
+
+/**
+ * Does this match respect the capitalisation its surface form requires?
+ * A no means the prose used an ordinary English word that happens to be a
+ * registered proper noun with its article removed.
+ */
+export function matchCaseOk(byForm, matched) {
+  const norm = matched.toLowerCase();
+  if (!byForm.capitalOnly?.has(norm)) return true;
+  return /^[A-Z]/.test(matched);
 }
 
 /** One alternation over every surface form, longest first so "C'tan Shard" beats "C'tan". */
@@ -275,6 +318,7 @@ export function glossaryKeysIn(body, byForm, regex) {
   const found = new Set();
   for (const m of body.matchAll(regex)) {
     if (inAnyRange(m.index, ranges)) continue;
+    if (!matchCaseOk(byForm, m[1])) continue;
     const key = byForm.get(m[1].toLowerCase());
     if (key) found.add(key);
   }
@@ -318,6 +362,7 @@ export function markGlossaryFirstUse(body, {
       done = new Set();
       nextBound++;
     }
+    if (!matchCaseOk(byForm, m[1])) continue;
     const key = byForm.get(m[1].toLowerCase());
     if (!key || skipKeys.has(key)) continue;
     const seen = chapterScoped.has(key) ? doneChapter : done;

@@ -194,7 +194,7 @@ rejected by the Iron Hands.[^lex-mars]
 The codex records both as the sources do — as rumour, attributed and unconfirmed. But the first
 is worth sitting with, because of what the previous Sections established. Mars is the birthplace
 of the Machine God's worship, and the story that will not go away is that something is buried
-under it: one of the star gods of [[III.T1.Ch2]]'s prehistory, sleeping beneath the planet whose
+under it: one of the star gods of the prehistory in [[III.T1.Ch2]], sleeping beneath the planet whose
 whole culture is built on revering technology it does not understand. Whether or not it is true,
 the Mechanicus's own theology gives it nowhere to be filed.
 

@@ -34,7 +34,7 @@ were organised under the Awakened Council.** Most, however, **awoke during the l
 M41 — but even still, billions of Necrons lay dormant**.[^lex-necron]
 
 Early risers during the Great Crusade and the Age of Apostasy, and a committee formed to manage
-them. That is [[III.T1.Ch5]]'s attrition arriving on schedule: sixty million years is long enough
+them. That is the attrition of [[III.T1.Ch5]] arriving on schedule: sixty million years is long enough
 for the timers to drift, and the sources already record Tomb Worlds lost to malfunction and Eldar
 raids.
 
@@ -44,8 +44,8 @@ would face a foe as numerous as themselves. For now, the Imperium has had but a 
 Necrons' might, and it is fortunate for Mankind that the Necrons remain divided by madness and
 conflicting agendas.**[^lex-necron]
 
-*As numerous as themselves.* Every Necron incursion the Imperium has repelled — [[VI.T1.Ch1]]'s
-subject — has been fought against a fraction of a force that could match the human species in
+*As numerous as themselves.* Every Necron incursion the Imperium has repelled — the subject of
+[[VI.T1.Ch1]] — has been fought against a fraction of a force that could match the human species in
 numbers, and the only thing preventing that is that the sleepers woke up mad and disagreeing.
 
 And the division is being repaired. **These are but the first stumbling steps of a giant as it

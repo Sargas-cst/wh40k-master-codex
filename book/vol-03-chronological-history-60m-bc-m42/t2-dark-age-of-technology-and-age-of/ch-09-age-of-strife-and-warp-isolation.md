@@ -186,8 +186,8 @@ Imperium.**[^lex-age-of-strife]
 
 The sequence is worth pinning down precisely, because the Imperium's own account blurs it.
 The Emperor did not end the Age of Strife. The Fall of the Eldar ended the Age of Strife, and
-the Emperor moved into the window it opened. His conquest of Terra is [[III.T3.Ch11]]'s
-subject and the Crusade is [[III.T3.Ch13]]'s — and the sources are careful about which of
+the Emperor moved into the window it opened. His conquest of Terra is treated in
+[[III.T3.Ch11]] and the Crusade in [[III.T3.Ch13]] — and the sources are careful about which of
 them began the new age: **the Age of the Imperium officially began with the Emperor's conquest
 of Terra in the Unification Wars, but in the view of many, truly began with the Great
 Crusade.**[^lex-age-of-strife]

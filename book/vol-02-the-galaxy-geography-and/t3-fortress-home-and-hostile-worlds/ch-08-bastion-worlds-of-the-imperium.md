@@ -83,7 +83,7 @@ A birth rate set equal to a recruitment rate is a population functioning as a su
 figure to the second decimal place is the tell: somebody was measuring. And the Cadian Shock
 Troopers this produced are considered among the finest soldiers in the entire Imperium, earning
 the respect even of the Adeptus Astartes, and are widely emulated for their discipline,
-marksmanship and stoic sense of self-sacrifice.[^lex-cadia] They are [[IV.T5.Ch17]]'s subject.
+marksmanship and stoic sense of self-sacrifice.[^lex-cadia] They are treated in [[IV.T5.Ch17]].
 
 The institutions match. Cadia was under **permanent martial law**.[^lex-cadia] The role of
 planetary governor was a military one — the **Governor Primus**, also head of Cadian High
@@ -97,7 +97,7 @@ careers at home.[^lex-cadia] And because of the Eye's proximity, Cadia also main
 made frequent use of Sanctioned Psykers.[^lex-cadia]
 
 Look at what those four provisions do together. The Adeptus Arbites — the Imperium's own police
-force, [[IV.T1.Ch2]]'s subject — was simply not present, its function absorbed by the army. The
+force, treated in [[IV.T1.Ch2]] — was simply not present, its function absorbed by the army. The
 Inquisition was not an external oversight body but a permanent unit in the order of battle.
 Social class on Cadia was dictated by military rank, which made the upper echelons of command
 highly classist, with weight placed on descent from a military family as much as on
@@ -212,7 +212,7 @@ women who fought for their world.[^lex-armageddon]
 
 Three planets destroyed to keep one company quiet about a battle they won. That is the arithmetic
 of the Imperium's information policy, and it is the sharpest illustration in this Volume of what
-[[IV.T7.Ch25]]'s Ordo Malleus exists to do. Note also what it does to the previous Section: the
+the Ordo Malleus of [[IV.T7.Ch25|Volume IV Title 7]] exists to do. Note also what it does to the previous Section: the
 Armageddon that fought the later wars is not the same population as the Armageddon that fought
 the first. The census figure the sources carry is explicitly flagged as taken from a hive census
 of 690.M37 — grossly out of date, and at best an approximation of the population **before** the
@@ -302,7 +302,7 @@ attempting to breach their boundaries, **enabling the defenders to slaughter the
 leisure**.[^lex-vigilus]
 
 A working Standard Template Construct fragment is one of the most valuable objects in the
-setting — [[III.T2.Ch7]]'s subject — and Vigilus's happens to produce shields. The world that
+setting — treated in [[III.T2.Ch7]] — and Vigilus's happens to produce shields. The world that
 became the Imperium's only door through the Rift was already, by accident of archaeology, the
 world best equipped to hold one.
 

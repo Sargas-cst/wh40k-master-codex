@@ -171,7 +171,7 @@ from the period.** In the superstition and religious fervour that has taken hold
 Horus Heresy, Dark Age technology is viewed with a mixture of awe and fear, and its relics
 are sought fanatically by the Adeptus Mechanicus.[^lex-dark-age-of-technology]
 
-"Essentially all" is the operative phrase, and it is [[III.T2.Ch7]]'s subject. The Imperium
+"Essentially all" is the operative phrase, and it is treated in [[III.T2.Ch7]]. The Imperium
 does not build; it copies, from templates it does not understand, made by a civilisation
 whose politics it would consider heresy.
 

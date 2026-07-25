@@ -376,6 +376,41 @@ for (const ch of chapters.values()) {
   });
 }
 
+// --- a Chapter title must not be used as a possessive noun -----------------
+// A reference renders as the target's NAME, so `[[ID]]'s subject` reaches the reader
+// as "Gauss Tech, Destroyers & Dynasties's subject". Where the title ends in a plural
+// that is also a grammatical error, and 23 of them shipped before anyone read the
+// rendered page rather than the source. Where the title already carries its own
+// apostrophe-s the result is worse: "The Silent King's Rebellion & Sleep's".
+//
+// Warn rather than fail: the construction is fine for a short title, and the fix is a
+// judgement about phrasing, not a mechanical substitution.
+// A reference renders as a Chapter name, or a Section name for `Chapter.slug`.
+const renderedLabel = new Map();
+for (const ch of chapters.values()) {
+  renderedLabel.set(ch.front.id, ch.front.name);
+  for (const sec of ch.front.sections ?? []) {
+    renderedLabel.set(`${ch.front.id}.${sec.slug}`, sec.name);
+  }
+}
+
+for (const ch of chapters.values()) {
+  if (ch.front.status === 'stub') continue;
+  const flat = ch.body.replace(/\r?\n/g, ' ');
+  for (const m of flat.matchAll(/\[\[([^\]|\n]+?)\]\](['’])s\b/g)) {
+    const target = m[1].trim();
+    if (/^[gad]:/.test(target)) continue;
+    const label = renderedLabel.get(target);
+    if (!label) continue;
+    const why = /s$/i.test(label) ? 'a doubled s'
+      : /['’]s/.test(label) ? 'two possessives in one phrase'
+      : label.length > 30 ? `a ${label.length}-character possessive` : null;
+    if (!why) continue;
+    warn(`${ch.rel}`, `"${label}'s" — a Chapter title used as a possessive gives the reader `
+      + `${why}. Prefer "treated in [[${target}]]", or "the X of [[${target}]]".`);
+  }
+}
+
 // --- a Section's declared sources must be the sources it actually cites -----
 // schema.md §6: `sources` on a Section is the list of sources that Section cites.
 // Not "consulted", not "relevant" — cited. If the two lists disagree, one of them is

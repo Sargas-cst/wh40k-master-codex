@@ -121,5 +121,5 @@ continue his crusade into the Halo Zone and his troops refused to go on, possibl
 they would no longer be under the Emperor's protection outside the beacon's
 light.[^lex-halo-zone] His crusade is [[VII.T1.Ch1]].
 
-The beacon that draws that border is [[IV.T9.Ch31]]'s subject, and what happened when it
-failed is [[II.T1.Ch2]]'s.
+The beacon that draws that border is treated in [[IV.T9.Ch31]], and what happened when it
+failed in [[II.T1.Ch2]].

@@ -48,7 +48,7 @@ disease**.[^lex-13th-black-crusade]
 The mechanism is worth naming precisely, because it is the Imperium's own theology used as a weapon.
 A plague arrives; the population concludes it is divine punishment for insufficient faith; the
 resulting religious frenzy turns against the Imperial authorities who cannot stop the plague.
-[[IV.T3.Ch8]]'s creed teaches that suffering indicates sin, and Typhus only had to supply the
+The creed of [[IV.T3.Ch8]] teaches that suffering indicates sin, and Typhus only had to supply the
 suffering.
 
 It scaled. **Cults preaching that the Imperium had forsaken the teachings of the Emperor grew in

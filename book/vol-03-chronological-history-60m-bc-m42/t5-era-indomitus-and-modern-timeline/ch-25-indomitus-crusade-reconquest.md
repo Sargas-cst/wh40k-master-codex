@@ -118,15 +118,15 @@ planets.** In this way **the crusade not only freed worlds from the tyranny of t
 strengthened their defences against further attacks that were sure to
 come**.[^lex-indomitus-crusade]
 
-New Chapters, on new homeworlds, garrisoning reconquered space. That is [[II.T3.Ch7]]'s
-fortress-monastery arrangement being created wholesale in the present rather than inherited from
+New Chapters, on new homeworlds, garrisoning reconquered space. That is the fortress-monastery
+arrangement of [[II.T3.Ch7]] being created wholesale in the present rather than inherited from
 M31 — and it is the largest expansion of Astartes territory since the Second Founding of
 [[III.T4.Ch18]].
 
 Guilliman's own priority then shifted homeward. **After hearing of serious developments in the Plague
 Wars of Ultramar, Guilliman could no longer ignore his home and decided to
-return.**[^lex-indomitus-crusade] The Plague Wars are [[VII.T4.Ch12]] and [[II.T2.Ch6]]'s fifth
-invasion. **After the Battle of Raukos, Guilliman held a great Triumph and announced the dispersion of
+return.**[^lex-indomitus-crusade] The Plague Wars have their own Chapter in [[VII.T4.Ch12|Volume VII]], and count as the fifth
+invasion in [[II.T2.Ch6|Ultramar]]. **After the Battle of Raukos, Guilliman held a great Triumph and announced the dispersion of
 the Crusade throughout the Imperium.**[^lex-indomitus-crusade]
 
 ## Into Nihilus {#nihilus}
@@ -140,7 +140,8 @@ there.**[^lex-indomitus-crusade] But **with the Nachmund Gauntlet too beleaguere
 find another** route; **a second path dubbed the Attilan Gate was discovered near the Pit of Raukos
 Warp Rift, but was too unstable for safe travel**.[^lex-indomitus-crusade]
 
-That is [[II.T1.Ch2]]'s Gauntlet under siege and [[II.T3.Ch8]]'s Vigilus beset by five powers at
+That is the Nachmund Gauntlet of [[II.T1.Ch2|the Sundered Imperium]] under siege and the Vigilus of
+[[II.T3.Ch8|the bastion worlds]] beset by five powers at
 once. The Imperium's only reliable crossing was contested, so **Guilliman entered Imperium Nihilus
 through the Attilan Gate while he left Cawl to attempt to stabilise it with Necron Pylon
 technology**.[^lex-indomitus-crusade]

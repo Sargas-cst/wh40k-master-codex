@@ -195,8 +195,8 @@ rulers**.[^lex-horus-lupercal] He then began converting the Legions under his di
 Guard**, and eventually recruited **Konrad Curze** of the Night Lords and **Alpharius
 Omegon**.[^lex-horus-lupercal]
 
-Every name on that list appears in [[III.T3.Ch13]]'s catalogue of feuds, or in
-[[III.T3.Ch12]]'s account of the rediscovery. Angron was the Primarch abducted against his will;
+Every name on that list appears in the catalogue of feuds in [[III.T3.Ch13]], or in the
+account of the rediscovery in [[III.T3.Ch12]]. Angron was the Primarch abducted against his will;
 Curze had already tried to kill Dorn. Horus did not create the traitors. He collected them.
 
 One attempt was made to stop it. **The only attempt to stop the conversion of Horus came from his

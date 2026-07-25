@@ -136,5 +136,5 @@ Imperium.[^lex-imperium-nihilus]
 That last is a structural change worth noting, because it is unusual for this setting. Baal,
 described in [[II.T3.Ch7]], is a Space Marine homeworld — a fortress-monastery's planet, not an
 administrative centre. Cut off from Terra, the Imperium's response was to appoint a warrior
-lord as regent and elevate a Chapter's homeworld to a capital. Dante himself is
-[[VIII.T2.Ch6]]'s subject.
+lord as regent and elevate a Chapter's homeworld to a capital. Dante himself is treated in
+[[VIII.T2.Ch6]].

@@ -161,7 +161,7 @@ history**.[^lex-standard-template-construct]
 
 Ten thousand years of the largest research institution in the galaxy, and its greatest single
 achievement is two vehicles from one fragment, named after the man who found the file. Cawl
-is [[VIII.T2.Ch6]]'s subject, and his record is the exception that measures the rule.
+is treated in [[VIII.T2.Ch6]], and his record is the exception that measures the rule.
 
 ## Two Peoples Who Use Them Better {#others}
 
@@ -177,7 +177,7 @@ as the Sagitaur ATV.[^lex-standard-template-construct]
 Same species, same inheritance, opposite doctrine. The Kin treat a template as a starting
 point; the Mechanicus treats it as scripture. Both descend from the fleets of
 [[III.T2.Ch6]], and one branch of humanity has spent ten thousand years engineering while the
-other has spent it copying. The Leagues are [[VI.T7.Ch21]]'s neighbours in the xenos Volume,
+other has spent it copying. The Leagues sit beside [[VI.T7.Ch21]] in the xenos Volume,
 though they are not xenos at all.
 
 And there may be a stranger case. It is **speculated by Imperial scholars** that at some

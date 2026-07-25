@@ -133,8 +133,8 @@ Space Marines** — the genetic material of each Primarch founding a single Legi
 total.[^lex-primarch]
 
 The Adeptus Astartes exist because the Primarchs were stolen. Had the theft not happened, the
-Emperor would have had twenty generals and no Legions built from them; [[IV.T4.Ch12]]'s
-gene-seed is a contingency measure. It is the single most consequential accident in the setting,
+Emperor would have had twenty generals and no Legions built from them; the gene-seed of
+[[IV.T4.Ch12|the implants]] is a contingency measure. It is the single most consequential accident in the setting,
 and by two of the three accounts above it was not an accident at all.
 
 And the worlds they landed on made them who they became. **The new homeworlds of the infant

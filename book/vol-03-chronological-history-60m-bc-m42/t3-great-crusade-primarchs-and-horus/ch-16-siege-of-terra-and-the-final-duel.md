@@ -71,7 +71,7 @@ shield was near breaking point thanks to a constant immaterial assault by the de
 Magnus in the Webway** — and **Vulkan was dispatched into the Webway to find and kill Magnus before
 he could succeed**.[^lex-siege-of-terra]
 
-That is [[III.T3.Ch15]]'s breach being used as a door. Magnus tore the corridor open while
+That is the breach of [[III.T3.Ch15|Magnus's Folly]] being used as a door. Magnus tore the corridor open while
 carrying a warning; the corridor is now the axis of a psychic attack on the Emperor from inside
 his own project.
 

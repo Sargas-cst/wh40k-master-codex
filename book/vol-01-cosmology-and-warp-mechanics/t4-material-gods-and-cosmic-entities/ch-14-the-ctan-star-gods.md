@@ -101,7 +101,7 @@ starlight bridge back into the material realm.[^lex-necrodermis]
 That is the crucial military fact about them, and it is easy to miss. A C'tan cannot be
 killed by destroying its body. Defeating one in the field accomplishes an inconvenience.
 Doing anything permanent to a C'tan required a method their own servants had to invent, and
-that is [[I.T4.Ch15]]'s subject.
+that method is treated in [[I.T4.Ch15]].
 
 ## Rewriting the Laws of Reality {#reality}
 

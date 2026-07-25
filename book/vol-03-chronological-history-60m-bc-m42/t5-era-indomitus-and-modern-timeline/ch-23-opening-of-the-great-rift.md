@@ -20,8 +20,8 @@ sections:
 
 ## Guilliman's Explanation {#guilliman}
 
-The Rift's geography is [[II.T1.Ch2]]'s and the competing theories of its origin are
-[[I.T1.Ch4]]'s, where five are recorded and none can be chosen between. This Chapter is about the
+The Rift's geography is treated in [[II.T1.Ch2]], and the competing theories of its origin in
+[[I.T1.Ch4]], where five are given and none can be chosen between. This Chapter is about the
 event, and it begins with the one explanation offered by someone in a position to know.
 
 **This new tear in reality was created at the end of the 41st Millennium during the Thirteenth
@@ -55,7 +55,7 @@ time**.[^lex-great-rift]
 That is the fact that makes the Era Indomitus unlike every previous crisis in this Volume. The Age of
 Strife in [[III.T2.Ch9]] cut worlds off from each other; the Rift has cut them off from a shared
 present. Two Imperial worlds in the same sector may no longer be in the same year, which is why
-[[I.T1.Ch2]]'s check numbers — the digit recording how reliably a date can be related to time on
+the check numbers of [[I.T1.Ch2]] — the digit recording how reliably a date can be related to time on
 Terra — went from bureaucratic pedantry to the only honest way to write history.
 
 ## What a Thousand Cultures Called It {#names}
@@ -94,7 +94,8 @@ ensuring the mass-movement of men and material**; at least one was exploited, **
 Terror in the Nachmund Gauntlet**, and **some years later a second route dubbed the Attilan Gate was
 discovered**.[^lex-great-rift]
 
-That is [[II.T1.Ch2]]'s Gauntlet and [[II.T3.Ch8]]'s Vigilus arriving as the consequence of a search
+That is the Nachmund Gauntlet of [[II.T1.Ch2|the Sundered Imperium]] and the Vigilus of
+[[II.T3.Ch8|the bastion worlds]] arriving as the consequence of a search
 ordered here. The Crusade itself is [[III.T5.Ch25]].
 
 The other response is Chaos's, and it is not an offensive. **Inside the Rift itself, the Gods of

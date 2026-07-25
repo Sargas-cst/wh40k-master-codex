@@ -133,8 +133,8 @@ develop, but in unforeseen ways**.[^lex-old-ones]
 "Lesser creations" and "unforeseen ways" are the operative phrases. Humanity is recorded
 here as a minor product of the programme that did not turn out as designed — a description
 no Imperial source would accept, and which this codex reports because the material says it.
-What the Imperium says about its own origins is [[III.T2.Ch6]]'s and [[III.T3.Ch11]]'s
-subject, and the two accounts do not meet.
+What the Imperium says about its own origins is treated in [[III.T2.Ch6]] and
+[[III.T3.Ch11]], and the two accounts do not meet.
 
 The mantle of galactic dominion did not pass to humanity in any case. It went to the Eldar,
 who had fought alongside the Old Ones during the war; that species survived where the Old

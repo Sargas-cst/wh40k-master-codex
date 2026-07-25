@@ -91,8 +91,8 @@ planet**.[^lex-age-of-strife]
 
 *In anticipation.* The Emperor unified Terra before the storms lifted, expecting them to lift.
 Whatever else is true of him, he knew the Fall of the Eldar was coming and timed a planetary
-conquest to be finished when the galaxy reopened. The Thunder Warriors are
-[[III.T3.Ch11]]'s and the Primarchs [[III.T3.Ch12]]'s — and the sources note here that the
+conquest to be finished when the galaxy reopened. The Thunder Warriors are treated in
+[[III.T3.Ch11]] and the Primarchs in [[III.T3.Ch12]] — and the sources note here that the
 Primarchs were created and then **spirited away by the Chaos Gods**, who, unable to destroy
 them, scattered them across the galaxy; the Emperor retained their DNA to continue producing
 engineered warriors.[^lex-age-of-strife]

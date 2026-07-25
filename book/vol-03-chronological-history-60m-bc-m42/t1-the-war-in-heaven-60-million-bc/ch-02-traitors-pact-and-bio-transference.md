@@ -57,7 +57,7 @@ war with the Old Ones; whether that was true is unknown, but the consequences of
 alliance are clear.[^lex-war-in-heaven-necron]
 
 Two things follow. First, the gods the Necrontyr swore themselves to were wearing shapes
-the Necrontyr had made — the Solar Gods of [[III.T1.Ch1]]'s pantheon, given metal bodies.
+the Necrontyr had made — the Solar Gods of the pantheon in [[III.T1.Ch1|Prehistoric Powers]], given metal bodies.
 A dying astrological culture met something in space and dressed it as the gods it already
 had. What the C'tan actually are is [[I.T4.Ch14]]'s subject.
 

@@ -85,7 +85,7 @@ station of a portal.
 
 ## The Door That Cannot Be Left {#the-door}
 
-The Heresy's consequence for the Throne begins with [[III.T3.Ch15]]'s breach.
+The Heresy's consequence for the Throne begins with the breach in [[III.T3.Ch15|Magnus's Folly]].
 
 **When Magnus used his sorcerous powers to warn the Emperor of Horus's treachery, he inadvertently
 created huge holes in the Emperor's psychic shield. Daemons poured into the human-built portion of
@@ -206,14 +206,14 @@ malfunction.**[^lex-golden-throne]
 Billions of human beings sold to Commorragh, and the Emperor's own life-support opened to the
 Drukhari, by the Imperium's own Fabricator-General and Master of the Astronomican. Compare
 [[II.T3.Ch10]]: the Imperium's holiest object is now maintained under contract by the species whose
-city runs on [[II.T3.Ch10]]'s stolen suns — and whose own crisis is the reason they agreed.
+city runs on the stolen suns of [[II.T3.Ch10]] — and whose own crisis is the reason they agreed.
 
 Because the trade was mutual. **In truth the bargain was beneficial for both parties, for it allowed
 the Dark Eldar to begin development of their own Golden Throne** — the **Black Throne** — **in an
 attempt to stop the destructive daemonic incursions that had erupted into Commorragh**, which have
 only intensified since the Great Rift.[^lex-golden-throne]
 
-That is [[II.T3.Ch10]]'s Dysjunction seen from the other side. Vect's city is being eaten by daemons
+That is the Dysjunction of [[II.T3.Ch10]] seen from the other side. Vect's city is being eaten by daemons
 and is amputating districts into sub-dimensions to survive; the Black Throne is the Drukhari
 attempt at the Emperor's solution, learned from the Imperium's own machine. Two dying powers
 exchanged the only thing each had.

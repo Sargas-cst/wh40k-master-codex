@@ -16,6 +16,10 @@ warp:
     A psychic dimension parallel to real space, formed and fuelled by the emotions
     and souls of sentient beings, in which the laws of time and space do not hold.
   variants: [Warpspace, Immaterium, Empyrean, the Ether, the Aether, Sea of Souls, Realm of Chaos]
+  mark: [warp]          # lowercase attributive use — "warp routes", "warp storms" —
+                        # is the same referent, so it is worth marking. Declared
+                        # explicitly because stripped forms of capitalised names
+                        # otherwise require capitals.
   mark_scope: chapter   # ubiquitous: once per Chapter, not per Section
   category: cosmology
   sources: [lex-warp]

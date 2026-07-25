@@ -139,6 +139,15 @@ Rules the marker follows:
   An entry with a second spelling genuinely worth marking lists it under `mark:`.
 - **Inflections are matched.** The registry holds "Tomb World" while the prose only ever
   writes "Tomb Worlds"; plurals and a leading article are handled.
+- **A form that exists only because an article was stripped off a single capitalised
+  word must be capitalised in the prose too.** "the Conduit" yields the form *conduit*
+  and "the Purging" yields *purging*, both ordinary English words. Matched case-insensitively
+  they put the Astropathic Conduit's definition on "bundles of cables, wires and conduits",
+  and the atomic bombardment of Krieg on "he was purging their souls" — 5 wrong marks.
+  Multi-word forms are exempt: "the Great Crusade" → "Great Crusade" cannot collide with
+  a common noun. An entry that genuinely wants the lowercase form declares it under
+  `mark:`, which always outranks this inference — `warp:` does exactly that, because
+  lowercase "warp routes" is the same referent.
 - **A hand-written `[[g:]]` wins.** If a Chapter marks a term itself, the marker leaves
   that term alone in that Chapter — which is how you mark a *later* mention on purpose.
 - **The owning Chapter is skipped.** Where `full_treatment` names this Chapter, the
@@ -336,6 +345,25 @@ check before this one asked only the opposite question. Only candidates appearin
 Chapter that explains it needs no entry, and counting those overstated the backlog
 sixfold. Three outcomes are available for each — add a glossary entry, register it as a
 subject, or record the decision not to in `data/non-terms.yaml`.
+
+**A Chapter title must not carry the possessive.** `[[ID]]'s subject` renders as the
+*name* of the target, so the reader gets "Gauss Tech, Destroyers & Dynasties's subject".
+Where the title ends in a plural that is a grammatical error; where it already contains an
+apostrophe-s the sentence carries two ("The Silent King's Rebellion & Sleep's"); and past
+about thirty characters it is simply unreadable. 41 of these shipped, and none of the
+existing checks could see them because the source — `[[III.T4.Ch21]]'s` — looks fine. It
+is the *rendered* label that breaks.
+
+Prefer, in order: **`treated in [[ID]]`**, **`the X of [[ID]]`**, or explicit display text
+**`[[ID|short phrase]]`** where the full title would stutter against the sentence. That
+last one is what fixed "the breach of Magnus's Folly & the Terra *Breach*" and "The Plague
+Wars are *The Plague Wars* of Ultramar" — both produced by mechanically de-possessing the
+first two without reading the result. A warning, not an error, because the remedy is a
+judgement about phrasing rather than a substitution.
+
+**Read the rendered page, not the source.** Three of the defects in this section were
+invisible in the Markdown and obvious in the HTML. Any check on how a reference *reads*
+has to run against `build/site`.
 
 ### `data/non-terms.yaml`
 

@@ -86,9 +86,10 @@ summoned daemon prince, the submission of a rival warband, a Chapter's gene-seed
 to Tzeentch, an undetected fleet movement, a grudge match, a sample of Orks, and two Blackstone
 Fortresses.
 
-Several of those are shopping. The seventh took Blood Angels gene-seed — the genetic material of
-[[II.T3.Ch7]]'s Chapter, which is [[IV.T4.Ch12]]'s subject. The eleventh abducted Orks specifically
-to study **their use of the Warp**, which is [[VI.T3.Ch10]]'s Waaagh field. The twelfth took the
+Several of those are shopping. The seventh took Blood Angels gene-seed — the genetic material of a
+Chapter drawn from [[II.T3.Ch7]]; the gene-seed itself is treated in [[IV.T4.Ch12]]. The eleventh
+abducted Orks specifically to study **their use of the Warp**, the Waaagh field of
+[[VI.T3.Ch10]]. The twelfth took the
 Blackstone Fortresses, which [[VII.T3.Ch11]] holds and which are the same Necron
 technology — noctilith, per [[I.T1.Ch4]] — as the pylons of [[II.T3.Ch8]].
 

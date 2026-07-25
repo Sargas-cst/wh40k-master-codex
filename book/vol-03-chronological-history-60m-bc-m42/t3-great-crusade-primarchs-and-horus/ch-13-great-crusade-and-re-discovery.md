@@ -94,8 +94,9 @@ warp routes, holding cargo offloaded from macro-haulers and passing it to waitin
 that giga-volumes of munitions, humans, abhumans, Astartes and all they brought with them could
 be supplied at a relentless rate**.[^lex-great-crusade]
 
-Four thousand three hundred fleets, fed by depots on the warp routes. This is [[II.T1.Ch1]]'s
-point about Imperial geography demonstrated at its origin: the Crusade did not expand into space,
+Four thousand three hundred fleets, fed by depots on the warp routes. This is the point
+[[II.T1.Ch1]] makes about Imperial geography, demonstrated at its origin: the Crusade did not
+expand into space,
 it expanded along routes, and the Void Harbours are where the subsector-as-cluster pattern comes
 from.
 
@@ -149,7 +150,7 @@ Word Bearers**.[^lex-interex]
 So the Imperium's negotiation with the best-informed human civilisation it ever met was destroyed
 by a traitor inside its own delegation, who stole a weapon in the process. That weapon is the
 Anathame, and what it was used for is [[III.T3.Ch14]]. Erebus appears again in
-[[III.T3.Ch12]]'s account of Erda. The Crusade did not fail to absorb the Interex because
+the account of Erda in [[III.T3.Ch12]]. The Crusade did not fail to absorb the Interex because
 compliance was refused; it failed because someone wanted a war.
 
 ## Ullanor, and the Emperor's Withdrawal {#ullanor}
@@ -216,6 +217,6 @@ sent out under a commander who then left. Lorgar's turn is the clearest: the Emp
 Monarchia destroyed for the offence of worshipping him, which is the Imperial Truth enforced
 against its own object, and it cost him a Legion decades before Horus fell.
 
-Magnus's isolation is [[III.T3.Ch15]]'s subject, and Horus's corruption — begun with a stolen
+Magnus's isolation is treated in [[III.T3.Ch15]], and Horus's corruption — begun with a stolen
 Kinebrach sword — is the next Chapter's. What this Chapter establishes is that the Heresy did not
 begin with a betrayal. It began with a management structure.

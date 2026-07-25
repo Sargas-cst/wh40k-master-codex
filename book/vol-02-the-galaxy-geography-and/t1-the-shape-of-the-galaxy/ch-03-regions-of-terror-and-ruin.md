@@ -120,7 +120,7 @@ The region was once home to a number of human-inhabited worlds. An ancient threa
 responsible for destroying them, and for the large number of formerly human dead worlds
 there.[^lex-ghoul-stars] "Believed responsible" is doing the work in that sentence: the
 Imperium knows its worlds there are gone and does not know what killed them. The lesser xenos
-of the galaxy's dark corners are [[VI.T7.Ch23]]'s subject.
+of the galaxy's dark corners are treated in [[VI.T7.Ch23]].
 
 The **Halo Zone** is an absence of a different order. Introduced in [[II.T1.Ch1]] as the edge
 of practical Imperial space, it is the region of Segmentum Pacificus lying beyond the light of

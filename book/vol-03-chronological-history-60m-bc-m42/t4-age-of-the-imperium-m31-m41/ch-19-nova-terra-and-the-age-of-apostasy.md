@@ -57,7 +57,7 @@ civil war, in pursuit of a private obsession.
 
 And one world came through untouched. **Far from Nova Terra, it is said that the Realm of Ultramar
 was strengthened by the Interregnum and was free of the turmoil that beset the rest of the
-Imperium.**[^lex-nova-terra-interregnum] That is [[II.T2.Ch6]]'s point again: the realm that pays
+Imperium.**[^lex-nova-terra-interregnum] That is the point [[II.T2.Ch6]] makes again: the realm that pays
 no tithe and needs nothing from anyone gains when the centre fails.
 
 ## How the Ecclesiarchy Came to Rule {#ecclesiarchy}

@@ -58,7 +58,7 @@ demise". Caliban was so described before its destruction.[^lex-death-world]
 
 *In Articulo Mortis* is a clerk's phrase for a planet dying, and it was applied to the Dark
 Angels' homeworld before that world was destroyed — which makes it, in retrospect, less a
-classification than a forecast. Caliban is [[III.T3.Ch16]]'s.
+classification than a forecast. Caliban is treated in [[III.T3.Ch16]].
 
 The most famous and notorious death world is Catachan.[^lex-death-world]
 
