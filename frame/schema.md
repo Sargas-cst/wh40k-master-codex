@@ -365,6 +365,16 @@ Chapter that explains it needs no entry, and counting those overstated the backl
 sixfold. Three outcomes are available for each — add a glossary entry, register it as a
 subject, or record the decision not to in `data/non-terms.yaml`.
 
+**Every Section must define at least one term for the reader.** The Section is where
+someone arriving from a search engine lands, and a Section that explains nothing leaves
+them with no way in. 28 Sections were in that state before subjects joined the hover
+vocabulary — the worst of them 1,033 words on hive spires with not one term explained. The
+last to clear was the STC Chapter describing STCs, whose prose uses the abbreviation
+throughout while abbreviations live in `variants`, which is never auto-marked. Warned, not
+failed, above 120 words: the remedy is a judgement about which registry entry is missing a
+form. Two fixes are usually right — move an abbreviation from `variants:` to `mark:`, or
+register a term the Section leans on and never defines.
+
 **A Chapter title must not carry the possessive.** `[[ID]]'s subject` renders as the
 *name* of the target, so the reader gets "Gauss Tech, Destroyers & Dynasties's subject".
 Where the title ends in a plural that is a grammatical error; where it already contains an

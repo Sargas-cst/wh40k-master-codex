@@ -376,6 +376,41 @@ for (const ch of chapters.values()) {
   });
 }
 
+// --- every Section must offer the reader at least one definition ----------
+// The Section is the addressable unit: it carries the anchor, it is what the contents
+// tree links to, and it is where someone arriving from a search engine lands. A Section
+// that defines nothing leaves that reader with no way in.
+//
+// 28 Sections were in that state before subjects joined the hover vocabulary — the worst
+// of them 1,033 words on hive spires and heat sinks, not one term explained. The last to
+// clear was the STC Chapter describing STCs: its prose uses the abbreviation throughout,
+// and abbreviations live in `variants`, which is deliberately never auto-marked. Nothing
+// caught any of it, because no check had ever asked the question.
+{
+  const vocab = { ...glossary };
+  for (const [key, entry] of Object.entries(subjects)) {
+    const name = String(entry?.name ?? key).toLowerCase().replace(/^(the|a|an)\s+/, '');
+    const dupe = Object.values(glossary).some((g) =>
+      String(g?.term ?? '').toLowerCase().replace(/^(the|a|an)\s+/, '') === name);
+    if (!dupe) vocab[`s:${key}`] = { term: entry?.name ?? key, mark: entry?.mark };
+  }
+  const byForm = glossaryForms(vocab);
+  const regex = glossaryRegex(byForm);
+
+  for (const ch of chapters.values()) {
+    if (ch.front.status === 'stub') continue;
+    for (const sec of ch.sections ?? []) {
+      if (!sec.text || sec.words < 120) continue;
+      if (glossaryKeysIn(sec.text, byForm, regex).size) continue;
+      warn(ch.rel,
+        `§ "${sec.name}" (${sec.words} words) defines no term for the reader. Someone `
+        + `arriving here from a search has nothing explained. Either the Section uses a `
+        + `form the registry does not carry — an abbreviation belongs in \`mark:\`, not `
+        + `\`variants:\` — or a term it leans on is not registered at all.`);
+    }
+  }
+}
+
 // --- a Chapter title must not be used as a possessive noun -----------------
 // A reference renders as the target's NAME, so `[[ID]]'s subject` reaches the reader
 // as "Gauss Tech, Destroyers & Dynasties's subject". Where the title ends in a plural

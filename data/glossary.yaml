@@ -162,6 +162,9 @@ stc:
   definition: >
     Artificial-intelligence systems of the Dark Age of Technology said to have held
     the whole of human technical knowledge, now lost except as degraded hard copies.
+  mark: [STC, STCs]     # the prose uses the abbreviation far more often than the full
+                        # phrase, and it is unambiguous. Declared rather than left in
+                        # variants, which is never auto-marked.
   variants: [STC, STC systems]
   category: technology
   sources: [lex-standard-template-construct]
