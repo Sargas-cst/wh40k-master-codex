@@ -23,6 +23,8 @@ Ten volumes · 49 titles · 171 chapters · ~210,000–250,000 words when comple
 | `frame/retrieve.mjs` | Polite batch retriever for Lexicanum |
 | `frame/cite-map.mjs` | Resolves a page's citation markers to books and pages |
 | `frame/example-chapter.md` | Syntax fixture. Deliberately not in `book/` |
+| `frame/specimen.md` | Design specimen. Local preview only, never deployed |
+| `theme/overrides/` | The design layer: `main.html` and `codex.css` |
 | `book/` | The codex itself. One Markdown file per Chapter |
 | `data/` | The four registries: sources, glossary, subjects, contradictions |
 | `audit/` | One audit trail per Title: queries run, sources found, what could not be verified |
@@ -45,11 +47,43 @@ pip install -r requirements.txt
 mkdocs build --strict
 ```
 
-For live preview while writing:
+For live preview while writing or designing:
 
 ```bash
-mkdocs serve
+node frame/build.mjs --specimen && mkdocs serve --watch-theme
 ```
+
+`--watch-theme` matters: the design lives in `theme/overrides/`, outside `docs_dir`,
+so without it CSS edits do not trigger a reload. `--specimen` adds `frame/specimen.md`
+to the preview only — CI builds without the flag, so it can never reach the site.
+
+## Design
+
+The book proper reads as a **scholarly critical edition**; the apparatus — bibliography,
+registries, audit trail — shifts to a **denser technical register**.
+
+That split is not decoration. The brief fixes the voice as encyclopedic and
+out-of-universe, analytical and willing to call something contradictory or unknowable.
+An in-universe gothic treatment would fight that on every page, and would sit far closer
+to Games Workshop's trade dress than original prose does. The brief separately permits
+only the appendix to break voice, so the design breaks register in exactly the same
+place the writing does.
+
+Components exist for the things the content actually needs, rather than being decorative:
+
+| Component | Job |
+|---|---|
+| `.cite-what` / `.cite-hearsay` | Renders the two citation levels differently. What we read, versus the print source a wiki cites — set apart, muted, and labelled *unverified by us* |
+| `.cx-xref` | A cross-reference is navigation, not citation, and must not look like an outbound link |
+| `.cx-term` | Glossary terms carry their definition as a hover tooltip, so the reader is not thrown to the appendix mid-sentence |
+| `disputed` callout | Ochre. A live source conflict, linking to the register |
+| `undefined-term` callout | Slate, dashed, deliberately quiet. Reports an absence honestly rather than flagging a problem |
+| `unverified` callout | A claim that could not be sourced |
+| Chapter eyebrow | Volume / Title / Chapter plus status and depth badges, rendered from frontmatter so the label cannot drift from the validated ID |
+
+No web fonts are loaded — a curated system serif stack costs no third-party request and
+raises no privacy or licensing question. Body text sits at roughly 68 characters a line.
+Both colour schemes clear WCAG AA (light mode measures 16.8:1 body, 9.0:1 links).
 
 CI runs validate → prepare → build on every push. **Deployment is off by default**: the
 site is published only by running the *Build codex* workflow manually with

@@ -23,17 +23,24 @@ edit_uri: edit/main/book/
 theme:
   name: material
   language: en
+  custom_dir: theme/overrides
+  # Disabled deliberately: no Google Fonts request. A curated system serif stack
+  # loads instantly, costs no third-party connection, and raises no licensing or
+  # privacy question. See theme/overrides/assets/stylesheets/codex.css.
+  font: false
   features:
     - navigation.instant     # SPA-style routing; matters on a ~500-section site
     - navigation.tracking
     - navigation.top
     - navigation.indexes
+    - navigation.sections
     - navigation.footer      # prev/next — this book is meant to be readable front to back
     - toc.follow
     - search.highlight
     - search.share
     - search.suggest
     - content.code.copy
+    - content.tooltips       # glossary terms get a hover definition
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -41,18 +48,17 @@ theme:
         name: Match system
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: blue grey
-      accent: amber
       toggle:
         icon: material/brightness-7
         name: Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue grey
-      accent: amber
       toggle:
         icon: material/brightness-4
         name: Light mode
+
+extra_css:
+  - assets/stylesheets/codex.css
 
 markdown_extensions:
   - abbr

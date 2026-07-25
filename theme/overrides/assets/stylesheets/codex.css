@@ -1,0 +1,566 @@
+/* ==========================================================================
+   Warhammer 40,000 Master Codex — design system
+   ==========================================================================
+
+   Direction: the book proper reads as a scholarly critical edition; the
+   apparatus (bibliography, registries, audit trail) shifts to a denser
+   technical register.
+
+   That split is not decoration. PROMPT.md section 6 fixes the voice as
+   encyclopedic and out-of-universe — analytical, willing to say when
+   something is contradictory or unknowable. An in-universe gothic skin
+   would fight that on every page, and would sit far closer to Games
+   Workshop's trade dress than original prose does. Section 10 of the brief
+   separately permits only the appendix to break voice, so the design breaks
+   register in exactly the same place the writing does.
+
+   Structure of this file:
+     1. Tokens
+     2. Typography and reading measure
+     3. Chapter furniture (eyebrow, rules, status)
+     4. Sections
+     5. Citations — the two-level apparatus
+     6. Cross-references and glossary terms
+     7. Callouts: disputed, unverified, undefined
+     8. Tables
+     9. Chrome: header, sidebar, search, footer
+    10. The apparatus register
+    11. Print
+   ========================================================================== */
+
+/* ---------------------------------------------------------------- 1. Tokens */
+
+:root {
+  /* Warm paper, warm ink. Material's stock greys are faintly blue, which
+     reads as software rather than as a page. */
+  --cx-paper:        #faf8f4;
+  --cx-paper-raised: #fffdf9;
+  --cx-ink:          #1a1714;
+  --cx-ink-soft:     #4a443c;
+  --cx-ink-muted:    #6f6759;
+  --cx-rule:         #e0d8c9;
+  --cx-rule-strong:  #c9bfab;
+
+  /* One accent, oxblood. Classic for a text edition, and distinct from the
+     ochre and slate used by callouts so an accent never reads as a warning. */
+  --cx-accent:       #8a3324;
+  --cx-accent-soft:  #a9503c;
+
+  /* Callout hues, each with a job */
+  --cx-disputed:     #8a6100;   /* ochre — a live source conflict */
+  --cx-undefined:    #4a5568;   /* slate — deliberately quiet: an absence */
+  --cx-verified:     #3d6152;   /* green — re-verified against a source */
+
+  --cx-serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua",
+              Georgia, Cambria, "Times New Roman", serif;
+  --cx-sans:  "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+              "Helvetica Neue", Arial, sans-serif;
+  --cx-mono:  "Cascadia Code", "SFMono-Regular", Consolas, "Liberation Mono",
+              Menlo, monospace;
+
+  --cx-measure: 34rem;   /* ~68 characters at the body size */
+}
+
+[data-md-color-scheme="default"] {
+  --md-default-bg-color:        var(--cx-paper);
+  --md-default-fg-color:        var(--cx-ink);
+  --md-default-fg-color--light: var(--cx-ink-muted);
+  --md-default-fg-color--lighter: var(--cx-rule-strong);
+  --md-default-fg-color--lightest: var(--cx-rule);
+  --md-typeset-color:           var(--cx-ink);
+  --md-typeset-a-color:         var(--cx-accent);
+  --md-primary-fg-color:        #241f1a;
+  --md-primary-bg-color:        #f4efe6;
+  --md-accent-fg-color:         var(--cx-accent-soft);
+  --md-code-bg-color:           #f1ece1;
+  --md-code-fg-color:           #3a342c;
+  --md-footer-bg-color:         #241f1a;
+}
+
+[data-md-color-scheme="slate"] {
+  --cx-paper:        #16150f;
+  --cx-paper-raised: #1f1d16;
+  --cx-ink:          #ece6d9;
+  --cx-ink-soft:     #c2bbab;
+  --cx-ink-muted:    #948c7c;
+  --cx-rule:         #33302a;
+  --cx-rule-strong:  #4a453c;
+  --cx-accent:       #e0977a;
+  --cx-accent-soft:  #efb59c;
+  --cx-disputed:     #d6a94f;
+  --cx-undefined:    #93a1b8;
+  --cx-verified:     #74ab93;
+
+  --md-hue: 40;
+  --md-default-bg-color:        var(--cx-paper);
+  --md-default-fg-color:        var(--cx-ink);
+  --md-default-fg-color--light: var(--cx-ink-muted);
+  --md-default-fg-color--lighter: var(--cx-rule-strong);
+  --md-default-fg-color--lightest: var(--cx-rule);
+  --md-typeset-color:           var(--cx-ink);
+  --md-typeset-a-color:         var(--cx-accent);
+  --md-primary-fg-color:        #100f0a;
+  --md-primary-bg-color:        var(--cx-ink);
+  --md-accent-fg-color:         var(--cx-accent-soft);
+  --md-code-bg-color:           #23211a;
+  --md-code-fg-color:           #d8d1c2;
+  --md-footer-bg-color:         #100f0a;
+}
+
+/* ------------------------------------------- 2. Typography and reading measure */
+
+body, input, .md-typeset {
+  font-family: var(--cx-serif);
+  font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+}
+
+.md-typeset {
+  /* Material's root is 20px, so 1rem here reads as a 20px body — comfortable for
+     long-form without the slightly oversized feel of Material's own scale. With
+     --cx-measure this lands around 68 characters a line. */
+  font-size: 1rem;
+  line-height: 1.72;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  text-align: left;
+}
+
+/* Constrain the text column for long-form reading; let wide things escape it.
+   Material's default width is tuned for API docs, not for 250,000 words.
+
+   NOTE: in Material 9 the content element carries BOTH classes —
+   <article class="md-content__inner md-typeset"> — so these are the same node,
+   not nested. Direct children of that one element are the block-level content.
+   Getting this wrong silently does nothing, which is how it went unnoticed. */
+.md-content__inner.md-typeset > * {
+  max-width: var(--cx-measure);
+  margin-inline: auto;
+}
+.md-content__inner.md-typeset > .md-typeset__table,
+.md-content__inner.md-typeset > table,
+.md-content__inner.md-typeset > .cx-wide {
+  max-width: 46rem;
+}
+/* Material's edit button and similar chrome should not be centred in the measure. */
+.md-content__inner.md-typeset > .md-content__button {
+  max-width: none;
+  margin-inline: 0;
+}
+.md-content__inner { padding-block: 1.6rem 3rem; }
+
+.md-typeset p { margin: 0 0 0.9em; }
+/* A book indents continuation paragraphs rather than spacing every one. */
+.md-typeset p + p { margin-top: -0.25em; text-indent: 1.35em; }
+.md-typeset h2 + p, .md-typeset h3 + p,
+.md-typeset blockquote + p, .md-typeset .admonition + p,
+.md-typeset ul + p, .md-typeset ol + p, .md-typeset table + p { text-indent: 0; }
+
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4 {
+  font-family: var(--cx-serif);
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: var(--cx-ink);
+}
+
+.md-typeset h1 {
+  font-size: 2.05rem;
+  line-height: 1.16;
+  margin: 0 0 0.15em;
+  font-weight: 600;
+}
+
+.md-typeset h2 {
+  font-size: 1.32rem;
+  line-height: 1.28;
+  margin: 2.4em 0 0.6em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--cx-rule);
+}
+
+.md-typeset h3 {
+  font-size: 1.08rem;
+  margin: 1.9em 0 0.5em;
+  color: var(--cx-ink-soft);
+}
+
+.md-typeset blockquote {
+  border-left: 2px solid var(--cx-rule-strong);
+  color: var(--cx-ink-soft);
+  font-style: italic;
+  padding-left: 1.1em;
+  margin-inline: 0;
+}
+.md-typeset blockquote > p + p { text-indent: 0; }
+
+/* -------------------------------------------------- 3. Chapter furniture */
+
+/* Rendered by theme/overrides/main.html from the chapter's frontmatter, so it
+   cannot disagree with the ID the validator checks. */
+.cx-chapter-head {
+  margin-bottom: 2.2em;
+  padding-bottom: 1.1em;
+  border-bottom: 2px solid var(--cx-rule-strong);
+}
+
+.cx-eyebrow {
+  font-family: var(--cx-sans);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cx-ink-muted);
+  margin-bottom: 0.7em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  align-items: center;
+}
+.cx-eyebrow .cx-sep { color: var(--cx-rule-strong); }
+
+.cx-badge {
+  font-family: var(--cx-sans);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.18em 0.5em;
+  border-radius: 2px;
+  border: 1px solid currentcolor;
+}
+.cx-badge--stub     { color: var(--cx-disputed); }
+.cx-badge--drafted  { color: var(--cx-ink-muted); }
+.cx-badge--audited  { color: var(--cx-verified); }
+.cx-badge--depth    { color: var(--cx-ink-muted); border-style: dashed; }
+
+/* --------------------------------------------------------- 4. Sections */
+
+/* A Section is the atomic unit of the book, so it gets a real anchor target
+   with breathing room rather than a heading that merges into the paragraph
+   above it. */
+.md-typeset h2[id] { scroll-margin-top: 4rem; }
+.md-typeset h3[id] { scroll-margin-top: 4rem; }
+
+.md-typeset .headerlink {
+  color: var(--cx-rule-strong);
+  font-size: 0.75em;
+}
+
+/* -------------------------------- 5. Citations — the two-level apparatus */
+
+/* The distinction below is the one the whole project rests on: what we
+   actually read, versus the printed page a wiki claims. PROMPT.md section 5
+   forbids collapsing them, so they must not render alike. */
+
+.md-typeset .footnote-ref {
+  font-family: var(--cx-sans);
+  font-size: 0.62em;
+  font-weight: 600;
+  padding-left: 0.1em;
+  text-decoration: none;
+}
+
+.md-content__inner.md-typeset > .footnote {
+  font-size: 0.83rem;
+  line-height: 1.6;
+  color: var(--cx-ink-soft);
+  border-top: 1px solid var(--cx-rule-strong);
+  margin-top: 3rem;
+  padding-top: 1rem;
+  max-width: var(--cx-measure);
+  margin-inline: auto;
+}
+.md-typeset .footnote::before {
+  content: "Sources";
+  display: block;
+  font-family: var(--cx-sans);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cx-ink-muted);
+  margin-bottom: 0.8em;
+}
+.md-typeset .footnote ol { margin-left: 0; }
+.md-typeset .footnote li { margin-bottom: 0.75em; }
+.md-typeset .footnote li p + p { text-indent: 0; }
+
+/* What we read: our own evidence. */
+.cite-what     { font-style: italic; }
+.cite-retrieved,
+.cite-url      { font-family: var(--cx-mono); font-size: 0.9em; color: var(--cx-ink-muted); }
+
+/* Hearsay: the print source the wiki cites, which nobody here opened.
+   Set apart on its own line, muted, and explicitly labelled. */
+.cite-hearsay {
+  display: block;
+  margin-top: 0.35em;
+  padding-left: 0.75em;
+  border-left: 2px solid var(--cx-rule-strong);
+  color: var(--cx-ink-muted);
+  font-size: 0.95em;
+}
+.cite-hearsay .cite-flag {
+  font-family: var(--cx-sans);
+  font-size: 0.86em;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--cx-disputed);
+}
+.cite-note { display: block; margin-top: 0.35em; font-size: 0.95em; }
+
+/* ------------------------------ 6. Cross-references and glossary terms */
+
+/* A cross-reference is navigation, not citation. It must not look like an
+   outbound link, or the canonical-home rule reads as a wall of references. */
+.md-typeset a.cx-xref {
+  color: var(--cx-ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--cx-accent);
+  padding-bottom: 0.02em;
+}
+.md-typeset a.cx-xref:hover {
+  color: var(--cx-accent);
+  border-bottom-color: currentcolor;
+}
+.md-typeset a.cx-xref::after {
+  content: "\203A";
+  font-family: var(--cx-sans);
+  margin-left: 0.18em;
+  color: var(--cx-accent);
+}
+
+/* A glossary term is defined once, elsewhere; a dotted underline says "there
+   is a definition" without pulling the reader out of the sentence. */
+.md-typeset a.cx-term,
+.md-typeset abbr {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--cx-rule-strong);
+  cursor: help;
+}
+.md-typeset a.cx-term:hover { border-bottom-color: var(--cx-accent); }
+
+/* An aside collecting onward references at the end of a Section. */
+.cx-seealso {
+  font-family: var(--cx-sans);
+  font-size: 0.76rem;
+  color: var(--cx-ink-muted);
+  margin: 1.4em 0;
+  padding-left: 1em;
+  border-left: 2px solid var(--cx-rule);
+}
+.cx-seealso strong {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+/* ------------------------ 7. Callouts: disputed, unverified, undefined */
+
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: 0.87rem;
+  border: 1px solid var(--cx-rule);
+  border-left-width: 3px;
+  border-radius: 2px;
+  background: var(--cx-paper-raised);
+  box-shadow: none;
+}
+.md-typeset .admonition-title,
+.md-typeset summary {
+  font-family: var(--cx-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: transparent !important;
+}
+.md-typeset .admonition > :last-child { margin-bottom: 0.6rem; }
+
+/* DISPUTED — sources genuinely conflict. Ochre, and it links to the register. */
+.md-typeset .admonition.disputed,
+.md-typeset details.disputed {
+  border-color: var(--cx-rule);
+  border-left-color: var(--cx-disputed);
+}
+.md-typeset .disputed > .admonition-title,
+.md-typeset .disputed > summary { color: var(--cx-disputed); }
+.md-typeset .disputed > .admonition-title::before,
+.md-typeset .disputed > summary::before {
+  background-color: var(--cx-disputed);
+  -webkit-mask-image: var(--md-admonition-icon--warning);
+          mask-image: var(--md-admonition-icon--warning);
+}
+
+/* UNDEFINED — no source defines the thing at all. Deliberately quiet: this is
+   an absence being reported honestly, not a problem being flagged. Section 11
+   of the brief is emphatic that such gaps must never be filled. */
+.md-typeset .admonition.undefined-term,
+.md-typeset details.undefined-term {
+  border-color: var(--cx-rule);
+  border-left-color: var(--cx-undefined);
+  border-left-style: dashed;
+}
+.md-typeset .undefined-term > .admonition-title,
+.md-typeset .undefined-term > summary { color: var(--cx-undefined); }
+.md-typeset .undefined-term > .admonition-title::before,
+.md-typeset .undefined-term > summary::before {
+  background-color: var(--cx-undefined);
+  -webkit-mask-image: var(--md-admonition-icon--quote);
+          mask-image: var(--md-admonition-icon--quote);
+}
+
+/* UNVERIFIED — a claim we could not source. Same quiet slate. */
+.md-typeset .admonition.unverified,
+.md-typeset details.unverified {
+  border-color: var(--cx-rule);
+  border-left-color: var(--cx-undefined);
+}
+.md-typeset .unverified > .admonition-title,
+.md-typeset .unverified > summary { color: var(--cx-undefined); }
+.md-typeset .unverified > .admonition-title::before,
+.md-typeset .unverified > summary::before {
+  background-color: var(--cx-undefined);
+  -webkit-mask-image: var(--md-admonition-icon--question);
+          mask-image: var(--md-admonition-icon--question);
+}
+
+/* An inline disputed marker, for a single sentence rather than a block. */
+.cx-disputed-mark {
+  font-family: var(--cx-sans);
+  font-size: 0.62em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cx-disputed);
+  border: 1px solid currentcolor;
+  border-radius: 2px;
+  padding: 0.1em 0.35em;
+  margin-left: 0.3em;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: 0.15em;
+}
+.cx-disputed-mark:hover { background: color-mix(in srgb, var(--cx-disputed) 12%, transparent); }
+
+/* ----------------------------------------------------------- 8. Tables */
+
+.md-typeset table:not([class]) {
+  font-size: 0.82rem;
+  border: none;
+  border-top: 2px solid var(--cx-rule-strong);
+  border-bottom: 2px solid var(--cx-rule-strong);
+  box-shadow: none;
+}
+.md-typeset table:not([class]) th {
+  font-family: var(--cx-sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--cx-ink-muted);
+  border-bottom: 1px solid var(--cx-rule-strong);
+}
+.md-typeset table:not([class]) td { border-top: 1px solid var(--cx-rule); }
+.md-typeset table:not([class]) tr:hover { background: color-mix(in srgb, var(--cx-accent) 4%, transparent); }
+
+/* ------------------------------------------------------------ 9. Chrome */
+
+.md-header {
+  box-shadow: none;
+  border-bottom: 1px solid var(--cx-rule-strong);
+}
+.md-header__title { font-family: var(--cx-serif); font-weight: 600; }
+.md-header__topic:first-child { letter-spacing: -0.01em; }
+
+.md-tabs { border-bottom: 1px solid var(--cx-rule-strong); }
+
+.md-nav {
+  font-family: var(--cx-sans);
+  font-size: 0.72rem;
+}
+.md-nav__title {
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cx-ink-muted);
+  box-shadow: none;
+}
+.md-nav__link--active { font-weight: 600; }
+.md-nav--secondary .md-nav__title { border: none; }
+
+/* Volume groupings in the sidebar read as sections of a book. */
+.md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link {
+  font-family: var(--cx-serif);
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--cx-ink);
+  margin-top: 1.1em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid var(--cx-rule);
+}
+
+.md-search__form { border-radius: 2px; }
+.md-search-result__link { font-family: var(--cx-sans); }
+.md-search-result__title { font-family: var(--cx-serif); font-weight: 600; }
+
+.md-footer-meta { font-family: var(--cx-sans); font-size: 0.72rem; }
+.md-footer__title { font-family: var(--cx-serif); }
+.md-copyright { line-height: 1.6; }
+
+/* -------------------------------------------- 10. The apparatus register */
+
+/* Bibliography, registries and audit trail. The brief permits only the
+   appendix to break voice; the design breaks register in the same place.
+   Denser, monospaced, tabular — records rather than prose. */
+
+body[data-cx-apparatus] .md-content__inner.md-typeset > * { max-width: 46rem; }
+body[data-cx-apparatus] .md-typeset { font-size: 0.94rem; line-height: 1.6; }
+body[data-cx-apparatus] .md-typeset p + p { text-indent: 0; margin-top: 0; }
+
+body[data-cx-apparatus] .md-typeset h1 {
+  font-family: var(--cx-sans);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+body[data-cx-apparatus] .md-typeset h2 {
+  font-family: var(--cx-sans);
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cx-ink-muted);
+}
+body[data-cx-apparatus] .md-typeset h3 {
+  font-family: var(--cx-mono);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--cx-ink);
+  padding-top: 0.9em;
+  border-top: 1px solid var(--cx-rule);
+}
+body[data-cx-apparatus] .md-typeset table:not([class]) { font-size: 0.78rem; }
+body[data-cx-apparatus] .md-typeset code { font-size: 0.85em; }
+
+/* ------------------------------------------------------------ 11. Print */
+
+@media print {
+  .md-header, .md-sidebar, .md-footer, .md-typeset .headerlink { display: none !important; }
+  .md-content__inner > .md-typeset > * { max-width: none; }
+  .md-typeset { font-size: 10.5pt; }
+  .cite-hearsay { border-left-color: #999; }
+}
+
+/* ------------------------------------------------------- Narrow screens */
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset { font-size: 1rem; line-height: 1.68; }
+  .md-typeset h1 { font-size: 1.65rem; }
+  .md-typeset p + p { text-indent: 1.1em; }
+  .cx-eyebrow { font-size: 0.6rem; }
+}

@@ -13,7 +13,8 @@
 import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync, existsSync } from 'node:fs';
 import { dirname, join, relative, sep } from 'node:path';
 import {
-  ROOT, BOOK_DIR, loadChapters, loadRegistries, parseChapterId, LINK_RE, CITE_RE,
+  ROOT, BOOK_DIR, loadChapters, loadRegistries, parseChapterId, depthFor,
+  LINK_RE, CITE_RE,
 } from './lib.mjs';
 
 const OUT = join(ROOT, 'build', 'docs');
@@ -60,12 +61,17 @@ function resolveLinks(text, fromDocPath) {
     const target = rawTarget.trim();
     const label = rawText?.trim() ?? null;
 
+    // A glossary term carries its definition as a title attribute, so Material's
+    // tooltips show it on hover. The reader gets the definition without being
+    // thrown to the appendix mid-sentence, and it is still the single definition
+    // from data/glossary.yaml rather than a copy.
     if (target.startsWith('g:')) {
       const key = target.slice(2);
       const entry = glossary[key];
       if (!entry) return label ?? key;
       const href = `${linkFrom(fromDocPath, APPENDIX.glossary)}#${key}`;
-      return `[${label ?? entry.term}](${href})`;
+      const def = attrEsc(entry.definition ?? '').slice(0, 240);
+      return `[${label ?? entry.term}](${href}){ .cx-term title="${def}" }`;
     }
 
     if (target.startsWith('s:')) {
@@ -74,19 +80,19 @@ function resolveLinks(text, fromDocPath) {
       const entry = subjects[key];
       if (!owner) return label ?? entry?.name ?? key;
       const chapter = byId.get(owner);
-      return `[${label ?? entry?.name ?? chapter.name}](${linkFrom(fromDocPath, chapter.docPath)})`;
+      return `[${label ?? entry?.name ?? chapter.name}](${linkFrom(fromDocPath, chapter.docPath)}){ .cx-xref }`;
     }
 
     if (byId.has(target)) {
       const chapter = byId.get(target);
-      return `[${label ?? chapter.name}](${linkFrom(fromDocPath, chapter.docPath)})`;
+      return `[${label ?? chapter.name}](${linkFrom(fromDocPath, chapter.docPath)}){ .cx-xref }`;
     }
 
     const sec = bySection.get(target);
     if (sec) {
       const chapter = byId.get(sec.chapterId);
       const href = `${linkFrom(fromDocPath, chapter.docPath)}#${sec.slug}`;
-      return `[${label ?? sec.name}](${href})`;
+      return `[${label ?? sec.name}](${href}){ .cx-xref }`;
     }
 
     // validate.mjs already failed the build on this; leave it visible rather than
@@ -109,18 +115,34 @@ function footnotesFor(text) {
   const defs = used.map(id => {
     const s = sources[id];
     if (!s) return `[^${id}]: **Unrecorded source \`${id}\`.**`;
-    const bits = [];
-    bits.push(s.what ?? id);
-    if (s.retrieved) bits.push(`retrieved ${s.retrieved}`);
-    let line = `[^${id}]: ${bits.join(' — ')}.`;
-    if (s.url) line += ` <${s.url}>`;
+
+    // Two levels, rendered two ways. `.cite-what` is our own evidence: the page
+    // we read and the date we read it. `.cite-hearsay` is the printed source the
+    // wiki cites, which nobody here opened — set apart and labelled, because the
+    // stylesheet cannot enforce a distinction the markup has already collapsed.
+    let line = `[^${id}]: <span class="cite-what">${esc(s.what ?? id)}</span>`;
+    if (s.retrieved) line += ` <span class="cite-retrieved">retrieved ${esc(s.retrieved)}</span>`;
+    if (s.url) line += ` <span class="cite-url">[${esc(hostOf(s.url))}](${s.url})</span>`;
     if (s.cites?.length) {
-      line += ` Cited there to ${s.cites.join('; ')} — *print source, unverified by us.*`;
+      line += ` <span class="cite-hearsay">Cited there to ${esc(s.cites.join('; '))} ` +
+              `<span class="cite-flag">print source, unverified by us</span></span>`;
     }
-    if (s.notes) line += ` ${s.notes}`;
+    if (s.notes) line += ` <span class="cite-note">${esc(String(s.notes).trim())}</span>`;
     return line;
   });
   return `\n\n${defs.join('\n')}\n`;
+}
+
+function esc(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function attrEsc(s) {
+  return esc(s).replace(/"/g, '&quot;').replace(/\s+/g, ' ').trim();
+}
+
+function hostOf(url) {
+  try { return new URL(url).host.replace(/^www\./, ''); } catch { return url; }
 }
 
 // ---------------------------------------------------------------------------
@@ -140,14 +162,23 @@ for (const ch of parsed) {
   const outFile = join(OUT, docPath);
   const raw = readFileSync(outFile, 'utf8');
   const fmMatch = /^---\r?\n[\s\S]*?\r?\n---\r?\n?/.exec(raw);
-  const front = fmMatch ? fmMatch[0] : '';
+  let front = fmMatch ? fmMatch[0] : '';
   const body = raw.slice(front.length);
+
+  // Inject the derived depth band into the GENERATED frontmatter so the template
+  // can render it. The schema forbids storing it in source (it is derived from the
+  // Volume and would drift), but build/docs is disposable — deriving it once here
+  // keeps one source of truth and still puts it on the page.
+  const depth = depthFor(parseChapterId(ch.front.id) ?? {});
+  if (front && depth) {
+    front = front.replace(/\r?\n---(\r?\n?)$/, `\ndepth: ${depth}\n---$1`);
+  }
 
   const heading = `# ${ch.front.name}\n\n`;
   const resolved = resolveLinks(body, docPath);
   const hasH1 = /^\s*#\s+/m.test(body.split('\n').slice(0, 3).join('\n'));
 
-  writeFileSync(outFile, (hasH1 ? '' : heading) + resolved + footnotesFor(resolved), 'utf8');
+  writeFileSync(outFile, front + (hasH1 ? '' : heading) + resolved + footnotesFor(resolved), 'utf8');
   pages++;
 }
 
@@ -259,6 +290,30 @@ const NOTE = (what) =>
     if (s.notes) md += `${s.notes}\n\n`;
   }
   writeFileSync(join(OUT, APPENDIX.sources), md, 'utf8');
+}
+
+// ---------------------------------------------------------------------------
+// Design specimen — local preview only, never part of the book
+// ---------------------------------------------------------------------------
+// `node frame/build.mjs --specimen` copies frame/specimen.md into the preview
+// tree. It lives outside book/ so it is not a Chapter, is not validated as one,
+// and cannot reach the deployed site: CI runs build.mjs without the flag.
+//
+// It exists because designing typography against two nearly-empty pages is
+// guesswork. It is a fixture for looking at, not content.
+
+if (process.argv.includes('--specimen')) {
+  const src = join(ROOT, 'frame', 'specimen.md');
+  if (existsSync(src)) {
+    const raw = readFileSync(src, 'utf8');
+    const fm = /^---\r?\n[\s\S]*?\r?\n---\r?\n?/.exec(raw);
+    const front = fm ? fm[0] : '';
+    const body = raw.slice(front.length);
+    const resolved = resolveLinks(body, 'design-specimen.md');
+    writeFileSync(join(OUT, 'design-specimen.md'),
+      front + resolved + footnotesFor(resolved), 'utf8');
+    console.log('  + design-specimen.md (local preview only — excluded from CI builds)');
+  }
 }
 
 console.log(`  build/docs ready — ${pages} chapter page(s) + 4 compiled appendix pages`);

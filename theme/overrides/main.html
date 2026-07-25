@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{#
+  Chapter furniture, rendered from the chapter's own frontmatter.
+
+  This is generated rather than hand-written on purpose. The eyebrow shows the
+  Volume, Title and Chapter, and those come from the `id` that frame/validate.mjs
+  checks — so the label on the page cannot drift away from the ID the toolchain
+  enforces. A hand-typed "VOLUME IV · TITLE 9" would be free to be wrong.
+
+  `depth` is injected into the generated frontmatter by frame/build.mjs. The
+  schema forbids storing it in source files (it is derived from the Volume), but
+  the build tree is disposable, so deriving it once at build time and rendering
+  it here keeps a single source of truth.
+#}
+
+{% block content %}
+  {% if page.meta and page.meta.id %}
+    {% set parts = page.meta.id.split('.') %}
+    <div class="cx-chapter-head">
+      <div class="cx-eyebrow">
+        {% if parts | length > 0 %}
+          <span>{% if parts[0] == 'APX' %}Appendix A{% else %}Volume {{ parts[0] }}{% endif %}</span>
+        {% endif %}
+        {% if parts | length > 1 %}
+          <span class="cx-sep">&middot;</span>
+          <span>Title {{ parts[1] | replace('T', '') }}</span>
+        {% endif %}
+        {% if parts | length > 2 %}
+          <span class="cx-sep">&middot;</span>
+          <span>Chapter {{ parts[2] | replace('Ch', '') }}</span>
+        {% endif %}
+
+        {% if page.meta.status == 'stub' %}
+          <span class="cx-badge cx-badge--stub" title="Not yet researched or written">Stub</span>
+        {% elif page.meta.status == 'drafted' %}
+          <span class="cx-badge cx-badge--drafted" title="Written and sourced, but not yet audited">Drafted</span>
+        {% elif page.meta.status == 'audited' %}
+          <span class="cx-badge cx-badge--audited" title="Written, sourced and audited">Audited</span>
+        {% endif %}
+
+        {% if page.meta.depth %}
+          <span class="cx-badge cx-badge--depth"
+                title="Target depth band for each Section of this Chapter">{{ page.meta.depth }}</span>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+
+  {{ super() }}
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script>
+    // The apparatus pages — bibliography, registries, audit trail — render in a
+    // denser technical register. PROMPT.md permits only the appendix to break
+    // voice, so the design breaks register in exactly the same place.
+    //
+    // Driven from JS rather than a template class because `navigation.instant`
+    // keeps <body> across page loads; document$ re-fires on every navigation.
+    (function () {
+      function apply() {
+        var isApparatus = /\/(appendix|audit)(\/|$)/.test(window.location.pathname);
+        document.body.toggleAttribute("data-cx-apparatus", isApparatus);
+      }
+      if (typeof document$ !== "undefined" && document$.subscribe) {
+        document$.subscribe(apply);
+      } else {
+        apply();
+      }
+    })();
+  </script>
+{% endblock %}

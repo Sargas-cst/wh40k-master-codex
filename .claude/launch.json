@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "codex",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": [
+        "/c",
+        "node frame/build.mjs --specimen && %LOCALAPPDATA%\\Programs\\Python\\Python312\\python.exe -m mkdocs serve --watch-theme --dev-addr 127.0.0.1:8321"
+      ],
+      "port": 8321
+    }
+  ]
+}
