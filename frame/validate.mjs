@@ -282,13 +282,16 @@ for (const ch of chapters.values()) {
 // ---------------------------------------------------------------------------
 
 const drafted = [...chapters.values()].filter(c => c.front.status !== 'stub');
-const totalWords = [...chapters.values()]
-  .flatMap(c => c.sections).reduce((n, s) => n + s.words, 0);
+const stubs = chapters.size - drafted.length;
+// Stubs only, deliberately excluded: counting the "not yet written" boilerplate
+// as prose would report thousands of words of progress that do not exist.
+const totalWords = drafted.flatMap(c => c.sections).reduce((n, s) => n + s.words, 0);
 
 console.log('');
 console.log('  Codex structural validation');
 console.log('  ' + '-'.repeat(52));
 console.log(`  Chapters found        ${chapters.size} of 171`);
+console.log(`  Stubs                 ${stubs}`);
 console.log(`  Drafted (not stub)    ${drafted.length}`);
 console.log(`  Sections              ${sectionIds.size}`);
 console.log(`  Words of prose        ${totalWords.toLocaleString('en-US')} of ~210,000–250,000`);

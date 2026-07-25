@@ -1,0 +1,25 @@
+---
+id: IV.T3.Ch11
+name: The Adepta Sororitas
+status: stub
+owns: []
+sections: []
+---
+
+# The Adepta Sororitas
+
+!!! note "Not yet written"
+
+    This Chapter is part of the agreed structure of the codex but has not
+    yet been researched or drafted. Nothing is written here until it has a
+    source, so the page is empty rather than filled with placeholder prose.
+
+## Planned Sections
+
+Indicative, not binding. A Chapter carries two to five Sections depending on
+what the sources actually support — this list is the researched starting plan,
+and it will change where the material demands it.
+
+- Origins & the Convent Sanctorum
+- Orders Militant, Hospitaller & Dialogous
+- Faith, Miracles & the Battle Sisters

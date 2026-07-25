@@ -24,6 +24,7 @@ Ten volumes · 49 titles · 171 chapters · ~210,000–250,000 words when comple
 | `frame/build.mjs` | Resolves cross-references, generates footnotes, compiles the appendix |
 | `frame/retrieve.mjs` | Polite batch retriever for Lexicanum |
 | `frame/cite-map.mjs` | Resolves a page's citation markers to books and pages |
+| `frame/scaffold.mjs` | Generates the 171-Chapter skeleton and the nav tree from PROMPT.md |
 | `frame/example-chapter.md` | Syntax fixture. Deliberately not in `book/` |
 | `frame/specimen.md` | Design specimen. Local preview only, never deployed |
 | `theme/overrides/` | The design layer: `main.html` and `codex.css` |
