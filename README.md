@@ -98,7 +98,7 @@ Components exist for the things the content actually needs, rather than being de
 
 | Component | Job |
 |---|---|
-| `.cite-what` / `.cite-hearsay` | Renders the two citation levels differently. What we read, versus the print source a wiki cites — set apart, muted, and labelled *unverified by us* |
+| `.cite-what` / `.cite-hearsay` | Renders the two citation levels differently. What we read, versus the print source a wiki cites — set apart as *Cited there to*, so the wiki's reference is never read as ours |
 | `.cx-xref` | A cross-reference is navigation, not citation, and must not look like an outbound link |
 | `.cx-term` | Glossary terms carry their definition as a hover tooltip, so the reader is not thrown to the appendix mid-sentence |
 | `disputed` callout | Ochre. A live source conflict, linking to the register |

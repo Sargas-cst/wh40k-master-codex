@@ -37,6 +37,12 @@ jobs:
 
       - run: npm ci
 
+      # Syntax-check every tool before running any of them. A broken script that
+      # merely happens not to be on the current code path would otherwise ship and
+      # fail later, on someone else's change.
+      - name: Syntax-check the toolchain
+        run: npm run syntax
+
       - name: Validate structure
         run: node frame/validate.mjs
 

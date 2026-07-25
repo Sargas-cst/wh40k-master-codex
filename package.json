@@ -5,6 +5,8 @@
   "type": "module",
   "description": "Toolchain for the Warhammer 40,000 Master Codex: structural validation and MkDocs input generation.",
   "scripts": {
+    "syntax": "node --check frame/lib.mjs && node --check frame/validate.mjs && node --check frame/build.mjs && node --check frame/retrieve.mjs && node --check frame/cite-map.mjs && node --check frame/scaffold.mjs && node --check frame/fetch-fonts.mjs",
+    "verify": "npm run syntax && node frame/validate.mjs && node frame/build.mjs",
     "validate": "node frame/validate.mjs",
     "validate:strict": "node frame/validate.mjs --strict",
     "prepare-docs": "node frame/build.mjs",

@@ -490,17 +490,6 @@ body {
   color: var(--cx-ink-muted);
   font-size: 0.94em;
 }
-.cite-hearsay .cite-flag {
-  display: inline-block;
-  font-family: var(--cx-display);
-  font-size: 0.95em;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--cx-disputed);
-  border: 1px solid currentcolor;
-  padding: 0 0.3em;
-  margin-left: 0.3em;
-}
 .cite-note { display: block; margin-top: 0.4em; font-size: 0.94em; }
 
 /* ---------------------- 7. Cross-references and glossary terms */

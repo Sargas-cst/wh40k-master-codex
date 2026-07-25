@@ -27,7 +27,7 @@
 //
 // What this does NOT do is verify anything. The page numbers below are what LEXICANUM
 // CLAIMS. The books are print-only and unreachable. Anything emitted here belongs in
-// a source's `cites:` list, which the build renders labelled "unverified by us".
+// a source's `cites:` list, which the build renders as "Cited there to …".
 
 import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
@@ -160,7 +160,7 @@ if (asYaml) {
   if (manifest.url) console.log(`  url: ${manifest.url}`);
   console.log(`  retrieved: ${manifest.retrieved ?? 'YYYY-MM-DD'}`);
   if (manifest.file) console.log(`  raw: ${manifest.file}`);
-  console.log(`  cites:                                  # print sources, UNVERIFIED BY US`);
+  console.log(`  cites:                                  # print sources, as cited by the article`);
   console.log(cites.length ? cites.join('\n') : '    []');
   if (flags.length) {
     console.log(`  notes: >`);
@@ -186,7 +186,7 @@ if (flags.length) {
 }
 
 console.log('\n  ENDNOTES — what each marker resolves to');
-console.log('  (This is what Lexicanum CLAIMS. The books are print-only and unverified.)\n');
+console.log('  (These are the citations Lexicanum gives. The books are print-only.)\n');
 for (const [key, v] of [...endnotes].sort(([a], [b]) => a.localeCompare(b, 'en', { numeric: true }))) {
   console.log(`    ${key.padEnd(5)} ${v.work}`);
   console.log(`          ${v.locator}`);

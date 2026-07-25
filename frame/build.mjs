@@ -129,10 +129,11 @@ function resolveLinks(text, fromDocPath) {
 /**
  * Generate footnote definitions for the sources a page cites.
  *
- * The two-level distinction from PROMPT.md §5 is rendered explicitly: what WE read,
- * and separately what the wiki CLAIMS its own source is. The words "unverified by us"
- * are not decoration — they are the difference between honest sourcing and laundering
- * a wiki's citation into an authority we never consulted.
+ * The two-level distinction from PROMPT.md §5 is kept in the rendering: what WE read
+ * sits inline, and the print source the wiki cites is set apart as "Cited there to
+ * …". The wording carries the distinction — "there", not here — so no verdict badge
+ * is needed. This is a reference work, not a body certifying what is or is not true
+ * about Warhammer 40,000.
  */
 function footnotesFor(text) {
   const used = [...new Set([...text.matchAll(CITE_RE)].map(m => m[1]))];
@@ -143,14 +144,17 @@ function footnotesFor(text) {
 
     // Two levels, rendered two ways. `.cite-what` is our own evidence: the page
     // we read and the date we read it. `.cite-hearsay` is the printed source the
-    // wiki cites, which nobody here opened — set apart and labelled, because the
-    // stylesheet cannot enforce a distinction the markup has already collapsed.
+    // wiki cites, set apart so the two are never read as one claim.
     let line = `[^${id}]: <span class="cite-what">${esc(s.what ?? id)}</span>`;
     if (s.retrieved) line += ` <span class="cite-retrieved">retrieved ${esc(s.retrieved)}</span>`;
     if (s.url) line += ` <span class="cite-url">[${esc(hostOf(s.url))}](${s.url})</span>`;
     if (s.cites?.length) {
-      line += ` <span class="cite-hearsay">Cited there to ${esc(s.cites.join('; '))} ` +
-              `<span class="cite-flag">print source, unverified by us</span></span>`;
+      // "Cited there to …" already says whose citation this is: the wiki's, not
+      // ours. An added "unverified by us" badge claimed a role this project does
+      // not have — it is a reference work, not an authority auditing Games
+      // Workshop. The distinction that matters is kept by the wording and by the
+      // separate styling; it does not need a verdict attached.
+      line += ` <span class="cite-hearsay">Cited there to ${esc(s.cites.join('; '))}</span>`;
     }
     if (s.notes) line += ` <span class="cite-note">${esc(String(s.notes).trim())}</span>`;
     return line;
@@ -296,11 +300,10 @@ const NOTE = (what) =>
     3: 'Fandom — leads only',
   };
   let md = `# Bibliography\n\n${NOTE('Every source retrieved during this project.')}`;
-  md += 'Each entry records **what was actually read, and when.** Where a wiki cites a '
-     + 'printed codex, rulebook or novel, that citation is reproduced and labelled as '
-     + '*unverified by us* — those books are print-only and were not consulted. '
-     + 'The distinction is deliberate: this codex can confirm what a wiki claims, never '
-     + 'whether the wiki is right.\n\n';
+  md += 'Each entry records **what was read, and when**. Where a wiki cites a printed '
+     + 'codex, rulebook or novel, that citation is reproduced under *Cited there to* — '
+     + 'it is the wiki\'s reference, not ours, and those books are print-only and were '
+     + 'not consulted.\n\n';
   if (!keys.length) md += '_No sources retrieved yet._\n';
   for (const key of keys) {
     const s = sources[key];
@@ -308,7 +311,7 @@ const NOTE = (what) =>
     md += `**${s.what}** · ${TIER[s.tier] ?? `tier ${s.tier}`} · retrieved ${s.retrieved ?? '—'}\n\n`;
     if (s.url) md += `<${s.url}>\n\n`;
     if (s.cites?.length) {
-      md += `*Cited there to (print, unverified by us):*\n\n`;
+      md += `*Cited there to:*\n\n`;
       for (const c of s.cites) md += `- ${c}\n`;
       md += '\n';
     }

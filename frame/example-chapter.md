@@ -75,8 +75,8 @@ speculate, and it does not reach for a plausible figure to round the paragraph o
 
 `node frame/build.mjs` then rewrites the page for MkDocs: `[[...]]` becomes real
 relative links, and `[^lex-astronomican]` gains a generated footnote definition that
-states what was read and when — and separately, labelled *unverified by us*, whichever
-print source the wiki cites.
+states what was read and when — and separately, under *Cited there to*, whichever
+print source the wiki gives.
 
 ## Two conventions worth stating explicitly
 
