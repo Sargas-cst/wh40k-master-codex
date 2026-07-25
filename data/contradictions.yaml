@@ -934,3 +934,29 @@ macragge-battle-date:
     - claim: 746.M41.
       source: lex-behemoth
       marker: "citation 4 — Planetstrike, pg. 54"
+
+who-rules-the-imperium:
+  kind: edition
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: lex-senatorum-imperialis
+  summary: >
+    Whether supreme authority in the Imperium now rests with the twelve High Lords or with
+    Roboute Guilliman as Imperial Regent. The article states that the High Lordship was the
+    most powerful position until Guilliman declared himself the Emperor's Living Voice, and
+    also that the High Lords retain their position and task of ruling in the Emperor's name
+    after his return.
+  reverification_note: >
+    Lexicanum flags this passage itself with a conflicting-sources marker. The two readings
+    carry different citations — Dark Imperium for the Regency superseding them, Imperium
+    Maledictum for their continuing rule — so this is two print sources disagreeing rather
+    than one article contradicting itself.
+  handling: >
+    Surfaced in IV.T1.Ch1. Both readings stated; neither chosen. Revisit if a later Chapter
+    on the Indomitus period turns up a source that settles precedence.
+  positions:
+    - claim: Guilliman as Imperial Regent supersedes the High Lords.
+      source: lex-senatorum-imperialis
+    - claim: The High Lords continue to rule the Imperium after his return.
+      source: lex-senatorum-imperialis

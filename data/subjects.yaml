@@ -529,7 +529,7 @@ age-of-apostasy:
     M36. Goge Vandire held the Administratum and the Ecclesiarchy at once for seventy years, and
     recruited the Daughters of the Emperor with a force-field trinket he later boasted about. It
     ended when a Custodian showed one of them the Golden Throne.
-  aliases: [Age of Apostasy, Reign of Blood, Goge Vandire, Daughters of the Emperor, Brides of the Emperor, Sebastian Thor, Confederation of Light, San Leor]
+  aliases: [Age of Apostasy, Reign of Blood, Goge Vandire, Gastaph Hediatrix, Daughters of the Emperor, Brides of the Emperor, Sebastian Thor, Confederation of Light, San Leor]
   see_also: [nova-terra-interregnum, the-golden-throne]
 
 black-crusades:
@@ -630,3 +630,59 @@ fall-of-the-eldar:
     setting's history, and the brief's table of contents gives it no Chapter of its own.
   aliases: [the Fall, Fall of the Aeldari, the birth of Slaanesh, Aeldari decadence]
   see_also: [age-of-strife, regions-of-ruin, the-young-races]
+
+senatorum-imperialis:
+  name: the Senatorum Imperialis
+  gloss: >
+    The Council of the High Lords of Terra — twelve office-holders, nine of them
+    effectively permanent, who interpret and enact the will of a silent Emperor.
+  aliases: [High Lords of Terra, the High Twelve, Council of the High Lords, Great Chamber, Primarch's Scourge, Hexarchy, Chancellor of the Imperial Council]
+
+the-beheading:
+  name: the Beheading
+  gloss: >
+    The coup of 546.M32, in which Grand Master of Assassins Drakan Vangorich killed every
+    High Lord and ruled the Imperium for a century through a puppet cabinet.
+  aliases: [Drakan Vangorich, War of the Beast, Koorland, Maximus Thane, puppet cabinet, War Council, Council of Terra]
+  see_also: [senatorum-imperialis]
+
+the-administratum:
+  name: the Adeptus Administratum
+  gloss: >
+    The Imperium's bureaucracy — billions of hereditary clerks recording tithes and
+    censuses on vellum, in departments large enough to have been lost and forgotten.
+  aliases: [Adeptus Administratum, Scriptists, Enumerators, Departmento Munitorum, Departmento Exacta, Historical Revision Unit, Logis Strategos, Master of the Administratum, vellum]
+  see_also: [senatorum-imperialis]
+
+adeptus-arbites:
+  name: the Adeptus Arbites
+  gloss: >
+    The Adeptus Terra's police, enforcing the Lex Imperialis rather than local law. Their
+    common duty is confirming that each world's Governor pays the tithe.
+  aliases: [Adeptus Arbites, Arbites, Arbitrator, Lex Imperialis, Book of Judgement, Injuncta Cardinal, Grand Provost Marshal, Precinct Fortress]
+  see_also: [the-administratum]
+
+rogue-traders:
+  name: Rogue Traders
+  gloss: >
+    Holders of a hereditary Warrant of Trade, licensed to travel beyond the Imperium and
+    to deal with xenos and non-Imperial humans as they see fit.
+  aliases: [Rogue Trader, Warrant of Trade, Jan van Yastobaal]
+  see_also: [adeptus-arbites]
+
+officio-assassinorum-org:
+  name: the Officio Assassinorum
+  gloss: >
+    A subdivision of the Administratum whose head sits on the Senatorum, and whose
+    assassins may be deployed only on a two-thirds majority of the High Lords.
+  aliases: [Office of Assassins, Grand Master of Assassins, Lord Assassins, two-thirds majority, Maerorus Temple]
+  see_also: [the-clades, senatorum-imperialis, the-administratum]
+
+the-clades:
+  name: the Assassin Clades
+  gloss: >
+    The six extant temples of the Officio — Vindicare, Eversor, Culexus, Callidus, Vanus
+    and Venenum — each specialising in a distinct method, plus the Adamus, whose current
+    status the Imperium's own records cannot establish.
+  aliases: [Vindicare, Eversor, Culexus, Callidus, Vanus, Venenum, Adamus Temple, Exitus Rifle, Animus Speculum, polymorphine, infocyte, bio-meltdown, cryo-crypt, Meh'Lindi, Tormentius, Fon Tariel]
+  see_also: [officio-assassinorum-org]

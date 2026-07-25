@@ -2126,3 +2126,173 @@ lex-leviathan:
     36 KB. Reached only after "Fourth Tyrannic War" resolved to a section anchor and two guessed
     titles failed; the plain title works. Used here for the Fourth Tyrannic War only — Leviathan's
     earlier campaigns are Volume VI Title 4's.
+
+lex-senatorum-imperialis:
+  tier: 2
+  what: Lexicanum article "Senatorum Imperialis"
+  url: https://wh40k.lexicanum.com/wiki/Senatorum_Imperialis
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-senatorum-imperialis.wikitext
+  cites:
+    - "Codex Imperialis (Background Book), pg. 14"                # {{Fn|1}}
+    - "Codex: Sisters of Battle (2nd Edition), pg. 165"           # {{Fn|3c}}
+    - "Battlefleet Gothic 41st Millennium, pg. 86"                # {{Fn|6}}
+    - "Warhammer 40,000 5th Edition Rulebook, pg. 124"            # {{Fn|9}}
+    - "White Dwarf 140 (UK), pg. 50"                              # {{Fn|10}}
+    - "Warhammer 40,000 6th Edition Rulebook, pg. 403"            # {{Fn|17}}
+    - "I Am Slaughter (Novel), Chapter 3"                         # {{Fn|18}}
+    - "The Last Son of Dorn (Novel), Chapters 2-3"                # {{Fn|19}}
+    - "Gathering Storm: Rise of the Primarch, Part 3"             # {{Fn|24}}
+    - "Dark Imperium (Novel), Chapters 12 and 20"                 # {{Fn|25a}}{{Fn|25b}}
+    - "Watchers of the Throne: The Emperor's Legion (Novel)"      # {{Fn|26}}
+    - "Valdor: Birth of the Imperium (Novel), Chapter 7"          # {{Fn|33}}
+    - "Imperium Maledictum, pgs. 235-236"                         # {{Fn|40}}
+    - "Ashes of the Imperium (Novel), Chapter 18"                 # {{Fn|44a}}
+  notes: >
+    "High Lords of Terra" redirects here. The article carries an uncited-sources flag
+    and one incomplete citation marker. It also flags its own account of who holds
+    supreme authority after Guilliman's return as conflicting — recorded here as
+    who-rules-the-imperium.
+
+lex-hexarchy:
+  tier: 2
+  what: Lexicanum article "Hexarchy"
+  url: https://wh40k.lexicanum.com/wiki/Hexarchy
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-hexarchy.wikitext
+  cites:
+    - "Watchers of the Throne: The Regent's Shadow (Novel), Chapters 20-28"   # {{Fn|1a-1d}}
+  notes: >
+    Short article, single source, carrying a spoiler banner. Every claim in it traces
+    to one novel.
+
+lex-adeptus-administratum:
+  tier: 2
+  what: Lexicanum article "Adeptus Administratum"
+  url: https://wh40k.lexicanum.com/wiki/Adeptus_Administratum
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-adeptus-administratum.wikitext
+  cites:
+    - "Codex Imperialis (Background Book)"                        # {{Fn|1a}}{{Fn|1b}}
+    - "Warhammer 40,000: Rogue Trader (1987)"                     # {{Fn|2}}
+    - "Dark Heresy Core Rulebook"                                 # {{Fn|4a}}{{Fn|4b}}
+    - "Imperial Munitorum Manual (Background Book)"               # {{Fn|7a}}{{Fn|7b}}
+    - "Warhammer 40,000 6th Edition Rulebook"                     # {{Fn|8}}
+  notes: >
+    "Administratum" redirects here. Lists the Officio Assassinorum among its own
+    divisions, which sits oddly beside the Senatorum article treating the Grand Master
+    of Assassins as an independent High Lord — recorded as assassinorum-chain-of-command.
+
+lex-adeptus-arbites:
+  tier: 2
+  what: Lexicanum article "Adeptus Arbites"
+  url: https://wh40k.lexicanum.com/wiki/Adeptus_Arbites
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-adeptus-arbites.wikitext
+  cites:
+    - "Warhammer 40,000: Rogue Trader"                            # {{Fn|1}}
+    - "Codex Imperialis (Background Book)"                        # {{Fn|2}}
+    - "Nemesis (Novel)"                                           # {{Fn|11}}
+    - "Dark Heresy: Book of Judgement"                            # {{Fn|14}}
+    - "Kill Team: Soulshackle"                                    # {{Fn|25a}}
+    - "Hive: Part I (Novel)"                                      # {{Fn|28a}}{{Fn|28b}}
+
+lex-rogue-trader:
+  tier: 2
+  what: Lexicanum article "Rogue Trader"
+  url: https://wh40k.lexicanum.com/wiki/Rogue_Trader
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-rogue-trader.wikitext
+  cites:
+    - "Rogue Trader Rulebook"                                     # {{Fn|1b}}{{Fn|1d}}{{Fn|1k}}
+    - "Warhammer 40,000: Rogue Trader (1987)"                     # {{Fn|2}}
+    - "Farseer (Novel)"                                           # {{Fn|4}}
+    - "Tallarn: Ironclad (Novella)"                               # {{Fn|39}}
+
+lex-lex-imperialis:
+  tier: 2
+  what: Lexicanum article "Lex Imperialis"
+  url: https://wh40k.lexicanum.com/wiki/Lex_Imperialis
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-lex-imperialis.wikitext
+  cites:
+    - "Dark Heresy: Book of Judgement"
+
+lex-adeptus-terra:
+  tier: 2
+  what: Lexicanum article "Adeptus Terra"
+  url: https://wh40k.lexicanum.com/wiki/Adeptus_Terra
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-adeptus-terra.wikitext
+  cites:
+    - "Codex Imperialis (Background Book)"
+
+lex-officio-assassinorum:
+  tier: 2
+  what: Lexicanum article "Officio Assassinorum"
+  url: https://wh40k.lexicanum.com/wiki/Officio_Assassinorum
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-officio-assassinorum.wikitext
+  cites:
+    - "Codex Imperialis (Background Book)"                        # {{Fn|1}}
+    - "Warhammer 40,000: Rogue Trader"                            # {{Fn|2}}
+    - "Nemesis (Novel)"                                           # {{Fn|3}}
+    - "Inquisitor Rulebook, Part Two"                             # {{Fn|4}}
+    - "Deus ex Mechanicus (Short Story)"                          # {{Fn|8}}
+    - "Seventh Retribution (Novel)"                               # {{Fn|9}}
+    - "Dataslate: Officio Assassinorum"                           # {{Fn|11b}}
+    - "Assassinorum: Execution Force (Game)"                      # {{Fn|16}}
+    - "Codex: Assassins (2nd Edition)"                            # {{Fn|18b}}
+    - "Warhammer 40,000: The Ultimate Guide"                      # {{Fn|31}}
+  notes: >
+    States both that the Officio is a subdivision of the Administratum and that its head
+    always sits on the Senatorum, which settles what looked like a conflict between the
+    Administratum and Senatorum articles taken separately.
+
+lex-vindicare-temple:
+  tier: 2
+  what: Lexicanum article "Vindicare Temple"
+  url: https://wh40k.lexicanum.com/wiki/Vindicare_Temple
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-vindicare-temple.wikitext
+  cites: ["Codex: Assassins (2nd Edition)"]
+
+lex-eversor-temple:
+  tier: 2
+  what: Lexicanum article "Eversor Temple"
+  url: https://wh40k.lexicanum.com/wiki/Eversor_Temple
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-eversor-temple.wikitext
+  cites: ["Codex: Assassins (2nd Edition)"]
+
+lex-culexus-temple:
+  tier: 2
+  what: Lexicanum article "Culexus Temple"
+  url: https://wh40k.lexicanum.com/wiki/Culexus_Temple
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-culexus-temple.wikitext
+  cites: ["Codex: Assassins (2nd Edition)"]
+
+lex-callidus-temple:
+  tier: 2
+  what: Lexicanum article "Callidus Temple"
+  url: https://wh40k.lexicanum.com/wiki/Callidus_Temple
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-callidus-temple.wikitext
+  cites: ["Codex: Assassins (2nd Edition)"]
+
+lex-vanus-temple:
+  tier: 2
+  what: Lexicanum article "Vanus Temple"
+  url: https://wh40k.lexicanum.com/wiki/Vanus_Temple
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-vanus-temple.wikitext
+  cites: ["Nemesis (Novel)"]
+
+lex-venenum-temple:
+  tier: 2
+  what: Lexicanum article "Venenum Temple"
+  url: https://wh40k.lexicanum.com/wiki/Venenum_Temple
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-venenum-temple.wikitext
+  cites: ["Nemesis (Novel)"]

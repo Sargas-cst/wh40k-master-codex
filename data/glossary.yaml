@@ -1097,8 +1097,41 @@ skitarii:
 
 officio-assassinorum:
   term: the Officio Assassinorum
+  mark: [Grand Master of Assassins]
   definition: >
     The Imperium's institution of sanctioned murder, based on Terra with its temples' locations
     kept secret. It failed to kill the Voice of the Emperor during the Age of Apostasy.
   category: institutions
   sources: [lex-terra, lex-age-of-apostasy]
+
+ecclesiarch:
+  term: the Ecclesiarch
+  definition: >
+    Head of the Adeptus Ministorum, and by tradition always one of the High Lords of Terra.
+    The Ecclesiarchy is not part of the Adeptus Terra but a wholly separate organisation.
+  variants: [Ecclesiarch of the Adeptus Ministorum]
+  category: institution
+  sources: [lex-ecclesiarchy]
+  full_treatment: IV.T3.Ch8
+
+cardinal:
+  term: Cardinal
+  definition: >
+    The rank below the Ecclesiarch, several thousand strong. Each heads a diocese —
+    generally an entire Imperial world — and collectively the Cardinals form the Holy
+    Synod, the Ministorum's ruling body.
+  variants: [Cardinals, Holy Synod, Cardinal World]
+  category: rank
+  sources: [lex-ecclesiarchy]
+  full_treatment: IV.T3.Ch8
+
+adeptus-terra:
+  term: the Adeptus Terra
+  definition: >
+    The collective priesthood of Terra — the departments that administer the Imperium from
+    the Throneworld, of which the Administratum is by far the largest. The Ecclesiarchy is
+    deliberately not part of it.
+  variants: [Priesthood of Terra]
+  category: institution
+  sources: [lex-adeptus-terra]
+  full_treatment: IV.T1.Ch2

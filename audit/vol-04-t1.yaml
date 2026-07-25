@@ -1,0 +1,103 @@
+title: "Volume IV, Title 1 — High Imperial Governance & Bureaucracy"
+chapters: [IV.T1.Ch1, IV.T1.Ch2, IV.T1.Ch3]
+retrieved_this_title:
+  - lex-senatorum-imperialis
+  - lex-hexarchy
+  - lex-adeptus-administratum
+  - lex-adeptus-arbites
+  - lex-rogue-trader
+  - lex-lex-imperialis
+  - lex-adeptus-terra
+  - lex-officio-assassinorum
+  - lex-vindicare-temple
+  - lex-eversor-temple
+  - lex-culexus-temple
+  - lex-callidus-temple
+  - lex-vanus-temple
+  - lex-venenum-temple
+redirects_found:
+  - "High Lords of Terra -> Senatorum Imperialis"
+  - "Administratum -> Adeptus Administratum"
+
+section_counts:
+  IV.T1.Ch1: 4
+  IV.T1.Ch2: 4
+  IV.T1.Ch3: 5
+  note: >
+    All within the brief's 2-5. Ch3 takes five because the Officio's seven clades cannot be
+    compressed further without either merging temples that share no method or dropping the
+    Adamus and Maerorus, which are the Chapter's most interesting entries.
+
+contradictions:
+  registered:
+    - key: who-rules-the-imperium
+      kind: edition
+      why: >
+        Lexicanum flags the passage itself. Dark Imperium has Guilliman as Imperial Regent
+        superseding the High Lords; Imperium Maledictum has them continuing to rule after
+        his return. Surfaced in IV.T1.Ch1 §4.
+  registered_then_withdrawn:
+    - key: assassinorum-chain-of-command
+      why: >
+        Registered while writing IV.T1.Ch2 on the apparent conflict between the
+        Administratum article, which lists the Officio among its divisions, and the
+        Senatorum article, which seats the Grand Master of Assassins as a High Lord in his
+        own right. Reading lex-officio-assassinorum for Ch3 showed the two are not in
+        conflict: that article states both facts in consecutive sentences. The entry was
+        deleted and the Ch2 callout rewritten as plain prose stating the arrangement.
+        Caught before the Title was committed.
+
+subjects_registered:
+  - senatorum-imperialis
+  - the-beheading
+  - the-administratum
+  - adeptus-arbites
+  - rogue-traders
+  - officio-assassinorum-org
+  - the-clades
+glossary_added:
+  - ecclesiarch
+  - cardinal
+  - adeptus-terra
+alias_corrections:
+  - >
+    "Goge Vandire" and "Reign of Blood" were initially given to the-beheading; they belong
+    to age-of-apostasy, which already held them. Moved back, and "Gastaph Hediatrix" added
+    there since that is where he acts.
+  - >
+    "Grand Master of Assassins" added to the officio-assassinorum glossary entry's mark
+    list; "War Council" and "Council of Terra" to the-beheading.
+
+tooling_defects_found_and_fixed:
+  - defect: >
+      namedTermCandidates treated the text BETWEEN two adjacent bold spans as a span of its
+      own. "…individual Chapters.** Some **operate as…" yielded the candidate "Some", which
+      the coverage check then reported against 37 Chapters.
+    fix: >
+      Reject any capture with whitespace immediately inside the asterisks — Markdown does
+      not read "** x **" as emphasis, so a real span never has it. This subsumes the "At
+      the" case the trailing-connective rule was added for in Volume III.
+  - defect: >
+      The new Pass 5 possessive check fired on IV.T1.Ch1 for "The Imperial Creed & the Cult
+      Imperialis's" — the same defect fixed across 41 sites earlier the same day.
+    fix: Rewritten as "treated in [[IV.T3.Ch8]]". The check did its job on first use.
+
+process_errors:
+  - >
+    IV.T1.Ch1 was first written to book/vol-04-imperial-codex-the-imperium-of-man/, a
+    directory that does not exist in the scaffold — the Write tool created it. Caught by the
+    duplicate-Chapter-id check, moved to the real path, and the stray directory removed.
+  - >
+    A cross-reference to [[III.T3.Ch18]] was written for Konrad Curze's death. Title 3 of
+    Volume III ends at Ch17; the Great Scouring is III.T4.Ch18. Caught by the link resolver.
+
+verification:
+  validator: OK
+  warnings: 10
+  warning_note: >
+    Nine pre-existing, plus lex-adeptus-terra now supporting the adeptus-terra glossary
+    entry without yet being cited in prose — the same expected class as the other five.
+  strict_build: clean
+  rendered_check: >
+    All three pages read from build/site. No leaked link syntax, citation markers or bold
+    markup. 36 cross-references, 39 tooltips and 128 footnote references resolve.

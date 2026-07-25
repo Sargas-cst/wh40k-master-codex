@@ -19,6 +19,24 @@
       "file": "sources/raw/lex-abaddon-the-despoiler.wikitext",
       "redirect_to": "Ezekyle Abaddon"
     },
+    "lex-adeptus-administratum": {
+      "title": "Adeptus Administratum",
+      "url": "https://wh40k.lexicanum.com/wiki/Adeptus_Administratum",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 11278,
+      "sha256": "b6d0a3b962e31e83e21f74cf37c3dc3a7a4b51393af685c583c2fd3fd1a578f6",
+      "file": "sources/raw/lex-adeptus-administratum.wikitext"
+    },
+    "lex-adeptus-arbites": {
+      "title": "Adeptus Arbites",
+      "url": "https://wh40k.lexicanum.com/wiki/Adeptus_Arbites",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 15649,
+      "sha256": "ba0ee0afa6b4aa4fc08fa64e69f3c9be8e7e474e6edfac44a70a7c94a2f9026c",
+      "file": "sources/raw/lex-adeptus-arbites.wikitext"
+    },
     "lex-adeptus-astra-telepathica": {
       "title": "Adeptus Astra Telepathica",
       "url": "https://wh40k.lexicanum.com/wiki/Adeptus_Astra_Telepathica",
@@ -36,6 +54,25 @@
       "bytes": 34502,
       "sha256": "1795cd98e10684c3812f8b7c3597b6ce8d9d4677a7254465a0e2f42c0905d409",
       "file": "sources/raw/lex-adeptus-mechanicus.wikitext"
+    },
+    "lex-adeptus-terra": {
+      "title": "Adeptus Terra",
+      "url": "https://wh40k.lexicanum.com/wiki/Adeptus_Terra",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 3392,
+      "sha256": "9b654067ae6ff5991fb6a71f33acdaf04ba363ada0ea312cf5d9362263cf748e",
+      "file": "sources/raw/lex-adeptus-terra.wikitext"
+    },
+    "lex-administratum": {
+      "title": "Administratum",
+      "url": "https://wh40k.lexicanum.com/wiki/Administratum",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 35,
+      "sha256": "470843b0953c297128ca8b42274a485ed32df393e77803ec859e93ea41ff75c2",
+      "file": "sources/raw/lex-administratum.wikitext",
+      "redirect_to": "Adeptus Administratum"
     },
     "lex-aeldari-mythology": {
       "title": "Aeldari Mythology",
@@ -328,6 +365,15 @@
       "sha256": "a500eccdce4eb5ca7f70db92c71ac51012bcf325cb8556fc5fb4ae746c392c74",
       "file": "sources/raw/lex-calastar.wikitext"
     },
+    "lex-callidus-temple": {
+      "title": "Callidus Temple",
+      "url": "https://wh40k.lexicanum.com/wiki/Callidus_Temple",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 10425,
+      "sha256": "87cd39c3a2e21426dba5c12072ebc624b11675f2cfde842de147deefa750768a",
+      "file": "sources/raw/lex-callidus-temple.wikitext"
+    },
     "lex-carcharodons": {
       "title": "Carcharodons",
       "url": "https://wh40k.lexicanum.com/wiki/Carcharodons",
@@ -436,6 +482,15 @@
       "bytes": 43991,
       "sha256": "39e3a20bac21cbbc753cfa88c74ca62aa69f800c4ace2d5c5b902d1c6000c8b6",
       "file": "sources/raw/lex-crimson-fists.wikitext"
+    },
+    "lex-culexus-temple": {
+      "title": "Culexus Temple",
+      "url": "https://wh40k.lexicanum.com/wiki/Culexus_Temple",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 6231,
+      "sha256": "28381321f53cf31b2c9ae1e8eedf6d9f0795b992b8bfce46023f147293124885",
+      "file": "sources/raw/lex-culexus-temple.wikitext"
     },
     "lex-cybernetic-revolt": {
       "title": "Cybernetic Revolt",
@@ -592,6 +647,15 @@
       "sha256": "6f1cfc6a0c7ea4287a4852110850740c9d91393b820bc74605b4e38d15a8d904",
       "file": "sources/raw/lex-enslavers.wikitext",
       "redirect_to": "Enslaver"
+    },
+    "lex-eversor-temple": {
+      "title": "Eversor Temple",
+      "url": "https://wh40k.lexicanum.com/wiki/Eversor_Temple",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 15401,
+      "sha256": "38ab8eb90be5271923cfb99d488ce913ec9d919c119a00ed2b4fd5461c062562",
+      "file": "sources/raw/lex-eversor-temple.wikitext"
     },
     "lex-exorcists": {
       "title": "Exorcists",
@@ -794,6 +858,15 @@
       "file": "sources/raw/lex-harlequins.wikitext",
       "redirect_to": "Harlequin"
     },
+    "lex-hexarchy": {
+      "title": "Hexarchy",
+      "url": "https://wh40k.lexicanum.com/wiki/Hexarchy",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 1664,
+      "sha256": "ed30a87e41c1e6a3733292e9de665e428878b2932c90f9f71cf1123bda7b183b",
+      "file": "sources/raw/lex-hexarchy.wikitext"
+    },
     "lex-high-gothic": {
       "title": "High Gothic",
       "url": "https://wh40k.lexicanum.com/wiki/High_Gothic",
@@ -802,6 +875,16 @@
       "bytes": 4652,
       "sha256": "c3e42935bc74bcb09429c2582697ee2979f22284513f814c88a3a9124593ffab",
       "file": "sources/raw/lex-high-gothic.wikitext"
+    },
+    "lex-high-lords-of-terra": {
+      "title": "High Lords of Terra",
+      "url": "https://wh40k.lexicanum.com/wiki/High_Lords_of_Terra",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 34,
+      "sha256": "2d6e6d50ab0597db76ecd08f9fe52cce79449ded8e68bad753fe23d97eb6c76d",
+      "file": "sources/raw/lex-high-lords-of-terra.wikitext",
+      "redirect_to": "Senatorum Imperialis"
     },
     "lex-hive-fleet-behemoth": {
       "title": "Hive Fleet Behemoth",
@@ -1087,6 +1170,15 @@
       "sha256": "9df59899485a32de280dd821ddcb09615384c53950c99e0ec9358d94a28aa901",
       "file": "sources/raw/lex-leviathan.wikitext"
     },
+    "lex-lex-imperialis": {
+      "title": "Lex Imperialis",
+      "url": "https://wh40k.lexicanum.com/wiki/Lex_Imperialis",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 3380,
+      "sha256": "460c98ed3923983606873c96459c696bc309e899a2243306a2a98b1d69222f46",
+      "file": "sources/raw/lex-lex-imperialis.wikitext"
+    },
     "lex-low-gothic": {
       "title": "Low Gothic",
       "url": "https://wh40k.lexicanum.com/wiki/Low_Gothic",
@@ -1300,6 +1392,15 @@
       "sha256": "366baa438e0b6cbde36603f878994659016dc7a6405dac44af47aea9e247ac59",
       "file": "sources/raw/lex-nova-terra-interregnum.wikitext"
     },
+    "lex-officio-assassinorum": {
+      "title": "Officio Assassinorum",
+      "url": "https://wh40k.lexicanum.com/wiki/Officio_Assassinorum",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 26058,
+      "sha256": "22604df83588a9d556c18756d46c095d0228f35daa9b1298d7d2ab2e8595ae27",
+      "file": "sources/raw/lex-officio-assassinorum.wikitext"
+    },
     "lex-old-ones": {
       "title": "Old Ones",
       "url": "https://wh40k.lexicanum.com/wiki/Old_Ones",
@@ -1505,6 +1606,15 @@
       "sha256": "5018bc0e483aceac58d0451b6760168dd12a0b288f71870b6cfb7a990fb84c53",
       "file": "sources/raw/lex-roboute-guilliman.wikitext"
     },
+    "lex-rogue-trader": {
+      "title": "Rogue Trader",
+      "url": "https://wh40k.lexicanum.com/wiki/Rogue_Trader",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 18162,
+      "sha256": "6160ae0f05f413f02b515d1e5d654b424833f81b8bd656f9deed4ed3a32e4bd3",
+      "file": "sources/raw/lex-rogue-trader.wikitext"
+    },
     "lex-salamanders": {
       "title": "Salamanders",
       "url": "https://wh40k.lexicanum.com/wiki/Salamanders",
@@ -1624,6 +1734,15 @@
       "sha256": "aa7883df64417257262fb03e0018bfb999bab995073514f341b3ae7e9eb37c05",
       "file": "sources/raw/lex-segmentum-ultima.wikitext",
       "redirect_to": "Ultima Segmentum"
+    },
+    "lex-senatorum-imperialis": {
+      "title": "Senatorum Imperialis",
+      "url": "https://wh40k.lexicanum.com/wiki/Senatorum_Imperialis",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 27110,
+      "sha256": "5075d99d59f0e879b2bf652d89bd37a565b78924bb60ab1a25b2259a5baaf168",
+      "file": "sources/raw/lex-senatorum-imperialis.wikitext"
     },
     "lex-siege-of-terra": {
       "title": "Siege of Terra",
@@ -1918,6 +2037,15 @@
       "file": "sources/raw/lex-untouchable.wikitext",
       "redirect_to": "Blank"
     },
+    "lex-vanus-temple": {
+      "title": "Vanus Temple",
+      "url": "https://wh40k.lexicanum.com/wiki/Vanus_Temple",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 8745,
+      "sha256": "24dabb080bbf7d58a6e60080c74dde425f5adccc647d3368f099c596e70afc68",
+      "file": "sources/raw/lex-vanus-temple.wikitext"
+    },
     "lex-vaul": {
       "title": "Vaul",
       "url": "https://wh40k.lexicanum.com/wiki/Vaul",
@@ -1936,6 +2064,15 @@
       "sha256": "b123d91db1f9e7d50a9f2891f39de5ecdc00948df7b2c7e062d342e9f02b4e21",
       "file": "sources/raw/lex-veil.wikitext"
     },
+    "lex-venenum-temple": {
+      "title": "Venenum Temple",
+      "url": "https://wh40k.lexicanum.com/wiki/Venenum_Temple",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 2349,
+      "sha256": "8722bd67f27b861acbbc4341dfbd7283520b8e0240365f5cb236315ee48083cd",
+      "file": "sources/raw/lex-venenum-temple.wikitext"
+    },
     "lex-vigilus": {
       "title": "Vigilus",
       "url": "https://wh40k.lexicanum.com/wiki/Vigilus",
@@ -1944,6 +2081,15 @@
       "bytes": 18041,
       "sha256": "7476214cdab2a8abe27b778ad64e219f443d8835236dfd898be9fcc69972f358",
       "file": "sources/raw/lex-vigilus.wikitext"
+    },
+    "lex-vindicare-temple": {
+      "title": "Vindicare Temple",
+      "url": "https://wh40k.lexicanum.com/wiki/Vindicare_Temple",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 9402,
+      "sha256": "cc025a93b59bbabe6a548dc75795d3ab7ce8f6dc59a04f5e70c071794c85f4f1",
+      "file": "sources/raw/lex-vindicare-temple.wikitext"
     },
     "lex-war-in-heaven": {
       "title": "War in Heaven",

@@ -398,6 +398,12 @@ const CONNECTIVE = new Set(['of', 'the', 'and', 'to', 'in', 'for']);
 export function namedTermCandidates(body) {
   const out = new Set();
   for (const m of body.matchAll(/\*\*([^*\n]{3,60})\*\*/g)) {
+    // Text BETWEEN two adjacent bold spans looks identical to a span: in
+    // "…individual Chapters.** Some **operate as…" the capture is " Some ".
+    // The tell is the whitespace just inside the asterisks — Markdown does not
+    // read "** x **" as emphasis, so a real span never has it. This subsumes the
+    // "At the" case that the trailing-connective rule below was added for.
+    if (/^\s|\s$/.test(m[1])) continue;
     const term = m[1].trim().replace(/^(?:the|a|an)\s+/i, '').replace(/[.,;:!?'"]+$/, '').trim();
     if (term.length < 4) continue;
     if (!/^[A-Z]/.test(term)) continue;          // emphasis, not a name
