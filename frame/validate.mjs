@@ -486,11 +486,18 @@ let undefinedTerms = [];
   const nonTerms = existsSync(nonTermsPath) ? loadYaml(nonTermsPath) : {};
   const waived = new Set(Object.keys(nonTerms).map((k) => k.toLowerCase()));
 
+  // Registry names are compared with their leading article stripped, because the
+  // candidates are. Without that, the subject "the Silent King" failed to match the
+  // candidate "Silent King" and the check reported two of its own registered subjects
+  // as undefined.
+  const bare = (s) => String(s).toLowerCase().replace(/^(?:the|a|an)\s+/, '').trim();
   const byForm = glossaryForms(glossary, { variants: true });
-  const known = new Set([...byForm.keys()]);
+  const known = new Set();
+  for (const form of byForm.keys()) { known.add(form); known.add(bare(form)); }
   for (const entry of Object.values(subjects))
     for (const n of [entry?.name, ...(entry?.aliases ?? [])].filter(Boolean)) {
       known.add(String(n).toLowerCase());
+      known.add(bare(n));
     }
 
   const drafted = [...chapters.values()].filter((c) => c.front.status !== 'stub');

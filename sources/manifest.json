@@ -118,6 +118,15 @@
       "sha256": "133a9dabeb4cda5af10fdabe6112d52d4fcef159fddb50206fe1f413ba354e2e",
       "file": "sources/raw/lex-biomancy.wikitext"
     },
+    "lex-biotransference": {
+      "title": "Biotransference",
+      "url": "https://wh40k.lexicanum.com/wiki/Biotransference",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 4154,
+      "sha256": "f18085e961abbc651207816e6e212d898c0969f24ed6946d95c7eff202dd8686",
+      "file": "sources/raw/lex-biotransference.wikitext"
+    },
     "lex-black-legion": {
       "title": "Black Legion",
       "url": "https://wh40k.lexicanum.com/wiki/Black_Legion",
@@ -447,6 +456,25 @@
       "file": "sources/raw/lex-empyrean.wikitext",
       "redirect_to": "Warp"
     },
+    "lex-enslaver": {
+      "title": "Enslaver",
+      "url": "https://wh40k.lexicanum.com/wiki/Enslaver",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 14195,
+      "sha256": "bd02528864a212b5de0f98a5efbd7e07c2b01796a1cb5f9d7ea96a7b5d5aafe2",
+      "file": "sources/raw/lex-enslaver.wikitext"
+    },
+    "lex-enslavers": {
+      "title": "Enslavers",
+      "url": "https://wh40k.lexicanum.com/wiki/Enslavers",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 22,
+      "sha256": "6f1cfc6a0c7ea4287a4852110850740c9d91393b820bc74605b4e38d15a8d904",
+      "file": "sources/raw/lex-enslavers.wikitext",
+      "redirect_to": "Enslaver"
+    },
     "lex-exorcists": {
       "title": "Exorcists",
       "url": "https://wh40k.lexicanum.com/wiki/Exorcists",
@@ -720,6 +748,15 @@
       "sha256": "d01f8714fc245927da161f69c708a4cfc9904794adbc43b015409445d1456259",
       "file": "sources/raw/lex-isha.wikitext"
     },
+    "lex-jokaero": {
+      "title": "Jokaero",
+      "url": "https://wh40k.lexicanum.com/wiki/Jokaero",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 11834,
+      "sha256": "6f837914717b8548c8a0f0acad91bdfafd83149bb63cd88a9e7230945ea1da1e",
+      "file": "sources/raw/lex-jokaero.wikitext"
+    },
     "lex-kaela-mensha-khaine": {
       "title": "Kaela Mensha Khaine",
       "url": "https://wh40k.lexicanum.com/wiki/Kaela_Mensha_Khaine",
@@ -747,6 +784,15 @@
       "bytes": 7743,
       "sha256": "30782a7e7176c312c5830dfeee9a997c696f92b3530e272a2b3a35b597cea6fe",
       "file": "sources/raw/lex-krieg.wikitext"
+    },
+    "lex-krork": {
+      "title": "Krork",
+      "url": "https://wh40k.lexicanum.com/wiki/Krork",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 2077,
+      "sha256": "dda379b6d9f73e85c42d77430fa39c7eb7855e341e641ac5be37f90ebe121b0a",
+      "file": "sources/raw/lex-krork.wikitext"
     },
     "lex-lamenters": {
       "title": "Lamenters",
@@ -857,6 +903,25 @@
       "bytes": 1620,
       "sha256": "a8b778c908bd5ea03856e800dea99aa68edb31e505a9d26fc8cad4d9b53b5a3e",
       "file": "sources/raw/lex-necrodermis.wikitext"
+    },
+    "lex-necron": {
+      "title": "Necron",
+      "url": "https://wh40k.lexicanum.com/wiki/Necron",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 44057,
+      "sha256": "d5d225e50d1a38c1ca494ddd81bf7eed3fdecfb658af45c7920d1c62a0eaafdb",
+      "file": "sources/raw/lex-necron.wikitext"
+    },
+    "lex-necrons": {
+      "title": "Necrons",
+      "url": "https://wh40k.lexicanum.com/wiki/Necrons",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 20,
+      "sha256": "42c1e98de7130b7471fd6b8e0d719d2a15bc3da41f70a2ef416f4fe7b8c6f449",
+      "file": "sources/raw/lex-necrons.wikitext",
+      "redirect_to": "Necron"
     },
     "lex-necrontyr": {
       "title": "Necrontyr",
@@ -1182,6 +1247,34 @@
       "file": "sources/raw/lex-segmentum-ultima.wikitext",
       "redirect_to": "Ultima Segmentum"
     },
+    "lex-silent-king": {
+      "title": "Silent King",
+      "url": "https://wh40k.lexicanum.com/wiki/Silent_King",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 1051,
+      "sha256": "2cc104e0896caa1aa12badc4342990356f7b5932a042ecd5f870f73d6fdc6a7e",
+      "file": "sources/raw/lex-silent-king.wikitext"
+    },
+    "lex-slann": {
+      "title": "Slann",
+      "url": "https://wh40k.lexicanum.com/wiki/Slann",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 20,
+      "sha256": "0559a41ba54d58c4f92efc00e9aebbe537bb6dfd339e19d4d66a850ff8921188",
+      "file": "sources/raw/lex-slann.wikitext",
+      "redirect_to": "Slanni"
+    },
+    "lex-slanni": {
+      "title": "Slanni",
+      "url": "https://wh40k.lexicanum.com/wiki/Slanni",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 12633,
+      "sha256": "3ced4a955fdb9755de29ae12dd6c0dc7dbe804731652dfcbfb0cd7cd7d4c06dd",
+      "file": "sources/raw/lex-slanni.wikitext"
+    },
     "lex-soul": {
       "title": "Soul",
       "url": "https://wh40k.lexicanum.com/wiki/Soul",
@@ -1418,6 +1511,24 @@
       "bytes": 18041,
       "sha256": "7476214cdab2a8abe27b778ad64e219f443d8835236dfd898be9fcc69972f358",
       "file": "sources/raw/lex-vigilus.wikitext"
+    },
+    "lex-war-in-heaven": {
+      "title": "War in Heaven",
+      "url": "https://wh40k.lexicanum.com/wiki/War_in_Heaven",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 265,
+      "sha256": "3b93731601b0103371458513abe130271cd731e8427ce22b73a66909c0397033",
+      "file": "sources/raw/lex-war-in-heaven.wikitext"
+    },
+    "lex-war-in-heaven-necron": {
+      "title": "War in Heaven (Necron)",
+      "url": "https://wh40k.lexicanum.com/wiki/War_in_Heaven_(Necron)",
+      "via": "Special:Export",
+      "retrieved": "2026-07-25",
+      "bytes": 8333,
+      "sha256": "9b9ba12577fb60d086e80a96a3d88143f45ba4d2b4dee5237636ed29385abd8a",
+      "file": "sources/raw/lex-war-in-heaven-necron.wikitext"
     },
     "lex-warhammer-40-000": {
       "title": "Warhammer 40,000",

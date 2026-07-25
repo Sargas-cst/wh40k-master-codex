@@ -1422,3 +1422,156 @@ lex-tyranid:
   notes: >
     Carries a trivia block. Retrieved for a definition only; the Tyranids are Volume VI
     Title 4's subject.
+
+lex-war-in-heaven-necron:
+  tier: 2
+  what: Lexicanum article "War in Heaven (Necron)"
+  url: https://wh40k.lexicanum.com/wiki/War_in_Heaven_(Necron)
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-war-in-heaven-necron.wikitext
+  cites:
+    - "Codex: Necrons (5th Edition), pgs. 6-7"      # {{Fn|1}} — the Triarch's motive, the C'tan pact, the revolt
+    - "Codex: Necrons (3rd Edition), pgs. 24-26"    # {{Fn|5}} — the Halo Stars exile, the Young Races, the Enslaver Plague
+    - "The Infinite and the Divine (Novel), Act 1, Chapter 3"   # {{Fn|6}} — the sixty-five million year figure
+    - "The Twice-Dead King - Reign (Novel), Chapter 1"          # {{Fn|3}} — the Battle of the Sokar Gate
+    - "Codex: Craftworld Eldar (3rd Edition), pg. 17"           # {{Fn|8}} — the Aeldari mythic version
+  notes: >
+    Reached via the "War in Heaven" disambiguation page, which is 265 bytes and holds no
+    article text — the Aeldari mythological version is a separate article, treated in
+    Volume I Title 4. This article's own second mention of the Wars of Secession spells it
+    "Succession"; the linked form and the Necrontyr article both give Secession, so the
+    codex uses that and does not treat a single unlinked typo as a source conflict.
+
+lex-necrontyr:
+  tier: 2
+  what: Lexicanum article "Necrontyr"
+  url: https://wh40k.lexicanum.com/wiki/Necrontyr
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-necrontyr.wikitext
+  cites:
+    - "Codex: Necrons (3rd Edition), pgs. 24-25"    # {{Fn|1}} — the homeworld, tomb-cities, stasis crypts, the exile
+    - "Codex: Necrons (5th Edition)"                # {{Fn|4}} — the Wars of Secession
+    - "The Infinite and the Divine (Novel), Act 2 Chapter 1"    # {{Fn|3c}} — ritual warfare, dying of tumours
+    - "The Infinite and the Divine (Novel), Act 1 Chapter 3"    # {{Fn|3a}} — mortuary cults
+    - "The Infinite and the Divine (Novel), Act 2 Chapter 4"    # {{Fn|3e}} — the pantheon of Solar Gods
+    - "The Infinite and the Divine (Novel), Act 2 Chapter 3"    # {{Fn|3d}} — zodiac hand signs, Crypteks
+  notes: >
+    The Rite of Expiscation and the Onomancers rest on citation 6, which the article gives
+    without a page. Used here because the practice is described in the article's own prose
+    rather than inferred.
+
+lex-biotransference:
+  tier: 2
+  what: Lexicanum article "Biotransference"
+  url: https://wh40k.lexicanum.com/wiki/Biotransference
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-biotransference.wikitext
+  cites:
+    - "Codex: Necrons (8th Edition), pgs. 9-12"     # {{Fn|1a}} — the Deceiver's offer, the biofurnaces, who kept a personality
+    - "Codex: Necrons (8th Edition), pgs. 48-52"    # {{Fn|1b}} — the Destroyers' madness as a driven imperative
+    - "Codex: Necrons (5th Edition), pg. 12"        # {{Fn|2}} — dynasties forced into the process
+    - "Indomitus (Novel), Chapter 3"                # {{Fn|3}} — Necrontyr children made into Warriors
+    - "The Infinite and the Divine (Novel), Act 3 Chapter 7"    # {{Fn|4a}} — Trazyn among the unwilling
+    - "The Infinite and the Divine (Novel), Act 3 Chapter 9"    # {{Fn|4b}} — Orikan among the unwilling
+    - "The Infinite and the Divine (Novel), Act 1, Chapter 4"   # {{Fn|4e}} — memory of the time before
+  notes: >
+    4.1 KB and unusually concrete for deep-history material. The claim that Destroyer madness
+    originates in biotransference is presented by the article as a suggestion, and is
+    reproduced here on those terms rather than as established.
+
+lex-krork:
+  tier: 2
+  what: Lexicanum article "Krork"
+  url: https://wh40k.lexicanum.com/wiki/Krork
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-krork.wikitext
+  cites:
+    - "Codex: Necrons (3rd Edition), pg. 26"        # {{Fn|1a}} — created with the Jokaero to hold the last strongholds
+    - "Codex: Necrons (3rd Edition), pg. 28"        # {{Fn|1b}} — the only Young Race to escape the Nightbringer's fear of death
+    - "Throneworld (Novel), Chapter Six"            # {{Fn|3}} — Harlequin memory of them at the apex of their might
+    - "Inferno! 20 - Deus ex Mechanicus (Short Story)"          # {{Fn|4}} — as plentiful as Humans
+    - "The Infinite and the Divine (Novel), Chapter Three"      # {{Fn|5}} — Trazyn's specimen
+    - "Fabius Bile: Clonelord (Novel), Chapter 21"  # {{Fn|2}} — the twelve-metre specimen Bile speculated was a Krork
+  notes: >
+    2 KB, carries a trivia block. The identification of Bile's specimen with a Krork is the
+    article's own speculation, reproduced here as speculation.
+
+lex-jokaero:
+  tier: 2
+  what: Lexicanum article "Jokaero"
+  url: https://wh40k.lexicanum.com/wiki/Jokaero
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-jokaero.wikitext
+  cites:
+    - "Codex: Necrons (3rd Edition), pgs. 26-27"    # {{Fn|2}} — created in the war's closing days; the network breached
+    - "Warhammer 40,000: Rogue Trader, pgs. 196-197"    # {{Fn|1}} — survival into the Age of the Imperium
+    - "Liber Xenologis, pg. 90"                     # {{Fn|15a}} — Pongo ingenio
+    - "Games Workshop: Jokaero Weaponsmith"         # {{Fn|14}} — miniaturisation, technological feats
+  notes: >
+    Carries a trivia block. The suggestion that the resemblance to Terran orangutans is not
+    coincidental is the article's own, and is reported as such.
+
+lex-slanni:
+  tier: 2
+  what: Lexicanum article "Slanni"
+  url: https://wh40k.lexicanum.com/wiki/Slanni
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-slanni.wikitext
+  cites:
+    - "Warhammer 40,000: Rogue Trader, pgs. 194-196"    # {{Fn|1b}} — Slann as the oldest race, the nurturing programme
+    - "Adeptus Titanicus (2018), pg. 9"             # {{Fn|5}} — a mighty domain before the Aeldari
+    - "Codex Titanicus (1st Edition), pg. 52"       # {{Fn|3a}} — what the Old Slann taught the Eldar
+    - "Codex: Necrons (3rd Edition), pg. 61"        # {{Fn|6}} — The Legacy of the Old Ones
+    - "Warhammer 40,000 4th Edition Rulebook, pg. 139"  # {{Fn|4}} — the Slanni spelling
+  notes: >
+    Carries a trivia block. Its opening sentence gives three mutually exclusive readings of
+    the Slanni's relationship to the Old Ones, each separately cited; recorded as
+    contradiction slanni-old-ones-identity.
+
+lex-enslaver:
+  tier: 2
+  what: Lexicanum article "Enslaver"
+  url: https://wh40k.lexicanum.com/wiki/Enslaver
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-enslaver.wikitext
+  cites:
+    - "Warhammer 40,000: Rogue Trader, pgs. 204-205"    # {{Fn|1}} — anatomy, domination limits, the gateway process, Exterminatus
+    - "Codex: Necrons (3rd Edition), pg. 26"            # {{Fn|3}} — the peaceful Empyrean disturbed; the swarm dying off
+    - "Codex: Necrons (5th Edition), pgs. 4-7"          # {{Fn|8}} — taking what was left of the galaxy
+    - "White Dwarf 292 (UK), pg. 102"                   # {{Fn|2}} — the alternative names, victims as complete puppets
+    - "Liber Xenologis, pg. 156"                        # {{Fn|5a}} — spiritus subjugator
+    - "Deathwatch: Core Rulebook, pg. 316"              # {{Fn|7}} — the Hive Skorpios account
+    - "Deathwatch: The Nemesis Incident, pgs. 2-3"      # {{Fn|10}} — the M36 infestation
+    - "Dark Heresy: Creatures Anathema, pg. 88"         # {{Fn|11}} — corporeal forms can be shot
+    - "Arks of Omen: Abaddon, pgs. 30-37"               # {{Fn|6}} — the assault on the Blackened Tower
+    - "Deathwatch: The Achilus Assault, pg. 64"         # {{Fn|4b}} — genestealer vulnerability, the space hulk pursuit
+  notes: >
+    Carries an uncited-works block and a trivia block. Its claim that the Empyrean was
+    peaceful before the Young Races sits badly with the Old Ones' own doctrine of resisting
+    the Powers of Chaos; recorded as contradiction empyrean-before-the-young-races.
+
+lex-silent-king:
+  tier: 2
+  what: Lexicanum article "Silent King"
+  url: https://wh40k.lexicanum.com/wiki/Silent_King
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-silent-king.wikitext
+  cites:
+    - "White Dwarf January 2020, pg. 28"    # {{Fn|1}} — the office, the silence, the Royal Court, the succession
+  notes: >
+    A short article about the OFFICE rather than its holder — every claim rests on a single
+    White Dwarf page. Szarekh's own acts are cited to the Necron article instead.
+
+lex-necron:
+  tier: 2
+  what: Lexicanum article "Necron"
+  url: https://wh40k.lexicanum.com/wiki/Necron
+  retrieved: 2026-07-25
+  raw: sources/raw/lex-necron.wikitext
+  cites:
+    - "Codex: Necrons (5th Edition), pg. 7"      # {{Fn|4c}} — the revolt, the shattering, the Great Sleep, Szarekh's exile
+    - "Codex: Necrons (5th Edition), pg. 10"     # {{Fn|4e}} — Tomb Worlds lost to malfunction and Eldar raids
+    - "Codex: Necrons (7th Edition), pg. 8"      # {{Fn|8a}} — sixty million years dormant
+  notes: >
+    44 KB, carries a trivia block. Reached after "Necrons" resolved to a redirect. Used here
+    only for the revolt and the Great Sleep; the Necrons as a faction are Volume VI Title 1.

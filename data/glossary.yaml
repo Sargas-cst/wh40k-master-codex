@@ -958,3 +958,32 @@ librarium:
     controlled.
   category: institutions
   sources: [lex-fortress-monastery]
+
+# --- Volume III Title 1 ----------------------------------------------------
+
+the-deceiver:
+  term: the Deceiver
+  definition: >
+    The C'tan that approached Szarekh with the offer of immortality in exchange for the
+    Necrontyr's organic forms, claiming its own race had fought and lost to the Old
+    Ones — a claim the sources do not verify.
+  variants: [Mephet'ran]
+  category: cosmology
+  sources: [lex-biotransference, lex-war-in-heaven-necron]
+
+halo-stars:
+  term: the Halo Stars
+  definition: >
+    The region at the galaxy's edge to which the Necrontyr were driven after losing the
+    first phase of the War in Heaven, and where their hatred generalised from the Old Ones
+    to all life.
+  category: cosmology
+  sources: [lex-war-in-heaven-necron, lex-necrontyr]
+
+solar-gods:
+  term: the Solar Gods
+  definition: >
+    The pantheon the Necrontyr worshipped before they encountered the C'tan — whose
+    half-forgotten forms the first Necrontyr to find the star gods gave them.
+  category: cosmology
+  sources: [lex-necrontyr, lex-war-in-heaven-necron]

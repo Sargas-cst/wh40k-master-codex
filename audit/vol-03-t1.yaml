@@ -1,0 +1,125 @@
+# Audit trail — Volume III, Title 1
+title: "Volume III Title 1 — The War in Heaven (60 Million BC)"
+covers: Chapters 1-5
+depth_band: full
+completed_on: 2026-07-25
+
+retrieval:
+  pages_added_this_pass:
+    - "War_in_Heaven_(Necron)"
+    - Necron
+    - Biotransference
+    - Enslaver
+    - Silent_King
+    - Krork
+    - Jokaero
+    - Slanni
+  already_cached_and_reused:
+    - Old_Ones
+    - Necrontyr
+    - C-tan
+  corrections_during_retrieval:
+    - >
+      "War_in_Heaven" is a disambiguation page of 265 bytes holding no article text — the
+      Necron conflict and the Aeldari myth are separate articles. The historical conflict was
+      fetched under its parenthesised title; the myth belongs to Volume I Title 4.
+    - >
+      "Necrons", "Enslavers" and "Slann" all resolved to redirects; "Bio-transference" does
+      not exist under that spelling. All four were re-fetched under their real titles.
+    - >
+      lex-old-ones had been recorded since Volume I and never cited. It is cited throughout
+      this Title, which clears a standing warning.
+
+chapters:
+  - id: III.T1.Ch1
+    owns: [the-old-ones, the-necrontyr]
+    sections: 4
+    note: >
+      The two powers and the meeting that started the war. The Necrontyr had two motives, not
+      one: grief at the Old Ones' immortality, and the Triarch's need for an external enemy to
+      end the Wars of Secession. The sources give both and reconcile neither.
+  - id: III.T1.Ch2
+    owns: [biotransference]
+    sections: 5
+    note: >
+      The Deceiver's offer, the biofurnaces, and what came out. The price was disclosed and
+      debated for months; what was not disclosed was that the C'tan fed on the discarded
+      souls. Selfhood was fitted by rank, which made a feudal hierarchy permanent hardware.
+  - id: III.T1.Ch3
+    owns: [the-young-races]
+    sections: 4
+    note: >
+      The engineered species, in two generations with different design criteria. Includes the
+      sources' listing of Mankind among the Old Ones' creations, which is set out plainly
+      because it contradicts the Imperium's account of itself.
+  - id: III.T1.Ch4
+    owns: [the-enslavers]
+    sections: 5
+    note: >
+      The Old Ones lost to their own weapon. The Enslavers are treated in full here — anatomy,
+      the fifty-metre command range, and the fifty-to-seventy-five-hour conversion of a psyker
+      into a Warp Gate — because the mechanism is what makes a killable enemy an extinction event.
+  - id: III.T1.Ch5
+    owns: [the-silent-king, the-great-sleep]
+    sections: 4
+    note: >
+      Szarekh finished the war for his masters before turning on them, then destroyed the
+      command protocols that made him ruler and exiled himself. The Great Sleep had a set
+      term, which is why the Imperium keeps finding Tomb Worlds.
+
+contradictions_opened:
+  - id: war-in-heaven-date
+    kind: numerical
+    note: Sixty-five or sixty million years before M41 — a span between two published figures.
+  - id: slanni-old-ones-identity
+    kind: undefined
+    note: >
+      The Slanni are, were, or merely inherited the legacy of the Old Ones. All three readings
+      appear in one clause, each cited.
+  - id: empyrean-before-the-young-races
+    kind: sequence
+    note: >
+      Cross-article. The Enslaver article has the Young Races disturbing a peaceful Empyrean;
+      the Old Ones' own doctrine of resisting the Powers of Chaos presupposes them already
+      present.
+
+judgement_calls:
+  - what: The Wars of Secession / Succession spelling
+    decision: not recorded as a contradiction
+    why: >
+      The War in Heaven article's second mention spells it "Succession", unlinked. The linked
+      form and the Necrontyr article both give "Secession". A single unlinked typo is a wiki
+      error, not a source conflict, and recording it would inflate the register with noise.
+  - what: Bile's twelve-metre specimen as a Krork
+    decision: reported as speculation
+    why: The article itself says Bile speculated. The codex does not upgrade that to fact.
+  - what: The Jokaero's resemblance to Terran orangutans
+    decision: reported, conclusion not drawn
+    why: The article raises the resemblance and declines to explain it; so does this codex.
+
+tooling_defects_found_by_the_new_checks:
+  - >
+    The declared-vs-cited check caught three stale `sources:` declarations in this Title as
+    they were written, including one caused by a sed that matched two identical Section
+    arrays. Each was a real defect that would previously have shipped silently.
+  - >
+    The used-but-unregistered check reported six gaps, of which two were bugs in the check
+    itself: registry names keep their leading article ("the Silent King") while candidates are
+    stripped of it, so two of its own registered subjects were reported as undefined. Fixed by
+    comparing both forms. A third, "Willingly", was a bolded rhetorical beat in Volume I;
+    single-word candidates ending in -ly are now excluded.
+  - >
+    The remaining three were genuine and are now defined: the Deceiver, the Halo Stars, the
+    Solar Gods.
+
+left_out:
+  - >
+    The Necron faction as it exists in M41 — hierarchy, dynasties, reanimation protocols — which
+    is Volume VI Title 1. This Title uses lex-necron only for the revolt and the Great Sleep.
+  - >
+    Enslaver anatomy beyond what explains the threat, and the full list of recorded
+    infestations.
+  - The Aeldari Empire that inherited the galaxy, which is Volume I Title 4 and Volume VI Title 2.
+  - >
+    The Slanni's later history and their relationship to the Adeptus Mechanicus's Titan
+    traditions.

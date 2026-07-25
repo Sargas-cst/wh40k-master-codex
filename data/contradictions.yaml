@@ -550,3 +550,86 @@ krieg-naming-point:
     - claim: The original name is lost and the number gained on enlistment.
       source: lex-krieg
       marker: "citation 8b — Imperial Armour Volume Twelve - The Fall of Orpheus"
+
+war-in-heaven-date:
+  kind: numerical
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume III Title 1 research
+  summary: >
+    The War in Heaven was fought roughly sixty-five million years before the 41st
+    Millennium, or roughly sixty million.
+  reverification_note: >
+    Both figures sit in a single clause of the article's opening sentence — "roughly
+    sixty-five to sixty million years before" — with separate citations, one to a novel and
+    one to Codex: Necrons. That makes it a span between two published estimates rather than
+    one source describing a war of five million years' duration, and nothing in the setting
+    dates the war's individual phases to let the two be reconciled.
+  handling: >
+    Use the range. Do not convert either figure into a date for the war's start or end, and
+    do not treat the five-million-year gap as the war's length.
+  positions:
+    - claim: Roughly sixty-five million years before M41.
+      source: lex-war-in-heaven-necron
+      marker: "citation 6 — The Infinite and the Divine (Novel), Act 1, Chapter 3"
+    - claim: Roughly sixty million years before M41.
+      source: lex-war-in-heaven-necron
+      marker: "citation 5 — Codex: Necrons (3rd Edition), pgs. 24-26"
+
+slanni-old-ones-identity:
+  kind: undefined
+  status: undefined
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume III Title 1 research
+  summary: >
+    The Slanni are the Old Ones, were the Old Ones, or have merely inherited their legacy.
+  reverification_note: >
+    The article's opening sentence carries all three readings at once — "are or were or have
+    inherited the legacy of the Old Slann" — with a separate citation behind each. It is not
+    a disagreement between sources so much as a deliberate refusal to fix the relationship:
+    "Old Slann" is used elsewhere as a plain synonym for the Old Ones, yet the Slanni are
+    described as a species still extant, which the Old Ones are not.
+  handling: >
+    Say Old Ones where the Old Ones are meant. Never treat the Slanni as surviving Old Ones,
+    and never assert they are unrelated. The relationship is undefined and stays that way.
+  positions:
+    - claim: The Slanni are the Old Ones.
+      source: lex-slanni
+      marker: "citation 1b — Warhammer 40,000: Rogue Trader, pgs. 194-196"
+    - claim: The Slanni merely inherited the legacy of the Old Slann.
+      source: lex-slanni
+      marker: "citations 5 and 6"
+
+empyrean-before-the-young-races:
+  kind: sequence
+  status: open
+  reverified: true
+  reverified_on: 2026-07-25
+  found_in: Volume III Title 1 research
+  summary: >
+    The Empyrean was peaceful until the Young Races disturbed it, or it already held the
+    predatory Powers of Chaos before they existed.
+  reverification_note: >
+    Two articles, two incompatible states of the Warp before the War in Heaven. The Enslaver
+    article says the Young Races' growing pains "disturbed the peaceful Empyrean, turning it
+    into a hellish environment filled with now-deadly Warp predators". But the Old Ones'
+    own spiritual doctrine — that a perfected mind survives death in the Warp provided it can
+    resist the diseased consciousnesses of the Powers of Chaos — presupposes predatory Warp
+    intelligences already present, and is described as something the Old Ones TAUGHT the
+    Eldar rather than something they learned late.
+
+    What both accounts support is narrower and still substantial: whatever was there
+    beforehand, the war made it far worse, and the Enslavers specifically are dated to the
+    war rather than before it.
+  handling: >
+    Record both. Do not state that Chaos originated in the War in Heaven, and do not state
+    that the pre-war Warp was benign. Date the Enslavers to the war, which both agree on.
+  positions:
+    - claim: The Empyrean was peaceful before the Young Races.
+      source: lex-enslaver
+      marker: "citation 3 — Codex: Necrons (3rd Edition), pg. 26"
+    - claim: The Powers of Chaos were already there, and the Old Ones taught resistance to them.
+      source: lex-slanni
+      marker: "citation 3a — Codex Titanicus (1st Edition), pg. 52"

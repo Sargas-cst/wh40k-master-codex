@@ -303,3 +303,61 @@ xenos-domains:
     the Tomb Worlds, the T'au Empire and the Ork empires.
   aliases: [craftworld, Commorragh, the Dark City, Tomb World, T'au Empire, Charadon]
   see_also: [imperial-astrography, bastion-worlds]
+
+the-old-ones:
+  name: the Old Ones
+  gloss: >
+    The galaxy's first sentient species and first star-farers: reptilian, dimensionally
+    adept, builders of the Webway and engineers of most of the galaxy's other life.
+  aliases: [Old Ones, the Old Slann, the progenitor race]
+  see_also: [the-necrontyr]
+
+the-necrontyr:
+  name: the Necrontyr
+  gloss: >
+    The short-lived, radiation-cursed humanoids whose hatred of the Old Ones' immortality
+    began the War in Heaven, and who became the Necrons.
+  aliases: [Necrontyr, the Triarch, Wars of Secession, Rite of Expiscation]
+  see_also: [the-old-ones]
+
+biotransference:
+  name: Biotransference
+  gloss: >
+    The industrial conversion of the organic Necrontyr into the mechanical Necrons: a
+    disclosed bargain with the C'tan whose undisclosed cost was the species' souls.
+  aliases: [bio-transference, the biofurnaces, Szeras, the Deceiver's pact]
+  see_also: [the-necrontyr, the-old-ones]
+
+the-young-races:
+  name: the Young Races
+  gloss: >
+    The species the Old Ones bio-engineered as weapons in the War in Heaven — the Aeldari,
+    Krork, Jokaero, K'nib, Rashan, Hrud, and, on the sources' own list, Mankind.
+  aliases: [Young Races, Krork, Jokaero, Slanni, Slann, K'nib, Rashan]
+  see_also: [the-old-ones, the-necrontyr]
+
+the-enslavers:
+  name: the Enslavers
+  gloss: >
+    Warp-native entities that turn a psyker's body into a permanent gateway for more of
+    their kind. They ended the Old Ones' reign, then starved for want of hosts, and have
+    never been destroyed.
+  aliases: [Enslaver, Psyrens, Krell, dominators, puppeteers, Enslaver Plague, spiritus subjugator]
+  see_also: [the-young-races, the-old-ones]
+
+the-silent-king:
+  name: the Silent King
+  gloss: >
+    The Necrontyr's supreme ruler, who by tradition never spoke. Szarekh, the last of them,
+    approved biotransference, waited out the war, destroyed the C'tan, and then exiled
+    himself.
+  aliases: [Szarekh, Triarch, Phaeron]
+  see_also: [the-necrontyr, biotransference, the-great-sleep]
+
+the-great-sleep:
+  name: the Great Sleep
+  gloss: >
+    The sixty million years the Necrons spent dormant in stasis-crypts beneath their Tomb
+    Worlds, waiting out the age of flesh on a set term that has now expired.
+  aliases: [Great Sleep, stasis-crypt, the slumber]
+  see_also: [the-silent-king, xenos-domains]

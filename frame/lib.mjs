@@ -358,6 +358,10 @@ export function namedTermCandidates(body) {
     if (!/^[A-Z]/.test(term)) continue;          // emphasis, not a name
     if (/[[\]^*|]/.test(term)) continue;         // stray markup
     const words = term.split(/\s+/);
+    // A single bolded word ending in -ly is emphasis, not a proper noun. The prose
+    // bolds "**Willingly**" as a rhetorical beat, and the check reported it as a
+    // missing term. Multi-word phrases are exempt: a real name can contain one.
+    if (words.length === 1 && /ly$/i.test(term)) continue;
     if (words.length > 4) continue;              // a clause, not a term
     if (!words.every((w, i) => /^[A-Z]/.test(w) || (i > 0 && CONNECTIVE.has(w.toLowerCase())))) continue;
     out.add(term);
